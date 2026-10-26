@@ -59,3 +59,6 @@
  .adv-check input { margin-right:2px; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+/* 비용의 핵심 숫자는 모바일에서도 본문 크기로 함께 읽는다. */
+.adv-cost-numbers { font-size:1rem; line-height:1.8; overflow-wrap:anywhere; }

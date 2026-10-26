@@ -6,10 +6,10 @@
  if (calculator) {
   const names = ['count','llm','tts','images','video','retry','cap'];
   const fields = Object.fromEntries(names.map(name => [name, byId(`cost-${name}`)]));
-  const result = byId('cost-result'), detail = byId('cost-detail'), chart = byId('cost-chart');
+  const result = byId('cost-result'), detail = byId('cost-detail'), chart = byId('cost-chart'), breakdown = byId('cost-breakdown');
   const render = () => {
    if (Object.values(fields).some(input => input.value.trim() === '' || !input.validity.valid || !Number.isFinite(Number(input.value)))) {
-    result.textContent = '계산할 수 없어요 · 모든 칸에 허용 범위의 숫자를 넣으세요.'; detail.textContent = ''; chart.hidden = true; chart.style.display = 'none'; return;
+    result.textContent = '계산할 수 없어요 · 모든 칸에 허용 범위의 숫자를 넣으세요.'; detail.textContent = ''; if (breakdown) breakdown.textContent = ''; chart.hidden = true; chart.style.display = 'none'; return;
    }
    const value = Object.fromEntries(names.map(name => [name, Number(fields[name].value)]));
    const pieces = [value.llm, value.tts, value.images * .03375, value.video * .05];
@@ -21,6 +21,7 @@
    const add = (tag,attrs,text) => { const el=document.createElementNS(ns,tag); Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,String(v))); if(text)el.textContent=text;chart.append(el); };
    const monthly = pieces.map(n=>n*value.count), max=Math.max(.00001,...monthly);
    const labels=['LLM','TTS','이미지','영상'];
+   if (breakdown) breakdown.textContent = '월 항목별 비용: '+labels.map((s,i)=>`${s} $${monthly[i].toFixed(5)}`).join(' · ');
    add('title',{},'가상 월 생성비: '+labels.map((s,i)=>`${s} $${monthly[i].toFixed(5)}`).join(', '));
    monthly.forEach((n,i)=>{add('text',{x:0,y:20+i*42},`${labels[i]} $${n.toFixed(5)}`);add('rect',{x:135,y:7+i*42,width:n/max*220,height:18,rx:3});});
   };

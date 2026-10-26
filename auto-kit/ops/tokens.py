@@ -4,6 +4,19 @@ from datetime import timedelta
 from common import kit_path, secrets, read_json, save_json, now, timestamp
 from transport import HTTP
 
+def import_instagram(config):
+    """재인증한 환경 자격을 명시적으로 적용. 원격 호출·비밀 출력 없음."""
+    values = secrets()
+    token = {'access_token': values.get('IG_ACCESS_TOKEN'),
+             'issued_at': values.get('IG_TOKEN_ISSUED_AT'),
+             'expires_at': values.get('IG_TOKEN_EXPIRES_AT')}
+    if not all(token.values()):
+        raise ValueError('새 IG_ACCESS_TOKEN·IG_TOKEN_ISSUED_AT·IG_TOKEN_EXPIRES_AT을 환경/.env에 모두 넣으세요.')
+    issued, expiry = timestamp(token['issued_at']), timestamp(token['expires_at'])
+    if not issued <= now() < expiry or expiry <= issued:
+        raise ValueError('새 토큰의 발급·만료 시각을 확인하세요. 만료되었거나 미래 발급인 값은 적용하지 않습니다.')
+    save_json(kit_path(config['ops']['instagram_token_file']), token)
+
 def instagram_token(config, *, refresh=False, http=None):
     path = kit_path(config['ops']['instagram_token_file'])
     values = secrets()
@@ -55,3 +68,18 @@ def google_session(config, *, analytics=False):
         raise ValueError('python -m pip install --only-binary=:all: -r requirements-live.txt를 실행하세요.') from None
     except Exception:
         raise ValueError('OAuth 파일·scope·만료를 확인하고 필요하면 재동의하세요. Testing 모드는 7일 만료 조건을 확인하세요.') from None
+
+def main():
+    import argparse
+    from common import load_config
+    parser = argparse.ArgumentParser(description='재인증한 토큰을 비공개 저장 위치에 적용합니다. 값은 출력하지 않습니다.')
+    parser.add_argument('command', choices=['import-instagram'])
+    parser.add_argument('--config')
+    args = parser.parse_args()
+    config = load_config(kit_path(args.config) if args.config else None)
+    import_instagram(config)
+    print('Instagram 새 토큰 적용 완료. 비밀 값은 출력하지 않습니다.')
+
+if __name__ == '__main__':
+    from common import cli
+    cli(main)

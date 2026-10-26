@@ -89,4 +89,10 @@
 | ADV-083 | 가정된두플랫폼생성비는TTS무료소진후저비용월0.12달러·고품질목표월8.5875달러다. | [A025](SOURCES.md#a025) [A028](SOURCES.md#a028) [A038](SOURCES.md#a038) | A0/A2 | 가상계산·고정비/세금제외 |
 | ADV-084 | 한국어지원·국가지역지원·특정카드결제승인·한국리전데이터보관은서로다르다. | [A135](SOURCES.md#a135) [A136](SOURCES.md#a136) [A152](SOURCES.md#a152) [A039](SOURCES.md#a039) [A114](SOURCES.md#a114) | A2/A3 | 지원목록·음성언어 확인, 실결제미검증 |
 
+| ADV-085 | Pages Free는 public 저장소를 쓰고 branch/root 배포를 설정하며 Contents API 업로드용 fine-grained PAT에는 대상 repo Contents write가 필요하다. | [A162](SOURCES.md#a162) [A163](SOURCES.md#a163) [A164](SOURCES.md#a164) | A5 | 문서 직접 확인, 원격 미실행 |
+| ADV-086 | Cloud TTS는 결제 연결·API 활성화가 필요하고 Cloud API 키는 서비스 제한을 설정할 수 있다. 키트는 REST x-goog-api-key를 사용한다. | [A165](SOURCES.md#a165) [A166](SOURCES.md#a166) [A171](SOURCES.md#a171) [A172](SOURCES.md#a172) | A2/A3 | 문서+구현 대조, 키 발급/호출 미실행 |
+| ADV-087 | Discord webhook은 서버 Integrations에서 만들고 Telegram bot token은 BotFather /newbot으로 만든다. | [A167](SOURCES.md#a167) [A168](SOURCES.md#a168) [A067](SOURCES.md#a067) | A7 | 문서 직접 확인 |
+| ADV-088 | Gemini 무료 Flash-Lite 입출력 제공과 프로젝트별 RPM/TPM/RPD는 별도 조건이며 실제 active limits는 AI Studio에서 확인한다. | [A028](SOURCES.md#a028) [A169](SOURCES.md#a169) | A3 | 현행 문서 직접 확인, 일일 성공 보장 아님 |
+| ADV-089 | Gemini unpaid 입력/응답은 제품 개선·사람 검토에 쓰일 수 있어 민감·기밀·개인정보를 보내지 않는다. 유료 프로젝트 조건은 구별한다. | [A170](SOURCES.md#a170) | A3 | 2026-03-23 약관 직접 확인 |
+
 예산표의 계산 입력/제외 항목은 [cost-model.json](cost-model.json), 구현 제안과 외부 사실의 경계는 [재사용표](00-scope-reuse.md)에 있다.

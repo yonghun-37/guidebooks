@@ -1,6 +1,6 @@
 {
   "python_version": "3.11.15",
-  "clean_copy_commands": 21,
+  "clean_copy_commands": 31,
   "commands": [
     {
       "command": "python doctor.py",
@@ -10,42 +10,52 @@
     {
       "command": "python pipeline.py run --flow insta --provider mock --mode auto",
       "exit": 0,
-      "stdout": "b2d5da6ad25e · insta · dry_run\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/state/b2d5da6ad25e/preview.html"
+      "stdout": "3ca80588a2ae · insta · dry_run\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/state/3ca80588a2ae/preview.html"
     },
     {
       "command": "python pipeline.py run --flow shorts --provider mock --mode auto",
       "exit": 0,
-      "stdout": "8d762f148230 · shorts · dry_run\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/state/8d762f148230/preview.html"
+      "stdout": "4ec08a12ce66 · shorts · dry_run\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/state/4ec08a12ce66/preview.html"
+    },
+    {
+      "command": "python pipeline.py inspect 4ec08a12ce66 --flow shorts --artifact draft",
+      "exit": 0,
+      "stdout": "{\n  \"title\": \"월급날 10분, 돈을 네 칸으로 나누기\",\n  \"caption\": \"직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\\n월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\\n생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\\n비상금: 갑자기 지출할 때 쓸 돈을 적어요.\\n목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.\",\n  \"narration\": \"직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\\n월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\\n생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\\n비상금: 갑자기 지출할 때 쓸 돈을 적어요.\\n목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.\",\n  \"entities\": [],\n  \"scenes\": [\n    {\n      \"title\": \"월급날 10분, 돈을 네 칸으로 나누기\",\n      \"text\": \"직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\",\n      \"duration\": 6\n    },\n    {\n      \"title\": \"월세\",\n      \"text\": \"월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\",\n      \"duration\": 7.5\n    },\n    {\n      \"title\": \"생활비\",\n      \"text\": \"식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\",\n      \"duration\": 7.5\n    },\n    {\n      \"title\": \"비상금\",\n      \"text\": \"갑자기 지출할 때 쓸 돈을 적어요.\",\n      \"duration\": 7.5\n    },\n    {\n      \"title\": \"목표\",\n      \"text\": \"모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.\",\n      \"duration\": 7.5\n    }\n  ]\n}"
+    },
+    {
+      "command": "python pipeline.py inspect 4ec08a12ce66 --flow shorts --artifact request-plan",
+      "exit": 0,
+      "stdout": "{\n  \"mode\": \"dry-run\",\n  \"network_calls\": 0,\n  \"metadata\": {\n    \"snippet\": {\n      \"title\": \"월급날 10분, 돈을 네 칸으로 나누기\",\n      \"description\": \"직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\\n월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\\n생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\\n비상금: 갑자기 지출할 때 쓸 돈을 적어요.\\n목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.\\n원문: https://example.invalid/payday-four-boxes\",\n      \"categoryId\": \"22\",\n      \"defaultLanguage\": \"ko\"\n    },\n    \"status\": {\n      \"privacyStatus\": \"private\",\n      \"selfDeclaredMadeForKids\": false,\n      \"containsSyntheticMedia\": true\n    }\n  },\n  \"requests\": [\n    {\n      \"method\": \"POST\",\n      \"url\": \"https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet%2Cstatus\",\n      \"headers\": {\n        \"Authorization\": \"Bearer <REDACTED>\",\n        \"X-Upload-Content-Length\": \"767406\",\n        \"X-Upload-Content-Type\": \"video/mp4\"\n      },\n      \"json\": {\n        \"snippet\": {\n          \"title\": \"월급날 10분, 돈을 네 칸으로 나누기\",\n          \"description\": \"직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\\n월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\\n생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\\n비상금: 갑자기 지출할 때 쓸 돈을 적어요.\\n목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.\\n원문: https://example.invalid/payday-four-boxes\",\n          \"categoryId\": \"22\",\n          \"defaultLanguage\": \"ko\"\n        },\n        \"status\": {\n          \"privacyStatus\": \"private\",\n          \"selfDeclaredMadeForKids\": false,\n          \"containsSyntheticMedia\": true\n        }\n      }\n    },\n    {\n      \"method\": \"PUT\",\n      \"url\": \"<saved Location>\",\n      \"headers\": {\n        \"Content-Range\": \"bytes 0-767405/767406\"\n      },\n      \"note\": \"마지막 외 256KiB 배수 청크. 308 Range 다음부터 재개\"\n    },\n    {\n      \"method\": \"PUT\",\n      \"url\": \"<same Location>\",\n      \"headers\": {\n        \"Content-Length\": \"0\",\n        \"Content-Range\": \"bytes */767406\"\n      },\n      \"note\": \"응답 유실·재시작 때 서버 상태 조회\"\n    }\n  ]\n}"
     },
     {
       "command": "python pipeline.py run --flow insta --provider mock --state private/review-demo",
       "exit": 0,
-      "stdout": "66b8f4a5fde7 · insta · waiting_approval\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/review-demo/66b8f4a5fde7/preview.html"
+      "stdout": "ed030aa07b61 · insta · waiting_approval\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/review-demo/ed030aa07b61/preview.html"
     },
     {
-      "command": "python pipeline.py approve 66b8f4a5fde7 --state private/review-demo",
+      "command": "python pipeline.py approve ed030aa07b61 --state private/review-demo",
       "exit": 0,
-      "stdout": "66b8f4a5fde7 · insta · waiting_approval\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/review-demo/66b8f4a5fde7/preview.html"
+      "stdout": "ed030aa07b61 · insta · waiting_approval\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/review-demo/ed030aa07b61/preview.html"
     },
     {
-      "command": "python pipeline.py resume 66b8f4a5fde7 --state private/review-demo",
+      "command": "python pipeline.py resume ed030aa07b61 --state private/review-demo",
       "exit": 0,
-      "stdout": "66b8f4a5fde7 · insta · dry_run\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/review-demo/66b8f4a5fde7/preview.html"
+      "stdout": "ed030aa07b61 · insta · dry_run\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/review-demo/ed030aa07b61/preview.html"
     },
     {
       "command": "python pipeline.py run --flow insta --provider mock --mode post_review --state private/schedule-demo",
       "exit": 0,
-      "stdout": "d0272484191d · insta · scheduled\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/schedule-demo/d0272484191d/preview.html"
+      "stdout": "7ac4de69490e · insta · scheduled\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/schedule-demo/7ac4de69490e/preview.html"
     },
     {
-      "command": "python pipeline.py reject d0272484191d --state private/schedule-demo",
+      "command": "python pipeline.py reject 7ac4de69490e --state private/schedule-demo",
       "exit": 0,
-      "stdout": "d0272484191d · insta · rejected\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/schedule-demo/d0272484191d/preview.html"
+      "stdout": "7ac4de69490e · insta · rejected\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/schedule-demo/7ac4de69490e/preview.html"
     },
     {
       "command": "python pipeline.py status",
       "exit": 0,
-      "stdout": "[\n  {\n    \"id\": \"8d762f148230\",\n    \"flow\": \"shorts\",\n    \"status\": \"dry_run\",\n    \"reason\": null\n  },\n  {\n    \"id\": \"b2d5da6ad25e\",\n    \"flow\": \"insta\",\n    \"status\": \"dry_run\",\n    \"reason\": null\n  }\n]"
+      "stdout": "[\n  {\n    \"id\": \"4ec08a12ce66\",\n    \"flow\": \"shorts\",\n    \"status\": \"dry_run\",\n    \"reason\": null\n  },\n  {\n    \"id\": \"3ca80588a2ae\",\n    \"flow\": \"insta\",\n    \"status\": \"dry_run\",\n    \"reason\": null\n  }\n]"
     },
     {
       "command": "python pipeline.py report",
@@ -53,34 +63,74 @@
       "stdout": "{\n  \"date\": \"2026-10-26\",\n  \"runs\": 2,\n  \"total_runs\": 2,\n  \"exceptions\": [],\n  \"spend\": {\n    \"total\": 0.0,\n    \"day\": 0.0,\n    \"month\": 0.0,\n    \"pending\": 0\n  }\n}"
     },
     {
-      "command": "python insights.py 66b8f4a5fde7 --state private/review-demo",
+      "command": "python insights.py ed030aa07b61 --state private/review-demo",
       "exit": 0,
       "stdout": "지표 CSV 저장 완료. missing은 나중에 다시 조회하세요."
     },
     {
       "command": "python -m schedule.install --os windows --flow insta --time 09:17",
       "exit": 0,
-      "stdout": "예약 파일 생성 완료: /tmp/tmpt9ldw6nv/auto-kit/private/schedule/install-insta.ps1\nPowerShell: & \"/tmp/tmpt9ldw6nv/auto-kit/private/schedule/install-insta.ps1\" · 확인: Get-ScheduledTask -TaskName org.guidebooks.auto-kit.insta\nOS 현지 시각. 15분마다 재개/예약 발행, 지정 시각 이후 하루 1회 새 생성. PC 켜짐·로그인/절전 확인."
+      "stdout": "예약 파일 생성 완료: /tmp/tmplrn2cd_3/auto-kit/private/schedule/install-insta.ps1\nPowerShell: & \"/tmp/tmplrn2cd_3/auto-kit/private/schedule/install-insta.ps1\" · 확인: Get-ScheduledTask -TaskName org.guidebooks.auto-kit.insta\nOS 현지 시각. 15분마다 재개/예약 발행, 지정 시각 이후 하루 1회 새 생성. PC 켜짐·로그인/절전 확인."
     },
     {
       "command": "python -m schedule.install --os macos --flow shorts --time 09:17",
       "exit": 0,
-      "stdout": "예약 파일 생성 완료: /tmp/tmpt9ldw6nv/auto-kit/private/schedule/org.guidebooks.auto-kit.shorts.plist\nsh /tmp/tmpt9ldw6nv/auto-kit/private/schedule/install-shorts-macos.sh · 확인: launchctl print \"gui/$(id -u)/org.guidebooks.auto-kit.shorts\"\nOS 현지 시각. 15분마다 재개/예약 발행, 지정 시각 이후 하루 1회 새 생성. PC 켜짐·로그인/절전 확인."
+      "stdout": "예약 파일 생성 완료: /tmp/tmplrn2cd_3/auto-kit/private/schedule/org.guidebooks.auto-kit.shorts.plist\nsh /tmp/tmplrn2cd_3/auto-kit/private/schedule/install-shorts-macos.sh · 확인: launchctl print \"gui/$(id -u)/org.guidebooks.auto-kit.shorts\"\nOS 현지 시각. 15분마다 재개/예약 발행, 지정 시각 이후 하루 1회 새 생성. PC 켜짐·로그인/절전 확인."
     },
     {
       "command": "python -m schedule.install --os cron --flow insta --time 09:17",
       "exit": 0,
-      "stdout": "예약 파일 생성 완료: /tmp/tmpt9ldw6nv/auto-kit/private/schedule/install-insta-cron.sh\nsh /tmp/tmpt9ldw6nv/auto-kit/private/schedule/install-insta-cron.sh · 확인: crontab -l\nOS 현지 시각. 15분마다 재개/예약 발행, 지정 시각 이후 하루 1회 새 생성. PC 켜짐·로그인/절전 확인."
+      "stdout": "예약 파일 생성 완료: /tmp/tmplrn2cd_3/auto-kit/private/schedule/install-insta-cron.sh\nsh /tmp/tmplrn2cd_3/auto-kit/private/schedule/install-insta-cron.sh · 확인: crontab -l\nOS 현지 시각. 15분마다 재개/예약 발행, 지정 시각 이후 하루 1회 새 생성. PC 켜짐·로그인/절전 확인."
     },
     {
       "command": "python pipeline.py tick --flow insta --provider mock --mode auto --state private/daily --daily-at 09:17",
       "exit": 0,
-      "stdout": "[\n  {\n    \"id\": \"fa0901bdb769\",\n    \"flow\": \"insta\",\n    \"status\": \"dry_run\"\n  }\n]"
+      "stdout": "[\n  {\n    \"id\": \"f5abfafc1cd7\",\n    \"flow\": \"insta\",\n    \"status\": \"dry_run\"\n  }\n]"
     },
     {
       "command": "python pipeline.py tick --flow insta --provider mock --mode auto --state private/daily --daily-at 09:17",
       "exit": 0,
       "stdout": "[]"
+    },
+    {
+      "command": "python -c from common import load_config,save_json; c=load_config(); c['gates']['sensitive_words'].append('신청'); save_json('private/exception-config.json',c)",
+      "exit": 0,
+      "stdout": ""
+    },
+    {
+      "command": "python pipeline.py run --flow insta --provider mock --mode auto --config private/exception-config.json --state private/exception-demo",
+      "exit": 2,
+      "stdout": "7397a2042157 · insta · exception\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/exception-demo/7397a2042157/preview.html"
+    },
+    {
+      "command": "python pipeline.py inspect 7397a2042157 --flow insta --artifact gates --state private/exception-demo",
+      "exit": 0,
+      "stdout": "{\n  \"facts\": {\n    \"passed\": true,\n    \"reasons\": [],\n    \"method\": \"숫자·이름 문자열 대조(문맥·한국어 인명 누락 가능)\"\n  },\n  \"policy\": {\n    \"passed\": false,\n    \"reasons\": [\n      \"검토 단어: 신청\"\n    ]\n  },\n  \"similarity\": {\n    \"passed\": true,\n    \"reasons\": [],\n    \"maximum\": 0,\n    \"threshold\": 0.82\n  },\n  \"specification\": {\n    \"passed\": true,\n    \"reasons\": [],\n    \"media\": [\n      {\n        \"file\": \"card-01.jpg\",\n        \"width\": 1080,\n        \"height\": 1350,\n        \"bytes\": 139042\n      },\n      {\n        \"file\": \"card-02.jpg\",\n        \"width\": 1080,\n        \"height\": 1350,\n        \"bytes\": 91450\n      },\n      {\n        \"file\": \"card-03.jpg\",\n        \"width\": 1080,\n        \"height\": 1350,\n        \"bytes\": 88902\n      },\n      {\n        \"file\": \"card-04.jpg\",\n        \"width\": 1080,\n        \"height\": 1350,\n        \"bytes\": 89442\n      },\n      {\n        \"file\": \"card-05.jpg\",\n        \"width\": 1080,\n        \"height\": 1350,\n        \"bytes\": 108901\n      }\n    ]\n  },\n  \"ai\": {\n    \"passed\": true,\n    \"reasons\": []\n  },\n  \"cost\": {\n    \"passed\": true,\n    \"reasons\": [],\n    \"total\": 0.0,\n    \"day\": 0.0,\n    \"month\": 0.0,\n    \"pending\": 0\n  }\n}"
+    },
+    {
+      "command": "python pipeline.py approve 7397a2042157 --state private/exception-demo",
+      "exit": 1,
+      "stdout": "중단: 관문을 통과한 승인 대기 실행만 승인할 수 있습니다."
+    },
+    {
+      "command": "python pipeline.py run --flow insta --provider mock --mode auto --state private/exception-fixed",
+      "exit": 0,
+      "stdout": "a00191df5456 · insta · dry_run\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/exception-fixed/a00191df5456/preview.html"
+    },
+    {
+      "command": "python pipeline.py report --state private/exception-demo",
+      "exit": 0,
+      "stdout": "{\n  \"date\": \"2026-10-26\",\n  \"runs\": 1,\n  \"total_runs\": 1,\n  \"exceptions\": [\n    \"7397a2042157\"\n  ],\n  \"spend\": {\n    \"total\": 0.0,\n    \"day\": 0.0,\n    \"month\": 0.0,\n    \"pending\": 0\n  }\n}"
+    },
+    {
+      "command": "python pipeline.py reject 7397a2042157 --state private/exception-demo",
+      "exit": 0,
+      "stdout": "7397a2042157 · insta · rejected\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/exception-demo/7397a2042157/preview.html"
+    },
+    {
+      "command": "python pipeline.py report --state private/exception-demo",
+      "exit": 0,
+      "stdout": "{\n  \"date\": \"2026-10-26\",\n  \"runs\": 1,\n  \"total_runs\": 1,\n  \"exceptions\": [],\n  \"spend\": {\n    \"total\": 0.0,\n    \"day\": 0.0,\n    \"month\": 0.0,\n    \"pending\": 0\n  }\n}"
     },
     {
       "command": "python doctor.py --config config.json --live --flow insta",
@@ -90,17 +140,17 @@
     {
       "command": "python pipeline.py run --flow insta --provider mock --mode auto --config config.json --state private/rss-demo",
       "exit": 0,
-      "stdout": "31570b0ad451 · insta · dry_run\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/rss-demo/31570b0ad451/preview.html"
+      "stdout": "0ce30e0d86bc · insta · dry_run\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/rss-demo/0ce30e0d86bc/preview.html"
     },
     {
       "command": "python pipeline.py run --flow shorts --provider mock --mode auto --config config.json --state private/rss-demo",
       "exit": 0,
-      "stdout": "106607b3c930 · shorts · dry_run\n미리보기: /tmp/tmpt9ldw6nv/auto-kit/private/rss-demo/106607b3c930/preview.html"
+      "stdout": "3d1d55ca3998 · shorts · dry_run\n미리보기: /tmp/tmplrn2cd_3/auto-kit/private/rss-demo/3d1d55ca3998/preview.html"
     },
     {
       "command": "python -m pytest -q tests/test_core.py -k example_fact",
       "exit": 0,
-      "stdout": "....                                                                     [100%]\n4 passed, 4 deselected in 0.09s"
+      "stdout": "....                                                                     [100%]\n4 passed, 4 deselected in 0.08s"
     },
     {
       "command": "python -c from cryptography.fernet import Fernet; from pathlib import Path; p=Path('private/state-encryption.key'); p.parent.mkdir(exist_ok=True); p.write_bytes(Fernet.generate_key()); p.chmod(0o600)",
@@ -108,7 +158,7 @@
       "stdout": ""
     }
   ],
-  "local_links": 75,
+  "local_links": 110,
   "link_errors": 0,
   "external_calls": 0
 }

@@ -1,0 +1,21 @@
+{
+  "title": "월급날 10분, 돈을 네 칸으로 나누기",
+  "duration_seconds": 38.666667,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "voice": {
+    "engine": "supertonic 1.3.1",
+    "model": "supertonic-3",
+    "model_revision": "724fb5abbf5502583fb520898d45929e62f02c0b",
+    "style": "F1",
+    "language": "ko",
+    "steps": 12,
+    "speed": 1.0,
+    "synthetic": true
+  },
+  "sha256": {
+    "payday-four-boxes.mp4": "e7508e6f40d30fd35bfb39c41237a8982055567ef6632cdc18078a9afffe2443",
+    "narration.flac": "0d4cf7d062cc6a0aeff6a090c13d258c3bfc044b3508b76a757c306c9d649d61"
+  }
+}

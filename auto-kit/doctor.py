@@ -4,6 +4,8 @@ from datetime import timedelta
 import shutil
 import subprocess
 import sys
+import re
+from urllib.parse import urlsplit
 from common import ROOT, cli, kit_path, load_config, secrets, read_json, timestamp, now
 
 def diagnose(config, values=None, live=False, flow=None):
@@ -66,7 +68,26 @@ def diagnose(config, values=None, live=False, flow=None):
                 if left.total_seconds()<=0: add('error','Instagram 토큰 만료. 재인증하세요.')
                 elif left.days<config['ops']['token_warning_days']: add('warning','Instagram 토큰 만료 임박. 다음 live 실행에서 조건이 맞으면 갱신합니다.')
             except ValueError: add('error','Instagram 발급·만료 시각에 UTC 오프셋을 넣으세요.')
-        if config['hosting']['adapter']=='local': add('error','실제 공개 URL 호스팅 pages 또는 r2를 설정하세요.')
+        hosting = config['hosting']
+        if hosting['adapter']=='local': add('error','실제 공개 URL 호스팅 pages 또는 r2를 설정하세요.')
+        elif hosting['adapter'] in ('pages', 'r2'):
+            base = urlsplit(hosting['base_url'])
+            if base.scheme != 'https' or not base.hostname or base.hostname.endswith('.invalid') or base.query or base.fragment or base.username or base.password:
+                add('error', 'hosting.base_url에 로그인 없는 공개 HTTPS 주소를 넣으세요.')
+            if hosting['adapter'] == 'pages':
+                if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', hosting['pages_repository']):
+                    add('error', 'hosting.pages_repository에 본인 owner/repo를 넣으세요.')
+                if not hosting['pages_branch']: add('error', 'hosting.pages_branch를 Pages 배포 브랜치로 설정하세요.')
+                if not values.get('PAGES_TOKEN'): add('error', 'PAGES_TOKEN 누락. 대상 저장소 Contents 쓰기 권한 키를 .env에 넣으세요.')
+            else:
+                endpoint = urlsplit(hosting['r2_endpoint'])
+                if endpoint.scheme != 'https' or not endpoint.hostname or not endpoint.hostname.endswith('.r2.cloudflarestorage.com'):
+                    add('error', 'hosting.r2_endpoint에 R2 S3 HTTPS 엔드포인트를 넣으세요.')
+                if not hosting['r2_bucket']: add('error', 'hosting.r2_bucket에 공개 미디어 버킷 이름을 넣으세요.')
+                if not values.get('R2_ACCESS_KEY_ID') or not values.get('R2_SECRET_ACCESS_KEY'):
+                    add('error', 'R2_ACCESS_KEY_ID·R2_SECRET_ACCESS_KEY 누락. .env에 넣으세요.')
+            add('info', '호스팅 설정·키 존재만 점검했습니다. 업로드 뒤 공개 URL GET·MIME·바이트 일치는 host 단계가 확인합니다.')
+        else: add('error', 'hosting.adapter는 pages 또는 r2로 설정하세요.')
         add('info','Instagram 한도는 발행 직전 content_publishing_limit로 읽습니다. 조회 실패 시 연기합니다.')
     return results
 

@@ -45,6 +45,16 @@ def probe_media(path):
         lufs = None
     return {**info, 'lufs': lufs, 'probe_method': method}
 
+def owned_scenes(media):
+    """생성 요청과 렌더가 같은 소재 목록·장면 수를 사용한다."""
+    if not media.get('scenes_dir'):
+        return []
+    folder = kit_path(media['scenes_dir'])
+    files = sorted(p for p in folder.iterdir() if p.is_file() and p.suffix.lower() in short_base.PHOTO | short_base.CLIP)
+    if not 2 <= len(files) <= 5:
+        raise ValueError('보유 소재는 파일명 순서로 2~5개를 준비하세요. 이 수로 대본 장면을 고정합니다.')
+    return files
+
 def render(draft, config, output, flow, provider):
     output = Path(output).resolve()
     output.mkdir(parents=True, exist_ok=True)
@@ -59,7 +69,7 @@ def render(draft, config, output, flow, provider):
     backgrounds = []
     folder = kit_path(media['scenes_dir']) if media.get('scenes_dir') else None
     if folder:
-        backgrounds = sorted(p for p in folder.iterdir() if p.suffix.lower() in short_base.PHOTO | short_base.CLIP)
+        backgrounds = owned_scenes(media)
         if len(backgrounds) != len(draft['scenes']):
             raise ValueError('소재 파일 수와 장면 수를 맞추세요. 파일명 순서로 사용합니다.')
     elif media['image_api'] or media['video_api']:

@@ -1237,6 +1237,125 @@
 - 확인수준: Codex 직접 관련 본문 확인
 - 확인구획: 2026채널제재/비공개/운영자삭제구분
 
+<a id="a162"></a>
+### A162. Creating a GitHub Pages site
+
+- URL: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+- 기관/작성자·신뢰도: GitHub · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: Free public 저장소·entry file·생성 경로
+
+<a id="a163"></a>
+### A163. Configuring a publishing source for your GitHub Pages site
+
+- URL: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+- 기관/작성자·신뢰도: GitHub · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: Settings Pages·Deploy from a branch·배포 branch/root
+
+<a id="a164"></a>
+### A164. Create or update file contents
+
+- URL: https://docs.github.com/en/rest/repos/contents#create-or-update-file-contents
+- 기관/작성자·신뢰도: GitHub · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: fine-grained token Contents write·branch 필드
+
+<a id="a165"></a>
+### A165. Get started with Cloud Text-to-Speech
+
+- URL: https://docs.cloud.google.com/text-to-speech/docs/get-started
+- 기관/작성자·신뢰도: Google Cloud · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: 프로젝트·결제 필수·API 활성화
+
+<a id="a166"></a>
+### A166. Manage API keys
+
+- URL: https://docs.cloud.google.com/docs/authentication/api-keys
+- 기관/작성자·신뢰도: Google Cloud · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: Create credentials API key·standard key·API restrictions
+
+<a id="a167"></a>
+### A167. Intro to Webhooks
+
+- URL: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+- 기관/작성자·신뢰도: Discord · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: Server Settings Integrations·webhook 생성·채널·Copy Webhook URL
+
+<a id="a168"></a>
+### A168. From BotFather to Hello World
+
+- URL: https://core.telegram.org/bots/tutorial
+- 기관/작성자·신뢰도: Telegram · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: BotFather /newbot·토큰 생성
+
+<a id="a169"></a>
+### A169. Gemini API rate limits
+
+- URL: https://ai.google.dev/gemini-api/docs/rate-limits
+- 기관/작성자·신뢰도: Google · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: active rate limits AI Studio·RPM TPM RPD·프로젝트별·Pacific 자정
+
+<a id="a170"></a>
+### A170. Gemini API Additional Terms of Service
+
+- URL: https://ai.google.dev/gemini-api/terms
+- 기관/작성자·신뢰도: Google · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: 무료 입력/응답 개선 이용·사람 검토·민감정보 금지·유료 조건
+
+<a id="a171"></a>
+### A171. Authenticate with REST
+
+- URL: https://docs.cloud.google.com/docs/authentication/rest
+- 기관/작성자·신뢰도: Google Cloud · A
+- 게시/갱신·접근일: 본문 표시 기준, 미표기 시 갱신일 불명 · 2026-10-26
+- 확인수준: A6 Codex 공식 관련 본문 직접 확인(계정 발급·원격 호출 미실행)
+- 확인구획: REST API키 x-goog-api-key 헤더
+
+<a id="a172"></a>
+### A172. Cloud Text-to-Speech v1 Discovery document
+
+- URL: https://texttospeech.googleapis.com/$discovery/rest?version=v1
+- 기관/작성자·신뢰도: Google Cloud · A
+- 게시/갱신·접근일: discovery revision 기준 · 2026-10-26
+- 확인수준: Codex 공식 서비스 메타데이터 직접 확인(인증·음성 합성 호출 없음)
+- 확인구획: id=texttospeech:v1, parameters.key는 프로젝트 접근/할당량용 API 키이며 OAuth 2.0 토큰이 없으면 필요하다고 명시
+
+<a id="a173"></a>
+### A173. Supertonic 3 model card / fixed revision license
+
+- URL: https://huggingface.co/supertone-oss-archive/supertonic-3
+- 라이선스 원문: https://huggingface.co/Supertone/supertonic-3/resolve/724fb5abbf5502583fb520898d45929e62f02c0b/LICENSE
+- 기관/작성자·신뢰도: Supertone 공식 보관소 · A
+- 게시/갱신·접근일: 고정 revision 724fb5abbf5502583fb520898d45929e62f02c0b · 2026-10-26
+- 확인수준: Codex 공식 모델 카드와 라이선스 원문 직접 확인, 동봉 사본 바이트 일치
+- 확인구획: ONNX 로컬 합성·한국어 지원·OpenRAIL-M 사용 제한/출력 조항. 지원 종료 모델을 운영 기본값으로 추천하지 않음
+- 원문 SHA256: 0d944a9110fed9a9602d60e0423a272903e7bd21ab060490774efc77c2275e9f (15007 bytes)
+
+<a id="a174"></a>
+### A174. Supertonic Python SDK
+
+- URL: https://github.com/supertone-oss-archive/supertonic-py
+- 기관/작성자·신뢰도: Supertone 공식 보관소 · A
+- 게시/갱신·접근일: 2026-09-09 archive 표시 · 2026-10-26
+- 확인수준: Codex 공식 저장소 본문 직접 확인
+- 확인구획: 로컬 ONNX 합성·MIT SDK·지원 종료. 별도 재현 환경용이며 기본 키트 의존성에 추가하지 않음
+
 ## 접근 기록과 제한
 
 [verification.json](verification.json)은 직접 요청161개 URL의 상태·관련구획·본문해시를 기록한다. 파일은 HTTP 요청 성공만으로 사실검증 성공을 판정하지 않는다. [provenance.json](provenance.json)은 Hermes14회/상한28회·최대동시3회와 원응답해시를 기록한다. 403 문자열에 대한 부정문은 실제 차단으로 세지 않는다. A059의 직접403은 정상 경로 A131로 보완했다. A148의 미래정책은 A152의현재 API지원지역 문서로 대체했다.

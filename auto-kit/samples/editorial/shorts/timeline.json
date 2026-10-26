@@ -1,0 +1,82 @@
+[
+  {
+    "scene": 1,
+    "start": 0.0,
+    "end": 4.541667,
+    "speech_start": 0.16,
+    "speech_end": 4.200272,
+    "frames": 109,
+    "narration": "월급은 들어왔는데, 어디에 쓸지 막막한가요?",
+    "subtitle": "월급은 들어왔는데,\n어디에 쓸지 막막한가요?"
+  },
+  {
+    "scene": 2,
+    "start": 4.541667,
+    "end": 9.083333,
+    "speech_start": 4.701667,
+    "speech_end": 8.741939,
+    "frames": 109,
+    "narration": "오늘은 십 분만, 메모를 네 칸으로 나눠요.",
+    "subtitle": "오늘은 십 분만,\n메모를 네 칸으로 나눠요."
+  },
+  {
+    "scene": 3,
+    "start": 9.083333,
+    "end": 14.291667,
+    "speech_start": 9.243333,
+    "speech_end": 13.980204,
+    "frames": 125,
+    "narration": "월세와 관리비. 이번 달 꼭 나갈 돈부터 적어요.",
+    "subtitle": "월세와 관리비. 이번 달\n꼭 나갈 돈부터 적어요."
+  },
+  {
+    "scene": 4,
+    "start": 14.291667,
+    "end": 18.833333,
+    "speech_start": 14.451667,
+    "speech_end": 18.491939,
+    "frames": 109,
+    "narration": "둘째는 생활비. 식비와 교통비를 적어요.",
+    "subtitle": "둘째는 생활비.\n식비와 교통비를 적어요."
+  },
+  {
+    "scene": 5,
+    "start": 18.833333,
+    "end": 23.416667,
+    "speech_start": 18.993333,
+    "speech_end": 23.103265,
+    "frames": 110,
+    "narration": "셋째는 비상금. 갑자기 필요한 돈이에요.",
+    "subtitle": "셋째는 비상금.\n갑자기 필요한 돈이에요."
+  },
+  {
+    "scene": 6,
+    "start": 23.416667,
+    "end": 28.708333,
+    "speech_start": 23.576667,
+    "speech_end": 28.383197,
+    "frames": 127,
+    "narration": "마지막은 목표. 여행이나 이사처럼 이름을 붙여요.",
+    "subtitle": "마지막은 목표. 여행이나\n이사처럼 이름을 붙여요."
+  },
+  {
+    "scene": 7,
+    "start": 28.708333,
+    "end": 33.875,
+    "speech_start": 28.868333,
+    "speech_end": 33.535544,
+    "frames": 124,
+    "narration": "정해진 비율은 없어요. 내 상황에 맞게 채워요.",
+    "subtitle": "정해진 비율은 없어요.\n내 상황에 맞게 채워요."
+  },
+  {
+    "scene": 8,
+    "start": 33.875,
+    "end": 38.666667,
+    "speech_start": 34.035,
+    "speech_end": 38.353912,
+    "frames": 115,
+    "narration": "저장해 두고, 다음 월급날 네 칸을 채워 보세요.",
+    "subtitle": "저장해 두고, 다음 월급날\n네 칸을 채워 보세요."
+  }
+]

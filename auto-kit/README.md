@@ -2,7 +2,7 @@
 
 **키 없이 카드와 쇼츠를 끝까지 만든 뒤, 인증을 하나씩 추가해 실제 운영으로 바꿔요.** Python 3.11 이상이 필요해요. 터미널은 아래 명령을 입력하는 창이에요. 하린의 가상 계정 「출근길 3분 생활 뉴스」와 도윤의 가상 채널 「자취생 10분 생존법」을 예제로 써요. 문안은 직접 작성한 예시이고, 소리는 연습용 신호음이에요.
 
-2026년 10월 조사 기준. [조사·구현 근거](docs/sources.md) · [그림 모음](docs/figures.html) · [미리 만든 결과](samples/README.md).
+2026년 10월 조사 기준. [조사·구현 근거](docs/sources.md) · [그림 모음](docs/figures.html) · [미리 만든 결과](samples/README.md) · [편집한 완성 견본](samples/editorial/README.md).
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="docs/figures/system-dark.svg"><img src="docs/figures/system.svg" alt="소스와 지난 성과에서 주제를 고르고 생성·렌더·관문·게시·지표 수집을 반복하는 두 흐름"></picture>
 
@@ -66,6 +66,15 @@ python pipeline.py status
 
 같은 소스는 다시 고르지 않아요. 예제에는 흐름별로 주제가 하나씩 들어 있어요. 연습을 새로 시작하려면 기존 상태를 지우지 말고 새 `--state private/새연습` 경로를 사용해요.
 
+**두 흐름의 실행 ID는 달라요.** `SHORTS_ID`는 두 번째 명령이 출력한 실제 쇼츠 ID로 바꿔요. 첫 파일이나 최신 파일을 추측하지 않고 흐름까지 확인해 읽어요.
+
+```bash
+python pipeline.py inspect SHORTS_ID --flow shorts --artifact draft
+python pipeline.py inspect SHORTS_ID --flow shorts --artifact request-plan
+```
+
+이렇게 보이면 성공: 월급날 제목·장면의 JSON과 YouTube 업로드 계획 JSON이 나와요. 인스타 ID면 `실행 ID의 흐름이 다릅니다`로 멈춰요. 다른 상태 폴더를 썼다면 같은 `--state`를 붙이세요. 직접 Python으로 읽을 때도 `read_text(encoding='utf-8-sig')`를 써요.
+
 ## 3. 승인·재개·거부 연습
 
 처음 운영에는 기본값 `approval`을 사용해요. `RUN_ID`는 아래 첫 명령이 출력한 실제 ID로 바꿔요.
@@ -85,6 +94,8 @@ python pipeline.py resume RUN_ID --state private/review-demo
 
 `failed`는 같은 ID로 resume하면 완료한 단계를 건너뛰어요. 파일·문안·대상·공개범위·AI 표시·예약 시각이 바뀌면 승인이 무효예요. 수정할 때는 소스/설정을 고쳐 새 실행을 만들어요. `exception`은 자동 관문에 걸린 상태라 approve로 우회하지 못해요. 만료된 승인은 다시 승인 대기로 돌아와요.
 
+폰트 경로 같은 파일 오류를 복구해 resume가 성공하면 현재 `reason`·`failed_step`은 지워져요. 원문·대본은 유지하며 과거 실패는 이벤트/실행 로그에 남아요.
+
 사후 확인 연습:
 
 ```bash
@@ -97,10 +108,41 @@ python pipeline.py reject RUN_ID --state private/schedule-demo
 | mode | 인스타 | 쇼츠 |
 |---|---|---|
 | `auto` | 관문 통과 후 게시 | 관문 통과 후 명시한 공개 범위로 업로드 |
-| `post_review` | 기본 2시간 로컬 대기, tick이 시각 도달 후 발행 | private+미래 publishAt 업로드, 공개 전 거부 가능 |
+| `post_review` | 실행 시작부터 기본 2시간 로컬 대기, tick이 시각 도달 후 발행 | 실행 시작+2시간의 private+publishAt 업로드, 공개 전 거부 가능 |
 | `approval` | approve 후 resume | approve 후 resume, 기본 private |
 
 쇼츠 예약 거부는 업로드한 예약 영상을 삭제해요. `youtube.force-ssl` 권한이 필요해요. 공개 시각이 지났거나 취소 응답을 확인하지 못하면 취소 완료로 표시하지 않아요. Discord incoming webhook은 알림만 제공해요.
+
+제작 시간도 2시간에 포함돼요. 시작 09:17·제작 완료 09:20이면 공개 예정은 11:17이고 검토 여유는 1시간 57분이에요(가상 예). 예정 시각 이후 실제 발행은 다음 tick 때예요.
+
+**두 플랫폼 공통 연습 기준(편집 권장값):** 승인제로 10편 중 9편 이상 관문 통과 → 사후 확인으로 다음 10편 모두 통과·잘못 공개/거부/실행 오류 0·미해결 예외 0 → 사용자가 `mode: "auto"`로 바꿔요. 키트는 자동 승격하지 않아요. 플랫폼의 안전 보장 수치가 아니에요.
+
+### 예외를 고치고 대기열에서 끝내기
+
+아래는 키 없는 **미게시 예외** 연습이에요. 원격 게시 결과가 불명인 `uncertain`에 적용하지 마세요. 연습을 반복하면 상태 경로 이름도 새로 정해요.
+
+```bash
+python -c "from common import load_config,save_json; c=load_config(); c['gates']['sensitive_words'].append('신청'); save_json('private/exception-config.json',c)"
+python pipeline.py run --flow insta --provider mock --mode auto --config private/exception-config.json --state private/exception-demo
+```
+
+이렇게 보이면 성공: `exception`과 종료 코드 2예요. 출력된 ID를 아래 `OLD_ID`로 써요.
+
+```bash
+python pipeline.py inspect OLD_ID --flow insta --artifact gates --state private/exception-demo
+python pipeline.py approve OLD_ID --state private/exception-demo
+```
+
+이렇게 보이면 성공: `신청` 관련 실패 이유가 보이고 approve는 거절돼 종료 코드 1이에요. 민감어 시험 설정이 원인이므로 기본 설정으로 새 실행을 검사해요. 실운영의 실제 위험어를 무작정 지우는 연습이 아니에요.
+
+```bash
+python pipeline.py run --flow insta --provider mock --mode auto --state private/exception-fixed
+python pipeline.py report --state private/exception-demo
+python pipeline.py reject OLD_ID --state private/exception-demo
+python pipeline.py report --state private/exception-demo
+```
+
+이렇게 보이면 성공: 새 실행 `dry_run`, 첫 report에는 옛 ID가 남고 reject 후 report는 `exceptions: []`예요. reject는 미게시 실행을 종결하고 기록을 보존해요. DB를 지우지 않아요. 실제 상태 폴더에 다른 예외가 있다면 그것도 원인별로 처리해야 0건이에요.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="docs/figures/states-dark.svg"><img src="docs/figures/states.svg" alt="실행·승인 대기·완료·실패·연기·예외·결과 불명·예약 상태와 재시작 경로"></picture>
 
@@ -125,12 +167,14 @@ python doctor.py --config config.json --live --flow insta
 | 이미지 생성 | `media.image_api: true`, `providers.image: "gemini"` | `GEMINI_API_KEY` |
 | 본인 녹음 | `media.recording`: 로컬 WAV/MP3 절대경로 또는 키트 상대경로 | 필요 없음 |
 | Google 음성 | `media.recording: null`, `providers.tts: "google"` | `GOOGLE_TTS_API_KEY` |
-| 보유 사진·클립 | `media.scenes_dir`: 폴더 경로, 장면 수와 파일 수 일치 | 필요 없음 |
+| 보유 사진·클립 | `media.scenes_dir`: 파일명 순서로 2~5개. 이 수로 생성 장면 수를 고정 | 필요 없음 |
 | 영상 생성 선택 | `media.video_api: true`, `providers.video: "runway"`, `providers.image: "gemini"` | `RUNWAY_API_KEY`, `GEMINI_API_KEY` |
 | 인스타 모션 릴스 | `instagram.format: "reel"`, 실제 TTS 또는 본인 녹음 | 음성 경로에 따라 설정 |
 | 선택 LLM 원문 대조 | `providers.llm_check: true`, `check_llm` 공급자·모델 | 두 번째 모델 비용도 기록 |
 
 처음에는 LLM 한 개·코드 카드 또는 보유 소재·본인 녹음만 연결해요. 모델 이름은 `models`, 조사 단가는 `providers/prices.json`에서 바꿔요. 종료된 모델을 기본값으로 사용하지 않아요. JSON 스키마 오류는 정한 횟수만 재시도해요. 미디어 생성은 같은 작업 ID를 보존하고 자동으로 새 작업을 만들지 않아요.
+
+소재 3개면 생성 요청·스키마 모두 3장면이에요. 모델이 다른 수를 반환하면 대본 단계에서 예산 안에서 재시도하고 계속 틀리면 렌더·TTS 전에 멈춰요. 소재 수를 매일 수동으로 맞출 필요는 없어요. 새 주제에도 어울리고 재사용 권리가 있는 소재를 준비하세요. 본인 녹음은 새 대본마다 다시 필요하므로 무인 운영에는 실제 TTS를 골라요. [키 발급·무료 운영·알림 연결](docs/connections.md)
 
 ### 원문·RSS·권리
 
@@ -172,7 +216,7 @@ python pipeline.py run --flow shorts --provider mock --mode auto --config config
 
 실패 실행을 더 이상 재개하지 않으면 `reject RUN_ID`로 거부해 사용하지 않은 실행 예약을 해제해요. 이미 호출한 비용과 결과 불명 비용은 해제하지 않아요.
 
-공급자 콘솔의 강제 지출 상한도 직접 설정한 뒤 `provider_hard_cap_confirmed: true`로 바꿔요. Cloud 예산 알림은 자동 중지가 아니에요. 이미지·영상 추가 시 실행 최대비가 일 상한보다 클 수 있어요. 상한을 무작정 올리기 전에 생성 구성을 줄여요. [공급자별 근거](docs/sources.md)
+무료 Gemini 결제 미연결 확인과 유료 공급자 상한을 구분해요([연결 안내](docs/connections.md#무료-모델로-매일-가능한가)). 공급자 콘솔의 강제 지출 상한도 직접 설정한 뒤 `provider_hard_cap_confirmed: true`로 바꿔요. Cloud 예산 알림은 자동 중지가 아니에요. 이미지·영상 추가 시 실행 최대비가 일 상한보다 클 수 있어요. 상한을 무작정 올리기 전에 생성 구성을 줄여요. [공급자별 근거](docs/sources.md)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="docs/figures/gates-dark.svg"><img src="docs/figures/gates.svg" alt="사실·정책·유사도·규격·AI·비용 관문에서 실패하면 예외로, 모두 통과하면 운영 모드별로 진행"></picture>
 
@@ -201,6 +245,8 @@ python -m pytest -q tests/test_core.py -k example_fact
 | `r2` | 비공개 S3 endpoint, 공개 미디어 bucket·base_url, R2 키 | Standard 무료 범위·초과 요금 확인. 공개 미디어와 비공개 상태 bucket 분리 |
 
 두 실제 어댑터 모두 JPEG/MP4만 올려요. 인증 없이 GET한 파일의 MIME·SHA256까지 확인해요. Pages가 아직 배포 중이면 host 단계에서 멈춰요. 배포 후 같은 ID로 resume해요. 공개 호스팅은 승인 전에 이뤄지므로 공개해도 되는 자료만 사용해요. [호스팅 조건](../research-advanced/execution-hosting.md)
+
+처음에는 [공개 호스팅 연결 절차](docs/connections.md#무료-교육용-instagram-파일-github-pages)의 별도 Pages 저장소 만들기 → media 브랜치 배포 → Contents 쓰기 키 → `.env` → 완성 hosting 설정 → doctor → 공개 URL 열기를 끝내세요. R2의 버킷·S3 endpoint·공개 주소·키 대응도 같은 문서에 있어요.
 
 ```bash
 python doctor.py --config config.json --live --flow insta --check-remote
@@ -274,6 +320,8 @@ python pipeline.py resume RUN_ID --live
 ## 7. 알림·지표·대시보드
 
 `.env`에 Discord webhook 또는 Telegram bot token·chat ID를 넣으면 **live 실행에서만** 미리보기와 상태를 보내요. 로컬 알림은 모든 모드에서 `notification.json`에 남아요. 웹훅 실패는 로컬 기록에 표시하며 이미 성공한 게시를 다시 실행하지 않아요.
+
+키가 없다면 [발급·시험 알림·수신 운영](docs/connections.md#discord-알림--선택-telegram-승인)을 먼저 따라 하세요. Discord는 Server Settings → Integrations, Telegram은 BotFather `/newbot`에서 만들어요. 매일 알림은 운영자가 읽고, 승인 버튼은 별도로 켜 둔 수신 터미널이 처리해요. 예약 설치기는 수신기를 켜지 않아요.
 
 Telegram 승인은 `TELEGRAM_ALLOWED_USER`와 `TELEGRAM_CHAT_ID`를 모두 설정해야 해요. 이 명령은 최대 25초간 새 버튼 응답을 읽고 종료해요. 봇의 webhook과 polling을 동시에 사용하지 않아요.
 
@@ -361,6 +409,15 @@ python ops/state_sync.py push --live
 노코드 실행기는 [n8n 가져오기 예시](examples/n8n/README.md)를 참고해요. Python 실행 환경이 있는 셀프 호스팅용이에요.
 
 ## 10. 흔한 오류와 운영 점검
+
+**Instagram은 private 토큰 파일이 환경변수·`.env`보다 우선해요.** 갱신한 토큰을 보호하는 규칙이에요. 재인증/키 교체 때는 예약·수신기를 중지하고 본인 `.env`의 `IG_ACCESS_TOKEN`·발급/만료 시각을 바꾼 뒤 아래 명령으로 실제 저장 위치에 적용해요. 환경변수는 `.env`보다 우선하므로 셸/Secrets의 옛 값도 함께 교체하세요.
+
+```bash
+python -m ops.tokens import-instagram --config config.json
+python doctor.py --config config.json --live --flow insta
+```
+
+이렇게 보이면 성공: `Instagram 새 토큰 적용 완료. 비밀 값은 출력하지 않습니다.`가 보이고 만료 오류가 사라져요. import는 네트워크를 쓰지 않으며 `ops.instagram_token_file`에 0600으로 저장해요. 값·시각이 잘못됐으면 기존 파일을 유지해요. Actions도 최신 파일이 포함된 암호화 상태를 push하고 Secrets를 교체한 뒤 재개하세요. 예전 상태가 다시 덮지 않도록 실행 주체를 하나로 유지해요.
 
 | 표시 | 할 일 |
 |---|---|

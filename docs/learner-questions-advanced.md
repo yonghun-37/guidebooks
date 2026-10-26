@@ -1,6 +1,6 @@
 # 심화편 학습자 질문 A0~A9
 
-2026-10-26 · Phase A1. 두 책 공통 질문이며 게시·분석 예시는 플랫폼별로 나눈다. 실제 포럼의 **문제를 참고해 새로 쓴 질문**이다. 인용문·설문 빈도 순위가 아니다. 포럼 답변을 정책·가격 근거로 쓰지 않고 공식 출처와 대조한다. A### 전체 메타데이터는 [조사 출처](../research-advanced/SOURCES.md)에 있다.
+2026-10-26 · A6에서 관문/운영 질문 대응 갱신. 두 책 공통 질문이며 게시·분석 예시는 플랫폼별로 나눈다. 실제 포럼의 **문제를 참고해 새로 쓴 질문**이다. 인용문·설문 빈도 순위가 아니다. 포럼 답변을 정책·가격 근거로 쓰지 않고 공식 출처와 대조한다. A### 전체 메타데이터는 [조사 출처](../research-advanced/SOURCES.md)에 있다.
 
 ## A0. 전체 그림
 
@@ -74,29 +74,35 @@
 
 답변 근거: instagram-auth·instagram-publishing·youtube-api.
 
-## A6. 일정·승인·복구
+## A6. 자동 품질 관문과 예외 대기열
 
-질문 출발점: [2026-10 GitHub cron 지연 A119](https://github.com/orgs/community/discussions/209507), [승인형 캐러셀 A118](https://community.n8n.io/t/automate-instagram-carousels-using-n8n-apitemplate-and-blotato/204294).
+질문 출발점: [승인형 캐러셀 A118](https://community.n8n.io/t/automate-instagram-carousels-using-n8n-apitemplate-and-blotato/204294). A5r에서 직접 재현한 예외·오탐·종결 문제를 반영했다. 같은 검사기를 쓰되 각 책의 제작물에 맞춰 질문을 나눈다.
 
-1. 매일 오전9시로 설정했는데 몇 시간 늦으면 무엇을 확인하나요?
-2. Windows 작업 스케줄러와 macOS launchd는 절전 중에도 돌아가나요?
-3. 디스코드 웹훅에 승인 버튼을 넣으면 클릭 결과도 자동으로 받나요?
-4. 텔레그램 승인을 받으려면 공개 서버나 유료 봇이 필요한가요?
-5. 승인하지 않은 날이나 이미 게시한 작업을 다시 실행하면 어떻게 처리하나요?
+| 순서 | 인스타 질문 | 쇼츠 질문 |
+|---|---|---|
+| 1 | 어떤 검사를 모두 통과해야 하나요? | 사실 검사는 무엇을 보나요? |
+| 2 | 원문과 숫자가 같으면 사실도 맞나요? | 중복은 파일 이름으로 보나요? |
+| 3 | 정상 문안인데 검토 단어로 멈추면요? | 실패를 승인으로 넘길 수 있나요? |
+| 4 | 예외를 approve로 통과시켜도 되나요? | 알림에는 무엇을 넣나요? |
+| 5 | 고친 예외를 0건으로 만들고 언제 전자동으로 가나요? | 언제 전자동으로 가나요? |
 
-답변 근거: execution-hosting·approval-security·cases-operations.
+답변 근거: 각 책 A6 FAQ와 실제 예외 실습. 인스타 #build/#exception-lab, 쇼츠 #checks/#exceptions/#exception-lab/#threshold. 두 책 모두 미게시 예외를 고친 새 실행으로 재검사하고 옛 ID를 reject해 기록을 보존한다. 원격 결과 불명은 조회/대조로 해결한다.
 
-## A7. 노코드
+## A7. 스케줄링과 운영
 
-질문 출발점: [국내 n8n 셀프호스팅 경험 A094](https://www.gpters.org/nocode/post/journey-self-hosting-automate-EkBOTxGYh8N0Dg5), [캐러셀 자동화 A118](https://community.n8n.io/t/automate-instagram-carousels-using-n8n-apitemplate-and-blotato/204294).
+질문 출발점: [2026-10 GitHub cron 지연 A119](https://github.com/orgs/community/discussions/209507), [국내 n8n 셀프호스팅 A094](https://www.gpters.org/nocode/post/journey-self-hosting-automate-EkBOTxGYh8N0Dg5).
 
-1. n8n·Make·Zapier 중 처음에는 무엇을 고르면 되나요?
-2. n8n 무료 셀프 호스팅이면 서버와 생성 API도 무료인가요?
-3. Instagram 전용 노드가 안 보이면 어떻게 게시하나요?
-4. 무료1,000credits나100tasks는 게시물 몇 편이라는 뜻인가요?
-5. 모듈에 AI 표시 필드가 없으면 어디에서 설정하나요?
+운영의 핵심 질문(두 책 A7 본문과 화면 도식으로 답한다):
 
-답변 근거: nocode·generation-apis·approval-security.
+1. 매일 오전 9시로 설정했는데 늦으면 어디를 확인하나요? 절전 중에도 돌아가나요?
+2. Discord 웹훅과 Telegram 봇 자격은 어디서 만들고 .env 어디에 넣나요?
+3. 누가 언제 알림을 읽고 승인 버튼을 누르며, 수신 명령은 누가 켜 두나요?
+4. 승인하지 않은 작업·이미 게시한 작업·실패한 작업을 다음 tick이 어떻게 처리하나요?
+5. 내 컴퓨터 대신 클라우드에서 실행할 때 상태와 비밀을 어떻게 보존하나요?
+
+노코드는 A7 안의 선택 상자와 FAQ에서 별도로 답한다. 다음 기존 FAQ 5개를 유지한다: 처음 고를 실행기, 무료 셀프호스팅의 서버/API 비용, Instagram 전용 노드 대안, credits/tasks와 편수 차이, AI 표시 필드가 없을 때 HTTP 요청. 운영 질문을 A6 관문 질문으로 채점하지 않는다.
+
+답변 근거: execution-hosting·approval-security·nocode·cases-operations·[발급 보완](../research-advanced/a6-connections.md).
 
 ## A8. 분석
 

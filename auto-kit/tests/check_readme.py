@@ -24,7 +24,11 @@ def main():
             return result.stdout
         assert 'mock 준비 완료' in run('doctor.py')
         assert 'dry_run' in run('pipeline.py','run','--flow','insta','--provider','mock','--mode','auto')
-        assert 'dry_run' in run('pipeline.py','run','--flow','shorts','--provider','mock','--mode','auto')
+        shorts_text=run('pipeline.py','run','--flow','shorts','--provider','mock','--mode','auto')
+        assert 'dry_run' in shorts_text
+        shorts_id=re.search(r'[a-f0-9]{12}',shorts_text)[0]
+        assert '월급날' in run('pipeline.py','inspect',shorts_id,'--flow','shorts','--artifact','draft')
+        assert 'upload' in run('pipeline.py','inspect',shorts_id,'--flow','shorts','--artifact','request-plan')
         text=run('pipeline.py','run','--flow','insta','--provider','mock','--state','private/review-demo')
         identifier=re.search(r'[a-f0-9]{12}',text)[0]
         run('pipeline.py','approve',identifier,'--state','private/review-demo')
@@ -41,10 +45,19 @@ def main():
             subprocess.run(['sh','-n',str(root/'private/schedule'/file)],check=True)
         run('pipeline.py','tick','--flow','insta','--provider','mock','--mode','auto','--state','private/daily','--daily-at','09:17')
         assert json.loads(run('pipeline.py','tick','--flow','insta','--provider','mock','--mode','auto','--state','private/daily','--daily-at','09:17')) == []
+        run('-c',"from common import load_config,save_json; c=load_config(); c['gates']['sensitive_words'].append('신청'); save_json('private/exception-config.json',c)")
+        bad=run('pipeline.py','run','--flow','insta','--provider','mock','--mode','auto','--config','private/exception-config.json','--state','private/exception-demo',expected=2)
+        old_id=re.search(r'[a-f0-9]{12}',bad)[0]
+        assert '신청' in run('pipeline.py','inspect',old_id,'--flow','insta','--artifact','gates','--state','private/exception-demo')
+        run('pipeline.py','approve',old_id,'--state','private/exception-demo',expected=1)
+        assert 'dry_run' in run('pipeline.py','run','--flow','insta','--provider','mock','--mode','auto','--state','private/exception-fixed')
+        assert old_id in json.loads(run('pipeline.py','report','--state','private/exception-demo'))['exceptions']
+        assert 'rejected' in run('pipeline.py','reject',old_id,'--state','private/exception-demo')
+        assert json.loads(run('pipeline.py','report','--state','private/exception-demo'))['exceptions']==[]
         shutil.copyfile(root/'config.example.json',root/'config.json')
         shutil.copyfile(root/'.env.example',root/'.env')
         assert '[error]' in run('doctor.py','--config','config.json','--live','--flow','insta',expected=1)
-        config=json.loads((root/'config.json').read_text())
+        config=json.loads((root/'config.json').read_text(encoding='utf-8-sig'))
         config['sources']['files']=[]
         config['sources']['rss']=[{'url':f'sources/{flow}-feed.xml','flow':flow,'synthetic':True,'rights_reviewed':False,'category':category} for flow,category in [('insta','생활 뉴스'),('shorts','자취 생활')]]
         (root/'config.json').write_text(json.dumps(config,ensure_ascii=False),encoding='utf-8')

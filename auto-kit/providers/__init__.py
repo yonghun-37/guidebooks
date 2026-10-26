@@ -1,5 +1,6 @@
 """공통 draft/media/check 인터페이스, 스키마 검증, 호출별 비용 장부."""
 import json
+import copy
 from pathlib import Path
 import math
 from jsonschema import Draft202012Validator, ValidationError
@@ -94,6 +95,15 @@ class Provider:
             try:
                 if provider == 'mock':
                     result = {'value': ({'passed': True, 'reason': 'mock 원문 대조'} if kind == 'check' else self.mock_draft(payload['source'], payload['flow'])), 'usage': {'mock': True}}
+                    if kind == 'llm' and payload.get('scene_count'):
+                        original = result['value']['scenes']
+                        count = payload['scene_count']
+                        scenes = []
+                        for i in range(count):
+                            group = original[i * len(original) // count:(i + 1) * len(original) // count]
+                            group = group or [original[min(i, len(original) - 1)]]
+                            scenes.append({**group[0], 'text': ' '.join(s['text'] for s in group)[:150], 'duration': sum(s['duration'] for s in group)})
+                        result['value']['scenes'] = scenes
                 elif self.invoke:
                     result = self.invoke(kind, payload, model)
                 elif group == 'llm':
@@ -136,7 +146,15 @@ class Provider:
     def draft(self, source, flow):
         if len(source['text']) > self.config['budget']['max_source_chars']:
             raise ValueError('원문 길이 상한을 넘었습니다. 소스를 줄이세요.')
-        return self._call('llm', {'source': source, 'flow': flow}, SCHEMA)
+        from rendering.media import owned_scenes
+        assets = owned_scenes(self.config['media'])
+        payload = {'source': source, 'flow': flow}
+        schema = SCHEMA
+        if assets:
+            payload['scene_count'] = len(assets)
+            schema = copy.deepcopy(SCHEMA)
+            schema['properties']['scenes'].update(minItems=len(assets), maxItems=len(assets))
+        return self._call('llm', payload, schema)
 
     def check(self, source, draft):
         return self._call('check', {'mode': 'check', 'source': source, 'draft': draft}, CHECK_SCHEMA)

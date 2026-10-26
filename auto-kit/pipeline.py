@@ -85,7 +85,7 @@ class Pipeline:
                 raise ValueError('Instagram 숫자 account 또는 .env의 IG_USER_ID가 필요합니다.')
         run = {'id': identifier, 'flow': flow, 'live': live, 'status': 'running', 'config': config, 'target': target, 'steps': [], 'output': str(output), 'created_at': now().isoformat(), 'files': []}
         if config['mode'] == 'post_review':
-            publish_at = (now() + timedelta(hours=config['review']['hours'])).isoformat()
+            publish_at = (timestamp(run['created_at']) + timedelta(hours=config['review']['hours'])).isoformat()
             if config['review']['hours'] <= 0:
                 raise ValueError('사후 확인 시간은 0보다 커야 합니다.')
             if flow == 'shorts':
@@ -122,6 +122,9 @@ class Pipeline:
                 return run
             if run['status'] == 'exception':
                 return run  # 관문 실패는 approve로 우회할 수 없다. 수정 후 새 실행.
+            # 현재 시도에는 옛 오류를 넘기지 않는다. 실패 이력은 events에 남는다.
+            run.pop('reason', None)
+            run.pop('failed_step', None)
             cfg = run['config']; output = Path(run['output'])
             provider = Provider(cfg, self.store, run['id'], mock=not live)
             step = 'topic'
@@ -251,6 +254,19 @@ class Pipeline:
                 report(self.store, cfg)
             return run
 
+    def inspect(self, identifier, flow, artifact):
+        """첫 파일·최신 파일을 추측하지 않고 지정한 실행·흐름의 결과를 읽는다."""
+        if artifact not in ('draft', 'result', 'request-plan', 'gates', 'render-info'):
+            raise ValueError('조회할 결과 파일을 선택하세요.')
+        run = self.store.get(identifier)
+        if run['flow'] != flow:
+            raise ValueError('실행 ID의 흐름이 다릅니다. status에서 insta/shorts ID를 확인하세요.')
+        if artifact == 'result':
+            if 'result' not in run:
+                raise ValueError('게시 결과가 아직 없습니다. 실행 상태를 먼저 확인하세요.')
+            return run['result']
+        return read_json(Path(run['output']) / (artifact + '.json'))
+
     def approve(self, identifier, actor='local'):
         with self.store.lock():
             run = self.store.get(identifier)
@@ -344,13 +360,17 @@ class Pipeline:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
-    for name in ('run','resume','approve','reject','status','tick','report','telegram','reconcile','refresh-ops'):
+    for name in ('run','resume','approve','reject','status','tick','report','telegram','reconcile','refresh-ops','inspect'):
         p = sub.add_parser(name)
         p.add_argument('--state', default='private/state'); p.add_argument('--config'); p.add_argument('--live', action='store_true')
         if name in ('run','tick'): p.add_argument('--flow', choices=['insta','shorts'], required=name == 'run'); p.add_argument('--provider', choices=['mock','openai','gemini','anthropic']); p.add_argument('--mode', choices=['auto','post_review','approval'])
         if name == 'tick': p.add_argument('--daily-at', help='OS 현지 HH:MM 이후에만 하루 새 생성. 재개는 항상 실행')
         if name in ('resume','approve','reject','reconcile','refresh-ops'): p.add_argument('id')
         if name == 'reconcile': p.add_argument('--media-id', required=True)
+        if name == 'inspect':
+            p.add_argument('id')
+            p.add_argument('--flow', choices=['insta', 'shorts'], required=True)
+            p.add_argument('--artifact', choices=['draft', 'result', 'request-plan', 'gates', 'render-info'], required=True)
     args = parser.parse_args()
     config = load_config(kit_path(args.config) if args.config else None)
     if getattr(args, 'mode', None): config['mode'] = args.mode
@@ -367,6 +387,7 @@ def main():
         if not args.live: raise ValueError('기존 ID 조회에는 --live를 명시하세요.')
         result = pipeline.reconcile(args.id, args.media_id)
     elif args.command == 'refresh-ops': result = pipeline.refresh_ops(args.id)
+    elif args.command == 'inspect': result = pipeline.inspect(args.id, args.flow, args.artifact)
     elif args.command == 'tick': result = pipeline.tick(flow=args.flow, provider=args.provider, live=args.live, daily_at=args.daily_at)
     elif args.command == 'report': result = report(pipeline.store, config)
     elif args.command == 'telegram':
@@ -376,7 +397,7 @@ def main():
     else:
         result = [{'id': r['id'], 'flow': r['flow'], 'status': r['status'], 'reason': r.get('reason')} for r in pipeline.store.runs()]
     import json
-    if isinstance(result, dict) and 'status' in result:
+    if args.command != 'inspect' and isinstance(result, dict) and 'status' in result:
         print(f"{result['id']} · {result['flow']} · {result['status']}")
         if result.get('reason'): print(result['reason'])
         print('미리보기: ' + result['output'] + '/preview.html')
