@@ -26,8 +26,19 @@ def load_config(path=None):
     config["font"] = str((path.parent / config["font"]).resolve())
     config["rss"] = [str((path.parent / p).resolve()) if not p.startswith(("https://", "http://")) else p
                      for p in config["rss"]]
-    if config["llm"]["mode"] != "offline" or config["reel"]["tts"] != "silent":
-        raise ValueError("이 키트는 llm.mode=offline, reel.tts=silent만 지원합니다.")
+    if config["llm"]["mode"] not in ("offline", "prompt", "api"):
+        raise ValueError("llm.mode는 offline/prompt/api여야 합니다.")
+    if config["reel"]["tts"] not in ("silent", "plugin"):
+        raise ValueError("reel.tts는 silent/plugin이어야 합니다.")
+    theme = config.get("theme", "forest")
+    from render_cards import THEMES
+    if theme not in THEMES:
+        raise ValueError("theme은 forest/ink/coral이어야 합니다.")
+    config["colors"] = {**THEMES[theme], **config.get("colors", {})}
+    config["asset_root"] = str(path.parent)
+    for key in ("narration", "music"):
+        if config["reel"].get(key):
+            config["reel"][key] = str((path.parent / config["reel"][key]).resolve())
     if not 15 <= float(config["reel"]["duration"]) <= 30:
         raise ValueError("릴스 duration은 15~30초로 설정하세요.")
     if not isinstance(config["publish"]["is_ai_generated"], bool):

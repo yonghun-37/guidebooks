@@ -10,18 +10,21 @@ def prepare_review(output):
     copy = read_json(output / "copy.json")
     files = ["news.json", "copy.json", "config.json", "reel.mp4", "reel-info.json", "subtitles.srt", "frames.txt"]
     for i in range(1, len(copy["scenes"]) + 1):
-        files += [f"cards/card-{i:02d}.png", f"cards/card-{i:02d}.jpg", f"frames/scene-{i:02d}.png"]
+        files += [f"cards/card-{i:02d}.png", f"cards/card-{i:02d}.jpg", f"frames/scene-{i:02d}.png",
+                  f"frames/scene-{i:02d}-caption.png", f"frames/scene-{i:02d}.mp4"]
+    files += read_json(output / "reel-info.json")["audio_files"]
     for name in ("APPROVED.json", "dry-run.json"):
         (output / name).unlink(missing_ok=True)
     (output / "REVIEW.md").write_text(f"""# 게시 전 사람 검수
 
-상태: 검수 대기. 이 파일을 읽고 아래 다섯 칸을 `[x]`로 바꾸어 저장한 뒤 approve 명령을 실행하세요.
+상태: 검수 대기. 이 파일을 읽고 아래 여섯 칸을 `[x]`로 바꾸어 저장한 뒤 approve 명령을 실행하세요.
 {copy['label']}
 
 - [ ] news.json의 원출처·날짜·인명·수치·조건을 copy.json 및 카드와 대조했습니다. 합성 피드는 실제 뉴스가 아님을 확인했습니다.
 - [ ] cards/의 모든 PNG와 게시용 JPEG를 열어 글자 잘림·출처·한글을 확인했습니다.
-- [ ] reel.mp4를 끝까지 재생해 세로 화면·자막·시간·무음을 확인했습니다.
+- [ ] reel.mp4를 끝까지 재생해 장면 전환·줌/팬·자막 등장·진행 막대·시간 및 음성/무음을 확인했습니다. 움직임만으로 수익화 적격이 보장되지 않음을 확인했습니다.
 - [ ] 입력 자료·폰트·사진·음원 등의 이용 권리를 확인했습니다. AI 정보·광고 표시의 필요 여부를 검토하고 copy.json의 is_ai_generated를 확인했습니다.
+- [ ] 직접 녹음한 내레이션·사용자 제공 배경음악의 이용 권리와 라이선스를 확인했습니다. TTS 사용 시 엔진·모델·화자 동의·출력물의 이용 조건도 확인했습니다. 미사용 항목은 해당 없음으로 검토했습니다.
 - [ ] 아래 캡션을 확인했고 이 결과물의 드라이런 게시를 승인합니다.
 
 ## 캡션 (실제 전송 값은 copy.json)
@@ -52,8 +55,8 @@ def approve(output):
     expected = read_json(output / "manifest.json")["files"]
     check_files(output, expected)
     review = (output / "REVIEW.md").read_text(encoding="utf-8")
-    if review.count("- [x]") != 5 or "- [ ]" in review:
-        raise ValueError("REVIEW.md의 검수 다섯 칸을 [x]로 바꾸어 저장한 뒤 승인하세요.")
+    if review.count("- [x]") != 6 or "- [ ]" in review:
+        raise ValueError("REVIEW.md의 검수 여섯 칸을 [x]로 바꾸어 저장한 뒤 승인하세요.")
     expected.update({"manifest.json": digest(output / "manifest.json"), "REVIEW.md": digest(output / "REVIEW.md")})
     save_json(output / "APPROVED.json", {"approved_at": datetime.now(timezone.utc).isoformat(), "files": expected})
 

@@ -1,16 +1,18 @@
 account_name: 하린의 한 장 실험실
-colors:
-  background: '#F5F2EA'
-  foreground: '#142E35'
-  accent: '#007F73'
+theme: forest  # forest(크림·초록) / ink(남색·블루) / coral(크림·코랄)
+# 필요하면 프리셋의 일부 색만 덮어씁니다.
+colors: {}  # 예: {accent: '#007F73'}
 # 상대 경로는 이 설정 파일이 있는 폴더 기준입니다.
 font: assets/fonts/NotoSansKR.ttf
 rss:
   - fixtures/sample-feed.xml
 llm:
-  mode: offline  # 규칙 기반 후보 추출 + 사람이 직접 편집. 외부 LLM 호출 없음.
+  mode: offline  # offline / prompt / api. api는 별도 --allow-api도 필요.
 reel:
   duration: 20  # 이 실습의 허용 범위: 15~30초
   tts: silent  # 상업용 한국어 음성 권리 미확인 → 무음 + 영상 내 자막
+  narration: null  # 가장 권장: 본인이 녹음한 mp3/wav 경로 (설정 파일 기준)
+  music: null  # 본인이 이용 권리를 확인한 배경음악 mp3/wav만 입력
+  tts_plugin: null  # tts: plugin일 때 '사용자모듈:함수'. 기본 비활성.
 publish:
   is_ai_generated: false  # 실제 제작 방식 확인 후 true/false 선택

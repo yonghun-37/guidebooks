@@ -4,34 +4,57 @@
   "account_name": "하린의 한 장 실험실",
   "caption": "합성 데이터 · 실제 뉴스 아님\n가상 별빛도서관, 조용한 독서 모임을 열다\nhttps://example.invalid/library\n가상 초록작업실, 종이 재사용 실험을 시작하다\nhttps://example.invalid/paper\n가상 달빛마을, 산책 지도를 함께 그리다\nhttps://example.invalid/walk",
   "is_ai_generated": false,
-  "editing_note": "규칙 기반 후보입니다. copy.json의 title/body/subtitle/caption을 사람이 검토·편집하세요.",
+  "editing_note": "규칙 기반 후보입니다. 원출처와 대조하고 title/points/subtitle/caption을 직접 편집하세요.",
   "scenes": [
     {
-      "title": "한 장씩 만드는\n오늘의 연습",
-      "body": "소재를 고르고, 핵심을 적고,\n사람이 확인합니다.\n이 카드부터 직접 만들어 보세요.",
+      "layout": "cover",
+      "title": "오늘의 발견\n**한 장씩** 읽다",
+      "body": "읽고, 고르고, 기록하는\n우리 주변의 작은 이야기",
       "subtitle": "합성 피드로 카드와 릴스를 만드는 연습입니다.",
       "source": "동봉 합성 피드"
     },
     {
-      "title": "가상 별빛도서관, 조용한 독서 모임을 열다",
+      "layout": "body",
+      "title": "가상 별빛도서관,\n조용한 독서 모임을 열다",
       "body": "가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다. 참가자는 읽고 싶은 책을 직접 고르는 설정입니다.",
+      "points": [
+        "가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다.",
+        "참가자는 읽고 싶은 책을 직접 고르는 설정입니다."
+      ],
       "subtitle": "가상 별빛도서관, 조용한 독서 모임을 열다",
       "source": "https://example.invalid/library",
       "published": "Mon, 26 Oct 2026 09:00:00 +0900"
     },
     {
-      "title": "가상 초록작업실, 종이 재사용 실험을 시작하다",
+      "layout": "body",
+      "title": "가상 초록작업실,\n종이 재사용 실험을 시작하다",
       "body": "가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다. 효과나 절감 수치는 측정하지 않은 교육용 이야기입니다.",
+      "points": [
+        "가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다.",
+        "효과나 절감 수치는 측정하지 않은 교육용 이야기입니다."
+      ],
       "subtitle": "가상 초록작업실, 종이 재사용 실험을 시작하다",
       "source": "https://example.invalid/paper",
       "published": "Mon, 26 Oct 2026 10:00:00 +0900"
     },
     {
-      "title": "가상 달빛마을, 산책 지도를 함께 그리다",
+      "layout": "body",
+      "title": "가상 달빛마을,\n산책 지도를 함께 그리다",
       "body": "가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다. 실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다.",
+      "points": [
+        "가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다.",
+        "실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다."
+      ],
       "subtitle": "가상 달빛마을, 산책 지도를 함께 그리다",
       "source": "https://example.invalid/walk",
       "published": "Mon, 26 Oct 2026 11:00:00 +0900"
+    },
+    {
+      "layout": "closing",
+      "title": "다음 발견도\n**함께** 읽어요",
+      "body": "다시 읽고 싶다면 저장\n함께 읽을 사람에게 공유",
+      "subtitle": "원출처를 확인하고, 다시 읽을 이야기를 저장하세요.",
+      "source": "https://example.invalid/library\nhttps://example.invalid/paper\nhttps://example.invalid/walk"
     }
   ]
 }

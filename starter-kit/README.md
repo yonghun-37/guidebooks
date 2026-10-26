@@ -1,8 +1,8 @@
 # 하린의 첫 카드와 릴스 만들기
 
-Python으로 **합성 RSS → 문안 초안 → 카드 4장 → 20초 릴스 → 사람 검수 → 게시 요청 미리보기**를 만듭니다. 코딩 경험·계정·API 키가 없어도 됩니다. 동봉 이야기는 모두 가상이며 실제 뉴스가 아닙니다. 결과물 예시는 [samples](samples/)에서 먼저 볼 수 있습니다.
+Python으로 **합성 RSS → 문안 초안 → 카드 5장 → 20초 릴스 → 사람 검수 → 게시 요청 미리보기**를 만듭니다. 코딩 경험·계정·API 키가 없어도 됩니다. 동봉 이야기는 모두 가상이며 실제 뉴스가 아닙니다. 결과물 예시는 [samples](samples/)에서 먼저 볼 수 있습니다.
 
-설치할 때만 인터넷이 필요합니다. 설치가 끝나면 기본 실습은 인터넷 없이 작동합니다. 기본 음성은 **무음 + 영상에 새긴 한국어 자막**입니다. 음성 합성·LLM·이미지 생성 서비스를 호출하지 않습니다.
+설치할 때만 인터넷이 필요합니다. 설치가 끝나면 기본 실습은 인터넷 없이 작동합니다. 기본 음성은 **무음 + 영상에 새긴 한국어 자막**입니다. 직접 녹음·사용자 음악·TTS 플러그·LLM 연결은 아래에서 선택할 때만 켭니다. 음성 합성·LLM·이미지 생성 서비스를 호출하지 않습니다.
 
 ## 1. 터미널과 Python 준비
 
@@ -73,11 +73,11 @@ python run_pipeline.py --offline --output output/second-practice
 |---|---|
 | `news.json` | 메모장/텍스트 편집기로 제목·링크·짧은 요약 확인 |
 | `copy.json` | 카드 제목·본문·릴스 자막·캡션·AI 표시 선택값 확인 |
-| `cards/card-01.png` ~ `card-04.png` | 더블 클릭해 카드 1080×1350과 한글 확인 |
+| `cards/card-01.png` ~ `card-05.png` | 더블 클릭해 카드 1080×1350과 한글 확인 |
 | `cards/*.jpg` | PNG와 같은 카드의 API 게시용 JPEG |
 | `reel.mp4` | 더블 클릭해 세로 1080×1920, 20초, 자막과 무음 확인 |
 | `subtitles.srt` | 영상 자막의 시간표. MP4에는 자막이 이미 새겨져 있음 |
-| `frames/`, `frames.txt` | 영상을 만드는 중간 이미지와 순서표 |
+| `frames/`, `frames.txt` | 장면 배경·자막 PNG, 장면 MP4와 연결 순서표 |
 | `REVIEW.md` | 게시 전 검수표. 텍스트 편집기로 열기 |
 | `config.json`, `reel-info.json`, `manifest.json` | 사용 설정·제작 정보·변경 감지 해시 |
 
@@ -85,7 +85,7 @@ python run_pipeline.py --offline --output output/second-practice
 
 ## 4. 사람이 확인하고 approve 실행
 
-`REVIEW.md`에 있는 다섯 항목을 확인합니다. 모든 PNG/JPEG와 릴스를 직접 열어 보고, 완료한 항목을 `- [ ]`에서 `- [x]`로 고쳐 저장하세요. 다음 명령의 폴더를 **본인의 출력 폴더**로 바꿉니다.
+`REVIEW.md`에 있는 여섯 항목을 확인합니다. 모든 PNG/JPEG와 릴스를 직접 열어 보고, 완료한 항목을 `- [ ]`에서 `- [x]`로 고쳐 저장하세요. 다음 명령의 폴더를 **본인의 출력 폴더**로 바꿉니다.
 
 ```bash
 python run_pipeline.py approve output/2026-10-26
@@ -110,7 +110,7 @@ python run_pipeline.py approve output/2026-10-26
 
 ## 5. 계정 이름·색과 소재 바꾸기
 
-`config.example.yaml`을 같은 폴더에 `config.yaml`로 복사해 계정 이름과 세 가지 색을 바꾸세요. 색은 `'#007F73'`처럼 따옴표를 유지합니다. 폰트와 피드의 상대 경로는 설정 파일 위치 기준입니다. 외부 LLM과 TTS 설정은 구현하지 않았으므로 `llm.mode: offline`, `reel.tts: silent`를 유지하세요.
+`config.example.yaml`을 같은 폴더에 `config.yaml`로 복사해 계정 이름과 `theme`을 바꾸세요. 프리셋은 `forest`(크림·초록), `ink`(남색·블루), `coral`(크림·코랄)입니다. `colors: {accent: '#007F73'}`처럼 색 일부를 덮어쓸 수도 있습니다. 폰트·피드·사용자 이미지·음원의 상대 경로는 설정 파일 위치 기준입니다. 기본은 `llm.mode: offline`, `reel.tts: silent`입니다.
 
 ```bash
 python run_pipeline.py --offline --config config.yaml --output output/my-style
@@ -122,7 +122,7 @@ python run_pipeline.py --offline --config config.yaml --output output/my-style
 python run_pipeline.py --offline --feed fixtures/sample-feed.xml --output output/local-feed
 ```
 
-실제 RSS는 해당 제공자의 이용 조건을 먼저 확인한 뒤 본인이 고른 URL로 수집하세요. `--online`은 RSS 수집만 허용하며 LLM·TTS·게시 호출을 켜지 않습니다. 오프라인 플래그와 동시에 쓸 수 없습니다.
+실제 RSS는 해당 제공자의 이용 조건을 먼저 확인한 뒤 본인이 고른 URL로 수집하세요. `--online`은 RSS URL과 설정에서 명시적으로 선택한 TTS 플러그를 허용합니다. LLM API는 `llm.mode: api`와 별도 `--allow-api`도 필요합니다. 게시 호출은 켜지 않습니다. `--offline`과 동시에 쓸 수 없으며 오프라인 실행에서는 API·TTS 플러그를 차단합니다.
 
 ```text
 python run_pipeline.py --online --feed "이용 허락을 확인한 RSS URL" --output output/my-news
@@ -138,6 +138,78 @@ python write_copy.py output/manual/news.json --output output/manual/copy.json
 python render_cards.py output/manual/copy.json --output output/manual/cards
 python make_reel.py output/manual/copy.json --cards output/manual/cards --output output/manual
 ```
+
+## 카드 문안·이미지 편집 (7장)
+
+`copy.json`은 **표지 cover → 본문 body → 마무리 closing** 순서입니다. 표지는 큰 헤드라인·브랜딩, 본문은 번호가 붙은 요점 1~3개, 마무리는 출처·저장/공유 안내·계정명을 보여 줍니다. 제목과 요점에 `**핵심 구문**`을 쓰면 강조색이 적용됩니다. 본문 카드는 `body` 대신 **`points` 배열**을 화면에 표시하므로 두 값을 함께 편집하세요. `subtitle`은 영상 자막·내레이션 대본입니다.
+
+사진을 쓸 표지·본문 scene에 `"image": "assets/my-photo.jpg"`를 추가하세요. 파일은 사용자가 직접 제공해야 하며 자동 검색·다운로드하지 않습니다. 사진은 슬롯을 채우도록 중앙을 기준으로 잘릴 수 있습니다. image를 생략하면 자체 기하 패턴을 그립니다. 사진을 생성한 결과라고 표시하지 않습니다. 합성 피드일 때만 카드 하단에 작은 **합성 데이터 · 실제 뉴스 아님** 표시를 유지하며, 실제 RSS 카드에는 합성 표시를 넣지 않습니다.
+
+수정 후 `run_pipeline.py render 출력폴더`로 재생성하고 다시 검수하세요. 출력 폴더의 `config.json`이 설정 스냅샷입니다. 기존 실행의 테마를 바꾸려면 config.json의 `colors`를 수정하세요. config.yaml의 theme 변경은 **새 실행**부터 반영됩니다.
+
+## LLM 연결: 세 가지 경로 (6장)
+
+모든 경로는 같은 `copy.json` 구조를 씁니다. **기본 offline**은 규칙 기반 후보 추출입니다. 키·모델·결제 없이 끝까지 실행할 수 있습니다.
+
+**prompt: API 결제 없이 웹 채팅을 사용하는 경로.** 아래 명령은 LLM을 호출하지 않고 원자료·출력 JSON 예시를 포함한 `prompt.md`를 만듭니다. ChatGPT/Claude/Gemini 등 본인이 이용 가능한 웹 채팅에 내용을 직접 붙여 넣으세요. 웹 서비스의 무료 이용 한도와 데이터 처리 조건은 각 서비스에서 확인하세요([AI-01·06](../research/FACT-SHEET.md)). 답변의 **전체 JSON 객체**를 메모장으로 `output/manual/copy.json`에 저장합니다. 코드 울타리나 설명 문장은 제외하세요.
+
+```bash
+python fetch_news.py --output output/manual/news.json
+python write_copy.py output/manual/news.json --mode prompt --template cards --output output/manual/copy.json
+python write_copy.py output/manual/news.json --validate --output output/manual/copy.json
+```
+
+`prompts/`에는 [카드 문안](prompts/cards.md), [릴스 대본](prompts/reel-script.md), [캡션+해시태그](prompts/caption.md) 3종이 있습니다. `--template`을 `cards` / `reel-script` / `caption`으로 선택하세요. 각 템플릿은 사실 추가 금지·원출처 유지·과장 금지를 요구합니다. 모두 전체 JSON을 반환하는 계약입니다. 단계마다 이전에 편집한 문안을 유지하려면 웹 채팅에 **현재 copy.json도 함께 제공**하고 변경할 필드만 지정하세요. 프롬프트 생성은 기존 copy.json을 덮어쓰지 않습니다.
+
+파이프라인에 이어 붙이려면 config.yaml에 `llm.mode: prompt`를 지정한 뒤 실행하세요.
+
+```bash
+python run_pipeline.py --offline --config config.yaml --output output/web-chat
+```
+
+`news.json`, `config.json`, `prompt.md`만 만들고 **문안 대기**에서 멈춥니다. 웹 채팅 답변을 `output/web-chat/copy.json`에 저장한 다음:
+
+```bash
+python write_copy.py output/web-chat/news.json --validate --output output/web-chat/copy.json
+python run_pipeline.py render output/web-chat
+```
+
+구조 검증은 필수 필드·자료형·레이아웃 순서·요점 수·합성 표시·원출처 링크 보존을 검사합니다. **허위 사실·왜곡·저작권 적합성을 자동 판별하지 않습니다.** 렌더링도 구조와 원출처를 다시 검증하며 승인 전에는 게시되지 않습니다.
+
+**api: 선택한 OpenAI 호환 엔드포인트.** 기본 비활성이며 `--mode api --allow-api`를 모두 지정해야 요청합니다. SDK 추가 설치 없이 `POST /chat/completions`의 model/messages와 choices/message/content JSON 형식을 사용합니다. 모델명은 하드코딩하지 않습니다. 키만 설정해도 호출되지는 않습니다. 이 연결 형식은 [공식 OpenAI 문서](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create)를 확인했으며, 호환 서비스별 지원·가격·품질을 검증한 것은 아닙니다. 이 작업의 테스트는 **모킹만** 사용했습니다.
+
+본인 운영체제에서 `LLM_BASE_URL`(예: 선택한 서버의 HTTPS `/v1` 주소), `LLM_API_KEY`, `LLM_MODEL` 환경변수를 설정하세요. 실제 키는 코드·설정·명령 예시·Git에 적지 않습니다. `.env`는 자동으로 읽지 않습니다. 유료 서비스일 수 있으므로 공급자의 이용 조건과 비용을 확인한 경우에만 실행하세요. 이번 작업에서는 키를 사용하거나 결제하지 않았습니다.
+
+```bash
+python write_copy.py output/manual/news.json --mode api --allow-api --output output/manual/copy.json
+```
+
+실패·중단·JSON 형식 오류·출처 누락은 오류로 종료하며 기존 copy.json은 보존합니다. 응답 전문과 인증 값은 출력하지 않습니다. 파이프라인에서 API를 쓰려면 config.yaml의 `llm.mode: api`에 더해 `run_pipeline.py --online --allow-api --config config.yaml --output output/api-practice`가 필요합니다. 무료 웹 채팅과 API 비용은 별개입니다.
+
+## 움직이는 릴스와 음성 선택 (8장)
+
+릴스에는 카드별 페이드 전환, 느린 줌/팬, 아래 자막의 페이드·슬라이드 등장, 전체 진행 막대가 있습니다. 별도 자막 영역을 두어 카드 움직임과 자막을 분리합니다. 장면 길이는 균등 배분되며 전체 길이는 24fps 프레임 단위로 반올림됩니다.
+
+**이 예제는 연습용이며 수익화 적격을 보장하지 않습니다. 직접 촬영·내레이션 같은 독창적 요소를 더하세요.** 2026년 10월 조사 기준, [META-06](../research/FACT-SHEET.md)의 정적 영상·슬라이드쇼·반복 영상·텍스트 몽타주 제한을 고려해야 합니다. 이 항목은 Hermes의 원문 일부 확인 보고이며 Codex의 독립 본문 확인에는 한계가 있습니다. 모션·TTS를 추가했다는 사실만으로 이 제한을 벗어났다고 판단하면 안 됩니다. [ALG-03·04](../research/FACT-SHEET.md)에 따라 단순 연결·장식과 실질적 독창성을 구분하고, 게시 허용·추천·수익화 적격도 각각 확인하세요.
+
+**기본은 무음+자막입니다. 가장 권장하는 음성은 본인이 직접 녹음한 내레이션**입니다. 본인의 말과 목소리로 녹음하면 별도 TTS 모델·타인 화자의 권리를 도입하지 않아도 됩니다. 녹음에 타인의 음원·목소리·글이 섞이면 해당 권리는 별도로 확인해야 합니다. config.yaml 예:
+
+```yaml
+reel:
+  duration: 20
+  tts: silent
+  narration: assets/my-narration.wav  # mp3도 가능
+  music: null  # 사용자 제공 파일만. 필요하면 assets/my-music.mp3
+  tts_plugin: null
+```
+
+새 실행은 `python run_pipeline.py --offline --config config.yaml --output output/my-voice`로 만듭니다. 단계별 실행은 `python make_reel.py output/manual/copy.json --cards output/manual/cards --config config.yaml --output output/manual`입니다. 기존 실행에서는 출력 폴더 config.json의 reel 설정을 고친 뒤 render하세요. 경로는 config.json에서는 절대 경로를 쓰는 것이 편합니다.
+
+내레이션은 원래 음량, 음악은 0.18배로 믹싱하고 클리핑을 제한합니다. 음악은 **사용자 제공 mp3/wav만** 받으며 자동 검색·생성·다운로드하지 않습니다. 짧은 음원은 남은 시간을 무음으로 채우고 긴 음원은 영상 끝에서 자릅니다. 음원을 반복하지 않습니다. 대본의 장면별 시간에 맞춰 녹음하고, 완성 영상을 들으며 타이밍을 직접 확인하세요. 자동 음성 인식·단어 정렬은 지원하지 않습니다.
+
+**TTS는 사용자가 선택하는 플러그**입니다. `reel.tts: plugin`, `reel.tts_plugin: my_voice:synthesize`, `narration: null`로 설정합니다. [연결 계약과 예제](tts_backends/README.md)를 따라 본인이 검토한 모듈을 작성하세요. 엔진 코드·모델·화자 동의·상업용 출력물의 라이선스 확인 책임은 사용자에게 있습니다([VIDEO-01~04·10](../research/FACT-SHEET.md)). 기본 백엔드·모델·서비스는 동봉하지 않으며 자동 다운로드도 없습니다. 플러그는 오프라인 pipeline run에서 차단됩니다. 별도 make_reel 또는 명시적 render는 선택한 플러그를 실행합니다.
+
+사용 음원은 출력 폴더 `audio/`에 복사되어 검수·승인 해시에 포함됩니다. REVIEW.md의 **내레이션·배경음악·TTS 라이선스 체크박스**를 확인하세요. 사실적으로 들리는 합성 음성이나 생성·변형한 실사형 영상을 사용하면 [LABEL-03](../research/FACT-SHEET.md)의 AI 자기공개 필요 여부도 검토하세요(2026년 10월 조사 기준). 합성 피드 표시와 Meta의 AI 정보 자기공개는 서로 다른 표시입니다.
 
 ## 6. 실제 게시 기능의 경계
 
@@ -176,7 +248,7 @@ python -m pip install --cache-dir .cache/pip -r requirements-dev.txt
 python -m pytest -q
 ```
 
-테스트는 외부 네트워크 호출을 차단한 상태에서 생성→검수 대기→테스트용 검수표 확인 처리→승인→드라이런까지 수행합니다. MP4를 실제 디코딩해 크기·프레임 수·코덱·오디오·길이를 검사합니다. 테스트의 자동 체크 처리는 테스트용이며 실제 검수는 사람이 해야 합니다.
+테스트는 외부 네트워크 호출을 차단한 상태에서 생성→검수 대기→테스트용 검수표 확인 처리→승인→드라이런까지 수행합니다. 세 레이아웃·테마·강조·사용자 이미지, 웹 채팅 프롬프트와 JSON 검증, 모킹한 API 성공/실패·인증 값 비노출, 직접 녹음 MP3·WAV 음악·믹싱·모킹한 TTS 플러그를 확인합니다. MP4를 실제 디코딩해 크기·프레임 수·코덱·오디오·길이를 검사합니다. 테스트의 자동 체크 처리는 테스트용이며 실제 검수는 사람이 해야 합니다.
 
 [samples/README.md](samples/README.md)에 동봉 샘플의 생성 명령과 크기를 기록했습니다. 검증 환경: Ubuntu 22.04 x86_64, Python 3.11.15. Windows/macOS 명령은 안내했으며 해당 OS에서 실제 실행하지 않았습니다.
 
@@ -190,12 +262,12 @@ python -m pytest -q
 | PowerShell에서 활성화 차단 | 명령 프롬프트(cmd)로 실행하거나 `.venv\Scripts\python.exe`를 직접 사용 |
 | `No module named venv` / `ensurepip` 오류 | 배포판의 Python venv 구성 안내 확인. 시스템 설치를 키트가 자동 시도하지 않음 |
 | `[Errno 17] File exists` | 같은 출력 폴더가 존재함. `--output output/second-practice`처럼 새 이름 사용 |
-| `REVIEW.md` 다섯 칸 오류 | 결과물을 확인한 후 모든 `- [ ]`를 `- [x]`로 저장하고 approve |
+| `REVIEW.md` 여섯 칸 오류 | 결과물을 확인한 후 모든 `- [ ]`를 `- [x]`로 저장하고 approve |
 | `검수 대상이 바뀌었거나 없습니다` | copy.json 변경 뒤 render 실행, 새 검수표 확인 후 다시 approve |
 | 글이 영역을 넘침 | copy.json의 긴 제목·본문·출처를 줄인 후 render. 의미·조건·출처 링크는 보존 |
 | 폰트를 열 수 없음 | `assets/fonts/NotoSansKR.ttf`가 있는지 확인. ZIP 전체를 풀고 폰트 경로 확인 |
 | FFmpeg를 찾지 못함 / 영상 생성 실패 | imageio-ffmpeg 재설치와 지원 OS/CPU 확인. 시스템 ffmpeg 설치를 자동 시도하지 않음. 오류 내용을 검수자에게 전달 |
-| 영상은 나오는데 소리가 없음 | 정상: 기본 경로는 무음+자막. TTS 미실행 |
+| 영상은 나오는데 소리가 없음 | 기본은 무음+자막. 음성을 원하면 위의 narration 또는 명시적 TTS 설정 확인 |
 | 오프라인에서 URL 거부 | 동봉 로컬 피드를 사용. 실제 RSS만 필요하면 이용 허락 확인 후 --online |
 | RSS 2.0 형식 오류 | Atom·일반 웹페이지가 아닌 channel/item 구조의 RSS XML인지 확인 |
 | MP4 플레이어가 안 열림 | H.264/AAC MP4를 지원하는 로컬 플레이어로 열기. 우선 동봉 samples/reel.mp4 확인 |

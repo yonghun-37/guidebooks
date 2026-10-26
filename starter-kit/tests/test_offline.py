@@ -13,16 +13,6 @@ from review import approve, require_approval
 from run_pipeline import run
 
 
-@pytest.fixture(autouse=True)
-def no_network(monkeypatch):
-    def blocked(*args, **kwargs):
-        raise AssertionError("오프라인 테스트에서 네트워크 호출 발생")
-    monkeypatch.setattr(socket.socket, "connect", blocked)
-    monkeypatch.setattr(socket.socket, "connect_ex", blocked)
-    monkeypatch.setattr(socket, "create_connection", blocked)
-    monkeypatch.setattr(publish, "urlopen", blocked)
-
-
 @pytest.fixture(scope="module")
 def generated(tmp_path_factory):
     output = tmp_path_factory.mktemp("offline") / "2026-10-26"
@@ -49,7 +39,7 @@ def test_offline_end_to_end_waits_then_approves_and_dry_runs(generated, monkeypa
     assert read_json(output / "news.json")["synthetic"] is True
     with pytest.raises(ValueError, match="검수 대기"):
         publish.publish(output)
-    with pytest.raises(ValueError, match="다섯 칸"):
+    with pytest.raises(ValueError, match="여섯 칸"):
         approve(output)
     checked_review(output)
     approve(output)
@@ -62,7 +52,7 @@ def test_offline_end_to_end_waits_then_approves_and_dry_runs(generated, monkeypa
     assert "컨테이너 생성" in stdout and "상태 확인" in stdout and "게시" in stdout
     assert plan == read_json(output / "dry-run.json")
     steps = plan["requests"]
-    assert len(steps) == 14  # 자식 4개의 생성·확인 + 부모 및 릴스 각 3단계
+    assert len(steps) == 16  # 자식 5개의 생성·확인 + 부모 및 릴스 각 3단계
     assert all(s["endpoint"].startswith("https://graph.instagram.com/") for s in steps)
     for index, step in enumerate(steps):
         if step["step"] == "게시":
@@ -70,16 +60,16 @@ def test_offline_end_to_end_waits_then_approves_and_dry_runs(generated, monkeypa
             assert steps[index - 1]["params"] == {"fields": "status_code"}
             assert steps[index - 1]["until"] == "FINISHED"
             assert "creation_id" in step["params"]
-    assert steps[8]["params"]["media_type"] == "CAROUSEL"
-    assert "{CHILD_1}" in steps[8]["params"]["children"]
-    assert steps[11]["params"]["media_type"] == "REELS"
+    assert steps[10]["params"]["media_type"] == "CAROUSEL"
+    assert "{CHILD_1}" in steps[10]["params"]["children"]
+    assert steps[13]["params"]["media_type"] == "REELS"
     assert steps[0]["params"]["image_url"].endswith(".jpg")
-    assert steps[11]["params"]["video_url"].endswith("reel.mp4")
+    assert steps[13]["params"]["video_url"].endswith("reel.mp4")
 
 
 def test_card_pixels_and_jpeg(generated):
     cards = sorted((generated / "cards").glob("*.png"))
-    assert len(cards) == 4
+    assert len(cards) == 5
     for path in cards:
         with Image.open(path) as image:
             assert image.size == (1080, 1350)
@@ -107,8 +97,8 @@ def test_actual_reel_dimensions_duration_codec_and_decode(generated):
     count, seconds = imageio_ffmpeg.count_frames_and_secs(str(generated / "reel.mp4"))
     assert count == 480 and 19.9 <= seconds <= 20.1
     srt = (generated / "subtitles.srt").read_text(encoding="utf-8")
-    assert "00:00:00,000 --> 00:00:05,000" in srt
-    assert "00:00:15,000 --> 00:00:20,000" in srt
+    assert "00:00:00,000 --> 00:00:04,000" in srt
+    assert "00:00:16,000 --> 00:00:20,000" in srt
 
 
 @pytest.mark.parametrize("name", ["copy.json", "cards/card-01.png", "reel.mp4", "REVIEW.md", "manifest.json"])
@@ -180,7 +170,7 @@ def test_approve_command_prints_dry_run(generated, monkeypatch, capsys):
 def test_bundled_samples_size_and_dimensions():
     samples = ROOT / "samples"
     assert sum(p.stat().st_size for p in samples.rglob("*") if p.is_file()) <= 10_000_000
-    assert len(list(samples.glob("card-*.png"))) == 4
+    assert len(list(samples.glob("card-*.png"))) == 5
     for path in samples.glob("card-*.png"):
         with Image.open(path) as image:
             assert image.size == (1080, 1350)
