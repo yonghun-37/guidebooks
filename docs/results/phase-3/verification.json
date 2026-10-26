@@ -1,0 +1,209 @@
+{
+  "testedAt": "2026-10-26T00:16:41.895Z",
+  "browser": "149.0.7827.55",
+  "checks": [
+    "no horizontal overflow: index.html @1280",
+    "no horizontal overflow: chapters/01-map.html @1280",
+    "no horizontal overflow: chapters/coming-soon.html?chapter=02-formats @1280",
+    "no horizontal overflow: lab.html @1280",
+    "no horizontal overflow: glossary.html @1280",
+    "no horizontal overflow: credits.html @1280",
+    "no horizontal overflow: index.html @375",
+    "no horizontal overflow: chapters/01-map.html @375",
+    "no horizontal overflow: chapters/coming-soon.html?chapter=02-formats @375",
+    "no horizontal overflow: lab.html @375",
+    "no horizontal overflow: glossary.html @375",
+    "no horizontal overflow: credits.html @375",
+    "no horizontal overflow: index.html @360",
+    "no horizontal overflow: chapters/01-map.html @360",
+    "no horizontal overflow: chapters/coming-soon.html?chapter=02-formats @360",
+    "no horizontal overflow: lab.html @360",
+    "no horizontal overflow: glossary.html @360",
+    "no horizontal overflow: credits.html @360",
+    "nine blocks in chapter, in order",
+    "single dataset: 16 chapters plus credits, only chapter 1 complete",
+    "map detail, tools, budget, related links: source",
+    "one pressed pipeline button: source",
+    "map detail, tools, budget, related links: copy",
+    "one pressed pipeline button: copy",
+    "map detail, tools, budget, related links: make",
+    "one pressed pipeline button: make",
+    "map detail, tools, budget, related links: review",
+    "one pressed pipeline button: review",
+    "map detail, tools, budget, related links: publish",
+    "one pressed pipeline button: publish",
+    "map detail, tools, budget, related links: analyze",
+    "one pressed pipeline button: analyze",
+    "map detail, tools, budget, related links: revenue",
+    "one pressed pipeline button: revenue",
+    "map ArrowRight changes focus and detail",
+    "map End key",
+    "map Home/Enter",
+    "budget 0h = 0 posts",
+    "budget result text 0h",
+    "budget 0.5h = 0 posts",
+    "budget result text 0.5h",
+    "budget 1h = 0 posts",
+    "budget result text 1h",
+    "budget 1.5h = 2 posts",
+    "budget result text 1.5h",
+    "budget 3h = 8 posts",
+    "budget result text 3h",
+    "budget 5h = 17 posts",
+    "budget result text 5h",
+    "range native keyboard updates output",
+    "checklist restored after reload",
+    "quiz wrong answer explanation and explicit correct answer",
+    "quiz correct answer and score",
+    "quiz reset",
+    "all four quiz answers and explanations",
+    "theme follows system dark",
+    "theme toggle overrides system",
+    "manual theme survives reload",
+    "theme can return to system",
+    "dark mobile no overflow",
+    "mobile menu opens",
+    "menu Escape closes and restores focus",
+    "term tooltip keyboard focus",
+    "term tooltip Escape dismisses",
+    "print hides simulators",
+    "copy success",
+    "clipboard exact memo content",
+    "clipboard denied: selectable fallback",
+    "46 unique local links/anchors return 200 and resolve",
+    "pending chapter title and next navigation from data",
+    "storage denied: checkbox still changes with message",
+    "storage denied: theme still toggles",
+    "storage denied: simulator still runs",
+    "corrupt stored JSON recovers",
+    "no JS: chapter body and fallback quiz readable",
+    "file protocol: navigation and simulator work",
+    "template has all nine blocks",
+    "template quiz engine works",
+    "seven HTML documents: lang, title, viewport, one main, unique IDs",
+    "console/page errors absent",
+    "failed network requests absent"
+  ],
+  "widths": [
+    {
+      "route": "index.html",
+      "viewport": 1280,
+      "client": 1280,
+      "scroll": 1280
+    },
+    {
+      "route": "chapters/01-map.html",
+      "viewport": 1280,
+      "client": 1280,
+      "scroll": 1280
+    },
+    {
+      "route": "chapters/coming-soon.html?chapter=02-formats",
+      "viewport": 1280,
+      "client": 1280,
+      "scroll": 1280
+    },
+    {
+      "route": "lab.html",
+      "viewport": 1280,
+      "client": 1280,
+      "scroll": 1280
+    },
+    {
+      "route": "glossary.html",
+      "viewport": 1280,
+      "client": 1280,
+      "scroll": 1280
+    },
+    {
+      "route": "credits.html",
+      "viewport": 1280,
+      "client": 1280,
+      "scroll": 1280
+    },
+    {
+      "route": "index.html",
+      "viewport": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "chapters/01-map.html",
+      "viewport": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "chapters/coming-soon.html?chapter=02-formats",
+      "viewport": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "lab.html",
+      "viewport": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "glossary.html",
+      "viewport": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "credits.html",
+      "viewport": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "index.html",
+      "viewport": 360,
+      "client": 360,
+      "scroll": 360
+    },
+    {
+      "route": "chapters/01-map.html",
+      "viewport": 360,
+      "client": 360,
+      "scroll": 360
+    },
+    {
+      "route": "chapters/coming-soon.html?chapter=02-formats",
+      "viewport": 360,
+      "client": 360,
+      "scroll": 360
+    },
+    {
+      "route": "lab.html",
+      "viewport": 360,
+      "client": 360,
+      "scroll": 360
+    },
+    {
+      "route": "glossary.html",
+      "viewport": 360,
+      "client": 360,
+      "scroll": 360
+    },
+    {
+      "route": "credits.html",
+      "viewport": 360,
+      "client": 360,
+      "scroll": 360
+    }
+  ],
+  "localLinkCount": 46,
+  "errors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "desktop-chapter.png",
+    "desktop-cover.png",
+    "desktop-pipeline.png",
+    "mobile-chapter.png",
+    "mobile-cover.png",
+    "mobile-dark-budget.png",
+    "mobile-pipeline.png"
+  ]
+}

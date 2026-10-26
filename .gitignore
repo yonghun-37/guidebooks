@@ -1,0 +1,5 @@
+logs/
+starter-kit/.venv/
+starter-kit/output/
+__pycache__/
+node_modules/
