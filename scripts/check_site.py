@@ -139,14 +139,14 @@ def check(root=None, site='site'):
         errors.append('용어집 없음: site/glossary.html')
     for path, page in pages.items():
         label = str(path.relative_to(root))
-        theory = path.parent == root / site / 'chapters' and re.match(r'(0[2-9]|1[0-4])-', path.name) is not None
+        theory = path.parent == root / site / 'chapters' and ((shorts and re.match(r'\d{2}[a-z]?-', path.name) is not None) or (not shorts and (re.match(r'(0[2-9]|1[0-4])-', path.name) is not None or path.name == '05b-ai-tools.html')))
         if theory:
             chapters += 1
             blocks = tuple(a['data-block'] for _, a in page.nodes if 'data-block' in a)
             if blocks != BLOCKS:
                 errors.append(f'{label}: 9단계 블록 누락·중복·순서 오류 ({", ".join(blocks)})')
-        theory_quiz = path.parent == root / site / 'chapters' and re.match(r'(0[1-9]|1[0-4])-', path.name) is not None
-        quiz_issues, question_count = quiz_errors(page, theory_quiz)
+        theory_quiz = path.parent == root / site / 'chapters' and (re.match(r'(0[1-9]|1[0-4])-', path.name) is not None or path.name == '05b-ai-tools.html')
+        quiz_issues, question_count = quiz_errors(page, theory if shorts else theory_quiz)
         questions += question_count
         errors.extend(f'{label}: {issue}' for issue in quiz_issues)
         for id_, count in Counter(a['id'] for _, a in page.nodes if 'id' in a).items():
@@ -199,16 +199,17 @@ def check(root=None, site='site'):
                     errors.append(f'{label}: 잘못된 참조 {href} ({exc})')
         source_refs += len(cited)
         errors.extend(f'{label}: 미등록 출처 {source}' for source in sorted(cited - sources))
-    if not shorts and chapters != 13:
-        errors.append(f'이론 2~14장 필요 (현재 {chapters}개)')
+    if not shorts and chapters != 14:
+        errors.append(f'이론 2~15장 필요 (현재 {chapters}개)')
     catalog = []
     try:
-        catalog_text = (root / site / 'assets/catalog.js').read_text(encoding='utf-8') if not shorts else 'Object.freeze([]);'
+        catalog_path = root / site / 'assets/catalog.js'
+        catalog_text = catalog_path.read_text(encoding='utf-8') if catalog_path.exists() or not shorts else 'Object.freeze([]);'
         catalog = json.loads(catalog_text.split('Object.freeze(', 1)[1].rsplit(');', 1)[0])
         if not isinstance(catalog, list):
             raise ValueError('도구 목록은 배열이어야 합니다')
         for tool in catalog:
-            path = root / site / (f'chapters/{tool["slug"]}.html' if tool['chapter'] != 15 else 'lab.html')
+            path = root / site / (f'chapters/{tool["slug"]}.html' if tool['slug'] != 'lab' else 'lab.html')
             if tool['id'] not in ids.get(path, set()):
                 errors.append(f'도구 목록: 없는 도구 {tool["slug"]}#{tool["id"]}')
     except (OSError, ValueError, IndexError, KeyError, TypeError) as exc:
@@ -220,7 +221,7 @@ def check(root=None, site='site'):
     for key, count in Counter(original_keys).items():
         if count > 1:
             errors.append(f'중복 실습 진행 키 {key}')
-    if not shorts and (not steps or None in steps or '' in steps or steps != set(e2e_keys)):
+    if (not shorts or e2e_page is not None) and (not steps or None in steps or '' in steps or steps != set(e2e_keys)):
         errors.append('실습 단계와 E2E 진행 키 불일치')
     sizes = dict(site=0, shelf=0, samples=0, **({'site-shorts': 0} if (root / 'site-shorts').exists() else {}))
     extensions = Counter()

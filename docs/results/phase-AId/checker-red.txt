@@ -1,0 +1,30 @@
+F.F.............
+======================================================================
+FAIL: test_ai_tools_chapter_is_required_and_checked (test_check_site.CheckSiteTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yonghun/project/ai-insta/scripts/tests/test_check_site.py", line 93, in test_ai_tools_chapter_is_required_and_checked
+    self.assert_error('9단계 블록')
+  File "/home/yonghun/project/ai-insta/scripts/tests/test_check_site.py", line 50, in assert_error
+    self.assertTrue(any(fragment in error for error in self.check()['errors']), self.check()['errors'])
+AssertionError: False is not true : []
+
+======================================================================
+FAIL: test_catalog_distinguishes_plan_15_from_lab_16_by_slug (test_check_site.CheckSiteTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yonghun/project/ai-insta/scripts/tests/test_check_site.py", line 103, in test_catalog_distinguishes_plan_15_from_lab_16_by_slug
+    self.assertEqual(self.check()['errors'], [])
+AssertionError: Lists differ: ['도구 목록: 없는 도구 14-plan#planner-sim', '도구 목록: 없는 도구 lab#month-scenario'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'도구 목록: 없는 도구 14-plan#planner-sim'
+
+- ['도구 목록: 없는 도구 14-plan#planner-sim', '도구 목록: 없는 도구 lab#month-scenario']
++ []
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.494s
+
+FAILED (failures=2)

@@ -30,6 +30,7 @@ class CheckSiteTests(unittest.TestCase):
             body = ''.join(f'<section data-block="{block}" id="{block}"></section>' for block in BLOCKS)
             body += QUIZ.format(questions=QUESTION * 3)
             self.write(f'site/chapters/{chapter:02}-test.html', body)
+        self.write('site/chapters/05b-ai-tools.html', body)
         self.write('site/practice/00-start.html', '<input data-practice-check="0:start">')
         self.write('site/practice/e2e.html', '<input data-practice-check="0:start">')
         self.write('shelf/index.html', '<a href="reels/chapters/02-test.html#figure">시작</a>')
@@ -84,6 +85,22 @@ class CheckSiteTests(unittest.TestCase):
         self.assert_error('9단계 블록')
         path.write_text(original.replace('data-block="question"', 'data-block="figure"', 1).replace('data-block="figure" id="figure"', 'data-block="question" id="figure"', 1))
         self.assert_error('9단계 블록')
+
+    def test_ai_tools_chapter_is_required_and_checked(self):
+        path = self.root / 'site/chapters/05b-ai-tools.html'
+        original = path.read_text()
+        path.write_text(original.replace('data-block="question"', 'data-block="other"'))
+        self.assert_error('9단계 블록')
+        path.unlink()
+        self.assert_error('이론')
+
+    def test_catalog_distinguishes_plan_15_from_lab_16_by_slug(self):
+        (self.root / 'site/chapters/14-test.html').rename(self.root / 'site/chapters/14-plan.html')
+        plan = self.root / 'site/chapters/14-plan.html'
+        plan.write_text(plan.read_text() + '<section id="planner-sim"></section>')
+        self.write('site/lab.html', '<section id="month-scenario"></section>')
+        self.write('site/assets/catalog.js', 'Object.freeze([{"chapter":15,"slug":"14-plan","id":"planner-sim"},{"chapter":16,"slug":"lab","id":"month-scenario"}]);')
+        self.assertEqual(self.check()['errors'], [])
 
     def test_bad_quiz_options_explanation_and_question_count(self):
         for question in (QUESTION.replace('true', 'false'), QUESTION.replace('data-explanation="이용 근거를 확인합니다."', 'data-explanation=""'), QUESTION.replace('<button data-correct="false">사진 크기만</button>', ''), QUESTION.replace('이용 근거</button>', ' </button>')):

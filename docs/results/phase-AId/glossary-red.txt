@@ -1,0 +1,23 @@
+.F
+======================================================================
+FAIL: test_model_token_is_not_attached_to_login_token (test_build_appendices_reels.ReelsAppendicesTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yonghun/project/ai-insta/scripts/tests/test_build_appendices_reels.py", line 15, in test_model_token_is_not_attached_to_login_token
+    self.assertEqual(linker.edits, [])
+AssertionError: Lists differ: [(9, 11, '<a href="../glossary.html#token"[63 chars]a>')] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+(9, 11, '<a href="../glossary.html#token" data-term="token" data-term-description="AI가 사용량을 세는 단위.">토큰</a>')
+
++ []
+- [(9,
+-   11,
+-   '<a href="../glossary.html#token" data-term="token" '
+-   'data-term-description="AI가 사용량을 세는 단위.">토큰</a>')]
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (failures=1)

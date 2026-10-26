@@ -72,132 +72,146 @@ window.ReelsCatalog = Object.freeze([
   },
   {
     "chapter": 6,
-    "slug": "06-writing",
+    "slug": "05b-ai-tools",
     "id": "figure",
-    "title": "지시문 · 글의 역할 · 고쳐 쓰기",
+    "title": "다음 도구에는 이 파일을 넘깁니다",
     "section": "figure"
   },
   {
     "chapter": 6,
+    "slug": "05b-ai-tools",
+    "id": "ai-tools-sim",
+    "title": "도구 선택 도우미",
+    "section": "simulator"
+  },
+  {
+    "chapter": 7,
+    "slug": "06-writing",
+    "id": "figure",
+    "title": "서비스 선택 → 원문 요약 · 원문 대조 → 사실표 · 카드 문안 → 대본",
+    "section": "figure"
+  },
+  {
+    "chapter": 7,
     "slug": "06-writing",
     "id": "ch6-sim",
     "title": "빠진 기록을 찾으세요",
     "section": "simulator"
   },
   {
-    "chapter": 7,
+    "chapter": 8,
     "slug": "07-cards",
     "id": "figure",
-    "title": "역할 · 읽기 · 자산",
+    "title": "요약 → 원문 대조 · 템플릿 → 문안 배치 · 선택 삽화 → 검수",
     "section": "figure"
   },
   {
-    "chapter": 7,
+    "chapter": 8,
     "slug": "07-cards",
     "id": "ch7-sim",
     "title": "내 문안이 카드 안에 들어갈까요?",
     "section": "simulator"
   },
   {
-    "chapter": 8,
+    "chapter": 9,
     "slug": "08-reels",
     "id": "figure",
-    "title": "목소리 · 시간 · 권리·수익화",
+    "title": "카드 → 모션 · 대본 → 얼굴 없는 해설 · 프롬프트 → AI 영상",
     "section": "figure"
   },
   {
-    "chapter": 8,
+    "chapter": 9,
     "slug": "08-reels",
     "id": "ch8-sim",
-    "title": "자막을 재생하며 시간을 맞추세요",
+    "title": "자막 시간을 맞추세요",
     "section": "simulator"
   },
   {
-    "chapter": 9,
+    "chapter": 10,
     "slug": "09-pipeline",
     "id": "figure",
     "title": "자동 생성 · 사람 승인 · 실패·비용",
     "section": "figure"
   },
   {
-    "chapter": 9,
+    "chapter": 10,
     "slug": "09-pipeline",
     "id": "ch9-sim",
     "title": "가상 한 달 외부 비용",
     "section": "simulator"
   },
   {
-    "chapter": 10,
+    "chapter": 11,
     "slug": "10-publishing",
     "id": "figure",
     "title": "앱 · API · 예약 · 실패",
     "section": "figure"
   },
   {
-    "chapter": 10,
+    "chapter": 11,
     "slug": "10-publishing",
     "id": "publishing-sim",
     "title": "요청 성공과 게시 완료를 구별하세요",
     "section": "simulator"
   },
   {
-    "chapter": 11,
+    "chapter": 12,
     "slug": "11-analytics",
     "id": "figure",
     "title": "기록 · 비교 · 수정 · 빈칸",
     "section": "figure"
   },
   {
-    "chapter": 11,
+    "chapter": 12,
     "slug": "11-analytics",
     "id": "analytics-sim",
     "title": "도달 대비 저장·공유는 얼마인가요?",
     "section": "simulator"
   },
   {
-    "chapter": 12,
+    "chapter": 13,
     "slug": "12-safety",
     "id": "figure",
     "title": "권리 · 광고 · AI · 대응 · 세금",
     "section": "figure"
   },
   {
-    "chapter": 12,
+    "chapter": 13,
     "slug": "12-safety",
     "id": "safety-sim",
     "title": "증거를 먼저 고르고 판단하세요",
     "section": "simulator"
   },
   {
-    "chapter": 13,
+    "chapter": 14,
     "slug": "13-roadmap",
     "id": "figure",
     "title": "첫 독자 · 첫 협찬 · 월 목표 · 확장",
     "section": "figure"
   },
   {
-    "chapter": 13,
+    "chapter": 14,
     "slug": "13-roadmap",
     "id": "roadmap-sim",
     "title": "목표 금액에 필요한 제작 의뢰는 몇 건인가요?",
     "section": "simulator"
   },
   {
-    "chapter": 14,
+    "chapter": 15,
     "slug": "14-plan",
     "id": "figure",
     "title": "목표 · 시간 · 조정",
     "section": "figure"
   },
   {
-    "chapter": 14,
+    "chapter": 15,
     "slug": "14-plan",
     "id": "planner-sim",
     "title": "30일 동안 제작에 쓸 시간은 얼마인가요?",
     "section": "simulator"
   },
   {
-    "chapter": 15,
+    "chapter": 16,
     "slug": "lab",
     "id": "month-scenario",
     "title": "내 계정 한 달 시나리오",

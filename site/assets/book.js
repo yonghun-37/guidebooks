@@ -9,29 +9,32 @@
     [3, '03-revenue', '1부 · 이해하기', '돈은 네 갈래로 들어옵니다', '내 수익 경로와 오늘 할 일', '약 35분', '입문', '완성'],
     [4, '04-niche', '1부 · 이해하기', '니치와 계정 기획: 도울 독자를 좁힙니다', '계정 기획 시트', '약 40분', '입문', '완성'],
     [5, '05-sources', '2부 · 만들기', '소재 찾기: 뉴스 소싱과 저작권', '원문·권리·출처를 적은 소재 메모', '약 45분', '입문', '완성'],
-    [6, '06-writing', '2부 · 만들기', 'AI로 글쓰기: 카드 문안과 릴스 대본', '지시문과 사실 대조 항목', '약 55분', '입문 · 파일 편집', '완성'],
-    [7, '07-cards', '2부 · 만들기', '뉴스카드 디자인 자동화', '카드 정보 역할과 검수 기준', '약 50분', '입문 · 문안과 색 편집', '완성'],
-    [8, '08-reels', '2부 · 만들기', '릴스 자동 생성: 대본에서 영상까지', '대본·음성·자막의 검수 계획', '약 60분', '입문 · 영상 검수', '완성'],
-    [9, '09-pipeline', '3부 · 자동화', '파이프라인 잇기', '검수·실패 대응·외부 비용 메모', '약 60분', '입문 · 생성과 승인', '완성'],
-    [10, '10-publishing', '3부 · 자동화', '첫 게시와 예약 경로를 고릅니다', '게시 경로와 예약 확인 메모', '약 45분', '입문', '완성'],
-    [11, '11-analytics', '3부 · 자동화', '처음 볼 숫자와 다음 수정을 정합니다', '첫 주 지표와 다음 수정 메모', '약 30분', '입문', '완성'],
-    [12, '12-safety', '4부 · 지키기·벌기', '게시 전 권리·표시·대응을 정합니다', '게시 전 확인표와 대응 메모', '약 40분', '입문', '완성'],
-    [13, '13-roadmap', '4부 · 지키기·벌기', '첫 독자에서 첫 수익으로 이어갑니다', '첫 협찬 제안과 목표 거래 수', '약 35분', '입문', '완성'],
-    [14, '14-plan', '4부 · 지키기·벌기', '30일 동안 할 일을 내 시간에 맞춥니다', '내 달력과 주간 점검표', '약 25분', '입문', '완성'],
-    [15, 'lab', '실험실', '자동화 실험실', '그림·계산·연습 모음', '자유롭게', '입문', '완성'],
-    [16, 'glossary', '부록', '용어집', '용어 찾아보기', '자유롭게', '입문', '완성'],
+    [6, '05b-ai-tools', '2부 · 만들기', 'AI 도구 지도', '내 콘텐츠용 도구 조합과 월 예산 메모', '약 25분', '입문', '완성'],
+    [7, '06-writing', '2부 · 만들기', 'AI로 뉴스 요약·카드 문안 만들기', '확인한 사실표·카드 문안·대본', '약 55분', '입문 · 파일 편집', '완성'],
+    [8, '07-cards', '2부 · 만들기', '뉴스카드 제작 레시피', '서비스별 입력·출력과 카드 검수안', '약 50분', '입문 · 문안과 색 편집', '완성'],
+    [9, '08-reels', '2부 · 만들기', '릴스 제작 레시피 3종', '모션·해설·생성 영상의 제작안', '약 60분', '입문 · 영상 검수', '완성'],
+    [10, '09-pipeline', '3부 · 자동화', '파이프라인 잇기', '검수·실패 대응·외부 비용 메모', '약 60분', '입문 · 생성과 승인', '완성'],
+    [11, '10-publishing', '3부 · 자동화', '첫 게시와 예약 경로를 고릅니다', '게시 경로와 예약 확인 메모', '약 45분', '입문', '완성'],
+    [12, '11-analytics', '3부 · 자동화', '처음 볼 숫자와 다음 수정을 정합니다', '첫 주 지표와 다음 수정 메모', '약 30분', '입문', '완성'],
+    [13, '12-safety', '4부 · 지키기·벌기', '게시 전 권리·표시·대응을 정합니다', '게시 전 확인표와 대응 메모', '약 40분', '입문', '완성'],
+    [14, '13-roadmap', '4부 · 지키기·벌기', '첫 독자에서 첫 수익으로 이어갑니다', '첫 협찬 제안과 목표 거래 수', '약 35분', '입문', '완성'],
+    [15, '14-plan', '4부 · 지키기·벌기', '30일 동안 할 일을 내 시간에 맞춥니다', '내 달력과 주간 점검표', '약 25분', '입문', '완성'],
+    [16, 'lab', '실험실', '자동화 실험실', '그림·계산·연습 모음', '자유롭게', '입문', '완성'],
+    [17, 'glossary', '부록', '용어집', '용어 찾아보기', '자유롭게', '입문', '완성'],
+    [null, 'prompts', '부록', '프롬프트 모음', '작업별 복사용 프롬프트 6종', '자유롭게', '입문', '완성'],
+    [null, 'ai-models', '부록', 'AI 모델·사용처·비용 총정리', '모델·사용처·월 지출과 편당 비용', '자유롭게', '입문', '완성'],
     [null, 'credits', '부록', '출처·크레딧', '출처와 업데이트 기록', '자유롭게', '입문', '완성']
   ];
   const chapters = chapterRows.map(([number, slug, part, title, deliverable, duration = '추후 안내', difficulty = '추후 안내', status = '준비중']) =>
     Object.freeze({ number, slug, part, title, deliverable, duration, difficulty, status, track: 'theory' }));
   const practiceRows = [
-    ['00-start', '시작 전에', '오늘 할 경로와 준비물 메모', '약 10분'],
+    ['00-start', '오늘 만들 AI 콘텐츠 고르기', '오늘의 유형·서비스·시간·파일 보관 메모', '약 10분'],
     ['01-account', '테스트 계정과 보안 준비', '대상 계정 이름·공개 범위·복구 수단', '약 25분'],
-    ['02-setup', '키트 설치와 첫 실행', '카드·영상과 검수 대기 폴더', '약 35분'],
-    ['03-copy', '소재 고르기와 웹 채팅 문안', '원출처가 담긴 copy.json', '약 30분'],
-    ['04-cards', '뉴스카드 캐러셀 만들기', '순서와 글자를 확인한 JPEG 카드 묶음', '약 20분'],
-    ['05-reel', '본인 녹음과 릴스 만들기', '끝까지 재생해 본 reel.mp4', '약 25분'],
-    ['06-review', '게시 전 사람 검수', '검수표·APPROVED.json·드라이런', '약 20분'],
+    ['02-setup', '선택 · 키트 설치와 첫 실행', '카드·영상과 검수 대기 폴더', '약 35분'],
+    ['03-copy', 'ChatGPT로 뉴스 요약과 카드 문안 만들기', '원문과 대조한 cards.txt·출처·게시 설명문', '약 30분'],
+    ['04-cards', 'Canva로 4:5 뉴스카드 만들기', '1080×1350 카드 PNG/JPG 5장과 편집 원본', '약 30분'],
+    ['05-reel', 'CapCut으로 모션·해설 릴스 만들기', '검수한 reel.mp4·편집 원본·음성/자막/권리 메모', '모션 약 35분 / 해설 약 50분'],
+    ['06-review', '게시 전 사람 검수', '파일 검수·표시 메모 (키트는 승인·드라이런)', '약 20분'],
     ['07-publish', '앱으로 첫 게시하기', '직접 확인한 첫 게시물과 그 주소', '약 30분'],
     ['08-api', '선택 · API 자동 게시', '계정·권한·공개 URL을 확인한 요청 미리보기', '약 60분 이상 · 선택 심화'],
     ['09-schedule', '매일 생성 예약과 사람 승인', '매일 생성 설정·날짜별 폴더·검수와 게시 계획', '약 30분 + 다음 날 확인'],
@@ -44,12 +47,15 @@
     { id: 'theory', title: '(이론) 이론편', chapters },
     { id: 'practice', title: '(실습) 실습편', chapters: practice }
   ]);
+  const practiceRoute = practice.filter(chapter => !['02-setup', '08-api', '09-schedule'].includes(chapter.slug));
+  const sequenceFor = chapter => chapter.track === 'practice'
+    ? (['02-setup', '08-api', '09-schedule'].includes(chapter.slug) ? practice : practiceRoute) : chapters;
   const allChapters = [...chapters, ...practice];
   const prefix = new URL('.', location.href).href === root.href ? '' : '../';
   const url = path => prefix + path;
   const chapterUrl = chapter => {
     if (chapter.track === 'practice') return url(`practice/${chapter.slug}.html`);
-    if (['lab', 'glossary', 'credits'].includes(chapter.slug)) return url(`${chapter.slug}.html`);
+    if (['lab', 'glossary', 'prompts', 'ai-models', 'credits'].includes(chapter.slug)) return url(`${chapter.slug}.html`);
     return chapter.status === '완성' ? url(`chapters/${chapter.slug}.html`) : url(`chapters/coming-soon.html?chapter=${chapter.slug}`);
   };
   const byNumber = number => chapters.find(chapter => chapter.number === number);
@@ -60,7 +66,7 @@
   const selected = document.body.dataset.chapter === 'pending' ? new URLSearchParams(location.search).get('chapter') : document.body.dataset.chapter;
   const current = allChapters.find(chapter => chapter.slug === (document.body.dataset.practice || selected));
   const trackLinks = () => tracks.map(track => `<section><h3>${track.title}</h3><ol>${track.chapters.map(chapter => `<li>${link(chapter)}</li>`).join('')}</ol></section>`).join('') + `<p><a href="${url('practice/e2e.html')}">(실습) E2E 한눈에 보기</a></p>`;
-  document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.filter(c => c.number && c.status === '완성').length; });
+  document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.filter(c => /^\d/.test(c.slug) && c.status === '완성').length; });
   document.querySelectorAll('[data-practice-count]').forEach(node => { node.textContent = practice.length; });
   document.querySelectorAll('[data-sim-count]').forEach(node => { node.textContent = (window.ReelsCatalog || []).length; });
   window.ReelsBook = Object.freeze({ chapters: Object.freeze(chapters), practice: Object.freeze(practice), tracks, url, chapterUrl, byNumber });
@@ -87,7 +93,7 @@
     document.querySelectorAll('[data-chapter-title]').forEach(node => { node.textContent = label(current); });
     document.querySelectorAll('[data-chapter-kicker]').forEach(node => { node.textContent = `(${current.track === 'practice' ? '실습' : '이론'}) ${current.part}${current.number != null ? ' / ' + current.number : ''}`; });
     document.querySelectorAll('[data-chapter-meta]').forEach(meta => {
-      const sequence = current.track === 'practice' ? practice : chapters;
+      const sequence = sequenceFor(current);
       const previous = sequence[sequence.indexOf(current) - 1];
       meta.className = 'chapter-meta';
       meta.innerHTML = `<div class="deliverable"><dt>이 장을 마치면 만들어지는 것</dt><dd>${esc(current.deliverable)}</dd></div><div><dt>예상 소요 시간</dt><dd>${esc(current.duration)}${current.track === 'theory' ? ' · 읽기·메모, 연결 실습 별도' : ''}</dd></div><div><dt>난이도</dt><dd>${esc(current.difficulty)}</dd></div><div><dt>선행 장</dt><dd>${previous ? link(previous) : '없음 · 여기서 시작'}</dd></div>`;
@@ -103,7 +109,7 @@
       details.innerHTML = `<summary>이 장의 흐름 · ${blocks.length}단계</summary><nav aria-label="이 장의 흐름 (모바일)"><ol>${outline}</ol></nav>`;
     });
     document.querySelectorAll('[data-chapter-pager]').forEach(pager => {
-      const sequence = current.track === 'practice' ? practice : chapters;
+      const sequence = sequenceFor(current);
       const index = sequence.indexOf(current);
       const previous = sequence[index - 1], next = sequence[index + 1];
       pager.className = 'chapter-pager';
@@ -121,7 +127,7 @@
   }
   document.querySelectorAll('[data-site-footer]').forEach(footer => {
     footer.className = 'site-footer';
-    footer.innerHTML = `<span>ReelsBook · 작은 콘텐츠 작업실을 만드는 책</span><span><a href="${url('glossary.html')}">용어집</a> &nbsp; <a href="${url('credits.html')}">출처·크레딧</a></span>`;
+    footer.innerHTML = `<span>ReelsBook · 작은 콘텐츠 작업실을 만드는 책</span><span><a href="${url('glossary.html')}">용어집</a> &nbsp; <a href="${url('credits.html')}">출처·크레딧</a> &nbsp; <a href="${url('prompts.html')}">프롬프트 모음</a> &nbsp; <a href="${url('ai-models.html')}">모델·비용</a></span>`;
   });
 
   // 저장소 접근 자체도 실패할 수 있다. 테마와 체크 상태 모두 읽기/쓰기를 보호한다.

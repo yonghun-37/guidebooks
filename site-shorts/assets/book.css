@@ -406,3 +406,15 @@ input[type='checkbox'] { width: 19px; height: 19px; flex-shrink: 0; margin-top: 
   .chapter .simulator .field-grid label:has(textarea) { grid-column:1/-1; }
   .chapter .plan-calendar th,.chapter .plan-calendar td { padding:8px 3px; font-size:12px; }
 }
+
+/* 쇼츠 표지의 제작 진입과 실제 키트 샘플 */
+.entry-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.entry-grid > *, .sample-grid > * { min-width: 0; }
+.kit-preview { margin: 0; }
+.kit-preview video { display: block; width: min(100%, 260px); max-height: 460px; border-radius: 12px; background: #17121a; margin: 0 auto 16px; }
+.kit-preview figcaption { color: var(--muted); font-size: 14px; }
+#sim-picker { display: block; width: 100%; max-width: 100%; margin: 12px 0; padding: 12px; background: var(--surface); border: 1px solid var(--line); }
+.glossary-entry:target { scroll-margin-top: 110px; }
+@media (max-width: 800px) { .entry-grid { grid-template-columns: 1fr; } }
+/* 긴 정의가 오른쪽 본문 끝에서도 화면을 넓히지 않도록 같은 위치에 표시한다. */
+.term-tip { position: fixed; left: 22px; bottom: 24px; width: min(320px, calc(100vw - 44px)); }

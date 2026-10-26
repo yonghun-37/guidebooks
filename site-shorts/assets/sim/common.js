@@ -73,7 +73,7 @@
       render(element, text => { if (result) result.textContent = text; });
       if (savedIds.has(id)) {
         const notice = document.createElement('p'); notice.className = 'sim-assumptions'; notice.dataset.inputSaveStatus = ''; notice.setAttribute('role', 'status');
-        notice.textContent = saved ? '저장한 입력을 복원했습니다. 이 브라우저에서만 이어 씁니다.' : '초기 예시값입니다. 입력을 바꾸면 이 브라우저에 저장해 15장 한 달 시나리오에서 이어 씁니다.';
+        notice.textContent = saved ? '저장한 입력을 복원했습니다. 이 브라우저에서만 이어 씁니다.' : '초기 예시값입니다. 입력을 바꾸면 이 브라우저에 저장해 현재 브라우저에서 이어 씁니다.';
         element.append(notice);
         const save = () => {
           const values = Object.fromEntries(inputs.map(input => [input.id, input.value]));
@@ -81,7 +81,7 @@
           memory.set(id, state);
           let stored = true;
           try { localStorage.setItem(key(id), JSON.stringify(state)); } catch { stored = false; }
-          notice.textContent = stored ? '입력을 이 브라우저에 저장했습니다. 15장 한 달 시나리오에서 확인·삭제할 수 있습니다.' : '저장할 수 없는 환경입니다. 현재 화면의 계산은 계속 동작하며 페이지를 떠나면 입력이 이어지지 않습니다.';
+          notice.textContent = stored ? '입력을 이 브라우저에 저장했습니다. 같은 도구에서 이어 쓸 수 있습니다.' : '저장할 수 없는 환경입니다. 현재 화면의 계산은 계속 동작하며 페이지를 떠나면 입력이 이어지지 않습니다.';
           // 같은 출처의 실험실 프레임에 변경을 알린다. 파일 열기 제한은 직접 장 링크로 안내한다.
           try { if (window.parent !== window) window.parent.dispatchEvent(new Event('shortsbook:inputs')); } catch { /* 출처가 다르면 알림 생략 */ }
         };

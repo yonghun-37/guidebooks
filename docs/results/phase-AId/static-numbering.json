@@ -1,0 +1,22 @@
+{
+  "errors": [],
+  "metadata": {
+    "01-map": 1,
+    "02-formats": 2,
+    "03-revenue": 3,
+    "04-niche": 4,
+    "05-sources": 5,
+    "05b-ai-tools": 6,
+    "06-writing": 7,
+    "07-cards": 8,
+    "08-reels": 9,
+    "09-pipeline": 10,
+    "10-publishing": 11,
+    "11-analytics": 12,
+    "12-safety": 13,
+    "13-roadmap": 14,
+    "14-plan": 15,
+    "lab": 16,
+    "glossary": 17
+  }
+}

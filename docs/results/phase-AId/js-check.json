@@ -1,0 +1,152 @@
+[
+  {
+    "file": "site/assets/ai-guide.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/catalog.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/book.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/glossary.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/practice.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/lab.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/ch05.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/formats-guide.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/roadmap.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/safety.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/roadmap-v2.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/interactions.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/ch9-pipeline.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/publishing.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/analytics.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/plan-v2.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/ch8-reels.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/ch7-cards.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/ch03.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/ch6-writing.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/ch02.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/plan.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/map-guide.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/ch04.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/map.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/revenue-guide.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/niche-guide.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/analytics-v2.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/assets/sim/common.js",
+    "passed": true,
+    "stderr": ""
+  },
+  {
+    "file": "site/drafts/drafts.js",
+    "passed": true,
+    "stderr": ""
+  }
+]

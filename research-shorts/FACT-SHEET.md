@@ -93,6 +93,7 @@
 | YT-087 | Studio 예상 수익과 AdSense 최종 수입은 다를 수 있다. 최종 지급·원천징수 정보는 AdSense에서 확인한다. | [Y054](SOURCES.md#y054) | 이론10·13·14, 실습0·1·7·10 | 확인 | [16-tax-workflow](16-tax-workflow.md) |
 | YT-088 | 최소 게시 주기 의무가 없으므로 30일 운영은 수익·조회 목표 대신 제작 시간·권리·개선 내용을 기록하는 과제로 설계할 수 있다. | [Y002](SOURCES.md#y002) [Y055](SOURCES.md#y055) | 이론10·13·14, 실습0·1·7·10 | 공식근거+교육설계제안 | [16-tax-workflow](16-tax-workflow.md) |
 | YT-089 | 한국을 포함한 YPP 수익 창출자는 AdSense의 미국 세금 정보를 제출·점검해야 한다. 미국 원천징수와 한국 소득 신고를 같은 절차로 취급하지 않는다. | [Y091](SOURCES.md#y091) [Y057](SOURCES.md#y057) | 이론10·13·14, 실습0·1·7·10 | 직접 본문 확인 | [16-tax-workflow](16-tax-workflow.md) |
+| YT-090 | 권장 인코딩 도움말은 MP4/H.264·녹화 fps 유지·SDR 1080p 표준/높은 프레임 속도의 영상 비트레이트 8/12Mbps를 안내한다. 콘텐츠 관리자 전용 문구와 적용 범위를 함께 확인한다. | [Y003](SOURCES.md#y003) | 이론10, 실습7 | 기존 SOURCES의 직접 확인 기록을 옮김; 이번 통합의 새 조사 아님. 본문은 연습 선택으로 사용 | [Y003 상세 확인 기록](SOURCES.md#y003) |
 
 
 ## R3. AI 제작 도구와 제작 과정
@@ -135,7 +136,7 @@ AI 도구의 현행 선택·가격·종료·표시 판단에는 아래 R3 행과
 | YT-AIP-032 | Vrew 공식FAQ는 AI목소리의 상업/YouTube수익화를 허용하며 일본어Voicevox는 출처예외를 둔다. | [Y330](SOURCES.md#y330) | AI 도구지도·4~9·13, 실습0·2~7 | 직접 본문 | [공통 조사](../research/ai-production.md) |
 | YT-AIP-033 | YouTube Create는 무료/광고없음이며 일반편집은 한국 제공목록에 있다. 공식 자막 도움말은60초 초과 클립의 자막 생성 불가를 명시한다. | [Y331](SOURCES.md#y331) [Y332](SOURCES.md#y332) | AI 도구지도·4~9·13, 실습0·2~7 | 직접 본문·연결국가목록대조 | [공통 조사](../research/ai-production.md) |
 | YT-AIP-034 | Clipchamp 개인 무료 플랜은1080p·무워터마크·AI자막/음성을 포함한다. 프리미엄 자산/4K는 구별한다. | [Y334](SOURCES.md#y334) [Y335](SOURCES.md#y335) | AI 도구지도·4~9·13, 실습0·2~7 | 직접 본문 | [공통 조사](../research/ai-production.md) |
-| YT-AIP-035 | Clipchamp 자동자막은 언어 선택→전사→수정→SRT다운로드 순서이며 공식 TTS 글에는 한국어 선택 예시가 있다. 실제 음질/인식률은 미측정이다. | [Y335](SOURCES.md#y335) [Y385](SOURCES.md#y385) | AI 도구지도·4~9·13, 실습0·2~7 | 직접 본문·실측 아님 | [공통 조사](../research/ai-production.md) |
+| YT-AIP-035 | Clipchamp 자동자막은 언어 선택→전사→수정→SRT다운로드 순서이며 공식 TTS 글에는 한국어 선택 예시가 있다. 실제 음질/인식률은 미측정이다. | [Y066](SOURCES.md#y066) [Y335](SOURCES.md#y335) [Y385](SOURCES.md#y385) | AI 도구지도·4~9·13, 실습0·2~7 | 직접 본문·실측 아님 | [공통 조사](../research/ai-production.md) |
 | YT-AIP-036 | Resolve 무료판은 대부분8bit영상·최대UHD60fps를 안내한다. Studio의 전사/AI효과를 무료판 기능으로 묶지 않는다. | [Y333](SOURCES.md#y333) | AI 도구지도·4~9·13, 실습0·2~7 | 직접 본문 | [공통 조사](../research/ai-production.md) |
 | YT-AIP-037 | Flow 지원목록에는 한국과한국어가 있고18세이상이다. 최선 결과에는 영어 프롬프트를 권장한다. | [Y382](SOURCES.md#y382) | AI 도구지도·4~9·13, 실습0·2~7 | 직접 본문 | [공통 조사](../research/ai-production.md) |
 | YT-AIP-038 | Flow 크레딧/랜딩 페이지는 비구독자 일50크레딧을 안내하지만 시작 도움말은 AI 구독을 요구한다. 모든 한국 계정의 무료 생성 접근을 보장하지 않는다. | [Y342](SOURCES.md#y342) [Y343](SOURCES.md#y343) [Y375](SOURCES.md#y375) | AI 도구지도·4~9·13, 실습0·2~7 | 공식 본문 상충 | [공통 조사](../research/ai-production.md) |

@@ -68,6 +68,9 @@ class StyleLintTests(unittest.TestCase):
         row = self.analyze('<p>YT-001</p><sup class="footnote-ref">[Y001]</sup>')
         self.assertEqual(row['counts']['internal'], 1)
         self.assertEqual(row['matches']['internal'][0]['text'], 'YT-001')
+        row = self.analyze('<p>AIP-001</p><sup class="footnote-ref">[S300]</sup>')
+        self.assertEqual(row['counts']['internal'], 1)
+        self.assertEqual(row['matches']['internal'][0]['text'], 'AIP-001')
 
     def test_forbidden_table_phrases(self):
         text = ('지급자 대가 장부 현금 잔액 적격성 로컬 키트 계약 실측 아님 시간 배분 예시 탐색 후보 '

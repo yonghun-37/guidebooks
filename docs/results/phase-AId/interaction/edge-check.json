@@ -1,0 +1,21 @@
+{
+  "checks": 15,
+  "errors": [],
+  "details": [
+    "fallback font measured",
+    "fallback no overflow",
+    "source clipping measured",
+    "title clipping measured",
+    "empty content guided",
+    "exact shared boundary next scene",
+    "end stops at exact total",
+    "time editing during play pauses",
+    "blank time refused",
+    "failure retained in recovered log",
+    "evidence announced",
+    "one interpretation sentence",
+    "no JS explanation",
+    "no JS body retained",
+    "errors zero"
+  ]
+}

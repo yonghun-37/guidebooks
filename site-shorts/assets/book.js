@@ -9,212 +9,222 @@
     "01-map",
     "이론편",
     "쇼츠 한 편이 만들어지기까지",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "내 영상 제작 메모와 다음에 할 일",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     2,
     "02-revenue",
     "이론편",
     "쇼츠는 어떻게 보이고 무엇으로 돈이 되나",
-    "내 수익 경로와 지금 할 일",
+    "내 수익 경로와 참고 계산",
     "약 15분",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     3,
-    "03-hook",
+    "02b-ai-tools",
     "이론편",
-    "기획: 첫 3초와 한 편의 구조",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "AI 도구 지도",
+    "내 제작 경로와 도구·파일·비용 메모",
+    "약 15분",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     4,
-    "04-script",
+    "03-hook",
     "이론편",
-    "대본 쓰기와 AI 활용",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "기획: 첫 3초와 한 편의 구조",
+    "좁힌 주제와 첫 문장 두 안, 시작·과정·결과 메모",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     5,
-    "05-audio",
+    "04-script",
     "이론편",
-    "소리: 내레이션·TTS·음악",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "대본 쓰기와 AI 활용",
+    "읽기 시간을 확인한 대본과 말·장면·자막 메모",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     6,
-    "06-scenes",
+    "05-audio",
     "이론편",
-    "그림: 촬영·소재·AI 영상 생성",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "소리: 내레이션·TTS·음악",
+    "시험 녹음 비교와 소리 균형·음악 이용 조건 메모",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     7,
-    "07-editing",
+    "06-scenes",
     "이론편",
-    "편집: 컷·리듬·전환",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "그림: 촬영·소재·AI 영상 생성",
+    "촬영 장면과 소재 권리 메모",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     8,
-    "08-captions",
+    "07-editing",
     "이론편",
-    "자막과 화면 글자",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "편집: 컷·리듬·전환",
+    "컷·자막·소리 시간표",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     9,
-    "09-export",
+    "08-captions",
     "이론편",
-    "출력과 화질",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "자막과 화면 글자",
+    "읽기·가림·시간을 확인한 자막",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     10,
-    "10-templates",
+    "09-export",
     "이론편",
-    "자동화: 템플릿과 반복 제작",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "출력과 화질",
+    "원본과 비교한 출력 설정 메모",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     11,
-    "11-upload",
+    "10-templates",
     "이론편",
-    "업로드와 메타데이터",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "자동화: 템플릿과 반복 제작",
+    "다음 편에 재사용할 틀과 사람 검수표",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     12,
-    "12-analytics",
+    "11-upload",
     "이론편",
-    "분석: 숫자 읽기",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "업로드와 메타데이터",
+    "제목·설명·공개 범위·표시 설정 메모",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     13,
-    "13-policy",
+    "12-analytics",
     "이론편",
-    "정책·저작권·AI 표시·세금",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "분석: 숫자 읽기",
+    "같은 기간으로 읽은 지표와 다음 수정 한 가지",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     14,
-    "14-plan",
+    "13-policy",
     "이론편",
-    "30일 운영 계획",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "정책·저작권·AI 표시·세금",
+    "소재 권리·표시·수입 신고 확인 목록",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     15,
-    "lab",
+    "14-plan",
     "이론편",
-    "영상 실험실",
-    "내 영상 제작 메모",
-    "추후 안내",
+    "30일 운영 계획",
+    "제작 시간과 주간 점검을 나눈 30일 계획",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
-    16,
-    "glossary",
-    "이론편",
-    "용어집",
-    "내 영상 제작 메모",
-    "추후 안내",
+    null,
+    "lab",
+    "도구와 용어",
+    "영상 실험실",
+    "원본 도구로 비교한 제작 설정",
+    "내 속도로",
     "입문",
-    "준비중"
+    "완성"
+  ],
+  [
+    null,
+    "glossary",
+    "도구와 용어",
+    "용어집",
+    "용어 뜻과 처음 설명한 장",
+    "필요할 때",
+    "입문",
+    "완성"
   ]
 ];
-  const chapters = chapterRows.map(([number, slug, part, title, deliverable, duration = '추후 안내', difficulty = '추후 안내', status = '준비중']) =>
-    Object.freeze({ number, slug, part, title, deliverable, duration, difficulty, status, sample: number === 2, track: 'theory' }));
+  const chapters = chapterRows.map(([number, slug, part, title, deliverable, duration = '내 속도로', difficulty = '입문', status = '완성']) =>
+    Object.freeze({ number, slug, part, title, deliverable, duration, difficulty, status, sample: slug === '02-revenue', track: 'theory' }));
   const practiceRows = [
   [
     "00-start",
-    "시작 전에: 준비물, 오늘 끝나는 것",
-    "실습 원고 준비중",
-    "추후 안내"
+    "시작 전에: 오늘 만들 쇼츠 고르기",
+    "내 영상 유형·파일 폴더·오늘의 일정",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "01-account",
-    "구글 계정·유튜브 채널 만들기(연습 채널 포함), 2단계 인증",
-    "실습 원고 준비중",
-    "추후 안내"
+    "계정·연습 채널·보안",
+    "연습 채널과 계정 보호 설정",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "02-setup",
-    "도구 설치: 무료 편집 프로그램 1종 + 스타터 키트(쇼츠용)",
-    "실습 원고 준비중",
-    "추후 안내"
+    "ChatGPT와 편집기 준비",
+    "무료 AI 대화창·편집 프로젝트·선택 키트",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "03-script",
-    "대본 쓰기(웹 채팅 붙여넣기)",
-    "실습 원고 준비중",
-    "추후 안내"
+    "AI로 기획·대본 만들기",
+    "검수한 내 대본·장면표·제목·설명",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "04-voice",
-    "내레이션 녹음(휴대폰)",
-    "실습 원고 준비중",
-    "추후 안내"
+    "내 목소리 또는 AI 음성 만들기",
+    "재생 확인한 녹음/TTS 파일과 사용 조건 메모",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "05-scenes",
-    "장면 만들기: 폰 촬영 / 권리 확인 소재 / (선택) AI 생성",
-    "실습 원고 준비중",
-    "추후 안내"
+    "촬영·스톡·AI로 장면 만들기",
+    "내 장면 원본·샷 MP4·출처와 생성 이력",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "06-edit",
-    "편집과 자막",
-    "실습 원고 준비중",
-    "추후 안내"
+    "편집과 AI 자동 자막",
+    "말·장면·교정 자막이 맞는 편집 프로젝트",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "07-export",
-    "9:16 출력과 화질 확인",
-    "실습 원고 준비중",
-    "추후 안내"
+    "세로 출력·화질·AI 기록",
+    "검수한 세로 MP4와 AI 사용 기록",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "08-publish",
@@ -224,42 +234,52 @@
   ],
   [
     "09-api",
-    "(선택) YouTube Data API로 업로드: 프로젝트·OAuth·할당량·미검증 앱 제한",
-    "실습 원고 준비중",
-    "추후 안내"
+    "선택: Data API 업로드",
+    "선택한 API 설정과 비공개 시험·전송 결과",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ],
   [
     "10-insights",
-    "첫 24시간·7일 숫자 확인",
-    "실습 원고 준비중",
-    "추후 안내"
+    "첫 숫자 읽고 다음 영상 고치기",
+    "첫 기록표와 다음 영상의 수정 한 가지",
+    "내 속도로 · 실습 0에서 전체 일정 선택"
   ]
 ];
   const practice = practiceRows.map(([slug, title, deliverable, duration], number) => Object.freeze({
-    number, slug, title, deliverable, duration, track: 'practice', part: '실습편', difficulty: '입문', status: '준비중', sample: number === 8
+    number, slug, title, deliverable, duration, track: 'practice', part: '실습편', difficulty: '입문', status: '완성', sample: number === 8
   }));
+  practice.push(Object.freeze({number: null, slug: 'e2e', title: '한 편 완성 체크리스트', deliverable: '실습 확인 기록과 내 공개 주소', duration: '필요할 때', track: 'practice', part: '실습편', difficulty: '입문', status: '완성'}));
+  const appendices = [
+    ['prompts', '프롬프트 모음', '작업별 복사 지시문과 좋은·나쁜 예'],
+    ['ai-models', 'AI 모델·사용처·비용 총정리', '모델 검색과 한 편 비용 비교'],
+    ['credits', '출처·크레딧', '본문에서 실제 인용한 원문과 제작 고지']
+  ].map(([slug, title, deliverable]) => Object.freeze({number: null, slug, title, deliverable, duration: '필요할 때', track: 'appendix', part: '부록', difficulty: '입문', status: '완성'}));
   const tracks = Object.freeze([
     { id: 'theory', title: '(이론) 이론편', chapters },
-    { id: 'practice', title: '(실습) 실습편', chapters: practice }
+    { id: 'practice', title: '(실습) 실습편', chapters: practice },
+    { id: 'appendix', title: '부록', chapters: appendices }
   ]);
-  const allChapters = [...chapters, ...practice];
+  const allChapters = [...chapters, ...practice, ...appendices];
   const prefix = new URL('.', location.href).href === root.href ? '' : '../';
   const url = path => prefix + path;
   const chapterUrl = chapter => {
-    const folder = chapter.track === 'practice' ? 'practice' : 'chapters';
-    if (chapter.sample || chapter.slug === '00-start') return url(`${folder}/${chapter.slug}.html`);
-    return url(`${folder}/coming-soon.html?chapter=${chapter.slug}`);
+    if (chapter.track === 'appendix' || ['lab', 'glossary'].includes(chapter.slug)) return url(`${chapter.slug}.html`);
+    return url(`${chapter.track === 'practice' ? 'practice' : 'chapters'}/${chapter.slug}.html`);
   };
   const byNumber = number => chapters.find(chapter => chapter.number === number);
   const esc = text => String(text).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-  const status = chapter => `<span class="status ${chapter.sample ? 'ready' : ''}">${chapter.sample ? '확인용 샘플' : '준비중'}</span>`;
-  const label = chapter => `(${chapter.track === 'practice' ? '실습' : '이론'}) ${chapter.number != null ? chapter.number + (chapter.track === 'practice' ? '. ' : '장 · ') : ''}${chapter.title}`;
+  const status = chapter => `<span class="status ready">${esc(chapter.status)}</span>`;
+  const label = chapter => `(${chapter.track === 'practice' ? '실습' : chapter.track === 'appendix' ? '부록' : '이론'}) ${chapter.number != null ? chapter.number + (chapter.track === 'practice' ? '. ' : '장 · ') : ''}${chapter.title}`;
   const link = chapter => `<a href="${chapterUrl(chapter)}">${esc(label(chapter))} ${status(chapter)}</a>`;
-  const selected = (document.body.dataset.chapter === 'pending' || document.body.dataset.practice === 'pending') ? new URLSearchParams(location.search).get('chapter') : document.body.dataset.chapter;
+  const selected = (document.body.dataset.chapter === 'pending' || document.body.dataset.practice === 'pending') ? new URLSearchParams(location.search).get('chapter') : document.body.dataset.chapter || document.body.dataset.appendix;
   const current = allChapters.find(chapter => chapter.slug === (document.body.dataset.practice && document.body.dataset.practice !== 'pending' ? document.body.dataset.practice : selected));
+  if (current && (document.body.dataset.chapter === 'pending' || document.body.dataset.practice === 'pending')) {
+    location.replace(chapterUrl(current));
+    return;
+  }
   const trackLinks = () => tracks.map(track => `<section><h3>${track.title}</h3><ol>${track.chapters.map(chapter => `<li>${link(chapter)}</li>`).join('')}</ol></section>`).join('');
-  document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.length; });
-  document.querySelectorAll('[data-practice-count]').forEach(node => { node.textContent = practice.length; });
+  document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.filter(chapter => chapter.number !== null).length; });
+  document.querySelectorAll('[data-practice-count]').forEach(node => { node.textContent = practice.filter(chapter => chapter.number !== null).length; });
   document.querySelectorAll('[data-sim-count]').forEach(node => { node.textContent = (window.ShortsCatalog || []).length; });
   window.ShortsBook = Object.freeze({ chapters: Object.freeze(chapters), practice: Object.freeze(practice), tracks, url, chapterUrl, byNumber });
 
@@ -279,13 +299,13 @@
   });
   document.querySelectorAll('[data-chapter-link]').forEach(anchor => {
     const chapter = byNumber(Number(anchor.dataset.chapterLink));
-    if (chapter) { anchor.href = chapterUrl(chapter); if (!chapter.sample) anchor.append(' · 준비 중'); }
+    if (chapter) anchor.href = chapterUrl(chapter);
   });
   if (current) {
     document.querySelectorAll('[data-chapter-title]').forEach(node => { node.textContent = label(current); });
     document.querySelectorAll('[data-chapter-kicker]').forEach(node => { node.textContent = `(${current.track === 'practice' ? '실습' : '이론'}) ${current.part}${current.number != null ? ' / ' + current.number : ''}`; });
     document.querySelectorAll('[data-chapter-meta]').forEach(meta => {
-      const sequence = current.track === 'practice' ? practice : chapters;
+      const sequence = current.track === 'practice' ? practice : current.track === 'appendix' ? appendices : chapters;
       const previous = sequence[sequence.indexOf(current) - 1];
       meta.className = 'chapter-meta';
       meta.innerHTML = `<div class="deliverable"><dt>이 장을 마치면 만들어지는 것</dt><dd>${esc(current.deliverable)}</dd></div><div><dt>예상 소요 시간</dt><dd>${esc(current.duration)}${current.track === 'theory' ? ' · 읽기·메모, 연결 실습 별도' : ''}</dd></div><div><dt>난이도</dt><dd>${esc(current.difficulty)}</dd></div><div><dt>선행 장</dt><dd>${previous ? link(previous) : '없음 · 여기서 시작'}</dd></div>`;
@@ -301,7 +321,7 @@
       details.innerHTML = `<summary>이 장의 흐름 · ${blocks.length}단계</summary><nav aria-label="이 장의 흐름 (모바일)"><ol>${outline}</ol></nav>`;
     });
     document.querySelectorAll('[data-chapter-pager]').forEach(pager => {
-      const sequence = current.track === 'practice' ? practice : chapters;
+      const sequence = current.track === 'practice' ? practice : current.track === 'appendix' ? appendices : chapters;
       const index = sequence.indexOf(current);
       const previous = sequence[index - 1], next = sequence[index + 1];
       pager.className = 'chapter-pager';
@@ -309,11 +329,11 @@
     });
     document.title = `${label(current)} | ShortsBook`;
     document.querySelectorAll('.sidebar-chapters a').forEach(anchor => { if (new URL(anchor.href).pathname + new URL(anchor.href).search === location.pathname + location.search) anchor.setAttribute('aria-current', 'page'); });
-    if (!current.sample) document.title = `${current.title} · 준비 중 | ShortsBook`;
+
   }
   document.querySelectorAll('[data-site-footer]').forEach(footer => {
     footer.className = 'site-footer';
-    footer.innerHTML = `<span>ShortsBook · 영상 제작에 집중한 쇼츠 입문서</span><span><a href="${chapterUrl(byNumber(16))}">용어집</a> &nbsp; <a href="${url('credits.html')}">출처·크레딧</a></span>`;
+    footer.innerHTML = `<span>ShortsBook · 영상 제작에 집중한 쇼츠 입문서</span><span><a href="${url('glossary.html')}">용어집</a> &nbsp; <a href="${url('prompts.html')}">프롬프트</a> &nbsp; <a href="${url('ai-models.html')}">모델·비용</a> &nbsp; <a href="${url('credits.html')}">출처·크레딧</a></span>`;
   });
 
   // 저장소 접근 자체도 실패할 수 있다. 테마와 체크 상태 모두 읽기/쓰기를 보호한다.
@@ -353,6 +373,17 @@
     }
     block.querySelectorAll('.simulator').forEach(sim => { if (sim !== embedded && !embedded.contains(sim)) sim.hidden = true; });
     document.documentElement.classList.add('sim-embed');
+    // 숨긴 설명·각주로 향하는 링크는 전체 장에서 읽는다. 동적 도구 링크도 포함한다.
+    document.addEventListener('click', event => {
+      const anchor = event.target.closest('a[href]');
+      if (!anchor) return;
+      const destination = new URL(anchor.href);
+      if (destination.origin !== location.origin || destination.pathname !== location.pathname || !destination.hash) return;
+      const target = document.getElementById(decodeURIComponent(destination.hash.slice(1)));
+      if (!target?.closest('[hidden]')) return;
+      anchor.href = `${location.pathname.split('/').pop()}${destination.hash}`;
+      anchor.target = '_top';
+    }, {capture: true});
   }
   document.querySelectorAll('a[data-term]').forEach((anchor, index) => {
     anchor.classList.add('term');

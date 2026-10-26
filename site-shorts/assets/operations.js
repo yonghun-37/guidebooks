@@ -1,10 +1,8 @@
-/* 이론 10~14장의 가상 제작 연습. 네트워크·계정 조작·저장은 하지 않는다. */
+/* 이론 11~15장의 가상 제작 연습. 네트워크·계정 조작·저장은 하지 않는다. */
 (() => {
   'use strict';
   const page = document.querySelector('.operations-chapter');
   if (!page) return;
-  // 통합 전 공통 데이터의 '준비 중' 제목을 이 페이지의 실제 제목으로 표시한다.
-  document.title = `${page.querySelector('h1').textContent} | ShortsBook`;
   const $ = (root, selector) => root.querySelector(selector);
   const report = (root, number, message) => {
     const output = $(root, '[data-ops-result]');

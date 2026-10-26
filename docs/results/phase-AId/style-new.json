@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": null,
+  "summary": {
+    "files": 8,
+    "passed": 8,
+    "failed": 0,
+    "char_count": 128597,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 2,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site/ai-models.html",
+      "track": "theory",
+      "char_count": 68086,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "dfd6d7c399b23425ca689145bbf7aea70faac8ee1e84829d6a6c8496fc01c03f"
+    },
+    {
+      "path": "site/credits.html",
+      "track": "theory",
+      "char_count": 44579,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 2,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 17,
+            "context": "0~10·E2E 진행 기록을 추가했습니다. 미확인 앱 메뉴는 공식 도움말과 확인 공백을 표시합니다. 공개 URL"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 17,
+            "context": "가했습니다. 1장 대기 문장을 조사 근거와 미확인 범위로 대체했습니다. 2026-10-26 · 앞선 제작·집필"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "af7036932859304ae9773847c2ce7f5c0ef9e77e9c47219ff44bbc3e5d99d1d8"
+    },
+    {
+      "path": "site/lab.html",
+      "track": "theory",
+      "char_count": 1040,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "f16fec7dac3909d2dc21d851e050564df9137d9eb212360d1ca772113dfda5a0"
+    },
+    {
+      "path": "site/prompts.html",
+      "track": "theory",
+      "char_count": 3980,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "33302d80d2eccc735fcceffb253cdbcfa4c6aeb89bd1502d6bb2ad312968f313"
+    },
+    {
+      "path": "site/index.html",
+      "track": "other",
+      "char_count": 1297,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "9d7ea879616e350df523ffb09bb7b0150853fcdd3fc07c44fcc04d6b2bddda38"
+    },
+    {
+      "path": "site/glossary.html",
+      "track": "theory",
+      "char_count": 1924,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "53aaef93bf503f882ce48cacd4a159a76aa0e349a3279d1d6acbae535db14334"
+    },
+    {
+      "path": "site/chapters/05b-ai-tools.html",
+      "track": "theory",
+      "char_count": 4903,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "136f28daff41f4e5cb0d1f47e159e9722011888d40737747d489cccf4ba0e070"
+    },
+    {
+      "path": "site/practice/e2e.html",
+      "track": "practice",
+      "char_count": 2788,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "2301b3c4fc4ad54a7cbaea5df2f2c874862c8ddc4084431c3007aa4f8606be5e"
+    }
+  ]
+}

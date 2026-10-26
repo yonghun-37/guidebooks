@@ -1,0 +1,10 @@
+{
+  "changed_on_rerun": [],
+  "kit_sample_sha256": {
+    "short.mp4": "f2ea25d72190dec2043c5df097bbeb34fc8e0ecf98e40743508ca6a8aabf7340",
+    "subtitles.srt": "28674eb3f6e84b3ef5f29592e665eed19a43df47d5c78bcf66b713d4319cc125",
+    "preview.html": "41d8495026479d407c1522a4cc8307eb03033f0f6c0a69211f72cd6f42e97d4c",
+    "LICENSE.txt": "04ca6752cde2929105429af8fceb66ab1705587948cc5e20812c1091cba666fa"
+  },
+  "successive_identical_runs": 2
+}
