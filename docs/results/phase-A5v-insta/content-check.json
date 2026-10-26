@@ -1,0 +1,87 @@
+{
+  "pages": [
+    {
+      "file": "00-start.html",
+      "figures": 1,
+      "svg": 2,
+      "paragraph_chars_before": 1728,
+      "paragraph_chars_after": 1722
+    },
+    {
+      "file": "01-pipeline.html",
+      "figures": 2,
+      "svg": 4,
+      "paragraph_chars_before": 1520,
+      "paragraph_chars_after": 1520
+    },
+    {
+      "file": "02-keys.html",
+      "figures": 3,
+      "svg": 3,
+      "paragraph_chars_before": 2191,
+      "paragraph_chars_after": 2191
+    },
+    {
+      "file": "03-generate.html",
+      "figures": 2,
+      "svg": 4,
+      "paragraph_chars_before": 2637,
+      "paragraph_chars_after": 2523
+    },
+    {
+      "file": "04-render.html",
+      "figures": 2,
+      "svg": 1,
+      "paragraph_chars_before": 1930,
+      "paragraph_chars_after": 1975
+    },
+    {
+      "file": "05-publish.html",
+      "figures": 3,
+      "svg": 4,
+      "paragraph_chars_before": 3523,
+      "paragraph_chars_after": 3461
+    },
+    {
+      "file": "06-gates.html",
+      "figures": 3,
+      "svg": 3,
+      "paragraph_chars_before": 1926,
+      "paragraph_chars_after": 1908
+    },
+    {
+      "file": "07-operations.html",
+      "figures": 4,
+      "svg": 5,
+      "paragraph_chars_before": 2993,
+      "paragraph_chars_after": 2889
+    },
+    {
+      "file": "08-insights.html",
+      "figures": 2,
+      "svg": 2,
+      "paragraph_chars_before": 2164,
+      "paragraph_chars_after": 2158
+    },
+    {
+      "file": "09-safety.html",
+      "figures": 2,
+      "svg": 2,
+      "paragraph_chars_before": 2235,
+      "paragraph_chars_after": 2235
+    },
+    {
+      "file": "e2e.html",
+      "figures": 1,
+      "svg": 1,
+      "paragraph_chars_before": 614,
+      "paragraph_chars_after": 644
+    }
+  ],
+  "figures": 25,
+  "svg": 31,
+  "source_output_compared": true,
+  "paragraph_chars_before": 23461,
+  "paragraph_chars_after": 23226,
+  "errors": []
+}

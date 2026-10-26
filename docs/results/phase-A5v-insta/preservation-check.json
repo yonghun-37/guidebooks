@@ -1,0 +1,113 @@
+{
+  "protected_files": 136,
+  "changed": [],
+  "kit_svg_read": [
+    {
+      "file": "auto-kit/docs/figures/alerts-dark.svg",
+      "text_elements": 28,
+      "sha256": "452eef7339b536a268b68fb6375e29c5a0872b51e095b81bb67022f661144e19"
+    },
+    {
+      "file": "auto-kit/docs/figures/alerts.svg",
+      "text_elements": 28,
+      "sha256": "942e14a57a0d43d2f1321b64902638de1e3acd50cb98bcb4493e8296920d4a8f"
+    },
+    {
+      "file": "auto-kit/docs/figures/costs-dark.svg",
+      "text_elements": 28,
+      "sha256": "7375ddcc79afd55f9761467b637c5a5716b63f3cf557be72cb77d6d0aced72a7"
+    },
+    {
+      "file": "auto-kit/docs/figures/costs.svg",
+      "text_elements": 28,
+      "sha256": "5b8c0033fabec96d89e4691f007ea1fc3297e9293214c7ac1b920c6e11d0c5d1"
+    },
+    {
+      "file": "auto-kit/docs/figures/folders-dark.svg",
+      "text_elements": 28,
+      "sha256": "126693feb673fa9d24204ab4c50f88401a9c881dcda7b3e47d16515fe88ec2a6"
+    },
+    {
+      "file": "auto-kit/docs/figures/folders.svg",
+      "text_elements": 28,
+      "sha256": "3827dc18b039b388ab85cdfb32deaf040308a26aaed949f65f87f42427ebb19e"
+    },
+    {
+      "file": "auto-kit/docs/figures/gates-dark.svg",
+      "text_elements": 29,
+      "sha256": "fcfe361ac35a08aaa0d881e1f07c37e1409f33d504bb78ef1e9e8732f882e3ce"
+    },
+    {
+      "file": "auto-kit/docs/figures/gates.svg",
+      "text_elements": 29,
+      "sha256": "941fee2a174b2a1e1b575fbbb99a7e062538e67f7ceccc5bd959c1449a63421b"
+    },
+    {
+      "file": "auto-kit/docs/figures/sequence-dark.svg",
+      "text_elements": 28,
+      "sha256": "2a7a1e987dda218dee92e7f588151b3bbf3d1653af2730380606cdb7cb847e50"
+    },
+    {
+      "file": "auto-kit/docs/figures/sequence.svg",
+      "text_elements": 28,
+      "sha256": "6cb657c675d4a85216c42fa3072ac2c77cffe73296b322ee94c3b0a999ac1516"
+    },
+    {
+      "file": "auto-kit/docs/figures/states-dark.svg",
+      "text_elements": 29,
+      "sha256": "acc036f823cc1724c341cb0d0913639c165ac29842094a999feef685ed4e0cc2"
+    },
+    {
+      "file": "auto-kit/docs/figures/states.svg",
+      "text_elements": 29,
+      "sha256": "e8d811e3e8887d22380f925bb66b43620ccee5ced1046e37f94b0bde67518376"
+    },
+    {
+      "file": "auto-kit/docs/figures/system-dark.svg",
+      "text_elements": 30,
+      "sha256": "220afc9da8bb80e79700d891a353178d4a26045e07e77c254879b28e2f48a4a2"
+    },
+    {
+      "file": "auto-kit/docs/figures/system.svg",
+      "text_elements": 30,
+      "sha256": "a922b6bcc06e8043020ad4efb0d4140491687659961cb6d3d85bff0c19effb6e"
+    },
+    {
+      "file": "auto-kit/docs/figures/timeline-dark.svg",
+      "text_elements": 29,
+      "sha256": "431a0505768b2d10575964408eaa85336d09df7eadfb5e8217b0673213c1562f"
+    },
+    {
+      "file": "auto-kit/docs/figures/timeline.svg",
+      "text_elements": 29,
+      "sha256": "0fb53b1f6c1797b6d5929186a2c986de46f30cdad64d68ecef8379ee07b2d815"
+    }
+  ],
+  "normal_dark_text_identical": true,
+  "dedicated_asset_paths": [
+    "site/advanced/visuals.css",
+    "site/advanced/examples/"
+  ],
+  "concurrent_changes_outside_scope": [
+    "site-blog/assets/ch13.js",
+    "site-blog/chapters/01-map.html",
+    "site-blog/chapters/02-revenue.html",
+    "site-blog/chapters/06-writing.html",
+    "site-blog/chapters/13-plan.html",
+    "site-blog/practice/03-keywords.html",
+    "site-blog/practice/04-draft.html",
+    "site-blog/practice/05-images.html",
+    "site-blog/practice/07-publish.html",
+    "site-blog/practice/10-automation.html",
+    "site-shorts/advanced/00-overview.html",
+    "site-shorts/advanced/01-pipeline.html",
+    "site-shorts/advanced/02-credentials.html",
+    "site-shorts/advanced/03-generation.html",
+    "site-shorts/advanced/04-render.html",
+    "site-shorts/advanced/05-youtube.html",
+    "site-shorts/advanced/06-gates.html",
+    "site-shorts/advanced/07-operations.html",
+    "site-shorts/advanced/08-analytics.html",
+    "site-shorts/advanced/09-safety.html"
+  ]
+}

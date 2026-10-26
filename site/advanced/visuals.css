@@ -1,0 +1,31 @@
+/* 심화편 그림: 폭이 좁아지면 패널을 쌓아 글자 크기를 유지한다. */
+.vi-figure { padding: 18px; }
+.vi-panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.vi-svg { display: block; width: 100%; max-width: 440px; margin: auto; color: var(--accent); font-family: var(--body); }
+.vi-svg text { fill: var(--ink); font-size: 18px; }
+.vi-svg .vi-title { font-size: 20px; font-weight: 750; }
+.vi-svg .vi-small { font-size: 16px; }
+.vi-svg .vi-muted { fill: var(--muted); }
+.vi-svg .vi-accent { fill: var(--accent); font-weight: 750; }
+.vi-svg .vi-warn-text { fill: var(--orange); font-weight: 750; }
+.vi-svg .vi-box { fill: var(--soft); stroke: var(--line); stroke-width: 1.5; }
+.vi-svg .vi-warn { fill: var(--warm); stroke: var(--orange); stroke-width: 1.5; }
+.vi-svg .vi-screen { fill: var(--paper); stroke: var(--line); stroke-width: 1.5; }
+.vi-svg .vi-bar { fill: var(--accent); }
+.vi-svg .vi-rail { fill: var(--line); }
+.vi-svg .vi-dot { fill: var(--accent); }
+.vi-svg .vi-line { fill: none; stroke: currentColor; stroke-width: 2; }
+.vi-svg .vi-dash { stroke-dasharray: 5 4; }
+.vi-svg a:hover rect, .vi-svg a:focus rect { stroke: var(--accent); stroke-width: 3; }
+.vi-svg a:focus { outline: 2px solid var(--orange); outline-offset: 2px; }
+.vi-source { display: block; margin-top: 8px; font-size: 14px; color: var(--muted); }
+.vi-specimen { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.vi-specimen img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
+.vi-specimen p { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+.vi-figure .adv-sequence .adv-seq-label { font-size: 16px; }
+.advanced-main .adv-node-sub { font-size: 15px; }
+@media (max-width: 680px) {
+ .vi-panels, .vi-specimen { grid-template-columns: minmax(0, 1fr); }
+ .vi-figure { padding: 10px; }
+}
+@media print { .vi-svg { max-width: 340px; } .vi-panels { grid-template-columns: minmax(0, 1fr); } }

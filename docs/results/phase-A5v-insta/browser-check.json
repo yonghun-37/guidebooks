@@ -1,0 +1,591 @@
+{
+  "views": [
+    {
+      "file": "00-start.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "00-start.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "00-start.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "00-start.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "00-start.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "00-start.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "02-keys.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "02-keys.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "02-keys.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "02-keys.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "02-keys.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "02-keys.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "03-generate.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "03-generate.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "03-generate.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "03-generate.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "03-generate.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "03-generate.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "04-render.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 18.75,
+      "boxFill": null
+    },
+    {
+      "file": "04-render.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 18.75,
+      "boxFill": null
+    },
+    {
+      "file": "04-render.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.296875,
+      "boxFill": null
+    },
+    {
+      "file": "04-render.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.296875,
+      "boxFill": null
+    },
+    {
+      "file": "04-render.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 13.59375,
+      "boxFill": null
+    },
+    {
+      "file": "04-render.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 13.59375,
+      "boxFill": null
+    },
+    {
+      "file": "05-publish.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "05-publish.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "05-publish.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "05-publish.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "05-publish.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "05-publish.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "06-gates.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "06-gates.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "06-gates.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "06-gates.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "06-gates.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "06-gates.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "07-operations.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "07-operations.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "07-operations.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.296875,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "07-operations.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.296875,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "07-operations.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 13.59375,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "07-operations.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 13.59375,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "08-insights.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "08-insights.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "08-insights.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "08-insights.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "08-insights.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(234, 240, 229)"
+    },
+    {
+      "file": "08-insights.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": "rgb(43, 61, 49)"
+    },
+    {
+      "file": "09-safety.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": null
+    },
+    {
+      "file": "09-safety.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 16.05,
+      "boxFill": null
+    },
+    {
+      "file": "09-safety.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": null
+    },
+    {
+      "file": "09-safety.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 15.45,
+      "boxFill": null
+    },
+    {
+      "file": "09-safety.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": null
+    },
+    {
+      "file": "09-safety.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.7,
+      "boxFill": null
+    },
+    {
+      "file": "e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 18.75,
+      "boxFill": null
+    },
+    {
+      "file": "e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 18.75,
+      "boxFill": null
+    },
+    {
+      "file": "e2e.html",
+      "width": 375,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 14.296875,
+      "boxFill": null
+    },
+    {
+      "file": "e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 14.296875,
+      "boxFill": null
+    },
+    {
+      "file": "e2e.html",
+      "width": 360,
+      "theme": "light",
+      "errors": [],
+      "minTextPx": 13.59375,
+      "boxFill": null
+    },
+    {
+      "file": "e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "errors": [],
+      "minTextPx": 13.59375,
+      "boxFill": null
+    }
+  ],
+  "screenshots": [
+    "docs/results/phase-A5v-insta/00-start-visual-system-1280-light.png",
+    "docs/results/phase-A5v-insta/00-start-visual-system-360-dark.png",
+    "docs/results/phase-A5v-insta/01-pipeline-visual-states-1280-light.png",
+    "docs/results/phase-A5v-insta/01-pipeline-visual-folders-1280-light.png",
+    "docs/results/phase-A5v-insta/01-pipeline-visual-states-360-dark.png",
+    "docs/results/phase-A5v-insta/01-pipeline-visual-folders-360-dark.png",
+    "docs/results/phase-A5v-insta/02-keys-visual-keys-config-1280-light.png",
+    "docs/results/phase-A5v-insta/02-keys-visual-budget-layers-1280-light.png",
+    "docs/results/phase-A5v-insta/02-keys-visual-keys-config-360-dark.png",
+    "docs/results/phase-A5v-insta/02-keys-visual-budget-layers-360-dark.png",
+    "docs/results/phase-A5v-insta/03-generate-visual-json-1280-light.png",
+    "docs/results/phase-A5v-insta/03-generate-visual-cost-comparison-1280-light.png",
+    "docs/results/phase-A5v-insta/03-generate-visual-json-360-dark.png",
+    "docs/results/phase-A5v-insta/03-generate-visual-cost-comparison-360-dark.png",
+    "docs/results/phase-A5v-insta/04-render-visual-render-output-1280-light.png",
+    "docs/results/phase-A5v-insta/04-render-visual-render-output-360-dark.png",
+    "docs/results/phase-A5v-insta/05-publish-visual-publish-sequence-1280-light.png",
+    "docs/results/phase-A5v-insta/05-publish-visual-instagram-token-1280-light.png",
+    "docs/results/phase-A5v-insta/05-publish-visual-publishing-limit-1280-light.png",
+    "docs/results/phase-A5v-insta/05-publish-visual-publish-sequence-360-dark.png",
+    "docs/results/phase-A5v-insta/05-publish-visual-instagram-token-360-dark.png",
+    "docs/results/phase-A5v-insta/05-publish-visual-publishing-limit-360-dark.png",
+    "docs/results/phase-A5v-insta/06-gates-visual-gates-1280-light.png",
+    "docs/results/phase-A5v-insta/06-gates-visual-mode-transition-1280-light.png",
+    "docs/results/phase-A5v-insta/06-gates-visual-gates-360-dark.png",
+    "docs/results/phase-A5v-insta/06-gates-visual-mode-transition-360-dark.png",
+    "docs/results/phase-A5v-insta/07-operations-visual-daily-timeline-1280-light.png",
+    "docs/results/phase-A5v-insta/07-operations-visual-operations-report-1280-light.png",
+    "docs/results/phase-A5v-insta/07-operations-visual-daily-timeline-360-dark.png",
+    "docs/results/phase-A5v-insta/07-operations-visual-operations-report-360-dark.png",
+    "docs/results/phase-A5v-insta/08-insights-visual-improvement-loop-1280-light.png",
+    "docs/results/phase-A5v-insta/08-insights-visual-improvement-loop-360-dark.png",
+    "docs/results/phase-A5v-insta/09-safety-visual-risk-map-1280-light.png",
+    "docs/results/phase-A5v-insta/09-safety-visual-risk-map-360-dark.png",
+    "docs/results/phase-A5v-insta/system-375-light.png",
+    "docs/results/phase-A5v-insta/system-375-dark.png"
+  ],
+  "errors": [],
+  "links": 301,
+  "keyboardLinks": [
+    "07-operations.html",
+    "01-pipeline.html",
+    "01-pipeline.html",
+    "07-operations.html",
+    "08-insights.html",
+    "03-generate.html",
+    "04-render.html",
+    "05-publish.html",
+    "06-gates.html",
+    "05-publish.html",
+    "08-insights.html"
+  ],
+  "checks": [
+    "all system map nodes: focus + Enter reaches the matching chapter",
+    "calculator source scenarios retained",
+    "OS keyboard tabs + quiz retained",
+    "all 11 pages readable with JavaScript disabled"
+  ]
+}

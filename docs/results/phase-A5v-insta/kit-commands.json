@@ -1,0 +1,85 @@
+[
+  {
+    "args": [
+      "pipeline.py",
+      "run",
+      "--flow",
+      "insta",
+      "--provider",
+      "mock",
+      "--mode",
+      "auto",
+      "--state",
+      "private/auto"
+    ],
+    "exit_code": 0,
+    "stdout": "798821d75fec · insta · dry_run\n미리보기: /tmp/a5vi-kit-dge02pq8/auto-kit/private/auto/798821d75fec/preview.html\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "pipeline.py",
+      "run",
+      "--flow",
+      "insta",
+      "--provider",
+      "mock",
+      "--mode",
+      "approval",
+      "--state",
+      "private/approval"
+    ],
+    "exit_code": 0,
+    "stdout": "838cdc91e30e · insta · waiting_approval\n미리보기: /tmp/a5vi-kit-dge02pq8/auto-kit/private/approval/838cdc91e30e/preview.html\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "pipeline.py",
+      "run",
+      "--flow",
+      "insta",
+      "--provider",
+      "mock",
+      "--mode",
+      "auto",
+      "--config",
+      "reel.json",
+      "--state",
+      "private/reel"
+    ],
+    "exit_code": 0,
+    "stdout": "bfead3c17547 · insta · dry_run\n미리보기: /tmp/a5vi-kit-dge02pq8/auto-kit/private/reel/bfead3c17547/preview.html\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "pipeline.py",
+      "run",
+      "--flow",
+      "insta",
+      "--provider",
+      "mock",
+      "--mode",
+      "auto",
+      "--config",
+      "exception.json",
+      "--state",
+      "private/exception"
+    ],
+    "exit_code": 2,
+    "stdout": "aedb3daa036b · insta · exception\n미리보기: /tmp/a5vi-kit-dge02pq8/auto-kit/private/exception/aedb3daa036b/preview.html\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "pipeline.py",
+      "report",
+      "--state",
+      "private/auto"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"date\": \"2026-10-26\",\n  \"runs\": 1,\n  \"total_runs\": 1,\n  \"exceptions\": [],\n  \"spend\": {\n    \"total\": 0.0,\n    \"day\": 0.0,\n    \"month\": 0.0,\n    \"pending\": 0\n  }\n}\n",
+    "stderr": ""
+  }
+]

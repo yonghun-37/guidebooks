@@ -1,0 +1,48 @@
+{
+  "work": "/tmp/a5vi-kit-dge02pq8/auto-kit",
+  "runs": {
+    "auto": {
+      "id": "798821d75fec",
+      "status": "dry_run"
+    },
+    "approval": {
+      "id": "838cdc91e30e",
+      "status": "waiting_approval"
+    },
+    "reel": {
+      "id": "bfead3c17547",
+      "status": "dry_run"
+    },
+    "exception": {
+      "id": "aedb3daa036b",
+      "status": "exception"
+    }
+  },
+  "images": [
+    {
+      "file": "site/advanced/examples/card-02.webp",
+      "bytes": 23908,
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "file": "site/advanced/examples/reel-frame.webp",
+      "bytes": 15104,
+      "width": 720,
+      "height": 1280
+    }
+  ],
+  "reel_media": [
+    {
+      "file": "short.mp4",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 15.1,
+      "lufs": -16.05,
+      "probe_method": "pip ffmpeg stderr parser (shorts-kit 재사용)"
+    }
+  ]
+}
