@@ -1,0 +1,19 @@
+{
+  "checkedLocalReferences": 255,
+  "sourceCount": 202,
+  "currentChapterTextCharacters": 9844,
+  "sampleTextCharacters": {
+    "ch03-a-axes.html": 6259,
+    "ch03-b-faq.html": 8012,
+    "ch03-c-journey.html": 6380
+  },
+  "learnerQuestions": 70,
+  "judgments": {
+    "답함": 41,
+    "부분": 29,
+    "안 함": 0
+  },
+  "protectedSiteFiles": 75,
+  "existingSiteFilesChangedSinceSnapshot": [],
+  "errors": []
+}
