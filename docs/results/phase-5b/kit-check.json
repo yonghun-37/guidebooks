@@ -1,0 +1,144 @@
+{
+  "commands": [
+    {
+      "args": [
+        "render_cards.py",
+        "output/phase5b-manual/copy.json",
+        "--config",
+        "config.yaml",
+        "--output",
+        "output/phase5b-manual/cards-themed"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "output/phase5b-manual/cards-themed/card-01.png\noutput/phase5b-manual/cards-themed/card-02.png\noutput/phase5b-manual/cards-themed/card-03.png\noutput/phase5b-manual/cards-themed/card-04.png\noutput/phase5b-manual/cards-themed/card-05.png\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "make_reel.py",
+        "output/phase5b-manual/copy.json",
+        "--cards",
+        "output/phase5b-manual/cards",
+        "--config",
+        "config.yaml",
+        "--output",
+        "output/phase5b-voice"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "starter-kit/output/phase5b-voice/reel.mp4\n",
+      "stderr": ""
+    }
+  ],
+  "full_video_decode": "passed",
+  "cards": "5 PNG + 5 JPEG, 1080x1350",
+  "reel_info": {
+    "duration": 20.0,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 24,
+    "tts": "silent",
+    "audio": [
+      "silent"
+    ],
+    "audio_files": [],
+    "motion": [
+      "zoom-pan",
+      "scene-fade",
+      "caption-entry",
+      "progress-bar"
+    ],
+    "timing": [
+      {
+        "scene": 1,
+        "start": 0.0,
+        "end": 4.0
+      },
+      {
+        "scene": 2,
+        "start": 4.0,
+        "end": 8.0
+      },
+      {
+        "scene": 3,
+        "start": 8.0,
+        "end": 12.0
+      },
+      {
+        "scene": 4,
+        "start": 12.0,
+        "end": 16.0
+      },
+      {
+        "scene": 5,
+        "start": 16.0,
+        "end": 20.0
+      }
+    ],
+    "subtitles": "burned-in + subtitles.srt"
+  },
+  "approval_checks": [
+    {
+      "args": [
+        "run_pipeline.py",
+        "approve",
+        "output/phase5b-review"
+      ],
+      "expected_exit": 1,
+      "exit": 1,
+      "stdout": "",
+      "stderr": "오류: REVIEW.md의 검수 여섯 칸을 [x]로 바꾸어 저장한 뒤 승인하세요.\n"
+    },
+    {
+      "args": [
+        "run_pipeline.py",
+        "approve",
+        "output/phase5b-review"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stderr": "",
+      "stdout_summary": {
+        "mode": "dry-run",
+        "request_count": 16,
+        "real_request_sent": false
+      }
+    },
+    {
+      "args": [
+        "publish.py",
+        "output/phase5b-review"
+      ],
+      "expected_exit": 1,
+      "exit": 1,
+      "stdout": "",
+      "stderr": "오류: 검수 대상이 바뀌었거나 없습니다: copy.json. render 후 다시 검수·승인하세요.\n"
+    },
+    {
+      "args": [
+        "run_pipeline.py",
+        "render",
+        "output/phase5b-review"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "검수 대기: starter-kit/output/phase5b-review/REVIEW.md\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "run_pipeline.py",
+        "approve",
+        "output/phase5b-review"
+      ],
+      "expected_exit": 1,
+      "exit": 1,
+      "stdout": "",
+      "stderr": "오류: REVIEW.md의 검수 여섯 칸을 [x]로 바꾸어 저장한 뒤 승인하세요.\n"
+    }
+  ],
+  "final_state": "rendered again, six unchecked items, no approval; test-only automated check used earlier"
+}

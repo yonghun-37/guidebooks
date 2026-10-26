@@ -1,0 +1,72 @@
+{
+  "chapters": [
+    {
+      "slug": "06-writing",
+      "blocks": 9,
+      "quiz": 4,
+      "unique_ids": 29,
+      "fact_ids": [
+        "AI-01",
+        "AI-05",
+        "AI-06",
+        "AI-07",
+        "LABEL-03"
+      ],
+      "source_notes": 7,
+      "relative_source_links": "passed"
+    },
+    {
+      "slug": "07-cards",
+      "blocks": 9,
+      "quiz": 4,
+      "unique_ids": 35,
+      "fact_ids": [
+        "ASSET-01",
+        "CRAFT-01",
+        "PRICE-07",
+        "VIDEO-06",
+        "VIDEO-08"
+      ],
+      "source_notes": 8,
+      "relative_source_links": "passed"
+    },
+    {
+      "slug": "08-reels",
+      "blocks": 9,
+      "quiz": 4,
+      "unique_ids": 43,
+      "fact_ids": [
+        "ASSET-04",
+        "ASSET-06",
+        "CRAFT-02",
+        "CRAFT-04",
+        "LABEL-01",
+        "LABEL-03",
+        "META-06",
+        "PRICE-01",
+        "PRICE-02",
+        "VIDEO-02",
+        "VIDEO-03",
+        "VIDEO-05"
+      ],
+      "source_notes": 15,
+      "relative_source_links": "passed"
+    },
+    {
+      "slug": "09-pipeline",
+      "blocks": 9,
+      "quiz": 4,
+      "unique_ids": 34,
+      "fact_ids": [
+        "NOCODE-01",
+        "NOCODE-02",
+        "NOCODE-03",
+        "NOCODE-04",
+        "NOCODE-05"
+      ],
+      "source_notes": 10,
+      "relative_source_links": "passed"
+    }
+  ],
+  "result": "passed"
+}

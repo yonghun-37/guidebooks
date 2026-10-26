@@ -1,0 +1,37 @@
+[
+  {
+    "chapter": "10-publishing.html",
+    "blocks": 9,
+    "fact_references": 17,
+    "distinct_facts": 17,
+    "duplicate_ids": false
+  },
+  {
+    "chapter": "11-analytics.html",
+    "blocks": 9,
+    "fact_references": 12,
+    "distinct_facts": 12,
+    "duplicate_ids": false
+  },
+  {
+    "chapter": "12-safety.html",
+    "blocks": 9,
+    "fact_references": 33,
+    "distinct_facts": 33,
+    "duplicate_ids": false
+  },
+  {
+    "chapter": "13-roadmap.html",
+    "blocks": 9,
+    "fact_references": 16,
+    "distinct_facts": 16,
+    "duplicate_ids": false
+  },
+  {
+    "chapter": "14-plan.html",
+    "blocks": 9,
+    "fact_references": 8,
+    "distinct_facts": 8,
+    "duplicate_ids": false
+  }
+]

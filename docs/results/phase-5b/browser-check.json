@@ -1,0 +1,506 @@
+{
+  "environment": {
+    "browser": "existing Chromium 1228",
+    "playwright": "existing playwright-core",
+    "base": "http://127.0.0.1:8792"
+  },
+  "cases": [
+    {
+      "slug": "06-writing",
+      "width": 1280,
+      "blocks": 9,
+      "quizzes": 4,
+      "simulators": 2,
+      "internal_links_checked": 39,
+      "facts": [
+        {
+          "ids": "AI-01 AI-06",
+          "refs": [
+            "[S049]",
+            "[S052]",
+            "[S050]"
+          ]
+        },
+        {
+          "ids": "AI-07",
+          "refs": [
+            "[S053]",
+            "[S010]"
+          ]
+        },
+        {
+          "ids": "LABEL-03",
+          "refs": [
+            "[S071]"
+          ]
+        },
+        {
+          "ids": "AI-05",
+          "refs": [
+            "[S058]"
+          ]
+        }
+      ],
+      "overflow": {
+        "viewport": 1280,
+        "width": 1280,
+        "offenders": []
+      },
+      "console_errors": [],
+      "resource_errors": [],
+      "keyboard": "flow Home/End; preset Enter; chapter inputs; quiz Enter",
+      "quiz": "wrong + reset + 4 correct + reset",
+      "checklist": "reload preserved",
+      "dark_mode": "no overflow"
+    },
+    {
+      "slug": "06-writing",
+      "width": 375,
+      "blocks": 9,
+      "quizzes": 4,
+      "simulators": 2,
+      "internal_links_checked": 39,
+      "facts": [
+        {
+          "ids": "AI-01 AI-06",
+          "refs": [
+            "[S049]",
+            "[S052]",
+            "[S050]"
+          ]
+        },
+        {
+          "ids": "AI-07",
+          "refs": [
+            "[S053]",
+            "[S010]"
+          ]
+        },
+        {
+          "ids": "LABEL-03",
+          "refs": [
+            "[S071]"
+          ]
+        },
+        {
+          "ids": "AI-05",
+          "refs": [
+            "[S058]"
+          ]
+        }
+      ],
+      "overflow": {
+        "viewport": 375,
+        "width": 375,
+        "offenders": []
+      },
+      "console_errors": [],
+      "resource_errors": [],
+      "keyboard": "flow Home/End; preset Enter; chapter inputs; quiz Enter",
+      "quiz": "wrong + reset + 4 correct + reset",
+      "checklist": "reload preserved",
+      "dark_mode": "no overflow"
+    },
+    {
+      "slug": "07-cards",
+      "width": 1280,
+      "blocks": 9,
+      "quizzes": 4,
+      "simulators": 2,
+      "internal_links_checked": 40,
+      "facts": [
+        {
+          "ids": "CRAFT-01",
+          "refs": [
+            "[S121]"
+          ]
+        },
+        {
+          "ids": "ASSET-01",
+          "refs": [
+            "[S123]"
+          ]
+        },
+        {
+          "ids": "VIDEO-06 VIDEO-08",
+          "refs": [
+            "[S093]",
+            "[S094]",
+            "[S095]"
+          ]
+        },
+        {
+          "ids": "PRICE-07",
+          "refs": [
+            "[S127]",
+            "[S098]",
+            "[S100]"
+          ]
+        },
+        {
+          "ids": "CRAFT-01",
+          "refs": [
+            "[S121]"
+          ]
+        }
+      ],
+      "overflow": {
+        "viewport": 1280,
+        "width": 1280,
+        "offenders": []
+      },
+      "console_errors": [],
+      "resource_errors": [],
+      "keyboard": "flow Home/End; preset Enter; chapter inputs; quiz Enter",
+      "quiz": "wrong + reset + 4 correct + reset",
+      "checklist": "reload preserved",
+      "dark_mode": "no overflow"
+    },
+    {
+      "slug": "07-cards",
+      "width": 375,
+      "blocks": 9,
+      "quizzes": 4,
+      "simulators": 2,
+      "internal_links_checked": 40,
+      "facts": [
+        {
+          "ids": "CRAFT-01",
+          "refs": [
+            "[S121]"
+          ]
+        },
+        {
+          "ids": "ASSET-01",
+          "refs": [
+            "[S123]"
+          ]
+        },
+        {
+          "ids": "VIDEO-06 VIDEO-08",
+          "refs": [
+            "[S093]",
+            "[S094]",
+            "[S095]"
+          ]
+        },
+        {
+          "ids": "PRICE-07",
+          "refs": [
+            "[S127]",
+            "[S098]",
+            "[S100]"
+          ]
+        },
+        {
+          "ids": "CRAFT-01",
+          "refs": [
+            "[S121]"
+          ]
+        }
+      ],
+      "overflow": {
+        "viewport": 375,
+        "width": 375,
+        "offenders": []
+      },
+      "console_errors": [],
+      "resource_errors": [],
+      "keyboard": "flow Home/End; preset Enter; chapter inputs; quiz Enter",
+      "quiz": "wrong + reset + 4 correct + reset",
+      "checklist": "reload preserved",
+      "dark_mode": "no overflow"
+    },
+    {
+      "slug": "08-reels",
+      "width": 1280,
+      "blocks": 9,
+      "quizzes": 4,
+      "simulators": 2,
+      "internal_links_checked": 46,
+      "facts": [
+        {
+          "ids": "CRAFT-04",
+          "refs": [
+            "[S131]",
+            "[S151]",
+            "[S107]"
+          ]
+        },
+        {
+          "ids": "VIDEO-05",
+          "refs": [
+            "[S088]"
+          ]
+        },
+        {
+          "ids": "CRAFT-02",
+          "refs": [
+            "[S122]"
+          ]
+        },
+        {
+          "ids": "PRICE-01 PRICE-02",
+          "refs": [
+            "[S124]",
+            "[S125]",
+            "[S126]"
+          ]
+        },
+        {
+          "ids": "VIDEO-02 VIDEO-03",
+          "refs": [
+            "[S084]",
+            "[S085]"
+          ]
+        },
+        {
+          "ids": "ASSET-04 ASSET-06",
+          "refs": [
+            "[S098]",
+            "[S136]"
+          ]
+        },
+        {
+          "ids": "LABEL-01 LABEL-03",
+          "refs": [
+            "[S071]",
+            "[S007]"
+          ]
+        },
+        {
+          "ids": "META-06",
+          "refs": [
+            "[S012]"
+          ]
+        },
+        {
+          "ids": "VIDEO-05",
+          "refs": [
+            "[S088]"
+          ]
+        }
+      ],
+      "overflow": {
+        "viewport": 1280,
+        "width": 1280,
+        "offenders": []
+      },
+      "console_errors": [],
+      "resource_errors": [],
+      "keyboard": "flow Home/End; preset Enter; chapter inputs; quiz Enter",
+      "quiz": "wrong + reset + 4 correct + reset",
+      "checklist": "reload preserved",
+      "dark_mode": "no overflow"
+    },
+    {
+      "slug": "08-reels",
+      "width": 375,
+      "blocks": 9,
+      "quizzes": 4,
+      "simulators": 2,
+      "internal_links_checked": 46,
+      "facts": [
+        {
+          "ids": "CRAFT-04",
+          "refs": [
+            "[S131]",
+            "[S151]",
+            "[S107]"
+          ]
+        },
+        {
+          "ids": "VIDEO-05",
+          "refs": [
+            "[S088]"
+          ]
+        },
+        {
+          "ids": "CRAFT-02",
+          "refs": [
+            "[S122]"
+          ]
+        },
+        {
+          "ids": "PRICE-01 PRICE-02",
+          "refs": [
+            "[S124]",
+            "[S125]",
+            "[S126]"
+          ]
+        },
+        {
+          "ids": "VIDEO-02 VIDEO-03",
+          "refs": [
+            "[S084]",
+            "[S085]"
+          ]
+        },
+        {
+          "ids": "ASSET-04 ASSET-06",
+          "refs": [
+            "[S098]",
+            "[S136]"
+          ]
+        },
+        {
+          "ids": "LABEL-01 LABEL-03",
+          "refs": [
+            "[S071]",
+            "[S007]"
+          ]
+        },
+        {
+          "ids": "META-06",
+          "refs": [
+            "[S012]"
+          ]
+        },
+        {
+          "ids": "VIDEO-05",
+          "refs": [
+            "[S088]"
+          ]
+        }
+      ],
+      "overflow": {
+        "viewport": 375,
+        "width": 375,
+        "offenders": []
+      },
+      "console_errors": [],
+      "resource_errors": [],
+      "keyboard": "flow Home/End; preset Enter; chapter inputs; quiz Enter",
+      "quiz": "wrong + reset + 4 correct + reset",
+      "checklist": "reload preserved",
+      "dark_mode": "no overflow"
+    },
+    {
+      "slug": "09-pipeline",
+      "width": 1280,
+      "blocks": 9,
+      "quizzes": 4,
+      "simulators": 2,
+      "internal_links_checked": 41,
+      "facts": [
+        {
+          "ids": "NOCODE-05",
+          "refs": [
+            "[S001]",
+            "[S004]",
+            "[S030]",
+            "[S152]"
+          ]
+        },
+        {
+          "ids": "NOCODE-02 NOCODE-03",
+          "refs": [
+            "[S153]",
+            "[S154]",
+            "[S155]",
+            "[S156]"
+          ]
+        },
+        {
+          "ids": "NOCODE-04",
+          "refs": [
+            "[S044]",
+            "[S157]"
+          ]
+        },
+        {
+          "ids": "NOCODE-01",
+          "refs": [
+            "[S152]"
+          ]
+        }
+      ],
+      "overflow": {
+        "viewport": 1280,
+        "width": 1280,
+        "offenders": []
+      },
+      "console_errors": [],
+      "resource_errors": [],
+      "keyboard": "flow Home/End; preset Enter; chapter inputs; quiz Enter",
+      "quiz": "wrong + reset + 4 correct + reset",
+      "checklist": "reload preserved",
+      "dark_mode": "no overflow"
+    },
+    {
+      "slug": "09-pipeline",
+      "width": 375,
+      "blocks": 9,
+      "quizzes": 4,
+      "simulators": 2,
+      "internal_links_checked": 41,
+      "facts": [
+        {
+          "ids": "NOCODE-05",
+          "refs": [
+            "[S001]",
+            "[S004]",
+            "[S030]",
+            "[S152]"
+          ]
+        },
+        {
+          "ids": "NOCODE-02 NOCODE-03",
+          "refs": [
+            "[S153]",
+            "[S154]",
+            "[S155]",
+            "[S156]"
+          ]
+        },
+        {
+          "ids": "NOCODE-04",
+          "refs": [
+            "[S044]",
+            "[S157]"
+          ]
+        },
+        {
+          "ids": "NOCODE-01",
+          "refs": [
+            "[S152]"
+          ]
+        }
+      ],
+      "overflow": {
+        "viewport": 375,
+        "width": 375,
+        "offenders": []
+      },
+      "console_errors": [],
+      "resource_errors": [],
+      "keyboard": "flow Home/End; preset Enter; chapter inputs; quiz Enter",
+      "quiz": "wrong + reset + 4 correct + reset",
+      "checklist": "reload preserved",
+      "dark_mode": "no overflow"
+    }
+  ],
+  "storage_blocked": "all 4 pages passed",
+  "final_direct_link_check": {
+    "from": "09-pipeline.html",
+    "to": "10-publishing.html",
+    "count": 2,
+    "http_status": 200
+  },
+  "screenshots": [
+    {
+      "file": "desktop-cards.png",
+      "size": [
+        1280,
+        1280
+      ]
+    },
+    {
+      "file": "mobile-reels.png",
+      "size": [
+        375,
+        1500
+      ]
+    }
+  ]
+}

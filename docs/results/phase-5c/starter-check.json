@@ -1,0 +1,52 @@
+{
+  "environment": "Linux / starter-kit/.venv / Python 3.11",
+  "commands": [
+    {
+      "command": "python run_pipeline.py --offline --output output/phase5c-dryrun",
+      "exit_code": 0,
+      "result": "REVIEW.md에서 검수 대기"
+    },
+    {
+      "command": "python publish.py output/phase5c-dryrun (승인 전)",
+      "exit_code": 1,
+      "result": "검수 대기 차단 오류, 예상대로"
+    },
+    {
+      "command": "python run_pipeline.py approve output/phase5c-dryrun",
+      "exit_code": 0,
+      "result": "합성 검증 fixture 승인 후 dry-run"
+    },
+    {
+      "command": "python publish.py output/phase5c-dryrun (승인 후)",
+      "exit_code": 0,
+      "result": "approve 출력과 같은 dry-run"
+    },
+    {
+      "command": "python publish.py --help",
+      "exit_code": 0
+    }
+  ],
+  "mode": "dry-run",
+  "jpeg_child_requests": 5,
+  "publication_steps": 2,
+  "authorization": "Bearer <REDACTED>",
+  "video": {
+    "duration": 20.0,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 24,
+    "audio": [
+      "silent"
+    ],
+    "full_decode": "FFmpeg 전체 null 출력 exit0"
+  },
+  "review_scope": "원자료·문안·모든 카드의 축소본·영상 표본 프레임을 확인. 키트 명령 검증용 합성 fixture의 체크를 채운 것으로 실제 사람의 전체 재생 검수나 실게시 승인을 수행한 것이 아님.",
+  "not_executed": [
+    "실계정 로그인·게시",
+    "유료 API",
+    "OS 예약 등록·시각 기동",
+    "Windows/macOS 실기동"
+  ]
+}

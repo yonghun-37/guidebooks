@@ -1,0 +1,1867 @@
+{
+  "pages": [
+    {
+      "slug": "10-publishing",
+      "width": 1280,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 1280,
+      "meta": "이 장을 마치면 만들어지는 것업로드 설정(드라이런)과 예약 실행예상 소요 시간45분 · 연습용 예상난이도따라 하기 · API 부분은 천천히선행 장9장 · 파이프라인 잇기",
+      "sim": "50건 가정: 합계 4건, 가정 잔여 46건 → 다른 요건도 별도 확인.\n100건 가정: 합계 4건, 가정 잔여 96건 → 다른 요건도 별도 확인.\n실효 한도 미확인. 이 계산은 게시 허가나 계정 안전 판정이 아닙니다.",
+      "title": "자동 포스팅: 공식 API와 예약 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "11-analytics",
+      "width": 1280,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 1280,
+      "meta": "이 장을 마치면 만들어지는 것주간 지표 대시보드 시트예상 소요 시간30분 · 연습용 예상난이도입문 · 나눗셈 연습선행 장10장 · 자동 포스팅",
+      "sim": "선택한 측정 범위는 같습니다. 횟수와 비율을 따로 읽으세요. 고유 사람의 행동 비율·구매율·성장 효과는 알 수 없습니다.",
+      "title": "운영과 분석: 숫자 읽기 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "12-safety",
+      "width": 1280,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 1280,
+      "meta": "이 장을 마치면 만들어지는 것게시 전 체크리스트예상 소요 시간40분 · 연습용 예상난이도입문 · 법률 용어는 천천히선행 장11장 · 운영과 분석",
+      "sim": "보류할 확인 항목 5개\n• 권리: 자산별 허락 범위와 증빙 확인.\n• 정확성: 원출처·인물·수치·이미지 실제성 대조.\n• AI·가상인물: 사용 유형과 해당 표시를 별도로 확인.\n• 보안: 추가 인증·복구·비밀 값 보관 상태 확인.\n• 세무: 지급·비용·활동 형태와 추가 문의 목록 정리.\n표시를 마쳐도 나머지 문제는 사라지지 않습니다.",
+      "title": "정책·법·세금: 계정을 잃지 않는 법 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "13-roadmap",
+      "width": 1280,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 1280,
+      "meta": "이 장을 마치면 만들어지는 것단계별 수익화 계획예상 소요 시간35분 · 연습용 예상난이도입문 · 계획과 장부선행 장12장 · 정책·법·세금",
+      "sim": "A: 입금 0원 − 비용 0원 − 환불 0원 = 세전 현금 잔액 0원.\n운영 0시간. 시간 0으로 시간당 계산 보류.\n\nB: 입금 0원 − 비용 0원 − 환불 0원 = 세전 현금 잔액 0원.\n운영 0시간. 시간 0으로 시간당 계산 보류.\n팔로워·미지급 계약액·세무상 순이익을 계산한 값이 아닙니다.",
+      "title": "수익화 로드맵: 0→1천→1만 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "14-plan",
+      "width": 1280,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 1280,
+      "meta": "이 장을 마치면 만들어지는 것30일 캘린더와 주간 점검표예상 소요 시간25분 · 연습용 예상난이도입문 · 계획표 만들기선행 장13장 · 수익화 로드맵",
+      "sim": "30일 중 핵심 작업 배치 1000분, 점검 220분, 여유·휴식 예산 100분.\n작업 24개 중 분량을 모두 배치한 작업 24개. 남은 분량 0분. 실제 완료는 결과물 확인 후 표시하세요.\n미배치 핵심 작업 없음.",
+      "title": "30일 실행 플랜 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "10-publishing",
+      "width": 375,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 375,
+      "meta": "이 장을 마치면 만들어지는 것업로드 설정(드라이런)과 예약 실행예상 소요 시간45분 · 연습용 예상난이도따라 하기 · API 부분은 천천히선행 장9장 · 파이프라인 잇기",
+      "sim": "50건 가정: 합계 4건, 가정 잔여 46건 → 다른 요건도 별도 확인.\n100건 가정: 합계 4건, 가정 잔여 96건 → 다른 요건도 별도 확인.\n실효 한도 미확인. 이 계산은 게시 허가나 계정 안전 판정이 아닙니다.",
+      "title": "자동 포스팅: 공식 API와 예약 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "11-analytics",
+      "width": 375,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 375,
+      "meta": "이 장을 마치면 만들어지는 것주간 지표 대시보드 시트예상 소요 시간30분 · 연습용 예상난이도입문 · 나눗셈 연습선행 장10장 · 자동 포스팅",
+      "sim": "선택한 측정 범위는 같습니다. 횟수와 비율을 따로 읽으세요. 고유 사람의 행동 비율·구매율·성장 효과는 알 수 없습니다.",
+      "title": "운영과 분석: 숫자 읽기 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "12-safety",
+      "width": 375,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 375,
+      "meta": "이 장을 마치면 만들어지는 것게시 전 체크리스트예상 소요 시간40분 · 연습용 예상난이도입문 · 법률 용어는 천천히선행 장11장 · 운영과 분석",
+      "sim": "보류할 확인 항목 5개\n• 권리: 자산별 허락 범위와 증빙 확인.\n• 정확성: 원출처·인물·수치·이미지 실제성 대조.\n• AI·가상인물: 사용 유형과 해당 표시를 별도로 확인.\n• 보안: 추가 인증·복구·비밀 값 보관 상태 확인.\n• 세무: 지급·비용·활동 형태와 추가 문의 목록 정리.\n표시를 마쳐도 나머지 문제는 사라지지 않습니다.",
+      "title": "정책·법·세금: 계정을 잃지 않는 법 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "13-roadmap",
+      "width": 375,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 375,
+      "meta": "이 장을 마치면 만들어지는 것단계별 수익화 계획예상 소요 시간35분 · 연습용 예상난이도입문 · 계획과 장부선행 장12장 · 정책·법·세금",
+      "sim": "A: 입금 0원 − 비용 0원 − 환불 0원 = 세전 현금 잔액 0원.\n운영 0시간. 시간 0으로 시간당 계산 보류.\n\nB: 입금 0원 − 비용 0원 − 환불 0원 = 세전 현금 잔액 0원.\n운영 0시간. 시간 0으로 시간당 계산 보류.\n팔로워·미지급 계약액·세무상 순이익을 계산한 값이 아닙니다.",
+      "title": "수익화 로드맵: 0→1천→1만 · 준비 중 | ReelsBook"
+    },
+    {
+      "slug": "14-plan",
+      "width": 375,
+      "blocks": [
+        "question",
+        "figure",
+        "principle",
+        "simulator",
+        "case",
+        "workshop",
+        "story",
+        "summary",
+        "quiz"
+      ],
+      "scroll": 375,
+      "meta": "이 장을 마치면 만들어지는 것30일 캘린더와 주간 점검표예상 소요 시간25분 · 연습용 예상난이도입문 · 계획표 만들기선행 장13장 · 수익화 로드맵",
+      "sim": "30일 중 핵심 작업 배치 1000분, 점검 220분, 여유·휴식 예산 100분.\n작업 24개 중 분량을 모두 배치한 작업 24개. 남은 분량 0분. 실제 완료는 결과물 확인 후 표시하세요.\n미배치 핵심 작업 없음.",
+      "title": "30일 실행 플랜 · 준비 중 | ReelsBook"
+    }
+  ],
+  "errors": [],
+  "links": [
+    {
+      "link": "chapters/10-publishing.html#main",
+      "pass": true
+    },
+    {
+      "link": "index.html",
+      "pass": true
+    },
+    {
+      "link": "index.html#contents",
+      "pass": true
+    },
+    {
+      "link": "chapters/01-map.html",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=02-formats",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=03-revenue",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=04-niche",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=05-sources",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=06-writing",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=07-cards",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=08-reels",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=09-pipeline",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=10-publishing",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=11-analytics",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=12-safety",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=13-roadmap",
+      "pass": true
+    },
+    {
+      "link": "chapters/coming-soon.html?chapter=14-plan",
+      "pass": true
+    },
+    {
+      "link": "lab.html",
+      "pass": true
+    },
+    {
+      "link": "glossary.html",
+      "pass": true
+    },
+    {
+      "link": "credits.html",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#question",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#figure",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#principle",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#simulator",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#case",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#workshop",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#story",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#summary",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#quiz",
+      "pass": true
+    },
+    {
+      "link": "glossary.html#api",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-14",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-08",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-06",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-07",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-09",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-AUTO-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-NOCODE-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-AUTO-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-10",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-12",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-API-13",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-NOCODE-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#source-NOCODE-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#limits",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#request",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#stop",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-14-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-08-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-06-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-07-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-09-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-AUTO-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-NOCODE-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-AUTO-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-10-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-12-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-API-13-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-NOCODE-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html#ref-NOCODE-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/09-pipeline.html",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#main",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#question",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#figure",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#principle",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#simulator",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#case",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#workshop",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#story",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#summary",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#quiz",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-GROW-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-GROW-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-METRIC-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-METRIC-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-METRIC-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-GROW-06",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-METRIC-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-GROW-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-GROW-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-GROW-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-KCASE-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#source-KCASE-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#metric-definitions",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#missing",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ratios",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#scope",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-GROW-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-GROW-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-METRIC-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-METRIC-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-METRIC-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-GROW-06-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-METRIC-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-GROW-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-GROW-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-GROW-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-KCASE-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/11-analytics.html#ref-KCASE-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/10-publishing.html",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#main",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#question",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#figure",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#principle",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#simulator",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#case",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#workshop",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#story",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#summary",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#quiz",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LAW-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LAW-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LAW-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LAW-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LAW-06",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LAW-07",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-ASSET-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-REV-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LABEL-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LABEL-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LABEL-08",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LABEL-06",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LABEL-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LABEL-07",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LABEL-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-LABEL-09",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-ETHIC-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-ETHIC-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-SEC-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-RISK-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-SEC-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-RISK-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-06",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-07",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-08",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-09",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-TAX-10",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#source-ETHIC-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#rights",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ad-labels",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ai-labels",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#tax",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LAW-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LAW-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LAW-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LAW-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LAW-06-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LAW-07-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-ASSET-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-REV-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LABEL-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LABEL-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LABEL-08-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LABEL-06-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LABEL-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LABEL-07-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LABEL-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-LABEL-09-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-ETHIC-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-ETHIC-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-SEC-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-RISK-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-SEC-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-RISK-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-06-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-07-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-08-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-09-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-TAX-10-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/12-safety.html#ref-ETHIC-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#main",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#question",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#figure",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#principle",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#simulator",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#case",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#workshop",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#story",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#summary",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#quiz",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-GROW-07",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-REV-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-GAP-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-GAP-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-ECON-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-XPLAT-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-XPLAT-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-GLOBAL-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-XPLAT-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-XPLAT-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-XPLAT-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-GLOBAL-06",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-KCASE-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-GLOBAL-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-GLOBAL-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#source-GLOBAL-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#stages",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ledger",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#cross-posting",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-GROW-07-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-REV-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-GAP-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-GAP-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-ECON-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-XPLAT-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-XPLAT-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-GLOBAL-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-XPLAT-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-XPLAT-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-XPLAT-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-GLOBAL-06-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-KCASE-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-GLOBAL-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-GLOBAL-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/13-roadmap.html#ref-GLOBAL-03-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#main",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#question",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#figure",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#principle",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#simulator",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#case",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#workshop",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#story",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#summary",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#quiz",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#source-GROW-07",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#source-CRAFT-04",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#source-METRIC-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#source-LEARN-01",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#source-LEARN-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#source-CRAFT-02",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#source-TAX-05",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#source-LEARN-03",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#time-budget",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#goals",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#weekly-review",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#ref-GROW-07-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#ref-CRAFT-04-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#ref-METRIC-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#ref-LEARN-01-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#ref-LEARN-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#ref-CRAFT-02-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#ref-TAX-05-1",
+      "pass": true
+    },
+    {
+      "link": "chapters/14-plan.html#ref-LEARN-03-1",
+      "pass": true
+    }
+  ],
+  "checks": [
+    {
+      "description": "10-publishing 1280px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: numeric keyboard",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 1280px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: numeric keyboard",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 1280px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: select keyboard",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "12-safety 1280px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: numeric keyboard",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 1280px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: numeric keyboard",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "14-plan 1280px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: numeric keyboard",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "10-publishing 375px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: numeric keyboard",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "11-analytics 375px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: select keyboard",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "12-safety 375px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: numeric keyboard",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap 375px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: 9 blocks",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: explicit chapter metadata",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: simulator initialized",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: figure keyboard arrows",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: numeric keyboard",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: break preset changes valid text result",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: quiz 1 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: quiz 2 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: quiz 3 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: quiz 4 incorrect feedback",
+      "pass": true
+    },
+    {
+      "description": "14-plan 375px: correct answers and reset",
+      "pass": true
+    },
+    {
+      "description": "10-publishing: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "10-publishing: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "10-publishing: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "10-publishing: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "10-publishing: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "11-analytics: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "11-analytics: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "11-analytics: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "12-safety: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "12-safety: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "13-roadmap: focused term stays within mobile width",
+      "pass": true
+    },
+    {
+      "description": "10: one bundle means two publications",
+      "pass": true
+    },
+    {
+      "description": "10: 21:00 KST is 12:00 UTC",
+      "pass": true
+    },
+    {
+      "description": "10: blank input defers",
+      "pass": true
+    },
+    {
+      "description": "11: sample A and B rates",
+      "pass": true
+    },
+    {
+      "description": "11: zero and missing stay distinct",
+      "pass": true
+    },
+    {
+      "description": "11: dashboard interpretation feedback",
+      "pass": true
+    },
+    {
+      "description": "12: all reviewed is a recorded status",
+      "pass": true
+    },
+    {
+      "description": "12: AI/ad labels do not clear three other risks",
+      "pass": true
+    },
+    {
+      "description": "13: balance and hourly balance",
+      "pass": true
+    },
+    {
+      "description": "13: loss and zero time",
+      "pass": true
+    },
+    {
+      "description": "14: exactly 30 calendar days",
+      "pass": true
+    },
+    {
+      "description": "14: zero budget places no work",
+      "pass": true
+    },
+    {
+      "description": "14: zero active days places no review",
+      "pass": true
+    },
+    {
+      "description": "14: small budget preserves review",
+      "pass": true
+    },
+    {
+      "description": "14: export includes outstanding tasks",
+      "pass": true
+    },
+    {
+      "description": "checklist persists after reload",
+      "pass": true
+    },
+    {
+      "description": "blocked storage remains interactive",
+      "pass": true
+    },
+    {
+      "description": "dark theme",
+      "pass": true
+    },
+    {
+      "description": "print hides simulator",
+      "pass": true
+    },
+    {
+      "description": "no JS keeps all blocks",
+      "pass": true
+    },
+    {
+      "description": "no JS keeps quiz explanations",
+      "pass": true
+    }
+  ]
+}

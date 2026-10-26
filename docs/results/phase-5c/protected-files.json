@@ -1,0 +1,30 @@
+{
+  "site/assets/book.js": {
+    "unchanged_from_HEAD": true,
+    "sha256": "7b4a1205ad3a0dc24703c09af661f5dcc4085de7c0fe60ab4fe21c5c869c6094"
+  },
+  "site/assets/book.css": {
+    "unchanged_from_HEAD": true,
+    "sha256": "f7db6b3ae14b1218b2ed88c06ae9d533d4bb7b48bfdb2b4356169e320900c1f8"
+  },
+  "site/assets/sim/common.js": {
+    "unchanged_from_HEAD": true,
+    "sha256": "d30f642ce164727945cd7b8489dff6c09c4ecadcb85ed05a61d0474e281067c0"
+  },
+  "site/glossary.html": {
+    "unchanged_from_HEAD": true,
+    "sha256": "cc78d7caea3ad20afbd940923832552f73792e97cee674f56c0195ea28a59f50"
+  },
+  "site/credits.html": {
+    "unchanged_from_HEAD": true,
+    "sha256": "c3504424fedbff8f24426075f8c7c3ba046234f85d5f30d2d13f14f48ed8dee6"
+  },
+  "site/index.html": {
+    "unchanged_from_HEAD": true,
+    "sha256": "ca3d90901d70c5fd6738a299d5ceaf520e976c37f75aa4ff012f215fbb2708a0"
+  },
+  "docs/PROJECT_STATE.md": {
+    "unchanged_from_HEAD": true,
+    "sha256": "c25e57867cdbfa6f09009e2bac90e0e3fed31c3c1e5b9e770ce8b05ff9a06ee2"
+  }
+}
