@@ -2,24 +2,24 @@
   "synthetic": true,
   "articles": [
     {
-      "title": "가상 별빛도서관, 조용한 독서 모임을 열다",
-      "link": "https://example.invalid/library",
-      "summary": "가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다. 참가자는 읽고 싶은 책을 직접 고르는 설정입니다.",
+      "title": "신청 대상, 내 조건과 맞나요?",
+      "link": "https://example.invalid/support#eligibility",
+      "summary": "공고의 대상 조건과 내 상황을 비교해요. 제외 조건도 함께 확인해요.",
       "published": "Mon, 26 Oct 2026 09:00:00 +0900",
       "synthetic": true
     },
     {
-      "title": "가상 초록작업실, 종이 재사용 실험을 시작하다",
-      "link": "https://example.invalid/paper",
-      "summary": "가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다. 효과나 절감 수치는 측정하지 않은 교육용 이야기입니다.",
-      "published": "Mon, 26 Oct 2026 10:00:00 +0900",
+      "title": "신청 기간, 마감일은 언제인가요?",
+      "link": "https://example.invalid/support#deadline",
+      "summary": "공고에서 신청 시작일과 마감일을 확인해요. 날짜를 달력에 적어 두세요.",
+      "published": "Mon, 26 Oct 2026 09:00:00 +0900",
       "synthetic": true
     },
     {
-      "title": "가상 달빛마을, 산책 지도를 함께 그리다",
-      "link": "https://example.invalid/walk",
-      "summary": "가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다. 실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다.",
-      "published": "Mon, 26 Oct 2026 11:00:00 +0900",
+      "title": "제출 서류, 미리 준비했나요?",
+      "link": "https://example.invalid/support#documents",
+      "summary": "제출 서류와 발급 방법을 공고에서 확인해요. 신청이 곧 지급 확정은 아니에요.",
+      "published": "Mon, 26 Oct 2026 09:00:00 +0900",
       "synthetic": true
     }
   ],

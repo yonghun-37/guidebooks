@@ -305,6 +305,6 @@ def test_bundled_video_has_real_motion_and_silent_audio():
     assert ImageChops.difference(early.crop((80, 200, 1000, 1350)), later.crop((80, 200, 1000, 1350))).getbbox()
     assert ImageChops.difference(early.crop((90, 1450, 990, 1710)), later.crop((90, 1450, 990, 1710))).getbbox()
     assert ImageChops.difference(early.crop((90, 1810, 990, 1818)), later.crop((90, 1810, 990, 1818))).getbbox()
-    boundary = video_frame(path, 4)
+    boundary = video_frame(path, 3)  # 동봉 편집본: 15초 / 5장면
     assert sum(boundary.resize((1, 1)).getpixel((0, 0))) < sum(later.resize((1, 1)).getpixel((0, 0))) / 3
     assert audio_rms(path) < 2

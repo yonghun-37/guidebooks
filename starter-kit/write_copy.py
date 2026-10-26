@@ -24,18 +24,18 @@ urlopen = build_opener(NoRedirect()).open
 
 def write_copy(news, config):
     synthetic = news["synthetic"]
-    label = "합성 데이터 · 실제 뉴스 아님" if synthetic else "출처 대조 전 · 문안 초안"
-    scenes = [{"layout": "cover", "title": "오늘의 발견\n**한 장씩** 읽다", "body": "읽고, 고르고, 기록하는\n우리 주변의 작은 이야기",
-               "subtitle": "합성 피드로 카드와 릴스를 만드는 연습입니다." if synthetic else "RSS에서 고른 소재입니다. 게시 전 원문을 확인하세요.",
-               "source": "동봉 합성 피드" if synthetic else "RSS 후보 묶음"}]
+    label = "합성 데이터 · 예시 문안 · 실제 제도 아님" if synthetic else "출처 대조 전 · 문안 초안"
+    scenes = [{"layout": "cover", "title": "청년 지원금\n신청 전 **3가지**", "body": "대상 · 기간 · 서류\n공고를 읽기 전 저장하세요",
+               "subtitle": "청년 지원금, 신청 전 세 가지를 확인해요." if synthetic else "RSS에서 고른 소재입니다. 게시 전 원문을 확인하세요.",
+               "source": "직접 작성 예시 문안" if synthetic else "RSS 후보 묶음"}]
     for article in news["articles"]:
         summary = article["summary"] or "[직접 편집] 원출처를 읽고 확인한 핵심을 적으세요."
         points = re.split(r"(?<=[.!?])\s+", summary, maxsplit=2)
         scenes.append({"layout": "body", "title": article["title"].replace(", ", ",\n", 1), "body": summary,
                        "points": points, "subtitle": article["title"], "source": article["link"],
                        "published": article["published"]})
-    scenes.append({"layout": "closing", "title": "다음 발견도\n**함께** 읽어요", "body": "다시 읽고 싶다면 저장\n함께 읽을 사람에게 공유",
-                   "subtitle": "원출처를 확인하고, 다시 읽을 이야기를 저장하세요.",
+    scenes.append({"layout": "closing", "title": "신청하기 전\n**저장**하고 확인", "body": "다시 읽고 싶다면 저장\n함께 읽을 사람에게 공유",
+                   "subtitle": "자동 지급은 아니에요. 공고 원문을 확인하세요.",
                    "source": "\n".join(a["link"] for a in news["articles"])})
     caption = label + "\n" + "\n".join(a["title"] + "\n" + a["link"] for a in news["articles"])
     return {"synthetic": synthetic, "label": label, "account_name": config["account_name"],

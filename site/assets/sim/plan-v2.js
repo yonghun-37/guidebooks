@@ -8,7 +8,7 @@
     const calendar = element.querySelector('[data-plan-calendar]');
     const copy = element.querySelector('[data-plan-text]');
     const weeks = element.querySelector('[data-plan-weeks]');
-    const phases = ['독자·계정·권리 메모 → 문안', '카드·영상 제작 → 사람 검수', '앱 첫 게시 → 게시 기록 확인', '반응·수입·비용 기록 → 다음 계획'];
+    const phases = ['생활 뉴스 독자·권리 메모 → 신청 체크 문안', '신청 체크 카드·영상 제작 → 사람 검수', '앱 첫 게시 → 게시 기록 확인', '반응·수입·비용 기록 → 다음 계획'];
     const update = () => {
       if ([start, minutes, days].some(input => input.value.trim() === '' || !input.checkValidity())) {
         calendar.hidden = true; weeks.replaceChildren(); copy.value = '';

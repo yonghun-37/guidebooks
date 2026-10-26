@@ -1,0 +1,512 @@
+[
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 4,
+    "text": "\"account_name\": \"하린의 한 장 실험실\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 5,
+    "text": "\"caption\": \"합성 데이터 · 실제 뉴스 아님\\n가상 별빛도서관, 조용한 독서 모임을 열다\\nhttps://example.invalid/library\\n가상 초록작업실, 종이 재사용 실험을 시작하다\\nhttps://example.invalid/paper\\n가상 달빛마을, 산책 지도를 함께 그리다\\nhttps://example.invalid/walk\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 11,
+    "text": "\"title\": \"오늘의 발견\\n**한 장씩** 읽다\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 12,
+    "text": "\"body\": \"읽고, 고르고, 기록하는\\n우리 주변의 작은 이야기\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 18,
+    "text": "\"title\": \"가상 별빛도서관,\\n조용한 독서 모임을 열다\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 19,
+    "text": "\"body\": \"가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다. 참가자는 읽고 싶은 책을 직접 고르는 설정입니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 21,
+    "text": "\"가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 24,
+    "text": "\"subtitle\": \"가상 별빛도서관, 조용한 독서 모임을 열다\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 30,
+    "text": "\"title\": \"가상 초록작업실,\\n종이 재사용 실험을 시작하다\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 31,
+    "text": "\"body\": \"가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다. 효과나 절감 수치는 측정하지 않은 교육용 이야기입니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 33,
+    "text": "\"가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 36,
+    "text": "\"subtitle\": \"가상 초록작업실, 종이 재사용 실험을 시작하다\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 42,
+    "text": "\"title\": \"가상 달빛마을,\\n산책 지도를 함께 그리다\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 43,
+    "text": "\"body\": \"가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다. 실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 45,
+    "text": "\"가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 48,
+    "text": "\"subtitle\": \"가상 달빛마을, 산책 지도를 함께 그리다\","
+  },
+  {
+    "file": "site/assets/img/samples/copy.json",
+    "line": 54,
+    "text": "\"title\": \"다음 발견도\\n**함께** 읽어요\","
+  },
+  {
+    "file": "site/assets/img/samples/news.json",
+    "line": 5,
+    "text": "\"title\": \"가상 별빛도서관, 조용한 독서 모임을 열다\","
+  },
+  {
+    "file": "site/assets/img/samples/news.json",
+    "line": 7,
+    "text": "\"summary\": \"가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다. 참가자는 읽고 싶은 책을 직접 고르는 설정입니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/news.json",
+    "line": 12,
+    "text": "\"title\": \"가상 초록작업실, 종이 재사용 실험을 시작하다\","
+  },
+  {
+    "file": "site/assets/img/samples/news.json",
+    "line": 14,
+    "text": "\"summary\": \"가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다. 효과나 절감 수치는 측정하지 않은 교육용 이야기입니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/news.json",
+    "line": 19,
+    "text": "\"title\": \"가상 달빛마을, 산책 지도를 함께 그리다\","
+  },
+  {
+    "file": "site/assets/img/samples/news.json",
+    "line": 21,
+    "text": "\"summary\": \"가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다. 실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다.\","
+  },
+  {
+    "file": "site/assets/img/samples/subtitles.srt",
+    "line": 7,
+    "text": "가상 별빛도서관, 조용한 독서 모임을 열다"
+  },
+  {
+    "file": "site/assets/img/samples/subtitles.srt",
+    "line": 11,
+    "text": "가상 초록작업실, 종이 재사용 실험을 시작하다"
+  },
+  {
+    "file": "site/assets/img/samples/subtitles.srt",
+    "line": 15,
+    "text": "가상 달빛마을, 산책 지도를 함께 그리다"
+  },
+  {
+    "file": "site/assets/sim/interactions.js",
+    "line": 57,
+    "text": "const cardDefault = { title: '퇴근 뒤 책을 빌리려면?', body: '방문 전에 운영 시간을 확인하세요.\\n예약이 필요한지도 함께 살펴보세요.', source: '가상 자료 · 도서관 이용 안내', size: 44, padding: 90, palette: 'cream' };"
+  },
+  {
+    "file": "site/assets/sim/interactions.js",
+    "line": 99,
+    "text": "const reelDefault = () => ['퇴근 뒤 책을 빌리려면?', '운영 시간을 확인하세요.', '예약 조건도 살펴보세요.', '준비물을 챙기세요.', '방문 전 안내를 다시 보세요.'].map((text,i)=>({text,start:i*4,end:(i+1)*4}));"
+  },
+  {
+    "file": "site/assets/sim/interactions.js",
+    "line": 178,
+    "text": "all(body,'[data-preset]').forEach(b=>b.addEventListener('click',()=>{pause();captions=reelDefault();boundaries=[0,4,8,12,16,20];selected=0;t=0;looping=false;one(body,'[data-loop]').setAttribute('aria-pressed','false');if(b.dataset.preset==='fast'){captions[0].text='퇴근 뒤 도서관에서 책을 빌리려면 운영 시간과 예약 조건, 이용 대상, 준비물과 휴관일까지 모두 확인해야 합니다.';captions[0].end=1;}selectPreset(body,b.dataset.preset);tracks();announce('가상 예제로 돌아와 첫 장면에 정지했습니다.');}));"
+  },
+  {
+    "file": "site/chapters/05-sources.html",
+    "line": 15,
+    "text": "예: 교육청 공지에서 지역 도서관 이용 변경을 찾습니다."
+  },
+  {
+    "file": "site/chapters/05-sources.html",
+    "line": 17,
+    "text": "가상 문구: “자료: 가상 도서관, ‘운영 안내’, 발표일: ○○, 원문: URL”."
+  },
+  {
+    "file": "site/chapters/05-sources.html",
+    "line": 29,
+    "text": "예: 지역 교육청 공지에서 도서관 변경을 고릅니다. 내 기관을 즐겨찾기하세요."
+  },
+  {
+    "file": "site/chapters/06-writing.html",
+    "line": 15,
+    "text": "독자: 퇴근 뒤 도서관을 이용할 주민."
+  },
+  {
+    "file": "site/chapters/07-cards.html",
+    "line": 15,
+    "text": "가상 주제: “퇴근 뒤 도서관에 가려면?”"
+  },
+  {
+    "file": "site/chapters/07-cards.html",
+    "line": 17,
+    "text": "AI 생성 예시 · 실제 도서관 사진이 아닙니다. 사용 요청입니다."
+  },
+  {
+    "file": "site/chapters/07-cards.html",
+    "line": 17,
+    "text": "가상 동네 도서관의 퇴근 무렵을 그린 세로 4:5 과슈 삽화. 아래쪽 나무 책상에 무표지 책 두 권과 무늬 없는 스탠드, 뒤에는 책장. 청록·크림색과 따뜻한 저녁빛. 위쪽 1/3은 제목을 따로 넣을 빈 벽. 사람·실제 장소·글자·숫자·로고·브랜드·워터마크 없이."
+  },
+  {
+    "file": "site/chapters/07-cards.html",
+    "line": 22,
+    "text": "퇴근 뒤 책을 빌리려면?"
+  },
+  {
+    "file": "site/chapters/07-cards.html",
+    "line": 22,
+    "text": "출처: 가상 도서관 안내"
+  },
+  {
+    "file": "site/chapters/08-reels.html",
+    "line": 21,
+    "text": "초록 종이 로봇·화분→reference.png"
+  },
+  {
+    "file": "site/credits.html",
+    "line": 14,
+    "text": "가상 도서관 삽화"
+  },
+  {
+    "file": "site/index.html",
+    "line": 59,
+    "text": "마케팅팀 직원 하린은 ‘AI·테크 뉴스 한 장 요약’ 계정을 구상합니다. 전 잡지 편집장 정 선배는 첫 질문을 건넵니다. “무엇을 만들까보다, 누구의 질문을 풀어 줄까부터 적어 보자.”"
+  },
+  {
+    "file": "site/practice/03-copy.html",
+    "line": 7,
+    "text": "독자 질문 하나를 정하세요. 예: “이번 주 도서관을 언제 이용할 수 있나요?” 기관 원문이나 원기사를 직접 열어요. 검색을 썼다면 답변의 인용 또는"
+  },
+  {
+    "file": "site/practice/03-copy.html",
+    "line": 34,
+    "text": "가상 은솔도서관: 평일 20시까지, 수요일 휴관"
+  },
+  {
+    "file": "site/practice/03-copy.html",
+    "line": 34,
+    "text": "짧게 만드는 과정에서 휴관일이 사라졌다면 “수요일 휴관 조건을 유지해 다시 써 줘”라고 고치세요."
+  },
+  {
+    "file": "site/practice/03-copy.html",
+    "line": 51,
+    "text": "가상 “수요일 휴관”이 빠졌다면 그 조건을 복원하고 재작성해요."
+  },
+  {
+    "file": "site/practice/04-cards.html",
+    "line": 9,
+    "text": "“평일 20시까지” 아래 “수요일 휴관”과 출처가 읽혀요."
+  },
+  {
+    "file": "site/practice/04-cards.html",
+    "line": 13,
+    "text": "크림색 책상 위에 초록색 종이 로봇 하나와 작은 갈색 화분 하나."
+  },
+  {
+    "file": "site/practice/05-reel.html",
+    "line": 16,
+    "text": "11월 2일에 도서관을 방문하나요?"
+  },
+  {
+    "file": "site/practice/05-reel.html",
+    "line": 17,
+    "text": "성인 회원은 이날 책 두 권을 추가로 빌릴 수 있어요."
+  },
+  {
+    "file": "site/practice/05-reel.html",
+    "line": 18,
+    "text": "예약 도서는 제외되니 방문 전 공지를 확인하세요."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 2,
+    "text": "원문 요약 → 직접 대조 → 문안 → 장면 → 편집 순서로 진행하세요. 아래 도서관 문장과 종이 로봇은 가상 연습이며, 비교문은 예상 출력입니다."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 11,
+    "text": "연습도서관 원문에 “11월 2일 하루·성인 회원·추가 대출 2권·예약 도서 제외”가 있으면 네 조건을 모두 표에 남깁니다."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 21,
+    "text": "표지: “성인 회원, 11월 2일 추가 대출” / 본문: “예약 도서는 제외됩니다.”처럼 같은 조건을 유지합니다."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 23,
+    "text": "작은 초록색 종이 로봇 하나가 크림색 책상 왼쪽에 서 있고,"
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 29,
+    "text": "초록 종이 로봇·빈 상단·선명한 화분이 있고, 제목은 Canva 텍스트 상자로 입력한 결과입니다."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 39,
+    "text": "“예약 도서도 가능”처럼 부정이 뒤집히거나 낭독이 길면 문장을 줄이고 원문과 다시 맞춥니다."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 39,
+    "text": "“11월 2일 방문하나요? 성인 회원은 추가 대출이 됩니다. 예약 도서는 제외되니 먼저 확인하세요.”처럼 말할 문장으로 씁니다."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 40,
+    "text": "세로 9:16 설명 삽화. 작은 초록 종이 로봇 하나가 크림색 책상 왼쪽에 서 있고 오른쪽에는 무늬 없는 갈색 화분 한 개가 있어."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 43,
+    "text": "A small green paper robot slowly turns its body toward the brown flowerpot once."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 46,
+    "text": "Preserve the robot's shape and colors from the reference."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 49,
+    "text": "The small green paper robot gently tilts its head toward the brown flowerpot once."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 51,
+    "text": "Preserve the robot shape, green and brown colors, cream desk, flowerpot position, and paper craft style."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 54,
+    "text": "The small green paper robot takes one small step backward away from the brown flowerpot."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 56,
+    "text": "Preserve the robot shape, green and brown colors, cream desk, flowerpot position, and paper craft style."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 58,
+    "text": "몸이 녹거나 여러 장면이 갑자기 바뀌면 “The robot tilts its head once. Locked camera.”처럼 한 동작과 고정 카메라로 줄입니다."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 58,
+    "text": "샷 1은 종이 로봇이 화분 쪽으로 몸을 한 번 돌리고 카메라는 고정된 샷입니다."
+  },
+  {
+    "file": "site/prompts.html",
+    "line": 67,
+    "text": "“성인 회원은 11월 2일 추가 대출을 이용할 수 있습니다. 예약 도서는 제외됩니다. 방문 전 공지를 확인하세요.”에 제공한 출처를 붙입니다."
+  },
+  {
+    "file": "starter-kit/config.example.yaml",
+    "line": 1,
+    "text": "account_name: 하린의 한 장 실험실"
+  },
+  {
+    "file": "starter-kit/fixtures/sample-feed.xml",
+    "line": 6,
+    "text": "<item><title>가상 별빛도서관, 조용한 독서 모임을 열다</title>"
+  },
+  {
+    "file": "starter-kit/fixtures/sample-feed.xml",
+    "line": 9,
+    "text": "<description>가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다. 참가자는 읽고 싶은 책을 직접 고르는 설정입니다.</description>"
+  },
+  {
+    "file": "starter-kit/fixtures/sample-feed.xml",
+    "line": 11,
+    "text": "<item><title>가상 초록작업실, 종이 재사용 실험을 시작하다</title>"
+  },
+  {
+    "file": "starter-kit/fixtures/sample-feed.xml",
+    "line": 14,
+    "text": "<description>가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다. 효과나 절감 수치는 측정하지 않은 교육용 이야기입니다.</description>"
+  },
+  {
+    "file": "starter-kit/fixtures/sample-feed.xml",
+    "line": 16,
+    "text": "<item><title>가상 달빛마을, 산책 지도를 함께 그리다</title>"
+  },
+  {
+    "file": "starter-kit/fixtures/sample-feed.xml",
+    "line": 19,
+    "text": "<description>가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다. 실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다.</description>"
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 4,
+    "text": "\"account_name\": \"하린의 한 장 실험실\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 5,
+    "text": "\"caption\": \"합성 데이터 · 실제 뉴스 아님\\n가상 별빛도서관, 조용한 독서 모임을 열다\\nhttps://example.invalid/library\\n가상 초록작업실, 종이 재사용 실험을 시작하다\\nhttps://example.invalid/paper\\n가상 달빛마을, 산책 지도를 함께 그리다\\nhttps://example.invalid/walk\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 11,
+    "text": "\"title\": \"오늘의 발견\\n**한 장씩** 읽다\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 12,
+    "text": "\"body\": \"읽고, 고르고, 기록하는\\n우리 주변의 작은 이야기\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 18,
+    "text": "\"title\": \"가상 별빛도서관,\\n조용한 독서 모임을 열다\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 19,
+    "text": "\"body\": \"가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다. 참가자는 읽고 싶은 책을 직접 고르는 설정입니다.\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 21,
+    "text": "\"가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다.\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 24,
+    "text": "\"subtitle\": \"가상 별빛도서관, 조용한 독서 모임을 열다\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 30,
+    "text": "\"title\": \"가상 초록작업실,\\n종이 재사용 실험을 시작하다\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 31,
+    "text": "\"body\": \"가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다. 효과나 절감 수치는 측정하지 않은 교육용 이야기입니다.\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 33,
+    "text": "\"가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다.\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 36,
+    "text": "\"subtitle\": \"가상 초록작업실, 종이 재사용 실험을 시작하다\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 42,
+    "text": "\"title\": \"가상 달빛마을,\\n산책 지도를 함께 그리다\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 43,
+    "text": "\"body\": \"가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다. 실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다.\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 45,
+    "text": "\"가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다.\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 48,
+    "text": "\"subtitle\": \"가상 달빛마을, 산책 지도를 함께 그리다\","
+  },
+  {
+    "file": "starter-kit/samples/copy.json",
+    "line": 54,
+    "text": "\"title\": \"다음 발견도\\n**함께** 읽어요\","
+  },
+  {
+    "file": "starter-kit/samples/news.json",
+    "line": 5,
+    "text": "\"title\": \"가상 별빛도서관, 조용한 독서 모임을 열다\","
+  },
+  {
+    "file": "starter-kit/samples/news.json",
+    "line": 7,
+    "text": "\"summary\": \"가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다. 참가자는 읽고 싶은 책을 직접 고르는 설정입니다.\","
+  },
+  {
+    "file": "starter-kit/samples/news.json",
+    "line": 12,
+    "text": "\"title\": \"가상 초록작업실, 종이 재사용 실험을 시작하다\","
+  },
+  {
+    "file": "starter-kit/samples/news.json",
+    "line": 14,
+    "text": "\"summary\": \"가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다. 효과나 절감 수치는 측정하지 않은 교육용 이야기입니다.\","
+  },
+  {
+    "file": "starter-kit/samples/news.json",
+    "line": 19,
+    "text": "\"title\": \"가상 달빛마을, 산책 지도를 함께 그리다\","
+  },
+  {
+    "file": "starter-kit/samples/news.json",
+    "line": 21,
+    "text": "\"summary\": \"가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다. 실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다.\","
+  },
+  {
+    "file": "starter-kit/samples/subtitles.srt",
+    "line": 7,
+    "text": "가상 별빛도서관, 조용한 독서 모임을 열다"
+  },
+  {
+    "file": "starter-kit/samples/subtitles.srt",
+    "line": 11,
+    "text": "가상 초록작업실, 종이 재사용 실험을 시작하다"
+  },
+  {
+    "file": "starter-kit/samples/subtitles.srt",
+    "line": 15,
+    "text": "가상 달빛마을, 산책 지도를 함께 그리다"
+  },
+  {
+    "file": "starter-kit/write_copy.py",
+    "line": 28,
+    "text": "scenes = [{\"layout\": \"cover\", \"title\": \"오늘의 발견\\n**한 장씩** 읽다\", \"body\": \"읽고, 고르고, 기록하는\\n우리 주변의 작은 이야기\","
+  },
+  {
+    "file": "starter-kit/write_copy.py",
+    "line": 37,
+    "text": "scenes.append({\"layout\": \"closing\", \"title\": \"다음 발견도\\n**함께** 읽어요\", \"body\": \"다시 읽고 싶다면 저장\\n함께 읽을 사람에게 공유\","
+  }
+]

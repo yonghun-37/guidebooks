@@ -54,7 +54,7 @@
     draw();
   }
 
-  const cardDefault = { title: '퇴근 뒤 책을 빌리려면?', body: '방문 전에 운영 시간을 확인하세요.\n예약이 필요한지도 함께 살펴보세요.', source: '가상 자료 · 도서관 이용 안내', size: 44, padding: 90, palette: 'cream' };
+  const cardDefault = { title: '청년 지원금, 신청 전 3가지', body: '대상·기간·서류를 확인하세요.\n자동 지급은 아니에요.', source: '예시 문안 · 지원 신청 체크', size: 44, padding: 90, palette: 'cream' };
   function cards(root, body) {
     let before = {...cardDefault}, comparing = false, small = false;
     body.innerHTML = `<div class="card-editor"><div><label>제목<input data-title maxlength="100"></label><label>본문<textarea data-copy rows="4" maxlength="1600"></textarea></label></div><div><div data-after class="card-stage" aria-label="수정 후 카드 미리보기"><div class="card-sheet"><div class="card-copy card-head"></div><div class="card-copy card-text"></div><div class="card-copy card-source"></div></div></div><p data-clip class="clip-label"></p></div></div><div class="tool-row"><button type="button" data-preset="overflow" aria-pressed="false">넘치는 예</button><button type="button" data-preset="default" aria-pressed="true">기본값</button><button type="button" data-small aria-pressed="false">작게 보기</button></div><details><summary>크기·여백·출처·수정 전후</summary><div class="tool-fields">${numberField('size', '원본 글자 크기(px)', 44, 24, 90)}${numberField('padding', '원본 여백(px)', 90, 30, 180)}</div><label>글자 크기 슬라이더<input data-size-range type="range" min="24" max="90" value="44" aria-label="원본 글자 크기 슬라이더"></label><label>출처<input data-source maxlength="240"></label><label>색 조합<select data-palette><option value="cream">밝은 바탕·짙은 글자</option><option value="navy">짙은 바탕·밝은 글자</option></select></label><div class="tool-row"><button type="button" data-freeze>현재 모습을 수정 전으로 고정</button><button type="button" data-compare aria-pressed="false">수정 전후 보기</button></div><div data-before-panel hidden><p>고정한 수정 전 · 같은 문안을 고쳐 비교하세요.</p><div data-before class="card-stage"><div class="card-sheet"><div class="card-copy card-head"></div><div class="card-copy card-text"></div><div class="card-copy card-source"></div></div></div></div></details>`;
@@ -87,7 +87,7 @@
     const load = data => { Object.entries(fields).forEach(([key,input]) => { input.value = data[key]; }); update(); };
     Object.values(fields).forEach(input => input.addEventListener('input', () => { selectPreset(body,''); update(); }));
     one(body,'[data-size-range]').addEventListener('input', event => { fields.size.value = event.target.value; selectPreset(body,''); update(); });
-    all(body,'[data-preset]').forEach(b => b.addEventListener('click', () => { const data={...cardDefault}; if(b.dataset.preset==='overflow') data.body = '방문 전에는 운영 시간과 예약 조건을 확인하고, 이용할 수 있는 자료와 준비물을 안내에서 찾아보세요.\n'.repeat(10); before = {...data}; load(data); selectPreset(body,b.dataset.preset); }));
+    all(body,'[data-preset]').forEach(b => b.addEventListener('click', () => { const data={...cardDefault}; if(b.dataset.preset==='overflow') data.body = '신청 전에는 대상과 기간을 확인하고, 제출 서류와 제외 조건을 공고에서 찾아보세요.\n'.repeat(10); before = {...data}; load(data); selectPreset(body,b.dataset.preset); }));
     one(body,'[data-freeze]').addEventListener('click', () => { if(valid([fields.size,fields.padding])) { before=state(); update(); report(root,'1개 고정','현재 카드가 수정 전으로 고정되었으니 문안을 고쳐 비교하세요.'); } });
     one(body,'[data-compare]').addEventListener('click',event => { comparing=!comparing; event.currentTarget.setAttribute('aria-pressed',String(comparing)); one(body,'[data-before-panel]').hidden=!comparing; update(); });
     one(body,'[data-small]').addEventListener('click',event => { small=!small; event.currentTarget.setAttribute('aria-pressed',String(small)); all(body,'.card-stage').forEach(stage=>stage.classList.toggle('is-small',small)); update(); });
@@ -96,7 +96,7 @@
     load(cardDefault);
   }
 
-  const reelDefault = () => ['퇴근 뒤 책을 빌리려면?', '운영 시간을 확인하세요.', '예약 조건도 살펴보세요.', '준비물을 챙기세요.', '방문 전 안내를 다시 보세요.'].map((text,i)=>({text,start:i*4,end:(i+1)*4}));
+  const reelDefault = () => ['청년 지원금, 신청 전 3가지', '신청 대상을 확인하세요.', '신청 기간도 살펴보세요.', '제출 서류를 챙기세요.', '자동 지급 아님을 확인하세요.'].map((text,i)=>({text,start:i*4,end:(i+1)*4}));
   function reels(root, body) {
     const total = 20, fps = 24;
     let captions = reelDefault(), boundaries = [0,4,8,12,16,20], selected = 0, t = 0, playing = false, looping = false, raf = 0, previous = 0, lastPaint = 0;
@@ -175,8 +175,8 @@
     all(body,'[data-shift]').forEach(b=>b.addEventListener('click',()=>{const c=captions[selected],delta=Number(b.dataset.shift);timeFields[0].value=(c.start+delta).toFixed(1);timeFields[1].value=(c.end+delta).toFixed(1);applyTimes(Number(timeFields[0].value),Number(timeFields[1].value));}));
     one(body,'[data-scene-apply]').addEventListener('click',()=>{const input=one(body,'[data-value="scene-end"]'),end=Number(input.value);pause();if(selected===4 || !valid([input]) || end<=boundaries[selected] || end>=boundaries[selected+2]){input.setAttribute('aria-invalid','true');report(root,'—','장면 끝은 양옆 장면의 바깥 경계 사이에 입력하세요.');return;}boundaries[selected+1]=end;tracks();announce('장면 경계만 바꿨습니다. 자막 시간은 따로 확인하세요.');});
     one(body,'[data-position-apply]').addEventListener('click',()=>{const input=one(body,'[data-value="position"]');if(valid([input]))seek(Number(input.value));else report(root,'—','영상 안의 재생 위치를 입력하세요.');});
-    all(body,'[data-preset]').forEach(b=>b.addEventListener('click',()=>{pause();captions=reelDefault();boundaries=[0,4,8,12,16,20];selected=0;t=0;looping=false;one(body,'[data-loop]').setAttribute('aria-pressed','false');if(b.dataset.preset==='fast'){captions[0].text='퇴근 뒤 도서관에서 책을 빌리려면 운영 시간과 예약 조건, 이용 대상, 준비물과 휴관일까지 모두 확인해야 합니다.';captions[0].end=1;}selectPreset(body,b.dataset.preset);tracks();announce('가상 예제로 돌아와 첫 장면에 정지했습니다.');}));
-    one(body,'[data-repair]').addEventListener('click',()=>{pause();captions[selected].text='운영 시간을 확인하세요.';t=captions[selected].start;selectPreset(body,'');tracks();announce('같은 장면과 시간을 두고 문장만 줄였습니다. 다시 재생하세요.');});
+    all(body,'[data-preset]').forEach(b=>b.addEventListener('click',()=>{pause();captions=reelDefault();boundaries=[0,4,8,12,16,20];selected=0;t=0;looping=false;one(body,'[data-loop]').setAttribute('aria-pressed','false');if(b.dataset.preset==='fast'){captions[0].text='청년 지원금을 신청하려면 대상과 신청 기간, 제출 서류와 제외 조건, 심사 절차까지 공고에서 모두 확인해야 합니다.';captions[0].end=1;}selectPreset(body,b.dataset.preset);tracks();announce('가상 예제로 돌아와 첫 장면에 정지했습니다.');}));
+    one(body,'[data-repair]').addEventListener('click',()=>{pause();captions[selected].text='신청 대상을 확인하세요.';t=captions[selected].start;selectPreset(body,'');tracks();announce('같은 장면과 시간을 두고 문장만 줄였습니다. 다시 재생하세요.');});
     document.addEventListener('visibilitychange',()=>{if(document.hidden && playing)pause('탭을 떠나 재생을 멈췄습니다. 돌아와 재생을 눌러 주세요.');});
     window.addEventListener('pagehide',()=>pause());
     tracks();
@@ -223,8 +223,8 @@
   }
 
   const cases = {
-    mixed: { title:'기사 요약·사진·제휴 링크 카드', description:'가상 카드에 기사 사진, “누구나 무료” 문구와 제휴 링크가 있습니다.', issues:['rights','facts','labels'], clues:{rights:'기사 사진의 이용 허락 자료가 없습니다. 출처 링크만 있습니다.',facts:'가상 원문은 “지역 주민만 무료”입니다. 카드에는 대상이 빠졌습니다.',ad:'가상 제휴 관계가 있지만 관계 문구와 표시가 빠졌습니다.',ai:'글쓰기 보조만 썼고 사실적인 사람·음성 합성은 없습니다.',security:'가상 작업 파일에 토큰·개인정보가 없습니다.'} },
-    voice: { title:'AI 진행자·제품 제공 릴스', description:'가상 진행자가 제공받은 제품을 써 봤다고 말하고 작업 화면이 보입니다.',issues:['facts','labels','security'],clues:{rights:'가상 계약 메모에 이미지·음성의 광고 게시 이용 허락이 있습니다.',facts:'가상 진행자는 제품을 사용하지 않았습니다. 체험담의 근거가 없습니다.',ad:'가상 브랜드에서 제품을 제공했지만 관계 문구가 빠졌습니다.',ai:'사실적인 AI 합성 진행자·음성이지만 AI 표시가 없습니다.',security:'가상 화면에 비밀 키 자리 표시자가 노출됐습니다. 실제 값은 없습니다.'} }
+    mixed: { title:'신청 체크·사진·제휴 링크 카드', description:'신청 체크 카드에 기사 사진, “누구나 자동 지급” 문구와 제휴 링크가 있습니다.', issues:['rights','facts','labels'], clues:{rights:'기사 사진의 이용 허락 자료가 없습니다. 출처 링크만 있습니다.',facts:'예시 원문은 “대상·기간·서류 확인, 자동 지급 아님”입니다. 카드에는 조건이 빠졌습니다.',ad:'가상 제휴 관계가 있지만 관계 문구와 표시가 빠졌습니다.',ai:'글쓰기 보조만 썼고 사실적인 사람·음성 합성은 없습니다.',security:'가상 작업 파일에 토큰·개인정보가 없습니다.'} },
+    voice: { title:'AI 진행자·신청 관리 앱 릴스', description:'가상 진행자가 제공받은 신청 관리 앱을 써 봤다고 말하고 작업 화면이 보입니다.',issues:['facts','labels','security'],clues:{rights:'가상 계약 메모에 이미지·음성의 광고 게시 이용 허락이 있습니다.',facts:'가상 진행자는 앱을 사용하지 않았습니다. 체험담의 근거가 없습니다.',ad:'가상 앱 업체에서 이용권을 제공했지만 관계 문구가 빠졌습니다.',ai:'사실적인 AI 합성 진행자·음성이지만 AI 표시가 없습니다.',security:'가상 화면에 비밀 키 자리 표시자가 노출됐습니다. 실제 값은 없습니다.'} }
   };
   function safety(root, body) {
     let caseId='mixed', seen=new Set(), fixed=new Set(), decisions={}, prediction='evidence';
@@ -241,7 +241,7 @@
       report(root,`${remaining.length}개 남음`,message || (remaining.length?`${remaining.map(key=>groups[key]).join('·')}의 증거와 수정 내용을 확인하세요.`:'가상 사례의 판단을 마쳤으니 실습에서 내 자료의 근거를 따로 확인하세요.'));
       const log=one(body,'[data-evidence-log]');log.replaceChildren();
       seen.forEach(id=>{const li=document.createElement('li');li.textContent=c.clues[id];log.append(li);});
-      const changes={rights:'허락 자료가 없는 사진을 직접 그린 도식으로 교체했습니다.',facts:caseId==='mixed'?'원문대로 “지역 주민만 무료”로 고쳤습니다.':'실제로 쓰지 않은 제품의 체험담을 지웠습니다.',labels:caseId==='mixed'?'제휴 수수료 관계 문구를 첫 화면에 넣고 필요한 표시를 확인했습니다.':'제품 제공 관계·가상 진행자 설명을 넣고 협찬·AI 표시를 확인했습니다.',security:'작업 화면의 비밀 키 자리 표시자를 지웠습니다.'};
+      const changes={rights:'허락 자료가 없는 사진을 직접 그린 도식으로 교체했습니다.',facts:caseId==='mixed'?'원문대로 “대상·기간·서류 확인, 자동 지급 아님”으로 고쳤습니다.':'실제로 쓰지 않은 앱의 체험담을 지웠습니다.',labels:caseId==='mixed'?'제휴 수수료 관계 문구를 첫 화면에 넣고 필요한 표시를 확인했습니다.':'앱 이용권 제공 관계·가상 진행자 설명을 넣고 협찬·AI 표시를 확인했습니다.',security:'작업 화면의 비밀 키 자리 표시자를 지웠습니다.'};
       put(body,'[data-changes]',fixed.size?[...fixed].map(key=>changes[key]).join(' '):'수정한 항목이 없습니다.');
     };
     const reset=()=>{seen=new Set();fixed=new Set();decisions={};prediction='evidence';all(body,'[data-decision]').forEach(select=>select.value='hold');put(body,'[data-case-description]',cases[caseId].description);put(body,'[data-clue]','아직 증거를 열지 않았습니다.');update();};

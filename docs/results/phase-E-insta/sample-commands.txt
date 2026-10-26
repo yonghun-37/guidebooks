@@ -1,0 +1,11 @@
+Ubuntu 22.04 x86_64 / Python 3.11.15 / FFmpeg 7.0.2
+source: /tmp/e-insta-clean (starter-kit clean copy; .venv/output/cache excluded)
+python run_pipeline.py --offline --output output/first-post
+검수 대기: /tmp/e-insta-clean/output/first-post/REVIEW.md
+copy.json: curated example wording + samples/commute-card.webp + AI label/flag
+config.json: duration 15, ink colors (README lists exact values)
+python write_copy.py output/first-post/news.json --validate --output output/first-post/copy.json
+구조 검증 OK: /tmp/e-insta-clean/output/first-post/copy.json (사실 확인은 사람이 해야 합니다)
+python run_pipeline.py render output/first-post
+검수 대기: /tmp/e-insta-clean/output/first-post/REVIEW.md
+No approve/publish/live command executed for these deliverables.

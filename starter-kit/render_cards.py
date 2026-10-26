@@ -132,7 +132,7 @@ def render_cards(copy, config, output):
         draw.line((72, 145, 1008, 145), fill=fg, width=2)
         layout = scene["layout"]
         if layout == "cover":
-            text_box(draw, "STORIES / 오늘의 큐레이션", (72, 184, 900, 60), config, 25, c["accent"])
+            text_box(draw, "LIFE NEWS / 신청 전 체크", (72, 184, 900, 60), config, 25, c["accent"])
             text_box(draw, scene["title"], (66, 268, 940, 350), config, 100, fg, c["accent"], 750)
             text_box(draw, scene["body"], (76, 628, 900, 130), config, 34, fg, c["accent"])
             image_slot(image, scene, (72, 818, 936, 330), config)
@@ -152,7 +152,7 @@ def render_cards(copy, config, output):
                 text_box(draw, point, (156, y, 838, row_height-12), config, 35, fg, c["accent"])
             text_box(draw, "출처  " + scene["source"], (72, 1178, 936, 70), config, 22, fg)
         else:
-            text_box(draw, "KEEP / 함께 읽는 이야기", (72, 188, 936, 60), config, 25, fg)
+            text_box(draw, "SAVE / 신청 전에 다시 확인", (72, 188, 936, 60), config, 25, fg)
             text_box(draw, scene["title"], (66, 298, 940, 320), config, 90, fg, "#E4D891", 750)
             text_box(draw, scene["body"], (76, 670, 900, 170), config, 39, fg, "#E4D891")
             draw.line((72, 895, 1008, 895), fill=fg, width=2)

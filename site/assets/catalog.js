@@ -137,7 +137,7 @@ window.ReelsCatalog = Object.freeze([
     "chapter": 10,
     "slug": "09-pipeline",
     "id": "ch9-sim",
-    "title": "가상 한 달 외부 비용",
+    "title": "생활 뉴스 계정의 가상 한 달 외부 비용",
     "section": "simulator"
   },
   {

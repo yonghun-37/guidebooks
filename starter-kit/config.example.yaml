@@ -1,4 +1,4 @@
-account_name: 하린의 한 장 실험실
+account_name: 출근길 3분 생활 뉴스
 theme: forest  # forest(크림·초록) / ink(남색·블루) / coral(크림·코랄)
 # 필요하면 프리셋의 일부 색만 덮어씁니다.
 colors: {}  # 예: {accent: '#007F73'}

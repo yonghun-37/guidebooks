@@ -1,0 +1,103 @@
+{
+  "video": {
+    "ffmpeg_version": "7.0.2-static https://johnvansickle.com/ffmpeg/ built with gcc 8 (Debian 8.3.0-6)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(progressive)",
+    "audio_codec": "aac",
+    "fps": 24.0,
+    "source_size": [
+      1080,
+      1920
+    ],
+    "size": [
+      1080,
+      1920
+    ],
+    "rotate": 0,
+    "duration": 15.0
+  },
+  "frames": 360,
+  "seconds": 15.0,
+  "sample_bytes": 1802746,
+  "assets": [
+    {
+      "file": "starter-kit/samples/README.md",
+      "bytes": 4142,
+      "sha256": "fb6a44470f4e5534f4718a38d4509572cc90a3f7a4e9b2952c18c21694de4b6c"
+    },
+    {
+      "file": "starter-kit/samples/card-01.png",
+      "bytes": 408621,
+      "sha256": "98a8d74373027bc7693e88eb3c4a9372769e5d89774c427c3e72a7b7387fb905",
+      "dimensions": [
+        1080,
+        1350
+      ]
+    },
+    {
+      "file": "starter-kit/samples/card-02.png",
+      "bytes": 62438,
+      "sha256": "e12c3c049d04f31dab679ebfd57c0a6ddad233df0fa3396abb0edbd41d24e293",
+      "dimensions": [
+        1080,
+        1350
+      ]
+    },
+    {
+      "file": "starter-kit/samples/card-03.png",
+      "bytes": 64504,
+      "sha256": "6d53e5d20824c53ecf07dcae09447e18babfb088b60003ca37dc6efa13832126",
+      "dimensions": [
+        1080,
+        1350
+      ]
+    },
+    {
+      "file": "starter-kit/samples/card-04.png",
+      "bytes": 63017,
+      "sha256": "49adc7569b1e5a1f455d89967bcceeef0615c50b9c1a78a05b15db1420a7bc5f",
+      "dimensions": [
+        1080,
+        1350
+      ]
+    },
+    {
+      "file": "starter-kit/samples/card-05.png",
+      "bytes": 79435,
+      "sha256": "0d0cb3b7ea2037d316c66747ab588e01642dea64d83ef3b37ae7d53bdce748af",
+      "dimensions": [
+        1080,
+        1350
+      ]
+    },
+    {
+      "file": "starter-kit/samples/commute-card.webp",
+      "bytes": 132242,
+      "sha256": "6e458d761895a6e0f5029845d032af7b264af295a686ec8d1c2da529e47ada81",
+      "dimensions": [
+        960,
+        1200
+      ]
+    },
+    {
+      "file": "starter-kit/samples/copy.json",
+      "bytes": 3131,
+      "sha256": "612e074c9a266f3e79747bcd81d0ecbcfe142f6a0daf05943e6728104101eee8"
+    },
+    {
+      "file": "starter-kit/samples/news.json",
+      "bytes": 1093,
+      "sha256": "3acc468120599852d3885e33fe23260fa3a8c324b55c15af1823b6b382ed1b1a"
+    },
+    {
+      "file": "starter-kit/samples/reel.mp4",
+      "bytes": 983744,
+      "sha256": "c1c68fcf947d3e426dab4e7881d5d8c9f4bc0d8ca6572e76d81fa3532dffaab3"
+    },
+    {
+      "file": "starter-kit/samples/subtitles.srt",
+      "bytes": 379,
+      "sha256": "cd455def13e4ba60f92961324ffa9a111f28697a9850c26b86e453533d3beb03"
+    }
+  ]
+}
