@@ -32,6 +32,8 @@
 
   const checks = [...document.querySelectorAll('[data-practice-check]')];
   const fields = [...document.querySelectorAll('[data-practice-field]')];
+  // 심화편은 OS 탭만 재사용한다. 실습 입력이 없으면 실습 저장소에 쓰지 않는다.
+  if (!checks.length && !fields.length) return;
   const key = 'reelsbook:practice:v1';
   let state = { checks: {}, fields: {} }, available = true;
   const read = () => {

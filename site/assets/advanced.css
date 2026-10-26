@@ -1,0 +1,62 @@
+/* 심화편 전용. 공통 책의 색·여백·테마·탭 규칙을 이어 쓴다. */
+.advanced-main { --adv-positive: var(--accent); }
+.advanced-main .chapter-hero .kicker { letter-spacing: .04em; }
+.adv-axis + .adv-axis { margin-top: 34px; }
+.adv-axis { padding: 22px 0 0; }
+.adv-axis h3 { border-left: 4px solid var(--accent); padding-left: 12px; }
+.adv-action { background: var(--soft); padding: 14px 18px; border-radius: 8px; }
+.adv-figure { margin: 26px 0; padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+.adv-figure figcaption { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.adv-flow { display: block; width: 100%; max-width: 400px; margin: auto; color: var(--accent); font-family: var(--body); }
+.adv-node { fill: var(--soft); stroke: var(--line); stroke-width: 1; }
+.adv-node-title { fill: var(--ink); font-size: 16px; font-weight: 700; }
+.adv-node-sub { fill: var(--muted); font-size: 13px; }
+.adv-flow a:hover .adv-node, .adv-flow a:focus .adv-node { stroke: var(--orange); stroke-width: 3; }
+.adv-arrow { fill: none; stroke: currentColor; stroke-width: 1.7; }
+.adv-lifeline { stroke: var(--line); stroke-width: 2; stroke-dasharray: 5 5; }
+.adv-sequence { display: block; width: 100%; max-width: 430px; margin: auto; color: var(--accent); font: 16px var(--body); fill: var(--ink); }
+.adv-seq-label { font-size: 14px; }
+.adv-table { width: 100%; overflow-x: auto; margin: 26px 0; }
+.adv-table table { margin: 0; min-width: 0; width: 100%; font-size: 15px; }
+.adv-table th, .adv-table td { vertical-align: top; padding: 12px 10px; }
+.adv-table caption { text-align: left; color: var(--muted); font-size: 14px; padding-bottom: 12px; }
+.adv-cost, .adv-note { padding: 24px; border: 1px solid var(--line); background: var(--warm); border-radius: 10px; }
+.adv-cost p:last-child, .adv-note p:last-child { margin: 0; }
+.adv-cost h3 { color: var(--orange); }
+.adv-success { padding: 20px; background: var(--soft); border-left: 4px solid var(--accent); }
+.adv-success p:last-child { margin: 0; }
+.adv-inputs { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin-bottom: 20px; }
+.adv-inputs label { display: grid; gap: 6px; font-size: 14px; }
+.adv-inputs input, .adv-inputs select { width: 100%; min-width: 0; border: 1px solid var(--line); padding: 9px; border-radius: 7px; color: var(--ink); background: var(--surface); }
+.adv-calculator { padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.adv-calculator button { margin: 0 8px 10px 0; }
+.adv-result { margin: 16px 0; font-size: 1.2rem; font-weight: 700; color: var(--accent); }
+.adv-cost-meter { height: 26px; background: var(--code); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.adv-cost-meter > div { height: 100%; width: 0; background: var(--accent); }
+.adv-cost-meter > div.over { background: var(--orange); }
+.adv-compare, .adv-card-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.adv-compare > div { padding: 18px; background: var(--soft); border: 1px solid var(--line); border-radius: 8px; }
+.adv-compare > div:last-child { background: var(--warm); }
+.adv-card-pair img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); }
+.adv-dashboard { border: 1px solid var(--line); border-radius: 10px; padding: 20px; background: var(--paper); }
+.adv-dashboard-title { font-weight: 750; color: var(--accent); }
+.adv-dashboard dl > div { display: grid; grid-template-columns: 76px minmax(0,1fr); gap: 16px; border-top: 1px solid var(--line); padding: 10px 0; }
+.adv-dashboard dt { color: var(--muted); }
+.adv-dashboard dd { margin: 0; }
+.adv-check { display: flex; align-items: flex-start; gap: 10px; margin: 20px 0; padding: 16px; background: var(--soft); border-radius: 8px; }
+.adv-check input { flex: 0 0 auto; width: 20px; height: 20px; margin-top: 6px; accent-color: var(--accent); }
+.advanced-main progress { width: 100%; accent-color: var(--accent); }
+.advanced-main .code-box { max-width: 100%; }
+.advanced-main pre { white-space: pre-wrap; overflow-wrap: anywhere; word-break: break-word; }
+.advanced-main .source-notes li { overflow-wrap: anywhere; }
+@media(max-width:600px) {
+ .adv-inputs, .adv-compare, .adv-card-pair { grid-template-columns: minmax(0,1fr); }
+ .adv-figure { padding: 12px; }
+ .adv-cost, .adv-note, .adv-calculator { padding: 16px; }
+ .adv-table { font-size: 14px; }
+ .adv-table th, .adv-table td { padding: 10px 6px; }
+ .adv-table th { min-width: 74px; }
+ .adv-dashboard { padding: 14px; }
+ .adv-dashboard dl > div { grid-template-columns: 50px minmax(0,1fr); gap: 10px; }
+}
+@media print { .adv-flow, .adv-sequence { max-width: 260px; } .adv-figure { break-inside: avoid; } }

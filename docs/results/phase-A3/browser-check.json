@@ -1,0 +1,628 @@
+{
+  "views": [
+    {
+      "file": "advanced/00-start.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/02-keys.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/02-keys.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/02-keys.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/02-keys.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/02-keys.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/02-keys.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/03-generate.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/03-generate.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/03-generate.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/03-generate.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/03-generate.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/03-generate.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/05-publish.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/05-publish.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/05-publish.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/05-publish.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/05-publish.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/05-publish.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/08-insights.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/08-insights.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/08-insights.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/08-insights.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/08-insights.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/08-insights.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "index.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "index.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "index.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "index.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "index.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "index.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "glossary.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "glossary.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "glossary.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "glossary.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "glossary.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "glossary.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "credits.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "credits.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "credits.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "credits.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "credits.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "credits.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/08-api.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/08-api.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/08-api.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/08-api.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/08-api.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/08-api.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 375,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "issues": []
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 360,
+      "theme": "light",
+      "issues": []
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "issues": []
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "track isolation: advanced pages neither create nor rewrite practice storage",
+    "calculator: source scenarios, allowance, empty/negative/fractional/too-large, zero cap, extreme",
+    "keyboard: OS arrows/Home/End, quiz Enter/reset, menu Escape",
+    "progress: chapter/E2E sync, reset keeps practice, corrupt JSON recovery",
+    "navigation: SVG Enter, third track 11 links, advanced pager, practice isolation",
+    "storage blocked: readable, checkbox works, notice",
+    "all 11 pages readable with JavaScript disabled"
+  ],
+  "links": 862,
+  "passed": true
+}

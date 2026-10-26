@@ -1,0 +1,72 @@
+{
+  "files": [
+    {
+      "file": "site/advanced/00-start.html",
+      "citations": 8,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/01-pipeline.html",
+      "citations": 3,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/02-keys.html",
+      "citations": 11,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/03-generate.html",
+      "citations": 11,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/04-render.html",
+      "citations": 4,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/05-publish.html",
+      "citations": 18,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/06-gates.html",
+      "citations": 5,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/07-operations.html",
+      "citations": 19,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/08-insights.html",
+      "citations": 5,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/09-safety.html",
+      "citations": 12,
+      "faq": 5,
+      "quiz": 3
+    },
+    {
+      "file": "site/advanced/e2e.html",
+      "citations": 1,
+      "faq": 0,
+      "quiz": 0
+    }
+  ],
+  "unique_A_sources": 62,
+  "errors": []
+}

@@ -1,0 +1,384 @@
+{
+  "environment": "Linux, Python 3.11.15, clean temporary auto-kit copy; no live API calls",
+  "commands": [
+    {
+      "args": [
+        "pipeline.py",
+        "run",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--state",
+        "private/a1"
+      ],
+      "exit": 0,
+      "stdout": "f6913f93bf4e · insta · waiting_approval\n미리보기: <AUTO_KIT>/private/a1/f6913f93bf4e/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "approve",
+        "f6913f93bf4e",
+        "--state",
+        "private/a1"
+      ],
+      "exit": 0,
+      "stdout": "f6913f93bf4e · insta · waiting_approval\n미리보기: <AUTO_KIT>/private/a1/f6913f93bf4e/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "resume",
+        "f6913f93bf4e",
+        "--state",
+        "private/a1"
+      ],
+      "exit": 0,
+      "stdout": "f6913f93bf4e · insta · dry_run\n미리보기: <AUTO_KIT>/private/a1/f6913f93bf4e/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "run",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--mode",
+        "post_review",
+        "--state",
+        "private/a7"
+      ],
+      "exit": 0,
+      "stdout": "241b080dae98 · insta · scheduled\n미리보기: <AUTO_KIT>/private/a7/241b080dae98/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "reject",
+        "241b080dae98",
+        "--state",
+        "private/a7"
+      ],
+      "exit": 0,
+      "stdout": "241b080dae98 · insta · rejected\n미리보기: <AUTO_KIT>/private/a7/241b080dae98/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "insights.py",
+        "f6913f93bf4e",
+        "--state",
+        "private/a1"
+      ],
+      "exit": 0,
+      "stdout": "지표 CSV 저장 완료. missing은 나중에 다시 조회하세요.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "report",
+        "--state",
+        "private/a1"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"date\": \"2026-10-26\",\n  \"runs\": 1,\n  \"total_runs\": 1,\n  \"exceptions\": [],\n  \"spend\": {\n    \"total\": 0.0,\n    \"day\": 0.0,\n    \"month\": 0.0,\n    \"pending\": 0\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-m",
+        "schedule.install",
+        "--os",
+        "windows",
+        "--flow",
+        "insta",
+        "--time",
+        "09:17"
+      ],
+      "exit": 0,
+      "stdout": "예약 파일 생성 완료: <AUTO_KIT>/private/schedule/install-insta.ps1\nPowerShell: & \"<AUTO_KIT>/private/schedule/install-insta.ps1\" · 확인: Get-ScheduledTask -TaskName org.guidebooks.auto-kit.insta\nOS 현지 시각. 15분마다 재개/예약 발행, 지정 시각 이후 하루 1회 새 생성. PC 켜짐·로그인/절전 확인.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-m",
+        "schedule.install",
+        "--os",
+        "macos",
+        "--flow",
+        "insta",
+        "--time",
+        "09:17"
+      ],
+      "exit": 0,
+      "stdout": "예약 파일 생성 완료: <AUTO_KIT>/private/schedule/org.guidebooks.auto-kit.insta.plist\nsh <AUTO_KIT>/private/schedule/install-insta-macos.sh · 확인: launchctl print \"gui/$(id -u)/org.guidebooks.auto-kit.insta\"\nOS 현지 시각. 15분마다 재개/예약 발행, 지정 시각 이후 하루 1회 새 생성. PC 켜짐·로그인/절전 확인.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_core.py",
+        "-k",
+        "example_fact"
+      ],
+      "exit": 0,
+      "stdout": "....                                                                     [100%]\n4 passed, 4 deselected in 0.10s\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "doctor.py",
+        "--config",
+        "config.json"
+      ],
+      "exit": 0,
+      "stdout": "[ok] Python 3.11.15 · 최소 3.11 이상 충족\n[ok] pip ffmpeg 실행 가능. 시스템 패키지 설치가 필요 없습니다.\n[info] ffprobe 없음: 동봉하지 않고 pip ffmpeg 규격 parser로 검사합니다.\n[ok] 일 $1.0, 월 $10.0 상한. UTC 기준, 재시도·예약 비용 포함.\n[ok] mock 준비 완료. 키·토큰 없이 두 흐름을 실행할 수 있습니다.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "run",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--mode",
+        "auto",
+        "--config",
+        "config.json",
+        "--state",
+        "private/a3"
+      ],
+      "exit": 0,
+      "stdout": "cc880002e01f · insta · dry_run\n미리보기: <AUTO_KIT>/private/a3/cc880002e01f/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "run",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--mode",
+        "auto",
+        "--config",
+        "private/reel-config.json",
+        "--state",
+        "private/a4"
+      ],
+      "exit": 0,
+      "stdout": "aca5c89949e3 · insta · dry_run\n미리보기: <AUTO_KIT>/private/a4/aca5c89949e3/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "run",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--mode",
+        "auto",
+        "--state",
+        "private/a5"
+      ],
+      "exit": 0,
+      "stdout": "e4f710c32ca7 · insta · dry_run\n미리보기: <AUTO_KIT>/private/a5/e4f710c32ca7/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "run",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--mode",
+        "auto",
+        "--state",
+        "private/a6"
+      ],
+      "exit": 0,
+      "stdout": "1fa0055e9935 · insta · dry_run\n미리보기: <AUTO_KIT>/private/a6/1fa0055e9935/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "run",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--state",
+        "private/a9"
+      ],
+      "exit": 0,
+      "stdout": "82fd52614d45 · insta · waiting_approval\n미리보기: <AUTO_KIT>/private/a9/82fd52614d45/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "reject",
+        "82fd52614d45",
+        "--state",
+        "private/a9"
+      ],
+      "exit": 0,
+      "stdout": "82fd52614d45 · insta · rejected\n미리보기: <AUTO_KIT>/private/a9/82fd52614d45/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "status",
+        "--state",
+        "private/a9"
+      ],
+      "exit": 0,
+      "stdout": "[\n  {\n    \"id\": \"82fd52614d45\",\n    \"flow\": \"insta\",\n    \"status\": \"rejected\",\n    \"reason\": null\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "tick",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--mode",
+        "auto",
+        "--state",
+        "private/a7-daily",
+        "--daily-at",
+        "00:00"
+      ],
+      "exit": 0,
+      "stdout": "[\n  {\n    \"id\": \"93972a294379\",\n    \"flow\": \"insta\",\n    \"status\": \"dry_run\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "tick",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--mode",
+        "auto",
+        "--state",
+        "private/a7-daily",
+        "--daily-at",
+        "00:00"
+      ],
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "run",
+        "--flow",
+        "insta",
+        "--provider",
+        "mock",
+        "--mode",
+        "auto",
+        "--state",
+        "private/e2e"
+      ],
+      "exit": 0,
+      "stdout": "4a5203616299 · insta · dry_run\n미리보기: <AUTO_KIT>/private/e2e/4a5203616299/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "status",
+        "--state",
+        "private/e2e"
+      ],
+      "exit": 0,
+      "stdout": "[\n  {\n    \"id\": \"4a5203616299\",\n    \"flow\": \"insta\",\n    \"status\": \"dry_run\",\n    \"reason\": null\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "report",
+        "--state",
+        "private/e2e"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"date\": \"2026-10-26\",\n  \"runs\": 1,\n  \"total_runs\": 1,\n  \"exceptions\": [],\n  \"spend\": {\n    \"total\": 0.0,\n    \"day\": 0.0,\n    \"month\": 0.0,\n    \"pending\": 0\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "doctor.py"
+      ],
+      "exit": 0,
+      "stdout": "[ok] Python 3.11.15 · 최소 3.11 이상 충족\n[ok] pip ffmpeg 실행 가능. 시스템 패키지 설치가 필요 없습니다.\n[info] ffprobe 없음: 동봉하지 않고 pip ffmpeg 규격 parser로 검사합니다.\n[ok] 일 $1.0, 월 $10.0 상한. UTC 기준, 재시도·예약 비용 포함.\n[ok] mock 준비 완료. 키·토큰 없이 두 흐름을 실행할 수 있습니다.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "pipeline.py",
+        "resume",
+        "f6913f93bf4e",
+        "--state",
+        "private/a1"
+      ],
+      "exit": 0,
+      "stdout": "f6913f93bf4e · insta · dry_run\n미리보기: <AUTO_KIT>/private/a1/f6913f93bf4e/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "doctor.py",
+        "--config",
+        "config.json",
+        "--live",
+        "--flow",
+        "insta"
+      ],
+      "exit": 1,
+      "stdout": "[ok] Python 3.11.15 · 최소 3.11 이상 충족\n[ok] pip ffmpeg 실행 가능. 시스템 패키지 설치가 필요 없습니다.\n[info] ffprobe 없음: 동봉하지 않고 pip ffmpeg 규격 parser로 검사합니다.\n[ok] 일 $1.0, 월 $10.0 상한. UTC 기준, 재시도·예약 비용 포함.\n[error] 실제 LLM 공급자를 설정하세요. providers.llm: openai/gemini/anthropic\n[error] 공급자 강제 지출 상한 확인 후 provider_hard_cap_confirmed=true. Cloud budget 알림은 자동 중지가 아닙니다.\n[error] Instagram 토큰·발급 시각·만료 시각이 필요합니다. .env.example을 참고하세요.\n[error] 실제 공개 URL 호스팅 pages 또는 r2를 설정하세요.\n[info] Instagram 한도는 발행 직전 content_publishing_limit로 읽습니다. 조회 실패 시 연기합니다.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-c",
+        "import json; from pathlib import Path; p=Path('config.json'); c=json.loads(p.read_text(encoding='utf-8')); c['instagram']['format']='reel'; Path('private/reel-config.json').write_text(json.dumps(c, ensure_ascii=False), encoding='utf-8')"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "installation": {
+    "python": "3.11.15",
+    "clean_venv": true,
+    "requirements_dev_exit": 0,
+    "requirements_live_exit": 0,
+    "system_packages_installed": false
+  }
+}

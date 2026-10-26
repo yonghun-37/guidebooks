@@ -43,17 +43,73 @@
   const practice = practiceRows.map(([slug, title, deliverable, duration], number) => Object.freeze({
     number, slug, title, deliverable, duration, track: 'practice', part: '실습편', status: '완성'
   }));
+  const advancedRows = [
+  {
+    "slug": "00-start",
+    "title": "사람 없이 도는 생활 뉴스 작업실",
+    "deliverable": "카드 5장과 전자동 운영 지도"
+  },
+  {
+    "slug": "01-pipeline",
+    "title": "실패한 단계부터 다시 시작하기",
+    "deliverable": "승인·재개 기록과 상태 폴더"
+  },
+  {
+    "slug": "02-keys",
+    "title": "키·토큰과 비용 상한 정하기",
+    "deliverable": "비공개 설정 파일과 월 예산"
+  },
+  {
+    "slug": "03-generate",
+    "title": "RSS에서 검증할 문안 만들기",
+    "deliverable": "원문과 연결된 draft.json"
+  },
+  {
+    "slug": "04-render",
+    "title": "코드로 카드·릴스 조립하기",
+    "deliverable": "JPEG 카드와 선택 MP4"
+  },
+  {
+    "slug": "05-publish",
+    "title": "Instagram API로 게시하기",
+    "deliverable": "인증 값을 가린 request-plan.json"
+  },
+  {
+    "slug": "06-gates",
+    "title": "자동 품질 관문과 예외 대기열",
+    "deliverable": "검사별 gates.json과 예외 처리안"
+  },
+  {
+    "slug": "07-operations",
+    "title": "매일 실행하고 예외만 알림 받기",
+    "deliverable": "OS 예약 파일과 하루 운영 계획"
+  },
+  {
+    "slug": "08-insights",
+    "title": "분석을 다음 주제에 반영하기",
+    "deliverable": "insights.csv와 다음 주제 선택 기준"
+  },
+  {
+    "slug": "09-safety",
+    "title": "전자동 운영의 권리·표시·보안",
+    "deliverable": "표시 판단과 중단·복구 점검표"
+  }
+];
+  const advanced = advancedRows.map((chapter, number) => Object.freeze({ ...chapter, number, track: 'advanced', part: '심화편(API 자동화)', status: '완성' }));
+  advanced.push(Object.freeze({ slug: 'e2e', title: '전체 진행표', deliverable: 'mock·요건·실계정 확인 기록', track: 'advanced', part: '심화편(API 자동화)', status: '완성' }));
   const tracks = Object.freeze([
     { id: 'theory', title: '(이론) 이론편', chapters },
-    { id: 'practice', title: '(실습) 실습편', chapters: practice }
+    { id: 'practice', title: '(실습) 실습편', chapters: practice },
+    { id: 'advanced', title: '심화편(API 자동화)', chapters: advanced }
   ]);
   const practiceRoute = practice.filter(chapter => !['02-setup', '08-api', '09-schedule'].includes(chapter.slug));
   const sequenceFor = chapter => chapter.track === 'practice'
-    ? (['02-setup', '08-api', '09-schedule'].includes(chapter.slug) ? practice : practiceRoute) : chapters;
-  const allChapters = [...chapters, ...practice];
+    ? (['02-setup', '08-api', '09-schedule'].includes(chapter.slug) ? practice : practiceRoute) : chapter.track === 'advanced' ? advanced : chapters;
+  const allChapters = [...chapters, ...practice, ...advanced];
   const prefix = new URL('.', location.href).href === root.href ? '' : '../';
   const url = path => prefix + path;
   const chapterUrl = chapter => {
+    if (chapter.track === 'advanced') return url(`advanced/${chapter.slug}.html`);
     if (chapter.track === 'practice') return url(`practice/${chapter.slug}.html`);
     if (['lab', 'glossary', 'prompts', 'ai-models', 'credits'].includes(chapter.slug)) return url(`${chapter.slug}.html`);
     return chapter.status === '완성' ? url(`chapters/${chapter.slug}.html`) : url(`chapters/coming-soon.html?chapter=${chapter.slug}`);
@@ -61,15 +117,18 @@
   const byNumber = number => chapters.find(chapter => chapter.number === number);
   const esc = text => String(text).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
   const status = chapter => `<span class="status ${chapter.status === '완성' ? 'ready' : ''}">${chapter.status === '완성' ? '읽기 가능' : '준비 중'}</span>`;
-  const label = chapter => `(${chapter.track === 'practice' ? '실습' : '이론'}) ${chapter.number != null ? chapter.number + (chapter.track === 'practice' ? '. ' : '장 · ') : ''}${chapter.title}`;
+  const trackName = chapter => chapter.track === 'advanced' ? '심화' : chapter.track === 'practice' ? '실습' : '이론';
+  const label = chapter => `(${trackName(chapter)}) ${chapter.number != null ? (chapter.track === 'advanced' ? 'A' + chapter.number + ' · ' : chapter.number + (chapter.track === 'practice' ? '. ' : '장 · ')) : ''}${chapter.title}`;
   const link = chapter => `<a href="${chapterUrl(chapter)}">${esc(label(chapter))} ${status(chapter)}</a>`;
   const selected = document.body.dataset.chapter === 'pending' ? new URLSearchParams(location.search).get('chapter') : document.body.dataset.chapter;
-  const current = allChapters.find(chapter => chapter.slug === (document.body.dataset.practice || selected));
+  const current = document.body.dataset.advanced
+    ? advanced.find(chapter => chapter.slug === document.body.dataset.advanced)
+    : allChapters.find(chapter => chapter.track !== 'advanced' && chapter.slug === (document.body.dataset.practice || selected));
   const trackLinks = () => tracks.map(track => `<section><h3>${track.title}</h3><ol>${track.chapters.map(chapter => `<li>${link(chapter)}</li>`).join('')}</ol></section>`).join('') + `<p><a href="${url('practice/e2e.html')}">(실습) E2E 한눈에 보기</a></p>`;
   document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.filter(c => /^\d/.test(c.slug) && c.status === '완성').length; });
   document.querySelectorAll('[data-practice-count]').forEach(node => { node.textContent = practice.length; });
   document.querySelectorAll('[data-sim-count]').forEach(node => { node.textContent = (window.ReelsCatalog || []).length; });
-  window.ReelsBook = Object.freeze({ chapters: Object.freeze(chapters), practice: Object.freeze(practice), tracks, url, chapterUrl, byNumber });
+  window.ReelsBook = Object.freeze({ chapters: Object.freeze(chapters), practice: Object.freeze(practice), advanced: Object.freeze(advanced), tracks, url, chapterUrl, byNumber });
 
   document.querySelectorAll('[data-site-header]').forEach(header => {
     header.className = 'site-header';
@@ -83,7 +142,7 @@
   });
 
   document.querySelectorAll('[data-chapter-toc]').forEach(toc => {
-    toc.innerHTML = tracks.map(track => `<section class="toc-track" id="track-${track.id}"><h2>${track.title}</h2>${[...new Set(track.chapters.map(chapter => chapter.part))].map(part => `<section class="toc-part"><h3>${esc(part)}</h3><ol class="chapter-list">${track.chapters.filter(chapter => chapter.part === part).map(chapter => `<li><a href="${chapterUrl(chapter)}"><span class="chapter-num">${chapter.number != null ? String(chapter.number).padStart(2, '0') : '＋'}</span><span class="chapter-title">${esc(label(chapter))}<span class="chapter-deliverable">${esc(chapter.deliverable)}</span></span>${status(chapter)}</a></li>`).join('')}</ol></section>`).join('')}</section>`).join('') + `<p><a href="${url('practice/e2e.html')}">(실습) E2E 한눈에 보기 →</a></p>`;
+    toc.innerHTML = tracks.map(track => `<section class="toc-track" id="track-${track.id}"><h2>${track.title}</h2>${[...new Set(track.chapters.map(chapter => chapter.part))].map(part => `<section class="toc-part"><h3>${esc(part)}</h3><ol class="chapter-list">${track.chapters.filter(chapter => chapter.part === part).map(chapter => `<li><a href="${chapterUrl(chapter)}"><span class="chapter-num">${chapter.number != null ? (chapter.track === 'advanced' ? 'A' + chapter.number : String(chapter.number).padStart(2, '0')) : '＋'}</span><span class="chapter-title">${esc(label(chapter))}<span class="chapter-deliverable">${esc(chapter.deliverable)}</span></span>${status(chapter)}</a></li>`).join('')}</ol></section>`).join('')}</section>`).join('') + `<p><a href="${url('practice/e2e.html')}">(실습) E2E 한눈에 보기 →</a></p>`;
   });
   document.querySelectorAll('[data-chapter-link]').forEach(anchor => {
     const chapter = byNumber(Number(anchor.dataset.chapterLink));
@@ -91,7 +150,7 @@
   });
   if (current) {
     document.querySelectorAll('[data-chapter-title]').forEach(node => { node.textContent = label(current); });
-    document.querySelectorAll('[data-chapter-kicker]').forEach(node => { node.textContent = `(${current.track === 'practice' ? '실습' : '이론'}) ${current.part}${current.number != null ? ' / ' + current.number : ''}`; });
+    document.querySelectorAll('[data-chapter-kicker]').forEach(node => { node.textContent = `(${trackName(current)}) ${current.part}${current.number != null ? ' / ' + current.number : ''}`; });
     document.querySelectorAll('[data-chapter-meta]').forEach(meta => {
       const sequence = sequenceFor(current);
       const previous = sequence[sequence.indexOf(current) - 1];
@@ -102,7 +161,7 @@
     const outline = blocks.map(block => `<li><a href="#${block.id}">${esc(block.querySelector('.block-label')?.lastChild.textContent.trim() || block.querySelector('h2').textContent)}</a></li>`).join('');
     document.querySelectorAll('[data-book-sidebar]').forEach(sidebar => {
       sidebar.className = 'book-sidebar';
-      sidebar.innerHTML = `<p class="sidebar-label">(${current.track === 'practice' ? '실습' : '이론'}) ${esc(current.part)} · ${current.number ?? '부록'}</p><nav aria-label="이 장의 흐름"><ol>${outline}</ol></nav><nav class="sidebar-chapters" aria-label="장 이동"><p class="sidebar-label">책의 지도</p>${trackLinks()}</nav>`;
+      sidebar.innerHTML = `<p class="sidebar-label">(${trackName(current)}) ${esc(current.part)} · ${current.number ?? '부록'}</p><nav aria-label="이 장의 흐름"><ol>${outline}</ol></nav><nav class="sidebar-chapters" aria-label="장 이동"><p class="sidebar-label">책의 지도</p>${trackLinks()}</nav>`;
     });
     document.querySelectorAll('[data-mobile-outline]').forEach(details => {
       details.className = 'mobile-outline';
@@ -122,7 +181,7 @@
   if (document.body.dataset.practice === 'e2e') {
     document.querySelectorAll('[data-book-sidebar]').forEach(sidebar => {
       sidebar.className = 'book-sidebar';
-      sidebar.innerHTML = `<p class="sidebar-label">(실습) E2E 한눈에 보기</p><nav class="sidebar-chapters" aria-label="책의 두 트랙">${trackLinks()}</nav>`;
+      sidebar.innerHTML = `<p class="sidebar-label">(실습) E2E 한눈에 보기</p><nav class="sidebar-chapters" aria-label="책의 세 트랙">${trackLinks()}</nav>`;
     });
   }
   document.querySelectorAll('[data-site-footer]').forEach(footer => {
