@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-10-26",
+  "currency": "USD",
+  "kind": "hypothetical estimate; no generation or billing executed",
+  "assumptions": {
+    "days": 30,
+    "each_platform_items_per_day": 1,
+    "llm_input_tokens": 3000,
+    "llm_output_tokens": 1000,
+    "image_model": "gemini-nano-banana-2.1",
+    "image_quality": "1K",
+    "image_size": "1K",
+    "image_output_usd": ".0336",
+    "image_prompt_tokens": 100,
+    "image_prompt_usd_per_million": "1.50",
+    "tts_characters": 600,
+    "target_short_seconds": 60,
+    "tts_duration_is_measured": false
+  },
+  "sources": [
+    "A025",
+    "A028",
+    "A038"
+  ],
+  "scenarios": [
+    {
+      "scenario": "instagram-low",
+      "llm_usd": "0.0008",
+      "image_usd": "0.00000",
+      "tts_after_free_usd": "0",
+      "per_item_usd": "0.00080",
+      "monthly_30_usd": "0.02400",
+      "monthly_with_tts_free_usd": "0.02400"
+    },
+    {
+      "scenario": "instagram-high",
+      "llm_usd": "0.016",
+      "image_usd": "0.03375",
+      "tts_after_free_usd": "0",
+      "per_item_usd": "0.04975",
+      "monthly_30_usd": "1.49250",
+      "monthly_with_tts_free_usd": "1.49250"
+    },
+    {
+      "scenario": "shorts-low",
+      "llm_usd": "0.0008",
+      "image_usd": "0.00000",
+      "tts_after_free_usd": "0.0024",
+      "per_item_usd": "0.00320",
+      "monthly_30_usd": "0.09600",
+      "monthly_with_tts_free_usd": "0.02400"
+    },
+    {
+      "scenario": "shorts-high",
+      "llm_usd": "0.016",
+      "image_usd": "0.20250",
+      "tts_after_free_usd": "0.018",
+      "per_item_usd": "0.23650",
+      "monthly_30_usd": "7.09500",
+      "monthly_with_tts_free_usd": "6.55500"
+    }
+  ],
+  "combined_low_month_after_free_usd": "0.1200",
+  "combined_high_month_after_free_usd": "8.58750",
+  "high_month_after_free_with_20pct_generation_allowance_usd": "10.305000",
+  "exclusions": [
+    "tax",
+    "exchange fees",
+    "hosting outside free tier",
+    "subscription minimums",
+    "prepaid top-up minimums",
+    "compute/electricity",
+    "human review",
+    "extra thinking/tool/reference-image tokens",
+    "additional generations"
+  ]
+}
