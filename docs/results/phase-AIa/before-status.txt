@@ -1,0 +1,37 @@
+ M site-shorts/practice/00-start.html
+ M site-shorts/practice/08-publish.html
+ M site/chapters/06-writing.html
+ M site/chapters/07-cards.html
+ M site/chapters/08-reels.html
+ M site/practice/00-start.html
+ M site/practice/03-copy.html
+ M site/practice/04-cards.html
+ M site/practice/05-reel.html
+ M site/practice/e2e.html
+?? docs/prompts/phase-Y4ai.md
+?? docs/results/phase-AIa/
+?? docs/results/phase-AIb-requests.md
+?? docs/results/phase-AIb.md
+?? docs/results/phase-AIb/
+?? docs/results/phase-AIc-glossary.md
+?? docs/results/phase-AIc-requests.md
+?? docs/results/phase-AIc.md
+?? docs/results/phase-AIc/
+?? docs/results/phase-Y4p-glossary.md
+?? docs/results/phase-Y4p-requests.md
+?? docs/results/phase-Y4p.md
+?? docs/results/phase-Y4p/
+?? site-shorts/assets/img/
+?? site-shorts/practice/01-account.html
+?? site-shorts/practice/02-setup.html
+?? site-shorts/practice/03-script.html
+?? site-shorts/practice/04-voice.html
+?? site-shorts/practice/05-scenes.html
+?? site-shorts/practice/06-edit.html
+?? site-shorts/practice/07-export.html
+?? site-shorts/practice/09-api.html
+?? site-shorts/practice/10-insights.html
+?? site-shorts/practice/e2e.html
+?? site-shorts/practice/production.css
+?? site-shorts/practice/production.js
+?? site/assets/img/ai-examples/

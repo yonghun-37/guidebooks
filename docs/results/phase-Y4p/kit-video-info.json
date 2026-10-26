@@ -1,0 +1,56 @@
+{
+  "duration": 36.0,
+  "video_codec": "h264",
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30.0,
+  "audio_codec": "aac",
+  "timeline": [
+    {
+      "title": "책상에서 하나만 바꿔요",
+      "start": 0.0,
+      "end": 12.0,
+      "subtitle": "내가 고른 물건을 살펴요",
+      "source": "01.png"
+    },
+    {
+      "title": "손이 닿는 곳으로",
+      "start": 12.0,
+      "end": 24.0,
+      "subtitle": "편하게 꺼낼 곳으로 옮겨요",
+      "source": "02.png"
+    },
+    {
+      "title": "바뀐 점을 보여 줘요",
+      "start": 24.0,
+      "end": 36.0,
+      "subtitle": "바꾸기 전과 후를 찍어 봐요",
+      "source": "03.png"
+    }
+  ],
+  "audio": {
+    "narration": "audio/narration.m4a"
+  },
+  "warnings": [
+    "녹음 뒤 남는 구간은 무음입니다. 자막과 말의 시점을 확인하세요."
+  ],
+  "sources": [
+    {
+      "name": "01.png",
+      "sha256": "3632055bf11e06e5c59ac7290ef80c5bc51fb0154d344c966a1b6cf10964be70"
+    },
+    {
+      "name": "02.png",
+      "sha256": "3632055bf11e06e5c59ac7290ef80c5bc51fb0154d344c966a1b6cf10964be70"
+    },
+    {
+      "name": "03.png",
+      "sha256": "3632055bf11e06e5c59ac7290ef80c5bc51fb0154d344c966a1b6cf10964be70"
+    }
+  ],
+  "caption_source": "script.json (대본 기반, 음성 인식 없음)",
+  "caption_size": 56,
+  "rights_files": []
+}

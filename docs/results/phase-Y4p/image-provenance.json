@@ -1,0 +1,13 @@
+{
+  "method": "built-in imagegen; no API key or paid API call",
+  "asset": "site-shorts/assets/img/ai-examples/paper-robot-reference.png",
+  "sha256": "3632055bf11e06e5c59ac7290ef80c5bc51fb0154d344c966a1b6cf10964be70",
+  "actual_size": [
+    941,
+    1672
+  ],
+  "requested_ratio": "9:16; actual downloaded dimensions checked, original retained",
+  "prompt": "Use case: illustration-story. Create a vertical 9:16 reference illustration for a beginner video-making textbook. A small green paper robot stands on the left side of a cream desk; a small plain brown flowerpot with one green sprout stands on the right. Eye-level medium shot, soft morning window light from left. Handmade folded-paper craft texture. Green, cream and brown palette. Leave the top quarter mostly empty for an editor to add a heading later. Everything fictional and original. No text, numbers, logos, brands or real people. One single scene, no panels.",
+  "display": "practice/05-scenes.html#image; AI 생성 예시 and exact English prompt plus Korean learner version",
+  "limits": "Still image only. No Flow/Runway video or consistency experiment performed."
+}

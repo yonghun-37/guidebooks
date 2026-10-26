@@ -1,0 +1,32 @@
+/* 실습편 전용 조판. 승인 샘플과 공통 자산은 수정하지 않는다. */
+.production-nav { display:flex;flex-wrap:wrap;gap:8px; padding:16px 0; border-block:1px solid var(--line); }
+.production-nav a { font-size:13px; padding:5px 9px; border-radius:6px; background:var(--soft); text-decoration:none; }
+.production-nav [aria-current] { color:var(--surface);background:var(--accent); }
+.production .table-scroll td { overflow-wrap:anywhere;vertical-align:top; }
+.production .table-scroll table { min-width:0;width:100%;table-layout:fixed; }
+.production .table-scroll th:first-child { width:23%; }
+.production .code-box pre { white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;padding-top:50px; }
+.production .code-box code { white-space:inherit; }
+.production input[type=url] { width:100%;max-width:100%;box-sizing:border-box; }
+.route-choice { padding:18px;border:1px solid var(--line);border-radius:8px; }
+.route-choice label { display:block;margin:12px 0; }
+.production input[type=radio], .production input[type=checkbox] { flex-shrink:0;accent-color:var(--accent); }
+.ai-reference { max-width:380px;margin:24px auto; }
+.ai-reference img { width:100%;height:auto;border-radius:12px; }
+.production figcaption { font-size:13px;color:var(--muted);margin-top:12px; }
+.timeline-figure svg { width:100%;height:auto; }
+.caption-lab { background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:20px; }
+.caption-lab > label { display:block;font-weight:650;margin-top:14px; }
+.caption-lab input[type=range] { width:100%;accent-color:var(--accent); }
+.caption-preview { aspect-ratio:9 / 16;max-width:200px;margin:18px auto;background:#392739;display:flex;align-items:flex-end;justify-content:center;padding:22px;box-sizing:border-box;border-radius:10px; }
+.caption-preview p { background:#fff3e0;color:#302233;padding:10px;font-weight:700;text-align:center; }
+.caption-lab output { display:block;min-height:3em; }
+.production :focus-visible { outline:3px solid var(--accent);outline-offset:3px; }
+@media(max-width:680px) {
+ .production-nav a { font-size:12px; }
+ .production .table-scroll table { font-size:13px; }
+ .production .table-scroll td, .production .table-scroll th { padding:10px 7px; }
+ .caption-lab { padding:14px; }
+ .production .code-box pre { font-size:12px; }
+}
+@media print { .production-nav, .route-choice, .caption-lab { display:none; } }

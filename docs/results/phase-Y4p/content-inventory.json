@@ -1,0 +1,309 @@
+[
+  {
+    "page": "site-shorts/practice/00-start.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y022",
+      "source-y032",
+      "source-y300",
+      "source-y329",
+      "source-y330",
+      "source-y334",
+      "source-y342",
+      "source-y343",
+      "source-y347",
+      "source-y367",
+      "source-y374",
+      "source-y385",
+      "source-y391",
+      "source-y394"
+    ],
+    "checks": [
+      "0:route",
+      "0:files",
+      "0:goal"
+    ],
+    "sha256": "01a80cffe3f49db6556ee05ab1da35b031f89651b1195c847894bb13faab338d"
+  },
+  {
+    "page": "site-shorts/practice/01-account.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y043",
+      "source-y044",
+      "source-y057",
+      "source-y092",
+      "source-y093"
+    ],
+    "checks": [
+      "1:channel",
+      "1:security",
+      "1:profile"
+    ],
+    "sha256": "39c9615d7e93818445ad5577bb7b642b7516716a92b4bf01885461f4d6d56ac7"
+  },
+  {
+    "page": "site-shorts/practice/02-setup.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y022",
+      "source-y300",
+      "source-y332",
+      "source-y333",
+      "source-y334",
+      "source-y374"
+    ],
+    "checks": [
+      "2:ai",
+      "2:editor"
+    ],
+    "sha256": "c1b4c6d98e1217a03fb50b9ab4ad22f87dd4b1d753e001d26e4c303ec78ef7e2"
+  },
+  {
+    "page": "site-shorts/practice/03-script.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y300",
+      "source-y302"
+    ],
+    "checks": [
+      "3:prompt",
+      "3:verify",
+      "3:save"
+    ],
+    "sha256": "88646614484610b647b1b4c611aaf784f0ab1d9a3dcb1246a1dd7bcdebc4f0b6"
+  },
+  {
+    "page": "site-shorts/practice/04-voice.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y097",
+      "source-y098",
+      "source-y100",
+      "source-y329",
+      "source-y330",
+      "source-y336",
+      "source-y337",
+      "source-y338",
+      "source-y339",
+      "source-y363",
+      "source-y366",
+      "source-y388",
+      "source-y391"
+    ],
+    "checks": [
+      "4:record",
+      "4:transfer",
+      "4:tts"
+    ],
+    "sha256": "f273decb9665849835563816d04361fc3b5e70f4ab6bdb73c40e3693f0e69a16"
+  },
+  {
+    "page": "site-shorts/practice/05-scenes.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y018",
+      "source-y019",
+      "source-y079",
+      "source-y334",
+      "source-y342",
+      "source-y343",
+      "source-y347",
+      "source-y348",
+      "source-y349",
+      "source-y364",
+      "source-y367",
+      "source-y369",
+      "source-y374",
+      "source-y378",
+      "source-y382",
+      "source-y383",
+      "source-y384",
+      "source-y394"
+    ],
+    "checks": [
+      "5:film",
+      "5:stock",
+      "5:image",
+      "5:video"
+    ],
+    "sha256": "e387853510ee11eef0edb3441391aa3312f20851fd5e1591da8a7e82c2a8e80a"
+  },
+  {
+    "page": "site-shorts/practice/06-edit.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y016",
+      "source-y080",
+      "source-y332",
+      "source-y360",
+      "source-y363",
+      "source-y385",
+      "source-y394"
+    ],
+    "checks": [
+      "6:project",
+      "6:cut",
+      "6:captions",
+      "6:music"
+    ],
+    "sha256": "6588f79260222ccdec45549a7c6e83d3cd6e2716b115900fbd8ab2ca651a1b86"
+  },
+  {
+    "page": "site-shorts/practice/07-export.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y001",
+      "source-y003",
+      "source-y031",
+      "source-y032",
+      "source-y334",
+      "source-y363",
+      "source-y376",
+      "source-y394"
+    ],
+    "checks": [
+      "7:export",
+      "7:quality",
+      "7:ai-log"
+    ],
+    "sha256": "af1e7c0bc67512648fc062ec50820259f6501e5e3a0621047efd1ef9d464f0e7"
+  },
+  {
+    "page": "site-shorts/practice/08-publish.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y001",
+      "source-y013",
+      "source-y014",
+      "source-y016",
+      "source-y031",
+      "source-y032",
+      "source-y033",
+      "source-y035",
+      "source-y036",
+      "source-y068",
+      "source-y070"
+    ],
+    "checks": [
+      "8:open",
+      "8:file",
+      "8:details",
+      "8:audience-step",
+      "8:ai-step",
+      "8:elements",
+      "8:review",
+      "8:visibility",
+      "8:publish",
+      "8:shorts-status",
+      "8:record"
+    ],
+    "sha256": "e360e0c4fb12a30505905632b1a4c111ae9248069e17ba6db2ffe786be48bee5"
+  },
+  {
+    "page": "site-shorts/practice/09-api.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y001",
+      "source-y014",
+      "source-y032",
+      "source-y037",
+      "source-y038",
+      "source-y040",
+      "source-y041",
+      "source-y042",
+      "source-y086",
+      "source-y087",
+      "source-y088",
+      "source-y099",
+      "source-y101",
+      "source-y102",
+      "source-y363"
+    ],
+    "checks": [
+      "9:cloud",
+      "9:oauth",
+      "9:dry-run",
+      "9:live"
+    ],
+    "sha256": "ec30fbf357faca79256f652062c42ddadbb5db7a28342b7993c2b9b935730970"
+  },
+  {
+    "page": "site-shorts/practice/10-insights.html",
+    "faq_count": 5,
+    "source_ids": [
+      "source-y034",
+      "source-y045",
+      "source-y046",
+      "source-y056",
+      "source-y089"
+    ],
+    "checks": [
+      "10:open",
+      "10:record",
+      "10:read"
+    ],
+    "sha256": "567ae9e19881b9571496d10cbf65439671a5c98a6b248c9c3ddfeb1eac0a8257"
+  },
+  {
+    "page": "site-shorts/practice/coming-soon.html",
+    "faq_count": 0,
+    "source_ids": [],
+    "checks": [],
+    "sha256": "081ca26fffa154cbaf5571e1ae2a1e7967e62e16c1248088403d20e10ab90b95"
+  },
+  {
+    "page": "site-shorts/practice/e2e.html",
+    "faq_count": 0,
+    "source_ids": [
+      "source-y031",
+      "source-y032"
+    ],
+    "checks": [
+      "0:route",
+      "0:files",
+      "0:goal",
+      "1:channel",
+      "1:security",
+      "1:profile",
+      "2:ai",
+      "2:editor",
+      "3:prompt",
+      "3:verify",
+      "3:save",
+      "4:record",
+      "4:transfer",
+      "4:tts",
+      "5:film",
+      "5:stock",
+      "5:image",
+      "5:video",
+      "6:project",
+      "6:cut",
+      "6:captions",
+      "6:music",
+      "7:export",
+      "7:quality",
+      "7:ai-log",
+      "8:open",
+      "8:file",
+      "8:details",
+      "8:audience-step",
+      "8:ai-step",
+      "8:elements",
+      "8:review",
+      "8:visibility",
+      "8:publish",
+      "8:shorts-status",
+      "8:record",
+      "9:cloud",
+      "9:oauth",
+      "9:dry-run",
+      "9:live",
+      "10:open",
+      "10:record",
+      "10:read"
+    ],
+    "sha256": "b28eee291dd17ca4c36bb4e5f080b5717e573b28e1afb88aa88b0a6f9018238a"
+  }
+]

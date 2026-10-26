@@ -1,0 +1,16 @@
+{
+  "method": "built-in image_gen",
+  "created": "2026-10-26",
+  "assets": [
+    {
+      "file": "y4ai-robot-reference.webp",
+      "prompt": "Use case: illustration-story. Asset type: Korean beginner video textbook reference still for an AI short. Generate one portrait 9:16 illustration, exact target 864 by 1536 or equivalent 9:16. A small mint green folded-paper robot with a square head, two dark round eyes, short rectangular arms, no mouth, stands to the LEFT of a single small terracotta plant pot containing a seedling with two leaves, on a light wooden desk. Full robot and full pot visible, medium shot at desk height, simple uncluttered warm cream background, soft morning window light from left, handmade matte paper texture, restrained mint/terracotta/cream palette. Leave generous empty space above and below for captions added later. Fictional character only, no humans, no real people, no logos, no brands, no lettering, no numbers, no UI, no watermark. This is a reference still, not a screenshot. Save output as an available local file and provide its path."
+    },
+    {
+      "file": "y4ai-robot-observe.webp",
+      "reference": "y4ai-robot-reference.webp",
+      "prompt": "Use case: illustration-story. Create a SECOND portrait 9:16 still for the same beginner AI video textbook, matching the attached reference image. Keep the exact mint green folded paper robot design with square head, two round dark eyes and no mouth; same terracotta pot and single two-leaf seedling, same wooden desk and warm cream room, same soft morning window light from left and matte paper style. Change only framing and pose: medium close-up, robot bends its square head slightly toward the seedling to observe it, its short rectangular arms at its sides, full head and pot visible. Leave empty space above/below for later captions. No watering can, no added objects, no extra leaves or limbs, no humans, no real person, no brands, no logos, no text, no numbers, no UI, no watermark. Target a true 9:16 image."
+    }
+  ],
+  "postprocess": "9:16 center crop and resize to 720x1280; WebP compression; no retouch"
+}

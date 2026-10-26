@@ -1,0 +1,13 @@
+{
+  "base": "git HEAD",
+  "root": "/tmp/reelsbook-AIc-static-2z_l1way",
+  "overlaid": [
+    "site/practice/00-start.html",
+    "site/practice/03-copy.html",
+    "site/practice/04-cards.html",
+    "site/practice/05-reel.html",
+    "site/practice/e2e.html"
+  ],
+  "purpose": "동시에 편집 중인 이론·쇼츠 파일과 분리한 AIc 변경 회귀 검사",
+  "exit": 0
+}

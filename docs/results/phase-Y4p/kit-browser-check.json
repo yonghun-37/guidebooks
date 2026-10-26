@@ -1,0 +1,14 @@
+{
+  "scope": "Linux Chromium; actual clean-copy MP4; synthetic tone M4A, generated illustration, no human recording or TTS login",
+  "checks": [
+    "실제 MP4 재생",
+    "실제 출력 치수",
+    "중간 장면 탐색",
+    "키트 넘침 1280",
+    "키트 넘침 375",
+    "키트 넘침 360",
+    "마지막까지 재생",
+    "브라우저 오류 0"
+  ],
+  "errors": []
+}

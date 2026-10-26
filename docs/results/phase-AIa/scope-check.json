@@ -1,0 +1,50 @@
+{
+  "protected_unchanged": true,
+  "files": {
+    "site/assets/book.js": {
+      "before": "1cfe364fb8015c669ab7072076336522456f5443ef630b718bd0d3eb3e29a5e3",
+      "after": "1cfe364fb8015c669ab7072076336522456f5443ef630b718bd0d3eb3e29a5e3",
+      "unchanged": true
+    },
+    "site/assets/book.css": {
+      "before": "977ddedbff731593302d7f66c8ecaabf15e8504a26c33f3b2f261495a037c489",
+      "after": "977ddedbff731593302d7f66c8ecaabf15e8504a26c33f3b2f261495a037c489",
+      "unchanged": true
+    },
+    "site/assets/sim/common.js": {
+      "before": "99dc9a0f1e14ed41330fbce487f5c1873599d8e2d58c8332480d1522ddb1f8f9",
+      "after": "99dc9a0f1e14ed41330fbce487f5c1873599d8e2d58c8332480d1522ddb1f8f9",
+      "unchanged": true
+    },
+    "site/assets/practice.js": {
+      "before": "fdc730151070453320469142bd016b660e7964a86b881fdd509ea15ec0349556",
+      "after": "fdc730151070453320469142bd016b660e7964a86b881fdd509ea15ec0349556",
+      "unchanged": true
+    },
+    "site/glossary.html": {
+      "before": "91ed28a35f683486f4309ba5c2da1f8f71a14c39d779f0d9120fcdf29affcdf7",
+      "after": "91ed28a35f683486f4309ba5c2da1f8f71a14c39d779f0d9120fcdf29affcdf7",
+      "unchanged": true
+    },
+    "site/credits.html": {
+      "before": "86045675e967e8b9a2246d4e29bb2ae58de990021358e77bdd8684349c234504",
+      "after": "86045675e967e8b9a2246d4e29bb2ae58de990021358e77bdd8684349c234504",
+      "unchanged": true
+    },
+    "site/index.html": {
+      "before": "8eb4d57f2d95d279279439fe9a5a7f0a8cc856cccf196ad09d7ff2c404a53d2a",
+      "after": "8eb4d57f2d95d279279439fe9a5a7f0a8cc856cccf196ad09d7ff2c404a53d2a",
+      "unchanged": true
+    },
+    "docs/PROJECT_STATE.md": {
+      "before": "590f25049f9a7d27592a71bbb7dfbe8c05ad2db892051f9712148a9eeda0a92c",
+      "after": "590f25049f9a7d27592a71bbb7dfbe8c05ad2db892051f9712148a9eeda0a92c",
+      "unchanged": true
+    },
+    "shelf/progress/index.html": {
+      "before": "7ed7d99de7ae1fa69ab2ce6f7e341bc8b04ee7621b3e72f986f0f8ae59969080",
+      "after": "7ed7d99de7ae1fa69ab2ce6f7e341bc8b04ee7621b3e72f986f0f8ae59969080",
+      "unchanged": true
+    }
+  }
+}

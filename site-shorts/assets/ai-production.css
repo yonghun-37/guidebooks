@@ -1,0 +1,48 @@
+/* AI 제작 레시피 전용. 공통 스타일은 통합 담당자가 관리합니다. */
+.ai-local-nav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 30px;}
+.ai-local-nav a{display:block;border:1px solid var(--line);border-radius:7px;padding:9px 12px;font-size:.88rem;line-height:1.5;background:var(--surface);}
+.book-sidebar .ai-local-nav{display:grid;}
+.ai-recipe{margin:24px 0 36px;padding:clamp(16px,3vw,28px);border:1px solid var(--line);border-radius:12px;background:var(--surface);min-width:0;}
+.ai-recipe h3{font-size:1.45rem;margin:0 0 16px;line-height:1.5;}
+.ai-eyebrow{font-size:.8rem;font-weight:750;letter-spacing:.05em;color:var(--accent);margin-top:0;}
+.ai-steps{padding-left:24px;}
+.ai-steps>li{padding:2px 0 14px 4px;margin-bottom:16px;border-bottom:1px dashed var(--line);}
+.ai-steps h4{font-size:1.05rem;margin:8px 0;}
+.ai-steps p{margin:6px 0;}
+.ai-prompt{margin:20px 0;min-width:0;}
+.ai-prompt h4{margin:0 0 8px;font-size:1rem;}
+.ai-prompt .code-box pre{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;padding-right:12px;}
+.ai-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;}
+.ai-compare>div{border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:8px;padding:16px;background:var(--paper);min-width:0;}
+.ai-compare>div:last-child{border-top-color:var(--muted);}
+.ai-compare h4{font-size:1rem;margin:0 0 8px;}
+.ai-compare p{margin:0;}
+.ai-action{padding:16px;border-left:3px solid var(--accent);background:var(--soft);}
+.ai-gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;margin:24px 0;}
+.ai-gallery figure{margin:0;min-width:0;}
+.ai-gallery img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border:1px solid var(--line);border-radius:10px;display:block;}
+.ai-gallery figcaption{font-size:.85rem;line-height:1.7;padding:10px 0;}
+.ai-flow{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;counter-reset:stage;}
+.ai-flow li{padding:16px;border:1px solid var(--line);border-radius:8px;background:var(--surface);counter-increment:stage;min-width:0;}
+.ai-flow li::before{content:counter(stage) ' →';display:block;color:var(--accent);font-weight:750;}
+.ai-flow strong,.ai-flow span{display:block;}
+.ai-flow span{font-size:.85rem;color:var(--muted);margin-top:6px;}
+.ai-table{max-width:100%;margin:16px 0;overscroll-behavior-x:contain;}
+.ai-table table{min-width:620px;}
+.ai-table td,.ai-table th{vertical-align:top;white-space:normal;overflow-wrap:anywhere;}
+.ai-recipe code{overflow-wrap:anywhere;}
+.ai-route-tool label,#model-finder label{display:grid;gap:8px;font-weight:700;}
+.ai-route-tool select,#model-finder input{width:100%;max-width:100%;padding:12px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;font:inherit;min-width:0;}
+.ai-route-tool .sim-body{padding:20px;}
+.ai-model-group{margin:16px 0;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:16px;}
+.ai-model-group>summary{cursor:pointer;font-weight:750;min-height:44px;padding:8px 0;}
+.ai-model-group table{min-width:1560px;font-size:.86rem;table-layout:fixed;}
+.ai-model-group td:first-child{font-weight:650;}
+.ai-model-group .ai-table{max-height:640px;overflow:auto;}
+.ai-model-group th{position:sticky;top:0;background:var(--soft);z-index:1;}
+#bundles table{min-width:1160px;}
+#model-finder button{margin-top:12px;min-height:44px;}
+.ai-recipe details>summary{cursor:pointer;padding:12px 0;font-weight:650;}
+.ai-model-group [hidden]{display:none!important;}
+.ai-local-nav a:focus-visible,.ai-table:focus-visible,.ai-model-group summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;}
+@media(max-width:680px){.ai-compare{grid-template-columns:1fr;}.ai-gallery{gap:12px;}.ai-recipe{padding:16px 12px;}.ai-recipe h3{font-size:1.25rem;}.ai-local-nav a{padding:9px;font-size:.82rem;}.ai-steps{padding-left:20px;}.ai-model-group{padding:12px;}.ai-gallery figcaption{font-size:.8rem;}.ai-flow{grid-template-columns:1fr;}}

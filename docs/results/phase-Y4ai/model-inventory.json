@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "id": "1",
+      "name": "텍스트 LLM",
+      "rows": 70
+    },
+    {
+      "id": "2",
+      "name": "이미지",
+      "rows": 75
+    },
+    {
+      "id": "3",
+      "name": "영상",
+      "rows": 60
+    },
+    {
+      "id": "4",
+      "name": "음성·전사",
+      "rows": 35
+    },
+    {
+      "id": "5",
+      "name": "음악",
+      "rows": 25
+    },
+    {
+      "id": "6",
+      "name": "편집 앱 내장 AI",
+      "rows": 6
+    }
+  ],
+  "bundles": 24,
+  "totalModels": 271,
+  "excluded": "Sora variants collapsed to 종료됨; CLOVA X/Cue: 종료됨 only",
+  "source": "research/ai-models-pricing.md"
+}

@@ -1,0 +1,54 @@
+{
+  "existing_interactions": {
+    "04-script": {
+      "scripts_identical": true,
+      "all_original_ids_preserved": true,
+      "nine_blocks": true,
+      "faq_five": true
+    },
+    "05-audio": {
+      "scripts_identical": true,
+      "all_original_ids_preserved": true,
+      "nine_blocks": true,
+      "faq_five": true
+    },
+    "06-scenes": {
+      "scripts_identical": true,
+      "all_original_ids_preserved": true,
+      "nine_blocks": true,
+      "faq_five": true
+    },
+    "07-editing": {
+      "scripts_identical": true,
+      "all_original_ids_preserved": true,
+      "nine_blocks": true,
+      "faq_five": true
+    },
+    "08-captions": {
+      "scripts_identical": true,
+      "all_original_ids_preserved": true,
+      "nine_blocks": true,
+      "faq_five": true
+    }
+  },
+  "protected_files": {
+    "site-shorts/assets/book.js": true,
+    "site-shorts/assets/book.css": true,
+    "site-shorts/assets/sim/common.js": true,
+    "site-shorts/assets/practice.js": true,
+    "site-shorts/credits.html": true,
+    "site-shorts/index.html": true,
+    "docs/PROJECT_STATE.md": true,
+    "shelf/progress/index.html": true
+  },
+  "new_assets": {
+    "y4ai-robot-reference.webp": {
+      "bytes": 24528,
+      "sha256": "8a00a3902e658f46b179778871ef1394e1acf3cc2daaa7b6f2b728a1cd002365"
+    },
+    "y4ai-robot-observe.webp": {
+      "bytes": 28866,
+      "sha256": "d57a1276076f631139b66115694a1605740047a36b9ae75d569a4da61471588f"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "temporary_kit": "/tmp/reelsbook-AIc-d_d940iw/starter-kit",
+  "dependency_setup": "Python 3.11.15 신규 venv에 requirements.txt의 세 고정 버전 pip 설치 성공",
+  "platform": "Linux; Windows 명령은 동일 인자를 Linux venv python으로 실행, Windows/macOS 실기기 아님",
+  "voice_fixture": "0.5초 사인파, 사람 음성 청취/정렬 검증 아님",
+  "results": [
+    {
+      "page": "03-copy",
+      "original_command_blocks_preserved": 7
+    },
+    {
+      "page": "04-cards",
+      "original_command_blocks_preserved": 2
+    },
+    {
+      "page": "05-reel",
+      "original_command_blocks_preserved": 3
+    },
+    {
+      "command": "python --version",
+      "exit": 0,
+      "stdout": "Python 3.11.15\n",
+      "stderr": ""
+    },
+    {
+      "command": "python run_pipeline.py --offline --output output/first-post",
+      "exit": 0,
+      "stdout": "검수 대기: /tmp/reelsbook-AIc-d_d940iw/starter-kit/output/first-post/REVIEW.md\n",
+      "stderr": ""
+    },
+    {
+      "command": "python write_copy.py output/first-post/news.json --mode prompt --template cards --output output/first-post/copy.json",
+      "exit": 0,
+      "stdout": "웹 채팅에 붙여 넣을 프롬프트: output/first-post/prompt.md. 답변 JSON을 output/first-post/copy.json에 저장하고 --validate로 확인하세요.\n",
+      "stderr": ""
+    },
+    {
+      "command": "python write_copy.py output/first-post/news.json --validate --output output/first-post/copy.json",
+      "exit": 0,
+      "stdout": "구조 검증 OK: output/first-post/copy.json (사실 확인은 사람이 해야 합니다)\n",
+      "stderr": ""
+    },
+    {
+      "command": "python run_pipeline.py render output/first-post",
+      "exit": 0,
+      "stdout": "검수 대기: /tmp/reelsbook-AIc-d_d940iw/starter-kit/output/first-post/REVIEW.md\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -c import yaml;from pathlib import Path;p=Path('config.yaml');c=yaml.safe_load(p.read_text());c['account_name']='AIc 가상 검증 계정';p.write_text(yaml.safe_dump(c,allow_unicode=True))",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "python run_pipeline.py --offline --config config.yaml --feed my-feed.xml --output output/my-news",
+      "exit": 0,
+      "stdout": "검수 대기: /tmp/reelsbook-AIc-d_d940iw/starter-kit/output/my-news/REVIEW.md\n",
+      "stderr": ""
+    },
+    {
+      "command": "python write_copy.py output/my-news/news.json --mode prompt --template cards --output output/my-news/copy.json --config config.yaml",
+      "exit": 0,
+      "stdout": "웹 채팅에 붙여 넣을 프롬프트: output/my-news/prompt.md. 답변 JSON을 output/my-news/copy.json에 저장하고 --validate로 확인하세요.\n",
+      "stderr": ""
+    },
+    {
+      "command": "python write_copy.py output/my-news/news.json --validate --output output/my-news/copy.json",
+      "exit": 0,
+      "stdout": "구조 검증 OK: output/my-news/copy.json (사실 확인은 사람이 해야 합니다)\n",
+      "stderr": ""
+    },
+    {
+      "command": "python run_pipeline.py render output/my-news",
+      "exit": 0,
+      "stdout": "검수 대기: /tmp/reelsbook-AIc-d_d940iw/starter-kit/output/my-news/REVIEW.md\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -c from PIL import Image;from pathlib import Path;import json; p=Path('output/first-post');assert len(list((p/'cards').glob('*.png')))==5;assert len(list((p/'cards').glob('*.jpg')))==5;assert all(Image.open(f).size==(1080,1350) for f in (p/'cards').glob('*.png'));q=Path('output/my-news');assert len(list((q/'cards').glob('*.png')))==3;assert json.loads((q/'copy.json').read_text())['account_name']=='AIc 가상 검증 계정';print('카드 수·치수·계정 이름 OK')",
+      "exit": 0,
+      "stdout": "카드 수·치수·계정 이름 OK\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -c import imageio_ffmpeg,subprocess; subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(),'-f','lavfi','-i','sine=frequency=440:duration=0.5','-c:a','aac','my-voice.m4a'],check=True)",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 8 (Debian 8.3.0-6)\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg\n  libavutil      59.  8.100 / 59.  8.100\n  libavcodec     61.  3.100 / 61.  3.100\n  libavformat    61.  1.100 / 61.  1.100\n  libavdevice    61.  1.100 / 61.  1.100\n  libavfilter    10.  1.100 / 10.  1.100\n  libswscale      8.  1.100 /  8.  1.100\n  libswresample   5.  1.100 /  5.  1.100\n  libpostproc    58.  1.100 / 58.  1.100\nInput #0, lavfi, from 'sine=frequency=440:duration=0.5':\n  Duration: N/A, start: 0.000000, bitrate: 705 kb/s\n  Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (pcm_s16le (native) -> aac (native))\nPress [q] to stop, [?] for help\nOutput #0, ipod, to 'my-voice.m4a':\n  Metadata:\n    encoder         : Lavf61.1.100\n  Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 69 kb/s\n      Metadata:\n        encoder         : Lavc61.3.100 aac\n[out#0/ipod @ 0x137c8a80] video:0KiB audio:5KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 18.981188%\nsize=       5KiB time=00:00:00.50 bitrate=  90.1kbits/s speed=45.9x    \n[aac @ 0x137c9c40] Qavg: 104.161\n"
+    },
+    {
+      "command": "python -c import imageio_ffmpeg,subprocess; subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(),'-i','my-voice.m4a','-vn','-c:a','pcm_s16le','my-voice.wav'],check=True)",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 8 (Debian 8.3.0-6)\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg\n  libavutil      59.  8.100 / 59.  8.100\n  libavcodec     61.  3.100 / 61.  3.100\n  libavformat    61.  1.100 / 61.  1.100\n  libavdevice    61.  1.100 / 61.  1.100\n  libavfilter    10.  1.100 / 10.  1.100\n  libswscale      8.  1.100 /  8.  1.100\n  libswresample   5.  1.100 /  5.  1.100\n  libpostproc    58.  1.100 / 58.  1.100\nInput #0, mov,mp4,m4a,3gp,3g2,mj2, from 'my-voice.m4a':\n  Metadata:\n    major_brand     : M4A \n    minor_version   : 512\n    compatible_brands: M4A isomiso2\n    encoder         : Lavf61.1.100\n  Duration: 00:00:00.50, start: 0.000000, bitrate: 90 kb/s\n  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 72 kb/s (default)\n      Metadata:\n        handler_name    : SoundHandler\n        vendor_id       : [0][0][0][0]\nStream mapping:\n  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))\nPress [q] to stop, [?] for help\nOutput #0, wav, to 'my-voice.wav':\n  Metadata:\n    major_brand     : M4A \n    minor_version   : 512\n    compatible_brands: M4A isomiso2\n    ISFT            : Lavf61.1.100\n  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s (default)\n      Metadata:\n        handler_name    : SoundHandler\n        vendor_id       : [0][0][0][0]\n        encoder         : Lavc61.3.100 pcm_s16le\n[out#0/wav @ 0x31532540] video:0KiB audio:44KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.173118%\nsize=      44KiB time=00:00:00.51 bitrate= 706.8kbits/s speed= 285x    \n"
+    },
+    {
+      "command": "python -c import json;from pathlib import Path;p=Path('output/first-post/config.json');c=json.loads(p.read_text());c['reel']['narration']=str(Path('my-voice.wav').resolve());c['reel']['music']=None;c['reel']['tts']='silent';p.write_text(json.dumps(c,ensure_ascii=False))",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "python run_pipeline.py render output/first-post",
+      "exit": 0,
+      "stdout": "검수 대기: /tmp/reelsbook-AIc-d_d940iw/starter-kit/output/first-post/REVIEW.md\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -c import imageio_ffmpeg,subprocess; r=subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(),'-i','output/first-post/reel.mp4','-f','null','-'],capture_output=True,text=True);assert r.returncode==0;assert '1080x1920' in r.stderr;assert 'Audio:' in r.stderr;print('MP4 1080x1920·오디오 스트림·끝까지 디코딩 OK')",
+      "exit": 0,
+      "stdout": "MP4 1080x1920·오디오 스트림·끝까지 디코딩 OK\n",
+      "stderr": ""
+    }
+  ]
+}

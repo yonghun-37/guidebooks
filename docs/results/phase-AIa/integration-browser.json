@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "chapters/05b-ai-tools.html registered 05b-ai-tools",
+    "chapters/05b-ai-tools.html registered prompts",
+    "chapters/05b-ai-tools.html registered ai-models",
+    "chapters/05b-ai-tools.html menu links to appendix",
+    "chapters/05b-ai-tools.html footer prompt link",
+    "previous source",
+    "next writing",
+    "theory outline 9",
+    "prompts.html registered 05b-ai-tools",
+    "prompts.html registered prompts",
+    "prompts.html registered ai-models",
+    "prompts.html menu links to appendix",
+    "prompts.html footer prompt link",
+    "ai-models.html registered 05b-ai-tools",
+    "ai-models.html registered prompts",
+    "ai-models.html registered ai-models",
+    "ai-models.html menu links to appendix",
+    "ai-models.html footer prompt link",
+    "no errors"
+  ],
+  "errors": []
+}

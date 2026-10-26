@@ -1,0 +1,11 @@
+{
+  "asset": "site/assets/img/ai-examples/library-evening.webp",
+  "tool": "built-in image_gen",
+  "generated": true,
+  "prompt": "가상 동네 도서관의 퇴근 무렵을 그린 세로 4:5 과슈 삽화. 아래쪽 나무 책상에 무표지 책 두 권과 무늬 없는 스탠드, 뒤에는 책장. 청록·크림색과 따뜻한 저녁빛. 위쪽 1/3은 제목을 따로 넣을 빈 벽. 사람·실제 장소·글자·숫자·로고·브랜드·워터마크 없이.",
+  "width": 960,
+  "height": 1200,
+  "bytes": 109058,
+  "sha256": "50e6b22e2b8699587478402ffb5bf498d0bb71437fd1e5bb4c1cd945bb10c300",
+  "sourceImageSha256": "81ab343468f96f5a240212f49653ea4f1d398df2fba6ce80e57b1b93e0e529da"
+}
