@@ -1,4 +1,4 @@
-너는 ai-insta 프로젝트의 작업자(Codex)다. AGENTS.md, .agents/skills/guidebook-pipeline·guidebook-writing, docs/STYLE-GUIDE.md, **docs/DESIGN-blog.md 8절**, research-blog/(BRIEFING·FACT-SHEET·ai-production-blog, 자동화·API·정책 노트), docs/results/phase-B2.md, 그리고 참고 구현 starter-kit/·shorts-kit/(README, daily.py, schedule_setup.py, publish.py/upload.py, tests)를 읽어라.
+너는 ai-insta 프로젝트의 작업자(Codex)다. AGENTS.md, .agents/skills/guidebook-pipeline·guidebook-writing, docs/STYLE-GUIDE.md, **docs/DESIGN-blog.md 8절**, research-blog/(BRIEFING·FACT-SHEET·ai-production-blog, 자동화·API·정책 노트), docs/results/phase-B2.md, **docs/DESIGN-blog.md 11절(B2 반영 결정·예시 — 우선)**, 그리고 참고 구현 starter-kit/·shorts-kit/(README, daily.py, schedule_setup.py, publish.py/upload.py, tests)를 읽어라.
 이번 작업은 **Phase B3k. blog-kit** 이다. `blog-kit/` 폴더만 만든다(site-blog/는 다른 작업자가 동시에 만든다 — 건드리지 마라. starter-kit/, shorts-kit/, site/, site-shorts/ 수정 금지). commit하지 마라. 시스템 패키지 설치 금지.
 
 - Python 3.10+, 표준 라이브러리 우선(필요 시 requirements.txt 최소), 무료·오프라인으로 끝까지.
