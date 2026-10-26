@@ -323,6 +323,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Codex curl 본문 확인; 2026-06-22 AI info 파라미터와 파트너십 라벨 항목 확인
+- Phase 1b 재확인: 2026-10-26 · Codex curl 직접 열람 · 확인함 · Phase1b curl본문재확인:2025-01-21views도입·폐기v22+/4-21전체;impressions미디어생성일예외
+
 
 <a id="s033"></a>
 ### S033. Instagram Platform Overview
@@ -443,6 +445,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 원문 일부; Free 1000 credits·15분 확인 보고, 유료 가격 추출 실패
+- Phase 1b 재확인: 2026-10-26 · Codex web 직접 열람 · 확인함 · Free월1000credits·액션별소모·일부AI가변·소진시중단.유료가격본문미추출
+
 
 <a id="s045"></a>
 ### S045. Zapier Plans and Pricing
@@ -523,6 +527,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes Free/Paid 본문; 모델별 무료량·한국 제공은 미확인
+- Phase 1b 재확인: 2026-10-26 · Codex web 직접 열람 · 확인함 · 일부모델무료·Free입출력제품개선사용표기·Paid다름·모델별요금.한국결제/실측품질미검증
+
 
 <a id="s053"></a>
 ### S053. Qwen3-8B Model Card
@@ -983,6 +989,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 원문 접근 실패; 소재·음원 상업/광고/지역 조건 미확인
+- Phase 1b 재확인: 2026-10-26 · Codex web 직접 열람 · 확인함 · Sounds비상업;Commercial Sounds허용CapCut/TikTok/TikTok for Business·외부별도허락.한국계정개별소재미검증
+
 
 <a id="s099"></a>
 ### S099. Create designs in bulk
@@ -1003,6 +1011,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 원문 접근 실패; 무료/Pro소재·템플릿 재판매·음원 권리 미확인
+- Phase 1b 재확인: 2026-10-26 · Codex web 직접 열람 · 확인함 · Free/Pro/Branded/Education별조건·SNS디자인허용·단독재배포제한·Popular Music별도
+
 
 <a id="s101"></a>
 ### S101. Google Cloud TTS Pricing(확인 대상)
@@ -1013,6 +1023,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 원문 접근 실패; 무료 문자량·대상 음성·한국 결제 조건 미확인
+- Phase 1b 재확인: 2026-10-26 · Codex web 직접 열람 · 확인함 · 결제활성화필수·초과자동과금;Standard/WaveNet월400만문자후US$4/백만,Chirp3HD100만후US$30/백만
+
 
 <a id="s102"></a>
 ### S102. Azure Speech Pricing(확인 대상)
@@ -1103,6 +1115,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Codex 지표 표·적용 형식 직접 확인; 시청시간 단위/평균 분모 미확인
+- Phase 1b 재확인: 2026-10-26 · Codex curl 직접 열람 · 확인함 · Phase1b curl본문재확인:reach/views/saved/shares/total_interactions/total_views·형식·광고/FB범위·reels_skip_rate추산
+
 
 <a id="s111"></a>
 ### S111. Instagram Account Insights
@@ -1173,4 +1187,624 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 접근 실패; 로그인/복구를 실제 수행하지 않았고 현재 화면 미확인
+
+## Phase 1b 확장 출처
+
+기준: **2026년 10월 조사 기준**, 컷오프2026-10-26. 공식 출처도 당사자 진술·마케팅 수치·과거 발표·검색 발췌를 구분한다. 실패/검색 후보는 검증 완료 출처 수에 넣지 않는다. [직접 확인 기록](verification-phase-1b.json)에 확인 절과 범위를 남겼다.
+
+<a id="s118"></a>
+### S118. YouTube 파트너 프로그램 확대 개요
+
+- URL: https://support.google.com/youtube/answer/13429240?hl=ko
+- 기관: YouTube 고객센터
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 한국 포함 국가 목록, 초기 후원/쇼핑과 광고수익 조건·기간·심사 구분
+- 확인 위치: 가입 기준·대한민국 국가행
+
+<a id="s119"></a>
+### S119. YouTube 채널 수익 창출 정책
+
+- URL: https://support.google.com/youtube/answer/1311392?hl=ko
+- 기관: YouTube 고객센터
+- 게시·갱신일: 본문 변경 공지 2025-07-15; 페이지 최종갱신 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 양산형·재사용 콘텐츠의 차이, 대량생산·슬라이드쇼·일반적 AI콘텐츠 예시 확인
+- 확인 위치: 2025-07-15 공지·일반적/중복 콘텐츠·재사용 절
+
+<a id="s120"></a>
+### S120. 검색 > 뉴스 API
+
+- URL: https://developers.naver.com/docs/serviceapi/search/news/news.md
+- 기관: NAVER Developers
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 일25000회·ID별 합산, XML/JSON 검색결과·필드, 인증 방식. 기사 재사용 허락은 입증하지 않음
+- 확인 위치: 개요·사전 준비·응답 필드 표
+
+<a id="s121"></a>
+### S121. Understanding SC 1.4.3 Contrast (Minimum)
+
+- URL: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
+- 기관: W3C WAI
+- 게시·갱신일: 본문 갱신일 미상; WCAG2.2 해설
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 일반 텍스트4.5:1·큰글자3:1·예외. Instagram 알고리즘 기준 아님
+- 확인 위치: SC·예외·Intent
+
+<a id="s122"></a>
+### S122. Understanding SC 1.2.2 Captions (Prerecorded)
+
+- URL: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html
+- 기관: W3C WAI
+- 게시·갱신일: 본문 갱신일 미상; WCAG2.2 해설
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 동기화된 사전녹화 미디어의 자막·예외·의미 있는 비음성정보 설명
+- 확인 위치: SC·Intent
+
+<a id="s123"></a>
+### S123. Pexels License
+
+- URL: https://www.pexels.com/license/
+- 기관: Pexels
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 무료 사용·수정, 출처 선택, 무수정 판매·보증암시·모욕·스톡재배포 제한
+- 확인 위치: Allowed·Not allowed
+
+<a id="s124"></a>
+### S124. ElevenLabs Pricing
+
+- URL: https://elevenlabs.io/pricing
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미상;2026-10-26 월결제 화면
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · Free10000 credits/월;Starter30000, 월$6 정상표시·11/1까지 첫달$1 표시; 세금 제외. 통화 코드 별도 미확인
+- 확인 위치: Monthly billing·Free·Starter·taxes
+
+<a id="s125"></a>
+### S125. Can I publish the content I generate on the platform?
+
+- URL: https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · Free 상업 불가·출처 요구, 유료기간 생성물 조건부 상업 이용·베타 제외·추가약관
+- 확인 위치: 전체 FAQ
+
+<a id="s126"></a>
+### S126. 타입캐스트 플랜 안내
+
+- URL: https://typecast.ai/kr/pricing
+- 기관: 타입캐스트
+- 게시·갱신일: 게시·갱신일 미상;2026-10-26 관찰
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 무료 최초3000credits 약5분;Basic 월9900원/연106800원·월30000credits 약60분·상업사용;기업별도. VAT명시 미확인
+- 확인 위치: 무료·베이직·기능비교·사용대상
+
+<a id="s127"></a>
+### S127. Vrew 가격 경로 접근 결과
+
+- URL: https://vrew.ai/ko/pricing
+- 기관: Vrew / VoyagerX
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 열 수 없음 · Codex web 직접 열람 · 가격표 대신 영문제품 소개가 제공됨. 가격·무료량·상업권 확인 불가
+- 확인 위치: 반환 본문에 가격표 없음
+
+<a id="s128"></a>
+### S128. 저작권정책·공공누리 유형 안내
+
+- URL: https://goe.go.kr/goe/cm/cntnts/cntntsView.do?cntntsId=1046&mi=10092
+- 기관: 경기도교육청
+- 게시·갱신일: 최종수정2026-02-11
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 공공누리1~4유형의 상업/변경/출처 조건·개별 마크 확인. 0·AI유형도 표기;다른 목적 조건 구별
+- 확인 위치: 공공누리 유형표·최종수정일
+
+<a id="s129"></a>
+### S129. FTC Announces Crackdown on Deceptive AI Claims and Schemes
+
+- URL: https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes
+- 기관: 미국 FTC
+- 게시·갱신일: 2024-09 경로;정확게시일직접본문표시미확인
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · AI 온라인상점 고수익/자동수익 주장에 대한 FTC 제소 내용. Instagram 사례·최종 유죄판결로 확대 금지
+- 확인 위치: Ascend Ecom·Ecommerce Empire Builders
+
+<a id="s130"></a>
+### S130. Keeping Instagram Safe and Secure
+
+- URL: https://about.fb.com/news/2021/07/keeping-instagram-safe-and-secure/
+- 기관: Meta Newsroom
+- 게시·갱신일: 2021-07-13
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 2FA·로그인활동·연락처·피싱DM 방지 안내.2026 실제 메뉴 미확인
+- 확인 위치: Security Checkup·보안 권고
+
+<a id="s131"></a>
+### S131. Introducing Best Practices, an Education Hub for Creators on Instagram
+
+- URL: https://about.fb.com/news/2024/10/best-practices-education-hub-creators-instagram/
+- 기관: Meta Newsroom
+- 게시·갱신일: 2024-10-01 게시·2024-09-30 병기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 프로 대시보드 학습 허브·5영역·맞춤 팁·점진 배포 발표.한국 현재 메뉴 미검증
+- 확인 위치: Takeaways·5영역·배포
+
+<a id="s132"></a>
+### S132. More Speech and Fewer Mistakes
+
+- URL: https://about.fb.com/news/2025/01/meta-more-speech-fewer-mistakes/
+- 기관: Meta Newsroom
+- 게시·갱신일: 2025-01-07 게시;본문2025-05-29 갱신
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 미국부터 제3자 팩트체크→Community Notes 전환 발표;한국 전면폐지 근거 아님
+- 확인 위치: Takeaways·미국 전환 절
+
+<a id="s133"></a>
+### S133. 어피티 공식 홈페이지
+
+- URL: https://uppity.co.kr/
+- 기관: 어피티 / 포브미디어
+- 게시·갱신일: 동적 홈페이지;최종갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 뉴스레터·AD·협업문의·유튜브 연결 확인.매출/팔로워/자동화 수준 미입증
+- 확인 위치: 내비게이션·뉴스레터·협업문의
+
+<a id="s134"></a>
+### S134. 뉴닉 공식 홈페이지
+
+- URL: https://newneek.co/
+- 기관: 뉴닉
+- 게시·갱신일: 동적 홈페이지;최종갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 공식 뉴스레터·광고제휴·Instagram 계정 링크 확인. 매출/AI전용 운영 미입증
+- 확인 위치: 푸터 링크
+
+<a id="s135"></a>
+### S135. 뉴닉 NEWNEEK Ads
+
+- URL: https://newneek.adrop.io/
+- 기관: 뉴닉 / Adrop
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 광고 플랫폼 존재 확인;현재 상품없음 표시. 단가·성과 수치 확인 불가
+- 확인 위치: Media Kit·No products available
+
+<a id="s136"></a>
+### S136. 오디오 보관함에 있는 음악 및 음향 효과 사용하기
+
+- URL: https://support.google.com/youtube/answer/3376882?hl=ko
+- 기관: YouTube 고객센터
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · CC 트랙 출처·표준 라이선스 구분·YPP 수익화·외부플랫폼 법률 안내 제한
+- 확인 위치: 저작자표시·동영상 수익창출·주의사항
+
+<a id="s137"></a>
+### S137. Unsplash License
+
+- URL: https://unsplash.com/license
+- 기관: Unsplash
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 무료 이미지 상업사용·수정 허용, 무수정 판매/경쟁서비스 제한. Unsplash+ 별도
+- 확인 위치: License·Longform
+
+<a id="s138"></a>
+### S138. Pixabay Content License Summary
+
+- URL: https://pixabay.com/service/license-summary/
+- 기관: Pixabay
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 무료·수정·출처 선택;단독재판매·상표/오도·추가 제3자 권리;요약이며전문 우선
+- 확인 위치: Allowed·Not allowed
+
+<a id="s139"></a>
+### S139. 클립 광고 수익 약관 변경 공지
+
+- URL: https://notice.naver.com/notices/clipstudio/34383
+- 기관: NAVER
+- 게시·갱신일: 검색상2026-09;시행일 전문 미확인
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 검색 발췌 · Codex web 직접 열람 · 검색발췌:만19세·1000팔로워·90일300만·개정전후표.직접열람0행으로 본문검증실패
+- 확인 위치: 검색만·빈본문
+
+<a id="s140"></a>
+### S140. TikTok Creator Rewards Program Terms (Japan/Korea)
+
+- URL: https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-jp-kr/en
+- 기관: TikTok
+- 게시·갱신일: 갱신2025-04
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 한국19세·5만팔로워·30일10만조회·개인계정·1분·지급수단·권리;2026뉴스룸1만과 상충
+- 확인 위치: Eligibility1.a-f·Rewards·Payment
+
+<a id="s141"></a>
+### S141. Creating the Next Wave: 한국 콘텐츠 생태계 투자 발표
+
+- URL: https://newsroom.tiktok.com/kimpactsummit2026?lang=ko-KR
+- 기관: TikTok Newsroom Korea
+- 게시·갱신일: 2026-04-02
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 4/1한국어2X·팔로워1만·30일10만·1분 오리지널 발표;약관5만과 상충.2배는 발표조건이지 개인예상액 아님
+- 확인 위치: 크리에이터 성장 지원 절
+
+<a id="s142"></a>
+### S142. 새로운 Creator Rewards Program을 만나보세요
+
+- URL: https://newsroom.tiktok.com/introducing-the-new-creator-rewards-program-kr?lang=ko-KR
+- 기관: TikTok Newsroom Korea
+- 게시·갱신일: 2024-03-19
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 한국19세·5만·30일10만·1분의 과거 발표;현행기준으로 사용금지
+- 확인 위치: 참여요건·리워드설명
+
+<a id="s143"></a>
+### S143. 디지털크리에이터미디어산업 매출액 증가
+
+- URL: https://www.kmcc.go.kr/download.do?fileSeq=62126
+- 기관: 방송미디어통신위원회·한국전파진흥협회
+- 게시·갱신일: 2025-11-28
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 2024실적·사업체1000개표본·매출5조5503억원·11089사업체 추정.개인/Instagram수익과 별개
+- 확인 위치: PDF1~3쪽
+
+<a id="s144"></a>
+### S144. 귀여운 고슴이가 전하는 똑똑한 뉴스
+
+- URL: https://www.snu.ac.kr/snunow/snu_story?bbsidx=128390&md=v
+- 기관: 서울대학교 뉴스
+- 게시·갱신일: 2020-06-16
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 확인함 · Codex web 직접 열람 · 공동대표 인터뷰:쉬운설명·피드백·이메일 독자.구독자목표와실적구별;독립회계검증아님
+- 확인 위치: 인터뷰 본문
+
+<a id="s145"></a>
+### S145. 돈 얘기에 위축되는 여성들, 돈 공부로 사로잡았다
+
+- URL: https://v.daum.net/v/20261001104145772
+- 기관: 아시아경제 / Daum 제공
+- 게시·갱신일: 2026-10-01
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 확인함 · Codex web 직접 열람 · 대표인터뷰:2018뉴스레터→유튜브/틱톡/인스타 확장·커머스는다음단계구상
+- 확인 위치: 회사소개·차기구상 질답
+
+<a id="s146"></a>
+### S146. About THE EDIT
+
+- URL: https://the-edit.co.kr/about
+- 기관: 디에디트
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 2016창간·웹/유튜브/뉴스레터/Instagram·광고제휴 안내·에디터큐레이션.120만은다채널자기주장
+- 확인 위치: ABOUT·연혁
+
+<a id="s147"></a>
+### S147. 6년을 살아남은 디에디트의 찐팬 전략
+
+- URL: https://www.hankookilbo.com/news/article/A2022090615430002709
+- 기관: 한국일보
+- 게시·갱신일: 2022-09-07
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 확인함 · Codex web 직접 열람 · 기업협업광고·팬관계·유통채널전략에관한인터뷰.2026단가/자동화증거아님
+- 확인 위치: Point2·채널운영
+
+<a id="s148"></a>
+### S148. The Dor Brothers About Us
+
+- URL: https://thedorbrothers.com/about/
+- 기관: The Dor Brothers
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 당사자AI영상스튜디오·상업의뢰·국제팀소개.합산조회/팔로워는자기주장,순이익미입증
+- 확인 위치: What We Do·So Far
+
+<a id="s149"></a>
+### S149. How a video studio embraced AI and stormed the Internet
+
+- URL: https://indianexpress.com/article/technology/how-a-video-studio-embraced-ai-and-stormed-the-internet-10141707/lite/
+- 기관: The New York Times / Indian Express 재게재
+- 게시·갱신일: 2025-07-22게시 /2025-07-23표시
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 확인함 · Codex web 직접 열람 · 스튜디오가2024상업프로젝트매출100만달러초과주장·컨설팅포함.독립회계검증/Instagram지급/개인순익아님;사람선택수정과재생성설명
+- 확인 위치: 매출진술·인력·제작과정
+
+<a id="s150"></a>
+### S150. Curious Refuge 공식 홈페이지
+
+- URL: https://curiousrefuge.com/
+- 기관: Curious Refuge
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · AI영상교육·멤버십/강좌판매·스튜디오관계자소개.계정조회수입증아님;강의추천보류
+- 확인 위치: Our Courses·Membership·About
+
+<a id="s151"></a>
+### S151. Best Time to Post on Instagram:9.6M Posts
+
+- URL: https://buffer.com/resources/when-is-the-best-time-to-post-on-instagram/
+- 기관: Buffer
+- 게시·갱신일: 2026-09-23
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 확인함 · Codex web 직접 열람 · 960만Instagram게시물;전체52M/200K/10플랫폼 표본과구별;2024-01~2025-12·참여율중앙값·시간정규화.관찰·한국뉴스계정실험아님
+- 확인 위치: About this data·timezone 설명
+
+<a id="s152"></a>
+### S152. Create human-approved Instagram posts with Gemini, Telegram, and Instagram
+
+- URL: https://n8n.io/workflows/20222-create-human-approved-instagram-posts-with-gemini-telegram-and-instagram/
+- 기관: n8n 카탈로그 / Buğra Şıkel 작성
+- 게시·갱신일: 절대날짜미상;표시20일전
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 폼→Gemini→규칙검사→Telegram승인→컨테이너/poll→게시 템플릿설명.직접실행안함;제작자기여물
+- 확인 위치: How it works·Setup
+
+<a id="s153"></a>
+### S153. Instagram for Business(Facebook Login)·Google Sheets templates
+
+- URL: https://www.make.com/integrations/instagram-business/google-sheets
+- 기관: Make
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 새Sheets행→Drive파일→Instagram사진게시 템플릿과인사이트저장.승인단계·RSS/렌더링포함실증없음
+- 확인 위치: Popular workflows
+
+<a id="s154"></a>
+### S154. Google Sheets·Instagram for Business Integration
+
+- URL: https://zapier.com/apps/google-sheets/integrations/instagram-for-business
+- 기관: Zapier
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 새Sheets행→사진게시 템플릿존재·트리거/액션.실행검증없음
+- 확인 위치: Publish Instagram photos from new Google Sheets rows
+
+<a id="s155"></a>
+### S155. How to get started with Instagram for Business on Zapier
+
+- URL: https://help.zapier.com/hc/en-us/articles/8496101110541-How-to-get-started-with-Instagram-for-Business-on-Zapier
+- 기관: Zapier
+- 게시·갱신일: 갱신2026-01-21
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · Business/Creator+연결FB페이지·콘텐츠권한·OAuth·사진캐러셀/릴스액션 확인
+- 확인 위치: Prerequisites·Actions
+
+<a id="s156"></a>
+### S156. Instagram for Business(Facebook login)
+
+- URL: https://apps.make.com/instagram-business
+- 기관: Make Apps Documentation
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 해당커넥터Instagram Business·연결FB페이지관리권한 조건.다른로그인커넥터에확대금지
+- 확인 위치: Requirements
+
+<a id="s157"></a>
+### S157. n8n LICENSE / Sustainable Use License
+
+- URL: https://raw.githubusercontent.com/n8n-io/n8n/master/LICENSE.md
+- 기관: n8n 공식 저장소
+- 게시·갱신일: 파일갱신일미상;SUL1.0
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 내부사업/개인비상업 사용제한·EE/제3자별도.OSI오픈소스와동일시금지
+- 확인 위치: Limitations·배포고지
+
+<a id="s158"></a>
+### S158. Meta Verified 글로벌 확대 도입
+
+- URL: https://about.fb.com/ko/news/2023/12/meta-verified/
+- 기관: Meta 한국 뉴스룸
+- 게시·갱신일: 2023-12-01
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 한국확대·개인/크리에이터19세·신분증·계정활동·구독조건 과거발표.현행원화가격/도달보장미확인
+- 확인 위치: 서비스자격·제공범위
+
+<a id="s159"></a>
+### S159. NAVER API HUB 뉴스 검색 결과 조회
+
+- URL: https://api.ncloud-docs.com/docs/naver-api-hub-search-news
+- 기관: NAVER Cloud
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 신규허브GET/search/v1/news·25000회/일·NCP헤더·반환필드 확인;등록/결제/기사권리는별도
+- 확인 위치: 요청·응답
+
+<a id="s160"></a>
+### S160. 네이버 API 이관·이용약관 개정 공지(목록)
+
+- URL: https://developers.naver.com/notice/?page=1
+- 기관: NAVER Developers
+- 게시·갱신일: 검색표시2026-07-20
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 검색 발췌 · Codex web 직접 열람 · 검색색인에7/31신규중단·2027-06-30유예;직접본문0행,정확게시물/일정재확인필요
+- 확인 위치: 이용약관개정안·이관표 검색문구
+
+<a id="s161"></a>
+### S161. News API Pricing
+
+- URL: https://newsapi.org/pricing
+- 기관: NewsAPI
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · Developer개발/테스트만·100요청/일·24시간지연.공개상용운영별도;Business449달러월표시·연결제토글혼재금액채택보류
+- 확인 위치: Developer·FAQ·Business
+
+<a id="s162"></a>
+### S162. News API Terms of Service
+
+- URL: https://newsapi.org/terms
+- 기관: NewsAPI
+- 게시·갱신일: 갱신2020-04-30
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 저작권자료복제/재게시 금지·개발무료상용금지조건.접근권과기사라이선스다름
+- 확인 위치: Use license·Attribution·Developer plan
+
+<a id="s163"></a>
+### S163. OpenAI API Pricing
+
+- URL: https://developers.openai.com/api/docs/pricing
+- 기관: OpenAI 공식 문서
+- 게시·갱신일: 게시·갱신일 미상;2026-10-26관찰
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex OpenAI Docs fetch 직접 열람 · Standard텍스트gpt-6-luna100만토큰입력$0.10/출력$0.50·short≤272K;long/도구별도.한국어성능/API무료보장아님
+- 확인 위치: Standard pricing data
+
+<a id="s164"></a>
+### S164. 쿠팡 인플루언서 공식 소개·FAQ
+
+- URL: https://influencers.coupang.com/
+- 기관: 쿠팡
+- 게시·갱신일: 게시·갱신일 미상;2026-10-26관찰
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 파트너스중SNS심사대상·자격수치비공개·기프트카드/보증등제외.마케팅성장숫자는예측근거아님
+- 확인 위치: FAQ·프로그램소개
+
+<a id="s165"></a>
+### S165. Available regions for Google AI Studio and Gemini API
+
+- URL: https://ai.google.dev/gemini-api/docs/available-regions
+- 기관: Google AI for Developers
+- 게시·갱신일: 갱신2026-10-22UTC
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · South Korea 포함.모델별무료/결제/실측품질별도
+- 확인 위치: 국가목록·Last updated
+
+<a id="s166"></a>
+### S166. Supported voices and languages
+
+- URL: https://cloud.google.com/text-to-speech/docs/voices
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · ko-KR Standard/WaveNet/Neural2/Chirp3HD 목록.권리/화자/독립한국어품질별도
+- 확인 위치: Korean(South Korea)행;최종경로list-voices-and-types
+
+<a id="s167"></a>
+### S167. How Spammers, Scammers and Creators Leverage AI-Generated Images on Facebook
+
+- URL: https://reap.fsi.stanford.edu/news/ai-spam-accounts-build-followers
+- 기관: Stanford FSI / Renee DiResta·Josh Goldstein
+- 게시·갱신일: 페이지게시·갱신일미상;2024연구소개
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 50개이상AI이미지를올린100개초과Facebook페이지관찰·외부유도/판매/사칭패턴.전체Instagram성공/제재비율로확대금지
+- 확인 위치: 연구방법·스팸/사기정의
+
+<a id="s168"></a>
+### S168. Meta has ended its bonus program on Threads
+
+- URL: https://www.engadget.com/social-media/meta-has-ended-its-bonus-program-on-threads-201627935.html
+- 기관: Engadget / Karissa Bell
+- 게시·갱신일: 2025-07-22
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 확인함 · Codex web 직접 열람 · 과거Threads보너스종료보도.2026재개·한국지급현황미확인
+- 확인 위치: 제목·종료확인문장
+
+<a id="s169"></a>
+### S169. The Clueless Aigency
+
+- URL: https://www.theclueless.ai/
+- 기관: The Clueless
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · Aitana등가상인물/브랜드캠페인·에이전시·교육커뮤니티소개.당사자마케팅주장·현행개인순익미입증
+- 확인 위치: AI PERSONAS·Services·Our Influencers
+
+<a id="s170"></a>
+### S170. Meet the Spanish AI model earning up to €10,000 a month
+
+- URL: https://www.euronews.com/2024/12/27/meet-the-first-spanish-ai-model-earning-up-to-10000-per-month
+- 기관: Euronews
+- 게시·갱신일: 2023-11-22 게시 /2024-12-27갱신;원2023기사URL에서이동
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 확인함 · Codex web 직접 열람 · 제작사대표의수익진술·광고/브랜드·팀기획.최대와평균구별·감사자료/순익아님
+- 확인 위치: 대표인터뷰·수익/제작질답
+
+<a id="s171"></a>
+### S171. 지재위, AI활용 지식재산권 안내서 5종 종합 점검
+
+- URL: https://kipo.go.kr/ko/kpoBultnDetail.do?aprchId=BUT0000029&menuCd=SCD0200618&ntatcSeq=21075&sysCd=SCD02
+- 기관: 지식재산처 / 국가지식재산위원회
+- 게시·갱신일: 2026-10-08
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 저작권등록/분쟁예방/학습공정이용3종설명·의거성/실질적유사성.개별뉴스요약판결/자동허락아님
+- 확인 위치: 저작권가이드라인3종·추진계획
+
+<a id="s172"></a>
+### S172. 생성형 인공지능의 저작물 학습에 대한 공정이용 안내서 안내
+
+- URL: https://www.copyright.or.kr/notify/notice/view.do?brdctsno=55214&pageIndex=1
+- 기관: 한국저작권위원회
+- 게시·갱신일: 2026-02-26
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 확인함 · Codex web 직접 열람 · 안내서공개·교육자료링크;AI학습주제이며SNS출력물재사용포괄허락아님.첨부전문미열람
+- 확인 위치: 게시물안내·첨부링크
+
+<a id="s173"></a>
+### S173. 클립 광고 인센티브 가입 프로세스
+
+- URL: https://help.naver.com/service/30048/bookmark/24454
+- 기관: NAVER 클립 고객센터
+- 게시·갱신일: 게시·갱신일미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 검색 발췌 · Codex web 직접 열람 · 검색본문팔로워1000·90일300만·동영상/게시물·심사·최소5만원·익익월6일.직접열람은메뉴셸이므로미확정
+- 확인 위치: 검색색인·직접본문메뉴만
 

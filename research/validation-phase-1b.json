@@ -1,0 +1,210 @@
+{
+  "phase": "1b",
+  "checked_at": "2026-10-26T00:44:36.021177+00:00",
+  "passed": true,
+  "checks": {
+    "run_budget": {
+      "passed": true,
+      "detail": {
+        "count": 28,
+        "limit": 28
+      }
+    },
+    "unique_runs": {
+      "passed": true,
+      "detail": null
+    },
+    "append_only_run_log": {
+      "passed": true,
+      "detail": null
+    },
+    "topic_coverage": {
+      "passed": true,
+      "detail": null
+    },
+    "max_turns": {
+      "passed": true,
+      "detail": null
+    },
+    "concurrency": {
+      "passed": true,
+      "detail": {
+        "peak": 4,
+        "limit": 4
+      }
+    },
+    "raw_query_hashes": {
+      "passed": true,
+      "detail": null
+    },
+    "no_command_failure": {
+      "passed": true,
+      "detail": {
+        "exit0": 28,
+        "not_content_success": true
+      }
+    },
+    "query_common_requirements": {
+      "passed": true,
+      "detail": null
+    },
+    "gap_inventory_in_initial_query": {
+      "passed": true,
+      "detail": null
+    },
+    "manifest_coverage": {
+      "passed": true,
+      "detail": null
+    },
+    "quality_not_exit": {
+      "passed": true,
+      "detail": null
+    },
+    "source_ids_unique": {
+      "passed": true,
+      "detail": null
+    },
+    "source_urls_unique": {
+      "passed": true,
+      "detail": {
+        "count": 173
+      }
+    },
+    "new_official_direct_minimum": {
+      "passed": true,
+      "detail": {
+        "confirmed_new_official": 45,
+        "required": 5
+      }
+    },
+    "verification_states": {
+      "passed": true,
+      "detail": null
+    },
+    "fact_ids_unique": {
+      "passed": true,
+      "detail": null
+    },
+    "note_korea-cases": {
+      "passed": true,
+      "detail": null
+    },
+    "note_global-faceless-ai": {
+      "passed": true,
+      "detail": null
+    },
+    "note_cross-platform": {
+      "passed": true,
+      "detail": null
+    },
+    "note_korea-creator-economy": {
+      "passed": true,
+      "detail": null
+    },
+    "note_content-craft": {
+      "passed": true,
+      "detail": null
+    },
+    "note_music-assets-licensing": {
+      "passed": true,
+      "detail": null
+    },
+    "note_news-sources": {
+      "passed": true,
+      "detail": null
+    },
+    "note_ai-tools-pricing": {
+      "passed": true,
+      "detail": null
+    },
+    "note_nocode-pipelines": {
+      "passed": true,
+      "detail": null
+    },
+    "note_account-setup-security": {
+      "passed": true,
+      "detail": null
+    },
+    "note_analytics-metrics": {
+      "passed": true,
+      "detail": null
+    },
+    "note_misinformation-ethics": {
+      "passed": true,
+      "detail": null
+    },
+    "note_learning-resources": {
+      "passed": true,
+      "detail": null
+    },
+    "note_gap-fill": {
+      "passed": true,
+      "detail": null
+    },
+    "briefing_eight_sections": {
+      "passed": true,
+      "detail": null
+    },
+    "briefing_source_ids": {
+      "passed": true,
+      "detail": null
+    },
+    "briefing_ten_points": {
+      "passed": true,
+      "detail": null
+    },
+    "local_links_anchors": {
+      "passed": true,
+      "detail": []
+    },
+    "protected_files_unchanged": {
+      "passed": true,
+      "detail": [
+        "docs/reference-analysis.md",
+        "docs/results/phase-2.md"
+      ]
+    },
+    "no_raw_or_credentials_in_owned": {
+      "passed": true,
+      "detail": null
+    },
+    "git_diff_whitespace": {
+      "passed": true,
+      "detail": ""
+    },
+    "owned_file_count": {
+      "passed": true,
+      "detail": 22
+    },
+    "git_readonly_limitation_recorded": {
+      "passed": true,
+      "detail": null
+    }
+  },
+  "errors": [],
+  "owned_files": [
+    "research/korea-cases.md",
+    "research/global-faceless-ai.md",
+    "research/cross-platform.md",
+    "research/korea-creator-economy.md",
+    "research/content-craft.md",
+    "research/music-assets-licensing.md",
+    "research/news-sources.md",
+    "research/ai-tools-pricing.md",
+    "research/nocode-pipelines.md",
+    "research/account-setup-security.md",
+    "research/analytics-metrics.md",
+    "research/misinformation-ethics.md",
+    "research/learning-resources.md",
+    "research/gap-fill.md",
+    "research/BRIEFING.md",
+    "research/SOURCES.md",
+    "research/FACT-SHEET.md",
+    "research/provenance-phase-1b.json",
+    "research/verification-phase-1b.json",
+    "research/validation-phase-1b.json",
+    "docs/results/phase-1b.md",
+    "docs/PROJECT_STATE.md"
+  ],
+  "scope": "문서 정합성·근거 provenance 검증. 웹 사실 자체·실계정/API 실행·법률 적용·한국어 품질을 자동 검증한 결과가 아님."
+}
