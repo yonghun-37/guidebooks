@@ -1,0 +1,2392 @@
+[
+  {
+    "file": "chapters/01-map.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "chapters/01-map.html",
+    "text": "2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html"
+  },
+  {
+    "file": "chapters/01-map.html",
+    "text": "다음 장 →(이론) 2장 · 블로그는 무엇으로 돈을 버나 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html"
+  },
+  {
+    "file": "chapters/02-revenue.html",
+    "text": "실습 7 · 첫 글 실제로 발행하기",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "chapters/02-revenue.html",
+    "text": "← 이전 장(이론) 1장 · 블로그 글 한 편이 돈이 되기까지 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html"
+  },
+  {
+    "file": "chapters/02-revenue.html",
+    "text": "다음 장 →(이론) 3장 · AI 도구 지도 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html"
+  },
+  {
+    "file": "chapters/03-ai-tools.html",
+    "text": "5장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html"
+  },
+  {
+    "file": "chapters/03-ai-tools.html",
+    "text": "실습 2 안내",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html"
+  },
+  {
+    "file": "chapters/03-ai-tools.html",
+    "text": "6장 안내",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html"
+  },
+  {
+    "file": "chapters/03-ai-tools.html",
+    "text": "← 이전 장(이론) 2장 · 블로그는 무엇으로 돈을 버나 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html"
+  },
+  {
+    "file": "chapters/03-ai-tools.html",
+    "text": "다음 장 →(이론) 4장 · 플랫폼 고르기 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html"
+  },
+  {
+    "file": "chapters/04-platforms.html",
+    "text": "실습 1 안내",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html"
+  },
+  {
+    "file": "chapters/04-platforms.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "chapters/04-platforms.html",
+    "text": "← 이전 장(이론) 3장 · AI 도구 지도 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html"
+  },
+  {
+    "file": "chapters/04-platforms.html",
+    "text": "다음 장 →(이론) 5장 · 주제와 키워드 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html"
+  },
+  {
+    "file": "chapters/05-keywords.html",
+    "text": "실습 3 안내",
+    "url": "http://127.0.0.1:8636/site-blog/practice/03-keywords.html"
+  },
+  {
+    "file": "chapters/05-keywords.html",
+    "text": "6장 안내",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html"
+  },
+  {
+    "file": "chapters/05-keywords.html",
+    "text": "← 이전 장(이론) 4장 · 플랫폼 고르기 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html"
+  },
+  {
+    "file": "chapters/05-keywords.html",
+    "text": "다음 장 →(이론) 6장 · AI로 글 쓰기 레시피 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html"
+  },
+  {
+    "file": "chapters/06-writing.html",
+    "text": "9장 제휴 절",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#affiliate"
+  },
+  {
+    "file": "chapters/06-writing.html",
+    "text": "실습 4 · AI 초안과 사실 확인",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html"
+  },
+  {
+    "file": "chapters/06-writing.html",
+    "text": "← 이전 장(이론) 5장 · 주제와 키워드 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html"
+  },
+  {
+    "file": "chapters/06-writing.html",
+    "text": "다음 장 →(이론) 7장 · 이미지·썸네일 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html"
+  },
+  {
+    "file": "chapters/07-images.html",
+    "text": "실습 5 · 이미지·썸네일 만들기",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html"
+  },
+  {
+    "file": "chapters/07-images.html",
+    "text": "← 이전 장(이론) 6장 · AI로 글 쓰기 레시피 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html"
+  },
+  {
+    "file": "chapters/07-images.html",
+    "text": "다음 장 →(이론) 8장 · 검색에 잘 보이는 글 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html"
+  },
+  {
+    "file": "chapters/08-seo.html",
+    "text": "실습 8 · 검색 등록",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html"
+  },
+  {
+    "file": "chapters/08-seo.html",
+    "text": "← 이전 장(이론) 7장 · 이미지·썸네일 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html"
+  },
+  {
+    "file": "chapters/08-seo.html",
+    "text": "다음 장 →(이론) 9장 · 수익 장치 붙이기 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html"
+  },
+  {
+    "file": "chapters/09-monetize.html",
+    "text": "실습 9 · 수익 장치 신청",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html"
+  },
+  {
+    "file": "chapters/09-monetize.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "chapters/09-monetize.html",
+    "text": "← 이전 장(이론) 8장 · 검색에 잘 보이는 글 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html"
+  },
+  {
+    "file": "chapters/09-monetize.html",
+    "text": "다음 장 →(이론) 10장 · 반복과 자동화 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "실습 7의 예약 안내",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#schedule"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "실습 7에서 직접 공개",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "11장 숫자 읽기",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "10장 반복",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "11장 숫자",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "12장 정책",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "13장 계획",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "← 이전 장(이론) 9장 · 수익 장치 붙이기 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html"
+  },
+  {
+    "file": "chapters/10-automation.html",
+    "text": "다음 장 →(이론) 11장 · 숫자 읽기 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html"
+  },
+  {
+    "file": "chapters/11-analytics.html",
+    "text": "13장 주간 점검",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#review"
+  },
+  {
+    "file": "chapters/11-analytics.html",
+    "text": "10장 반복",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html"
+  },
+  {
+    "file": "chapters/11-analytics.html",
+    "text": "11장 숫자",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html"
+  },
+  {
+    "file": "chapters/11-analytics.html",
+    "text": "12장 정책",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html"
+  },
+  {
+    "file": "chapters/11-analytics.html",
+    "text": "13장 계획",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html"
+  },
+  {
+    "file": "chapters/11-analytics.html",
+    "text": "← 이전 장(이론) 10장 · 반복과 자동화 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html"
+  },
+  {
+    "file": "chapters/11-analytics.html",
+    "text": "다음 장 →(이론) 12장 · 정책·저작권·광고 표시·세금 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html"
+  },
+  {
+    "file": "chapters/12-policy.html",
+    "text": "실습 7의 발행 전 점검",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#review"
+  },
+  {
+    "file": "chapters/12-policy.html",
+    "text": "13장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html"
+  },
+  {
+    "file": "chapters/12-policy.html",
+    "text": "10장 반복",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html"
+  },
+  {
+    "file": "chapters/12-policy.html",
+    "text": "11장 숫자",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html"
+  },
+  {
+    "file": "chapters/12-policy.html",
+    "text": "12장 정책",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html"
+  },
+  {
+    "file": "chapters/12-policy.html",
+    "text": "13장 계획",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html"
+  },
+  {
+    "file": "chapters/12-policy.html",
+    "text": "← 이전 장(이론) 11장 · 숫자 읽기 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html"
+  },
+  {
+    "file": "chapters/12-policy.html",
+    "text": "다음 장 →(이론) 13장 · 30일 운영 계획 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html"
+  },
+  {
+    "file": "chapters/13-plan.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "chapters/13-plan.html",
+    "text": "11장 도구",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#analytics-tool"
+  },
+  {
+    "file": "chapters/13-plan.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "chapters/13-plan.html",
+    "text": "10장 반복",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html"
+  },
+  {
+    "file": "chapters/13-plan.html",
+    "text": "11장 숫자",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html"
+  },
+  {
+    "file": "chapters/13-plan.html",
+    "text": "12장 정책",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html"
+  },
+  {
+    "file": "chapters/13-plan.html",
+    "text": "13장 계획",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html"
+  },
+  {
+    "file": "chapters/13-plan.html",
+    "text": "← 이전 장(이론) 12장 · 정책·저작권·광고 표시·세금 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html"
+  },
+  {
+    "file": "practice/00-start.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#success"
+  },
+  {
+    "file": "practice/01-account.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "practice/02-setup.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#template"
+  },
+  {
+    "file": "practice/03-keywords.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#ai"
+  },
+  {
+    "file": "practice/05-images.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#design"
+  },
+  {
+    "file": "practice/06-editor.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "practice/06-editor.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#success"
+  },
+  {
+    "file": "practice/06-editor.html",
+    "text": "실습 7의 발행 순서",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "practice/07-publish.html",
+    "text": "실습 4 안내",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html"
+  },
+  {
+    "file": "practice/08-search.html",
+    "text": "실습 7에서 저장한 글 주소",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#success"
+  },
+  {
+    "file": "practice/10-automation.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#success"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 0 · 시작 전에: 오늘 쓸 글 고르기",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 1 · 계정과 블로그 만들기",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 2 · 도구 준비",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 3 · 키워드 고르기",
+    "url": "http://127.0.0.1:8636/site-blog/practice/03-keywords.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 4 · AI 초안과 사실 확인",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 5 · 이미지·썸네일 만들기",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 6 · 편집기에서 글 다듬기",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 7 · 첫 글 실제로 발행하기",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 8 · 검색 등록",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 9 · 수익 장치 신청",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 10 · 선택: 자동화와 첫 숫자 확인",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 7의 공개 확인",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#success"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "← 실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html"
+  },
+  {
+    "file": "practice/e2e.html",
+    "text": "실습 0으로 →",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html"
+  },
+  {
+    "file": "index.html",
+    "text": "하루 1천 명이면 얼마?2장 수입 계산 → 9장 수익 장치. 방문자 수에 내 단가와 조건을 넣어 봅니다.",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#simulator"
+  },
+  {
+    "file": "index.html",
+    "text": "어떤 플랫폼을 고를까?4장 플랫폼 선택 → 실습 1 블로그 개설. 수익 목표와 관리할 일을 고릅니다.",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html"
+  },
+  {
+    "file": "index.html",
+    "text": "AI 글을 그대로 올려도 되나?6장 사람의 마무리 → 8장 검색 → 실습 4 원문 대조. 내 경험과 근거를 더합니다.",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#human"
+  },
+  {
+    "file": "index.html",
+    "text": "오늘 첫 글을 내고 싶어요실습 0 유형 선택 → 4 초안 → 5 이미지 → 7 실제 발행 → 전체 체크.",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html"
+  },
+  {
+    "file": "index.html",
+    "text": "실습 10 선택 키트",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html"
+  },
+  {
+    "file": "lab.html",
+    "text": "1장 · 첫 글까지 단계 지도",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#first-post-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "2장 · 방문과 구매로 수입 계산하기",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#revenue-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "3장 · 다음에 열 도구",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#tool-picker"
+  },
+  {
+    "file": "lab.html",
+    "text": "4장 · 플랫폼 고르기 분기",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#platform-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "5장 · 키워드 고르기 연습",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html#keyword-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "6장 · AI 초안과 사람 손질 비교",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#draft-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "7장 · 썸네일 제목 배치 연습",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#thumbnail-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "8장 · 검색 결과 제목과 설명 미리보기",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#search-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "9장 · 발행 전 확인 분기",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#publish-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "10장 · 오늘 재사용할 틀 하나",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#automation-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "11장 · 두 기간의 변화 읽기",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#analytics-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "12장 · 생활 가전 후기의 표시 위치 고르기",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#disclosure-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "13장 · 하루 60분 계획표",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#plan-tool"
+  },
+  {
+    "file": "lab.html",
+    "text": "← 이전 장(이론) 13장 · 30일 운영 계획 완성",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html"
+  },
+  {
+    "file": "prompts.html",
+    "text": "실습 4에서 자료를 채우며 시작하기 →",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html"
+  },
+  {
+    "file": "ai-models.html",
+    "text": "3장 도구 지도",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html"
+  },
+  {
+    "file": "ai-models.html",
+    "text": "실습 2 가입과 입력 위치",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html"
+  },
+  {
+    "file": "ai-models.html",
+    "text": "11장 기록 방법 →",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html"
+  },
+  {
+    "file": "ai-models.html",
+    "text": "6장 글쓰기 레시피",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html"
+  },
+  {
+    "file": "ai-models.html",
+    "text": "7장 이미지",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html"
+  },
+  {
+    "file": "ai-models.html",
+    "text": "12장 표시·권리",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b001"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b001"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b001"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b001"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b001"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b002"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b002"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b003"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b003"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b003"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b003"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b004"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b004"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b004"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b005"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b006"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b006"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b006"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b007"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b007"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b007"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b008"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b009"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b010"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b010"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b010"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b010"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b011"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b011"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b012"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b012"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b012"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b012"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b014"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b014"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b015"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b016"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b017"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b017"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b017"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b018"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b018"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b018"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b018"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b018"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b019"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b019"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b019"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b020"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b022"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b022"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b023"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b023"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b023"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b023"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b023"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b023"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b024"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b024"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b024"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b024"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b024"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b024"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 13장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#source-b024"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b024"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b025"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b025"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b025"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b027"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b027"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b027"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b027"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b028"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b031"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b031"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b031"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b031"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b031"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 4",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html#source-b031"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b031"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b032"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b032"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b032"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 5장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html#source-b033"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b033"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 13장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#source-b033"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b034"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b034"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b034"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b035"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b036"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 13장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 4",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b037"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b038"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b040"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b040"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 5장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html#source-b040"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b040"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 4",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html#source-b040"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b041"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b041"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 4",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html#source-b041"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b042"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b042"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 4",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html#source-b042"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b046"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b047"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b048"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b048"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b048"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b048"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b048"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b048"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b048"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b049"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b049"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b052"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b052"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b052"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 13장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#source-b052"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b052"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#source-b052"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b052"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b054"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 5장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html#source-b054"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b054"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b054"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b054"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 3",
+    "url": "http://127.0.0.1:8636/site-blog/practice/03-keywords.html#source-b054"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b055"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 5장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html#source-b055"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b055"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b055"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b055"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 3",
+    "url": "http://127.0.0.1:8636/site-blog/practice/03-keywords.html#source-b055"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b056"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 5장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html#source-b056"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 3",
+    "url": "http://127.0.0.1:8636/site-blog/practice/03-keywords.html#source-b056"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b057"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 5장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html#source-b057"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 3",
+    "url": "http://127.0.0.1:8636/site-blog/practice/03-keywords.html#source-b057"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b058"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b058"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b058"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b059"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b059"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b060"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b060"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b064"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b068"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b069"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b069"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b070"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b071"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b072"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b073"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b073"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b076"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b076"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b076"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b076"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b082"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b082"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b082"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b082"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b083"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b085"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b085"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b086"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b087"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b091"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b092"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 4",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b093"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b094"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 13장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 4",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b097"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b098"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#source-b098"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b100"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b100"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b101"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b101"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#source-b101"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b103"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b103"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b103"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#source-b103"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b107"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b107"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b107"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 13장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#source-b107"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b107"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#source-b107"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b107"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b108"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b108"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b108"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b108"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 13장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/13-plan.html#source-b108"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#source-b108"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b108"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b109"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b110"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b111"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b112"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b112"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b114"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b117"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b119"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b120"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b122"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b122"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b123"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b123"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b124"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b124"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b124"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b124"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b125"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b126"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b129"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b130"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b133"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b138"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b139"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b140"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b143"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 5장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/05-keywords.html#source-b143"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 6장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/06-writing.html#source-b143"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b143"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 4",
+    "url": "http://127.0.0.1:8636/site-blog/practice/04-draft.html#source-b143"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b143"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b144"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b144"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b144"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b148"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b148"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b148"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b148"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b149"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b149"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b150"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b151"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b152"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b153"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b154"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b155"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b158"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b158"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b158"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b158"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b161"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b162"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b163"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b164"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b165"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b167"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b167"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b168"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b168"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b168"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b169"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b170"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 10장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/10-automation.html#source-b170"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b170"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b170"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b170"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 1장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/01-map.html#source-b173"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b173"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b173"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 11장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/11-analytics.html#source-b173"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b173"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b173"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b174"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b174"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b175"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b176"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b176"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b177"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b177"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b177"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 8장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/08-seo.html#source-b178"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b178"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b178"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 10",
+    "url": "http://127.0.0.1:8636/site-blog/practice/10-automation.html#source-b178"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b179"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b179"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b180"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b180"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b180"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b181"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b181"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b182"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b182"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b182"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b182"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b183"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 8",
+    "url": "http://127.0.0.1:8636/site-blog/practice/08-search.html#source-b184"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b185"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b185"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b185"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 0",
+    "url": "http://127.0.0.1:8636/site-blog/practice/00-start.html#source-b185"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 9",
+    "url": "http://127.0.0.1:8636/site-blog/practice/09-monetize.html#source-b185"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b186"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b186"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 12장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/12-policy.html#source-b186"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b186"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b186"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b189"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b191"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 7장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#source-b192"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#source-b192"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b192"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b193"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 9장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/09-monetize.html#source-b193"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 2장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/02-revenue.html#source-b199"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b200"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 4장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/04-platforms.html#source-b201"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b203"
+  },
+  {
+    "file": "credits.html",
+    "text": "이론 3장",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/03-ai-tools.html#source-b204"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b205"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 6",
+    "url": "http://127.0.0.1:8636/site-blog/practice/06-editor.html#source-b206"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b206"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 7",
+    "url": "http://127.0.0.1:8636/site-blog/practice/07-publish.html#source-b207"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b208"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 1",
+    "url": "http://127.0.0.1:8636/site-blog/practice/01-account.html#source-b209"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 2",
+    "url": "http://127.0.0.1:8636/site-blog/practice/02-setup.html#source-b210"
+  },
+  {
+    "file": "credits.html",
+    "text": "7장의 실제 프롬프트",
+    "url": "http://127.0.0.1:8636/site-blog/chapters/07-images.html#generate"
+  },
+  {
+    "file": "credits.html",
+    "text": "실습 5의 요청문",
+    "url": "http://127.0.0.1:8636/site-blog/practice/05-images.html#image-prompt"
+  }
+]

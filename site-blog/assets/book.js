@@ -12,7 +12,7 @@
     "내 글의 독자와 첫 발행 경로",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     2,
@@ -22,7 +22,7 @@
     "내 수익 경로와 참고 계산",
     "내 속도로",
     "입문",
-    "샘플"
+    "완성"
   ],
   [
     3,
@@ -32,7 +32,7 @@
     "글·이미지·키워드 작업별 도구 메모",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     4,
@@ -42,7 +42,7 @@
     "목표에 맞는 블로그 플랫폼",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     5,
@@ -52,7 +52,7 @@
     "키워드와 고른 이유",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     6,
@@ -62,7 +62,7 @@
     "사실 확인과 내 경험을 더한 초안",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     7,
@@ -72,7 +72,7 @@
     "권리와 사용 범위를 확인한 이미지",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     8,
@@ -82,7 +82,7 @@
     "검색 의도와 글 구조 점검",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     9,
@@ -92,7 +92,7 @@
     "신청 가능 여부와 다음 확인일",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     10,
@@ -102,7 +102,7 @@
     "직접 발행·예약·선택 API 구분",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     11,
@@ -112,7 +112,7 @@
     "방문·조회·확정 수입 기록",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     12,
@@ -122,7 +122,7 @@
     "내 글의 권리·표시 점검",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     13,
@@ -132,17 +132,17 @@
     "내 시간에 맞춘 운영 메모",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     14,
     "lab",
     "이론편",
     "블로그 실험실",
-    "원본 계산기로 이어지는 실험실",
+    "13개 장의 원본 도구 모음",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ],
   [
     15,
@@ -152,7 +152,7 @@
     "글을 읽다 만나는 용어",
     "내 속도로",
     "입문",
-    "준비중"
+    "완성"
   ]
 ];
   const chapters = chapterRows.map(([number, slug, part, title, deliverable, duration, difficulty, status]) => Object.freeze({number, slug, part, title, deliverable, duration, difficulty, status, track:'theory'}));
@@ -213,9 +213,9 @@
     "Blogger 기본·설치형 WordPress 심화 계획"
   ]
 ];
-  const practice = practiceRows.map(([slug,title,deliverable],number) => Object.freeze({number,slug,title,deliverable,duration:'내 속도로',track:'practice',part:'실습편',difficulty:'입문',status:number===7?'샘플':'준비중'}));
-  practice.push(Object.freeze({number:null,slug:'e2e',title:'한 편 완성 체크리스트',deliverable:'공개 글과 실습 기록',duration:'필요할 때',track:'practice',part:'실습편',difficulty:'입문',status:'준비중'}));
-  const appendices = [['prompts','프롬프트 모음'],['ai-models','AI 모델·사용처·비용 총정리'],['credits','출처·크레딧']].map(([slug,title])=>Object.freeze({number:null,slug,title,deliverable:slug==='credits'?'샘플에서 인용한 원문':'블로그 작업별 자료 준비중',track:'appendix',part:'부록',status:slug==='credits'?'샘플':'준비중'}));
+  const practice = practiceRows.map(([slug,title,deliverable],number) => Object.freeze({number,slug,title,deliverable,duration:['5분','15분','10분','15~20분','20~40분','10~15분','15분','10분','15분','15분','선택 25분'][number],track:'practice',part:'실습편',difficulty:'입문',status:'완성'}));
+  practice.push(Object.freeze({number:null,slug:'e2e',title:'한 편 완성 체크리스트',deliverable:'공개 글과 실습 기록',duration:'필요할 때',track:'practice',part:'실습편',difficulty:'입문',status:'완성'}));
+  const appendices = [['prompts','프롬프트 모음'],['ai-models','AI 모델·사용처·비용 총정리'],['credits','출처·크레딧']].map(([slug,title])=>Object.freeze({number:null,slug,title,deliverable:slug==='credits'?'실제 인용 원문과 제작 안내':slug==='prompts'?'작업별 복사용 요청문':'모델·사용처·과금 방식과 한 편 비용',track:'appendix',part:'부록',status:'완성'}));
   const tracks = Object.freeze([
     { id: 'theory', title: '(이론) 이론편', chapters },
     { id: 'practice', title: '(실습) 실습편', chapters: practice },
@@ -231,13 +231,20 @@
   };
   const byNumber = number => chapters.find(chapter => chapter.number === number);
   const esc = text => String(text).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-  const status = chapter => `<span class="status ${chapter.status === '샘플' ? 'ready' : ''}">${esc(chapter.status)}</span>`;
-  const label = chapter => `(${chapter.track === 'practice' ? '실습' : chapter.track === 'appendix' ? '부록' : '이론'}) ${chapter.number != null ? chapter.number + (chapter.track === 'practice' ? '. ' : '장 · ') : ''}${chapter.title}`;
+  const status = chapter => `<span class="status ${chapter.status === '완성' ? 'ready' : ''}">${esc(chapter.status)}</span>`;
+  const label = chapter => chapter.track === 'practice'
+    ? `실습 ${chapter.number != null ? chapter.number + ' · ' : ''}${chapter.title}`
+    : chapter.track === 'appendix' ? `부록 · ${chapter.title}`
+    : `(이론) ${chapter.number}장 · ${chapter.title}`;
   const link = chapter => `<a href="${chapterUrl(chapter)}">${esc(label(chapter))} ${status(chapter)}</a>`;
   const selected = (document.body.dataset.chapter === 'pending' || document.body.dataset.practice === 'pending') ? new URLSearchParams(location.search).get('chapter') : document.body.dataset.chapter || document.body.dataset.appendix;
   const current = allChapters.find(chapter => chapter.slug === (document.body.dataset.practice && document.body.dataset.practice !== 'pending' ? document.body.dataset.practice : selected));
   if (current && (document.body.dataset.chapter === 'pending' || document.body.dataset.practice === 'pending')) {
     document.querySelector('[data-pending-result]').textContent = current.deliverable;
+    const message = document.querySelector('[data-legacy-message]');
+    if (message && current.status === '완성') {
+      message.innerHTML = `<a class="button primary" href="${chapterUrl(current)}">완성된 ${esc(label(current))} 읽기 →</a>`;
+    }
   }
   const trackLinks = () => tracks.map(track => `<section><h3>${track.title}</h3><ol>${track.chapters.map(chapter => `<li>${link(chapter)}</li>`).join('')}</ol></section>`).join('');
   document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.filter(chapter => chapter.number !== null).length; });
@@ -265,7 +272,7 @@
   });
   if (current) {
     document.querySelectorAll('[data-chapter-title]').forEach(node => { node.textContent = label(current); });
-    document.querySelectorAll('[data-chapter-kicker]').forEach(node => { node.textContent = `(${current.track === 'practice' ? '실습' : '이론'}) ${current.part}${current.number != null ? ' / ' + current.number : ''}`; });
+    document.querySelectorAll('[data-chapter-kicker]').forEach(node => { node.textContent = `BlogBook / ${current.part}${current.number != null ? ' / ' + current.number : ''}`; });
     document.querySelectorAll('[data-chapter-meta]').forEach(meta => {
       const sequence = current.track === 'practice' ? practice : current.track === 'appendix' ? appendices : chapters;
       const previous = sequence[sequence.indexOf(current) - 1];
@@ -276,7 +283,7 @@
     const outline = blocks.map(block => `<li><a href="#${block.id}">${esc(block.querySelector('.block-label')?.lastChild.textContent.trim() || block.querySelector('h2').textContent)}</a></li>`).join('');
     document.querySelectorAll('[data-book-sidebar]').forEach(sidebar => {
       sidebar.className = 'book-sidebar';
-      sidebar.innerHTML = `<p class="sidebar-label">(${current.track === 'practice' ? '실습' : '이론'}) ${esc(current.part)} · ${current.number ?? '부록'}</p><nav aria-label="이 장의 흐름"><ol>${outline}</ol></nav><nav class="sidebar-chapters" aria-label="장 이동"><p class="sidebar-label">책의 지도</p>${trackLinks()}</nav>`;
+      sidebar.innerHTML = `<p class="sidebar-label">(${current.track === 'practice' ? '실습' : current.track === 'appendix' ? '부록' : '이론'}) ${esc(current.part)} · ${current.number ?? '부록'}</p><nav aria-label="이 장의 흐름"><ol>${outline}</ol></nav><nav class="sidebar-chapters" aria-label="장 이동"><p class="sidebar-label">책의 지도</p>${trackLinks()}</nav>`;
     });
     document.querySelectorAll('[data-mobile-outline]').forEach(details => {
       details.className = 'mobile-outline';

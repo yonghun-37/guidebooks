@@ -1666,3 +1666,43 @@
 - 발행 주체: 티스토리 공식 · 등급 **A**
 - 게시·갱신·시행: 2008-08-27 · 접근: 2026-10-26
 - 확인 수준: 직접 본문 확인·과거 글 관리/삭제 기능 설명만. 현재 메뉴 위치·복구 정책 근거로 확대하지 않음
+
+<a id="b208"></a>
+## B208. 네이버 2단계 인증 설정
+
+- URL: [네이버 2단계 인증 설정](https://help.naver.com/service/5640/contents/19238?lang=ko&osType=MOBILE)
+- 발행 주체: 네이버 · 등급 **A**
+- 게시·갱신·시행: 날짜 미표기 · 접근: 2026-10-26
+- 확인 수준: 직접 본문 확인: B5 확인을 B6에서 재확인. 네이버ID 보안설정·기기 선택, 로그인 후 실행은 미실행.
+
+<a id="b209"></a>
+## B209. 카카오 2단계 인증
+
+- URL: [카카오 2단계 인증](https://talksafety.kakao.com/toolandguide/account/auth)
+- 발행 주체: 카카오 · 등급 **A**
+- 게시·갱신·시행: 날짜 미표기 · 접근: 2026-10-26
+- 확인 수준: 직접 본문 확인: B5 확인을 B6에서 재확인. 카카오계정 2단계 인증·이메일, 계정 실행은 미실행.
+
+<a id="b210"></a>
+## B210. ChatGPT on the web
+
+- URL: [ChatGPT on the web](https://learn.chatgpt.com/docs/web)
+- 발행 주체: OpenAI · 등급 **A**
+- 게시·갱신·시행: 날짜 미표기 · 접근: 2026-10-26
+- 확인 수준: 직접 본문 확인: B5 확인을 B6에서 재확인. 웹 대화 입력·결과 수정, 계정 실행은 미실행.
+
+<a id="b211"></a>
+## B211. OpenAI API 가격
+
+- URL: [OpenAI API 가격](https://developers.openai.com/api/docs/pricing)
+- 발행 주체: OpenAI · 등급 **A**
+- 게시·갱신·시행: 날짜 미표기 · 접근: 2026-10-26
+- 확인 수준: 기존 조사 S400 재사용 및 B6 직접 본문 확인. Standard 단문 GPT-6 Luna 입력/출력 100만 토큰 US$0.10/0.50, GPT-6.1 Sol 2/10. 앱 구독과 구분.
+
+<a id="b212"></a>
+## B212. Gemini API 가격
+
+- URL: [Gemini API 가격](https://ai.google.dev/gemini-api/docs/pricing)
+- 발행 주체: Google · 등급 **A**
+- 게시·갱신·시행: 날짜 미표기 · 접근: 2026-10-26
+- 확인 수준: 기존 조사 S408 재사용 및 B6 직접 본문 확인. 모델·과금 방식·무료/유료 등급은 개별 항목을 따른다. 앱 구독과 구분.

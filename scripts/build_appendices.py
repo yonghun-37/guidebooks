@@ -72,9 +72,10 @@ def catalog():
 
 class TermLinks(HTMLParser):
     """본문의 첫 일반 텍스트에만 용어 링크를 넣고 코드·각주·기존 링크는 보존한다."""
-    def __init__(self, source, terms, path):
+    def __init__(self, source, terms, path, site=None, label=None):
         super().__init__(convert_charrefs=False)
         self.terms, self.path = terms, path
+        self.site, self.label = site or SITE, label or page_label
         self.stack, self.edits = [], []
         self.offsets = [0]
         for line in source.splitlines(keepends=True):
@@ -109,7 +110,7 @@ class TermLinks(HTMLParser):
             if not match or any(match.start() < end and match.end() > start for start, end in occupied):
                 continue
             occupied.append(match.span())
-            term.update(first=page_label(self.path), page=str(self.path.relative_to(SITE)))
+            term.update(first=self.label(self.path), page=str(self.path.relative_to(self.site)))
             label = match[0]
             prefix = '../' if self.path.parent.name in {'chapters', 'practice'} else ''
             replacement = f'<a href="{prefix}glossary.html#{term["id"]}" data-term="{term["id"]}" data-term-description="{E(term["description"], quote=True)}">{label}</a>'
@@ -246,8 +247,12 @@ def lab(entries):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--site', choices=('site', 'site-shorts'), default='site')
+    parser.add_argument('--site', choices=('site', 'site-shorts', 'site-blog'), default='site')
     args = parser.parse_args()
+    if args.site == 'site-blog':
+        from build_appendices_blog import build
+        build()
+        raise SystemExit(0)
     if args.site == 'site-shorts':
         from build_appendices_shorts import build
         build()

@@ -82,8 +82,8 @@
 | **P01-2** 티스토리는 카카오 계정과 블로그 주소를 어떻게 정하나요? | [BL-UI-05](FACT-SHEET.md#bl-ui-05) | 연결한 사실의 확인 수준·세부 노트에 따라 집필. |
 | **P01-3** 블로그 제목·닉네임·주소는 나중에 바꿀 수 있나요? | [BL-UI-01](FACT-SHEET.md#bl-ui-01) [BL-UI-05](FACT-SHEET.md#bl-ui-05) | 연결한 사실의 확인 수준·세부 노트에 따라 집필. |
 | **P01-4** 휴대폰으로도 만들고 글을 쓸 수 있나요? | [BL-UI-04](FACT-SHEET.md#bl-ui-04) | 한국어 앱 경로의 현재 세부 버튼·예약은 미확인. |
-| **P01-5** 연습 글을 쓰기 전에 공개 범위와 2단계 인증은 어디서 정하나요? | [BL-UI-02](FACT-SHEET.md#bl-ui-02) [BL-UI-04](FACT-SHEET.md#bl-ui-04) [BL-OPS-01](FACT-SHEET.md#bl-ops-01) | 공개 설정은 확인. 2단계 인증 상세 도움말 주소는 재확인 필요. |
-| **P02-1** 무료 AI는 어디서 가입하고 어떤 메뉴에 질문하나요? | [BL-AI-01](FACT-SHEET.md#bl-ai-01) [BL-AI-13](FACT-SHEET.md#bl-ai-13) | ChatGPT 공식 앱/웹의 대화 입력 사용. 현행 가입/모델 선택 화면은 실기 미확인. |
+| **P01-5** 연습 글을 쓰기 전에 공개 범위와 2단계 인증은 어디서 정하나요? | [BL-UI-02](FACT-SHEET.md#bl-ui-02) [BL-UI-04](FACT-SHEET.md#bl-ui-04) [BL-OPS-01](FACT-SHEET.md#bl-ops-01) | 공개 설정은 확인. B5 인계·B6 재확인으로 [BL-UI-14](FACT-SHEET.md#bl-ui-14)·B208/B209의 공식 2단계 인증 안내를 연결. 계정 설정 실행은 미실행. |
+| **P02-1** 무료 AI는 어디서 가입하고 어떤 메뉴에 질문하나요? | [BL-AI-01](FACT-SHEET.md#bl-ai-01) [BL-AI-13](FACT-SHEET.md#bl-ai-13) | [BL-AI-14](FACT-SHEET.md#bl-ai-14)·B210의 공식 웹 대화 입력 안내 연결. 로그인 후 가입/모델 선택 실행은 미실행. |
 | **P02-2** 무료 한도에 걸리면 돈을 내야 오늘 끝낼 수 있나요? | [BL-AI-02](FACT-SHEET.md#bl-ai-02) [BL-AI-05](FACT-SHEET.md#bl-ai-05) | 연결한 사실의 확인 수준·세부 노트에 따라 집필. |
 | **P02-3** Canva·미리캔버스에서 무료 소재는 어떻게 구별하나요? | [BL-AI-16](FACT-SHEET.md#bl-ai-16) | 연결한 사실의 확인 수준·세부 노트에 따라 집필. |
 | **P02-4** 내 메모에 개인정보가 있으면 AI에 넣어도 되나요? | [BL-OPS-01](FACT-SHEET.md#bl-ops-01) | 연결한 사실의 확인 수준·세부 노트에 따라 집필. |

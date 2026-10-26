@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-labelledby="title desc">
+<title id="title">공고를 읽고 내 상황과 비교하는 순서</title><desc id="desc">공식 공고 원문, 대상과 기간 메모, 내 조건과 비교, 담당 창구 문의 순서입니다.</desc>
+<rect width="360" height="260" rx="18" fill="#edf5ee"/>
+<g fill="#fff" stroke="#26745a" stroke-width="2"><rect x="20" y="18" width="320" height="46" rx="10"/><rect x="20" y="78" width="320" height="46" rx="10"/><rect x="20" y="138" width="320" height="46" rx="10"/><rect x="20" y="198" width="320" height="46" rx="10"/></g>
+<g text-anchor="middle" font-family="sans-serif" font-size="17" fill="#173e30"><text x="180" y="47">공식 공고 원문 열기</text><text x="180" y="107">대상·기간·신청 화면 메모</text><text x="180" y="167">내 상황과 나란히 비교</text><text x="180" y="227">빈칸은 담당 창구에 문의</text></g>
+<path d="M180 64v14m0 46v14m0 46v14" stroke="#26745a" stroke-width="3"/>
+</svg>
