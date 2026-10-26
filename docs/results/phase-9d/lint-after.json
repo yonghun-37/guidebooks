@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": "docs/results/phase-9/baseline.json",
+  "summary": {
+    "files": 11,
+    "passed": 11,
+    "failed": 0,
+    "char_count": 30992,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 0,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site/practice/00-start.html",
+      "track": "practice",
+      "char_count": 1593,
+      "baseline_char_count": 1465,
+      "ratio": 1.087372,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "a0b0e744f43575f2edada080acc3a1edbb293fc30e9480e78c9a09c7cbfbe26d"
+    },
+    {
+      "path": "site/practice/01-account.html",
+      "track": "practice",
+      "char_count": 3128,
+      "baseline_char_count": 4103,
+      "ratio": 0.762369,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "63a6270d5aa910ade4156f6267f6bb274081a18df28dcc483ccb805eb37b803a"
+    },
+    {
+      "path": "site/practice/02-setup.html",
+      "track": "practice",
+      "char_count": 3204,
+      "baseline_char_count": 2999,
+      "ratio": 1.068356,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "6eca41b666d9b3b101e6f48bd3d423fc70bf19d5ff8291ced1ef959a4385bed9"
+    },
+    {
+      "path": "site/practice/03-copy.html",
+      "track": "practice",
+      "char_count": 3279,
+      "baseline_char_count": 3119,
+      "ratio": 1.051298,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "d58ea4521fc3c012f5838009b513b1d0cdc4ae040dabfa3e357c198f948e8f2a"
+    },
+    {
+      "path": "site/practice/04-cards.html",
+      "track": "practice",
+      "char_count": 1717,
+      "baseline_char_count": 1537,
+      "ratio": 1.117111,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "3e9acab5e57b5d39f3eda9a70407fb468f233c01336089c0ce12581154117987"
+    },
+    {
+      "path": "site/practice/05-reel.html",
+      "track": "practice",
+      "char_count": 2004,
+      "baseline_char_count": 1889,
+      "ratio": 1.060879,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "28c52796a22664d9a27eddf4abed7507c86da1f08cbb52b5f3e6987b19dc37ab"
+    },
+    {
+      "path": "site/practice/06-review.html",
+      "track": "practice",
+      "char_count": 2457,
+      "baseline_char_count": 2496,
+      "ratio": 0.984375,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "3a5b2aa9bd37acb490381aa521ba4684c5eae803001ac8f1afe92a8a73b577ce"
+    },
+    {
+      "path": "site/practice/07-publish.html",
+      "track": "practice",
+      "char_count": 4159,
+      "baseline_char_count": 5017,
+      "ratio": 0.828981,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "1646dd142acbadab87d9ffd3c92997c0653e8234a1fe7d1d86820b65159f3e4a"
+    },
+    {
+      "path": "site/practice/08-api.html",
+      "track": "practice",
+      "char_count": 4740,
+      "baseline_char_count": 5076,
+      "ratio": 0.933806,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "e0a30020a8302069d5f5c37155b6514cdf0b93f8d0c8d1c031e774e7e9085160"
+    },
+    {
+      "path": "site/practice/09-schedule.html",
+      "track": "practice",
+      "char_count": 2518,
+      "baseline_char_count": 2628,
+      "ratio": 0.958143,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "adc72c731c1e979b4bd330d48d8d058f476d2ffccbc22d0c7bc7f207060370ed"
+    },
+    {
+      "path": "site/practice/10-insights.html",
+      "track": "practice",
+      "char_count": 2193,
+      "baseline_char_count": 2073,
+      "ratio": 1.057887,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "bdc12fa73684fc8695f2fe193dccab2efa9c2a6029b267dcb43e7bed31d7d0a1"
+    }
+  ]
+}

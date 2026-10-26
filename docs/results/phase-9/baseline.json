@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "files": {
+    "site/chapters/01-map.html": {
+      "track": "theory",
+      "char_count": 3657,
+      "sha256": "3040582f5b9bf44ac0f56462a42fd463798169a8107d2c6ab78f4578a8ff2e5d"
+    },
+    "site/chapters/02-formats.html": {
+      "track": "theory",
+      "char_count": 3866,
+      "sha256": "5b6931000ca3377118d51429555f4dc5241dfd473e9e4ef5ad07c96143c92f15"
+    },
+    "site/chapters/03-revenue.html": {
+      "track": "theory",
+      "char_count": 4558,
+      "sha256": "08606667ed1f56f4697d4ba79ef7347660175b054d1e90b751291a72d4f74c49"
+    },
+    "site/chapters/04-niche.html": {
+      "track": "theory",
+      "char_count": 3875,
+      "sha256": "11e4de95d59486d816731e2e1cb6dc5021ba53527f06927a7c89b4afa22bee5f"
+    },
+    "site/chapters/05-sources.html": {
+      "track": "theory",
+      "char_count": 3896,
+      "sha256": "d04149e0c4b544a0ef18b6dd4e3da111f33dff9353989e8dd816740aa930a06f"
+    },
+    "site/chapters/06-writing.html": {
+      "track": "theory",
+      "char_count": 3260,
+      "sha256": "4af8953ded568f5c7dc586a1bc4757f0090b408d38255aadac21eb291be64983"
+    },
+    "site/chapters/07-cards.html": {
+      "track": "theory",
+      "char_count": 3320,
+      "sha256": "41f5ae9183f01311a51b10f693bebe0cd5e73d080e46596f8cb792d4f3b0fb38"
+    },
+    "site/chapters/08-reels.html": {
+      "track": "theory",
+      "char_count": 3607,
+      "sha256": "d1144d9b32a1bf6d2635f23660278f1da95ba25a8945070ff04e0935c2bcd25d"
+    },
+    "site/chapters/09-pipeline.html": {
+      "track": "theory",
+      "char_count": 3583,
+      "sha256": "64e83267322d894dced748eaeff358aeda26d2291ac598e07c05921add3dba8c"
+    },
+    "site/chapters/10-publishing.html": {
+      "track": "theory",
+      "char_count": 4395,
+      "sha256": "7e1bfa2c5469632e22639b829f8d2ed82f274ff9fb9c6e010913b0683db31612"
+    },
+    "site/chapters/11-analytics.html": {
+      "track": "theory",
+      "char_count": 4463,
+      "sha256": "69cbb1d89ece8060d5cdffbfe42203b13f67aed6ec22806d38033915501772a9"
+    },
+    "site/chapters/12-safety.html": {
+      "track": "theory",
+      "char_count": 6908,
+      "sha256": "c2a7f8c9844964014e5cbc43a6111f6406c6fee6a4764f4213d9cee2f8af2758"
+    },
+    "site/chapters/13-roadmap.html": {
+      "track": "theory",
+      "char_count": 5712,
+      "sha256": "25b81b36464f56cfffed7ec138a1aa0c9fc52253a8e901fd2345bff6a9a55e16"
+    },
+    "site/chapters/14-plan.html": {
+      "track": "theory",
+      "char_count": 4822,
+      "sha256": "1caae1c83a0899080629fbc38c1332b9533a2446295a2f41cc068afd303adc52"
+    },
+    "site/practice/00-start.html": {
+      "track": "practice",
+      "char_count": 1465,
+      "sha256": "c802225d1f0981309df71c2a9418a3e8623e8faa18014d6b2e472febe6b7d4d0"
+    },
+    "site/practice/01-account.html": {
+      "track": "practice",
+      "char_count": 4103,
+      "sha256": "a627b6baf8faee41bb6b795377ae8ecb67cc13355c17ce6e419eaee269a1c943"
+    },
+    "site/practice/02-setup.html": {
+      "track": "practice",
+      "char_count": 2999,
+      "sha256": "483d67e56a02577103f63c2d552789fcf7cb34701353f17e73a5f4fe3213334c"
+    },
+    "site/practice/03-copy.html": {
+      "track": "practice",
+      "char_count": 3119,
+      "sha256": "e213a7ef9360c316f8e342946624c836c47215f3d961e0e88f908bf5fd384aae"
+    },
+    "site/practice/04-cards.html": {
+      "track": "practice",
+      "char_count": 1537,
+      "sha256": "49c633f9afab7b47d758e07025ba20dd9e307c08bc3da78d33cf34bde57f6842"
+    },
+    "site/practice/05-reel.html": {
+      "track": "practice",
+      "char_count": 1889,
+      "sha256": "35eeed9b360d461a53df6e393a8bf47398e5660615413dc5bce78234aa139d0a"
+    },
+    "site/practice/06-review.html": {
+      "track": "practice",
+      "char_count": 2496,
+      "sha256": "0a6f73b4c5a08a4e41338187b3a2756755d0cb1a232feb378a7907dc9ddbe041"
+    },
+    "site/practice/07-publish.html": {
+      "track": "practice",
+      "char_count": 5017,
+      "sha256": "bedd1fc8bb2e8560060e3f8008871a3b6dd23083c70cbca85098fd652dd8fd16"
+    },
+    "site/practice/08-api.html": {
+      "track": "practice",
+      "char_count": 5076,
+      "sha256": "ae790c5b75bb3890722ad7f3e6304fca59bd2d97dc3f61aca5fcb461ad937fd3"
+    },
+    "site/practice/09-schedule.html": {
+      "track": "practice",
+      "char_count": 2628,
+      "sha256": "32e32ae56fcb353e5673f6a6f4700b5598aa29a93a4428828b9a24fb3d1744bb"
+    },
+    "site/practice/10-insights.html": {
+      "track": "practice",
+      "char_count": 2073,
+      "sha256": "6bd54edab6e5e6424321ff9048b1238b0c8818218ca264648c2be22df76413c4"
+    }
+  }
+}

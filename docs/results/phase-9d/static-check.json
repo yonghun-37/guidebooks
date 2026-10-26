@@ -1,0 +1,21 @@
+{
+  "pages": 12,
+  "local_references": 354,
+  "preserved_step_keys": 35,
+  "documented_app_menu_blocks": 18,
+  "errors": [],
+  "sha256": {
+    "site/practice/00-start.html": "a0b0e744f43575f2edada080acc3a1edbb293fc30e9480e78c9a09c7cbfbe26d",
+    "site/practice/01-account.html": "63a6270d5aa910ade4156f6267f6bb274081a18df28dcc483ccb805eb37b803a",
+    "site/practice/02-setup.html": "6eca41b666d9b3b101e6f48bd3d423fc70bf19d5ff8291ced1ef959a4385bed9",
+    "site/practice/03-copy.html": "d58ea4521fc3c012f5838009b513b1d0cdc4ae040dabfa3e357c198f948e8f2a",
+    "site/practice/04-cards.html": "3e9acab5e57b5d39f3eda9a70407fb468f233c01336089c0ce12581154117987",
+    "site/practice/05-reel.html": "28c52796a22664d9a27eddf4abed7507c86da1f08cbb52b5f3e6987b19dc37ab",
+    "site/practice/06-review.html": "3a5b2aa9bd37acb490381aa521ba4684c5eae803001ac8f1afe92a8a73b577ce",
+    "site/practice/07-publish.html": "1646dd142acbadab87d9ffd3c92997c0653e8234a1fe7d1d86820b65159f3e4a",
+    "site/practice/08-api.html": "e0a30020a8302069d5f5c37155b6514cdf0b93f8d0c8d1c031e774e7e9085160",
+    "site/practice/09-schedule.html": "adc72c731c1e979b4bd330d48d8d058f476d2ffccbc22d0c7bc7f207060370ed",
+    "site/practice/10-insights.html": "bdc12fa73684fc8695f2fe193dccab2efa9c2a6029b267dcb43e7bed31d7d0a1",
+    "site/practice/e2e.html": "301b5135296c9c7e9ca9e3eff1d7c8ee102cfed8775490edf7f381a1282ed505"
+  }
+}

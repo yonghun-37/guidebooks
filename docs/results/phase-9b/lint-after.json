@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": "docs/results/phase-9/baseline.json",
+  "summary": {
+    "files": 5,
+    "passed": 5,
+    "failed": 0,
+    "char_count": 11152,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 0,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site/chapters/05-sources.html",
+      "track": "theory",
+      "char_count": 2287,
+      "baseline_char_count": 3896,
+      "ratio": 0.587012,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "0097fd5f68c0fb21ca96b36fe33a96519b66a0c7d0c2195309d972d8ccad0a44"
+    },
+    {
+      "path": "site/chapters/06-writing.html",
+      "track": "theory",
+      "char_count": 2228,
+      "baseline_char_count": 3260,
+      "ratio": 0.683436,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "a9f7d40e745ca390e638c3a70caa4ad18347efa447f4b49ceacf0b87c4de2137"
+    },
+    {
+      "path": "site/chapters/07-cards.html",
+      "track": "theory",
+      "char_count": 2106,
+      "baseline_char_count": 3320,
+      "ratio": 0.634337,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "afeea1187c0ac2f17ce4589964d2bb45eb572f459077dd8e411ba0d7c93a26ca"
+    },
+    {
+      "path": "site/chapters/08-reels.html",
+      "track": "theory",
+      "char_count": 2229,
+      "baseline_char_count": 3607,
+      "ratio": 0.617965,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "a5c879f4eea708846d599c369992db67a1a92a112b45ba95ce1851e7ae61129b"
+    },
+    {
+      "path": "site/chapters/09-pipeline.html",
+      "track": "theory",
+      "char_count": 2302,
+      "baseline_char_count": 3583,
+      "ratio": 0.642478,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "7bfab52723f9170abc137cf9c90c2bb2b4c8db853f52cebb0eb7f892687da5df"
+    }
+  ]
+}

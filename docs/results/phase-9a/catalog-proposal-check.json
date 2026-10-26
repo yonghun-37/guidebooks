@@ -1,0 +1,26 @@
+[
+  {
+    "chapter": "01-map",
+    "id": "time-budget",
+    "section": "simulator",
+    "title": "이번 주에 몇 편을 연습할까요?"
+  },
+  {
+    "chapter": "02-formats",
+    "id": "signal-sim",
+    "section": "simulator",
+    "title": "내 설명은 카드 몇 장이 되나요?"
+  },
+  {
+    "chapter": "03-revenue",
+    "id": "ledger-sim",
+    "section": "simulator",
+    "title": "쿠팡 인정 구매 수를 바꿔 보세요"
+  },
+  {
+    "chapter": "04-niche",
+    "id": "niche-sim",
+    "section": "simulator",
+    "title": "내 기획에 빠진 항목을 찾습니다"
+  }
+]

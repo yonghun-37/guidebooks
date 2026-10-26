@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": "docs/results/phase-9/baseline.json",
+  "summary": {
+    "files": 5,
+    "passed": 0,
+    "failed": 5,
+    "char_count": 17666,
+    "counts": {
+      "forbidden": 3,
+      "internal": 2,
+      "caveats_outside": 17,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site/chapters/05-sources.html",
+      "track": "theory",
+      "char_count": 3896,
+      "baseline_char_count": 3896,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 12,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 2,
+            "context": "통로와 이용 권리를 구분하고, 원문·권리·미확인 상태를 함께 기록합니다. 정책·수치·법률·사례는 2026년"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 2,
+            "context": "0월 조사 기준입니다. 각주의 확인 범위와 미확인 항목을 함께 읽으세요. ?01 · 일상의 질문 “RSS"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "허락을 추정하지 말고 검토 보류 표식 미확인 저작물별 약관·권리자 답변이 있는가? 허락 공백을 기록하고"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "표현을 대조하고, 원자료를 보지 못하면 “미확인”으로 남깁니다. 필요한 인용은 내 설명과 구별하고 인용 이유·범"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "을 찾는 흐름도입니다. 모든 항목은 처음에 미확인입니다. 원문과 권리자를 찾았나요?미확인원문·권리자 기록 있음찾지"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "에 미확인입니다. 원문과 권리자를 찾았나요?미확인원문·권리자 기록 있음찾지 못함복제·요약·상업 이용 등 내 이용을"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "등 내 이용을 포괄하는 허락이 있나요?범위 미확인범위·기간·매체의 증빙 있음없거나 내 이용이 제한됨허락에 기대지"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "음초상·개인정보 등 다른 권리를 점검했나요?미확인해당 없음 또는 별도 검토 기록 있음해결하지 못한 권리 문제 있음"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "제 있음원문과 사실·수치·조건을 대조했나요?미확인대조 기록 있음아직 대조 안 함 모두 미확인검토 기록이 있는 가상"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "미확인대조 기록 있음아직 대조 안 함 모두 미확인검토 기록이 있는 가상 예무너뜨리기: 출처만 있음 자바스크립트"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "진 권리를 나눠 메모합니다. 자료가 없으면 미확인·보류로 남깁니다. 인용 범위와 독자 질문 적기 출처 링크만으"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 3,
+            "context": "사 전문이 아니라 네가 대조한 사실·원출처·미확인 목록이야.” 하린은 6장의 문안 실습에 기획 시트, 소스 목"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": false,
+        "theory_length_at_most_70_percent": false
+      },
+      "passed": false,
+      "sha256": "d04149e0c4b544a0ef18b6dd4e3da111f33dff9353989e8dd816740aa930a06f"
+    },
+    {
+      "path": "site/chapters/06-writing.html",
+      "track": "theory",
+      "char_count": 3260,
+      "baseline_char_count": 3260,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 0,
+        "internal": 1,
+        "caveats_outside": 2,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [
+          {
+            "rule": "Hermes",
+            "text": "Hermes",
+            "line": 9,
+            "context": "명한다는 조사 보고가 있습니다. 이 항목은 Hermes 근거이며 독립 원문 검증 전입니다. 카드의 역할은 요점 정리"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "별개",
+            "text": "별개",
+            "line": 7,
+            "context": "웹 채팅 무료 이용과 API 무료 이용은 별개입니다. 무료 웹 도구에도 제한이 있으며 최신 횟수·모델별 한도를"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 10,
+            "context": "넣기를 선택하고, 실제 서비스 비용·권리의 미확인을 메모합니다. 실제로 만들어 보기 실습 3 · 프롬프"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": false,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": false
+      },
+      "passed": false,
+      "sha256": "4af8953ded568f5c7dc586a1bc4757f0090b408d38255aadac21eb291be64983"
+    },
+    {
+      "path": "site/chapters/07-cards.html",
+      "track": "theory",
+      "char_count": 3320,
+      "baseline_char_count": 3320,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 1,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [
+          {
+            "rule": "별개",
+            "text": "별개",
+            "line": 7,
+            "context": "ow 코드의 라이선스와 폰트·사진의 권리는 별개입니다. Noto Sans KR의 OFL 안내도 실제 폰트 파일과"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": false
+      },
+      "passed": false,
+      "sha256": "41f5ae9183f01311a51b10f693bebe0cd5e73d080e46596f8cb792d4f3b0fb38"
+    },
+    {
+      "path": "site/chapters/08-reels.html",
+      "track": "theory",
+      "char_count": 3607,
+      "baseline_char_count": 3607,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 3,
+        "internal": 1,
+        "caveats_outside": 2,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "적격·적격성",
+            "text": "적격",
+            "line": 7,
+            "context": "성공이나 모션·TTS 추가가 직접 수익화 적격을 보장하지 않습니다. 게시 가능·추천·수익화는 각각 확인하세요."
+          },
+          {
+            "rule": "적격·적격성",
+            "text": "적격",
+            "line": 10,
+            "context": "항목을 남겼다.움직임·음성 추가와 수익화 적격 보장을 구분했다. 체크 상태는 이 브라우저에만 저장합니다. 파일"
+          },
+          {
+            "rule": "적격·적격성",
+            "text": "적격",
+            "line": 12,
+            "context": ". AI 표시·사실·권리·가독성과 수익화 적격을 각각 검토합니다. Q09 · 퀴즈 소리와 자막을 점"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "Hermes",
+            "text": "Hermes",
+            "line": 7,
+            "context": "쇼·반복 영상·텍스트 몽타주 수익화 제한은 Hermes의 원문 일부 보고이며 독립 본문 확인에는 한계가 있습니다. 이"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 7,
+            "context": "확인했지만 상업 계약·참조 화자 동의 등은 미확인입니다. 엔진·모델·화자·출력물 권리를 한 번에 승인하지 않습니다"
+          },
+          {
+            "rule": "별개",
+            "text": "별개",
+            "line": 7,
+            "context": "일이 생겼다는 것과 내용이 정확하다는 것은 별개입니다. 무료 생성과 상업 사용을 구분하기 ElevenLab"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": false
+      },
+      "passed": false,
+      "sha256": "d1144d9b32a1bf6d2635f23660278f1da95ba25a8945070ff04e0935c2bcd25d"
+    },
+    {
+      "path": "site/chapters/09-pipeline.html",
+      "track": "theory",
+      "char_count": 3583,
+      "baseline_char_count": 3583,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": false
+      },
+      "passed": false,
+      "sha256": "64e83267322d894dced748eaeff358aeda26d2291ac598e07c05921add3dba8c"
+    }
+  ]
+}

@@ -1,0 +1,1115 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": "docs/results/phase-9/baseline.json",
+  "summary": {
+    "files": 11,
+    "passed": 0,
+    "failed": 11,
+    "char_count": 32402,
+    "counts": {
+      "forbidden": 29,
+      "internal": 54,
+      "caveats_outside": 45,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site/practice/00-start.html",
+      "track": "practice",
+      "char_count": 1465,
+      "baseline_char_count": 1465,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 2,
+        "internal": 1,
+        "caveats_outside": 2,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": ", 본인 이메일, 파일을 보관할 공간 시간 배분 예시 10분 · 실측 아님 선행 실습 없음 2026년"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "할 공간 시간 배분 예시 10분 · 실측 아님 선행 실습 없음 2026년 10월 조사 기준 · 확"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-25",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-25 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 4,
+            "context": "자료를 씁니다. 이 교재의 앱 메뉴는 일부 미확인이며 실계정 게시 성공을 검증하지 않았습니다. 직접 그린 설명"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 13,
+            "context": "단정해서 누르지 말고 해당 공식 도움말과 미확인 표시를 읽으세요. WindowsmacOS Windo"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "c802225d1f0981309df71c2a9418a3e8623e8faa18014d6b2e472febe6b7d4d0"
+    },
+    {
+      "path": "site/practice/01-account.html",
+      "track": "practice",
+      "char_count": 4103,
+      "baseline_char_count": 4103,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 3,
+        "internal": 7,
+        "caveats_outside": 9,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "본인이 접근할 이메일/전화, 인증앱 시간 배분 예시 25분 · 실측 아님 선행 실습 실습 0 2026"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "인증앱 시간 배분 예시 25분 · 실측 아님 선행 실습 실습 0 2026년 10월 조사 기준 ·"
+          },
+          {
+            "rule": "탐색 후보",
+            "text": "탐색 후보",
+            "line": 6,
+            "context": ". 방법 A: 기존 계정에서 추가. 아래 탐색 후보로 새 계정 만들기를 찾고 앱이 요구하는 가입·인증을 따릅니다."
+          }
+        ],
+        "internal": [
+          {
+            "rule": "7r·7v",
+            "text": "7r",
+            "line": 4,
+            "context": "한과 계정별 이메일/전화 인증 세부 조건은 7r 근거 미확보 — 확인 필요입니다. 숫자를 확정하지 않습니다. 계"
+          },
+          {
+            "rule": "7r·7v",
+            "text": "7r",
+            "line": 4,
+            "context": "공개 비공개 연습장처럼 취급하지 마세요. 7r은 앱 전환·공개 조건의 본문을 확보하지 못했으므로 전환 시 공개"
+          },
+          {
+            "rule": "7r·7v",
+            "text": "7r",
+            "line": 6,
+            "context": "락 여부를 먼저 확인해야 하는 후보입니다. 7r에는 성공 근거가 없으므로 필수 경로로 쓰지 않습니다. 안 되면"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-20",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-20 API-01 · E2E 한눈에 보기 진행 기록은 자바스크립트를"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "API-01",
+            "line": 4,
+            "context": "026-10-26 · 근거: PRAC-20 API-01 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-20",
+            "line": 4,
+            "context": "실제 공개 상태를 본인이 확인해야 합니다(PRAC-20). 테스트 게시물도 공개될 수 있습니다. 검증 뒤 보관/삭제하려"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "API-01",
+            "line": 11,
+            "context": "지 연결이 필수라는 안내를 붙이지 않습니다(API-01). 앱 버전에 따라 이름이 다를 수 있음 — 보통 이런 이"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 4,
+            "context": "하는 항목. 지원 포맷·확인창·복원 조건은 미확인입니다. 공개된 복사본까지 지워진다고 가정하지 마세요. 한국 앱"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 4,
+            "context": "고 가정하지 마세요. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S180에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "전화로 가입합니다. 가입 필드·인증 순서는 미확인입니다. 이메일 이름+연습@도메인 같은 + 별칭 팁은 메일 서비"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "입증하지 않습니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S180에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": ". 카테고리·유형·공개 동의 화면의 순서도 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "순서도 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S180에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "ntication app. 연결·완료 화면 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "화면 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S181에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "는 확인 필요입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S182에서 기능"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": false,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "a627b6baf8faee41bb6b795377ae8ecb67cc13355c17ce6e419eaee269a1c943"
+    },
+    {
+      "path": "site/practice/02-setup.html",
+      "track": "practice",
+      "char_count": 2999,
+      "baseline_char_count": 2999,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 3,
+        "internal": 2,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "치할 때의 인터넷, 다운로드한 ZIP 시간 배분 예시 35분 · 실측 아님 선행 실습 실습 1 2026"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "ZIP 시간 배분 예시 35분 · 실측 아님 선행 실습 실습 1 2026년 10월 조사 기준 ·"
+          },
+          {
+            "rule": "키트 계약",
+            "text": "로컬 키트 계약",
+            "line": 4,
+            "context": "켜면 이 브라우저에 저장합니다. 명령은 로컬 키트 계약(PRAC-25)입니다. 설치만 인터넷이 필요합니다. OS 탭은"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-25",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-25 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-25",
+            "line": 4,
+            "context": "에 저장합니다. 명령은 로컬 키트 계약(PRAC-25)입니다. 설치만 인터넷이 필요합니다. OS 탭은 명령 차이를 안"
+          }
+        ],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "483d67e56a02577103f63c2d552789fcf7cb34701353f17e73a5f4fe3213334c"
+    },
+    {
+      "path": "site/practice/03-copy.html",
+      "track": "practice",
+      "char_count": 3119,
+      "baseline_char_count": 3119,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 2,
+        "internal": 1,
+        "caveats_outside": 2,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "료, 텍스트 편집기, 선택한 웹 채팅 시간 배분 예시 30분 · 실측 아님 선행 실습 실습 2 2026"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "웹 채팅 시간 배분 예시 30분 · 실측 아님 선행 실습 실습 2 2026년 10월 조사 기준 ·"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-25",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-25 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 4,
+            "context": "쓰면 &amp;로 적습니다. 권리·사실이 미확인이면 만들지 말고 보류합니다. <rss version=\"2.0"
+          },
+          {
+            "rule": "별개",
+            "text": "별개",
+            "line": 12,
+            "context": "록을 전달하는 피드 형식이며 재사용 허락과 별개입니다. 한 문장 독자 질문과 원출처를 적습니다. 기사 전체·사"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "e213a7ef9360c316f8e342946624c836c47215f3d961e0e88f908bf5fd384aae"
+    },
+    {
+      "path": "site/practice/04-cards.html",
+      "track": "practice",
+      "char_count": 1537,
+      "baseline_char_count": 1537,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 2,
+        "internal": 6,
+        "caveats_outside": 1,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "json, 권리를 확인한 이미지·폰트 시간 배분 예시 20분 · 실측 아님 선행 실습 실습 3 2026"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "지·폰트 시간 배분 예시 20분 · 실측 아님 선행 실습 실습 3 2026년 10월 조사 기준 ·"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-08",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-08 PRAC-10 PRAC-25 API-06 · E2E 한눈에 보기"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-10",
+            "line": 4,
+            "context": "026-10-26 · 근거: PRAC-08 PRAC-10 PRAC-25 API-06 · E2E 한눈에 보기 진행 기록은"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-25",
+            "line": 4,
+            "context": "6 · 근거: PRAC-08 PRAC-10 PRAC-25 API-06 · E2E 한눈에 보기 진행 기록은 자바스크립트를"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "API-06",
+            "line": 4,
+            "context": "PRAC-08 PRAC-10 PRAC-25 API-06 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "API-06",
+            "line": 11,
+            "context": "20~1440px라는 별도 규격을 따릅니다(API-06). PNG를 API 입력으로 그대로 쓰지 않습니다. 이 실습은"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-10",
+            "line": 11,
+            "context": "근거와 앱 선택 화면의 미확인은 구분합니다(PRAC-10). 오늘은 이미지 카드 묶음부터 완성하세요. 이렇게 보"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "캐러셀 최대 20개 근거와 앱 선택 화면의 미확인은 구분합니다(PRAC-10). 오늘은 이미지 카드 묶음부터 완성"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "49c633f9afab7b47d758e07025ba20dd9e307c08bc3da78d33cf34bde57f6842"
+    },
+    {
+      "path": "site/practice/05-reel.html",
+      "track": "practice",
+      "char_count": 1889,
+      "baseline_char_count": 1889,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 3,
+        "internal": 5,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "선택적으로 본인 녹음 mp3/wav 시간 배분 예시 25분 · 실측 아님 선행 실습 실습 4 2026"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "/wav 시간 배분 예시 25분 · 실측 아님 선행 실습 실습 4 2026년 10월 조사 기준 ·"
+          },
+          {
+            "rule": "적격·적격성",
+            "text": "적격",
+            "line": 4,
+            "context": "움직임·음성을 더한 사실만으로 추천·수익화 적격을 보장하지 않습니다. 실제 게시의 권리·표시는 실습 6과 이론"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-09",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-09 PRAC-10 PRAC-25 API-07 · E2E 한눈에 보기"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-10",
+            "line": 4,
+            "context": "026-10-26 · 근거: PRAC-09 PRAC-10 PRAC-25 API-07 · E2E 한눈에 보기 진행 기록은"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-25",
+            "line": 4,
+            "context": "6 · 근거: PRAC-09 PRAC-10 PRAC-25 API-07 · E2E 한눈에 보기 진행 기록은 자바스크립트를"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "API-07",
+            "line": 4,
+            "context": "PRAC-09 PRAC-10 PRAC-25 API-07 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "API-07",
+            "line": 13,
+            "context": "9:16 권장이라는 별도 문서 범위입니다(API-07). 앱 촬영 상한으로 옮겨 쓰지 않습니다. 릴스와 혼합 캐러셀"
+          }
+        ],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "35eeed9b360d461a53df6e393a8bf47398e5660615413dc5bce78234aa139d0a"
+    },
+    {
+      "path": "site/practice/06-review.html",
+      "track": "practice",
+      "char_count": 2496,
+      "baseline_char_count": 2496,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 2,
+        "internal": 5,
+        "caveats_outside": 5,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "IEW.md, 이론 12장 체크리스트 시간 배분 예시 20분 · 실측 아님 선행 실습 실습 5 2026"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "크리스트 시간 배분 예시 20분 · 실측 아님 선행 실습 실습 5 2026년 10월 조사 기준 ·"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "7r·7v",
+            "text": "7v",
+            "line": 11,
+            "context": "단계에 남깁니다. 아래 앱 메뉴의 위치는 7v 확인 전 후보입니다. 앱 버전에 따라 이름이 다를 수 있음"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-11",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-11 PRAC-12 PRAC-22 PRAC-25 · E2E 한눈에 보"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-12",
+            "line": 4,
+            "context": "026-10-26 · 근거: PRAC-11 PRAC-12 PRAC-22 PRAC-25 · E2E 한눈에 보기 진행 기록"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-22",
+            "line": 4,
+            "context": "6 · 근거: PRAC-11 PRAC-12 PRAC-22 PRAC-25 · E2E 한눈에 보기 진행 기록은 자바스크립트"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-25",
+            "line": 4,
+            "context": "PRAC-11 PRAC-12 PRAC-22 PRAC-25 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "vanced settings 안에 있는지도 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "는지도 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S183에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "el. 계정 자격·파트너 선택·승인 순서는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "순서는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S184에서 기능"
+          },
+          {
+            "rule": "별개",
+            "text": "별개",
+            "line": 11,
+            "context": "라벨을 각각 확인합니다. 광고 집행 허락은 별개입니다. 필요한 앱 라벨을 확인하지 못한 콘텐츠는 게시 준비 단"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": false,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "0a6f73b4c5a08a4e41338187b3a2756755d0cb1a232feb378a7907dc9ddbe041"
+    },
+    {
+      "path": "site/practice/07-publish.html",
+      "track": "practice",
+      "char_count": 5017,
+      "baseline_char_count": 5017,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 5,
+        "internal": 6,
+        "caveats_outside": 16,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "성공 화면 면책",
+            "text": "성공 화면을 본 것으로 서술하지 않",
+            "line": 4,
+            "context": "후보입니다. 실제 버튼과 다를 수 있으며 성공 화면을 본 것으로 서술하지 않습니다. 파일 전송은 공식 본문 근거지만 실기기 전송은 미검증입니"
+          },
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "수한 실제 자료, 휴대폰, 전송 수단 시간 배분 예시 30분 · 실측 아님 선행 실습 실습 6 2026"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "송 수단 시간 배분 예시 30분 · 실측 아님 선행 실습 실습 6 2026년 10월 조사 기준 ·"
+          },
+          {
+            "rule": "탐색 후보",
+            "text": "탐색 후보",
+            "line": 4,
+            "context": "메뉴는 7r에서 현행 한국 화면 미확인인 탐색 후보입니다. 실제 버튼과 다를 수 있으며 성공 화면을 본 것으로 서술"
+          },
+          {
+            "rule": "탐색 후보",
+            "text": "탐색 후보",
+            "line": 11,
+            "context": "는 실습 6 검수를 먼저 마칩니다. 아래 탐색 후보로 게시물 만들기 화면을 찾아 여러 항목 선택에 해당하는 도구로"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "7r·7v",
+            "text": "7r",
+            "line": 4,
+            "context": "없습니다. 아래 Instagram 메뉴는 7r에서 현행 한국 화면 미확인인 탐색 후보입니다. 실제 버튼과 다를"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-17",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-17 PRAC-18 PRAC-19 PRAC-21 PRAC-22 · E"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-18",
+            "line": 4,
+            "context": "026-10-26 · 근거: PRAC-17 PRAC-18 PRAC-19 PRAC-21 PRAC-22 · E2E 한눈에 보"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-19",
+            "line": 4,
+            "context": "6 · 근거: PRAC-17 PRAC-18 PRAC-19 PRAC-21 PRAC-22 · E2E 한눈에 보기 진행 기록"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-21",
+            "line": 4,
+            "context": "PRAC-17 PRAC-18 PRAC-19 PRAC-21 PRAC-22 · E2E 한눈에 보기 진행 기록은 자바스크립트"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-22",
+            "line": 4,
+            "context": "PRAC-18 PRAC-19 PRAC-21 PRAC-22 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 4,
+            "context": "agram 메뉴는 7r에서 현행 한국 화면 미확인인 탐색 후보입니다. 실제 버튼과 다를 수 있으며 성공 화면을 본"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "메신저 전송은 압축 여부가 이번 조사에서 미확인입니다. 카카오톡 등으로 보냈다는 이유만으로 원본이라고 가정하지"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "입 위치·재정렬·권한 화면·Next 횟수는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "횟수는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S068에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "다. 원래 녹음이 필요한 영상에 라이선스 미확인 음원을 덧붙여 해결하지 않습니다. 편집 뒤 내용이 바뀌었다면 파"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "실제 버튼·순서·표지/그리드 편집 배치는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "배치는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S066에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 21,
+            "context": "능을 확인합니다. 브랜드 승인·계정 자격은 미확인입니다. 필요한 라벨을 설정할 수 없으면 공유를 보류합니다. 캡"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 21,
+            "context": "settings 안인지, 토글 적용 확인은 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 21,
+            "context": "확인은 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S183에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 21,
+            "context": "각 확인해야 합니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S184에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 26,
+            "context": "습니다. 게시 후 수정 메뉴의 라벨 지원도 미확인이므로 사전 확인을 우선합니다. 앱 버전에 따라 이름이 다를"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 26,
+            "context": ". 버튼 위치·완료 문구·링크 복사 순서는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 26,
+            "context": "순서는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S068에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 26,
+            "context": "확인 필요입니다. 보관/삭제도 실습 1에서 미확인 후보로 안내합니다. 한국 앱 메뉴·배치 미확인. 확인일 202"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 26,
+            "context": "후보로 안내합니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S183에서 기능"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": false,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "bedd1fc8bb2e8560060e3f8008871a3b6dd23083c70cbca85098fd652dd8fd16"
+    },
+    {
+      "path": "site/practice/08-api.html",
+      "track": "practice",
+      "char_count": 5076,
+      "baseline_char_count": 5076,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 2,
+        "internal": 17,
+        "caveats_outside": 3,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "발자 앱·역할, 실제 자료 승인 폴더 시간 배분 예시 60분 이상 · 선택 심화 · 실측 아님 선행 실습 실"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "배분 예시 60분 이상 · 선택 심화 · 실측 아님 선행 실습 실습 7 2026년 10월 조사 기준 ·"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-01",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-01 PRAC-02 PRAC-03 PRAC-04 PRAC-05 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-02",
+            "line": 4,
+            "context": "026-10-26 · 근거: PRAC-01 PRAC-02 PRAC-03 PRAC-04 PRAC-05 PRAC-06 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-03",
+            "line": 4,
+            "context": "6 · 근거: PRAC-01 PRAC-02 PRAC-03 PRAC-04 PRAC-05 PRAC-06 PRAC-07 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-04",
+            "line": 4,
+            "context": "PRAC-01 PRAC-02 PRAC-03 PRAC-04 PRAC-05 PRAC-06 PRAC-07 PRAC-08 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-05",
+            "line": 4,
+            "context": "PRAC-02 PRAC-03 PRAC-04 PRAC-05 PRAC-06 PRAC-07 PRAC-08 PRAC-09 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-06",
+            "line": 4,
+            "context": "PRAC-03 PRAC-04 PRAC-05 PRAC-06 PRAC-07 PRAC-08 PRAC-09 PRAC-11 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-07",
+            "line": 4,
+            "context": "PRAC-04 PRAC-05 PRAC-06 PRAC-07 PRAC-08 PRAC-09 PRAC-11 PRAC-12 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-08",
+            "line": 4,
+            "context": "PRAC-05 PRAC-06 PRAC-07 PRAC-08 PRAC-09 PRAC-11 PRAC-12 PRAC-13 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-09",
+            "line": 4,
+            "context": "PRAC-06 PRAC-07 PRAC-08 PRAC-09 PRAC-11 PRAC-12 PRAC-13 PRAC-14 PRA"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-11",
+            "line": 4,
+            "context": "PRAC-07 PRAC-08 PRAC-09 PRAC-11 PRAC-12 PRAC-13 PRAC-14 PRAC-15 API"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-12",
+            "line": 4,
+            "context": "PRAC-08 PRAC-09 PRAC-11 PRAC-12 PRAC-13 PRAC-14 PRAC-15 API-01 · E2"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-13",
+            "line": 4,
+            "context": "PRAC-09 PRAC-11 PRAC-12 PRAC-13 PRAC-14 PRAC-15 API-01 · E2E 한눈에 보기"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-14",
+            "line": 4,
+            "context": "PRAC-11 PRAC-12 PRAC-13 PRAC-14 PRAC-15 API-01 · E2E 한눈에 보기 진행 기록은"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-15",
+            "line": 4,
+            "context": "PRAC-12 PRAC-13 PRAC-14 PRAC-15 API-01 · E2E 한눈에 보기 진행 기록은 자바스크립트를"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "API-01",
+            "line": 4,
+            "context": "PRAC-13 PRAC-14 PRAC-15 API-01 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-01",
+            "line": 11,
+            "context": "전은 v26.0(2026-07-29 출시, PRAC-01)입니다. 환경변수가 .env보다 우선합니다. 대상 ID·사용자"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-14",
+            "line": 18,
+            "context": "지만 사업 운영용 무료 호스팅을 제한합니다(PRAC-14·15). 수익화 미디어의 상시 CDN으로 포괄 권장하지 않습니다"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "를 확인합니다. 등록 마법사의 현행 화면은 미확인입니다. 문서 기준은 Create App → Other → Ne"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "로 옮기지 않습니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S179에서 기능"
+          },
+          {
+            "rule": "별개",
+            "text": "별개",
+            "line": 6,
+            "context": "모드의 역할 사용자 테스트와 일반 공개는 별개입니다. 공통 App Modes는 비역할 사용자 비노출을 설명하고"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": false,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "ae790c5b75bb3890722ad7f3e6304fca59bd2d97dc3f61aca5fcb461ad937fd3"
+    },
+    {
+      "path": "site/practice/09-schedule.html",
+      "track": "practice",
+      "char_count": 2628,
+      "baseline_char_count": 2628,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 3,
+        "internal": 3,
+        "caveats_outside": 5,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "물, 예약 기능을 제공하는 본인 계정 시간 배분 예시 20분 · 선택 심화 · 실측 아님 선행 실습 실습 8"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "시간 배분 예시 20분 · 선택 심화 · 실측 아님 선행 실습 실습 8 2026년 10월 조사 기준 ·"
+          },
+          {
+            "rule": "탐색 후보",
+            "text": "탐색 후보",
+            "line": 6,
+            "context": "→ 예약 → Planner/Content는 탐색 후보입니다. S039 모바일 문서를 데스크톱 순서로 적용하지 않습니다"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-23",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-23 PRAC-07 PRAC-13 · E2E 한눈에 보기 진행 기록"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-07",
+            "line": 4,
+            "context": "026-10-26 · 근거: PRAC-23 PRAC-07 PRAC-13 · E2E 한눈에 보기 진행 기록은 자바스크립트"
+          },
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-13",
+            "line": 4,
+            "context": "6 · 근거: PRAC-23 PRAC-07 PRAC-13 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "한 버튼·페이지 연결 조건은 이번 조사에서 미확인입니다. 앱 버전에 따라 이름이 다를 수 있음 — 보통 이런"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "도 확인 필요입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S037에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "적용하지 않습니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S040에서 기능"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "수정·취소. 현행 번역·지원·버튼 순서는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 11,
+            "context": "순서는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S037에서 기능"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": false,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "32e32ae56fcb353e5673f6a6f4700b5598aa29a93a4428828b9a24fb3d1744bb"
+    },
+    {
+      "path": "site/practice/10-insights.html",
+      "track": "practice",
+      "char_count": 2073,
+      "baseline_char_count": 2073,
+      "ratio": 1.0,
+      "counts": {
+        "forbidden": 2,
+        "internal": 1,
+        "caveats_outside": 2,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [
+          {
+            "rule": "시간 배분 예시",
+            "text": "시간 배분 예시",
+            "line": 4,
+            "context": "게시물 주소, 본인 계정, 기록 파일 시간 배분 예시 15분씩 · 교재 관찰 시점 · 실측 아님 선행 실습"
+          },
+          {
+            "rule": "실측 아님",
+            "text": "실측 아님",
+            "line": 4,
+            "context": "분 예시 15분씩 · 교재 관찰 시점 · 실측 아님 선행 실습 실습 9 2026년 10월 조사 기준 ·"
+          }
+        ],
+        "internal": [
+          {
+            "rule": "사실 ID",
+            "text": "PRAC-24",
+            "line": 4,
+            "context": "· 확인일 2026-10-26 · 근거: PRAC-24 · E2E 한눈에 보기 진행 기록은 자바스크립트를 켜면 이 브"
+          }
+        ],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "Insights. 날짜 필터·메뉴 배치는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 6,
+            "context": "배치는 미확인입니다. 한국 앱 메뉴·배치 미확인. 확인일 2026-10-26. 공식 도움말 · S195에서 기능"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": false,
+        "internal_zero": false,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": false,
+      "sha256": "6bd54edab6e5e6424321ff9048b1238b0c8818218ca264648c2be22df76413c4"
+    }
+  ]
+}

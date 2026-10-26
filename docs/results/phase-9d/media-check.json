@@ -1,0 +1,37 @@
+{
+  "cards": 5,
+  "card_size": [
+    1080,
+    1350
+  ],
+  "video_size": [
+    1080,
+    1920
+  ],
+  "duration_seconds": 20,
+  "audio_test": "synthetic 440Hz WAV input; audio stream and full decoding checked; human voice quality not tested",
+  "ffmpeg_decode_exit": 0,
+  "measured_card_sizes": [
+    [
+      1080,
+      1350
+    ],
+    [
+      1080,
+      1350
+    ],
+    [
+      1080,
+      1350
+    ],
+    [
+      1080,
+      1350
+    ],
+    [
+      1080,
+      1350
+    ]
+  ],
+  "measured_video_duration_seconds": 20.0
+}

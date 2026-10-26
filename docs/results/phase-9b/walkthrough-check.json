@@ -1,0 +1,79 @@
+{
+  "environment": "Linux / Python 3.11.15 / 기존 설치 환경 / 깨끗한 키트 복사본 / 네트워크 차단",
+  "checks": [
+    {
+      "command": "python run_pipeline.py --offline --output output/first-post",
+      "exit": 0,
+      "output": "검수 대기: <KIT>/output/first-post/REVIEW.md\n",
+      "expected": "검수 대기:"
+    },
+    {
+      "command": "python write_copy.py output/first-post/news.json --mode prompt --template cards --output output/first-post/copy.json",
+      "exit": 0,
+      "output": "웹 채팅에 붙여 넣을 프롬프트: output/first-post/prompt.md. 답변 JSON을 output/first-post/copy.json에 저장하고 --validate로 확인하세요.\n",
+      "expected": "웹 채팅에 붙여 넣을 프롬프트:"
+    },
+    {
+      "command": "python write_copy.py output/first-post/news.json --validate --output output/first-post/copy.json",
+      "exit": 0,
+      "output": "구조 검증 OK: output/first-post/copy.json (사실 확인은 사람이 해야 합니다)\n",
+      "expected": "구조 검증 OK:"
+    },
+    {
+      "command": "python run_pipeline.py render output/first-post",
+      "exit": 0,
+      "output": "검수 대기: <KIT>/output/first-post/REVIEW.md\n",
+      "expected": "검수 대기:"
+    },
+    {
+      "command": "python run_pipeline.py approve output/first-post",
+      "exit": 0,
+      "output": "{\n  \"mode\": \"dry-run\",\n  \"login\": \"Instagram Login\",\n  \"authorization\": \"Bearer <REDACTED>\",\n  \"requests\": [\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-01.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_1\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_1}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-02.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_2\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_2}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-03.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_3\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_3}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-04.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_4\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_4}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-05.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_5\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_5}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"media_type\": \"CAROUSEL\",\n        \"children\": \"{CHILD_1},{CHILD_2},{CHILD_3},{CHILD_4},{CHILD_5}\",\n        \"caption\": \"합성 데이터 · 실제 뉴스 아님\\n가상 별빛도서관, 조용한 독서 모임을 열다\\nhttps://example.invalid/library\\n가상 초록작업실, 종이 재사용 실험을 시작하다\\nhttps://example.invalid/paper\\n가상 달빛마을, 산책 지도를 함께 그리다\\nhttps://example.invalid/walk\",\n        \"is_ai_generated\": \"false\"\n      },\n      \"save_as\": \"CAROUSEL\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CAROUSEL}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"게시\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish\",\n      \"params\": {\n        \"creation_id\": \"{CAROUSEL}\"\n      },\n      \"save_as\": \"CAROUSEL_MEDIA\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"media_type\": \"REELS\",\n        \"video_url\": \"https://example.invalid/output/reel.mp4\",\n        \"caption\": \"합성 데이터 · 실제 뉴스 아님\\n가상 별빛도서관, 조용한 독서 모임을 열다\\nhttps://example.invalid/library\\n가상 초록작업실, 종이 재사용 실험을 시작하다\\nhttps://example.invalid/paper\\n가상 달빛마을, 산책 지도를 함께 그리다\\nhttps://example.invalid/walk\",\n        \"is_ai_generated\": \"false\"\n      },\n      \"save_as\": \"REEL\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{REEL}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"게시\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish\",\n      \"params\": {\n        \"creation_id\": \"{REEL}\"\n      },\n      \"save_as\": \"REEL_MEDIA\"\n    }\n  ]\n}\n",
+      "expected": "\"mode\": \"dry-run\""
+    },
+    {
+      "command": "python publish.py output/first-post",
+      "exit": 1,
+      "output": "오류: 검수 대상이 바뀌었거나 없습니다: copy.json. render 후 다시 검수·승인하세요.\n",
+      "expected": "검수 대상이 바뀌었거나 없습니다"
+    },
+    {
+      "command": "python run_pipeline.py render output/first-post",
+      "exit": 0,
+      "output": "검수 대기: <KIT>/output/first-post/REVIEW.md\n",
+      "expected": "검수 대기:"
+    },
+    {
+      "command": "python run_pipeline.py render output/first-post",
+      "exit": 1,
+      "output": "오류: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n",
+      "expected": "오류:"
+    },
+    {
+      "command": "python run_pipeline.py render output/first-post",
+      "exit": 0,
+      "output": "검수 대기: <KIT>/output/first-post/REVIEW.md\n",
+      "expected": "검수 대기:"
+    },
+    {
+      "check": "예제 출력과 승인 무효화",
+      "cards_png": 5,
+      "cards_jpeg": 5,
+      "card_size": [
+        1080,
+        1350
+      ],
+      "video_size": [
+        1080,
+        1920
+      ],
+      "fps": 24,
+      "duration": 20,
+      "audio": "silent AAC (max_volume -91dB or less)",
+      "changed_approval_blocked": true,
+      "render_clears_approval": true,
+      "invalid_json_resume": true,
+      "prompt_preserves_copy": true
+    }
+  ]
+}

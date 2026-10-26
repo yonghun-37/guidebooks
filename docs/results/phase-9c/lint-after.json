@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": "docs/results/phase-9/baseline.json",
+  "summary": {
+    "files": 5,
+    "passed": 5,
+    "failed": 0,
+    "char_count": 13438,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 0,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site/chapters/10-publishing.html",
+      "track": "theory",
+      "char_count": 2547,
+      "baseline_char_count": 4395,
+      "ratio": 0.579522,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "eeefad6b8cdca6040fd2389ed3e32ba1d07df1844ad5e84db982fe989ea35630"
+    },
+    {
+      "path": "site/chapters/11-analytics.html",
+      "track": "theory",
+      "char_count": 2401,
+      "baseline_char_count": 4463,
+      "ratio": 0.537979,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "e39f746b7321470f13e6b8bf69817eee440aa50ad2d00c6286dd60493f016af9"
+    },
+    {
+      "path": "site/chapters/12-safety.html",
+      "track": "theory",
+      "char_count": 3180,
+      "baseline_char_count": 6908,
+      "ratio": 0.460336,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "b4264adf054c27912a66a2d0eb7d489ad5ab8e27ebe526314cad8d6acd705a5f"
+    },
+    {
+      "path": "site/chapters/13-roadmap.html",
+      "track": "theory",
+      "char_count": 2921,
+      "baseline_char_count": 5712,
+      "ratio": 0.51138,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "80f9e4eb8b86d9c38dc9787efa5dd6e1ffa1f2101fdfc4e2e9a431e03f0f00f2"
+    },
+    {
+      "path": "site/chapters/14-plan.html",
+      "track": "theory",
+      "char_count": 2389,
+      "baseline_char_count": 4822,
+      "ratio": 0.495438,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "a2b74b11c076407d20ad8a76c4cefc3f3844dbb3b331cc520994d1b0b0d4c6a3"
+    }
+  ]
+}

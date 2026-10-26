@@ -1,0 +1,15 @@
+{
+  "scope": "이론 5~9장 내부 링크와 모든 페이지에서 담당 장으로 향하는 링크",
+  "outgoing_local": 128,
+  "incoming": 77,
+  "errors": [],
+  "unrelated_pending": [],
+  "old_js_preserved": [
+    "site/assets/sim/ch05.js",
+    "site/assets/sim/ch6-writing.js",
+    "site/assets/sim/ch7-cards.js",
+    "site/assets/sim/ch8-reels.js",
+    "site/assets/sim/ch9-pipeline.js"
+  ],
+  "inline_js_syntax": "passed"
+}

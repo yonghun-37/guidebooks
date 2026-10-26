@@ -332,3 +332,53 @@ input[type='checkbox'] { width: 19px; height: 19px; flex-shrink: 0; margin-top: 
   .os-tabs [data-os-panel] { padding: 14px; }
 }
 @media print { .os-tabs [data-os-panel][hidden] { display: block !important; } }
+
+/* 개편 공통 부품: 샘플 A의 축·B의 직답·C의 단계표. 기존 클래스는 유지한다. */
+.answer-box { padding: 24px; margin: 20px 0; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; background: var(--soft); }
+.direct-answer { font-size: 1.12rem; line-height: 1.7; }
+.direct-answer strong { font-weight: 800; }
+.answer-box > :last-child, .axis-card > :last-child, .check-points > :last-child { margin-bottom: 0; }
+.axis-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 24px 0; }
+.axis-card { display: block; min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink); text-decoration: none; }
+.axis-card strong { display: block; color: var(--accent); margin-bottom: 10px; }
+.axis-card p { font-size: .92rem; }
+.axis-card:hover { background: var(--soft); border-color: var(--accent); }
+.axis-block { min-width: 0; padding: 28px 0; border-bottom: 1px dashed var(--line); }
+.axis-block:last-child { border-bottom: 0; padding-bottom: 0; }
+.axis-rows { margin: 20px 0 0; }
+.axis-rows > div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 14px; padding: 12px 0; }
+.axis-rows dt { font-weight: 750; }
+.axis-rows dd { min-width: 0; margin: 0; }
+.axis-rows dd > :last-child { margin-bottom: 0; }
+.axis-rows .axis-action { padding: 16px; border-radius: 10px; background: var(--soft); }
+.axis-action dt { color: var(--accent); }
+.axis-flow { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 16px; margin: 0; border-radius: 10px; background: var(--soft); font-size: .92rem; }
+.axis-flow span { padding: 4px 8px; border-radius: 6px; background: var(--surface); }
+.axis-flow b { color: var(--muted); font-weight: 500; }
+.key-number { display: block; margin: 12px 0; color: var(--accent); font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 800; line-height: 1.2; letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+.check-points { margin: 20px 0 0; padding: 16px 18px; border-left: 3px solid var(--accent); background: var(--soft); font-size: .85rem; }
+.check-points > strong, .check-points > h4 { display: block; margin: 0 0 6px; font-size: .9rem; }
+.stage-table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: .88rem; margin: 20px 0; }
+.stage-table caption { text-align: left; font-size: .82rem; color: var(--muted); padding-bottom: 12px; }
+.stage-table th, .stage-table td { border-bottom: 1px solid var(--line); text-align: left; padding: 12px 10px; vertical-align: top; overflow-wrap: anywhere; }
+.stage-table thead th { background: var(--soft); }
+.chapter-faq details { border-bottom: 1px dashed var(--line); padding: 20px 0; }
+.chapter-faq summary { cursor: pointer; font-weight: 700; }
+.chapter-faq .faq-answer { padding: 18px 0 0 20px; }
+.chapter-faq .faq-answer > :last-child { margin-bottom: 0; }
+.chapter-faq .direct-answer { font-size: 1rem; }
+.key-takeaways { margin: 20px 0 0; padding: 22px 22px 22px 44px; border-radius: 12px; background: var(--soft); }
+.key-takeaways li { padding: 5px 0; }
+@media (max-width: 640px) {
+  .axis-grid { grid-template-columns: 1fr; }
+  .axis-card, .answer-box { padding: 20px; }
+  .axis-rows > div { grid-template-columns: 1fr; gap: 4px; }
+  .stage-table th, .stage-table td { padding: 10px 6px; }
+  .chapter-faq .faq-answer { padding-left: 8px; }
+}
+@media print {
+  .answer-box, .axis-card, .check-points { break-inside: avoid; }
+  .chapter-faq summary { break-after: avoid; }
+  /* 닫힌 FAQ도 인쇄한다. JS를 끈 환경에서도 내용을 보여 준다. */
+  .chapter-faq details::details-content { display: block; content-visibility: visible; }
+}

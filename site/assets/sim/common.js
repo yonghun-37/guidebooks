@@ -1,6 +1,46 @@
 /* 공통 외곽: 네이티브 입력을 쓰고, 결과를 항상 텍스트로 출력한다. */
 (() => {
   'use strict';
+  // 카드는 네이티브 앵커, FAQ는 details/summary라 JS 없이도 쓸 수 있다.
+  // 절 이동 뒤 키보드 초점도 옮기고, FAQ 내부로 직접 온 링크는 펼친다.
+  const fragmentTarget = hash => {
+    try { return document.getElementById(decodeURIComponent(hash.slice(1))); }
+    catch { return null; }
+  };
+  const openFaq = target => {
+    for (let node = target; node; node = node.parentElement) {
+      if (node.matches('.chapter-faq details')) node.open = true;
+    }
+  };
+  const revealFragment = () => {
+    const target = fragmentTarget(location.hash);
+    if (target) openFaq(target);
+  };
+  document.querySelectorAll('[data-axis-nav] a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', event => {
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const target = fragmentTarget(anchor.hash);
+      if (!target) return;
+      openFaq(target);
+      if (!target.hasAttribute('tabindex')) {
+        target.tabIndex = -1;
+        target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
+      }
+      target.focus({ preventScroll: true });
+      // URL·뒤로 가기·스크롤은 앵커의 기본 동작에 맡긴다.
+    });
+  });
+  window.addEventListener('hashchange', revealFragment);
+  revealFragment();
+  let printClosedFaqs = [];
+  window.addEventListener('beforeprint', () => {
+    printClosedFaqs = [...document.querySelectorAll('.chapter-faq details:not([open])')];
+    printClosedFaqs.forEach(details => { details.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    printClosedFaqs.forEach(details => { details.open = false; });
+    printClosedFaqs = [];
+  });
   const savedIds = new Set(['ledger-sim', 'niche-sim', 'planner-sim']);
   const memory = new Map();
   const key = id => `reelsbook:sim:${id}`;

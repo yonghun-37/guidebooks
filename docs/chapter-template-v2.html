@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<!--
+확정 기준: docs/STYLE-GUIDE.md 2·3·5절. 이전 chapter-template.html보다 이 틀을 우선한다.
+복사: site/chapters/<slug>.html → 자원 ../site/assets/를 ../assets/로 바꾼다.
+링크 ../site/practice/도 ../practice/로 바꾸고 body data-chapter를 book.js의 장 slug로 맞춘다.
+템플릿의 안내 문구·가상 예시·질문·해설은 해당 장의 learner-questions.md 질문 5개로 교체한다.
+
+1. 질문 하나 + 굵은 직답 1~2문장 → 한눈에 보기 → 축 3~5개 → 해 보기 1개(최대 2개)
+   → 실제 사례 1~3개 → 단계표(필요할 때만) → 작업실 노트 → FAQ 5개 → 정리 3줄 + 퀴즈 3~4개.
+2. 기존 9개 data-block과 절 ID를 유지한다. story 블록은 FAQ로 쓰고, 인물 대화는 question에 둔다.
+   단계표는 case 블록 끝에 둔다. 본문 개편 시 기존 앵커는 보존하거나 같은 위치에 별도 앵커를 남긴다.
+3. 축마다 axis-rows의 정의/흐름/얼마/조건/언제/지금 할 일 순서를 유지한다.
+   지금 할 일 다음 축 끝의 check-points는 선택이다. 불확실성·확인 방법을 이 상자 2~3줄에 모은다.
+4. 첫 문장은 직답, 한 문장 한 정보, 이론은 ~합니다 기본. 금지어·내부 용어는 본문에 쓰지 않는다.
+   정책 기준월은 장 머리에 한 번만. 숫자는 출처를 달거나 가상 표시와 계산식을 공개한다.
+5. 실제 정책·숫자는 FACT-SHEET/SOURCES 확인 후 인용한다. 사실 ID는 각주 마크업 data-fact-id에만
+   넣고 본문·각주 표시 문구에 쓰지 않는다. 아래 출처 자리에는 번호·URL을 지어 넣지 않았다.
+   예: 본문 sup.footnote-ref > a[href="#source-s번호"]의 표시 [S번호], source-notes에 원문 링크.
+6. axis-grid의 네이티브 a와 FAQ의 details/summary는 JS 없이 작동한다. 링크는 모두 상대 경로다.
+   common.js의 실제 경로는 site/assets/sim/common.js. 기존 ReelsSim API도 그대로 쓴다.
+7. 시뮬레이터는 질문에 답하고 결과는 숫자 하나 + 해석 한 문장. 가정값·계산식을 가까이 둔다.
+   아래 도구는 선택한 준비 항목을 세는 작동 예시다. 실제 장 도구로 바꾸고 극단값도 점검한다.
+8. 작업실 노트는 생각·기획만. 계정/도구 조작은 실습 링크로 보낸다. 체크 키는 장별로 고유하게.
+9. 출판 전 style_lint.py --baseline docs/results/phase-9/baseline.json으로 점검한다.
+   금지어 0, 상자 밖 단서 2회 이하, 이론 분량은 기존 70% 이하. 직답·근거·행동은 사람이 검수한다.
+   1280/375/360px, 다크 모드, 인쇄, 키보드, 링크·앵커·퀴즈·콘솔도 확인한다.
+-->
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이론 장 작성 템플릿 | ReelsBook</title><link rel="icon" href="data:,">
+<link rel="stylesheet" href="../site/assets/book.css">
+<script src="../site/assets/book.js" defer></script><script src="../site/assets/sim/common.js" defer></script>
+</head>
+<body data-chapter="REPLACE-SLUG">
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+<header data-site-header></header>
+<div class="book-layout"><aside data-book-sidebar aria-label="책과 장 내비게이션"></aside>
+<main id="main" class="chapter">
+<header class="chapter-hero">
+<p class="kicker" data-chapter-kicker>이론 장 작성 템플릿</p>
+<h1 data-chapter-title>내 게시물의 계획을 정합니다</h1>
+<p class="lead">독자·내용·다음 행동을 한 줄씩 적습니다.</p>
+<dl class="chapter-meta" data-chapter-meta><div class="deliverable"><dt>이 장을 마치면</dt><dd>게시물 계획 메모</dd></div></dl>
+<p class="small">2026년 10월 조사 기준 · 하린과 정 선배는 가상 인물입니다.</p>
+<details data-mobile-outline><summary>이 장의 흐름</summary></details>
+</header>
+<section id="question" class="chapter-block block-question" data-block="question">
+<p class="block-label"><span class="block-icon" aria-hidden="true">?</span>01 · 먼저 답부터</p>
+<h2>게시물을 만들기 전에 무엇부터 정하나요?</h2>
+<div class="answer-box"><p class="direct-answer"><strong>도울 독자와 전할 내용, 읽은 뒤 할 일을 먼저 정합니다.</strong></p><p>각각 한 줄씩 적으면 게시물 계획 메모가 됩니다.</p></div>
+<div class="dialogue"><p><span class="speaker">하린</span>무슨 말을 쓸지부터 고민했어요.</p><p><span class="speaker">정 선배</span>먼저 누구에게 필요한 말인지 적어 보자.</p></div>
+</section>
+<section id="figure" class="chapter-block block-figure" data-block="figure">
+<p class="block-label"><span class="block-icon" aria-hidden="true">↗</span>02 · 한눈에 보기</p>
+<h2>세 가지를 정하면 계획이 됩니다</h2>
+<nav class="axis-grid" data-axis-nav aria-label="설명으로 바로 이동">
+<a class="axis-card" href="#axis-reader"><strong>독자</strong><p>어떤 사람의 고민을 풀지 정합니다.</p></a>
+<a class="axis-card" href="#axis-message"><strong>내용</strong><p>독자에게 전할 답을 고릅니다.</p></a>
+<a class="axis-card" href="#axis-action"><strong>다음 행동</strong><p>읽은 사람이 할 일을 정합니다.</p></a>
+</nav>
+</section>
+<section id="principle" class="chapter-block block-principle" data-block="principle">
+<p class="block-label"><span class="block-icon" aria-hidden="true">≡</span>03 · 축별 설명</p>
+<h2>독자에서 행동까지 연결합니다</h2>
+<article id="axis-reader" class="axis-block" aria-labelledby="reader-title">
+<h3 id="reader-title">독자 · 도울 사람을 고릅니다</h3>
+<dl class="axis-rows">
+<div><dt>정의</dt><dd>독자는 이 게시물로 고민을 해결할 사람입니다.</dd></div>
+<div><dt>흐름</dt><dd><div class="axis-flow" aria-label="독자를 정하는 순서"><span>사람 고르기</span><b aria-hidden="true">→</b><span>고민 적기</span><b aria-hidden="true">→</b><span>질문 만들기</span></div></dd></div>
+<div><dt>얼마</dt><dd>가상 연습: 독자 한 사람 × 고민 하나 = 질문 하나입니다.</dd></div>
+<div><dt>조건</dt><dd>내가 답을 찾아 설명할 수 있는 고민을 고릅니다.</dd></div>
+<div><dt>언제</dt><dd>게시물 주제를 정하기 전에 씁니다.</dd></div>
+<div class="axis-action"><dt>지금 할 일</dt><dd>도울 사람과 그 사람의 고민을 한 줄씩 적으세요.</dd></div>
+</dl>
+<!-- 선택 상자. 실제 장에서는 확인할 정책과 확인 방법, 출처 각주를 2~3줄로 쓴다. -->
+<aside class="check-points" data-check-points aria-labelledby="reader-check"><strong id="reader-check">확인할 점</strong><p>독자의 고민이 떠오르지 않으면 주변 사람이 자주 묻는 질문을 메모하세요. 본인에게 직접 물어보고 질문을 다듬으세요.</p></aside>
+</article>
+<article id="axis-message" class="axis-block" aria-labelledby="message-title">
+<h3 id="message-title">내용 · 질문에 답합니다</h3>
+<dl class="axis-rows">
+<div><dt>정의</dt><dd>내용은 독자의 질문에 전할 답입니다.</dd></div>
+<div><dt>흐름</dt><dd><div class="axis-flow" aria-label="내용을 고르는 순서"><span>질문</span><b aria-hidden="true">→</b><span>자료 읽기</span><b aria-hidden="true">→</b><span>답 쓰기</span></div></dd></div>
+<div><dt>얼마</dt><dd>가상 연습: 질문 하나에 답 하나를 붙입니다.</dd></div>
+<div><dt>조건</dt><dd>사실을 설명할 때는 확인한 자료를 함께 적습니다.</dd></div>
+<div><dt>언제</dt><dd>도울 독자와 고민을 정한 다음에 씁니다.</dd></div>
+<div class="axis-action"><dt>지금 할 일</dt><dd>메모한 질문 바로 아래에 답을 쓰세요.</dd></div>
+</dl>
+</article>
+<article id="axis-action" class="axis-block" aria-labelledby="action-title">
+<h3 id="action-title">다음 행동 · 읽은 뒤 할 일을 적습니다</h3>
+<dl class="axis-rows">
+<div><dt>정의</dt><dd>다음 행동은 독자가 답을 읽고 할 일입니다.</dd></div>
+<div><dt>흐름</dt><dd><div class="axis-flow" aria-label="행동을 정하는 순서"><span>답 읽기</span><b aria-hidden="true">→</b><span>할 일 고르기</span><b aria-hidden="true">→</b><span>메모하기</span></div></dd></div>
+<div><dt>얼마</dt><dd>가상 연습: 답 하나에 할 일 하나를 붙입니다.</dd></div>
+<div><dt>조건</dt><dd>독자가 바로 시작할 수 있는 행동으로 씁니다.</dd></div>
+<div><dt>언제</dt><dd>답을 쓴 다음, 게시물 제작을 시작하기 전에 씁니다.</dd></div>
+<div class="axis-action"><dt>지금 할 일</dt><dd>“적으세요”처럼 할 일을 나타내는 말로 문장을 끝내세요.</dd></div>
+</dl>
+</article>
+</section>
+<section id="simulator" class="chapter-block block-simulator" data-block="simulator">
+<p class="block-label"><span class="block-icon" aria-hidden="true">↔</span>04 · 해 보기</p>
+<h2>내 계획에 무엇이 빠졌나요?</h2>
+<div id="plan-check" class="simulator" role="region" aria-labelledby="plan-check-title">
+<div class="sim-heading"><h3 id="plan-check-title">적은 항목을 골라 보세요</h3><span class="model-badge">교육용 가정 모형</span></div>
+<div class="sim-body"><label><input id="plan-reader" type="checkbox"> 독자와 고민을 적었습니다.</label><br><label><input id="plan-message" type="checkbox"> 질문에 대한 답을 적었습니다.</label><br><label><input id="plan-action" type="checkbox"> 다음 행동을 적었습니다.</label></div>
+<p class="sim-result" data-sim-result role="status">0개 · 아직 적지 않은 항목부터 메모하세요.</p>
+<p class="sim-assumptions">가상 연습 · 계산식: 선택한 항목 수의 합계입니다.</p>
+</div>
+</section>
+<section id="case" class="chapter-block block-case" data-block="case">
+<p class="block-label"><span class="block-icon" aria-hidden="true">◎</span>05 · 실제 사례</p>
+<h2>공개 사례에서 배울 점을 찾습니다</h2>
+<!-- 출판할 장에서는 공개 사례 1~3개와 출처 각주를 채운다. 가상 사례를 실제라고 쓰지 않는다. -->
+<p>공개 사례를 넣을 자리입니다. 확인한 활동과 이 사례에서 배울 점을 한 줄씩 씁니다.</p>
+<section id="stages" aria-labelledby="stages-title"><h3 id="stages-title">단계표 · 지금 어디까지 적었나요?</h3>
+<!-- 계정 단계 등에 따라 답이 달라질 때만 둔다. 아래는 작성 단계의 가상 연습이다. -->
+<table class="stage-table"><caption>가상 작성 단계 · 선택한 항목 수를 기준으로 다음 할 일을 정합니다.</caption>
+<thead><tr><th scope="col">단계</th><th scope="col">지금 상태</th><th scope="col">지금 할 일</th></tr></thead>
+<tbody><tr><th scope="row">시작</th><td>메모가 비었습니다.</td><td>독자와 고민부터 적습니다.</td></tr><tr><th scope="row">작성 중</th><td>일부 항목을 적었습니다.</td><td>비어 있는 항목을 채웁니다.</td></tr><tr><th scope="row">작성 뒤</th><td>모든 항목을 적었습니다.</td><td>답과 행동이 연결되는지 읽습니다.</td></tr></tbody></table>
+</section>
+</section>
+<section id="workshop" class="chapter-block block-workshop" data-block="workshop">
+<p class="block-label"><span class="block-icon" aria-hidden="true">✎</span>06 · 작업실 노트</p>
+<h2>내 게시물 계획 메모를 만드세요</h2>
+<ol class="workshop-steps"><li>도울 독자와 고민을 적으세요.</li><li>질문에 답하고, 읽은 뒤 할 일을 적으세요.</li></ol>
+<p>계정 준비와 도구 조작은 <a href="../site/practice/00-start.html">실습편 시작 전에</a>에서 따라 합니다.</p>
+<div class="checklist" data-checklist="REPLACE-SLUG-plan"><h3>지금 내 손에 있는 것</h3><label><input type="checkbox" data-check="plan"> 독자·내용·행동을 적은 메모가 있습니다.</label><p class="save-status" data-save-status role="status"></p></div>
+</section>
+<section id="story" class="chapter-block block-story chapter-faq" data-block="story">
+<p class="block-label"><span class="block-icon" aria-hidden="true">?</span>07 · 자주 묻는 질문</p>
+<h2>궁금한 질문부터 읽으세요</h2>
+<!-- 해당 장 질문표의 질문 5개. 굵은 직답 + 2~3줄 보충 + 관련 절 링크. -->
+<details id="faq-first"><summary>무엇부터 적나요?</summary><div class="faq-answer"><p class="direct-answer"><strong>도울 독자와 그 사람의 고민부터 적습니다.</strong></p><p>예를 들어 처음 카드를 만드는 친구의 고민을 적습니다. 내 메모에도 독자를 적으세요.</p><a href="#axis-reader">독자 정하기 읽기 →</a></div></details>
+<details id="faq-many"><summary>여러 사람을 한꺼번에 도와도 되나요?</summary><div class="faq-answer"><p class="direct-answer"><strong>이 연습에서는 한 사람의 질문부터 고릅니다.</strong></p><p>가상 연습처럼 고민 하나를 고르면 됩니다. 메모에서 가장 먼저 답할 질문에 표시하세요.</p><a href="#axis-reader">질문 만들기 읽기 →</a></div></details>
+<details id="faq-answer"><summary>내용에는 무엇을 쓰나요?</summary><div class="faq-answer"><p class="direct-answer"><strong>독자의 질문에 대한 답을 씁니다.</strong></p><p>예를 들어 색을 고르는 질문에는 고르는 방법을 씁니다. 질문 아래에 내 답을 적으세요.</p><a href="#axis-message">내용 고르기 읽기 →</a></div></details>
+<details id="faq-action"><summary>다음 행동은 어떻게 쓰나요?</summary><div class="faq-answer"><p class="direct-answer"><strong>독자가 바로 할 수 있는 일을 씁니다.</strong></p><p>“사용할 색을 메모하세요”처럼 씁니다. 내 문장도 할 일을 나타내는 말로 끝내세요.</p><a href="#axis-action">다음 행동 읽기 →</a></div></details>
+<details id="faq-ready"><summary>메모가 준비됐는지 어떻게 보나요?</summary><div class="faq-answer"><p class="direct-answer"><strong>독자·내용·행동이 모두 적혀 있는지 봅니다.</strong></p><p>가상 연습 도구에서 적은 항목을 고르세요. 비어 있는 항목부터 채우세요.</p><a href="#simulator">내 계획 점검하기 →</a></div></details>
+</section>
+<section id="summary" class="chapter-block block-summary" data-block="summary">
+<p class="block-label"><span class="block-icon" aria-hidden="true">✓</span>08 · 핵심 정리</p>
+<h2>이 세 줄을 가져갑니다</h2>
+<ul class="key-takeaways"><li>독자와 고민을 먼저 정합니다.</li><li>내용은 독자의 질문에 답합니다.</li><li>지금 할 일은 게시물 계획 메모를 채우는 것입니다.</li></ul>
+</section>
+<section id="quiz" class="chapter-block block-quiz" data-block="quiz" data-quiz>
+<p class="block-label"><span class="block-icon" aria-hidden="true">Q</span>09 · 퀴즈</p>
+<h2>내 계획을 점검하세요</h2><p class="quiz-score" data-quiz-score role="status"></p>
+<div class="quiz-question" data-question data-explanation="도울 독자와 그 사람의 고민을 먼저 정합니다."><h3>1. 계획에서 먼저 정할 것은?</h3><div class="quiz-options" role="group" aria-label="문제 1 보기"><button type="button" data-correct="true">독자와 고민</button><button type="button" data-correct="false">게시물의 장식</button></div><p class="quiz-feedback" data-feedback role="status" hidden></p></div>
+<div class="quiz-question" data-question data-explanation="독자의 질문에 답하는 내용으로 씁니다."><h3>2. 내용에는 무엇을 쓰나요?</h3><div class="quiz-options" role="group" aria-label="문제 2 보기"><button type="button" data-correct="false">질문과 무관한 이야기</button><button type="button" data-correct="true">질문에 대한 답</button></div><p class="quiz-feedback" data-feedback role="status" hidden></p></div>
+<div class="quiz-question" data-question data-explanation="다음 행동은 읽은 사람이 바로 할 일입니다."><h3>3. 다음 행동으로 알맞은 문장은?</h3><div class="quiz-options" role="group" aria-label="문제 3 보기"><button type="button" data-correct="true">고른 색을 메모하세요.</button><button type="button" data-correct="false">색에는 여러 종류가 있습니다.</button></div><p class="quiz-feedback" data-feedback role="status" hidden></p></div>
+<button type="button" data-quiz-reset>다시 풀기</button>
+</section>
+<aside class="source-notes" aria-labelledby="sources-title"><h2 id="sources-title">각주·출처</h2><!-- 실제 장에서는 인용한 출처 번호·원문 링크를 채우고, 사실 ID는 data-fact-id 속성에만 쓴다. --><p>이 템플릿의 계획 메모는 가상 연습입니다. 공개 사례와 정책 출처는 장을 작성할 때 채웁니다.</p></aside>
+<nav data-chapter-pager aria-label="이전·다음 장"></nav>
+</main></div><footer data-site-footer></footer>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  ReelsSim.mount('#plan-check', (element, setResult) => {
+    const update = () => {
+      const count = element.querySelectorAll('input:checked').length;
+      setResult(`${count}개 · ${count === 3 ? '모든 항목을 적었습니다. 답과 행동이 연결되는지 읽으세요.' : '아직 적지 않은 항목부터 메모하세요.'}`);
+    };
+    element.addEventListener('change', update);
+    update();
+  });
+});
+</script>
+</body></html>

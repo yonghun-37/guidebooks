@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": "docs/results/phase-9/baseline.json",
+  "summary": {
+    "files": 4,
+    "passed": 4,
+    "failed": 0,
+    "char_count": 9839,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 0,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site/chapters/01-map.html",
+      "track": "theory",
+      "char_count": 2063,
+      "baseline_char_count": 3657,
+      "ratio": 0.564124,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "a927fdae0dc4a9e11dd2c5029ffbe138509fd09df94657f92b9d2dcdb05960c7"
+    },
+    {
+      "path": "site/chapters/02-formats.html",
+      "track": "theory",
+      "char_count": 2314,
+      "baseline_char_count": 3866,
+      "ratio": 0.598551,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "c8e6438693e828c3ad1be5c0c24e58cdcf194d1642ae1a305b97b82c2ca2d5c4"
+    },
+    {
+      "path": "site/chapters/03-revenue.html",
+      "track": "theory",
+      "char_count": 3008,
+      "baseline_char_count": 4558,
+      "ratio": 0.659939,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "837aafbd685a87b1df15b05c856f58ff3385cd89a5351f315ab1877dac87e201"
+    },
+    {
+      "path": "site/chapters/04-niche.html",
+      "track": "theory",
+      "char_count": 2454,
+      "baseline_char_count": 3875,
+      "ratio": 0.63329,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": true
+      },
+      "passed": true,
+      "sha256": "f9784b39b7cadcd539be14b3aab98c001d5ddec8eb921ca402646c286c12647a"
+    }
+  ]
+}
