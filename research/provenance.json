@@ -1,0 +1,297 @@
+{
+  "cutoff": "2026-10-26",
+  "author": "Codex",
+  "raw_immutable": true,
+  "items": [
+    {
+      "topic": "algorithm-formats",
+      "run": "algorithm-formats",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/algorithm-formats.md",
+      "raw_sha256": "bdb613b7cbfef7a8c3137f2014e6ec651368367723f038dd10f2eac3b9054da5",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/algorithm-formats.txt",
+      "query_sha256": "1eb50a0a980e2ab0efde2aa74be03bcdd7d6a9816dd89a64c8c77f9b720059f7"
+    },
+    {
+      "topic": "monetization-meta",
+      "run": "monetization-meta",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/monetization-meta.md",
+      "raw_sha256": "8a372aabf1d440daed1b57ad64114f9434c590b2da3bf852f0eb632ca225e990",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/monetization-meta.txt",
+      "query_sha256": "39fb595b0c290d91290f26097bbb61f45649f89fbae231c208c0dd741d5cb94d"
+    },
+    {
+      "topic": "monetization-other",
+      "run": "monetization-other",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/monetization-other.md",
+      "raw_sha256": "692d8d546ef5a583ad030d7dc0ad5aca221188eb9ea76783ab0fa7abdb634847",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/monetization-other.txt",
+      "query_sha256": "cf8cf679dcbe615d231b59af4c914f0b285a5012a86b0d8661a735c0ba5cb9f4"
+    },
+    {
+      "topic": "graph-api-publishing",
+      "run": "graph-api-publishing",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/graph-api-publishing.md",
+      "raw_sha256": "b8f98f43d4eaea3bbdf36155858dfc2ef2d27d4c6bf75983e8460cc49dd3da03",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/graph-api-publishing.txt",
+      "query_sha256": "a69882c91f9a60c2b91e744613d568f3861c031d528c378174587220ae2de4e5"
+    },
+    {
+      "topic": "scheduling-automation-tools",
+      "run": "scheduling-automation-tools",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/scheduling-automation-tools.md",
+      "raw_sha256": "13428bdee80137851efb53a58a71c960a63ce41acbf05e229fc78fc1474870e7",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/scheduling-automation-tools.txt",
+      "query_sha256": "c176ffd41ab767662bc95b41895628e715c50a4ec694808a777e42cb0d37a94d"
+    },
+    {
+      "topic": "ai-text-image-tools",
+      "run": "ai-text-image-tools",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/ai-text-image-tools.md",
+      "raw_sha256": "fea123dba42e7c55f72f24282a892c299c498f1edc67045fea1b0481b473bbc4",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/ai-text-image-tools.txt",
+      "query_sha256": "53eee943a59ed240d5f659f63df2b39e8d3129c16635665311c868651751aaf6"
+    },
+    {
+      "topic": "ai-video-voice-tools",
+      "run": "ai-video-voice-tools",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/ai-video-voice-tools.md",
+      "raw_sha256": "2b79ba695521b1277ef62ee595be048831b698811e6f0f1132a01f30a7e44ed6",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/ai-video-voice-tools.txt",
+      "query_sha256": "4a663dbaf38befa1a099ced22a19214b7fc1f9432a29f26cb9957aeb971d5a58"
+    },
+    {
+      "topic": "ai-video-voice-tools",
+      "run": "ai-video-voice-supplement",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/ai-video-voice-supplement.md",
+      "raw_sha256": "ce56d5d36d9efbb26c8902cd8637067e4f7ed64b1d9ba7734387f83711e3784b",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/ai-video-voice-supplement.txt",
+      "query_sha256": "8eff37a943fedfc35796388d72ed6a88717ab5f713dbd921f503cd83520a0be8"
+    },
+    {
+      "topic": "ai-labeling-policy",
+      "run": "ai-labeling-policy",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/ai-labeling-policy.md",
+      "raw_sha256": "05eda0469ed8ace2a48b7ab4769115dbedb1cf9ff0c19086f526a40299242f13",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/ai-labeling-policy.txt",
+      "query_sha256": "63a8221d2c53f0f3f3a0ca78c4659680350d1270ff55dd82c0a16d4a30a087e1"
+    },
+    {
+      "topic": "korea-copyright-news",
+      "run": "korea-copyright-news",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/korea-copyright-news.md",
+      "raw_sha256": "88ab15d8c3cec906b7acaee6b3527f8d09d955126daef53b6d0f16b762e4f7aa",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/korea-copyright-news.txt",
+      "query_sha256": "dfefc89fbf72b565af829a22e2266d295c5c63c51ef89efeacf314545329f3f3"
+    },
+    {
+      "topic": "korea-copyright-news",
+      "run": "korea-copyright-news-retry",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/korea-copyright-news-retry.md",
+      "raw_sha256": "cc297cfafb7c23ed7bf12ad34c11e29db0e01ee3a6f23221e8efeed0d9b10368",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/korea-copyright-news-retry.txt",
+      "query_sha256": "3ad06d68eb957e84ac96e24c2f4e8b9c80de8f2415eeeed370c3aa11421e9321"
+    },
+    {
+      "topic": "korea-ads-tax",
+      "run": "korea-ads-tax",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/korea-ads-tax.md",
+      "raw_sha256": "d0757e382334d7bb452a3d0952e0acca55daf96c06c262d0dc26bb2504adbc50",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/korea-ads-tax.txt",
+      "query_sha256": "8bacf04e1bbbc4d61464a5b29ea22fd59c5d05ecdfdbbbc317cac31169d4a54a"
+    },
+    {
+      "topic": "korea-ads-tax",
+      "run": "korea-ads-tax-supplement",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/korea-ads-tax-supplement.md",
+      "raw_sha256": "0669a2ec0a8eb81d7032cf78fc614e28952bfa38564b49c804e818eb5d862bbc",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/korea-ads-tax-supplement.txt",
+      "query_sha256": "5db6c0944c260e0cf82516552d3a88e026854e0b210cacc694352f03ca77e5ca"
+    },
+    {
+      "topic": "growth-benchmarks",
+      "run": "growth-benchmarks",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/growth-benchmarks.md",
+      "raw_sha256": "0b2c685ee9ec66cf83fdb67e5389e244cb2c07613d8e5bb2db023d28fc6aa4bb",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/growth-benchmarks.txt",
+      "query_sha256": "40716767049c9578afad7a09ab1e0896ab54ec3b6cb80582ed7434b98bb35c66"
+    },
+    {
+      "topic": "growth-benchmarks",
+      "run": "growth-benchmarks-supplement",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/growth-benchmarks-supplement.md",
+      "raw_sha256": "d33e49deb0ab0188ae78542d6bfdd19db3e3595ef242b420c6260a981c060a8c",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/growth-benchmarks-supplement.txt",
+      "query_sha256": "4583195c0b650d473237802e01d3fe2fdd26636bf44f0a4150e32a0f8ce2d50d"
+    },
+    {
+      "topic": "risks-failures",
+      "run": "risks-failures",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/risks-failures.md",
+      "raw_sha256": "c45afc49bf08422274d8c67ef59a2d8d974dddfa89d770163ec60f6475c33ca9",
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/risks-failures.txt",
+      "query_sha256": "4b0a2c435948d61beb2f10c364f4db3df2e5d0c5b6671372a4fd04858ebcf9b8"
+    }
+  ],
+  "runs": [
+    {
+      "topic": "monetization-meta",
+      "started_at": "2026-10-26T00:04:58.905463+00:00",
+      "ended_at": "2026-10-26T00:07:47.099272+00:00",
+      "exit_code": 0,
+      "bytes": 20260,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/monetization-meta.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/monetization-meta.md",
+      "sha256": "8a372aabf1d440daed1b57ad64114f9434c590b2da3bf852f0eb632ca225e990"
+    },
+    {
+      "topic": "monetization-other",
+      "started_at": "2026-10-26T00:04:58.905705+00:00",
+      "ended_at": "2026-10-26T00:08:33.550444+00:00",
+      "exit_code": 0,
+      "bytes": 22531,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/monetization-other.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/monetization-other.md",
+      "sha256": "692d8d546ef5a583ad030d7dc0ad5aca221188eb9ea76783ab0fa7abdb634847"
+    },
+    {
+      "topic": "graph-api-publishing",
+      "started_at": "2026-10-26T00:04:58.905969+00:00",
+      "ended_at": "2026-10-26T00:10:29.726970+00:00",
+      "exit_code": 0,
+      "bytes": 38171,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/graph-api-publishing.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/graph-api-publishing.md",
+      "sha256": "b8f98f43d4eaea3bbdf36155858dfc2ef2d27d4c6bf75983e8460cc49dd3da03"
+    },
+    {
+      "topic": "scheduling-automation-tools",
+      "started_at": "2026-10-26T00:07:47.099655+00:00",
+      "ended_at": "2026-10-26T00:10:39.658028+00:00",
+      "exit_code": 0,
+      "bytes": 24009,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/scheduling-automation-tools.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/scheduling-automation-tools.md",
+      "sha256": "13428bdee80137851efb53a58a71c960a63ce41acbf05e229fc78fc1474870e7"
+    },
+    {
+      "topic": "ai-text-image-tools",
+      "started_at": "2026-10-26T00:08:33.550781+00:00",
+      "ended_at": "2026-10-26T00:12:09.254983+00:00",
+      "exit_code": 0,
+      "bytes": 31022,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/ai-text-image-tools.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/ai-text-image-tools.md",
+      "sha256": "fea123dba42e7c55f72f24282a892c299c498f1edc67045fea1b0481b473bbc4"
+    },
+    {
+      "topic": "korea-copyright-news",
+      "started_at": "2026-10-26T00:12:09.255312+00:00",
+      "ended_at": "2026-10-26T00:12:36.686067+00:00",
+      "exit_code": 1,
+      "bytes": 438,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/korea-copyright-news.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/korea-copyright-news.md",
+      "sha256": "88ab15d8c3cec906b7acaee6b3527f8d09d955126daef53b6d0f16b762e4f7aa"
+    },
+    {
+      "topic": "algorithm-formats",
+      "started_at": "2026-10-26T00:04:58.905216+00:00",
+      "ended_at": "2026-10-26T00:13:28.834753+00:00",
+      "exit_code": 0,
+      "bytes": 25635,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/algorithm-formats.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/algorithm-formats.md",
+      "sha256": "bdb613b7cbfef7a8c3137f2014e6ec651368367723f038dd10f2eac3b9054da5"
+    },
+    {
+      "topic": "ai-labeling-policy",
+      "started_at": "2026-10-26T00:10:39.658324+00:00",
+      "ended_at": "2026-10-26T00:13:35.571361+00:00",
+      "exit_code": 0,
+      "bytes": 23657,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/ai-labeling-policy.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/ai-labeling-policy.md",
+      "sha256": "05eda0469ed8ace2a48b7ab4769115dbedb1cf9ff0c19086f526a40299242f13"
+    },
+    {
+      "topic": "korea-ads-tax",
+      "started_at": "2026-10-26T00:12:36.686340+00:00",
+      "ended_at": "2026-10-26T00:14:00.376640+00:00",
+      "exit_code": 0,
+      "bytes": 10565,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/korea-ads-tax.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/korea-ads-tax.md",
+      "sha256": "d0757e382334d7bb452a3d0952e0acca55daf96c06c262d0dc26bb2504adbc50"
+    },
+    {
+      "topic": "ai-video-voice-tools",
+      "started_at": "2026-10-26T00:10:29.727296+00:00",
+      "ended_at": "2026-10-26T00:14:35.562802+00:00",
+      "exit_code": 0,
+      "bytes": 30394,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/ai-video-voice-tools.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/ai-video-voice-tools.md",
+      "sha256": "2b79ba695521b1277ef62ee595be048831b698811e6f0f1132a01f30a7e44ed6"
+    },
+    {
+      "topic": "growth-benchmarks",
+      "started_at": "2026-10-26T00:13:28.835018+00:00",
+      "ended_at": "2026-10-26T00:15:03.835264+00:00",
+      "exit_code": 0,
+      "bytes": 13090,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/growth-benchmarks.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/growth-benchmarks.md",
+      "sha256": "0b2c685ee9ec66cf83fdb67e5389e244cb2c07613d8e5bb2db023d28fc6aa4bb"
+    },
+    {
+      "topic": "risks-failures",
+      "started_at": "2026-10-26T00:13:35.571652+00:00",
+      "ended_at": "2026-10-26T00:16:05.134320+00:00",
+      "exit_code": 0,
+      "bytes": 19119,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/risks-failures.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/risks-failures.md",
+      "sha256": "c45afc49bf08422274d8c67ef59a2d8d974dddfa89d770163ec60f6475c33ca9"
+    },
+    {
+      "topic": "korea-copyright-news-retry",
+      "started_at": "2026-10-26T00:14:21.238234+00:00",
+      "ended_at": "2026-10-26T00:16:08.073785+00:00",
+      "exit_code": 0,
+      "bytes": 12870,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/korea-copyright-news-retry.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/korea-copyright-news-retry.md",
+      "sha256": "cc297cfafb7c23ed7bf12ad34c11e29db0e01ee3a6f23221e8efeed0d9b10368"
+    },
+    {
+      "topic": "korea-ads-tax-supplement",
+      "started_at": "2026-10-26T00:16:08.470650+00:00",
+      "ended_at": "2026-10-26T00:17:37.270936+00:00",
+      "exit_code": 0,
+      "bytes": 11808,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/korea-ads-tax-supplement.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/korea-ads-tax-supplement.md",
+      "sha256": "0669a2ec0a8eb81d7032cf78fc614e28952bfa38564b49c804e818eb5d862bbc"
+    },
+    {
+      "topic": "growth-benchmarks-supplement",
+      "started_at": "2026-10-26T00:16:30.520621+00:00",
+      "ended_at": "2026-10-26T00:17:47.280404+00:00",
+      "exit_code": 0,
+      "bytes": 10909,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/growth-benchmarks-supplement.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/growth-benchmarks-supplement.md",
+      "sha256": "d33e49deb0ab0188ae78542d6bfdd19db3e3595ef242b420c6260a981c060a8c"
+    },
+    {
+      "topic": "ai-video-voice-supplement",
+      "started_at": "2026-10-26T00:16:08.470897+00:00",
+      "ended_at": "2026-10-26T00:17:55.566180+00:00",
+      "exit_code": 0,
+      "bytes": 12982,
+      "query_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/queries/ai-video-voice-supplement.txt",
+      "raw_path": "/home/yonghun/project/hermes-research/output/ai-insta-research-20261026/raw/ai-video-voice-supplement.md",
+      "sha256": "ce56d5d36d9efbb26c8902cd8637067e4f7ed64b1d9ba7734387f83711e3784b"
+    }
+  ]
+}

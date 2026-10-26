@@ -1,0 +1,68 @@
+{
+  "topics": 12,
+  "sources": 117,
+  "facts": 100,
+  "runs": 16,
+  "exit_zero": 15,
+  "exit_nonzero": 1,
+  "max_parallel": 4,
+  "raw_sha256_checks": 16,
+  "query_provenance_checks": 16,
+  "direct_requests": 63,
+  "direct_readable_requests": 42,
+  "direct_verified_sources": 40,
+  "direct_verified_official_sources": 38,
+  "per_topic": {
+    "algorithm-formats": {
+      "cited_sources": 12,
+      "directly_read_sources": 2
+    },
+    "monetization-meta": {
+      "cited_sources": 9,
+      "directly_read_sources": 1
+    },
+    "monetization-other": {
+      "cited_sources": 11,
+      "directly_read_sources": 1
+    },
+    "graph-api-publishing": {
+      "cited_sources": 12,
+      "directly_read_sources": 9
+    },
+    "scheduling-automation-tools": {
+      "cited_sources": 15,
+      "directly_read_sources": 2
+    },
+    "ai-text-image-tools": {
+      "cited_sources": 13,
+      "directly_read_sources": 1
+    },
+    "ai-video-voice-tools": {
+      "cited_sources": 21,
+      "directly_read_sources": 10
+    },
+    "ai-labeling-policy": {
+      "cited_sources": 11,
+      "directly_read_sources": 5
+    },
+    "korea-copyright-news": {
+      "cited_sources": 5,
+      "directly_read_sources": 5
+    },
+    "korea-ads-tax": {
+      "cited_sources": 8,
+      "directly_read_sources": 6
+    },
+    "growth-benchmarks": {
+      "cited_sources": 6,
+      "directly_read_sources": 5
+    },
+    "risks-failures": {
+      "cited_sources": 14,
+      "directly_read_sources": 5
+    }
+  },
+  "passed": true,
+  "local_markdown_file_links_checked": 359,
+  "local_markdown_file_links_passed": true
+}

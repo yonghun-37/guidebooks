@@ -1,0 +1,1147 @@
+{
+  "checked_by": "Codex",
+  "cutoff": "2026-10-26",
+  "method": "curl -L --max-time 45 --retry 1; HTML 본문 추출 후 관련 절 직접 대조",
+  "note": "HTTP 200은 본문 확인과 다르다. 원문 HTML은 조사 중 /tmp/ai-insta-source-checks에서 읽었으며 아래 응답 SHA256으로 구분한다. Hermes 원응답 검증과 별개다.",
+  "checks": [
+    {
+      "key": "ai-act-31",
+      "url": "https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031810729",
+      "accessed_at": "2026-10-26T00:05:57.465067+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031810729",
+      "bytes": 12605,
+      "sha256": "e1700573da366ace70be8de8309fc8096aef4d0dce99f8bf135d4007933ffe4d",
+      "title": [
+        "국가법령정보센터 | 조문정보"
+      ],
+      "text_chars": 353,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": []
+    },
+    {
+      "key": "ai-act-full",
+      "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=282791&chrClsCd=010202&efYd=20260721",
+      "accessed_at": "2026-10-26T00:06:07.866152+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=282791&chrClsCd=010202&efYd=20260721",
+      "bytes": 148773,
+      "sha256": "3f7b939448a49d49760cd5c75f6cd4808fde84c5ed0b8e22071087879f9093db",
+      "title": [],
+      "text_chars": 26571,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S009"
+      ]
+    },
+    {
+      "key": "ai-act",
+      "url": "https://www.law.go.kr/법령/인공지능발전과신뢰기반조성등에관한기본법",
+      "accessed_at": "2026-10-26T00:05:40.677755+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/법령/인공지능발전과신뢰기반조성등에관한기본법",
+      "bytes": 1318,
+      "sha256": "274881056bc7039f627a2491d078255555ad912507b5f20171d6cc4d1807beb0",
+      "title": [
+        "인공지능발전과신뢰기반조성등에관한기본법"
+      ],
+      "text_chars": 20,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "ai-label-feb",
+      "url": "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/",
+      "accessed_at": "2026-10-26T00:14:40.364611+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/",
+      "bytes": 525744,
+      "sha256": "ce2ef7e3d98d8d33d3de81da94ee5984b37736475bd22173134729d67a75bfe9",
+      "title": [
+        "Labeling AI-Generated Images on Facebook, Instagram and Threads"
+      ],
+      "text_chars": 15267,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S071"
+      ]
+    },
+    {
+      "key": "ai-label",
+      "url": "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/",
+      "accessed_at": "2026-10-26T00:05:18.081820+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/",
+      "bytes": 351518,
+      "sha256": "5519cf3ab6ed5df404dc7ad58e903b39a000ba78c329cd6cc8672e4ba66b1233",
+      "title": [
+        "Our Approach to Labeling AI-Generated Content and Manipulated Media"
+      ],
+      "text_chars": 14523,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "AI info·AI 편집 메뉴 라벨 설명 확인; 옛 사실검증 운영 설명은 현행 판단에서 제외",
+      "source_ids": [
+        "S007"
+      ]
+    },
+    {
+      "key": "api-changelog",
+      "url": "https://developers.facebook.com/docs/instagram-platform/changelog/",
+      "accessed_at": "2026-10-26T00:07:30.124974+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/changelog",
+      "bytes": 1593903,
+      "sha256": "a405f52341a2248db4409691972b477b1caa28fc37421b1f5fe56e25dcb90dda",
+      "title": [
+        "Instagram 플랫폼 변경 사항 | Meta for Developers"
+      ],
+      "text_chars": 43799,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S032"
+      ]
+    },
+    {
+      "key": "api-media",
+      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media/",
+      "accessed_at": "2026-10-26T00:06:09.632269+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "bytes": 1096865,
+      "sha256": "cd11de1aa93f6663a9e50a69c4eaa806f2a68b19cd56e511239074d85c9f6558",
+      "title": [
+        "IG 사용자 미디어 | Meta for Developers"
+      ],
+      "text_chars": 15859,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S004"
+      ]
+    },
+    {
+      "key": "api-overview",
+      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/",
+      "accessed_at": "2026-10-26T00:05:17.162938+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login",
+      "bytes": 803874,
+      "sha256": "948b1f434184752bc25d53ef89eada70ecb6019f18de6b612c2338810ea4defd",
+      "title": [
+        "Instagram 로그인을 통한 Instagram API | Meta for Developers"
+      ],
+      "text_chars": 3072,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S002"
+      ]
+    },
+    {
+      "key": "api-publishing-en",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/content-publishing?locale=en_US",
+      "accessed_at": "2026-10-26T00:05:32.116114+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/content-publishing?locale=en_US",
+      "bytes": 924445,
+      "sha256": "d29b785b32d4ba182242fcaf622b6a819f189c52092cc02ae3c3019818d38321",
+      "title": [
+        "Content Publishing | Meta for Developers"
+      ],
+      "text_chars": 17768,
+      "body_read": true,
+      "verdict": "불일치",
+      "scope": "영문도 100/50 혼재; 20개 명시",
+      "source_ids": [
+        "S001"
+      ]
+    },
+    {
+      "key": "api-publishing",
+      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/content-publishing/",
+      "accessed_at": "2026-10-26T00:05:17.091380+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/content-publishing",
+      "bytes": 951931,
+      "sha256": "3691a6c0badfb6af0787cb0fed930d810b18c0f95bc278ce013d0c0f8620b732",
+      "title": [
+        "콘텐츠 게시 | Meta for Developers"
+      ],
+      "text_chars": 12353,
+      "body_read": true,
+      "verdict": "불일치",
+      "scope": "일반 한도 100건과 캐러셀 절 50건이 같은 본문에서 충돌; 최대 캐러셀 20개 확인",
+      "source_ids": [
+        "S001"
+      ]
+    },
+    {
+      "key": "api-quota",
+      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/content_publishing_limit/",
+      "accessed_at": "2026-10-26T00:05:32.253028+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/content_publishing_limit",
+      "bytes": 840469,
+      "sha256": "048b04af5a36ffec273567508723f6f8a42a5030b13b8e510473a034e43e8cf6",
+      "title": [
+        "IG 사용자 콘텐츠 게시 제한 | Meta for Developers"
+      ],
+      "text_chars": 3755,
+      "body_read": true,
+      "verdict": "불일치",
+      "scope": "quota_total 현재 50, quota_duration 86400초; 일반 게시 가이드 100건과 충돌",
+      "source_ids": [
+        "S003"
+      ]
+    },
+    {
+      "key": "app-review",
+      "url": "https://developers.facebook.com/docs/instagram-platform/app-review/",
+      "accessed_at": "2026-10-26T00:07:29.808041+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/app-review",
+      "bytes": 830632,
+      "sha256": "e8b1c529ad764cf6c3d4a07a5192ae5cd1bcc337ad5cebd419aec8f118716b99",
+      "title": [
+        "Instagram API를 위한 앱 검수 | Meta for Developers"
+      ],
+      "text_chars": 5926,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S031"
+      ]
+    },
+    {
+      "key": "buffer-growth",
+      "url": "https://buffer.com/resources/how-often-to-post-on-instagram/",
+      "accessed_at": "2026-10-26T00:16:58.262682+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://buffer.com/resources/how-often-to-post-on-instagram/",
+      "bytes": 226515,
+      "sha256": "23653e4a936977743795fa73b8a9c54b46e8414540d8b910527ed57b6c3f0b40",
+      "title": [
+        "How Often Should You Post on Instagram in 2026? What Data From 2 Million Posts Tells Us"
+      ],
+      "text_chars": 21162,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S107"
+      ]
+    },
+    {
+      "key": "copyright-28",
+      "url": "https://www.law.go.kr/법령/저작권법/제28조",
+      "accessed_at": "2026-10-26T00:05:57.799386+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/법령/저작권법/제28조",
+      "bytes": 1270,
+      "sha256": "7de2a1d3f28016d5be93ecaf6006f8e333f8d364976ea1881d482dd00b5bee9f",
+      "title": [
+        "저작권법"
+      ],
+      "text_chars": 4,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "copyright-35-5",
+      "url": "https://www.law.go.kr/법령/저작권법/제35조의5",
+      "accessed_at": "2026-10-26T00:05:57.789383+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/법령/저작권법/제35조의5",
+      "bytes": 1270,
+      "sha256": "856454c634b20f0cb63691cd2e2d9d57a72971bb99e82ba6c4e1e240d4c250f0",
+      "title": [
+        "저작권법"
+      ],
+      "text_chars": 4,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "copyright-case",
+      "url": "https://www.law.go.kr/LSW/precInfoP.do?evtNo=2004%EB%8F%845350",
+      "accessed_at": "2026-10-26T00:17:48.204092+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/LSW/precInfoP.do?evtNo=2004%EB%8F%845350",
+      "bytes": 69401,
+      "sha256": "9f3b559d0b99269a40a7e4275a6918e8435644e2039209e0e1bc091b1f996461",
+      "title": [
+        "판례 &gt; 저작권법위반 | 국가법령정보센터"
+      ],
+      "text_chars": 3193,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S080"
+      ]
+    },
+    {
+      "key": "copyright-full",
+      "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=283335&chrClsCd=010202&efYd=20260811",
+      "accessed_at": "2026-10-26T00:06:12.619792+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=283335&chrClsCd=010202&efYd=20260811",
+      "bytes": 562927,
+      "sha256": "febdf9d9871c54aa6318d780a78640174c7cbc4ee253a74a8a8dc24852593e80",
+      "title": [],
+      "text_chars": 92914,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S010"
+      ]
+    },
+    {
+      "key": "copyright",
+      "url": "https://www.law.go.kr/법령/저작권법",
+      "accessed_at": "2026-10-26T00:05:40.684712+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/법령/저작권법",
+      "bytes": 1270,
+      "sha256": "80064d96cbbccf93c72c65ae7a2997ac363031165500d8a969fe47a61eba58d1",
+      "title": [
+        "저작권법"
+      ],
+      "text_chars": 4,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "espeak-languages",
+      "url": "https://raw.githubusercontent.com/espeak-ng/espeak-ng/master/docs/languages.md",
+      "accessed_at": "2026-10-26T00:14:52.039765+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://raw.githubusercontent.com/espeak-ng/espeak-ng/master/docs/languages.md",
+      "bytes": 15823,
+      "sha256": "4a0356882e142a32bccba037c5a70d582b96ecb6676165ce4b01b59f551cf24c",
+      "title": [],
+      "text_chars": 15673,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S082"
+      ]
+    },
+    {
+      "key": "espeak-license",
+      "url": "https://raw.githubusercontent.com/espeak-ng/espeak-ng/master/COPYING",
+      "accessed_at": "2026-10-26T00:14:52.028161+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://raw.githubusercontent.com/espeak-ng/espeak-ng/master/COPYING",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "title": [],
+      "text_chars": 34842,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S083"
+      ]
+    },
+    {
+      "key": "facebook-login",
+      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-api-with-facebook-login/",
+      "accessed_at": "2026-10-26T00:07:29.413963+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/instagram-api-with-facebook-login",
+      "bytes": 803327,
+      "sha256": "56f0f420e4659bad0ed205251fa27424264466e7de0003849b744178cb673d69",
+      "title": [
+        "Facebook 로그인을 통한 Instagram API | Meta for Developers"
+      ],
+      "text_chars": 2786,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S029"
+      ]
+    },
+    {
+      "key": "faster-whisper-license",
+      "url": "https://raw.githubusercontent.com/SYSTRAN/faster-whisper/master/LICENSE",
+      "accessed_at": "2026-10-26T00:16:50.365836+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://raw.githubusercontent.com/SYSTRAN/faster-whisper/master/LICENSE",
+      "bytes": 1064,
+      "sha256": "af6798135e729f8aa6c853936d037dfdea449734d26b8ea6a89805fca758c0d5",
+      "title": [],
+      "text_chars": 1063,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S089"
+      ]
+    },
+    {
+      "key": "ffmpeg-license",
+      "url": "https://www.ffmpeg.org/legal.html",
+      "accessed_at": "2026-10-26T00:14:53.322812+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.ffmpeg.org/legal.html",
+      "bytes": 10686,
+      "sha256": "cd51dc25f9e3200b1e3953aee036f499ed51f01f7ba30563873186cb3f870eda",
+      "title": [
+        "\nFFmpeg License and Legal Considerations"
+      ],
+      "text_chars": 6548,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S090"
+      ]
+    },
+    {
+      "key": "ftc-body",
+      "url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000280130&chrClsCd=010201",
+      "accessed_at": "2026-10-26T00:05:30.887859+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000280130&chrClsCd=010201",
+      "bytes": 68366,
+      "sha256": "b2b1925fea895ffafb813f577e729f39f81ce4aa6db8c341dbdce10bb6db09be",
+      "title": [
+        "행정규칙 &gt; 본문 | 국가법령정보센터"
+      ],
+      "text_chars": 879,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "ftc-content",
+      "url": "https://www.law.go.kr/LSW/admRulInfoR.do?admRulSeq=2100000280130&chrClsCd=010201",
+      "accessed_at": "2026-10-26T00:05:40.339902+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/LSW/admRulInfoR.do?admRulSeq=2100000280130&chrClsCd=010201",
+      "bytes": 51697,
+      "sha256": "3b6020b8ed5984ec53f92cc5249fa2fea5c36e376ecc3a21411db8f35f6f2d58",
+      "title": [],
+      "text_chars": 13867,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "2026-06-01 시행 예규499호 V.5 가상인물·V.6 경제적 이해관계 원문 확인",
+      "source_ids": [
+        "S008"
+      ]
+    },
+    {
+      "key": "ftc-rule",
+      "url": "https://www.law.go.kr/행정규칙/추천·보증등에관한표시·광고심사지침",
+      "accessed_at": "2026-10-26T00:05:17.450563+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/행정규칙/추천·보증등에관한표시·광고심사지침",
+      "bytes": 1271,
+      "sha256": "04dce7b8977c8811018ef13293438e9974c4a29b0474de62430fb0daf596f84f",
+      "title": [
+        "추천·보증등에관한표시·광고심사지침"
+      ],
+      "text_chars": 18,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "gifts-facebook",
+      "url": "https://www.facebook.com/help/instagram/738469380549477?locale=en_US",
+      "accessed_at": "2026-10-26T00:05:30.774639+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.facebook.com/help/instagram/738469380549477?locale=en_US",
+      "bytes": 395180,
+      "sha256": "7b62447ae1a6007f8302aeeb157636b4764e148b9ca4e708b93980f60dde1e9d",
+      "title": [
+        "How to earn money on Instagram Gifts | Instagram Help Center"
+      ],
+      "text_chars": 60,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "HTTP200이나 본문 미제공; 현행 자격 확인 실패",
+      "source_ids": [
+        "S005"
+      ]
+    },
+    {
+      "key": "gifts-mobile",
+      "url": "https://www.facebook.com/help/instagram/738469380549477?locale=en_US&__a=1",
+      "accessed_at": "2026-10-26T00:06:08.103170+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.facebook.com/help/instagram/738469380549477?locale=en_US&__a=1",
+      "bytes": 395173,
+      "sha256": "b7aebba82d13e9016a9817789ff7cfcf8ef2d688fbd4237a5dd1809df9b77fb7",
+      "title": [
+        "How to earn money on Instagram Gifts | Instagram Help Center"
+      ],
+      "text_chars": 60,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": [
+        "S005"
+      ]
+    },
+    {
+      "key": "gifts",
+      "url": "https://help.instagram.com/738469380549477",
+      "accessed_at": "2026-10-26T00:05:15.463659+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://help.instagram.com/738469380549477",
+      "bytes": 345832,
+      "sha256": "c3972cf0ebd171490f66ecf9341233703869c076b3c80aa43bee97334933fe8c",
+      "title": [
+        "Help Center"
+      ],
+      "text_chars": 11,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "HTTP200이나 본문 미제공; 현행 자격 확인 실패",
+      "source_ids": [
+        "S005"
+      ]
+    },
+    {
+      "key": "insights-current",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/insights",
+      "accessed_at": "2026-10-26T00:17:42.986566+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/insights",
+      "bytes": 860625,
+      "sha256": "75c5de9f241fbf3f2830940656c30c41eded6700cb4d946eed6003bfa08b452c",
+      "title": [
+        "Instagram 플랫폼 인사이트 | Meta for Developers"
+      ],
+      "text_chars": 7551,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S109"
+      ]
+    },
+    {
+      "key": "instagram-insights",
+      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/insights/",
+      "accessed_at": "2026-10-26T00:16:57.775119+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "404\nhttps://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/insights/",
+      "bytes": 146111,
+      "sha256": "5c12ffcb29c6b810edb0fef3a9d0b1a84d4fcc8e5249d442617a8238846ecd11",
+      "title": [
+        "페이지를 찾을 수 없음 - Meta for Developers"
+      ],
+      "text_chars": 34,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "instagram-terms",
+      "url": "https://help.instagram.com/581066165581870",
+      "accessed_at": "2026-10-26T00:16:36.799306+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://help.instagram.com/581066165581870",
+      "bytes": 345054,
+      "sha256": "0c7a7d882885960a4bb4829ef6c078ddddfc789a24cbbd9423d7132d1a338969",
+      "title": [
+        "Help Center"
+      ],
+      "text_chars": 11,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": [
+        "S112"
+      ]
+    },
+    {
+      "key": "instagram-token",
+      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/business-login/",
+      "accessed_at": "2026-10-26T00:07:29.751511+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login/business-login",
+      "bytes": 933544,
+      "sha256": "617879bc408930ee0a20fe56918679e29e66d32706726f610faf7ab2b84cea95",
+      "title": [
+        "Instagram용 비즈니스 로그인 | Meta for Developers"
+      ],
+      "text_chars": 9839,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S030"
+      ]
+    },
+    {
+      "key": "kdi-ai-guide",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=276195",
+      "accessed_at": "2026-10-26T00:14:36.243393+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://eiec.kdi.re.kr/policy/materialView.do?num=276195",
+      "bytes": 177353,
+      "sha256": "1feca7458b871e037ad06c71f3112f27e543abf82185c21b2f6359d7620b9b5a",
+      "title": [
+        "과기정통부, 「인공지능 투명성 확보 안내 지침(가이드라인)」 공개 | 경제정책자료 |KDI 경제교육·정보센터"
+      ],
+      "text_chars": 4013,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S074"
+      ]
+    },
+    {
+      "key": "media-insights",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/reference/instagram-media/insights",
+      "accessed_at": "2026-10-26T00:18:04.459118+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/reference/instagram-media/insights",
+      "bytes": 1036441,
+      "sha256": "11b0f85bdc9aa1c5a7a8ff48b2ebb5a3c96a37586bcbd835c4e58b39e6c7ecb9",
+      "title": [
+        "Instagram 미디어 인사이트 | Meta for Developers"
+      ],
+      "text_chars": 12345,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S110"
+      ]
+    },
+    {
+      "key": "meta-earnings",
+      "url": "https://about.fb.com/news/2023/11/giving-creators-more-ways-to-earn-money-on-facebook-and-instagram/",
+      "accessed_at": "2026-10-26T00:05:24.964520+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://about.fb.com/news/2023/11/giving-creators-more-ways-to-earn-money-on-facebook-and-instagram/",
+      "bytes": 733952,
+      "sha256": "d8e6458a05a609775507fa3f7696f2ba60401b3ff690581b19d34f56708bcd65",
+      "title": [
+        "Giving Creators More Ways to Earn Money on Facebook and Instagram"
+      ],
+      "text_chars": 13279,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "과거 Gifts 한국 확대 및 5000명 조건 확인; 현재 자격의 증거 아님",
+      "source_ids": [
+        "S006"
+      ]
+    },
+    {
+      "key": "meta-privacy",
+      "url": "https://transparency.meta.com/policies/community-standards/privacy-violations/",
+      "accessed_at": "2026-10-26T00:16:38.292526+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://transparency.meta.com/policies/community-standards/privacy-violations/",
+      "bytes": 238377,
+      "sha256": "a36d3c6d5bde2603b958afffa646a7cda073f266ff45dc00e208f9a3dff79090",
+      "title": [
+        "Privacy Violations | Transparency Center"
+      ],
+      "text_chars": 40,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": [
+        "S114"
+      ]
+    },
+    {
+      "key": "meta-recommend",
+      "url": "https://transparency.meta.com/policies/community-standards/recommendation-guidelines/",
+      "accessed_at": "2026-10-26T00:16:36.858154+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "404\nhttps://transparency.meta.com/policies/community-standards/recommendation-guidelines/",
+      "bytes": 213825,
+      "sha256": "24a5e6a5a7925d20245965b28283a1dedf6217f96a7d57253b32797bf0db43bb",
+      "title": [
+        "Error"
+      ],
+      "text_chars": 5,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "meta-spam",
+      "url": "https://transparency.meta.com/policies/community-standards/spam/",
+      "accessed_at": "2026-10-26T00:16:37.328776+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://transparency.meta.com/policies/community-standards/spam/",
+      "bytes": 236770,
+      "sha256": "09dd4039c84aa62951150ebe58acf1d53a6e9a4f1a219ce90f063e000602e6bd",
+      "title": [
+        "Spam | Transparency Center"
+      ],
+      "text_chars": 26,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": [
+        "S113"
+      ]
+    },
+    {
+      "key": "mms-model",
+      "url": "https://huggingface.co/facebook/mms-tts-kor/raw/main/README.md",
+      "accessed_at": "2026-10-26T00:14:52.037637+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://huggingface.co/facebook/mms-tts-kor/raw/main/README.md",
+      "bytes": 4122,
+      "sha256": "fb6b9fa6640760864fce3756d63647511ddadff7685c84f28b8fd9e593bf67e4",
+      "title": [],
+      "text_chars": 4114,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S084"
+      ]
+    },
+    {
+      "key": "monetization-policy",
+      "url": "https://www.facebook.com/help/instagram/2635536099905516?locale=en_US",
+      "accessed_at": "2026-10-26T00:05:40.703921+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.facebook.com/help/instagram/2635536099905516?locale=en_US",
+      "bytes": 395433,
+      "sha256": "a9de94aa4f800c3ee404948c3be67bcfc6de98e2e993925593ded9c857fda429",
+      "title": [
+        "Instagram Content Monetization Policies | Instagram Help Center"
+      ],
+      "text_chars": 63,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "HTTP200이나 본문 미제공; 정적/비독창 수익화 조항 독립 확인 실패",
+      "source_ids": [
+        "S012"
+      ]
+    },
+    {
+      "key": "moviepy-license",
+      "url": "https://raw.githubusercontent.com/Zulko/moviepy/master/LICENCE.txt",
+      "accessed_at": "2026-10-26T00:14:52.289567+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://raw.githubusercontent.com/Zulko/moviepy/master/LICENCE.txt",
+      "bytes": 1071,
+      "sha256": "05ecc6144af83d1b87b64f3e36f4367349ac4486afbf29e57341b7c4745dd38a",
+      "title": [],
+      "text_chars": 1071,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S091"
+      ]
+    },
+    {
+      "key": "nts-income",
+      "url": "https://t.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7664&mi=2224",
+      "accessed_at": "2026-10-26T00:18:16.671585+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://t.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7664&mi=2224",
+      "bytes": 208944,
+      "sha256": "cab8a4522044868375f1b1b1105b3b61f62aa64f5561f3cdf67d45c0dac09fcf",
+      "title": [
+        "종합소득세 개요"
+      ],
+      "text_chars": 14271,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S105"
+      ]
+    },
+    {
+      "key": "nts-media",
+      "url": "https://t.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7802&mi=2480",
+      "accessed_at": "2026-10-26T00:05:57.960136+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://t.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7802&mi=2480",
+      "bytes": 221191,
+      "sha256": "df6585754deb5704a860d784788d2cd2b494a7e5d72645baaaf6843bebd613f0",
+      "title": [
+        "세무 안내"
+      ],
+      "text_chars": 19606,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S011"
+      ]
+    },
+    {
+      "key": "nts-register",
+      "url": "https://ems.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7776&mi=2443",
+      "accessed_at": "2026-10-26T00:18:16.443883+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://ems.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7776&mi=2443",
+      "bytes": 188083,
+      "sha256": "ae58d3b4bd1828a934945cbf7d5df1b9478a7ec7f73938c095785619ef297dbf",
+      "title": [
+        "사업자등록 안내"
+      ],
+      "text_chars": 10847,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S103"
+      ]
+    },
+    {
+      "key": "nts-sns",
+      "url": "https://j.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7804&mi=2483",
+      "accessed_at": "2026-10-26T00:18:16.467941+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://j.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7804&mi=2483",
+      "bytes": 214238,
+      "sha256": "bf8ed83b05e6a18ff4a2b2cd89a611e1789491e00158d4a83e97ba620a458d69",
+      "title": [
+        "세무 안내"
+      ],
+      "text_chars": 17228,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S104"
+      ]
+    },
+    {
+      "key": "nts-withhold",
+      "url": "https://d.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=238925&mi=40349",
+      "accessed_at": "2026-10-26T00:18:16.485820+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://d.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=238925&mi=40349",
+      "bytes": 192324,
+      "sha256": "f5a6a32b4757bf83d19592c8587db3880d5c2afd43baa7709d508eb4c7188f78",
+      "title": [
+        "간이지급명세서(거주자의 사업소득)"
+      ],
+      "text_chars": 11761,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S106"
+      ]
+    },
+    {
+      "key": "overview",
+      "url": "https://developers.facebook.com/docs/instagram-platform/overview",
+      "accessed_at": "2026-10-26T00:11:59.377160+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/overview",
+      "bytes": 985447,
+      "sha256": "5801b354a6aa53d19c4f1f3c4715d79449954fd010605c1423e840cc2bf8924b",
+      "title": [
+        "Instagram 플랫폼 개요 | Meta for Developers"
+      ],
+      "text_chars": 13624,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S033"
+      ]
+    },
+    {
+      "key": "pillow-license",
+      "url": "https://raw.githubusercontent.com/python-pillow/Pillow/main/LICENSE",
+      "accessed_at": "2026-10-26T00:16:50.370905+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://raw.githubusercontent.com/python-pillow/Pillow/main/LICENSE",
+      "bytes": 1457,
+      "sha256": "15181e7363dca9aed78b79bebebc7fde7f1814b8bd311ea3b87ae8ccadfc185b",
+      "title": [],
+      "text_chars": 1453,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S094"
+      ]
+    },
+    {
+      "key": "piper-license-alt",
+      "url": "https://raw.githubusercontent.com/OHF-Voice/piper1-gpl/main/LICENSE",
+      "accessed_at": "2026-10-26T00:16:50.358417+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "404\nhttps://raw.githubusercontent.com/OHF-Voice/piper1-gpl/main/LICENSE",
+      "bytes": 14,
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "title": [],
+      "text_chars": 14,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "piper-license",
+      "url": "https://raw.githubusercontent.com/OHF-Voice/piper1-gpl/main/LICENSE.md",
+      "accessed_at": "2026-10-26T00:14:52.249381+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "404\nhttps://raw.githubusercontent.com/OHF-Voice/piper1-gpl/main/LICENSE.md",
+      "bytes": 14,
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "title": [],
+      "text_chars": 14,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "playwright-license",
+      "url": "https://raw.githubusercontent.com/microsoft/playwright/main/LICENSE",
+      "accessed_at": "2026-10-26T00:16:50.367036+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://raw.githubusercontent.com/microsoft/playwright/main/LICENSE",
+      "bytes": 11601,
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+      "title": [],
+      "text_chars": 11566,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S093"
+      ]
+    },
+    {
+      "key": "portrait-case",
+      "url": "https://law.go.kr/LSW/precInfoP.do?evtNo=2004%EB%8B%A416280",
+      "accessed_at": "2026-10-26T00:17:48.247729+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://law.go.kr/LSW/precInfoP.do?evtNo=2004%EB%8B%A416280",
+      "bytes": 76450,
+      "sha256": "b73177cd33fcac602b0de5e9ac7a76317558ef88d2d9526b9fd794d01af6cbcf",
+      "title": [
+        "판례 &gt; 위자료 | 국가법령정보센터"
+      ],
+      "text_chars": 5580,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S081"
+      ]
+    },
+    {
+      "key": "privacy-law-full",
+      "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=283839&chrClsCd=010202&efYd=20260911",
+      "accessed_at": "2026-10-26T00:17:49.065060+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=283839&chrClsCd=010202&efYd=20260911",
+      "bytes": 398723,
+      "sha256": "5eff996f84ee1310eb5c3cfd974b69cb7f0b5328156e7da5899fb2457d6ef0c4",
+      "title": [],
+      "text_chars": 91354,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S078"
+      ]
+    },
+    {
+      "key": "privacy-law",
+      "url": "https://www.law.go.kr/법령/개인정보보호법",
+      "accessed_at": "2026-10-26T00:17:41.625032+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/법령/개인정보보호법",
+      "bytes": 1279,
+      "sha256": "56534e56fe7de98b4ae311f2024430c588cecbe5ad023a4488ec7100125c1fd4",
+      "title": [
+        "개인정보보호법"
+      ],
+      "text_chars": 7,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "publicity-law-full",
+      "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=277201&chrClsCd=010202&efYd=20260528",
+      "accessed_at": "2026-10-26T00:17:48.789242+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=277201&chrClsCd=010202&efYd=20260528",
+      "bytes": 199452,
+      "sha256": "339d8062fdf1f61e7db280564862e59a9ddf3ff9cb441071374f25a91ddad2c9",
+      "title": [],
+      "text_chars": 31778,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S079"
+      ]
+    },
+    {
+      "key": "publicity-law",
+      "url": "https://www.law.go.kr/법령/부정경쟁방지및영업비밀보호에관한법률",
+      "accessed_at": "2026-10-26T00:17:42.281462+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.law.go.kr/법령/부정경쟁방지및영업비밀보호에관한법률",
+      "bytes": 1312,
+      "sha256": "f57e03aa127dde90f0a8d763054efc8820bda73bc46cb45001ead0d86b8ee1b4",
+      "title": [
+        "부정경쟁방지및영업비밀보호에관한법률"
+      ],
+      "text_chars": 18,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": []
+    },
+    {
+      "key": "recommendations",
+      "url": "https://help.instagram.com/313829416281232/",
+      "accessed_at": "2026-10-26T00:14:35.611411+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://help.instagram.com/313829416281232/",
+      "bytes": 345350,
+      "sha256": "d6bbd1f6afc585c218d2c1a1a24e763e6e8ac3e8dedc3e76dc34aba164f2799c",
+      "title": [
+        "Help Center"
+      ],
+      "text_chars": 11,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "상위 iframe 문서/제목/로그인 셸만 반환; 내용 확인으로 간주하지 않음",
+      "source_ids": [
+        "S072"
+      ]
+    },
+    {
+      "key": "socialinsider-bench",
+      "url": "https://www.socialinsider.io/social-media-benchmarks/instagram",
+      "accessed_at": "2026-10-26T00:16:58.995150+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://www.socialinsider.io/social-media-benchmarks/instagram",
+      "bytes": 883916,
+      "sha256": "953308d0634533cde7667da0560c8ee6e09cee5cff76d3061ed611e4f8c37e28",
+      "title": [
+        "2026 Instagram Organic Engagement Benchmarks"
+      ],
+      "text_chars": 27588,
+      "body_read": true,
+      "verdict": "불일치",
+      "scope": "방법론 종료일2026-12가 컷오프2026-10-26 이후이고 표본/규모 설명도 혼재. 성과 수치 채택 보류.",
+      "source_ids": [
+        "S108"
+      ]
+    },
+    {
+      "key": "subscription",
+      "url": "https://help.instagram.com/478012211024479/",
+      "accessed_at": "2026-10-26T00:11:57.722746+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://help.instagram.com/478012211024479/",
+      "bytes": 345785,
+      "sha256": "d7cdf084cdaf8971c1fd931cf1fef8ed2e61576336ca8b481245cb72d722e34c",
+      "title": [
+        "Help Center"
+      ],
+      "text_chars": 11,
+      "body_read": false,
+      "verdict": "열 수 없음",
+      "scope": "HTTP200 여부와 별개로 본문이 없으면 자격 확인 실패",
+      "source_ids": [
+        "S013"
+      ]
+    },
+    {
+      "key": "user-insights",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/api-reference/instagram-user/insights",
+      "accessed_at": "2026-10-26T00:18:04.477776+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://developers.facebook.com/documentation/instagram-platform/api-reference/instagram-user/insights",
+      "bytes": 1081908,
+      "sha256": "813f8af5814593d7ac776a650c75161ce03dafdbeb14fc6bc97a34812cbe3957",
+      "title": [
+        "Instagram 계정 인사이트 | Meta for Developers"
+      ],
+      "text_chars": 14461,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S111"
+      ]
+    },
+    {
+      "key": "whisper-readme",
+      "url": "https://raw.githubusercontent.com/openai/whisper/main/README.md",
+      "accessed_at": "2026-10-26T00:14:52.015051+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://raw.githubusercontent.com/openai/whisper/main/README.md",
+      "bytes": 8246,
+      "sha256": "38c180c2a8d8ba628a3e131ad42bf06c8a51bb681efb30fbe28d5a0f4b65f288",
+      "title": [],
+      "text_chars": 8242,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S088"
+      ]
+    },
+    {
+      "key": "xtts-model",
+      "url": "https://huggingface.co/coqui/XTTS-v2/raw/main/README.md",
+      "accessed_at": "2026-10-26T00:14:52.270358+00:00",
+      "curl_exit_code": 0,
+      "http_and_effective_url": "200\nhttps://huggingface.co/coqui/XTTS-v2/raw/main/README.md",
+      "bytes": 4263,
+      "sha256": "1cfa85b3293f685b3a6537f8da3d94820fd111270e553589073885dea3facfb7",
+      "title": [],
+      "text_chars": 4228,
+      "body_read": true,
+      "verdict": "확인함",
+      "scope": "요청·본문 추출 후 관련 절을 읽음",
+      "source_ids": [
+        "S085"
+      ]
+    }
+  ]
+}
