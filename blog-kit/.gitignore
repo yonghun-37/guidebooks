@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+auth/
+*token*.json
+*client_secret*.json
+.venv/
+__pycache__/
+.pytest_cache/
+.cache/
+output/
+config.json

@@ -28,6 +28,7 @@ jobs:
           cp -r shelf/. _site/
           cp -r site _site/reels
           cp -r site-shorts _site/shorts
+          cp -r site-blog _site/blog
           mkdir -p _site/progress/samples
           cp starter-kit/samples/*.png starter-kit/samples/*.mp4 _site/progress/samples/
           touch _site/.nojekyll

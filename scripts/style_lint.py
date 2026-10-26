@@ -2,6 +2,7 @@
 """확정 STYLE-GUIDE 3·5절 검사. 표준 라이브러리만 사용한다.
 
 python3 scripts/style_lint.py site/chapters/0*.html
+python3 scripts/style_lint.py --site site-blog --output /tmp/blog-style.json
 python3 scripts/style_lint.py site/chapters/[0-9]*.html site/practice/[0-9]*.html \
     --baseline docs/results/phase-9/baseline.json --output /tmp/lint.json
 
@@ -41,7 +42,7 @@ FORBIDDEN = [
 # 사실표의 ID 계열만 잡아 UTF-8, ISO-8601 등 일반 기술 표기를 오인하지 않는다.
 FACT_PREFIXES = ('AI AIP ALG API ASSET AUTO CRAFT ECON ETHIC EXPL GAP GLOBAL GROW '
                  'KCASE LABEL LAW LEARN META METRIC NEWS NOCODE PRAC PRICE REV '
-                 'RISK SEC TAX VIDEO XPLAT YT').split()
+                 'RISK SEC TAX VIDEO XPLAT YT BL').split()
 INTERNAL = [
     ('7r·7v', r'(?<![A-Za-z0-9])7[rv](?![A-Za-z0-9])'),
     ('Phase', r'(?<![A-Za-z])phase'), ('Hermes', r'hermes'),
@@ -217,11 +218,19 @@ def write_json(path, value):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('html', nargs='+', type=Path, help='검사할 HTML 파일들')
+    parser.add_argument('html', nargs='*', type=Path, help='검사할 HTML 파일들')
+    parser.add_argument('--site', choices=('site', 'site-shorts', 'site-blog'),
+                        help='파일을 생략하면 선택한 책의 모든 HTML 검사')
     parser.add_argument('--baseline', type=Path, help='개편 전 글자 수 JSON')
     parser.add_argument('--write-baseline', type=Path, help='최초 기준선 생성 (기존 파일 덮어쓰기 금지)')
     parser.add_argument('--output', type=Path, help='보고서 JSON 경로 (생략하면 표준 출력)')
     args = parser.parse_args()
+    if not args.html:
+        if not args.site:
+            parser.error('HTML 파일 또는 --site가 필요합니다')
+        args.html = sorted((ROOT / args.site).rglob('*.html'))
+        if not args.html:
+            parser.error('선택한 사이트에 HTML 파일이 없습니다')
     try:
         paths = list(dict.fromkeys(path.resolve() for path in args.html))
         if args.write_baseline and (args.baseline or args.write_baseline.exists()):

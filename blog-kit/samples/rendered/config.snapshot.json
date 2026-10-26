@@ -1,0 +1,43 @@
+{
+  "keyword": "청년 직장인 지원 제도 신청 전 확인할 것",
+  "article_type": "정보",
+  "platform": "naver",
+  "blog_name": "퇴근 후 생활 정보",
+  "reader": "퇴근 후 지원 제도 신청 방법을 찾는 초보 직장인",
+  "rules": {
+    "title_min": 10,
+    "title_max": 45,
+    "body_min": 600,
+    "body_max": 5000,
+    "h2_min": 2,
+    "repeat_min": 15,
+    "experience_heading": "내 경험",
+    "affiliate_markers": [
+      "link.coupang.com",
+      "coupa.ng",
+      "shoppingconnect",
+      "naver.me",
+      "affiliate",
+      "aff=",
+      "aff_id=",
+      "tag=",
+      "제휴 링크"
+    ],
+    "cliches": [
+      "현대 사회에서",
+      "빠르게 변화하는",
+      "알아보도록 하겠습니다",
+      "매우 중요합니다",
+      "다양한 측면에서",
+      "결론적으로"
+    ]
+  },
+  "rule_basis": {
+    "numeric_thresholds": "키트 기본값(바꿀 수 있음). 제목·본문은 공백 포함 문자 수. 검색 순위나 광고 승인 기준이 아닙니다.",
+    "structure_experience_repeat_cliches": "키트 기본값(바꿀 수 있음). 경험의 진위·문장 품질은 사람이 확인합니다.",
+    "affiliate_detection": "키트 기본값(바꿀 수 있음). 문자열 탐지는 누락·오탐이 있습니다. check.py --affiliate로 직접 알릴 수 있습니다.",
+    "disclosure": "공정위 지침은 제목 또는 첫 부분. 키트는 본문 첫 문단을 기본으로 검사합니다. research-blog/08-policy-copyright.md · B037 · BL-LAW-01",
+    "alt": "이미지 내용 설명 원칙: research-blog/ai-production-blog.md · B192 · BL-AI-18. 모든 이미지 alt 검사는 키트의 보수적 선택입니다.",
+    "number_sources": "키트 기본값(바꿀 수 있음). 숫자 문장과 같은 줄에 [출처: URL | 확인일 | 근거 메모] 또는 [내 기록: 날짜 | 관찰 메모]를 둡니다. 자동 진위 검증은 하지 않습니다."
+  }
+}

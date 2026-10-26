@@ -6,8 +6,9 @@
 
 AI로 Instagram 뉴스카드·릴스와 YouTube 쇼츠를 만드는 한국어 입문 교과서와 오프라인 스타터 키트다. 실제 서비스의 메뉴·입력·출력·복사용 프롬프트·결과 비교·시간·비용을 본문과 실습의 중심에 두며, 키트는 자동화·무료 대안이다.
 
-- **ReelsBook AId 통합·전체 게이트 완료, Claude Code 최종 검수 대기.** AIa/b/c의 공통 요청을 적용했다. [통합 결과](results/phase-AId.md), [도구·부록](results/phase-AIa.md), [레시피](results/phase-AIb.md), [실습](results/phase-AIc.md)을 함께 본다.
-- **ShortsBook Y5 통합·전체 로컬 게이트 완료, Claude Code 검수 대기.** Y4a/b/c/k/p/ai의 원고·요청을 통합했다. 이론 15장·실험실·용어집, 실습 0~10·E2E, AI 제작 부록과 키트를 실제 파일로 연결한다. 구현·검증·화면은 [Y5 결과](results/phase-Y5.md)를 따른다.
+- **ReelsBook V-insta 시각자료 보강·로컬 게이트 완료, Claude Code 최종 검수 대기.** 개수 기준을 폐기하고 반복·의무 인물 그림을 정리했다. 화면 위치·크롭·차트·파일 구조를 보강하고 38 HTML의 3폭×2테마 검사를 통과했다. [시각자료 계획](results/phase-V-insta-plan.md)·[결과와 화면](results/phase-V-insta.md)을 따른다. AId에서 AIa/b/c의 공통 요청을 적용했다. [통합 결과](results/phase-AId.md), [도구·부록](results/phase-AIa.md), [레시피](results/phase-AIb.md), [실습](results/phase-AIc.md)을 함께 본다.
+- **ShortsBook E-shorts 예시 전면 교체·로컬 게이트 완료, Claude Code 검수 대기.** 대표 예시는 가상 채널 「자취생 10분 생존법」의 월급날 네 칸 해설이며, 간장 계란밥 촬영·펭귄 택배기사 상상 이야기를 끝까지 연결한다. 새 AI 이미지 6장·36초 무음 샘플과 검증은 [E-shorts 결과](results/phase-E-shorts.md)를 따른다. 기존 통합 구조는 [Y5 결과](results/phase-Y5.md)에 있다.
+- **BlogBook B3 뼈대·샘플 작성·로컬 검증 완료, Claude Code 검수 대기.** 이론 2장 수익·실습 7 첫 발행, 가상 수익 계산기와 준비중 목차를 구현했다. 전체 집필은 시작하지 않았다. [B3 결과](results/phase-B3.md)·[블로그 설계](DESIGN-blog.md)를 따른다. blog-kit은 별도 작업자 담당이다.
 - Claude Code 최종 검수·커밋·실제 배포와 실계정 게시 확인은 별도다. Codex는 commit/push·계정 로그인·결제·실제 게시를 하지 않았다.
 
 ## 현재 구조와 구현
@@ -19,9 +20,10 @@ AI로 Instagram 뉴스카드·릴스와 YouTube 쇼츠를 만드는 한국어 �
 - **실험실 31개·용어 39개·본문 인용 출처 329개**는 `scripts/build_appendices.py`가 현재 원고에서 생성한다. 번호는 `book.js`에서 읽고 실험실은 slug로 구분한다. 새 도구 지도 선택 도우미도 iframe으로 원본을 재사용한다. 15장 변경 입력만 한 달 요약으로 전달하며 저장 삭제·차단 안내를 유지한다. AI 사용량 토큰은 인증용 토큰과 구분한다. AI 삽화(109,058바이트)는 본문·크레딧에 생성 고지와 프롬프트를 함께 둔다.
 - `starter-kit/`: Python 3.11+·로컬 RSS→규칙 기반/선택 웹 채팅 문안→Pillow PNG/JPEG→FFmpeg MP4→사람 검수·승인→기본 드라이런. 본인 녹음·음악·명시적 LLM/TTS 연결은 선택이다. 일일 생성은 날짜별 폴더·로그·중복 거절을 제공하고 OS 예약 도우미는 등록/확인/실행/해제 명령을 출력한다. 무인 승인·게시·자동 토큰 갱신·호스팅은 제공하지 않는다.
 - Instagram 게시 API는 Instagram Login·v26.0이다. 환경변수가 `.env`보다 우선한다. 호스팅 준비는 승인 JPEG/MP4만 복사하며 둘 다 공개 URL이 필요하다. 변경 감지·합성 자료 live 거부·LIVE_ATTEMPT 중복 방지를 유지한다. token_check는 숨김 토큰으로 본인 ID·이름만 읽는 선택 도우미다.
-- `site-shorts/`: 이론 1~15장(새 3장 AI 도구 지도)·실험실·용어집, 실습 0~10·E2E와 부록 프롬프트/모델·비용/출처를 실제 파일로 연결한다. 기존 slug를 유지하고 공통 목차·번호·이동을 통합했다. 실험실은 이론 15장의 원본 그림·도구 31개를 iframe으로 재사용한다. 용어 48개·첫 사용 링크 43개·실제 인용 Y출처 299개다. `scripts/build_appendices.py --site site-shorts`로 재생성하며 두 번 실행해도 동일하다. 테마·진행 저장 키는 ReelsBook과 분리한다. 표지 키트 샘플은 사이트 내부에 동봉했다.
-- `shorts-kit/`: 독립 Python 키트. 오프라인 가상 대본→본인 녹음/무음·사진/클립/자체 도형→1080×1920 MP4·SRT→여섯 항목/아동용·AI 판단 검수·해시 승인→드라이런. 대본 기반 자막이며 음성 인식/강제 정렬 기능은 없다. 선택 OAuth·재개 업로드는 모킹으로 확인했고 실계정 전송은 하지 않았다. 세션/토큰 비공개 보관·중복 전송 방지를 제공한다. Y5에서 pytest 38개를 다시 통과했다.
-- GitHub Actions는 `shelf/`→`/`, `site/`→`/reels/`, `site-shorts/`→`/shorts/`, 스타터 키트 샘플→`/progress/samples/`로 조립한다. 두 책 최신 상태는 `shelf/progress/index.html`에서 함께 관리한다. 현재 파일 상태가 공개 서버 배포 완료를 뜻하지 않는다.
+- `site-shorts/`: 이론 1~15장(새 3장 AI 도구 지도)·실험실·용어집, 실습 0~10·E2E와 부록 프롬프트/모델·비용/출처를 실제 파일로 연결한다. 기존 slug를 유지하고 공통 목차·번호·이동을 통합했다. 실험실은 이론 15장의 원본 그림·도구 31개를 iframe으로 재사용한다. 용어 48개·첫 사용 링크 43개·실제 인용 Y출처 299개다. 부록 재생성 도구는 `scripts/build_appendices.py --site site-shorts`다. E-shorts의 새 크레딧·실험실 안내는 정적 HTML에 반영했으며, 재생성 전 scripts의 옛 예시 템플릿을 함께 갱신해야 한다. 테마·진행 저장 키는 ReelsBook과 분리한다. 표지 키트 샘플은 사이트 내부에 동봉했다.
+- `shorts-kit/`: 독립 Python 키트. 오프라인 가상 대본→본인 녹음/무음·사진/클립/자체 도형→1080×1920 MP4·SRT→여섯 항목/아동용·AI 판단 검수·해시 승인→드라이런. 대본 기반 자막이며 음성 인식/강제 정렬 기능은 없다. 선택 OAuth·재개 업로드는 모킹으로 확인했고 실계정 전송은 하지 않았다. 세션/토큰 비공개 보관·중복 전송 방지를 제공한다. E-shorts에서 pytest 38개를 다시 통과했고 대표 샘플은 월급날 네 칸 해설 36초·무음이다.
+- `site-blog/`: 이론 1~13·실험실·용어집, 실습 0~10·E2E, AI 부록의 준비중 뼈대. 이론 2장·실습 7만 샘플이며 네이버 기본/티스토리 대안·PC/모바일 탭, 광고/제휴 계산·주소 기록을 제공한다. 저장 키는 `blogbook:`. 원본 계산기를 실험실에 재사용하고 블로그 전용 출처는 `research-blog/`의 B 각주를 사용한다.
+- GitHub Actions는 `shelf/`→`/`, `site/`→`/reels/`, `site-shorts/`→`/shorts/`, `site-blog/`→`/blog/`, 스타터 키트 샘플→`/progress/samples/`로 조립한다. 각 책 최신 상태는 `shelf/progress/index.html`에서 함께 관리한다. 현재 파일 상태가 공개 서버 배포 완료를 뜻하지 않는다.
 
 ## 조사·검증
 
@@ -30,6 +32,8 @@ AI로 Instagram 뉴스카드·릴스와 YouTube 쇼츠를 만드는 한국어 �
 - 이전 [6a 독립 검토](results/phase-6a-findings.md)의 차단 1·혼란 12·사소 2건은 [6b](results/phase-6b.md)에서 수정·검증했다. 작성자 회귀 검사와 실제 초보자 사용성 실험, 서비스 계정 실행은 서로 구분한다. 옛 `scripts/build_practice.py`는 현재 원고 덮어쓰기를 차단한다.
 
 - Y5: 정적 검사 이론 15장·원본 도구 31개·E2E 43키·오류0, 문체 36파일 통과. 현재 원고 33페이지×1280/375/360px×라이트/다크, 도구 임베드·키보드·진행/주소 복원·삭제·저장 차단·JS 없는 읽기·샘플 실제 재생·내부 링크 952개를 포함해 Chromium **3,546개** 확인 통과, 콘솔/페이지/내부 HTTP 오류0이다. 장 번호가 있는 정적 링크 64개·JS 구문·부록 재생성 동일성도 확인했다. 재현 코드·스크린샷은 [Y5 검증](results/phase-Y5/)에 있다.
+
+- B3: BlogBook 11 HTML 문체 통과·정적 오류0, 검사기 회귀30 tests, 3폭×2테마 브라우저359개 확인·동적 링크108개·콘솔/페이지/내부 HTTP 오류0. 신규 원고라 축약 비율 기준선은 미적용이다. 기존 두 책의 정적 검사도 오류0. 근거·스크린샷·미실행 범위는 [B3 결과](results/phase-B3.md)에 기록했다.
 
 ## 남은 확인과 제약
 

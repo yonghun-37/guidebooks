@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""정적 사이트의 배포 경로·본문 구조·출처·퀴즈·접근성·전체 용량을 검사한다."""
+"""정적 사이트의 배포 경로·본문 구조·출처·퀴즈·접근성·전체 용량을 검사한다.
+
+python3 scripts/check_site.py --site site-blog --output /tmp/blog-site.json
+--site 생략 시 기존 ReelsBook 검사를 유지한다. 준비중 공통 안내는 이론 원고로 세지 않는다.
+"""
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path, PurePosixPath
@@ -264,7 +268,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument('--output', type=Path)
-    parser.add_argument('--site', choices=('site', 'site-shorts', 'site-blog'), default='site')
+    parser.add_argument('--site', choices=('site', 'site-shorts', 'site-blog'), default='site',
+                        help='검사할 책 (기본: site). BlogBook 샘플도 B 출처·blog 배포 경로로 검사')
     args = parser.parse_args()
     result = check(root=args.root, site=args.site)
     rendered = json.dumps(result, ensure_ascii=False, indent=2) + '\n'

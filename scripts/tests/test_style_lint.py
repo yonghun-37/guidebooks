@@ -1,11 +1,14 @@
 """문체 게이트의 추출 범위·상자 예외·비율·CLI 회귀 검사."""
 import importlib.util
+import contextlib
+import io
 import json
 from pathlib import Path
 import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 SCRIPT = Path(__file__).resolve().parents[1] / 'style_lint.py'
 spec = importlib.util.spec_from_file_location('style_lint', SCRIPT)
@@ -71,6 +74,23 @@ class StyleLintTests(unittest.TestCase):
         row = self.analyze('<p>AIP-001</p><sup class="footnote-ref">[S300]</sup>')
         self.assertEqual(row['counts']['internal'], 1)
         self.assertEqual(row['matches']['internal'][0]['text'], 'AIP-001')
+
+    def test_blog_fact_ids_are_internal_but_sources_are_allowed(self):
+        row = self.analyze('<p>BL-ADS-01</p><sup class="footnote-ref">[B023]</sup>')
+        self.assertEqual(row['counts']['internal'], 1)
+        self.assertEqual(row['matches']['internal'][0]['text'], 'BL-ADS-01')
+
+    def test_site_argument_selects_blog_and_keeps_file_cli(self):
+        root = Path(self.directory.name)
+        book = root / 'site-blog'
+        book.mkdir()
+        (book / 'index.html').write_text('<main>블로그 샘플입니다.</main>', encoding='utf-8')
+        output = io.StringIO()
+        with patch.object(lint, 'ROOT', root), patch.object(sys, 'argv', [str(SCRIPT), '--site', 'site-blog']), contextlib.redirect_stdout(output):
+            self.assertEqual(lint.main(), 0)
+        report = json.loads(output.getvalue())
+        self.assertTrue(report['files'])
+        self.assertTrue(all(row['path'].startswith('site-blog/') for row in report['files']))
 
     def test_forbidden_table_phrases(self):
         text = ('지급자 대가 장부 현금 잔액 적격성 로컬 키트 계약 실측 아님 시간 배분 예시 탐색 후보 '

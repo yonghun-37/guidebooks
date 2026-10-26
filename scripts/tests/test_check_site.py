@@ -54,6 +54,24 @@ class CheckSiteTests(unittest.TestCase):
         self.assertEqual(self.check()['errors'], [])
         self.assertEqual(checker.check(root=self.root)['errors'], [])
 
+    def test_blog_samples_use_blog_deployment_and_b_sources(self):
+        self.write('research-blog/SOURCES.md', '## B023. 미디어 검수')
+        self.write('site-blog/index.html', '<a href="chapters/02-revenue.html">수익</a>')
+        self.write('site-blog/assets/catalog.js', 'Object.freeze([]);')
+        body = ''.join(f'<section data-block="{block}" id="{block}"></section>' for block in BLOCKS)
+        body += QUIZ.format(questions=QUESTION * 3)
+        body += '<a href="#source-b023">[B023]</a><p id="source-b023">공식 검수</p>'
+        chapter = self.write('site-blog/chapters/02-revenue.html', body)
+        self.write('site-blog/chapters/pending.html', '<main>준비중</main>')
+        self.write('site-blog/practice/07-publish.html', '<input data-practice-check="7:url">')
+        self.write('shelf/index.html', '<a href="blog/">블로그</a>')
+        result = checker.check(root=self.root, site='site-blog')
+        self.assertEqual(result['errors'], [])
+        self.assertEqual(result['theory_chapters'], 1)
+        self.assertEqual(result['practice_steps'], 1)
+        chapter.write_text(body.replace('B023', 'B999'))
+        self.assertTrue(any('미등록 출처 B999' in error for error in checker.check(root=self.root, site='site-blog')['errors']))
+
     def test_missing_file_and_encoded_same_page_anchor(self):
         self.write('site/drafts/sample.html', '<a href="no.html">없음</a><a href="#%EB%AA%A9%EC%B0%A8">앵커</a>')
         self.assert_error('없는 파일 no.html')
