@@ -2949,3 +2949,1129 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: crontab 편집·목록·제거 명령과 예약 파일 구문
 - 연결 노트: [phase-6b-scheduling.md](phase-6b-scheduling.md)
+
+
+## R3. AI 제작 도구·워크플로 (S300~S399)
+
+공통 노트: [ai-production.md](ai-production.md). 접근일 2026-10-26. HTTP200/URL 존재만으로 본문 확인을 판정하지 않았다. 관련 문서의 Hermes 근거는 같은 항목에서 구분한다.
+
+<a id="s300"></a>
+### S300. ChatGPT Free Tier FAQ
+
+- URL: https://help.openai.com/en/articles/9275245-using-chatgpt-s-free-tier-faq
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 일상텍스트 무제한 안내·도구별 별도 제한·무료 이미지, 수치 미공개
+
+<a id="s301"></a>
+### S301. What is ChatGPT Plus?
+
+- URL: https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Plus 월US$20·API 별도·변동 한도
+
+<a id="s302"></a>
+### S302. ChatGPT search
+
+- URL: https://help.openai.com/en/articles/9237897-chatgpt-search
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Search 무료 지원·검색 실행·인용/Sources 열기
+
+<a id="s303"></a>
+### S303. Terms of Use
+
+- URL: https://openai.com/policies/terms-of-use/
+- 기관: OpenAI
+- 게시·갱신일: 시행 2026-01-01
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Output 권리·입력 권리·정확성/비독점 조건
+
+<a id="s304"></a>
+### S304. Claude pricing
+
+- URL: https://claude.com/pricing
+- 기관: Anthropic
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Free 웹검색·Pro 월$20/연$200 선납
+
+- 추가 확인: [Claude 소비자 약관 직접 본문: 출력 권리 양도·평가 서비스 비상업 조건, 시행2025-10-08](https://www.anthropic.com/legal/consumer-terms)
+
+<a id="s305"></a>
+### S305. Enabling and Using Web Search
+
+- URL: https://support.claude.com/en/articles/10684626-enabling-and-using-web-search
+- 기관: Anthropic
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 웹검색 인용·원문 접근과 문맥/사용량
+
+<a id="s306"></a>
+### S306. Gemini Apps limits
+
+- URL: https://support.google.com/gemini/answer/16275805?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 5시간/주간 컴퓨팅 한도·한국 목록; 옛 일일횟수 배제
+
+<a id="s307"></a>
+### S307. 미리캔버스 다운로드 가이드
+
+- URL: https://help.miricanvas.com/hc/ko/articles/32570677518617
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: PNG/JPG/MP4·다운로드 메뉴·형식별 제한
+
+<a id="s308"></a>
+### S308. Which Perplexity plan
+
+- URL: https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you
+- 기관: Perplexity
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP); 세부 범위·상충은 비고 참조
+- 확인 범위: 무료 Pro Search3/일·Research1/월·기본검색; 월가격은 Hermes 관련 공식자료
+- 관련 확인: [Perplexity Pro 공식 안내(가격은 Hermes)](https://www.perplexity.ai/help-center/en/articles/10352901-what-is-perplexity-pro)
+
+<a id="s309"></a>
+### S309. CLOVA X 종료 안내
+
+- URL: https://clova-x.naver.com/welcome?campaign_id=2404-clovax-001&channel_id=naver_pcbs&pcode=naver_pcbs
+- 기관: NAVER
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: 공식 검색본문+Hermes; Codex 직접 열람502
+- 확인 범위: 공식 검색 결과 본문에2026-04-09 종료; 직접열기502, Hermes본체확인
+
+<a id="s310"></a>
+### S310. Cue 서비스 종료 공지
+
+- URL: https://blog.naver.com/PostView.naver?blogId=naver_search&logNo=224193993288&redirect=Dlog&widgetTypeCall=true
+- 기관: NAVER 검색
+- 게시·갱신일: 2026-02-24; 종료예정일 2026-04-09
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 본문에2026-04-09 종료예정·접속/신규대화 종료·기록파기
+
+<a id="s311"></a>
+### S311. Image prompting
+
+- URL: https://developers.openai.com/api/docs/guides/image-prompting.md
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 피사체/구도/조명·참조 편집·단계별 수정 원리
+
+<a id="s312"></a>
+### S312. Comparing Midjourney Plans
+
+- URL: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans
+- 기관: Midjourney
+- 게시·갱신일: 2026-05-18(Hermes 공식JSON)
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Basic$10·Standard$30·연선납·기업100만달러조건
+
+<a id="s313"></a>
+### S313. Hailuo Create 공개 화면
+
+- URL: https://hailuoai.video/create
+- 기관: MiniMax
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Hermes 근거; Codex HTTP200은 본문 없는 셸/제목
+- 확인 범위: Codex는제목/JS만; Hermes Get150·From$9.99·정기량 미확인
+
+<a id="s314"></a>
+### S314. 망고보드 실험실 대량 제작
+
+- URL: https://www.mangoboard.net/MangoLaboratory.do
+- 기관: 리아모어소프트
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 대량제작·엑셀/필드치환·1슬라이드·권한 미표시
+
+<a id="s315"></a>
+### S315. Ideogram Pricing
+
+- URL: https://ideogram.ai/pricing
+- 기관: Ideogram
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Plus$20·2400크레딧·주무료변동·상업허용FAQ
+
+<a id="s316"></a>
+### S316. Firefly plans
+
+- URL: https://www.adobe.com/products/firefly/plans.html
+- 기관: Adobe
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Standard$9.99·공식모델 상업·제휴모델 별도
+
+<a id="s317"></a>
+### S317. Firefly generative credits FAQ
+
+- URL: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+- 기관: Adobe
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Free 일일제한·Standard2000·유료 표준무제한·프리미엄차감
+
+<a id="s318"></a>
+### S318. Canva pricing
+
+- URL: https://www.canva.com/pricing/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료월공용AI allowance·단순작업최대20추산·미국Pro연$144·한국액미확인
+
+<a id="s319"></a>
+### S319. Create designs in bulk
+
+- URL: https://www.canva.com/help/bulk-create/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 데스크톱 적격유료/교육/비영리·CSV/XLSX·필드연결·미리보기; Sheets문서 한도차이
+- 관련 확인: [Canva Sheets 직접본문·60열 표현](https://www.canva.com/help/bulk-create-from-sheets/)
+
+<a id="s320"></a>
+### S320. Canva Content License
+
+- URL: https://www.canva.com/policies/content-license-agreement/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 소재/폰트/템플릿 사용범위·교육Pro 비상업·PopularMusic별도
+
+<a id="s321"></a>
+### S321. 미리캔버스 요금제
+
+- URL: https://www.miricanvas.com/ko/pricing
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료/Pro·템플릿/소재·금액누락
+
+<a id="s322"></a>
+### S322. 미리캔버스 Pro 요금제 가이드
+
+- URL: https://help.miricanvas.com/hc/ko/articles/48267019052057
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 일반Pro 가이드 월14900/연160800·인원별 과금
+
+<a id="s323"></a>
+### S323. 미리캔버스 AI 기능 사용·크레딧
+
+- URL: https://help.miricanvas.com/hc/ko/articles/33349963638553
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Free일200/Pro일1000·에디터 AI→생성→업로드·프레젠테이션약3분
+
+<a id="s324"></a>
+### S324. 망고보드 요금제
+
+- URL: https://www.mangoboard.net/MangoPrice.do
+- 기관: 리아모어소프트
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Free10작업/20슬라이드·일300포인트·무료MP4불가표·프로자동결제월48000; 카드기간연결미확인
+
+<a id="s325"></a>
+### S325. 망고보드 저작권
+
+- URL: https://www.mangoboard.net/MangoLicense.do
+- 기관: 리아모어소프트
+- 게시·갱신일: 시행 2026-05-07
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 워터마크/폰트/단일요소반출제한·사용권
+
+<a id="s326"></a>
+### S326. CapCut 한국 Android 배포
+
+- URL: https://play.google.com/store/apps/details?id=com.lemon.lvoverseas&hl=ko&gl=KR
+- 기관: Google Play/CapCut
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 한국 Google Play CapCut 배포·인앱구매; 실설치안함
+
+<a id="s327"></a>
+### S327. CapCut 워터마크 없는 영상
+
+- URL: https://www.capcut.com/ko-kr/help/video-without-watermark
+- 기관: CapCut
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 기본수동편집·엔딩클립·유료자산과워터마크 예외
+
+<a id="s328"></a>
+### S328. CapCut Materials License
+
+- URL: https://www.capcut.com/clause/material-license-agreement
+- 기관: CapCut
+- 게시·갱신일: 2026-01-22
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Dual Use/비상업소재·Commercial Sounds는CapCut/TikTok/TikTokBusiness밖별도허락
+
+<a id="s329"></a>
+### S329. Vrew 요금제
+
+- URL: https://vrew.ai/ko/payment/pricepolicy
+- 기관: VoyagerX
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: 가격은 Hermes 근거; Codex HTTP200은 제품소개로 가격확인 실패
+- 확인 범위: Codex는가격URL이제품소개반환·가격본문미확보; Hermes Free200·Light연143000
+
+<a id="s330"></a>
+### S330. Vrew AI 목소리 상업 이용
+
+- URL: https://vrew.imweb.me/faq/?bmode=view&idx=12343625
+- 기관: VoyagerX
+- 게시·갱신일: 2025-11-20 갱신(기존 직접 확인과 대조)
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: AI목소리 상업/YouTube수익화·Voicevox출처예외
+
+<a id="s331"></a>
+### S331. YouTube Create availability
+
+- URL: https://support.google.com/youtube/answer/13521392?hl=en
+- 기관: YouTube
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Create무료/무광고·기기조건; 연결국가목록한국확인
+
+- 추가 확인: [Create 한국 국가 목록 직접 본문](https://support.google.com/youtube/answer/13952912)
+
+<a id="s332"></a>
+### S332. YouTube Create 자막
+
+- URL: https://support.google.com/youtube/answer/13818789?hl=ko
+- 기관: YouTube
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 60초초과클립자막불가·자막생성/수정/스타일
+
+<a id="s333"></a>
+### S333. DaVinci Resolve
+
+- URL: https://www.blackmagicdesign.com/kr/products/davinciresolve
+- 기관: Blackmagic Design
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료Resolve와Studio·무료8bitUHD60fps·한국배포
+
+<a id="s334"></a>
+### S334. Clipchamp pricing
+
+- URL: https://clipchamp.com/en/pricing/
+- 기관: Microsoft
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료1080p/무워터마크·자막/음성·Microsoft365프리미엄
+
+<a id="s335"></a>
+### S335. Clipchamp Korean TTS
+
+- URL: https://clipchamp.com/en/blog/text-to-speech-update/
+- 기관: Microsoft
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 한국어음성선택예시·무료TTS·입력/미리듣기/저장
+
+<a id="s336"></a>
+### S336. 타입캐스트 요금제
+
+- URL: https://typecast.ai/kr/pricing
+- 기관: 타입캐스트
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료최초3000·Basic9900/월30000·무료출처/상업대시·기업Business
+
+<a id="s337"></a>
+### S337. Typecast usage policy
+
+- URL: https://typecast.ai/policy/
+- 기관: 타입캐스트
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 포괄상업사용문구·출처/화자권리·구독기간생성/다운로드조건; 가격표범위와구분
+
+<a id="s338"></a>
+### S338. ElevenLabs pricing
+
+- URL: https://elevenlabs.io/pricing
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Free월10000·Starter정상$6/30000·첫달$1한시할인·공용크레딧
+
+<a id="s339"></a>
+### S339. ElevenLabs publishing rights
+
+- URL: https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료상업불가·무료공개출처·유료생성비베타조건·무료소급불가
+
+<a id="s340"></a>
+### S340. 클로바더빙 무료 허용 범위
+
+- URL: https://help.naver.com/service/23823/contents/12463?lang=ko&osType=COMMONOS
+- 기관: NAVER
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료출처·수익없는채널한정등사용범위
+
+<a id="s341"></a>
+### S341. NAVER Cloud CLOVA Dubbing 유료 상품
+
+- URL: https://www.ncloud.com/product/aiService/clovaDubbing
+- 기관: NAVER Cloud
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 유료Cloud의상업/출처면제·무료상품과구분; 실제결제안함
+
+<a id="s342"></a>
+### S342. Get started with Google Flow
+
+- URL: https://support.google.com/flow/answer/16353333?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 가입요건유료문구·SynthID·한국가시워터마크/Ultra20x예외·소유권비주장
+
+<a id="s343"></a>
+### S343. Google Flow credits
+
+- URL: https://support.google.com/flow/answer/16526234?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 일50·Plus월200/Pro월1000추가·모델별차감·다중출력·피크제한·업스케일
+
+<a id="s344"></a>
+### S344. Generate videos with Gemini Apps
+
+- URL: https://support.google.com/gemini/answer/16126339?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Gemini앱현행Omni·유료AI플랜/18세·Createvideo·비율/참조
+
+<a id="s345"></a>
+### S345. Veo Gemini API
+
+- URL: https://ai.google.dev/gemini-api/docs/veo
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: API Veo3.1·9:16·4/6/8초조건·720/1080/4K·오디오/SynthID·앱과분리
+
+<a id="s346"></a>
+### S346. Sora discontinuation
+
+- URL: https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation
+- 기관: OpenAI
+- 게시·갱신일: 갱신 절대일 미표기; 종료일 2026-04-26/09-24
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Sora웹앱04-26/API09-24종료안내·옛가이드주의
+
+<a id="s347"></a>
+### S347. Runway pricing
+
+- URL: https://runway.com/pricing
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료최초125·Standard월15/연환산12·625크레딧
+
+- 추가 확인: [Runway 한국iOS 배포(Hermes)](https://apps.apple.com/kr/app/runway-ai-image-video/id1665024375)
+
+<a id="s348"></a>
+### S348. Runway commercial use
+
+- URL: https://help.runwayml.com/hc/en-us/articles/18927776141715-Usage-rights
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Runway생성물상업제한없음·출처의무없음·입력권리
+
+<a id="s349"></a>
+### S349. Runway Image to Video Prompting Guide
+
+- URL: https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: I2V는움직임/카메라/시간중심·이미지가구도/스타일정의; 연결Introduction긍정문원칙
+- 관련 확인: [Runway Introduction 직접본문](https://help.runwayml.com/hc/en-us/articles/46182941379347-Introduction-to-Prompting)
+
+<a id="s350"></a>
+### S350. Kling 공식 멤버십 요금표
+
+- URL: https://app.klingai.com/global/membership
+- 기관: Kling
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Hermes 근거; Codex HTTP200은 본문 없는 셸/제목
+- 확인 범위: Codex셸82바이트/robots·Hermes공식표Standard660크레딧/첫6.99/갱신8.8·무료지급상충·상업조건
+- 관련 확인: [Kling 유료약관(Hermes)](https://app.klingai.com/global/docs/payment-policy)
+
+<a id="s351"></a>
+### S351. Hailuo subscription terms
+
+- URL: https://hailuoai.video/doc/payment-policy.html
+- 기관: MiniMax
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 약관Standard14.99/1000·무료워터마크·유료상업·신규보상3일유효
+
+<a id="s352"></a>
+### S352. MiniMax video generation
+
+- URL: https://platform.minimax.io/docs/guides/video-generation
+- 기관: MiniMax
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP); 세부 범위·상충은 비고 참조
+- 확인 범위: MiniMax API H3/H3Max·길이/해상도/참조·유료API; Hailuo앱과구분
+- 관련 확인: [MiniMax H3 소개(사양은 Hermes)](https://www.minimax.io/blog/minimax-h3)
+
+<a id="s353"></a>
+### S353. Pika pricing
+
+- URL: https://pika.art/pricing
+- 기관: Pika
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP); 세부 범위·상충은 비고 참조
+- 확인 범위: Free월0/무워터마크/상업불가·Starter10/900·Creator35/3150; Starter상업캐시상충
+- 관련 확인: [Pika2.5 모델사양(Hermes)](https://create.pika.art/apps/pika-2-5)
+
+- 추가 확인: [Pika 한국iOS 배포·별도앱상품(Hermes)](https://apps.apple.com/kr/app/pika-ai-video/id6680155400)
+
+<a id="s354"></a>
+### S354. Pika help/support
+
+- URL: https://pika.art/support
+- 기관: Pika
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 지원문서Free상업없음·Starter/Creator/Fancy상업포함·무워터마크
+
+<a id="s355"></a>
+### S355. Luma pricing
+
+- URL: https://lumalabs.ai/pricing
+- 기관: Luma
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP); 세부 범위·상충은 비고 참조
+- 확인 범위: Plus월30/10000·Pro90/40000·Ray/제휴모델해상도/Audio비용표
+- 관련 확인: [Luma모델가이드 상충(Hermes)](https://lumalabs.ai/learning-center/articles/luma-video-models-field-guide)
+
+- 추가 확인: [Luma 한국iOS 배포(Hermes)](https://apps.apple.com/kr/app/luma-dream-machine/id6478852867)
+
+<a id="s356"></a>
+### S356. Dream Machine licensing
+
+- URL: https://lumalabs.ai/learning-hub/licensing
+- 기관: Luma
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Free/Lite비상업/워터마크·Plus이상상업·나중결제소급아님; 플랜신구차이
+
+<a id="s357"></a>
+### S357. Suno pricing
+
+- URL: https://suno.com/pricing
+- 기관: Suno
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Free일50/월다운로드없음/상업없음·Pro연환산8/2500/20다운로드
+
+<a id="s358"></a>
+### S358. Suno commercial rights
+
+- URL: https://help.suno.com/en/articles/9601665
+- 기관: Suno
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP); 세부 범위·상충은 비고 참조
+- 확인 범위: 구독중다운로드곡상업권·저작권보장아님; 옛생성시점/소급FAQ와범위차이
+- 관련 확인: [Suno 소급권FAQ(Hermes)](https://help.suno.com/en/articles/2425729?lang=en)
+
+<a id="s359"></a>
+### S359. Udio UMG 변경과 다운로드 제한
+
+- URL: https://help.udio.com/en/articles/12683565-changes-associated-with-the-universal-music-group-umg-partnership
+- 기관: Udio
+- 게시·갱신일: 2026-02-17
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: UMG변경·다운로드중단·월2400/6000크레딧
+
+<a id="s360"></a>
+### S360. YouTube Audio Library
+
+- URL: https://support.google.com/youtube/answer/3376882?hl=en
+- 기관: YouTube
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 보관함MP3/표시문·유튜브수익/ContentID안전안내·외부플랫폼보증별도
+
+<a id="s361"></a>
+### S361. Dream Track
+
+- URL: https://support.google.com/youtube/answer/14151606?hl=en
+- 기관: YouTube
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: DreamTrack 대부분비EEA/기기영어·Create미국·음악다운로드불가·AI라벨
+- 관련 확인: [DreamTrack한국어 대조(Hermes)](https://support.google.com/youtube/answer/14151606?hl=ko)
+
+<a id="s362"></a>
+### S362. Instagram AI 콘텐츠 표시 도움말
+
+- URL: https://help.instagram.com/761121959519495/?cms_platform=iphone-app&helpref=platform_switcher
+- 기관: Meta/Instagram
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Hermes 근거; Codex HTTP200은 본문 없는 셸/제목
+- 확인 범위: 현행Instagram도움말:사실적영상/음성신고·정지이미지의무없음·편집라벨메뉴; Codex13바이트셸/Hermes근거
+- 관련 확인: [Meta 정책 뉴스룸 직접본문·과거도입 설명](https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/)
+
+<a id="s363"></a>
+### S363. YouTube altered or synthetic disclosure
+
+- URL: https://support.google.com/youtube/answer/14328491?hl=en
+- 기관: YouTube
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 현실적합성공개·대본/자막/본인복제예외·AI음악예시·C2PA/내부자동라벨·일부수정불가
+
+<a id="s364"></a>
+### S364. Veo prompt guide
+
+- URL: https://deepmind.google/models/veo/prompt-guide/
+- 기관: Google DeepMind
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Veo공식피사체/카메라/빛/행동/오디오프롬프트
+
+<a id="s365"></a>
+### S365. Canva 한국어 카드뉴스 가이드
+
+- URL: https://www.canva.com/ko_kr/learn/card-news/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP); 세부 범위·상충은 비고 참조
+- 확인 범위: Codex는현재create/card-news소개로리디렉션; 모바일버튼튜토리얼은Hermes근거
+
+<a id="s366"></a>
+### S366. Vrew 공식 AI 영상 제작 방법
+
+- URL: https://vrew.ai/ko/blog/all/how-to-ai-video-self-maker
+- 기관: VoyagerX
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 대본→음성/이미지→자동자막/문서식편집·실측안함
+
+<a id="s367"></a>
+### S367. Flow video generation
+
+- URL: https://support.google.com/flow/answer/16353334?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Flow Text/Frames/Ingredients·비율/모델설정·생성절차
+
+<a id="s368"></a>
+### S368. 미리캔버스 AI 영상
+
+- URL: https://www.miricanvas.com/ko/features/video-generator
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 미리캔버스영상생성/에디터전달·일일한도변동
+
+<a id="s369"></a>
+### S369. Gemini 이미지 생성·편집
+
+- URL: https://support.google.com/gemini/answer/14286560?hl=ko
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Gemini이미지생성·참조/편집·무료1K/유료2K·한국어안내
+
+<a id="s370"></a>
+### S370. 미리캔버스 글꼴 이용
+
+- URL: https://help.miricanvas.com/hc/ko/articles/900005220846
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료배포/정식계약폰트·일부Pro/개별구매·폰트파일외부허락과구분
+
+<a id="s371"></a>
+### S371. 미리캔버스 AI 커넥터 예시
+
+- URL: https://help.miricanvas.com/hc/ko/articles/63392944246553
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: ChatGPT/Claude→카드/템플릿→미리캔버스에디터; 대화안다운로드/기존디자인수정불가
+
+<a id="s372"></a>
+### S372. Midjourney Version
+
+- URL: https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version
+- 기관: Midjourney
+- 게시·갱신일: 갱신일 미표기; V8.2 기본전환 2026-07-24
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: V8.2기본/07-24·Edit Model이Omni/CharacterReference대체
+
+<a id="s373"></a>
+### S373. Midjourney Parameter List
+
+- URL: https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List
+- 기관: Midjourney
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 문장끝--ar/--sref·버전별--oref·--edit·seed용도
+
+<a id="s374"></a>
+### S374. Images in ChatGPT
+
+- URL: https://help.openai.com/en/articles/11084440-images-in-chatgpt
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 모든tier이미지·비율선택/프롬프트·부분편집·Save다운로드
+
+<a id="s375"></a>
+### S375. Gemini 한국 구독 가격
+
+- URL: https://gemini.google/subscriptions/?hl=ko
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP); 세부 범위·상충은 비고 참조
+- 확인 범위: 한국Plus7500·Flow200/1000·Pro금액빈판본; Pro29000은Hermes근거
+
+<a id="s376"></a>
+### S376. Advancing content provenance
+
+- URL: https://openai.com/index/advancing-content-provenance/
+- 기관: OpenAI
+- 게시·갱신일: 2026-05-19; 추가 갱신 2026-07-31/10-05
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: C2PA/SynthID·음성확대·메타데이터제거와비가시신호·탐지한계
+
+<a id="s377"></a>
+### S377. Ideogram Plans and Credits
+
+- URL: https://docs.ideogram.ai/plans-and-billing/available-plans.md
+- 기관: Ideogram
+- 게시·갱신일: 문서 검증일 2026-10-15
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 10-15검증플랜표·주30소셜로그인조건·이메일무료없음·Plus20/2400
+
+<a id="s378"></a>
+### S378. YouTube Create AI features
+
+- URL: https://support.google.com/youtube/answer/16631240?hl=en
+- 기관: YouTube
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: CreateOmni최대10초·9:16·음성지시·제공국한국없음; 다른AI편집국가와구분
+
+<a id="s379"></a>
+### S379. YouTube generative AI features
+
+- URL: https://support.google.com/youtube/answer/15260303?hl=en
+- 기관: YouTube
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Shorts자체AI자동공개·영어기기/국가차이·독립클립최대10초
+
+<a id="s380"></a>
+### S380. CapCut Pro cost
+
+- URL: https://www.capcut.com/help/how-much-does-capcut-pro-cost
+- 기관: CapCut
+- 게시·갱신일: 2026-09-23(Hermes)
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Pro지역/기기/프로모션별·웹/PC/앱가격확인경로·종료Dreamina광고와구분
+
+<a id="s381"></a>
+### S381. 클로바더빙 무료 사용량
+
+- URL: https://help.naver.com/service/23823/contents/13776?lang=ko&osType=PC
+- 기관: NAVER
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 무료월15000자/20다운로드/누적5프로젝트·매월1일·출처
+
+<a id="s382"></a>
+### S382. Google Flow regions
+
+- URL: https://support.google.com/flow/answer/16353544?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Flow한국국가목록·한국어/영어권장·18세
+
+<a id="s383"></a>
+### S383. Runway Free plan details
+
+- URL: https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 125최초/만료없음/재충전없음·무료모델로그인확인·워터마크
+
+<a id="s384"></a>
+### S384. Creating with Gen-4.5
+
+- URL: https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Standard이상Gen4.5·초당12·2~10초·720p·I2V9:16/T2V16:9·fps24/25
+
+<a id="s385"></a>
+### S385. Clipchamp captions workflow
+
+- URL: https://support.microsoft.com/en-us/clipchamp/how-to-use-autocaptions-in-clipchamp
+- 기관: Microsoft
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Clipchamp언어선택/전사/수정/SRT·Azure처리
+
+<a id="s386"></a>
+### S386. Archived Sora 2 Prompting Guide
+
+- URL: https://developers.openai.com/cookbook/examples/sora/sora2_prompting_guide.md
+- 기관: OpenAI
+- 게시·갱신일: 2026-03-12; 현재 아카이브
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 03-12Sora가이드아카이브·짧은샷/한동작·설정과프롬프트구분; 현재이용가이드아님
+
+<a id="s387"></a>
+### S387. Suno Terms
+
+- URL: https://suno.com/terms
+- 기관: Suno
+- 게시·갱신일: 개정 2026-08-10 / 시행 2026-09-03
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 09-03시행·허용다운로드상업조건·무료비상업·메타데이터은폐금지·저작권보장없음
+
+<a id="s388"></a>
+### S388. Vrew 통합 크레딧 변경 공지
+
+- URL: https://vrew.imweb.me/notice/?idx=170656156&bmode=view
+- 기관: VoyagerX
+- 게시·갱신일: 2026-04-01; 변경예정 2026-04-22
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 04-22통합크레딧변경예고·Free200/분당1/목소리100자/번역300자·공용
+
+<a id="s389"></a>
+### S389. Meta industry labels C2PA IPTC
+
+- URL: https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/
+- 기관: Meta
+- 게시·갱신일: 게시 2024-02-06 / 상단 갱신 2025-04-01(Hermes)
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Meta C2PA/IPTC신호·사실적영상/음성자기공개·탐지한계; 최초정책설명
+
+<a id="s390"></a>
+### S390. Ideogram Text in Images
+
+- URL: https://docs.ideogram.ai/prompting/text-in-images.md
+- 기관: Ideogram
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 짧은따옴표문구·타이포·영어우위/비라틴한계·편집가능글자
+
+<a id="s391"></a>
+### S391. Vrew 공식 자동 자막 제작 가이드
+
+- URL: https://vrew.ai/ko/blog/all/ai-subtitle-with-vrew/
+- 기관: VoyagerX
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 자동자막교정/SRT메뉴·자사1분영상10~15초전사홍보값은전체제작시간아님
+
+<a id="s392"></a>
+### S392. 미리캔버스 라이선스 약관
+
+- URL: https://www.miricanvas.com/s/119
+- 기관: 미리디
+- 게시·갱신일: 영문판 시행 2022-10-13
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 콘텐츠별라이선스·완성SNS디자인허용·단독반출/재판매조건
+
+<a id="s393"></a>
+### S393. Canva AI Product Terms
+
+- URL: https://www.canva.com/policies/ai-product-terms/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 출력권리/비독점/사용자검수·기존소재라이선스유지·국가/언어차이
+
+<a id="s394"></a>
+### S394. Clipchamp Shorts 제작 가이드
+
+- URL: https://clipchamp.com/en/blog/how-to-make-youtube-shorts/
+- 기관: Microsoft
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Shorts9:16타임라인·소재/컷/자막/내보내기공식워크플로
+
+<a id="s395"></a>
+### S395. Kling 4.0 공식 출시 사양
+
+- URL: https://kling.ai/release-note/release-notes/Kling_4?type=dialog
+- 기관: Kling
+- 게시·갱신일: 출시표기 10월15일·연도/갱신일 미표기(Hermes)
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Hermes 근거; Codex HTTP200은 본문 없는 셸/제목
+- 확인 범위: Codex출시제목셸만·Hermes Kling4.0사양/출시10-15연도미표기/comingsoon구별
+- 관련 확인: [Kling한국iOS배포(Hermes)](https://apps.apple.com/kr/app/kling-ai-ai-image-video-maker/id6738049229)
+
+<a id="s396"></a>
+### S396. ChatGPT supported countries
+
+- URL: https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 지원국목록SouthKorea·이미지/유료기능보장과분리
+
+<a id="s397"></a>
+### S397. Firefly product description C2PA
+
+- URL: https://helpx.adobe.com/legal/product-descriptions/adobe-firefly.html
+- 기관: Adobe
+- 게시·갱신일: 2026-08-27
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 08-27문서·조건부IP면책·제휴/베타예외·C2PA자동첨부
+
+<a id="s398"></a>
+### S398. Nano Banana Pro prompting tips
+
+- URL: https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: Gemini이미지용피사체/용도/비율/참조/캐릭터/편집프롬프트
+
+<a id="s399"></a>
+### S399. Firefly 한국 개인 월별 요금제
+
+- URL: https://www.adobe.com/kr/products/firefly/plans.html
+- 기관: Adobe
+- 게시·갱신일: 게시·갱신일 미표기
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 수준: Codex 직접 본문 확인(웹/HTTP)
+- 확인 범위: 한국Standard월13200·Pro26400/VAT포함·2000/4000크레딧·무료일일제한
