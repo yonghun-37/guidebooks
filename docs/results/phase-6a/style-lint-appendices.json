@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": null,
+  "summary": {
+    "files": 4,
+    "passed": 4,
+    "failed": 0,
+    "char_count": 18145,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 2,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site/practice/e2e.html",
+      "track": "practice",
+      "char_count": 1609,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "301b5135296c9c7e9ca9e3eff1d7c8ee102cfed8775490edf7f381a1282ed505"
+    },
+    {
+      "path": "site/lab.html",
+      "track": "theory",
+      "char_count": 974,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "2beb7105f2f587027948719d715a2a5d445592e5d2ecda25a996553b35a027b3"
+    },
+    {
+      "path": "site/glossary.html",
+      "track": "theory",
+      "char_count": 1183,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "a3aab11c3ea4bfc9ffbba20837e250a0cc4b94c17851cce0df33f12f30e6e51d"
+    },
+    {
+      "path": "site/credits.html",
+      "track": "theory",
+      "char_count": 14379,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 2,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "0~10·E2E 진행 기록을 추가했습니다. 미확인 앱 메뉴는 공식 도움말과 확인 공백을 표시합니다. 공개 URL"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "가했습니다. 1장 대기 문장을 조사 근거와 미확인 범위로 대체했습니다. 2026-10-26 · 앞선 제작·집필"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "549a32c91b96eb9d8eda71de1f2ca95fa2dfc441cd2a7ee8ba043a1d47c1a931"
+    }
+  ]
+}

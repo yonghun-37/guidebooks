@@ -1,0 +1,471 @@
+{
+  "browser": "149.0.7827.55",
+  "records": [
+    {
+      "path": "chapters/01-map.html",
+      "label": "initial",
+      "result": "6편 · 준비·점검을 뺀 시간 안에 연습할 분량입니다."
+    },
+    {
+      "path": "chapters/01-map.html",
+      "label": "changed inputs",
+      "result": "0편 · 준비·점검 시간을 확보하거나 첫 제작 범위를 줄이세요."
+    },
+    {
+      "path": "chapters/01-map.html",
+      "label": "changed selections",
+      "result": "0편 · 준비·점검 시간을 확보하거나 첫 제작 범위를 줄이세요."
+    },
+    {
+      "path": "chapters/01-map.html",
+      "label": "extreme preset",
+      "result": "0편 · 준비·점검 시간을 확보하거나 첫 제작 범위를 줄이세요."
+    },
+    {
+      "path": "chapters/02-formats.html",
+      "label": "initial",
+      "result": "5장 · 표지와 요약 사이에 설명을 한 장씩 넣는 구성입니다."
+    },
+    {
+      "path": "chapters/02-formats.html",
+      "label": "changed inputs",
+      "result": "20장 · 표지와 요약 사이에 설명을 한 장씩 넣는 구성입니다."
+    },
+    {
+      "path": "chapters/02-formats.html",
+      "label": "changed selections",
+      "result": "20장 · 표지와 요약 사이에 설명을 한 장씩 넣는 구성입니다."
+    },
+    {
+      "path": "chapters/02-formats.html",
+      "label": "extreme preset",
+      "result": "2장 · 표지와 요약만 있으니 독자에게 전할 설명을 추가하세요."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "initial",
+      "result": "30,000원 · 제휴 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "sponsor",
+      "result": "170,000원 · 협찬 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "affiliate",
+      "result": "30,000원 · 제휴 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "own",
+      "result": "40,000원 · 내 상품 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "platform",
+      "result": "0원 · 초대·활성화가 없으면 조회만으로 보너스가 생기지 않습니다."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "platform confirmed 2000",
+      "result": "2,000원 · 플랫폼 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "no purchases",
+      "result": "0원 · 제휴 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "cost exceeds revenue",
+      "result": "-20,000원 · 제휴 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다."
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "label": "empty input",
+      "result": "— · 빈칸·범위를 확인해 입력하세요."
+    },
+    {
+      "path": "chapters/04-niche.html",
+      "label": "initial",
+      "result": "0개 · 독자와 반복 질문부터 적으세요."
+    },
+    {
+      "path": "chapters/04-niche.html",
+      "label": "changed inputs",
+      "result": "3개 · 샘플을 보여 주고 구매 의향을 물어보세요."
+    },
+    {
+      "path": "chapters/04-niche.html",
+      "label": "changed selections",
+      "result": "3개 · 샘플을 보여 주고 구매 의향을 물어보세요."
+    },
+    {
+      "path": "chapters/04-niche.html",
+      "label": "extreme preset",
+      "result": "0개 · 독자와 반복 질문부터 적으세요."
+    },
+    {
+      "path": "chapters/04-niche.html",
+      "label": "normal reset",
+      "result": "3개 · 샘플을 보여 주고 구매 의향을 물어보세요."
+    },
+    {
+      "path": "chapters/05-sources.html",
+      "label": "initial",
+      "result": "0개 · 체크하지 않은 항목을 먼저 채우세요."
+    },
+    {
+      "path": "chapters/05-sources.html",
+      "label": "changed inputs",
+      "result": "3개 · 적은 기록을 원문과 다시 대조하세요."
+    },
+    {
+      "path": "chapters/05-sources.html",
+      "label": "changed selections",
+      "result": "3개 · 적은 기록을 원문과 다시 대조하세요."
+    },
+    {
+      "path": "chapters/05-sources.html",
+      "label": "extreme preset",
+      "result": "3개 · 적은 기록을 원문과 다시 대조하세요."
+    },
+    {
+      "path": "chapters/05-sources.html",
+      "label": "normal reset",
+      "result": "0개 · 체크하지 않은 항목을 먼저 채우세요."
+    },
+    {
+      "path": "chapters/06-writing.html",
+      "label": "initial",
+      "result": "0개 · 체크하지 않은 항목을 먼저 채우세요."
+    },
+    {
+      "path": "chapters/06-writing.html",
+      "label": "changed inputs",
+      "result": "3개 · 적은 기록을 원문과 다시 대조하세요."
+    },
+    {
+      "path": "chapters/06-writing.html",
+      "label": "changed selections",
+      "result": "3개 · 적은 기록을 원문과 다시 대조하세요."
+    },
+    {
+      "path": "chapters/06-writing.html",
+      "label": "extreme preset",
+      "result": "3개 · 적은 기록을 원문과 다시 대조하세요."
+    },
+    {
+      "path": "chapters/06-writing.html",
+      "label": "normal reset",
+      "result": "0개 · 체크하지 않은 항목을 먼저 채우세요."
+    },
+    {
+      "path": "chapters/07-cards.html",
+      "label": "initial",
+      "result": "0줄 넘침 · 휴대폰 크기에서 제목부터 출처까지 직접 읽어 보세요."
+    },
+    {
+      "path": "chapters/07-cards.html",
+      "label": "overflow preset",
+      "result": "19줄 넘침 · 잘린 곳의 문장을 줄이거나 글자 크기·여백을 조정하세요."
+    },
+    {
+      "path": "chapters/07-cards.html",
+      "label": "shortened sentence",
+      "result": "0줄 넘침 · 휴대폰 크기에서 제목부터 출처까지 직접 읽어 보세요."
+    },
+    {
+      "path": "chapters/07-cards.html",
+      "label": "keyboard size and smaller view",
+      "result": "0줄 넘침 · 휴대폰 크기에서 제목부터 출처까지 직접 읽어 보세요."
+    },
+    {
+      "path": "chapters/07-cards.html",
+      "label": "empty size",
+      "result": "— · 글자 크기와 여백의 입력 범위를 확인하세요."
+    },
+    {
+      "path": "chapters/08-reels.html",
+      "label": "initial",
+      "result": "4.0초 · 선택 문장을 직접 읽고 짧으면 문장을 줄이거나 시간을 늘리세요."
+    },
+    {
+      "path": "chapters/08-reels.html",
+      "label": "playing clock",
+      "clock": "1.00 / 20.00초"
+    },
+    {
+      "path": "chapters/08-reels.html",
+      "label": "scene 2 frame forward",
+      "result": "4.0초 · 선택 문장을 직접 읽고 짧으면 문장을 줄이거나 시간을 늘리세요."
+    },
+    {
+      "path": "chapters/08-reels.html",
+      "label": "reversed time",
+      "result": "— · 시작은 끝보다 앞서고 다른 자막과 겹치지 않아야 합니다."
+    },
+    {
+      "path": "chapters/08-reels.html",
+      "label": "fast preset",
+      "result": "1.0초 · 자막 사이에 빈 구간이 있으니 선택 문장을 직접 읽고 짧으면 문장을 줄이거나 시간을 늘리세요."
+    },
+    {
+      "path": "chapters/08-reels.html",
+      "label": "sentence repaired",
+      "result": "1.0초 · 자막 사이에 빈 구간이 있으니 선택 문장을 직접 읽고 짧으면 문장을 줄이거나 시간을 늘리세요."
+    },
+    {
+      "path": "chapters/09-pipeline.html",
+      "label": "initial",
+      "result": "6,000원 · 입력한 서비스 비용만 합친 금액입니다."
+    },
+    {
+      "path": "chapters/09-pipeline.html",
+      "label": "changed inputs",
+      "result": "90,000원 · 입력한 서비스 비용만 합친 금액입니다."
+    },
+    {
+      "path": "chapters/09-pipeline.html",
+      "label": "changed selections",
+      "result": "90,000원 · 입력한 서비스 비용만 합친 금액입니다."
+    },
+    {
+      "path": "chapters/09-pipeline.html",
+      "label": "extreme preset",
+      "result": "90,000원 · 입력한 서비스 비용만 합친 금액입니다."
+    },
+    {
+      "path": "chapters/09-pipeline.html",
+      "label": "normal reset",
+      "result": "6,000원 · 입력한 서비스 비용만 합친 금액입니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "initial",
+      "result": "0건 확인 · 검수한 파일과 현재 승인을 확인합니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "normal step 1",
+      "result": "0건 확인 · 외부에서 읽을 수 있는 미디어 주소를 확인합니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "normal step 2",
+      "result": "0건 확인 · 요청이 받아들여졌으며 아직 게시되지 않았습니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "normal step 3",
+      "result": "0건 확인 · 준비 상자가 완료됐으니 게시 요청으로 진행합니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "normal step 4",
+      "result": "0건 확인 · 실제 게시물과 주소를 확인해야 완료입니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "normal step 5",
+      "result": "1건 확인 · 가상 게시물의 주소까지 확인했으니 실제 게시에서는 내 프로필도 확인하세요."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "failure scenario 1",
+      "result": "0건 확인 · 공개 범위와 주소를 고친 뒤 다시 확인합니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "resolved 1",
+      "result": "0건 확인 · 외부에서 읽을 수 있는 미디어 주소를 확인합니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "failure scenario 2",
+      "result": "0건 확인 · 게시 요청을 멈추고 준비 상자의 처리 상태를 다시 확인합니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "resolved 2",
+      "result": "0건 확인 · 준비 상자가 완료됐으니 게시 요청으로 진행합니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "failure scenario 3",
+      "result": "0건 확인 · 게시됐을 수 있으니 프로필과 원격 상태부터 확인합니다."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "retry after lost response",
+      "result": "0건 재시도 · 중복 게시를 막으려면 프로필과 원격 상태를 먼저 확인하세요."
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "label": "resolved 3",
+      "result": "1건 확인 · 가상 게시물의 주소까지 확인했으니 실제 게시에서는 내 프로필도 확인하세요."
+    },
+    {
+      "path": "chapters/11-analytics.html",
+      "label": "initial",
+      "result": "5% · 같은 조건의 다른 게시물과 이 비율을 비교하세요."
+    },
+    {
+      "path": "chapters/11-analytics.html",
+      "label": "changed inputs",
+      "result": "200% · 같은 조건의 다른 게시물과 이 비율을 비교하세요."
+    },
+    {
+      "path": "chapters/11-analytics.html",
+      "label": "changed selections",
+      "result": "200% · 같은 조건의 다른 게시물과 이 비율을 비교하세요."
+    },
+    {
+      "path": "chapters/11-analytics.html",
+      "label": "extreme preset",
+      "result": "— · 도달이 없어 비율을 계산할 수 없으니 측정 상태를 확인하세요."
+    },
+    {
+      "path": "chapters/11-analytics.html",
+      "label": "normal reset",
+      "result": "5% · 같은 조건의 다른 게시물과 이 비율을 비교하세요."
+    },
+    {
+      "path": "chapters/12-safety.html",
+      "label": "initial",
+      "result": "4개 남음 · 권리·사실·표시·보안의 증거와 수정 내용을 확인하세요."
+    },
+    {
+      "path": "chapters/12-safety.html",
+      "label": "publish without evidence 0",
+      "result": "4개 남음 · 예상을 기록했으니 증거를 열어 판단을 확인하세요."
+    },
+    {
+      "path": "chapters/12-safety.html",
+      "label": "all confirmed without repair 0",
+      "result": "3개 남음 · 예상을 기록했으니 증거를 열어 판단을 확인하세요."
+    },
+    {
+      "path": "chapters/12-safety.html",
+      "label": "evidence repair then publish 0",
+      "result": "0개 남음 · 예상을 기록했으니 증거를 열어 판단을 확인하세요."
+    },
+    {
+      "path": "chapters/12-safety.html",
+      "label": "publish without evidence 1",
+      "result": "4개 남음 · 예상을 기록했으니 증거를 열어 판단을 확인하세요."
+    },
+    {
+      "path": "chapters/12-safety.html",
+      "label": "all confirmed without repair 1",
+      "result": "3개 남음 · 예상을 기록했으니 증거를 열어 판단을 확인하세요."
+    },
+    {
+      "path": "chapters/12-safety.html",
+      "label": "evidence repair then publish 1",
+      "result": "0개 남음 · 예상을 기록했으니 증거를 열어 판단을 확인하세요."
+    },
+    {
+      "path": "chapters/13-roadmap.html",
+      "label": "initial",
+      "result": "4건 · 그만큼 제작·수정할 시간이 있는지 먼저 확인하세요."
+    },
+    {
+      "path": "chapters/13-roadmap.html",
+      "label": "changed inputs",
+      "result": "2건 · 그만큼 제작·수정할 시간이 있는지 먼저 확인하세요."
+    },
+    {
+      "path": "chapters/13-roadmap.html",
+      "label": "changed selections",
+      "result": "2건 · 그만큼 제작·수정할 시간이 있는지 먼저 확인하세요."
+    },
+    {
+      "path": "chapters/13-roadmap.html",
+      "label": "extreme preset",
+      "result": "— · 제안 가격을 정한 뒤 필요한 거래 수를 계산하세요."
+    },
+    {
+      "path": "chapters/13-roadmap.html",
+      "label": "normal reset",
+      "result": "4건 · 그만큼 제작·수정할 시간이 있는지 먼저 확인하세요."
+    },
+    {
+      "path": "chapters/14-plan.html",
+      "label": "initial",
+      "result": "440분 · 이 시간 안에 미완료 작업을 나누고 모자란 일은 다음 기간으로 옮기세요."
+    },
+    {
+      "path": "chapters/14-plan.html",
+      "label": "changed inputs",
+      "result": "440분 · 이 시간 안에 미완료 작업을 나누고 모자란 일은 다음 기간으로 옮기세요."
+    },
+    {
+      "path": "chapters/14-plan.html",
+      "label": "changed selections",
+      "result": "600분 · 이 시간 안에 미완료 작업을 나누고 모자란 일은 다음 기간으로 옮기세요."
+    },
+    {
+      "path": "chapters/14-plan.html",
+      "label": "extreme preset",
+      "result": "0분 · 제작 시간이 없으니 활동일·기간·작업 범위를 조정하세요."
+    },
+    {
+      "path": "chapters/14-plan.html",
+      "label": "normal reset",
+      "result": "440분 · 이 시간 안에 미완료 작업을 나누고 모자란 일은 다음 기간으로 옮기세요."
+    },
+    {
+      "path": "chapters/14-plan.html",
+      "label": "30min 5days plan",
+      "result": "440분 · 이 시간 안에 미완료 작업을 나누고 모자란 일은 다음 기간으로 옮기세요."
+    },
+    {
+      "path": "practice/04-cards.html",
+      "label": "shared practice tool manipulated",
+      "result": "19줄 넘침 · 잘린 곳의 문장을 줄이거나 글자 크기·여백을 조정하세요."
+    },
+    {
+      "path": "practice/05-reel.html",
+      "label": "shared practice tool manipulated",
+      "result": "1.0초 · 자막 사이에 빈 구간이 있으니 선택 문장을 직접 읽고 짧으면 문장을 줄이거나 시간을 늘리세요."
+    },
+    {
+      "path": "practice/06-review.html",
+      "label": "shared practice tool manipulated",
+      "result": "4개 남음 · 권리·사실·표시·보안의 증거와 수정 내용을 확인하세요."
+    },
+    {
+      "path": "practice/08-api.html",
+      "label": "shared practice tool manipulated",
+      "result": "0건 확인 · 외부에서 읽을 수 있는 미디어 주소를 확인합니다."
+    },
+    {
+      "path": "practice/e2e.html",
+      "label": "cross-page check persisted",
+      "checked": 1
+    },
+    {
+      "path": "lab.html",
+      "label": "planner summary",
+      "text": "내 계정 한 달 시나리오\n교육용 가정 모형\n\n수익 경로와 독자를 점검한 뒤, 14장에서 바꾼 시간 계획을 읽어 보세요.\n\n4장 · 내 기획 점검\n\n독자·소개·제안 질문에 빠진 항목을 찾습니다.\n\n기획 점검 열기\n3장 · 돈의 네 갈래\n\n돈이 들어오는 경로를 골라 비용을 뺀 금액을 계산합니다.\n\n돈의 흐름 열기\n14장 · 30일 계획\n\n시작 2026-10-27 · 하루 30분 · 주 5일\n440분 · 이 시간 안에 미완료 작업을 나누고 모자란 일은 다음 기간으로 옮기세요.\n\n계획 바꾸기\n가정을 읽는 법\n\n3·4장 입력은 저장하지 않습니다. 14장 시간 계획은 직접 바꾼 입력만 이어 봅니다. 계획한 시간은 실제 완료 기록이 아닙니다. 빈칸·무효 입력은 0으로 추정하지 않습니다.\n\n저장한 입력 다시 읽기저장한 시간 계획·이전 입력 삭제\n\n초기 예시값은 가져오지 않고, 독자가 변경한 14장 입력과 계산 결과만 이어 씁니다. 브라우저를 바꾸거나 저장을 차단하면 전달되지 않을 수 있습니다. 삭제는 테마·완료 체크를 지우지 않습니다."
+    },
+    {
+      "path": "lab.html",
+      "label": "iframes loaded",
+      "frames": 2
+    },
+    {
+      "path": "glossary.html",
+      "label": "search token",
+      "text": "(이론) 부록 / 16\n\n(이론) 16장 · 용어집\n\n처음 만나는 말은 쉬운 설명과 처음 나온 장으로 연결합니다.\n\n용어·설명 검색\n분류\n전체\n플랫폼\n수익\n제작\n자동화\n법\n세금\n지표\n\n24개 용어 중 0개 · 가나다순 (영문 약어는 한국어 발음 순서) · 검색 결과가 없습니다.\n\n← 이전 장\n(이론) 15장 · 자동화 실험실 읽기 가능\n다음 장 →\n(이론) 출처·크레딧 읽기 가능"
+    },
+    {
+      "path": "glossary.html",
+      "label": "zero search",
+      "text": "(이론) 부록 / 16\n\n(이론) 16장 · 용어집\n\n처음 만나는 말은 쉬운 설명과 처음 나온 장으로 연결합니다.\n\n용어·설명 검색\n분류\n전체\n플랫폼\n수익\n제작\n자동화\n법\n세금\n지표\n\n24개 용어 중 0개 · 가나다순 (영문 약어는 한국어 발음 순서) · 검색 결과가 없습니다.\n\n← 이전 장\n(이론) 15장 · 자동화 실험실 읽기 가능\n다음 장 →\n(이론) 출처·크레딧 읽기 가능"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1144 @@
+{
+  "date": "2026-10-26T02:59:21.257Z",
+  "browser": "149.0.7827.55",
+  "base": "http://127.0.0.1:8576/",
+  "pages": [
+    {
+      "title": "(실습) 0. 시작 전에",
+      "questions": [
+        {
+          "question": "오늘 무엇부터 하나요?",
+          "correct": "준비물을 놓고 기본 경로부터 시작하세요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/00-start.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": []
+    },
+    {
+      "title": "(실습) 1. 테스트 계정과 보안 준비",
+      "questions": [
+        {
+          "question": "연습 계정은 어떻게 만드나요?",
+          "correct": "기존 계정의 프로필 이름을 눌러 새 계정을 추가하세요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/01-account.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": []
+    },
+    {
+      "title": "(실습) 2. 키트 설치와 첫 실행",
+      "questions": [
+        {
+          "question": "무엇을 설치하나요?",
+          "correct": "Python과 키트의 필수 패키지를 설치하세요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/02-setup.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": []
+    },
+    {
+      "title": "(실습) 3. 소재 고르기와 웹 채팅 문안",
+      "questions": [
+        {
+          "question": "AI에게 무엇을 넣나요?",
+          "correct": "prompt.md에 담긴 원자료와 출력 형식을 넣으세요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/03-copy.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": []
+    },
+    {
+      "title": "(실습) 4. 뉴스카드 캐러셀 만들기",
+      "questions": [
+        {
+          "question": "카드는 몇 장, 어떤 크기로 만드나요?",
+          "correct": "이 키트의 기본 카드는 1080×1350 크기의 5장이에요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/04-cards.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "ch7-sim",
+          "type": "cards"
+        }
+      ]
+    },
+    {
+      "title": "(실습) 5. 본인 녹음과 릴스 만들기",
+      "questions": [
+        {
+          "question": "목소리 없이도 만들 수 있나요?",
+          "correct": "기본 설정은 무음과 자막이에요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/05-reel.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "ch8-sim",
+          "type": "reels"
+        }
+      ]
+    },
+    {
+      "title": "(실습) 6. 게시 전 사람 검수",
+      "questions": [
+        {
+          "question": "검수는 무엇을 확인하나요?",
+          "correct": "사실·권리·표시와 완성 파일을 직접 확인하세요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/06-review.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "safety-sim",
+          "type": "safety"
+        }
+      ]
+    },
+    {
+      "title": "(실습) 7. 앱으로 첫 게시하기",
+      "questions": [
+        {
+          "question": "첫 게시에도 토큰이 필요한가요?",
+          "correct": "앱 게시에는 토큰이 필요 없어요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/07-publish.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": []
+    },
+    {
+      "title": "(실습) 8. 선택 · API 자동 게시",
+      "questions": [
+        {
+          "question": "자동 게시에는 무엇이 필요한가요?",
+          "correct": "공개 프로페셔널 계정과 앱·권한·토큰이 필요해요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/08-api.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "publishing-sim",
+          "type": "publishing"
+        }
+      ]
+    },
+    {
+      "title": "(실습) 9. 선택 · 예약과 자동 실행",
+      "questions": [
+        {
+          "question": "며칠 전부터 몇 개 예약하나요?",
+          "correct": "현재 앱 도움말은 최대 30일 전·하루 25개를 안내해요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/09-schedule.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": []
+    },
+    {
+      "title": "(실습) 10. 첫 24시간·7일 지표",
+      "questions": [
+        {
+          "question": "인사이트는 어디서 보나요?",
+          "correct": "해당 게시물을 열고 인사이트 보기를 누르세요.",
+          "explanation": "FAQ의 첫 답과 따라 하기를 확인하세요."
+        }
+      ],
+      "path": "practice/10-insights.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": []
+    },
+    {
+      "title": "(실습) E2E 한눈에 보기",
+      "questions": [],
+      "path": "practice/e2e.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [],
+      "toolIds": []
+    },
+    {
+      "title": "계정 하나가 돈이 되기까지",
+      "questions": [
+        {
+          "question": "1. 오늘 먼저 남길 것은?",
+          "correct": "독자·질문·시간 메모",
+          "explanation": "먼저 도울 사람과 질문, 쓸 시간을 적습니다."
+        },
+        {
+          "question": "2. 가상 420분에서 점검 60분을 빼고 한 편 60분이면?",
+          "correct": "6편",
+          "explanation": "(420−60)÷60=6편입니다."
+        },
+        {
+          "question": "3. AI가 무료라고 쓴 문장은?",
+          "correct": "원문 조건을 확인",
+          "explanation": "AI의 초안은 사람이 원문과 대조합니다."
+        }
+      ],
+      "path": "chapters/01-map.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "time-budget",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "알고리즘과 포맷: 첫 형식을 고릅니다",
+      "questions": [
+        {
+          "question": "1. 조건을 오가며 비교할 첫 형식은?",
+          "correct": "캐러셀 카드",
+          "explanation": "조건 비교는 카드를 출발점으로 삼습니다."
+        },
+        {
+          "question": "2. 추천 조건을 충족하면?",
+          "correct": "실제 반응도 살펴야 함",
+          "explanation": "추천 조건 충족은 실제 노출 보장이 아닙니다."
+        },
+        {
+          "question": "3. 가상 설명 3개에 표지·요약을 더하면?",
+          "correct": "5장",
+          "explanation": "3+1+1=5장입니다."
+        }
+      ],
+      "path": "chapters/02-formats.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "signal-sim",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "돈은 네 갈래로 들어옵니다",
+      "questions": [
+        {
+          "question": "1. 초대·활성화 없이 100만 조회면 보너스는?",
+          "correct": "0원",
+          "explanation": "초대 없는 계정은 조회만으로 보너스를 받지 않습니다."
+        },
+        {
+          "question": "2. 가상 인정 구매 5만 원 × 20건 × 3%는?",
+          "correct": "3만 원",
+          "explanation": "50,000×20×0.03=30,000원이며 공제 전입니다."
+        },
+        {
+          "question": "3. 선물 수입 US$10을 계산하는 단위는?",
+          "correct": "받은 Stars 1,000개",
+          "explanation": "받은 Star당 US$0.01로 계산합니다."
+        }
+      ],
+      "path": "chapters/03-revenue.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "ledger-sim",
+          "type": "revenue"
+        }
+      ]
+    },
+    {
+      "title": "니치와 계정 기획: 도울 독자를 좁힙니다",
+      "questions": [
+        {
+          "question": "1. 가장 구체적인 첫 주제는?",
+          "correct": "사무직 동료가 묻는 AI 무료 조건",
+          "explanation": "분야 이름에 독자와 질문을 붙입니다."
+        },
+        {
+          "question": "2. 좋아요가 많으면 구매 수요가 확인됐나요?",
+          "correct": "가격·구성을 제안하고 의향을 더 물어야 함",
+          "explanation": "반응과 실제 구매는 구분합니다."
+        },
+        {
+          "question": "3. 계정 소개에 먼저 넣을 내용은?",
+          "correct": "독자·내용·설명 방식",
+          "explanation": "소개는 누구에게 어떤 질문을 어떤 방식으로 설명할지 씁니다."
+        }
+      ],
+      "path": "chapters/04-niche.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "niche-sim",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "(이론) 5장 · 소재 찾기: 뉴스 소싱과 저작권",
+      "questions": [
+        {
+          "question": "1. 출처 링크만 쓰면 기사 사진을 복제해도 되나요?",
+          "correct": "아니요. 사진의 이용 근거를 확인합니다.",
+          "explanation": "출처 표기는 사진 복제 허락을 대신하지 않습니다."
+        },
+        {
+          "question": "2. 자료와 첨부물에 공공누리 1유형이 적용된다면?",
+          "correct": "출처를 표시하고 상업 이용·변경 조건을 따릅니다.",
+          "explanation": "해당 저작물과 첨부물의 표식을 확인합니다."
+        },
+        {
+          "question": "3. 원문에 시범 운영이라고 적혀 있다면?",
+          "correct": "요약에도 시범 조건을 남깁니다.",
+          "explanation": "조건을 지우면 사실이 바뀝니다."
+        }
+      ],
+      "path": "chapters/05-sources.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "rights-sim",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "(이론) 6장 · AI로 글쓰기: 카드 문안과 릴스 대본",
+      "questions": [
+        {
+          "question": "1. prompt 경로가 만드는 것은?",
+          "correct": "웹 채팅에 붙일 지시문 파일",
+          "explanation": "prompt는 외부 AI를 호출하지 않습니다."
+        },
+        {
+          "question": "2. 영상에 새길 자막을 고칠 필드는?",
+          "correct": "subtitle",
+          "explanation": "자막은 subtitle, 게시 설명문은 caption입니다."
+        },
+        {
+          "question": "3. 원문에 없는 효과 숫자를 발견했다면?",
+          "correct": "삭제하고 남은 내용도 대조합니다.",
+          "explanation": "말투와 사실 확인은 각각 해야 합니다."
+        }
+      ],
+      "path": "chapters/06-writing.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "ch6-sim",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "(이론) 7장 · 뉴스카드 디자인 자동화",
+      "questions": [
+        {
+          "question": "1. 본문 이미지를 고치려면?",
+          "correct": "points를 확인하고 body도 맞춥니다.",
+          "explanation": "본문 카드의 화면 요점은 points입니다."
+        },
+        {
+          "question": "2. 4.5:1은 무엇의 참고 기준인가요?",
+          "correct": "일반 글자의 대비",
+          "explanation": "큰 글자와 예외는 구분합니다."
+        },
+        {
+          "question": "3. 예제 카드가 5장인 이유는?",
+          "correct": "표지·본문·마무리로 나눈 연습 구성입니다.",
+          "explanation": "제작 예제와 앱의 선택 상한을 구분합니다."
+        }
+      ],
+      "path": "chapters/07-cards.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "ch7-sim",
+          "type": "cards"
+        }
+      ]
+    },
+    {
+      "title": "(이론) 8장 · 릴스 자동 생성: 대본에서 영상까지",
+      "questions": [
+        {
+          "question": "1. 기본 영상의 소리는?",
+          "correct": "무음이며 자막이 새겨집니다.",
+          "explanation": "음성은 나중에 선택합니다."
+        },
+        {
+          "question": "2. 합성 예제 20초를 5장면에 나누면?",
+          "correct": "장면당 4초",
+          "explanation": "20÷5=4입니다."
+        },
+        {
+          "question": "3. 카드에 줌과 음악을 넣으면?",
+          "correct": "수익화 금지 형식에 해당하는지 확인합니다.",
+          "explanation": "제작 성공이 수익화 조건 충족을 보장하지 않습니다."
+        }
+      ],
+      "path": "chapters/08-reels.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "ch8-sim",
+          "type": "reels"
+        }
+      ]
+    },
+    {
+      "title": "(이론) 9장 · 파이프라인 잇기",
+      "questions": [
+        {
+          "question": "1. 검수 대기라면 무엇을 하나요?",
+          "correct": "파일과 권리를 직접 확인합니다.",
+          "explanation": "사람이 확인할 단계에서 정상 종료한 것입니다."
+        },
+        {
+          "question": "2. 승인 후 문안을 고쳤다면?",
+          "correct": "render 후 새 검수·승인을 합니다.",
+          "explanation": "내용이 바뀌면 예전 승인을 쓸 수 없습니다."
+        },
+        {
+          "question": "3. Make의 1,000credits는?",
+          "correct": "작업별로 소모하는 이용량입니다.",
+          "explanation": "추가 AI 비용과 재시도도 확인합니다."
+        }
+      ],
+      "path": "chapters/09-pipeline.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "ch9-sim",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "첫 게시와 예약 경로를 고릅니다",
+      "questions": [
+        {
+          "question": "1. 첫 게시에 필요한 경로는?",
+          "correct": "앱으로 올릴 수 있습니다.",
+          "explanation": "앱은 파일을 직접 골라 올립니다."
+        },
+        {
+          "question": "2. 이 키트의 API에 보낼 이미지 위치는?",
+          "correct": "Meta가 읽을 수 있는 공개 JPEG 주소입니다.",
+          "explanation": "파일 경로와 공개 URL을 구분합니다."
+        },
+        {
+          "question": "3. 발행 응답이 끊겼다면?",
+          "correct": "프로필과 원격 상태부터 확인합니다.",
+          "explanation": "이미 게시됐을 가능성을 먼저 확인합니다."
+        }
+      ],
+      "path": "chapters/10-publishing.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "publishing-sim",
+          "type": "publishing"
+        }
+      ]
+    },
+    {
+      "title": "처음 볼 숫자와 다음 수정을 정합니다",
+      "questions": [
+        {
+          "question": "1. 조회와 도달을 읽는 방법은?",
+          "correct": "횟수와 고유 계정 수를 구분합니다.",
+          "explanation": "도달은 중복 계정을 뺀 추산 수입니다."
+        },
+        {
+          "question": "2. 가상 저장 16·공유 4·도달 400의 연습 비율은?",
+          "correct": "5%입니다.",
+          "explanation": "(16+4)÷400×100=5%입니다."
+        },
+        {
+          "question": "3. 숫자가 비어 있다면?",
+          "correct": "측정 불가 사유를 적습니다.",
+          "explanation": "미게시·권한·기간을 확인합니다."
+        }
+      ],
+      "path": "chapters/11-analytics.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "analytics-sim",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "게시 전 권리·표시·대응을 정합니다",
+      "questions": [
+        {
+          "question": "1. 사진 출처 링크를 달았다면?",
+          "correct": "사진의 이용 허락·인용 조건도 확인합니다.",
+          "explanation": "출처만으로 이용 허락이 생기지 않습니다."
+        },
+        {
+          "question": "2. 무료 제품 소개에는?",
+          "correct": "제품 제공 관계를 밝힙니다.",
+          "explanation": "무료 제공도 표시를 검토합니다."
+        },
+        {
+          "question": "3. 가상인물이라고 밝혔다면 거짓 체험담도 쓸까요?",
+          "correct": "실제로 하지 않은 체험담은 지웁니다.",
+          "explanation": "표시는 거짓 체험을 허용하지 않습니다."
+        },
+        {
+          "question": "4. 3.3%를 떼고 받았다면?",
+          "correct": "미리 뗀 세금 증빙을 모으고 연간 신고를 확인합니다.",
+          "explanation": "3.3%는 모든 매출의 최종세율이 아닙니다."
+        }
+      ],
+      "path": "chapters/12-safety.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "4문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "safety-sim",
+          "type": "safety"
+        }
+      ]
+    },
+    {
+      "title": "첫 독자에서 첫 수익으로 이어갑니다",
+      "questions": [
+        {
+          "question": "1. 가상 목표 30만 원·비용 10만 원·제안 가격 10만 원이면?",
+          "correct": "4건입니다.",
+          "explanation": "(300000+100000)÷100000=4건입니다."
+        },
+        {
+          "question": "2. 1만 팔로워의 의미는?",
+          "correct": "구독 조건을 확인할 시점입니다.",
+          "explanation": "정책·계정 조건과 팬의 결제가 필요합니다."
+        },
+        {
+          "question": "3. TikTok 팔로워 약관은?",
+          "correct": "한국어 1만·영문 5만 차이를 남기고 앱에서 확인합니다.",
+          "explanation": "한국어 약관의 1만 근거가 새로 확인됐습니다."
+        }
+      ],
+      "path": "chapters/13-roadmap.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "roadmap-sim",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "30일 동안 할 일을 내 시간에 맞춥니다",
+      "questions": [
+        {
+          "question": "1. 가상 확보 시간 30분·점검 10분이면 제작 시간은?",
+          "correct": "20분입니다.",
+          "explanation": "30−10=20분을 배치합니다."
+        },
+        {
+          "question": "2. 며칠 놓쳤다면?",
+          "correct": "미완료를 다음 활동일로 옮깁니다.",
+          "explanation": "결과물을 이어 쓰고 새 제작량을 줄입니다."
+        },
+        {
+          "question": "3. 아직 게시하지 않았다면 지표에는?",
+          "correct": "미게시라고 적습니다.",
+          "explanation": "미게시와 실제 측정값 0은 다릅니다."
+        }
+      ],
+      "path": "chapters/14-plan.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [
+        "3문항 중 1문항 풀이 · 1문항 정답"
+      ],
+      "toolIds": [
+        {
+          "id": "planner-sim",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "(이론) 15장 · 자동화 실험실",
+      "questions": [],
+      "path": "lab.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [],
+      "toolIds": [
+        {
+          "id": "month-scenario",
+          "type": null
+        }
+      ]
+    },
+    {
+      "title": "(이론) 16장 · 용어집",
+      "questions": [],
+      "path": "glossary.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [],
+      "toolIds": []
+    },
+    {
+      "title": "(이론) 출처·크레딧",
+      "questions": [],
+      "path": "credits.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280,
+          "overflow": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        {
+          "width": 360,
+          "scroll": 360,
+          "overflow": []
+        }
+      ],
+      "quizStatus": [],
+      "toolIds": []
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,501 @@
+{
+  "records": [
+    {
+      "page": "01-map.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 오늘 먼저 남길 것은?",
+          "feedback": "✓ 정답입니다. 정답: 독자·질문·시간 메모 — 먼저 도울 사람과 질문, 쓸 시간을 적습니다."
+        },
+        {
+          "question": "2. 가상 420분에서 점검 60분을 빼고 한 편 60분이면?",
+          "feedback": "✓ 정답입니다. 정답: 6편 — (420−60)÷60=6편입니다."
+        },
+        {
+          "question": "3. AI가 무료라고 쓴 문장은?",
+          "feedback": "✓ 정답입니다. 정답: 원문 조건을 확인 — AI의 초안은 사람이 원문과 대조합니다."
+        }
+      ]
+    },
+    {
+      "page": "01-map.html",
+      "label": "axis link",
+      "hash": "#start"
+    },
+    {
+      "page": "02-formats.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 조건을 오가며 비교할 첫 형식은?",
+          "feedback": "✓ 정답입니다. 정답: 캐러셀 카드 — 조건 비교는 카드를 출발점으로 삼습니다."
+        },
+        {
+          "question": "2. 추천 조건을 충족하면?",
+          "feedback": "✓ 정답입니다. 정답: 실제 반응도 살펴야 함 — 추천 조건 충족은 실제 노출 보장이 아닙니다."
+        },
+        {
+          "question": "3. 가상 설명 3개에 표지·요약을 더하면?",
+          "feedback": "✓ 정답입니다. 정답: 5장 — 3+1+1=5장입니다."
+        }
+      ]
+    },
+    {
+      "page": "02-formats.html",
+      "label": "axis link",
+      "hash": "#format-choice"
+    },
+    {
+      "page": "03-revenue.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 초대·활성화 없이 100만 조회면 보너스는?",
+          "feedback": "✓ 정답입니다. 정답: 0원 — 초대 없는 계정은 조회만으로 보너스를 받지 않습니다."
+        },
+        {
+          "question": "2. 가상 인정 구매 5만 원 × 20건 × 3%는?",
+          "feedback": "✓ 정답입니다. 정답: 3만 원 — 50,000×20×0.03=30,000원이며 공제 전입니다."
+        },
+        {
+          "question": "3. 선물 수입 US$10을 계산하는 단위는?",
+          "feedback": "✓ 정답입니다. 정답: 받은 Stars 1,000개 — 받은 Star당 US$0.01로 계산합니다."
+        }
+      ]
+    },
+    {
+      "page": "03-revenue.html",
+      "label": "axis link",
+      "hash": "#meta-status"
+    },
+    {
+      "page": "04-niche.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 가장 구체적인 첫 주제는?",
+          "feedback": "✓ 정답입니다. 정답: 사무직 동료가 묻는 AI 무료 조건 — 분야 이름에 독자와 질문을 붙입니다."
+        },
+        {
+          "question": "2. 좋아요가 많으면 구매 수요가 확인됐나요?",
+          "feedback": "✓ 정답입니다. 정답: 가격·구성을 제안하고 의향을 더 물어야 함 — 반응과 실제 구매는 구분합니다."
+        },
+        {
+          "question": "3. 계정 소개에 먼저 넣을 내용은?",
+          "feedback": "✓ 정답입니다. 정답: 독자·내용·설명 방식 — 소개는 누구에게 어떤 질문을 어떤 방식으로 설명할지 씁니다."
+        }
+      ]
+    },
+    {
+      "page": "04-niche.html",
+      "label": "axis link",
+      "hash": "#promise"
+    },
+    {
+      "page": "05-sources.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 출처 링크만 쓰면 기사 사진을 복제해도 되나요?",
+          "feedback": "✓ 정답입니다. 정답: 아니요. 사진의 이용 근거를 확인합니다. — 출처 표기는 사진 복제 허락을 대신하지 않습니다."
+        },
+        {
+          "question": "2. 자료와 첨부물에 공공누리 1유형이 적용된다면?",
+          "feedback": "✓ 정답입니다. 정답: 출처를 표시하고 상업 이용·변경 조건을 따릅니다. — 해당 저작물과 첨부물의 표식을 확인합니다."
+        },
+        {
+          "question": "3. 원문에 시범 운영이라고 적혀 있다면?",
+          "feedback": "✓ 정답입니다. 정답: 요약에도 시범 조건을 남깁니다. — 조건을 지우면 사실이 바뀝니다."
+        }
+      ]
+    },
+    {
+      "page": "05-sources.html",
+      "label": "axis link",
+      "hash": "#discovery"
+    },
+    {
+      "page": "06-writing.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. prompt 경로가 만드는 것은?",
+          "feedback": "✓ 정답입니다. 정답: 웹 채팅에 붙일 지시문 파일 — prompt는 외부 AI를 호출하지 않습니다."
+        },
+        {
+          "question": "2. 영상에 새길 자막을 고칠 필드는?",
+          "feedback": "✓ 정답입니다. 정답: subtitle — 자막은 subtitle, 게시 설명문은 caption입니다."
+        },
+        {
+          "question": "3. 원문에 없는 효과 숫자를 발견했다면?",
+          "feedback": "✓ 정답입니다. 정답: 삭제하고 남은 내용도 대조합니다. — 말투와 사실 확인은 각각 해야 합니다."
+        }
+      ]
+    },
+    {
+      "page": "06-writing.html",
+      "label": "axis link",
+      "hash": "#prompt"
+    },
+    {
+      "page": "07-cards.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 본문 이미지를 고치려면?",
+          "feedback": "✓ 정답입니다. 정답: points를 확인하고 body도 맞춥니다. — 본문 카드의 화면 요점은 points입니다."
+        },
+        {
+          "question": "2. 4.5:1은 무엇의 참고 기준인가요?",
+          "feedback": "✓ 정답입니다. 정답: 일반 글자의 대비 — 큰 글자와 예외는 구분합니다."
+        },
+        {
+          "question": "3. 예제 카드가 5장인 이유는?",
+          "feedback": "✓ 정답입니다. 정답: 표지·본문·마무리로 나눈 연습 구성입니다. — 제작 예제와 앱의 선택 상한을 구분합니다."
+        }
+      ]
+    },
+    {
+      "page": "07-cards.html",
+      "label": "axis link",
+      "hash": "#roles"
+    },
+    {
+      "page": "08-reels.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 기본 영상의 소리는?",
+          "feedback": "✓ 정답입니다. 정답: 무음이며 자막이 새겨집니다. — 음성은 나중에 선택합니다."
+        },
+        {
+          "question": "2. 합성 예제 20초를 5장면에 나누면?",
+          "feedback": "✓ 정답입니다. 정답: 장면당 4초 — 20÷5=4입니다."
+        },
+        {
+          "question": "3. 카드에 줌과 음악을 넣으면?",
+          "feedback": "✓ 정답입니다. 정답: 수익화 금지 형식에 해당하는지 확인합니다. — 제작 성공이 수익화 조건 충족을 보장하지 않습니다."
+        }
+      ]
+    },
+    {
+      "page": "08-reels.html",
+      "label": "axis link",
+      "hash": "#voice-paths"
+    },
+    {
+      "page": "09-pipeline.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 검수 대기라면 무엇을 하나요?",
+          "feedback": "✓ 정답입니다. 정답: 파일과 권리를 직접 확인합니다. — 사람이 확인할 단계에서 정상 종료한 것입니다."
+        },
+        {
+          "question": "2. 승인 후 문안을 고쳤다면?",
+          "feedback": "✓ 정답입니다. 정답: render 후 새 검수·승인을 합니다. — 내용이 바뀌면 예전 승인을 쓸 수 없습니다."
+        },
+        {
+          "question": "3. Make의 1,000credits는?",
+          "feedback": "✓ 정답입니다. 정답: 작업별로 소모하는 이용량입니다. — 추가 AI 비용과 재시도도 확인합니다."
+        }
+      ]
+    },
+    {
+      "page": "09-pipeline.html",
+      "label": "axis link",
+      "hash": "#generate"
+    },
+    {
+      "page": "10-publishing.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 첫 게시에 필요한 경로는?",
+          "feedback": "✓ 정답입니다. 정답: 앱으로 올릴 수 있습니다. — 앱은 파일을 직접 골라 올립니다."
+        },
+        {
+          "question": "2. 이 키트의 API에 보낼 이미지 위치는?",
+          "feedback": "✓ 정답입니다. 정답: Meta가 읽을 수 있는 공개 JPEG 주소입니다. — 파일 경로와 공개 URL을 구분합니다."
+        },
+        {
+          "question": "3. 발행 응답이 끊겼다면?",
+          "feedback": "✓ 정답입니다. 정답: 프로필과 원격 상태부터 확인합니다. — 이미 게시됐을 가능성을 먼저 확인합니다."
+        }
+      ]
+    },
+    {
+      "page": "10-publishing.html",
+      "label": "axis link",
+      "hash": "#paths"
+    },
+    {
+      "page": "11-analytics.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 조회와 도달을 읽는 방법은?",
+          "feedback": "✓ 정답입니다. 정답: 횟수와 고유 계정 수를 구분합니다. — 도달은 중복 계정을 뺀 추산 수입니다."
+        },
+        {
+          "question": "2. 가상 저장 16·공유 4·도달 400의 연습 비율은?",
+          "feedback": "✓ 정답입니다. 정답: 5%입니다. — (16+4)÷400×100=5%입니다."
+        },
+        {
+          "question": "3. 숫자가 비어 있다면?",
+          "feedback": "✓ 정답입니다. 정답: 측정 불가 사유를 적습니다. — 미게시·권한·기간을 확인합니다."
+        }
+      ]
+    },
+    {
+      "page": "11-analytics.html",
+      "label": "axis link",
+      "hash": "#metric-definitions"
+    },
+    {
+      "page": "12-safety.html",
+      "label": "complete quiz",
+      "score": "4문항 중 4문항 풀이 · 4문항 정답",
+      "answers": [
+        {
+          "question": "1. 사진 출처 링크를 달았다면?",
+          "feedback": "✓ 정답입니다. 정답: 사진의 이용 허락·인용 조건도 확인합니다. — 출처만으로 이용 허락이 생기지 않습니다."
+        },
+        {
+          "question": "2. 무료 제품 소개에는?",
+          "feedback": "✓ 정답입니다. 정답: 제품 제공 관계를 밝힙니다. — 무료 제공도 표시를 검토합니다."
+        },
+        {
+          "question": "3. 가상인물이라고 밝혔다면 거짓 체험담도 쓸까요?",
+          "feedback": "✓ 정답입니다. 정답: 실제로 하지 않은 체험담은 지웁니다. — 표시는 거짓 체험을 허용하지 않습니다."
+        },
+        {
+          "question": "4. 3.3%를 떼고 받았다면?",
+          "feedback": "✓ 정답입니다. 정답: 미리 뗀 세금 증빙을 모으고 연간 신고를 확인합니다. — 3.3%는 모든 매출의 최종세율이 아닙니다."
+        }
+      ]
+    },
+    {
+      "page": "12-safety.html",
+      "label": "axis link",
+      "hash": "#rights"
+    },
+    {
+      "page": "13-roadmap.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 가상 목표 30만 원·비용 10만 원·제안 가격 10만 원이면?",
+          "feedback": "✓ 정답입니다. 정답: 4건입니다. — (300000+100000)÷100000=4건입니다."
+        },
+        {
+          "question": "2. 1만 팔로워의 의미는?",
+          "feedback": "✓ 정답입니다. 정답: 구독 조건을 확인할 시점입니다. — 정책·계정 조건과 팬의 결제가 필요합니다."
+        },
+        {
+          "question": "3. TikTok 팔로워 약관은?",
+          "feedback": "✓ 정답입니다. 정답: 한국어 1만·영문 5만 차이를 남기고 앱에서 확인합니다. — 한국어 약관의 1만 근거가 새로 확인됐습니다."
+        }
+      ]
+    },
+    {
+      "page": "13-roadmap.html",
+      "label": "axis link",
+      "hash": "#payers"
+    },
+    {
+      "page": "14-plan.html",
+      "label": "complete quiz",
+      "score": "3문항 중 3문항 풀이 · 3문항 정답",
+      "answers": [
+        {
+          "question": "1. 가상 확보 시간 30분·점검 10분이면 제작 시간은?",
+          "feedback": "✓ 정답입니다. 정답: 20분입니다. — 30−10=20분을 배치합니다."
+        },
+        {
+          "question": "2. 며칠 놓쳤다면?",
+          "feedback": "✓ 정답입니다. 정답: 미완료를 다음 활동일로 옮깁니다. — 결과물을 이어 쓰고 새 제작량을 줄입니다."
+        },
+        {
+          "question": "3. 아직 게시하지 않았다면 지표에는?",
+          "feedback": "✓ 정답입니다. 정답: 미게시라고 적습니다. — 미게시와 실제 측정값 0은 다릅니다."
+        }
+      ]
+    },
+    {
+      "page": "14-plan.html",
+      "label": "axis link",
+      "hash": "#goals"
+    },
+    {
+      "page": "practice/02-setup.html",
+      "label": "macOS install tab",
+      "text": "macOS\npython3 -m venv .venv\nsource .venv/bin/activate\npython -m pip install --cache-dir .cache/pip -r requirements.txt\npython --version\n복사"
+    },
+    {
+      "page": "practice/02-setup.html",
+      "label": "Windows keyboard tab",
+      "text": "Windows\npy -3.11 -m venv .venv\n.venv\\Scripts\\python.exe -m pip install --cache-dir .cache/pip -r requirements.txt\n.venv\\Scripts\\python.exe --version\n복사"
+    },
+    {
+      "page": "lab.html",
+      "value": "1:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "1:time-budget",
+      "result": "0편 · 준비·점검 시간을 확보하거나 첫 제작 범위를 줄이세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "2:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "2:signal-sim",
+      "result": "20장 · 표지와 요약 사이에 설명을 한 장씩 넣는 구성입니다."
+    },
+    {
+      "page": "lab.html",
+      "value": "3:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "3:ledger-sim",
+      "result": "6원 · 제휴 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다."
+    },
+    {
+      "page": "lab.html",
+      "value": "4:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "4:niche-sim",
+      "result": "1개 · 비어 있는 기획 항목을 채우세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "5:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "5:rights-sim",
+      "result": "1개 · 체크하지 않은 항목을 먼저 채우세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "6:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "6:ch6-sim",
+      "result": "1개 · 체크하지 않은 항목을 먼저 채우세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "7:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "7:ch7-sim",
+      "result": "0줄 넘침 · 휴대폰 크기에서 제목부터 출처까지 직접 읽어 보세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "8:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "8:ch8-sim",
+      "result": "4.0초 · 선택 문장을 직접 읽고 짧으면 문장을 줄이거나 시간을 늘리세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "9:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "9:ch9-sim",
+      "result": "30,000원 · 입력한 서비스 비용만 합친 금액입니다."
+    },
+    {
+      "page": "lab.html",
+      "value": "10:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "10:publishing-sim",
+      "result": "0건 확인 · 외부에서 읽을 수 있는 미디어 주소를 확인합니다."
+    },
+    {
+      "page": "lab.html",
+      "value": "11:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "11:analytics-sim",
+      "result": "200% · 같은 조건의 다른 게시물과 이 비율을 비교하세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "12:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "12:safety-sim",
+      "result": "4개 남음 · 원출처 증거를 열었으니 단서를 읽고 해당 항목을 판단하세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "13:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "13:roadmap-sim",
+      "result": "2건 · 그만큼 제작·수정할 시간이 있는지 먼저 확인하세요."
+    },
+    {
+      "page": "lab.html",
+      "value": "14:figure",
+      "result": null
+    },
+    {
+      "page": "lab.html",
+      "value": "14:planner-sim",
+      "result": "440분 · 이 시간 안에 미완료 작업을 나누고 모자란 일은 다음 기간으로 옮기세요."
+    },
+    {
+      "label": "hash first-use target",
+      "url": "http://127.0.0.1:8576/chapters/02-formats.html",
+      "mainMentionsHash": false,
+      "hashtagsExplained": true
+    }
+  ],
+  "errors": []
+}

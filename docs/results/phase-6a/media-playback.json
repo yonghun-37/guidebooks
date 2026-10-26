@@ -1,0 +1,73 @@
+[
+  {
+    "src": "http://127.0.0.1:8577/cards/card-01.jpg",
+    "width": 1080,
+    "height": 1350,
+    "complete": true
+  },
+  {
+    "src": "http://127.0.0.1:8577/cards/card-02.jpg",
+    "width": 1080,
+    "height": 1350,
+    "complete": true
+  },
+  {
+    "src": "http://127.0.0.1:8577/cards/card-03.jpg",
+    "width": 1080,
+    "height": 1350,
+    "complete": true
+  },
+  {
+    "src": "http://127.0.0.1:8577/cards/card-04.jpg",
+    "width": 1080,
+    "height": 1350,
+    "complete": true
+  },
+  {
+    "src": "http://127.0.0.1:8577/cards/card-05.jpg",
+    "width": 1080,
+    "height": 1350,
+    "complete": true
+  },
+  {
+    "time": 3.991023,
+    "duration": 20,
+    "width": 1080,
+    "height": 1920,
+    "ended": false
+  },
+  {
+    "time": 8.019202,
+    "duration": 20,
+    "width": 1080,
+    "height": 1920,
+    "ended": false
+  },
+  {
+    "time": 12.067937,
+    "duration": 20,
+    "width": 1080,
+    "height": 1920,
+    "ended": false
+  },
+  {
+    "time": 16.112401,
+    "duration": 20,
+    "width": 1080,
+    "height": 1920,
+    "ended": false
+  },
+  {
+    "time": 20,
+    "duration": 20,
+    "width": 1080,
+    "height": 1920,
+    "ended": true
+  },
+  {
+    "final": true,
+    "time": 20,
+    "duration": 20,
+    "ended": true
+  }
+]

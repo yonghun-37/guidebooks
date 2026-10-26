@@ -1,0 +1,17 @@
+{
+  "protected_files": 2752,
+  "site_and_kit_changes": [],
+  "review_md_links_missing": [],
+  "findings": {
+    "차단": 1,
+    "혼란": 12,
+    "사소": 2
+  },
+  "findings_count": 15,
+  "commit_performed": false,
+  "notification": {
+    "command": "python3 scripts/notify.py",
+    "http_status": 200,
+    "sent": true
+  }
+}

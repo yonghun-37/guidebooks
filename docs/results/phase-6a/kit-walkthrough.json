@@ -1,0 +1,238 @@
+{
+  "python": "3.11.15",
+  "temporary_copy": "/tmp/reelsbook-6a-fb1xgz8a/starter-kit",
+  "default_png_count": 5,
+  "default_jpeg_count": 5,
+  "one_item_feed_png_count": 3,
+  "reel": {
+    "duration": 20.0,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 24,
+    "tts": "silent",
+    "audio": [
+      "silent"
+    ],
+    "audio_files": [],
+    "motion": [
+      "zoom-pan",
+      "scene-fade",
+      "caption-entry",
+      "progress-bar"
+    ],
+    "timing": [
+      {
+        "scene": 1,
+        "start": 0.0,
+        "end": 4.0
+      },
+      {
+        "scene": 2,
+        "start": 4.0,
+        "end": 8.0
+      },
+      {
+        "scene": 3,
+        "start": 8.0,
+        "end": 12.0
+      },
+      {
+        "scene": 4,
+        "start": 12.0,
+        "end": 16.0
+      },
+      {
+        "scene": 5,
+        "start": 16.0,
+        "end": 20.0
+      }
+    ],
+    "subtitles": "burned-in + subtitles.srt"
+  },
+  "approval_exists": true,
+  "dry_run": {
+    "mode": "dry-run",
+    "login": "Instagram Login",
+    "authorization": "Bearer <REDACTED>",
+    "requests": [
+      {
+        "step": "컨테이너 생성",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+        "params": {
+          "image_url": "https://example.invalid/output/cards/card-01.jpg",
+          "is_carousel_item": "true"
+        },
+        "save_as": "CHILD_1"
+      },
+      {
+        "step": "상태 확인",
+        "method": "GET",
+        "endpoint": "https://graph.instagram.com/v26.0/{CHILD_1}",
+        "params": {
+          "fields": "status_code"
+        },
+        "until": "FINISHED"
+      },
+      {
+        "step": "컨테이너 생성",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+        "params": {
+          "image_url": "https://example.invalid/output/cards/card-02.jpg",
+          "is_carousel_item": "true"
+        },
+        "save_as": "CHILD_2"
+      },
+      {
+        "step": "상태 확인",
+        "method": "GET",
+        "endpoint": "https://graph.instagram.com/v26.0/{CHILD_2}",
+        "params": {
+          "fields": "status_code"
+        },
+        "until": "FINISHED"
+      },
+      {
+        "step": "컨테이너 생성",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+        "params": {
+          "image_url": "https://example.invalid/output/cards/card-03.jpg",
+          "is_carousel_item": "true"
+        },
+        "save_as": "CHILD_3"
+      },
+      {
+        "step": "상태 확인",
+        "method": "GET",
+        "endpoint": "https://graph.instagram.com/v26.0/{CHILD_3}",
+        "params": {
+          "fields": "status_code"
+        },
+        "until": "FINISHED"
+      },
+      {
+        "step": "컨테이너 생성",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+        "params": {
+          "image_url": "https://example.invalid/output/cards/card-04.jpg",
+          "is_carousel_item": "true"
+        },
+        "save_as": "CHILD_4"
+      },
+      {
+        "step": "상태 확인",
+        "method": "GET",
+        "endpoint": "https://graph.instagram.com/v26.0/{CHILD_4}",
+        "params": {
+          "fields": "status_code"
+        },
+        "until": "FINISHED"
+      },
+      {
+        "step": "컨테이너 생성",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+        "params": {
+          "image_url": "https://example.invalid/output/cards/card-05.jpg",
+          "is_carousel_item": "true"
+        },
+        "save_as": "CHILD_5"
+      },
+      {
+        "step": "상태 확인",
+        "method": "GET",
+        "endpoint": "https://graph.instagram.com/v26.0/{CHILD_5}",
+        "params": {
+          "fields": "status_code"
+        },
+        "until": "FINISHED"
+      },
+      {
+        "step": "컨테이너 생성",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+        "params": {
+          "media_type": "CAROUSEL",
+          "children": "{CHILD_1},{CHILD_2},{CHILD_3},{CHILD_4},{CHILD_5}",
+          "caption": "합성 데이터 · 실제 뉴스 아님\n가상 별빛도서관, 조용한 독서 모임을 열다\nhttps://example.invalid/library\n가상 초록작업실, 종이 재사용 실험을 시작하다\nhttps://example.invalid/paper\n가상 달빛마을, 산책 지도를 함께 그리다\nhttps://example.invalid/walk",
+          "is_ai_generated": "false"
+        },
+        "save_as": "CAROUSEL"
+      },
+      {
+        "step": "상태 확인",
+        "method": "GET",
+        "endpoint": "https://graph.instagram.com/v26.0/{CAROUSEL}",
+        "params": {
+          "fields": "status_code"
+        },
+        "until": "FINISHED"
+      },
+      {
+        "step": "게시",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish",
+        "params": {
+          "creation_id": "{CAROUSEL}"
+        },
+        "save_as": "CAROUSEL_MEDIA"
+      },
+      {
+        "step": "컨테이너 생성",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+        "params": {
+          "media_type": "REELS",
+          "video_url": "https://example.invalid/output/reel.mp4",
+          "caption": "합성 데이터 · 실제 뉴스 아님\n가상 별빛도서관, 조용한 독서 모임을 열다\nhttps://example.invalid/library\n가상 초록작업실, 종이 재사용 실험을 시작하다\nhttps://example.invalid/paper\n가상 달빛마을, 산책 지도를 함께 그리다\nhttps://example.invalid/walk",
+          "is_ai_generated": "false"
+        },
+        "save_as": "REEL"
+      },
+      {
+        "step": "상태 확인",
+        "method": "GET",
+        "endpoint": "https://graph.instagram.com/v26.0/{REEL}",
+        "params": {
+          "fields": "status_code"
+        },
+        "until": "FINISHED"
+      },
+      {
+        "step": "게시",
+        "method": "POST",
+        "endpoint": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish",
+        "params": {
+          "creation_id": "{REEL}"
+        },
+        "save_as": "REEL_MEDIA"
+      }
+    ]
+  },
+  "hosting_files": [
+    "reel.mp4",
+    "cards/card-01.jpg",
+    "cards/card-04.jpg",
+    "cards/card-03.jpg",
+    "cards/card-05.jpg",
+    "cards/card-02.jpg"
+  ],
+  "literal_mktemp_copy": "/tmp/reelsbook-6a-clean.FEAaWg/starter-kit",
+  "literal_mktemp_result": {
+    "fresh_venv": true,
+    "pip_install_exit_code": 0,
+    "fixed_folder_generation_exit_code": 0,
+    "prompt_exit_code": 0,
+    "validation_exit_code": 0
+  },
+  "pytest": {
+    "passed": 67,
+    "duration_seconds": 25.69,
+    "exit_code": 0
+  }
+}

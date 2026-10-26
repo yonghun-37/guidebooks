@@ -1,6 +1,8 @@
 너는 ai-insta 프로젝트의 작업자(Codex)다. AGENTS.md, docs/DESIGN.md 8절, docs/results/phase-5d.md, docs/results/phase-6a-findings.md를 읽어라.
 이번 작업은 **Phase 6b. 수정과 품질 게이트**다. commit하지 마라.
 
+0. **F01 결정(Claude)**: DESIGN.md 1절 성공 기준을 '매일 정해진 시간에 생성까지 자동 실행 → 사람 검수·승인 → 앱 게시 또는 토큰 있을 때 publish --live'로 바꿨다. 이를 구현한다: 스타터 키트에 날짜별 출력 폴더를 만드는 일일 실행 진입점(예: `daily.py`)과 OS별 예약 등록 안내/도우미(`schedule_setup.py`: Windows `schtasks` 명령 생성, macOS/Linux crontab 줄 생성, 등록 확인·해제 방법)를 추가하고 모킹 테스트한다. 실습 9를 '예약 등록 → 수동 1회 실행으로 확인 → 다음 날 폴더 확인 → 승인 → 게시' 단계로 다시 쓰고 9장·14장·E2E와 연결한다. 실제 OS 스케줄러 등록은 하지 않는다(명령 생성·문법 검증까지).
+   추가 검수 지시: 8장 타임라인의 장면 미리보기가 작다 — 모바일·데스크톱에서 더 크게.
 1. phase-6a-findings의 '차단'과 '혼란'은 모두 고치고, '사소'는 합리적인 범위에서 고친다. 고치지 않은 항목은 이유를 남긴다.
 2. 검수자(Claude) 추가 지시: 3장·13장 장부 시뮬레이터에 수입·비용·잔액을 보여 주는 간단한 SVG 막대 그래프(텍스트 결과 유지)를 추가한다. 입력 칸이 많은 시뮬레이터는 모바일에서 2열/접기로 길이를 줄인다.
 3. scripts/check_site.py를 만든다: 모든 HTML의 내부 링크·앵커, 2~14장 9블록, 각주 SOURCES 번호가 research/SOURCES.md에 존재, fact-pending 0개, data-term이 용어집에 존재, 퀴즈 데이터 구조, 이미지 alt, 파일 크기 합계. 실패 시 exit 1. 통과시킨다.
