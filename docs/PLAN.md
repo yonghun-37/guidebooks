@@ -105,3 +105,9 @@ cd /home/yonghun/project/hermes-research && timeout 900 docker compose exec -T -
 ## Phase Y. 유튜브 쇼츠 편 (인스타 편 완료 후)
 
 - Y1 설계, Y2 Hermes 조사(쇼츠 사양·수익화·정책·업로드/API·영상 제작 도구·AI 영상·음악·한국 사례), Y3 사이트·키트 확장, Y4 이론편, Y5 실습편, Y6 품질 게이트.
+
+## Phase B. 블로그 수익화 편 (사용자 요청 2026-10-26)
+
+- 설계: docs/DESIGN-blog.md (10절 단계표). B2 학습자 질문·조사 → B3 뼈대·샘플 + B3k blog-kit → B4a/b/c 이론편 → B5 실습편 → B6 통합 → B7 독립 검토 → B8 수정·게이트.
+- Hermes RUN: /home/yonghun/project/hermes-research/output/blog-research-20261026, 조사 산출물 research-blog/(SOURCES B###, FACT-SHEET BL-).
+- 문체 기준은 docs/STYLE-GUIDE.md(확정)를 그대로 적용한다. 샘플은 Claude가 기준 대비 검수하고 진행한다.
