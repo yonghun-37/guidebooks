@@ -15,7 +15,7 @@ def shell(slug, title, intro, content, scripts=''):
     return f'''<!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{title} | ReelsBook</title><link rel="icon" href="data:,"><link rel="stylesheet" href="assets/book.css"><script src="assets/book.js" defer></script>{scripts}</head>
 <body data-chapter="{slug}"><a class="skip-link" href="#main">본문으로 건너뛰기</a><header data-site-header><a href="index.html">ReelsBook</a></header>
-<main id="main" class="appendix-main"><p class="kicker" data-chapter-kicker>ReelsBook / 부록</p><h1 data-chapter-title>{title}</h1><p class="lead">{intro}</p>
+<main id="main" class="appendix-main"><p class="kicker" data-chapter-kicker>(이론) ReelsBook / 부록</p><h1 data-chapter-title>(이론) {title}</h1><p class="lead">{intro}</p>
 {content}
 <nav data-chapter-pager aria-label="이전·다음 장"></nav></main><footer data-site-footer></footer></body></html>\n'''
 
@@ -88,7 +88,7 @@ def glossary():
 def credits():
     sources={sid:(title,dict(re.findall(r'^- ([^:]+): (.*)$',body,re.M))) for sid,title,body in re.findall(r'### (S\d+)\. (.*?)\n(.*?)(?=\n<a id=|\Z)',(ROOT/'research/SOURCES.md').read_text(),re.S)}
     cited={}
-    for p in CHAPTERS:
+    for p in CHAPTERS + sorted((SITE/'practice').glob('[0-9][0-9]-*.html')):
         text=p.read_text()
         notes=re.search(r'<aside class="source-notes".*?</aside>',text,re.S)[0]
         for sid in sorted(set(re.findall(r'\bS\d{3}\b',notes))):
@@ -97,12 +97,13 @@ def credits():
             if f'id="{anchor}"' not in notes:
                 # 1장 묶음 각주는 해당 원문 링크가 들어 있는 실제 li로 연결.
                 anchor=next(m[1] for m in re.finditer(r'<li id="([^"]+)">(.*?)</li>',notes,re.S) if sid in m[2])
-            cited.setdefault(sid,[]).append((p.stem,anchor,int(p.name[:2])))
+            track = '실습' if p.parent.name == 'practice' else '이론'
+            cited.setdefault(sid,[]).append((p.parent.name+'/'+p.stem,anchor,f'({track}) {int(p.name[:2])}'))
     entries=[]
     for sid,links in sorted(cited.items()):
         title,meta=sources[sid]
         data=''.join(f'<div><dt>{label}</dt><dd>{E(meta.get(key,"미상"))}</dd></div>' for label,key in [('기관','기관'),('게시·갱신일','게시·갱신일'),('확인일(조사 접근일)','접근일'),('신뢰도 등급','신뢰도')])
-        backlink=' · '.join(f'<a href="chapters/{slug}.html#{anchor}">{n}장 각주</a>' for slug,anchor,n in links)
+        backlink=' · '.join(f'<a href="{slug}.html#{anchor}">{n} 각주</a>' for slug,anchor,n in links)
         entries.append(f'<li class="source-entry" id="{sid.lower()}"><h3>{sid} · <a href="{E(meta["URL"],quote=True)}">{E(title)}</a></h3><dl class="source-meta">{data}</dl><p><strong>확인 범위:</strong> {E(meta.get("확인 범위","기록 없음"))}</p><p>인용한 장: {backlink}</p></li>')
     content=f'''<p class="note warning">2026년 10월 조사 기준, 정책은 바뀔 수 있음. 조사 컷오프·확인일은 2026-10-26입니다. 실제 계정의 현재 자격과 개인별 법·세무 판단을 대신하지 않습니다.</p>
 <nav class="related-links" aria-label="크레딧 절"><a href="#sources">인용 출처</a><a href="#licenses">폰트·도구</a><a href="#disclosure">가상·합성 고지</a><a href="#updates">업데이트 기록</a></nav>
@@ -114,8 +115,8 @@ def credits():
 <li>카드 렌더링: <a href="https://pillow.readthedocs.io/en/stable/about.html#license">Pillow, MIT-CMU 라이선스 고지</a>. 설정: <a href="https://github.com/yaml/pyyaml/blob/main/LICENSE">PyYAML, MIT</a>.</li>
 <li>영상 도구: <a href="https://github.com/imageio/imageio-ffmpeg/blob/main/LICENSE">imageio-ffmpeg 래퍼, BSD 2-Clause</a>. FFmpeg 실행 파일은 래퍼와 별도 라이선스이며 빌드에 따라 LGPL/GPL이 적용됩니다. <a href="https://ffmpeg.org/legal.html">FFmpeg 공식 설명</a>. 실행 파일을 이 사이트에 재배포하지 않습니다.</li>
 <li>브라우저 검증: <a href="https://github.com/microsoft/playwright/blob/main/LICENSE">Playwright, Apache 2.0</a>. 사이트 실행에 필요한 라이브러리는 아닙니다. 본문·도식·CSS·JS는 새로 작성했으며 참고 사이트에서는 학습 구조와 UX 패턴만 참고했습니다.</li></ul></section>
-<section id="disclosure" class="chapter-block"><h2>가상 인물·합성 데이터 고지</h2><p>하린·정 선배·하린의 계정과 실습 수치는 가상입니다. 예제 피드·카드·영상은 synthetic=true 자료로 만든 교육용 샘플이며 실제 뉴스 보도가 아닙니다. 표지 영상은 무음이며 한글 자막이 화면에 포함됩니다. 별도 자막 파일도 제공합니다.</p><p>성장·니치 점수·장부·30일 일정은 공개한 가정에 따른 연습이며 수익·추천·성장 예측이 아닙니다. 실제 사례는 인용 범위 안에서만 다룹니다. 실제 Instagram 계정 로그인·게시·유료 API 호출을 검증한 교재가 아닙니다.</p><p>테마·완료 체크와 3·4·14장 변경 입력은 이 브라우저의 localStorage에 저장합니다. 서버로 전송하지 않습니다. 실험실에서 입력을 삭제할 수 있고 저장 차단 시 계산·읽기는 계속 됩니다.</p></section>
-<section id="updates" class="chapter-block"><h2>업데이트 기록</h2><dl><dt>2026-10-26 · Phase 5d</dt><dd>2~14장 공통 상태·메타·이동 통합, 15장 실험실, 16장 용어집, 인용 출처와 표지 샘플을 추가했습니다. 1장 대기 문장을 조사 근거와 미확인 범위로 대체했습니다.</dd><dt>2026-10-26 · 앞선 제작·집필</dt><dd>오프라인 스타터 키트와 1~14장 원고·모형, 초기·확장 조사 기록을 통합 기반으로 사용했습니다. 세부 검증은 저장소 docs/results의 해당 Phase 기록을 따릅니다.</dd></dl></section>'''
+<section id="disclosure" class="chapter-block"><h2>가상 인물·합성 데이터 고지</h2><p>하린·정 선배·하린의 계정과 실습 수치는 가상입니다. 예제 피드·카드·영상은 synthetic=true 자료로 만든 교육용 샘플이며 실제 뉴스 보도가 아닙니다. 표지 영상은 무음이며 한글 자막이 화면에 포함됩니다. 별도 자막 파일도 제공합니다.</p><p>성장·니치 점수·장부·30일 일정은 공개한 가정에 따른 연습이며 수익·추천·성장 예측이 아닙니다. 실제 사례는 인용 범위 안에서만 다룹니다. 실제 Instagram 계정 로그인·게시·유료 API 호출을 검증한 교재가 아닙니다.</p><p>테마·완료 체크·실습 진행 및 본인이 입력한 게시물 주소·3·4·14장 변경 입력은 이 브라우저의 localStorage에 저장합니다. 서버로 전송하지 않습니다. 실습 E2E와 실험실에서 해당 입력을 삭제할 수 있고 저장 차단 시 계산·읽기는 계속 됩니다.</p></section>
+<section id="updates" class="chapter-block"><h2>업데이트 기록</h2><dl><dt>2026-10-26 · Phase 7w</dt><dd>이론/실습 두 트랙과 실습 0~10·E2E 진행 기록을 추가했습니다. 미확인 앱 메뉴는 공식 도움말과 확인 공백을 표시합니다. 공개 URL 준비·로컬 토큰 설정을 키트에 추가했으며 실제 로그인·게시를 검증하지 않았습니다.</dd><dt>2026-10-26 · Phase 5d</dt><dd>2~14장 공통 상태·메타·이동 통합, 15장 실험실, 16장 용어집, 인용 출처와 표지 샘플을 추가했습니다. 1장 대기 문장을 조사 근거와 미확인 범위로 대체했습니다.</dd><dt>2026-10-26 · 앞선 제작·집필</dt><dd>오프라인 스타터 키트와 1~14장 원고·모형, 초기·확장 조사 기록을 통합 기반으로 사용했습니다. 세부 검증은 저장소 docs/results의 해당 Phase 기록을 따릅니다.</dd></dl></section>'''
     (SITE/'credits.html').write_text(shell('credits','출처·크레딧','근거를 찾을 수 있고, 확인하지 못한 범위도 읽을 수 있도록.',content))
     return len(entries)
 

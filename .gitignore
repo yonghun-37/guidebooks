@@ -5,3 +5,5 @@ __pycache__/
 node_modules/
 starter-kit/.cache/
 .pytest_cache/
+starter-kit/.env
+starter-kit/hosting/
