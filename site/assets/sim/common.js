@@ -92,6 +92,38 @@
         if (saved) save();
       }
     },
+    moneyBars(element, values) {
+      let svg = element.querySelector('[data-money-bars]');
+      if (!svg) {
+        svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('data-money-bars', '');
+        svg.setAttribute('viewBox', '0 0 360 180');
+        svg.setAttribute('role', 'img');
+        svg.classList.add('money-bars');
+        element.querySelector('[data-sim-result]').before(svg);
+      }
+      svg.hidden = !values;
+      svg.style.display = values ? '' : 'none';
+      if (!values) return;
+      const rows = [['income', '수입'], ['cost', '비용'], ['balance', '잔액']];
+      const won = value => `${Math.round(value).toLocaleString('ko-KR')}원`;
+      svg.setAttribute('aria-label', rows.map(([key, name]) => `${name} ${won(values[key])}`).join(', '));
+      svg.replaceChildren();
+      const node = (tag, attrs, text) => {
+        const child = document.createElementNS(svg.namespaceURI, tag);
+        Object.entries(attrs).forEach(([key, value]) => child.setAttribute(key, value));
+        if (text) child.textContent = text;
+        svg.append(child);
+      };
+      const max = Math.max(1, ...Object.values(values).map(Math.abs));
+      node('line', {x1: 180, x2: 180, y1: 24, y2: 168, class: 'money-zero'});
+      rows.forEach(([key, name], index) => {
+        const y = 18 + index * 54, value = values[key], width = Math.abs(value) / max * 170;
+        node('text', {x: 8, y}, `${name} ${won(value)}`);
+        node('rect', {x: value < 0 ? 180 - width : 180, y: y + 8, width, height: 16,
+          class: `money-${key}${value < 0 ? ' money-negative' : ''}`, 'data-bar': key});
+      });
+    },
     buttonGroup(group, select) {
       const buttons = [...group.querySelectorAll('button')];
       const activate = button => {

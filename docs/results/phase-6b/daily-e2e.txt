@@ -1,0 +1,2 @@
+cwd=/tmp; offline daily exit=0; 5 PNG + reel.mp4 + REVIEW.md; no APPROVED/dry-run; duplicate exit=1; reel hash preserved
+오류: 이미 있는 날짜 폴더입니다: /tmp/reelsbook-daily-6b/2026-10-27. 덮어쓰지 않았습니다. REVIEW.md를 확인하거나 예행연습은 --date 다른날짜 또는 --output-root 다른폴더를 사용하세요.

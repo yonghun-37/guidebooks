@@ -34,7 +34,7 @@
     ['06-review', '게시 전 사람 검수', '검수표·APPROVED.json·드라이런', '약 20분'],
     ['07-publish', '앱으로 첫 게시하기', '직접 확인한 첫 게시물과 그 주소', '약 30분'],
     ['08-api', '선택 · API 자동 게시', '계정·권한·공개 URL을 확인한 요청 미리보기', '약 60분 이상 · 선택 심화'],
-    ['09-schedule', '선택 · 예약과 자동 실행', '예약 목록과 게시 확인 계획', '약 20분 · 선택 심화'],
+    ['09-schedule', '매일 생성 예약과 사람 승인', '매일 생성 설정·날짜별 폴더·검수와 게시 계획', '약 30분 + 다음 날 확인'],
     ['10-insights', '첫 24시간·7일 지표', '두 시점의 관찰 기록과 다음 수정점', '약 15분씩 · 관찰할 때마다']
   ];
   const practice = practiceRows.map(([slug, title, deliverable, duration], number) => Object.freeze({
@@ -90,7 +90,7 @@
       const sequence = current.track === 'practice' ? practice : chapters;
       const previous = sequence[sequence.indexOf(current) - 1];
       meta.className = 'chapter-meta';
-      meta.innerHTML = `<div class="deliverable"><dt>이 장을 마치면 만들어지는 것</dt><dd>${esc(current.deliverable)}</dd></div><div><dt>예상 소요 시간</dt><dd>${esc(current.duration)}</dd></div><div><dt>난이도</dt><dd>${esc(current.difficulty)}</dd></div><div><dt>선행 장</dt><dd>${previous ? link(previous) : '없음 · 여기서 시작'}</dd></div>`;
+      meta.innerHTML = `<div class="deliverable"><dt>이 장을 마치면 만들어지는 것</dt><dd>${esc(current.deliverable)}</dd></div><div><dt>예상 소요 시간</dt><dd>${esc(current.duration)}${current.track === 'theory' ? ' · 읽기·메모, 연결 실습 별도' : ''}</dd></div><div><dt>난이도</dt><dd>${esc(current.difficulty)}</dd></div><div><dt>선행 장</dt><dd>${previous ? link(previous) : '없음 · 여기서 시작'}</dd></div>`;
     });
     const blocks = [...document.querySelectorAll('.chapter-block[id]')];
     const outline = blocks.map(block => `<li><a href="#${block.id}">${esc(block.querySelector('.block-label')?.lastChild.textContent.trim() || block.querySelector('h2').textContent)}</a></li>`).join('');

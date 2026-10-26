@@ -1,0 +1,9 @@
+{
+  "command": [
+    "python3",
+    "scripts/build_appendices.py"
+  ],
+  "stdout": "도구 29개, 용어 30개, 인용 출처 109개\n",
+  "files_compared": 90,
+  "changed": []
+}

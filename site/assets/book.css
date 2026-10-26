@@ -382,3 +382,27 @@ input[type='checkbox'] { width: 19px; height: 19px; flex-shrink: 0; margin-top: 
   /* 닫힌 FAQ도 인쇄한다. JS를 끈 환경에서도 내용을 보여 준다. */
   .chapter-faq details::details-content { display: block; content-visibility: visible; }
 }
+
+/* 금액은 텍스트와 같은 값으로 그리며, 음수는 0선 왼쪽에 표시한다. */
+.money-bars { display:block; width:100%; max-width:420px; height:auto; margin:12px auto; }
+.money-bars text { fill:var(--ink); font:16px system-ui,sans-serif; }
+.money-zero { stroke:var(--muted); stroke-width:1; }
+.money-income { fill:#247c65; }
+.money-cost { fill:#a96517; }
+.money-balance { fill:#3c71ba; }
+.money-negative { fill:#b13c43; }
+[data-theme="dark"] .money-income { fill:#60c5a7; }
+[data-theme="dark"] .money-cost { fill:#e6b360; }
+[data-theme="dark"] .money-balance { fill:#8bb7f1; }
+[data-theme="dark"] .money-negative { fill:#fa9097; }
+.chapter .plan-calendar td input[type="checkbox"] { min-width:22px; min-height:22px; }
+.chapter .plan-calendar th:first-child { width:29%; }
+.chapter .plan-calendar th:last-child { width:18%; }
+.plan-calendar { margin-top:16px; }
+@media (max-width:680px) {
+  .chapter .simulator .field-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .chapter .simulator .field-grid label { font-size:13px; }
+  .chapter .simulator .field-grid input,.chapter .simulator .field-grid select { min-height:44px; }
+  .chapter .simulator .field-grid label:has(textarea) { grid-column:1/-1; }
+  .chapter .plan-calendar th,.chapter .plan-calendar td { padding:8px 3px; font-size:12px; }
+}

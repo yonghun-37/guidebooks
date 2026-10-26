@@ -92,7 +92,7 @@ class TermLinks(HTMLParser):
         for name, term in self.terms.items():
             if 'first' in term:
                 continue
-            match = re.search(r'(?<![A-Za-z])'+re.escape(name)+r'(?![A-Za-z])', data)
+            match = re.search(r'(?<![A-Za-z])'+re.escape(name)+(r'(?!태그)' if name == '해시' else '')+r'(?![A-Za-z])', data)
             if not match or any(match.start() < end and match.end() > start for start, end in occupied):
                 continue
             occupied.append(match.span())
@@ -135,6 +135,15 @@ def glossary():
         terms[new]['description'] = description
     terms['원천징수']['description'] = '돈을 보내는 쪽이 세금을 미리 떼어 납부하는 방식. 최종 세금과 다를 수 있습니다.'
     terms['RSS']['description'] = '새 글의 제목·링크·짧은 설명 등을 모아 받는 피드 형식. 이용 권리는 따로 확인합니다.'
+    for name, id_, description, category in [
+        ('WCAG', 'wcag', '누구나 웹 내용을 읽고 조작하도록 돕는 웹 접근성 기준.', '제작'),
+        ('OFL', 'ofl', '글꼴을 사용·수정·배포할 때 따르는 이용 허락. 파일에 동봉된 조건을 읽습니다.', '제작'),
+        ('px', 'pixel', '화면의 크기를 세는 픽셀 단위.', '제작'),
+        ('fps', 'fps', '1초에 보여 주는 화면 수. 24fps는 1초에 24장입니다.', '제작'),
+        ('MIME', 'mime', '서버가 파일 종류를 알리는 값. JPEG 사진은 image/jpeg입니다.', '자동화'),
+        ('scope', 'scope', '토큰에 허용된 작업 권한. 게시 권한과 계정 정보 읽기 권한을 구분합니다.', '자동화'),
+    ]:
+        terms[name] = dict(id=id_, description=description, category=category)
     for p in PAGES:
         source = p.read_text()
         # 첫 사용 링크를 다시 계산하므로 반복 실행해도 같은 결과가 나온다.
@@ -144,7 +153,9 @@ def glossary():
             source = source[:start] + replacement + source[end:]
         p.write_text(source)
     terms = {name: term for name, term in terms.items() if 'first' in term}
-    korean={'API':'에이피아이','RSS':'알에스에스','JSON':'제이슨','TTS':'티티에스','SRT':'에스알티','2단계 인증':'이단계 인증'}
+    if '해시' in terms:
+        terms['해시'].update(first='(실습) 6', page='practice/06-review.html#approve')
+    korean={'API':'에이피아이','RSS':'알에스에스','JSON':'제이슨','TTS':'티티에스','SRT':'에스알티','2단계 인증':'이단계 인증','WCAG':'더블유씨에이지','OFL':'오에프엘','px':'픽셀','fps':'에프피에스','MIME':'마임','scope':'스코프'}
     entries=[]
     for name,t in sorted(terms.items(),key=lambda item:korean.get(item[0],item[0])):
         entries.append(f'''<article class="glossary-entry" id="{t['id']}" data-glossary-entry data-category="{t['category']}" data-search="{E(name+' '+t['id']+' '+t['description'],quote=True)}"><p class="small">{t['category']}</p><h2>{E(name)}</h2><p>{E(t['description'])}</p><p><a href="{t['page']}">처음 나온 {t['first']} →</a></p></article>''')

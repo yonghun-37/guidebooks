@@ -1,0 +1,50 @@
+{
+  "clean_output": "/tmp/reelsbook-practice-6b-2oy0a2xh/starter-kit/output/first-post",
+  "checks": [
+    {
+      "file": "card-01.png",
+      "sha256_equal": true,
+      "generated_bytes": 56409
+    },
+    {
+      "file": "card-02.png",
+      "sha256_equal": true,
+      "generated_bytes": 67815
+    },
+    {
+      "file": "card-03.png",
+      "sha256_equal": true,
+      "generated_bytes": 79093
+    },
+    {
+      "file": "card-04.png",
+      "sha256_equal": true,
+      "generated_bytes": 69430
+    },
+    {
+      "file": "card-05.png",
+      "sha256_equal": true,
+      "generated_bytes": 70190
+    },
+    {
+      "file": "copy.json",
+      "sha256_equal": true,
+      "generated_bytes": 3386
+    },
+    {
+      "file": "news.json",
+      "sha256_equal": true,
+      "generated_bytes": 1299
+    },
+    {
+      "file": "reel.mp4",
+      "sha256_equal": true,
+      "generated_bytes": 1225396
+    },
+    {
+      "file": "subtitles.srt",
+      "sha256_equal": true,
+      "generated_bytes": 476
+    }
+  ]
+}

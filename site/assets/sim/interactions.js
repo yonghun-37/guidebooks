@@ -40,9 +40,10 @@
     };
     const update = () => {
       const state = memory[route], v = state.values.map(Number);
-      if (!valid(all(body, 'input:not(:disabled)'))) { report(root, '—', '빈칸·범위를 확인해 입력하세요.'); return; }
+      if (!valid(all(body, 'input:not(:disabled)'))) { ReelsSim.moneyBars(root, null); report(root, '—', '빈칸·범위를 확인해 입력하세요.'); return; }
       const gross = route === 'platform' ? (state.mode === 'bonus' ? 0 : v[0]) : v[0] * v[1] * v[2] / 100;
       const net = Math.round(gross - v[3] - v[4]);
+      ReelsSim.moneyBars(root, {income: gross, cost: v[3] + v[4], balance: net});
       const formula = route === 'platform' ? `${state.mode === 'bonus' ? '초대·활성화 없음 = 0' : v[0].toLocaleString('ko-KR')}` : `${v[0].toLocaleString('ko-KR')} × ${v[1]}${route === 'affiliate' ? ` × ${v[2]}%` : ''}`;
       put(body, '[data-formula]', `가상 계산: ${formula} − 비용 ${v[3]} − 환불·공제 ${v[4]}`);
       report(root, `${net.toLocaleString('ko-KR')}원`, route === 'platform' && state.mode === 'bonus' ? '초대·활성화가 없으면 조회만으로 보너스가 생기지 않습니다.' : `${routeData[route].title} 수입에서 입력한 비용·환불을 뺀 가상 금액이며 세금은 포함하지 않았습니다.`);

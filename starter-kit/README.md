@@ -241,7 +241,7 @@ reel:
 
 ## 6. 실제 게시 기능의 경계
 
-**2026년 10월 조사 기준.** 이 예제는 [Instagram Login 경로](../research/graph-api-publishing.md)(API-01·06·08·12)를 사용합니다. 프로페셔널 계정·권한·앱 설정은 별도 준비가 필요합니다. PNG는 직접 보내지 않고 JPEG를 사용합니다. 서버가 읽을 수 있는 공개 미디어 URL도 필요합니다. 토큰 발급·로그인·웹 호스팅·예약 실행은 이 키트가 대신하지 않습니다.
+**2026년 10월 조사 기준.** 이 예제는 [Instagram Login 경로](../research/graph-api-publishing.md)(API-01·06·08·12)를 사용합니다. 프로페셔널 계정·권한·앱 설정은 별도 준비가 필요합니다. PNG는 직접 보내지 않고 JPEG를 사용합니다. 서버가 읽을 수 있는 공개 미디어 URL도 필요합니다. 토큰 발급·로그인·웹 호스팅은 사용자가 준비합니다. 날짜별 생성 예약은 아래 안내로 직접 등록합니다.
 
 `publish.py`는 **이미지와 동영상 모두 공개 URL**을 쓰는 Instagram Login 경로입니다(PRAC-08·09). Facebook Login의 resumable 경로를 이 키트에 적용하지 않습니다. 다음은 선택 심화 경로이며 앱 첫 게시에는 필요 없습니다.
 
@@ -270,13 +270,58 @@ python publish.py output/2026-10-26 --base-url "<URL>"
 python publish.py output/2026-10-26 --live --base-url "<URL>"
 ```
 
-**토큰 만료와 갱신:** 대시보드 **Generate token**은 60일 장기 토큰이고 OAuth 토큰은 1시간 단기입니다(PRAC-06). 장기 토큰은 발급 후 24시간 이상 지났고 만료 전일 때 `GET https://graph.instagram.com/refresh_access_token`에 `grant_type=ig_refresh_token`, `access_token`을 전달해 다시 60일 갱신할 수 있습니다(PRAC-07). 비공개 실행 환경에서 공식 [Instagram Login 문서](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/business-login/)에 따라 갱신하고 반환된 토큰·expires_in을 확인하세요. 만료했다면 다시 인증해야 합니다. 키트는 자동 갱신·예약·로그인·호스팅을 대신하지 않습니다. 토큰·시크릿을 셸 기록·공개 Git·스크린샷·AI 채팅에 남기지 마세요.
+**토큰 만료와 갱신:** 대시보드 **Generate token**은 60일 장기 토큰이고 OAuth 토큰은 1시간 단기입니다(PRAC-06). 장기 토큰은 발급 후 24시간 이상 지났고 만료 전일 때 `GET https://graph.instagram.com/refresh_access_token`에 `grant_type=ig_refresh_token`, `access_token`을 전달해 다시 60일 갱신할 수 있습니다(PRAC-07). 비공개 실행 환경에서 공식 [Instagram Login 문서](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/business-login/)에 따라 갱신하고 반환된 토큰·expires_in을 확인하세요. 만료했다면 다시 인증해야 합니다. 키트는 자동 갱신·로그인·호스팅을 대신하지 않습니다. 날짜별 생성 예약은 아래 안내로 직접 등록합니다. 토큰·시크릿을 셸 기록·공개 Git·스크린샷·AI 채팅에 남기지 마세요.
 
 자기 소유 계정 Standard Access 검수 면제와 개발 모드의 일반 독자 공개는 별개입니다. 공통 App Modes와 앱 생성 문서에 범위 차이가 있어, 개발 모드 게시 성공이나 일반 공개를 보장하지 않습니다(PRAC-02·03). 권한은 `instagram_business_basic`, `instagram_business_content_publish`이며 Facebook 페이지 연결이 필수인 다른 로그인 경로와 구분하세요.
 
 live는 캐러셀과 릴스를 각각 게시하므로 총 2개 게시물입니다. 실행 시작부터 `LIVE_ATTEMPT.json`을 남기며 같은 폴더의 재실행을 막습니다. 중간 실패나 응답 유실 시 일부가 이미 게시됐을 수 있습니다. 자동 복구는 없으므로 대시보드에서 확인해야 합니다. 파일을 무작정 지우고 재실행하면 중복될 수 있습니다. 실제 API 경로의 동작과 한국 계정 게시 성공은 검증하지 않았습니다.
 
 `is_ai_generated`는 기본 false이며 실제 사용한 제작 도구와 콘텐츠에 맞게 사람이 판단합니다. 필요하면 `copy.json`에서 true로 바꾸고 재생성·검수하세요. AI 표시와 광고 표시의 판단은 별도이며, 광고/파트너십 게시 전용 파라미터는 이 예제에서 지원하지 않습니다([API-12·13](../research/graph-api-publishing.md)).
+
+## 본인 계정 ID와 이름 확인
+
+토큰을 발급받은 사용자는 로컬 터미널에서 다음을 실행하세요. 명령 뒤에 토큰을 붙이지 않습니다.
+
+```bash
+python token_check.py
+```
+
+숨김 입력창에 토큰을 붙여넣고 Enter를 누르면 `user_id: 숫자`와 `username: 계정이름`만 표시됩니다. 발급 대상 계정과 일치하는지 확인한 뒤 user_id를 비공개 `.env`의 `IG_USER_ID`에 저장하세요. 이 도구는 본인 계정을 읽는 요청 한 번만 보내며 토큰·응답 전문을 출력하거나 파일에 저장하지 않습니다. 숨김 입력이 불가능한 창에서는 중단합니다. 요청 실패 시 앱 대시보드에서 토큰·권한을 확인하세요. 성공은 **확인한 순간 계정을 읽을 수 있음**을 뜻하며 만료일이나 게시 권한까지 확인하지 않습니다. [조사 근거와 공식 안내](../research/practice-instagram.md)를 참고하세요.
+
+## 매일 초안 만들기와 OS 예약 (실습 9)
+
+`daily.py`는 매일 생성까지만 실행합니다. 키트 폴더에서 먼저 수동으로 확인하세요.
+
+```bash
+python daily.py
+```
+
+컴퓨터의 오늘 날짜가 2026-10-26이면 `output/daily/2026-10-26/`에 카드·릴스와 `REVIEW.md`가 생기고 검수 대기에서 끝납니다. `config.yaml`이 있으면 사용하고, 없으면 `config.example.yaml`을 사용합니다. 항상 오프라인이며 API·TTS 플러그는 켜지지 않습니다. 웹 채팅 모드(`llm.mode: prompt`)는 문안 대기에서 멈추므로 매일 카드·릴스까지 만들려면 `llm.mode: offline`을 사용하세요. 직접 녹음 경로가 있으면 그 파일은 사용합니다.
+
+같은 날짜 폴더는 덮어쓰지 않습니다. 오늘 수동 확인 뒤 예약이 실행되면 로그에 중복 오류가 남을 수 있으며 기존 결과는 보존됩니다. 다음 날 폴더 생성은 아래처럼 **실제 다음 날 날짜로 바꾸어** 먼저 연습할 수 있습니다.
+
+```bash
+python daily.py --date 2026-10-27
+```
+
+`--date YYYY-MM-DD`, `--config config.yaml`, 반복 `--feed fixtures/my-feed.xml`, `--output-root output/daily-rehearsal`을 선택할 수 있습니다. 상대 경로는 모두 **키트 폴더 기준**입니다. 피드는 로컬 XML만 받습니다. 다른 날짜나 다른 출력 루트로 연습하면 이전 결과를 지우지 않아도 됩니다. 실패 후 남은 날짜 폴더도 자동 덮어쓰지 않으므로 파일과 로그를 먼저 확인하세요.
+
+예약 안내는 설치한 가상환경의 Python으로 생성합니다. 아래에서 자신의 운영체제 **한 줄만** 실행하세요. Windows PowerShell은 앞서 안내한 것처럼 `python` 대신 `.venv\Scripts\python.exe`를 사용합니다.
+
+```bash
+python schedule_setup.py --os windows --time 09:00
+python schedule_setup.py --os macos --time 09:00
+python schedule_setup.py --os linux --time 09:00
+```
+
+이 명령은 등록·확인·수동 실행·삭제 안내를 **출력만** 합니다. 컴퓨터 설정을 바꾸지 않습니다. Python과 daily.py는 절대 경로로 지정합니다. macOS/Linux는 설정·출력·로그·피드도 절대 경로를 씁니다. Windows는 명령을 짧게 하기 위해 키트 내부 설정·피드·로그·사용자 지정 출력 폴더를 키트 기준 상대 경로로 전달하고, 기본 출력 폴더 옵션은 생략합니다. daily.py가 키트 기준으로 해석하므로 예약의 작업 폴더와 무관합니다. 키트 밖의 파일은 절대 경로를 유지합니다. 기본 Python은 안내를 생성한 실행 파일이며 `--python 절대경로`로 바꿀 수 있습니다. `--config`, 반복 `--feed`, `--output-root`도 지원합니다. 사용할 설정 파일은 예약 안내 생성 시 선택되므로 나중에 config.yaml을 새로 만들거나 경로를 옮기면 안내를 다시 생성하고 기존 예약을 직접 교체하세요.
+
+- **Windows:** PowerShell에서 `cmd.exe`를 입력해 명령 프롬프트로 바꾼 뒤 출력된 `schtasks /Create ...` 한 줄을 실행하세요. 공백 경로를 감싼 중첩 따옴표와 백슬래시를 유지합니다. 같은 이름 `ReelsBookDaily`가 이미 있으면 자동 교체하지 않습니다. 변경하려면 출력된 `/Delete`로 기존 작업을 삭제한 뒤 새 안내를 등록합니다. 이 키트는 `/TR`에 전달할 명령이 261문자를 넘으면 안내 생성을 중단합니다. 이는 긴 명령의 호환성 문제를 피하기 위한 보수적 제한이며 Windows 전체 명령 길이의 확정 규격을 뜻하지 않습니다. 오류가 나면 키트를 `C:\reels` 같은 짧은 경로로 옮기고 Python·외부 파일 경로도 줄인 뒤 안내를 다시 생성하세요. [Microsoft 등록 명령](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create)
+- **macOS/Linux:** 출력된 `crontab -e`를 실행하고 `분 시 * * * ...` 한 줄을 추가해 저장하세요. `crontab -l`에서 같은 줄이 보이는지 확인합니다. 삭제는 편집 화면에서 해당 daily.py 줄만 지우고 저장합니다. 경로에 `%`가 있으면 출력된 `\%`를 유지하세요. [cron 형식](https://man7.org/linux/man-pages/man5/crontab.5.html), [crontab 편집 명령](https://man7.org/linux/man-pages/man1/crontab.1p.html)
+
+예약 시각은 컴퓨터의 현지 시간이며 컴퓨터가 켜져 있어야 합니다. 절전·전원 꺼짐 상태에서의 실행을 보장하지 않습니다. 로그는 기본 `output/daily/daily.log`에 누적됩니다(`--log 경로`로 직접 실행 로그도 저장 가능). 로그의 오류와 다음 날 날짜 폴더·REVIEW.md를 함께 확인하세요. 중복 실행이나 실패가 나면 자동 재시도·자동 승인·자동 게시는 하지 않습니다. 로그 파일은 필요할 때 보관하거나 정리하세요.
+
+결과물을 열어 검수한 다음에만 `python run_pipeline.py approve output/daily/날짜`로 사람이 승인합니다. 이 명령은 게시 요청 미리보기까지만 실행합니다. 실제 자료의 앱 게시 또는 사용자가 준비한 `publish.py --live` 경로는 앞의 게시 안내를 따르세요. 동봉 합성 자료는 실제 게시할 수 없습니다.
 
 ## 7. 도구 선택과 라이선스
 
@@ -303,7 +348,7 @@ python -m pip install --cache-dir .cache/pip -r requirements-dev.txt
 python -m pytest -q
 ```
 
-테스트는 외부 네트워크 호출을 차단한 상태에서 생성→검수 대기→테스트용 검수표 확인 처리→승인→드라이런까지 수행합니다. 세 레이아웃·테마·강조·사용자 이미지, 웹 채팅 프롬프트와 JSON 검증, 모킹한 API 성공/실패·인증 값 비노출, 직접 녹음 MP3·WAV 음악·믹싱·모킹한 TTS 플러그를 확인합니다. MP4를 실제 디코딩해 크기·프레임 수·코덱·오디오·길이를 검사합니다. 테스트의 자동 체크 처리는 테스트용이며 실제 검수는 사람이 해야 합니다.
+테스트는 날짜별 생성의 날짜·중복·공백 경로·검수 대기, 예약 명령의 인용·등록 미호출, 계정 확인의 숨김 입력·토큰 비노출을 모킹해 검사합니다. 외부 네트워크 호출을 차단한 상태에서 생성→검수 대기→테스트용 검수표 확인 처리→승인→드라이런까지 수행합니다. 세 레이아웃·테마·강조·사용자 이미지, 웹 채팅 프롬프트와 JSON 검증, 모킹한 API 성공/실패·인증 값 비노출, 직접 녹음 MP3·WAV 음악·믹싱·모킹한 TTS 플러그를 확인합니다. MP4를 실제 디코딩해 크기·프레임 수·코덱·오디오·길이를 검사합니다. 테스트의 자동 체크 처리는 테스트용이며 실제 검수는 사람이 해야 합니다.
 
 [samples/README.md](samples/README.md)에 동봉 샘플의 생성 명령과 크기를 기록했습니다. 검증 환경: Ubuntu 22.04 x86_64, Python 3.11.15. Windows/macOS 명령은 안내했으며 해당 OS에서 실제 실행하지 않았습니다.
 

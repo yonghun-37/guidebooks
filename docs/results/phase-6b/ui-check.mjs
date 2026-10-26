@@ -1,0 +1,51 @@
+import {chromium} from '/tmp/ai-insta-phase3-browser/node_modules/playwright-core/index.mjs';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+const browser=await chromium.launch({executablePath:'/home/yonghun/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome',headless:true,args:['--no-sandbox']});
+const context=await browser.newContext({reducedMotion:'reduce'});
+await context.route('https://cdn.jsdelivr.net/**',r=>r.fulfill({contentType:'text/css',body:''}));
+const page=await context.newPage(), checks=[];
+const check=(name,value)=>{assert.ok(value,name);checks.push(name);};
+const go=async slug=>page.goto('http://127.0.0.1:8586/site/chapters/'+slug+'.html');
+try {
+for(const width of [1280,375,360]){
+ await page.setViewportSize({width,height:900});
+ await go('01-map'); await page.evaluate(()=>localStorage.clear());
+ await go('03-revenue');
+ const root=page.locator('#ledger-sim');
+ check('3장 SVG '+width,await root.locator('svg[data-money-bars]').count()===1);
+ check('3장 기본 수입 '+width,(await root.locator('svg').getAttribute('aria-label')).includes('수입 30,000원'));
+ await root.locator('summary').first().click();
+ await root.locator('[data-value="3"]').fill('50000');
+ check('3장 적자 '+width,(await root.locator('svg').getAttribute('aria-label')).includes('잔액 -20,000원'));
+ check('3장 음수 막대 '+width,await root.locator('[data-bar="balance"]').evaluate(e=>+e.getAttribute('x')<180));
+ await root.locator('[data-value="1"]').fill('');
+ check('3장 빈칸 오래된 그림 숨김 '+width,await root.locator('svg').isHidden());
+ await go('13-roadmap');
+ check('13장 가상 수입 '+width,(await page.locator('svg[data-money-bars]').getAttribute('aria-label')).includes('수입 400,000원'));
+ await page.locator('#goal-price').fill('0');
+ check('13장 0 가격 숨김 '+width,await page.locator('svg[data-money-bars]').isHidden());
+ await go('08-reels');
+ check('8장 미리보기 확대 '+width,await page.locator('.reel-screen').evaluate(e=>e.clientWidth>=150 && e.clientHeight>=260));
+ await go('14-plan');
+ check('14장 날짜별30행 '+width,await page.locator('[data-plan-calendar] tbody tr').count()===30);
+ check('14장 첫 날짜 '+width,(await page.locator('[data-plan-calendar] tbody tr').first().textContent()).includes('2026-10-27'));
+ await page.locator('.plan-calendar summary').click();
+ await page.locator('[data-plan-calendar] input').first().check();
+ check('14장 체크 유지 '+width,await page.locator('[data-plan-calendar] input').first().isChecked());
+ check('14장 주간점검 '+width,await page.locator('[data-weekly-check]').count()===5);
+ await page.locator('#plan-start').fill('2027-02-15');
+ check('14장 날짜 반영 '+width,(await page.locator('[data-plan-calendar] tbody tr').first().textContent()).includes('2027-02-15'));
+ await page.locator('#plan-days').selectOption('0');
+ check('14장 활동0 '+width,(await page.locator('[data-plan-calendar]').textContent()).includes('쉬는 날'));
+ await page.locator('#plan-start').fill('');
+ check('14장 날짜누락 '+width,await page.locator('[data-plan-calendar]').isHidden());
+ await go('01-map');
+ check('1장 시간·선행 '+width,(await page.locator('.chapter-meta').textContent()).includes('선행 장'));
+}
+await page.goto('http://127.0.0.1:8586/site/glossary.html');
+check('해시 첫 설명 연결',await page.locator('#hash a').getAttribute('href')==='practice/06-review.html#approve');
+for(const term of ['wcag','ofl','pixel','fps','mime','scope'])check('용어 '+term,await page.locator('#'+term+'[data-glossary-entry]').count()===1);
+await fs.writeFile('docs/results/phase-6b/ui-check.json',JSON.stringify({checks,passed:checks.length},null,2));
+console.log('PASS '+checks.length);
+} finally {await browser.close();}

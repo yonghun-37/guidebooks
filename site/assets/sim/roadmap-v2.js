@@ -5,15 +5,18 @@
     const inputs = [...element.querySelectorAll('input')];
     const update = () => {
       if (inputs.some(input => input.value.trim() === '' || !input.checkValidity())) {
+        ReelsSim.moneyBars(element, null);
         report('— · 목표·비용·제안 가격을 유효하게 입력하세요.');
         return;
       }
       const [goal, cost, price] = inputs.map(input => Number(input.value));
       if (price === 0) {
+        ReelsSim.moneyBars(element, null);
         report('— · 제안 가격을 정한 뒤 필요한 거래 수를 계산하세요.');
         return;
       }
       const count = Math.ceil((goal + cost) / price);
+      ReelsSim.moneyBars(element, {income: count * price, cost, balance: count * price - cost});
       report(`${count.toLocaleString('ko-KR')}건 · 그만큼 제작·수정할 시간이 있는지 먼저 확인하세요.`);
     };
     element.addEventListener('input', update);

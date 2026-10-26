@@ -29,9 +29,9 @@
 .interaction .card-source { border-top: 1px solid currentColor; padding-top: 3px; }
 .interaction .card-copy.is-clipped { outline: 2px dashed #b33b26; outline-offset: -2px; }
 .interaction .clip-label { color: var(--ink); font-weight: 700; font-size: 12px; }
-.interaction .reel-preview { display: grid; grid-template-columns: 72px minmax(0,1fr); align-items: center; gap: 10px; }
-.interaction .reel-screen { width: 72px; height: 112px; background: #172b35; color: #fff8e9; display: flex; flex-direction: column; justify-content: space-between; padding: 6px; font-size: 11px; overflow-wrap: anywhere; border-radius: 6px; }
-.interaction .reel-screen strong { color: #fff8e9; font-size: 13px; }
+.interaction .reel-preview { display: grid; grid-template-columns: 200px minmax(0,1fr); align-items: center; gap: 16px; }
+.interaction .reel-screen { width: 200px; aspect-ratio: 9/16; background: #172b35; color: #fff8e9; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; font-size: 17px; overflow-wrap: anywhere; border-radius: 8px; }
+.interaction .reel-screen strong { color: #fff8e9; font-size: 22px; }
 .interaction .reel-screen p { line-height: 1.4; }
 .interaction .timeline { position: relative; margin: 8px 0 0 42px; }
 .interaction .track { position: relative; height: 32px; margin: 4px 0; background: var(--soft); border: 1px solid var(--line); border-radius: 3px; }
@@ -63,6 +63,10 @@
   .interaction .card-stage { width: 264px; height: 330px; margin: auto; }
   .interaction .card-stage.is-small { width: 96px; height: 120px; }
   .interaction .card-editor .clip-label { margin: 3px 0; }
+  .interaction .reel-preview { grid-template-columns:150px minmax(0,1fr); gap:8px; }
+  .interaction .reel-screen { width:150px; margin:0; padding:12px; font-size:14px; }
+  .interaction .reel-screen strong { font-size:18px; }
+  .interaction .reel-preview .tool-row { align-items:stretch; }
   .interaction .tool-flow:not(.step-flow) { grid-template-columns: 1fr; gap: 3px; }
   .interaction .tool-flow:not(.step-flow) li { padding: 5px 8px; }
   .interaction .tool-flow small { display: inline; margin-right: 6px; }
