@@ -62,9 +62,9 @@ class Page(HTMLParser):
 
 
 def deployment_files(root):
-    """Pages 워크플로가 복사하는 세 원본을 배포 URL에 대응시킨다."""
+    """책·서가 원본을 배포 URL에 대응시킨다."""
     files, groups = {}, {}
-    for folder, prefix in (('shelf', ''), ('site', 'reels'), ('site-shorts', 'shorts')):
+    for folder, prefix in (('shelf', ''), ('site', 'reels'), ('site-shorts', 'shorts'), ('site-blog', 'blog')):
         for path in sorted((root / folder).rglob('*')):
             if path.is_file():
                 files[str(PurePosixPath(prefix) / path.relative_to(root / folder).as_posix())] = path
@@ -117,36 +117,63 @@ def quiz_errors(page, theory):
     return errors, count
 
 
+def figure_check(page):
+    """그림 개수와 관계없이 캡션·SVG의 접근 가능한 이름을 검사한다."""
+    issues = []
+    figures = [e for e in page.elements if e.tag == 'figure']
+    for index, figure in enumerate(figures, 1):
+        children = [e for e in page.elements if e.within(figure)]
+        captions = [e for e in children if e.tag == 'figcaption' and e.parent is figure]
+        if len(captions) != 1 or not captions[0].text.strip():
+            issues.append(f'그림 {index}: 내용 있는 figcaption 1개 필요')
+        for svg in (e for e in children if e.tag == 'svg' and e.attrs.get('aria-hidden') != 'true'):
+            # 이름이 있는 바깥 SVG 안의 좌표·크롭용 SVG는 그림의 일부다.
+            # 독립 이미지로 선언한 경우에는 중첩되어도 이름을 검사한다.
+            if svg.attrs.get('role') != 'img' and any(
+                    parent.tag == 'svg' and svg.within(parent) for parent in children):
+                continue
+            title = any(e.tag == 'title' and e.text.strip() and e.within(svg) for e in children)
+            if not (title or (svg.attrs.get('aria-label') or '').strip()):
+                issues.append(f'그림 {index}: SVG 제목 또는 aria-label 필요')
+    return issues
+
+
 def check(root=None, site='site'):
-    if site not in {'site', 'site-shorts'}:
+    if site not in {'site', 'site-shorts', 'site-blog'}:
         raise ValueError('지원하지 않는 사이트')
     shorts = site == 'site-shorts'
+    other_book = site != 'site'
     root = Path(root if root is not None else ROOT).resolve()
     pages = {p: Page(p) for folder in (site, 'shelf') for p in sorted((root / folder).rglob('*.html'))}
     ids = {p: {a['id'] for _, a in page.nodes if 'id' in a} | {a['name'] for tag, a in page.nodes if tag == 'a' and 'name' in a} for p, page in pages.items()}
     deployed, groups = deployment_files(root)
     logical_paths = {path: url for url, path in deployed.items()}
-    sources_path = root / ('research-shorts/SOURCES.md' if shorts else 'research/SOURCES.md')
-    source_pattern = r'\bY\d{3}\b' if shorts else r'^###\s+(S\d{3})\.'
+    sources_path = root / {'site': 'research', 'site-shorts': 'research-shorts', 'site-blog': 'research-blog'}[site] / 'SOURCES.md'
+    source_pattern = r'\b[A-Z]{1,4}\d{3}\b' if other_book else r'^###\s+(S\d{3})\.'
     sources = set(re.findall(source_pattern, sources_path.read_text(encoding='utf-8'), re.MULTILINE)) if sources_path.is_file() else set()
-    citation_pattern = r'\bY\d{3}\b' if shorts else r'\bS\d{3}\b'
+    citation_pattern = (r'\bY\d{3}\b' if shorts else
+                        r'\b[A-Z]{1,4}\d{3}\b' if other_book else r'\bS\d{3}\b')
     glossary = pages.get(root / site / 'glossary.html')
     terms = {a['id'] for _, a in glossary.nodes if 'data-glossary-entry' in a and 'id' in a} if glossary else set()
     errors, references, pending, questions, source_refs, term_refs, chapters = [], 0, 0, 0, 0, 0, 0
+    if not (root / site / 'index.html').is_file():
+        errors.append(f'표지 없음: {site}/index.html')
     if not sources_path.is_file():
         errors.append(f'출처 목록 없음: {sources_path.relative_to(root)}')
-    if glossary is None and not shorts:
+    if glossary is None and not other_book:
         errors.append('용어집 없음: site/glossary.html')
     for path, page in pages.items():
         label = str(path.relative_to(root))
-        theory = path.parent == root / site / 'chapters' and ((shorts and re.match(r'\d{2}[a-z]?-', path.name) is not None) or (not shorts and (re.match(r'(0[2-9]|1[0-4])-', path.name) is not None or path.name == '05b-ai-tools.html')))
+        if path.is_relative_to(root / site):
+            errors.extend(f'{label}: {issue}' for issue in figure_check(page))
+        theory = path.parent == root / site / 'chapters' and ((other_book and re.match(r'\d{2}[a-z]?-', path.name) is not None) or (not other_book and (re.match(r'(0[2-9]|1[0-4])-', path.name) is not None or path.name == '05b-ai-tools.html')))
         if theory:
             chapters += 1
             blocks = tuple(a['data-block'] for _, a in page.nodes if 'data-block' in a)
             if blocks != BLOCKS:
                 errors.append(f'{label}: 9단계 블록 누락·중복·순서 오류 ({", ".join(blocks)})')
         theory_quiz = path.parent == root / site / 'chapters' and (re.match(r'(0[1-9]|1[0-4])-', path.name) is not None or path.name == '05b-ai-tools.html')
-        quiz_issues, question_count = quiz_errors(page, theory if shorts else theory_quiz)
+        quiz_issues, question_count = quiz_errors(page, theory if other_book else theory_quiz)
         questions += question_count
         errors.extend(f'{label}: {issue}' for issue in quiz_issues)
         for id_, count in Counter(a['id'] for _, a in page.nodes if 'id' in a).items():
@@ -199,12 +226,12 @@ def check(root=None, site='site'):
                     errors.append(f'{label}: 잘못된 참조 {href} ({exc})')
         source_refs += len(cited)
         errors.extend(f'{label}: 미등록 출처 {source}' for source in sorted(cited - sources))
-    if not shorts and chapters != 14:
+    if not other_book and chapters != 14:
         errors.append(f'이론 2~15장 필요 (현재 {chapters}개)')
     catalog = []
     try:
         catalog_path = root / site / 'assets/catalog.js'
-        catalog_text = catalog_path.read_text(encoding='utf-8') if catalog_path.exists() or not shorts else 'Object.freeze([]);'
+        catalog_text = catalog_path.read_text(encoding='utf-8') if catalog_path.exists() or not other_book else 'Object.freeze([]);'
         catalog = json.loads(catalog_text.split('Object.freeze(', 1)[1].rsplit(');', 1)[0])
         if not isinstance(catalog, list):
             raise ValueError('도구 목록은 배열이어야 합니다')
@@ -221,9 +248,9 @@ def check(root=None, site='site'):
     for key, count in Counter(original_keys).items():
         if count > 1:
             errors.append(f'중복 실습 진행 키 {key}')
-    if (not shorts or e2e_page is not None) and (not steps or None in steps or '' in steps or steps != set(e2e_keys)):
+    if (not other_book or e2e_page is not None) and (not steps or None in steps or '' in steps or steps != set(e2e_keys)):
         errors.append('실습 단계와 E2E 진행 키 불일치')
-    sizes = dict(site=0, shelf=0, samples=0, **({'site-shorts': 0} if (root / 'site-shorts').exists() else {}))
+    sizes = dict(site=0, shelf=0, samples=0, **{name: 0 for name in ('site-shorts', 'site-blog') if (root / name).exists()})
     extensions = Counter()
     for path, group in groups.items():
         size = path.stat().st_size
@@ -237,7 +264,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument('--output', type=Path)
-    parser.add_argument('--site', choices=('site', 'site-shorts'), default='site')
+    parser.add_argument('--site', choices=('site', 'site-shorts', 'site-blog'), default='site')
     args = parser.parse_args()
     result = check(root=args.root, site=args.site)
     rendered = json.dumps(result, ensure_ascii=False, indent=2) + '\n'

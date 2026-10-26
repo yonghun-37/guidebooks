@@ -1,0 +1,90 @@
+/* 학습 그림 공통 규칙. 화면 도식은 실제 서비스 UI를 재현하지 않는다. */
+:root { --fig-blue:#385fa0; --fig-good:#24765a; --fig-bad:#a24235; --fig-fill:#e7ede8; }
+:root[data-theme='dark'] { --fig-blue:#a9c7ff; --fig-good:#8ed5b6; --fig-bad:#ffb0a0; --fig-fill:#303e36; }
+.book-figure { margin:28px 0; padding:20px; border:1px solid var(--line); border-radius:16px; background:var(--surface); min-width:0; clear:both; }
+.book-figure figcaption { margin:16px 0 0; font-size:.88rem; line-height:1.7; color:var(--muted); }
+.book-figure p:last-child { margin-bottom:0; }
+.book-figure > svg { display:block; width:100%; max-width:360px; height:auto; margin:auto; color:var(--ink); }
+.book-figure svg text { fill:currentColor; font-family:var(--body); font-size:18px; }
+.fig-node { fill:var(--fig-fill); stroke:var(--line); stroke-width:1.5; }
+.fig-paper { fill:var(--surface); stroke:var(--muted); stroke-width:1.5; }
+.fig-soft { fill:var(--soft); }
+.fig-emphasis { stroke:var(--accent); stroke-width:2.5; }
+.fig-arrow { fill:none; stroke:var(--accent); stroke-width:2; }
+.fig-rule { fill:none; stroke:var(--muted); stroke-width:1; }
+.fig-marker { fill:var(--accent); }
+.book-figure svg .fig-marker-text { fill:var(--paper); font-size:17px; font-weight:750; }
+.fig-bar { fill:var(--fig-blue); }
+.fig-bar-good { fill:var(--fig-good); }
+.fig-pin { display:inline-grid; place-items:center; width:26px; height:26px; border-radius:50%; background:var(--accent); color:var(--paper); font-size:15px; font-weight:750; flex:none; }
+.fig-title { display:block; margin-bottom:14px; font-weight:750; }
+.fig-strip { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; list-style:none; margin:0; padding:0; }
+.fig-strip li { min-width:0; padding:16px; border:1px solid var(--line); border-top:3px solid var(--accent); border-radius:10px; background:var(--soft); position:relative; }
+.fig-strip li+li::before { content:'→'; position:absolute; left:-18px; top:35%; color:var(--accent); }
+.fig-strip strong,.fig-strip span { display:block; }
+.fig-strip span { font-size:.94rem; margin-top:8px; }
+.fig-strip .fig-human { border-top-color:var(--orange); background:var(--warm); }
+.fig-compare { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; align-items:stretch; }
+.fig-compare > div { min-width:0; border:1px solid var(--line); border-radius:10px; padding:16px; background:var(--soft); }
+.fig-compare > div > strong { display:block; margin-bottom:12px; }
+.fig-compare p { margin:10px 0; line-height:1.65; }
+.fig-compare svg { display:block; width:100%; height:auto; max-width:200px; margin:12px auto; color:var(--ink); }
+.fig-wrong { border-top:4px solid var(--fig-bad)!important; }
+.fig-right { border-top:4px solid var(--fig-good)!important; }
+.fig-example { min-height:160px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:16px; }
+.fig-example em { color:var(--fig-bad); font-style:normal; text-decoration:underline; text-decoration-thickness:2px; }
+.fig-example mark { color:var(--ink); background:var(--warm); }
+.fig-compare > div:has(.fig-mini-card) { display:flex; flex-direction:column; }
+.fig-mini-card { width:100%; min-width:0; flex:1; display:flex; flex-direction:column; justify-content:space-between; background:var(--surface); border:1px solid var(--line); padding:12px; border-radius:6px; }
+.fig-mini-card .fig-card-title { font-size:1.15rem; font-weight:750; line-height:1.5; }
+.fig-mini-card small { font-size:.88rem; }
+.fig-chart { display:grid; gap:18px; }
+.fig-chart-row > div:first-child { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.fig-track { height:22px; border-bottom:1px solid var(--muted); margin-top:6px; background:var(--soft); }
+.fig-track > span { display:block; height:100%; width:var(--bar); background:var(--fig-blue); }
+.fig-track .fig-cost { background:var(--orange); }
+.fig-track .fig-good { background:var(--fig-good); }
+.fig-stack { display:flex; height:32px; background:var(--soft); border:1px solid var(--line); }
+.fig-stack span { width:var(--bar); background:var(--fig-blue); }
+.fig-stack .fig-cost { background:var(--orange); }
+.fig-legend { display:flex; flex-wrap:wrap; gap:8px 18px; font-size:.94rem; margin-top:12px; }
+.fig-legend span::before { content:''; display:inline-block; width:12px; height:12px; margin-right:6px; background:var(--fig-blue); }
+.fig-legend .fig-cost::before { background:var(--orange); }
+.fig-folder { display:grid; gap:8px; list-style:none; padding:0 0 0 16px; margin:8px 0; border-left:2px solid var(--line); }
+.fig-folder li { min-width:0; padding:6px 10px; border-left:3px solid var(--accent); background:var(--soft); }
+.fig-folder span { display:block; color:var(--muted); font-size:.94rem; }
+.fig-terminal { padding:16px; background:var(--code); border:1px solid var(--line); border-radius:10px; }
+.fig-terminal p { margin:12px 0; }
+.fig-terminal code { white-space:normal; overflow-wrap:anywhere; }
+.fig-branch { display:grid; gap:12px; }
+.fig-branch > strong { display:block; text-align:center; padding:12px; border:1px solid var(--accent); border-radius:8px; background:var(--soft); }
+.fig-branch > strong::after { content:'↓'; display:block; color:var(--accent); }
+.fig-calendar { display:grid; gap:10px; }
+.fig-calendar > div { border:1px solid var(--line); padding:12px; border-radius:8px; background:var(--soft); }
+.fig-calendar b { display:block; }
+.fig-calendar .fig-move { border:2px dashed var(--orange); background:var(--warm); }
+.fig-sequence { display:grid; gap:10px; padding:0; margin:0; list-style:none; }
+.fig-sequence li { border-left:3px solid var(--accent); padding:10px 14px; background:var(--soft); }
+.fig-sequence strong { display:block; }
+.fig-sequence .fig-wait { border-color:var(--orange); background:var(--warm); }
+/* 620px 가로 SVG로 축소되던 기존 전달 그림도 같은 HTML 띠로 읽는다. */
+.book-figure .ai-flow { margin:0; }
+.cover-art figcaption { font-size:.88rem; color:var(--muted); }
+.sim-embed .book-figure { display:none; }
+@media(max-width:600px) {
+ .book-figure { padding:14px; }
+ .fig-strip { grid-template-columns:1fr; gap:22px; }
+ .fig-strip li+li::before { content:'↓'; left:calc(50% - 8px); top:-29px; }
+ .fig-compare { gap:8px; }
+ .fig-compare > div { padding:10px; }
+ .fig-compare p,.fig-mini-card small { font-size:.94rem; }
+ .fig-mini-card { padding:10px; min-height:260px; }
+ .fig-mini-card .fig-card-title { font-size:1.08rem; }
+ .fig-example { padding:10px; }
+ .book-figure .ai-flow { grid-template-columns:1fr; }
+}
+@media print { .book-figure { break-inside:avoid; } }
+/* 작은 2칸 크롭 그림의 단어도 휴대폰에서 읽을 크기를 유지한다. */
+.fig-compare svg text { font-size:25px; }
+
+.book-figure .ai-flow small { font-size:.94rem; }

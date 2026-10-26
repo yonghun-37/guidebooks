@@ -1,4 +1,4 @@
-너는 ai-insta 프로젝트의 작업자(Codex)다. AGENTS.md, .agents/skills/guidebook-pipeline, **docs/DESIGN-advanced.md(3절 auto-kit)**, research-advanced/(BRIEFING·FACT-SHEET·주제 노트), docs/results/phase-A1.md(조정 제안), 그리고 재사용할 starter-kit/(render·publish·daily·schedule_setup·prepare_hosting·token_check)·shorts-kit/(render·upload·oauth_setup·review)를 읽어라.
+너는 ai-insta 프로젝트의 작업자(Codex)다. AGENTS.md, .agents/skills/guidebook-pipeline, **docs/DESIGN-advanced.md(3절 auto-kit)**, research-advanced/(BRIEFING·FACT-SHEET·주제 노트), docs/results/phase-A1.md(조정 제안), **docs/DESIGN-advanced.md 6절(A1 반영 결정 — 우선)**, 그리고 재사용할 starter-kit/(render·publish·daily·schedule_setup·prepare_hosting·token_check)·shorts-kit/(render·upload·oauth_setup·review)를 읽어라.
 이번 작업은 **Phase A2. auto-kit 구현** 이다. `auto-kit/`만 만든다(다른 작업자가 site*/, blog-kit/, research-blog/를 수정 중 — 건드리지 마라. starter-kit/·shorts-kit/는 읽기만, 코드는 복사해 재사용). commit하지 마라. 시스템 패키지 설치 금지(pip 바이너리 사용). **유료 API 키를 쓰지 마라. 모든 외부 호출은 모킹 테스트.**
 
 요구:
@@ -20,3 +20,4 @@
 - 결과 docs/results/phase-A2.md, `python3 scripts/notify.py "✅ [auto-kit 완료] ..."`.
 - **범위**: docs/DESIGN-advanced.md 1.1 — 심화편은 API와 코드만. Canva·미리캔버스·Clipchamp·CapCut 같은 화면 조작 웹 도구는 다루지 않는다(카드는 코드 템플릿, 이미지는 생성 API, 영상은 ffmpeg).
 - **전자동·시각자료**: DESIGN-advanced 1절(전자동 목표, 운영 모드 3종)과 1.2절(심화편 시각자료 목록)을 따른다. 심화편은 그림이 핵심이다: 시스템 구성도, 하루 실행 타임라인, API 시퀀스, 상태 흐름, 품질 관문 판정 흐름, 폴더·설정 구조, 비용·할당량 차트, 대시보드·알림 예시를 내용에 맞게 적극적으로 쓴다(직접 그린 SVG, 라이트/다크).
+- **자동 품질 관문 구현 근거**: 사실 대조·유사도·규격 검사의 방법(예: 숫자·고유명사 추출 대조, 문장 임베딩 없이도 되는 n-gram/MinHash 유사도, ffprobe 규격, LUFS 측정)은 필요하면 웹 검색으로 확인하고, 기준값은 근거가 없으면 "키트 기본값(바꿀 수 있음)"으로 config에 둔다. LLM 자체 검사(두 번째 모델로 원문 대조)는 선택 단계로 두고 비용을 기록한다.

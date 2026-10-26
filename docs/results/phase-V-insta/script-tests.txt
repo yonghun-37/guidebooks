@@ -1,0 +1,34 @@
+test_model_appendix_links_to_root_glossary (test_build_appendices_reels.ReelsAppendicesTests) ... ok
+test_model_token_is_not_attached_to_login_token (test_build_appendices_reels.ReelsAppendicesTests) ... ok
+test_ai_tools_chapter_is_required_and_checked (test_check_site.CheckSiteTests) ... ok
+test_bad_quiz_options_explanation_and_question_count (test_check_site.CheckSiteTests) ... ok
+test_catalog_distinguishes_plan_15_from_lab_16_by_slug (test_check_site.CheckSiteTests) ... ok
+test_chapter_one_needs_three_questions_without_nine_block_requirement (test_check_site.CheckSiteTests) ... ok
+test_cli_returns_failure_and_saves_report (test_check_site.CheckSiteTests) ... ok
+test_deployment_bytes_include_unreferenced_assets_and_sample_mapping (test_check_site.CheckSiteTests) ... ok
+test_duplicate_practice_key_and_e2e_set_mismatch (test_check_site.CheckSiteTests) ... ok
+test_fact_pending_counts_elements_only (test_check_site.CheckSiteTests) ... ok
+test_image_requires_useful_alt_or_explicit_decoration (test_check_site.CheckSiteTests) ... ok
+test_malformed_image_reference_is_reported_without_crash (test_check_site.CheckSiteTests) ... ok
+test_malformed_or_outside_reference_is_reported_without_crash (test_check_site.CheckSiteTests) ... ok
+test_missing_file_and_encoded_same_page_anchor (test_check_site.CheckSiteTests) ... ok
+test_missing_or_reordered_chapter_block (test_check_site.CheckSiteTests) ... ok
+test_unknown_footnote_source_and_glossary_key (test_check_site.CheckSiteTests) ... ok
+test_valid_fixture_and_deployed_cross_book_paths (test_check_site.CheckSiteTests) ... ok
+test_shorts_mode_checks_deployed_links_and_y_sources (test_check_site.ShortsSiteTests) ... ok
+test_baseline_ratio_exact_boundary_and_track (test_style_lint.StyleLintTests) ... ok
+test_caveat_limit_is_two (test_style_lint.StyleLintTests) ... ok
+test_check_boxes_exempt_caveats_but_never_internal_terms (test_style_lint.StyleLintTests) ... ok
+test_cli_snapshot_report_and_overwrite_protection (test_style_lint.StyleLintTests) ... ok
+test_count_is_stable_across_layout_whitespace_and_reports_source_line (test_style_lint.StyleLintTests) ... ok
+test_fact_namespaces_and_ascii_boundaries (test_style_lint.StyleLintTests) ... ok
+test_forbidden_table_phrases (test_style_lint.StyleLintTests) ... ok
+test_inline_markup_does_not_hide_terms (test_style_lint.StyleLintTests) ... ok
+test_invalid_or_missing_baseline_fails (test_style_lint.StyleLintTests) ... ok
+test_only_learner_content_including_axis_cards_and_closed_faq (test_style_lint.StyleLintTests) ... ok
+test_shorts_fact_ids_are_internal_but_footnotes_are_allowed (test_style_lint.StyleLintTests) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 1.042s
+
+OK

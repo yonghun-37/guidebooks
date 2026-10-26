@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <title>설명용 화면 틀과 번호 표시의 공통 부품</title>
+  <defs>
+    <symbol id="window" viewBox="0 0 320 360">
+      <rect x="4" y="4" width="312" height="352" rx="16" fill="var(--surface)" stroke="var(--muted)" stroke-width="1.5"/>
+      <path d="M4 44h312" fill="none" stroke="var(--line)"/>
+    </symbol>
+    <symbol id="pin" viewBox="0 0 32 32">
+      <circle cx="16" cy="16" r="15" fill="var(--accent)"/>
+    </symbol>
+  </defs>
+</svg>

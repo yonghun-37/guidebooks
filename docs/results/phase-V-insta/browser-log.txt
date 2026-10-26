@@ -1,0 +1,4 @@
+width 1280: 38 pages checked, failures 0
+width 375: 38 pages checked, failures 0
+width 360: 38 pages checked, failures 0
+{"checks":1176,"failures":0,"errors":0,"screens":56}
