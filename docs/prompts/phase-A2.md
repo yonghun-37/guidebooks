@@ -9,9 +9,10 @@
 - 게시: Instagram(A1 결론의 권장 API 경로, 컨테이너 생성·상태 폴링·publish·한도 확인·토큰 만료 점검) / YouTube(재개 업로드, privacyStatus 기본 private, publishAt 예약, 아동용·AI 관련 필드는 A1 근거대로). **기본 드라이런**, `--live`는 사용자가 .env/인증 파일을 직접 넣었을 때만. 토큰은 출력·로그 금지, .env는 .gitignore.
 - 호스팅: A1 결론의 무료 선택지 1~2개 어댑터 + 로컬 드라이런.
 - 실행 예약: Windows 작업 스케줄러·macOS launchd·cron 설치 스크립트, GitHub Actions 워크플로 예시(.github/가 아니라 auto-kit/examples/에 둔다, Secrets 사용법 주석).
-- 노코드: A1에서 고른 도구의 가져오기용 워크플로 JSON 1~2개(examples/), 실제 노드 이름은 근거대로.
+- (선택) 노코드: A1에서 고른 도구의 가져오기용 워크플로 JSON 1개(examples/n8n/), 실제 노드 이름은 근거대로.
 - `insights.py`: 지표 수집 → CSV(모킹 테스트).
 - `doctor.py`: 키·토큰·ffmpeg·한도·비용 상한 설정을 점검하고 무엇이 빠졌는지 한국어로 안내.
 - pytest: mock 공급자로 두 흐름 전체, 재시작, 중복 방지, 비용 상한, 드라이런 요청 내용, 모킹 게시·폴링·오류 처리. samples/에 mock 실행 결과(10MB 이하).
 - 초보 개발자용 README(Windows/macOS): 설치 → `doctor` → mock 전체 실행 → 키 하나씩 넣어 실제 전환 → 예약 → 운영. 명령마다 "이렇게 보이면 성공", 흔한 오류 표.
 - 결과 docs/results/phase-A2.md, `python3 scripts/notify.py "✅ [auto-kit 완료] ..."`.
+- **범위**: docs/DESIGN-advanced.md 1.1 — 심화편은 API와 코드만. Canva·미리캔버스·Clipchamp·CapCut 같은 화면 조작 웹 도구는 다루지 않는다(카드는 코드 템플릿, 이미지는 생성 API, 영상은 ffmpeg).

@@ -9,4 +9,4 @@
 6. 모든 정책·수치는 research-blog FACT-SHEET 근거와 [B###] 각주. 근거 없는 숫자 금지. 사실 ID·내부 용어 본문 금지.
 7. 검증: scripts/style_lint.py와 scripts/check_site.py를 site-blog에도 쓸 수 있게(인자 추가, 기존 동작 유지) 하고 실행, 1280/375/360px·라이트/다크·콘솔 오류·키보드. 스크린샷 docs/results/phase-B3/.
 8. docs/results/phase-B3.md(인물 설정·결정 사항·공통 자산 목록), `python3 scripts/notify.py "📝 [블로그 편 샘플 준비] ..." <샘플 A 스크린샷>`.
-- **시각자료**: docs/STYLE-GUIDE.md 6절 기준(이론 6개·실습 단계별 화면 위치 그림·심화 5개 이상, 인물 기준 시트로 삽화 그림체 통일 — 기준 시트 만드는 법은 docs/results/phase-V-insta.md)을 처음부터 지킨다.
+- **시각자료**: docs/STYLE-GUIDE.md 6절 — 개수 기준 없음. 흐름·숫자·선택지 비교·화면 위치·결과 예시·구조처럼 그림이 더 잘 전달하는 내용은 적극적으로 그림으로, 장식·개수 채우기는 하지 않는다.
