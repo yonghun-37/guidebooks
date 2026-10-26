@@ -1,0 +1,6 @@
+너는 ai-insta 프로젝트의 작업자(Codex)다. 먼저 AGENTS.md, .agents/skills/guidebook-pipeline·guidebook-writing, **docs/STYLE-GUIDE.md(최우선)**, **docs/DESIGN-shorts.md**, docs/learner-questions-shorts.md, research-shorts/(BRIEFING·FACT-SHEET·SOURCES·QUESTION-MAP와 관련 노트), docs/reference-analysis-books.md 8절, docs/results/phase-Y3.md, 그리고 **사용자가 승인한 샘플** site-shorts/chapters/02-revenue.html·site-shorts/practice/08-publish.html을 읽어라. 샘플의 구성·문체·인물(도윤·서진)·컴포넌트를 기준으로 삼는다.
+공통 규칙: 담당 파일만 수정(site-shorts/assets/book.js·book.css·common.js·practice.js, index, glossary, credits는 수정 금지 → docs/results/phase-Y4a-requests.md에 diff, 새 용어는 phase-Y4a-glossary.md). 모든 정책·수치는 research-shorts FACT-SHEET 근거와 [Y###] 각주. 근거 없는 숫자 금지. 학습자 질문 5개(learner-questions-shorts.md)에 직답. 영상 제작 중심 책이므로 인터랙션은 영상 제작 감각을 키우는 것(reference-analysis-books 8절, DESIGN-shorts 4절)을 우선한다. YouTube 로고·UI 복제 금지, 직접 그린 도식. commit하지 마라.
+검증: style_lint(금지어·내부 용어·단서 기준), check_site(site-shorts), 1280/375/360px·콘솔 오류·키보드 조작. 결과 docs/results/phase-Y4a.md + 스크린샷 docs/results/phase-Y4a/. 끝나면 `python3 scripts/notify.py "✅ [Y4a 완료] ..." <대표 스크린샷>`.
+
+## 이번 작업: Y4a
+이론 **1·3·4·5장** 집필(site-shorts/chapters/01-*.html, 03-*, 04-*, 05-*). DESIGN-shorts 2절 제목 기준, slug는 book.js 데이터를 따른다. 장마다 영상 제작 감각을 키우는 도구 1개: 예) 3장 첫 3초 훅 비교(같은 장면, 첫 문장만 바꿔 보기), 4장 대본 글자 수↔말하기 시간 계산, 5장 내레이션·배경음 뮤트/솔로·음량 균형(Web Audio로 자체 합성 소리, 외부 음원 금지).

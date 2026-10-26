@@ -1,0 +1,6 @@
+너는 ai-insta 프로젝트의 작업자(Codex)다. 먼저 AGENTS.md, .agents/skills/guidebook-pipeline·guidebook-writing, **docs/STYLE-GUIDE.md(최우선)**, **docs/DESIGN-shorts.md**, docs/learner-questions-shorts.md, research-shorts/(BRIEFING·FACT-SHEET·SOURCES·QUESTION-MAP와 관련 노트), docs/reference-analysis-books.md 8절, docs/results/phase-Y3.md, 그리고 **사용자가 승인한 샘플** site-shorts/chapters/02-revenue.html·site-shorts/practice/08-publish.html을 읽어라. 샘플의 구성·문체·인물(도윤·서진)·컴포넌트를 기준으로 삼는다.
+공통 규칙: 담당 파일만 수정(site-shorts/assets/book.js·book.css·common.js·practice.js, index, glossary, credits는 수정 금지 → docs/results/phase-Y4c-requests.md에 diff, 새 용어는 phase-Y4c-glossary.md). 모든 정책·수치는 research-shorts FACT-SHEET 근거와 [Y###] 각주. 근거 없는 숫자 금지. 학습자 질문 5개(learner-questions-shorts.md)에 직답. 영상 제작 중심 책이므로 인터랙션은 영상 제작 감각을 키우는 것(reference-analysis-books 8절, DESIGN-shorts 4절)을 우선한다. YouTube 로고·UI 복제 금지, 직접 그린 도식. commit하지 마라.
+검증: style_lint(금지어·내부 용어·단서 기준), check_site(site-shorts), 1280/375/360px·콘솔 오류·키보드 조작. 결과 docs/results/phase-Y4c.md + 스크린샷 docs/results/phase-Y4c/. 끝나면 `python3 scripts/notify.py "✅ [Y4c 완료] ..." <대표 스크린샷>`.
+
+## 이번 작업: Y4c
+이론 **10·11·12·13·14장** 집필. 도구 예: 10장 제작 파이프라인 단계·실패 찾기, 11장 업로드 메타데이터 체크(샘플 B의 업로드 전 체크 분기 재사용·확장), 12장 시청 지속률 곡선 읽기(가상 곡선에서 이탈 지점→원인 추정→개선), 13장 정책 위험 상황 분기(재사용·양산형·AI 공개·음악), 14장 30일 계획(시간 예산→날짜별 표, ReelsBook 14장 패턴).

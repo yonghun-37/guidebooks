@@ -1,0 +1,6 @@
+너는 ai-insta 프로젝트의 작업자(Codex)다. 먼저 AGENTS.md, .agents/skills/guidebook-pipeline·guidebook-writing, **docs/STYLE-GUIDE.md(최우선)**, **docs/DESIGN-shorts.md**, docs/learner-questions-shorts.md, research-shorts/(BRIEFING·FACT-SHEET·SOURCES·QUESTION-MAP와 관련 노트), docs/reference-analysis-books.md 8절, docs/results/phase-Y3.md, 그리고 **사용자가 승인한 샘플** site-shorts/chapters/02-revenue.html·site-shorts/practice/08-publish.html을 읽어라. 샘플의 구성·문체·인물(도윤·서진)·컴포넌트를 기준으로 삼는다.
+공통 규칙: 담당 파일만 수정(site-shorts/assets/book.js·book.css·common.js·practice.js, index, glossary, credits는 수정 금지 → docs/results/phase-Y4b-requests.md에 diff, 새 용어는 phase-Y4b-glossary.md). 모든 정책·수치는 research-shorts FACT-SHEET 근거와 [Y###] 각주. 근거 없는 숫자 금지. 학습자 질문 5개(learner-questions-shorts.md)에 직답. 영상 제작 중심 책이므로 인터랙션은 영상 제작 감각을 키우는 것(reference-analysis-books 8절, DESIGN-shorts 4절)을 우선한다. YouTube 로고·UI 복제 금지, 직접 그린 도식. commit하지 마라.
+검증: style_lint(금지어·내부 용어·단서 기준), check_site(site-shorts), 1280/375/360px·콘솔 오류·키보드 조작. 결과 docs/results/phase-Y4b.md + 스크린샷 docs/results/phase-Y4b/. 끝나면 `python3 scripts/notify.py "✅ [Y4b 완료] ..." <대표 스크린샷>`.
+
+## 이번 작업: Y4b
+이론 **6·7·8·9장** 집필. 도구 예: 6장 촬영 구도·안전 영역 미리보기(세로 프레임 위 UI 가림 영역), 7장 컷 리듬 타임라인(ReelsBook R03 타임라인을 쇼츠용으로 재구성: 장면·자막·음성·음악 트랙, 재생 헤드, 구간 반복, 프레임 정지), 8장 자막 크기·위치·속도 검사, 9장 해상도·fps·비트레이트 비교(자체 합성 예제 프레임, 압축 아티팩트 시각화).
