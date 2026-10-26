@@ -1,0 +1,19 @@
+{
+  "method": "built-in image_gen",
+  "created": "2026-10-26",
+  "optimization": "WebP conversion and proportional resize only; no content changes",
+  "assets": [
+    {
+      "file": "ai-examples/keyframe-close.webp",
+      "role": "AI 생성 예시 · 키프레임",
+      "reference": "ai-examples/y4ai-robot-reference.webp",
+      "prompt": "Generate ONE vertical 9:16 storyboard KEYFRAME STILL, for a Korean beginner short-video production textbook. Strictly preserve attached approved reference: mint folded-paper robot, square head, two black round eyes, no mouth, short rectangular arms, terracotta pot with two leaves, light wooden desk, cream room, soft morning light from the left, tactile matte paper texture. Close-up shot of only the SAME terracotta pot and two-leaf seedling on the wooden desk. Robot's green shoulder may enter the far left edge, but focus is on leaf shape. The camera has slowly pushed in. Keep two leaves exactly and same morning light. Leave clear empty room at top and bottom for captions added later. Fictional original scene. No extra limbs or leaves, no text, logos, brands or watermark. This is a still image for planning a shot, not an actual generated video."
+    },
+    {
+      "file": "ai-examples/keyframe-end.webp",
+      "role": "AI 생성 예시 · 키프레임",
+      "reference": "ai-examples/y4ai-robot-reference.webp",
+      "prompt": "Generate ONE vertical 9:16 storyboard KEYFRAME STILL, for a Korean beginner short-video production textbook. Strictly preserve attached approved reference: mint folded-paper robot, square head, two black round eyes, no mouth, short rectangular arms, terracotta pot with two leaves, light wooden desk, cream room, soft morning light from the left, tactile matte paper texture. Final medium-wide shot: the SAME mint paper robot has returned upright after inspecting the plant. Full robot on the left and the SAME terracotta pot with the SAME two-leaf seedling on the right. A calm completed observation pose. Leave clear empty room at top and bottom for captions added later. Fictional original scene. No extra limbs or leaves, no text, logos, brands or watermark. This is a still image for planning a shot, not an actual generated video."
+    }
+  ]
+}

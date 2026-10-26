@@ -1,0 +1,2051 @@
+{
+  "baselineCommit": "41a8234879a58f6e3d603c114568c0f02c38c930",
+  "criterion": "STYLE-GUIDE 6.1/6.2, 개수 목표 없음",
+  "retainedDraftFigures": [
+    {
+      "page": "ai-models.html",
+      "id": "v-fig-203",
+      "caption": "그림 비용-1 구독료 배분액은 한 편을 만들 때 내는 실제 결제액과 다릅니다. 본문 가상 배분: 9,900×0.5분÷60분=82.5원. [Y439]"
+    },
+    {
+      "page": "ai-models.html",
+      "id": "v-fig-205",
+      "caption": "그림 비용-4 최종 영상 길이보다 생성 시도 전체가 비용에 반영됩니다. 본문 가상 예산 환율 US$1=1,350원. 사용분 반올림이며 실제 충전·세금은 별도. [Y400][Y428][Y429][Y455][Y459][Y490]"
+    },
+    {
+      "page": "ai-models.html",
+      "id": "v-fig-204",
+      "caption": "그림 비용-5 첫 생성이 모두 채택될 때와 두 안씩 만들 때의 잔액을 나눠 봅니다. 본문의 조건부 무료 예: Gemini Omni 720p 8초, 4×12=48 / 8×12=96. 생성 접근은 계정에서 확인. [Y425][Y342]"
+    },
+    {
+      "page": "chapters/01-map.html",
+      "id": "v-fig-4",
+      "caption": "그림 1-5 프로젝트를 저장한 뒤 MP4도 따로 출력해야 합니다. 2026년 10월 조사 기준. [Y021][Y033]"
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-8",
+      "caption": "그림 2-3 45%는 전체 광고 매출이 아니라 내 배정액에 적용합니다. 가상 계산: 100,000×0.45=45,000원. [Y006]"
+    },
+    {
+      "page": "chapters/07-editing.html",
+      "id": "v-fig-63",
+      "caption": "그림 8-6 음성의 마지막 단어까지 자막과 장면을 맞춥니다. 가상 12초 시간축, 음성 끝 8초."
+    },
+    {
+      "page": "chapters/12-analytics.html",
+      "id": "v-fig-99",
+      "caption": "그림 13-4 계속 시청은 같은 선택 표본의 분모로 읽습니다. 가상 계산: 60÷100×100=60%. 합격선 아님."
+    }
+  ],
+  "integratedDraftFigures": [
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-189",
+      "caption": "그림 7-4 새싹 가까이 다가갈 샷에서는 잎 모양이 보이도록 구도를 좁힙니다. 이미지 생성으로 만든 정지 그림입니다."
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-188",
+      "caption": "그림 7-5 마지막 샷은 같은 로봇이 몸을 바로 세운 자세로 끝냅니다. 이미지 생성으로 만든 정지 그림입니다."
+    }
+  ],
+  "removedDraftFigures": [
+    {
+      "page": "ai-models.html",
+      "id": "v-fig-202",
+      "caption": "그림 비용-2 모델 이름만 비교하지 말고 서비스와 가격 단위를 함께 고릅니다. "
+    },
+    {
+      "page": "ai-models.html",
+      "id": "v-fig-206",
+      "caption": "그림 비용-3 새 구독을 시작하면 사용분 배분액보다 월 결제액을 먼저 봅니다. 가상: 7,500×48÷200=1,800원. 실제 결제액은 7,500원. [Y425][Y495]"
+    },
+    {
+      "page": "assets/samples/preview.html",
+      "id": "v-fig-213",
+      "caption": "그림 샘플-1 이 샘플은 가상 연습이며 내 게시물은 내 자료로 바꿔 만듭니다. "
+    },
+    {
+      "page": "chapters/01-map.html",
+      "id": "v-fig-6",
+      "caption": "그림 1-1 촬영할 동작과 완성 결과를 먼저 정하면 필요한 재료가 보입니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/01-map.html",
+      "id": "v-fig-1",
+      "caption": "그림 1-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/01-map.html",
+      "id": "v-fig-2",
+      "caption": "그림 1-3 시작·동작·결과에 시간을 나누면 한 편의 길이를 줄일 수 있습니다. 가상 제작안: 5+20+5=30초."
+    },
+    {
+      "page": "chapters/01-map.html",
+      "id": "v-fig-3",
+      "caption": "그림 1-4 얼굴 없이도 물건의 변화와 손동작으로 설명할 수 있습니다. "
+    },
+    {
+      "page": "chapters/01-map.html",
+      "id": "v-fig-5",
+      "caption": "그림 1-6 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-18",
+      "caption": "그림 2-1 조회수부터 곱하기 전에 내 채널의 광고 공유 가입 상태를 확인합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-7",
+      "caption": "그림 2-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-9",
+      "caption": "그림 2-4 후원은 건당 내게 남는 금액과 건수를 함께 봅니다. 가상 계산: 1,000원×10건=1만 원. 실제 요율 아님."
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-10",
+      "caption": "그림 2-5 제휴 수입은 구매와 판매 조건에 따른 수수료로 생깁니다. 계산의 가격·건수·5%는 모두 가상. [Y010]"
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-11",
+      "caption": "그림 2-6 협찬 제작비에서 촬영 비용을 빼야 남는 돈이 보입니다. 가상 계산: 10만 원−2만 원=8만 원. 시장 단가 아님."
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-12",
+      "caption": "그림 2-7 내 상품 수입도 판매액에서 비용을 뺍니다. 가상 계산: 5,000원×10건−1만 원=4만 원."
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-13",
+      "caption": "그림 2-8 가입 후 참고 RPM을 넣은 계산이며 내 수입 보장이 아닙니다. 가상: 1만/1,000×0.185=1.85, 100만/1,000×0.185=185. 미가입 광고 배분 0원. [Y008][Y009]"
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-17",
+      "caption": "그림 2-9 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-16",
+      "caption": "그림 2-10 쇼츠 피드 시청 시간은 이 시청 시간 요건에 합산하지 않습니다. 쇼츠 실적 경로와 같은 숫자 축에 섞지 않습니다. [Y004][Y005]"
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-15",
+      "caption": "그림 2-11 쇼츠 실적 경로와 장편 시청 시간 경로는 대안 조건입니다. 구독자·업로드·심사 요건과 함께 적용. [Y004][Y005]"
+    },
+    {
+      "page": "chapters/02-revenue.html",
+      "id": "v-fig-14",
+      "caption": "그림 2-12 구독자 수만 채워서는 수익 기능이 자동으로 열리지 않습니다. 추가 실적의 대안 경로는 바로 아래 단계표와 함께 확인합니다. [Y004][Y005][Y006]"
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-27",
+      "caption": "그림 3-1 서비스를 더 가입하기 전에 다음 도구로 넘길 파일을 정합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-19",
+      "caption": "그림 3-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-23",
+      "caption": "그림 3-3 계획 시간과 실제 생성 대기를 나눠 기록합니다. 가상 계획 합계: 10+15+15+10+10=60, 10+10+20+15+10=65, 10+15+25+20+10=80분."
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-26",
+      "caption": "그림 3-4 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-20",
+      "caption": "그림 3-5 직접 촬영 경로는 내 원본을 무료 편집기로 모읍니다. 2026년 10월 조사 기준. [Y300][Y334]"
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-21",
+      "caption": "그림 3-6 얼굴 없는 해설도 내 설명과 비교 예가 장면에 들어가야 합니다. 가상 제작 레시피."
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-192",
+      "caption": "그림 3-7 입력과 참조를 함께 주고 결과 그림의 구도를 확인합니다. 정지 그림 예입니다. 실제 프롬프트는 7장의 키프레임 설명에 있습니다."
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-25",
+      "caption": "그림 3-8 재생성까지 잡으면 네 샷의 크레딧은 더 커집니다. 비Ultra Veo 3.1 Fast를 쓴 본문 계산. [Y343]"
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-22",
+      "caption": "그림 3-9 AI 영상은 같은 참조로 만든 짧은 샷을 편집기로 연결합니다. 2026년 10월 조사 기준. [Y343][Y347]"
+    },
+    {
+      "page": "chapters/02b-ai-tools.html",
+      "id": "v-fig-24",
+      "caption": "그림 3-10 필요한 유료 교체안 하나를 고르고 구독을 겹치지 않습니다. 본문 표시가: 9,900+14,900=24,800원, Google AI Pro 29,000원. [Y322][Y336][Y375]"
+    },
+    {
+      "page": "chapters/03-hook.html",
+      "id": "v-fig-33",
+      "caption": "그림 4-1 떨어지는 케이블과 고정된 결과를 함께 보면 첫 장면의 약속이 분명해집니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/03-hook.html",
+      "id": "v-fig-28",
+      "caption": "그림 4-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/03-hook.html",
+      "id": "v-fig-29",
+      "caption": "그림 4-3 넓은 주제를 직접 촬영할 작은 변화로 좁힙니다. 가상 책상 정리 기획."
+    },
+    {
+      "page": "chapters/03-hook.html",
+      "id": "v-fig-30",
+      "caption": "그림 4-4 첫 화면에서 약속한 결과가 가려지지 않게 둡니다. 가상 가림 위치이며 고정 안전 여백이 아닙니다. [Y080]"
+    },
+    {
+      "page": "chapters/03-hook.html",
+      "id": "v-fig-31",
+      "caption": "그림 4-5 끝 장면에서 처음 약속한 결과를 확인시켜 줍니다. 가상 5+20+5=30초. 첫 3초는 비교 연습 구간."
+    },
+    {
+      "page": "chapters/03-hook.html",
+      "id": "v-fig-32",
+      "caption": "그림 4-6 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/04-script.html",
+      "id": "v-fig-40",
+      "caption": "그림 5-1 대본을 말·장면·자막으로 나눠야 바로 촬영할 수 있습니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/04-script.html",
+      "id": "v-fig-34",
+      "caption": "그림 5-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/04-script.html",
+      "id": "v-fig-41",
+      "caption": "그림 5-3 입력·서비스·저장 파일을 정하고 다음 단계로 넘깁니다. "
+    },
+    {
+      "page": "chapters/04-script.html",
+      "id": "v-fig-35",
+      "caption": "그림 5-4 반복 설명을 덜고 따라 할 동작을 남깁니다. 가상 문장 수정."
+    },
+    {
+      "page": "chapters/04-script.html",
+      "id": "v-fig-36",
+      "caption": "그림 5-5 AI 초안은 원문과 내 경험으로 고친 뒤 저장합니다. 2026년 10월 조사 기준. [Y011][Y012]"
+    },
+    {
+      "page": "chapters/04-script.html",
+      "id": "v-fig-37",
+      "caption": "그림 5-6 말·장면·자막을 같은 동작에 짝지으면 편집이 쉬워집니다. 가상 케이블 정리 예."
+    },
+    {
+      "page": "chapters/04-script.html",
+      "id": "v-fig-38",
+      "caption": "그림 5-7 대본 분량은 내가 실제 읽은 속도로 계산합니다. 가상: 120자÷20초=초당 6자. 6×30=180자, 6×60=360자. 쉼은 별도."
+    },
+    {
+      "page": "chapters/04-script.html",
+      "id": "v-fig-39",
+      "caption": "그림 5-8 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-49",
+      "caption": "그림 6-1 음악을 끄고 말을 먼저 들어야 녹음과 음량 문제를 나눠 찾습니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-42",
+      "caption": "그림 6-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-50",
+      "caption": "그림 6-3 입력·서비스·저장 파일을 정하고 다음 단계로 넘깁니다. "
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-46",
+      "caption": "그림 6-4 생성 가능량과 수익용 사용권을 함께 확인합니다. 타입캐스트 최초 3,000 / Basic 월 30,000 다운로드 크레딧 안내. [Y336][Y337]"
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-43",
+      "caption": "그림 6-5 시험 녹음을 듣고 장소와 폰 방향부터 고칩니다. "
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-44",
+      "caption": "그림 6-6 음량 막대 차이는 실제 체감 음량의 배수를 뜻하지 않습니다. 가상 설정: 말 70−음악 20=차이 50. 권장 dB 아님."
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-47",
+      "caption": "그림 6-7 앱 음악은 선택한 곡에 표시된 허용 길이를 읽습니다. 3분 쇼츠 음악 안내. 모든 곡의 공통 허용 시간이 아닙니다. [Y001]"
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-45",
+      "caption": "그림 6-8 음원과 필요한 저작자 표시를 함께 저장합니다. 2026년 10월 조사 기준. [Y016]"
+    },
+    {
+      "page": "chapters/05-audio.html",
+      "id": "v-fig-48",
+      "caption": "그림 6-9 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-58",
+      "caption": "그림 7-1 손끝과 물건이 함께 보이는 구도를 시험 촬영에서 확인합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-51",
+      "caption": "그림 7-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-193",
+      "caption": "그림 7-3 입력과 참조를 함께 주고 결과 그림의 구도를 확인합니다. 정지 그림 예입니다. 실제 프롬프트는 7장의 키프레임 설명에 있습니다."
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-59",
+      "caption": "그림 7-6 입력·서비스·저장 파일을 정하고 다음 단계로 넘깁니다. "
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-56",
+      "caption": "그림 7-7 구독 가격과 포함 크레딧은 서로 다른 단위로 기록합니다. 본문 표시가. Plus 월 추가 200, Pro 월 추가 1,000크레딧. [Y375]"
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-55",
+      "caption": "그림 7-8 본문의 Fast 네 샷 예는 하루 무료 잔액보다 큽니다. 비Ultra Veo 3.1 Fast 계산. 생성 접근도 계정에서 확인. [Y343]"
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-52",
+      "caption": "그림 7-11 전체 모습 뒤에 가까운 손동작을 보여 주면 방법이 보입니다. 가상 가림. 공식 고정 여백 아님. [Y079][Y080]"
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-53",
+      "caption": "그림 7-12 장면 파일마다 대응하는 권리 메모를 보관합니다. 2026년 10월 조사 기준. [Y018][Y019]"
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-54",
+      "caption": "그림 7-13 한 샷에 한 동작을 넣고 다음 샷에도 같은 기준을 줍니다. 2026년 10월 조사 기준. [Y349][Y364]"
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "v-fig-57",
+      "caption": "그림 7-14 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/07-editing.html",
+      "id": "v-fig-65",
+      "caption": "그림 8-1 음성에 맞춰 장면과 자막을 놓고 먼저 사라지는 구간을 고칩니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/07-editing.html",
+      "id": "v-fig-60",
+      "caption": "그림 8-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/07-editing.html",
+      "id": "v-fig-66",
+      "caption": "그림 8-3 입력·서비스·저장 파일을 정하고 다음 단계로 넘깁니다. "
+    },
+    {
+      "page": "chapters/07-editing.html",
+      "id": "v-fig-61",
+      "caption": "그림 8-4 내 재료로 시험 출력해야 무료 완성 경로를 확인할 수 있습니다. 2026년 10월 조사 기준. [Y021][Y022]"
+    },
+    {
+      "page": "chapters/07-editing.html",
+      "id": "v-fig-62",
+      "caption": "그림 8-5 컷은 고정 초 간격보다 정보와 동작이 바뀌는 곳에서 고릅니다. 2026년 10월 조사 기준. [Y002]"
+    },
+    {
+      "page": "chapters/07-editing.html",
+      "id": "v-fig-64",
+      "caption": "그림 8-7 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-74",
+      "caption": "그림 9-1 자동 자막의 뜻과 작은 화면에서 읽히는 위치를 따로 확인합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-67",
+      "caption": "그림 9-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-75",
+      "caption": "그림 9-3 입력·서비스·저장 파일을 정하고 다음 단계로 넘깁니다. "
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-71",
+      "caption": "그림 9-4 Create의 자막 생성 클립 한도와 쇼츠 전체 길이를 구분합니다. 60초 초과 클립의 자막 생성은 지원하지 않는다는 안내. [Y064]"
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-68",
+      "caption": "그림 9-5 자동 자막은 초안이며 원음을 듣고 뜻을 고쳐야 합니다. 2026년 10월 조사 기준. [Y066][Y077]"
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-72",
+      "caption": "그림 9-6 자막이 말보다 먼저 사라지는 2초를 맞춥니다. 가상 계산: 3−1=2초. 본문 FAQ의 비교 예."
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-69",
+      "caption": "그림 9-7 자막은 주요 동작과 앱의 가림을 피한 곳에서 읽어 봅니다. 가상 가림이며 고정 안전 영역이 아닙니다. [Y080]"
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-70",
+      "caption": "그림 9-8 SRT를 고쳐도 이미 출력한 MP4의 화면 글자는 바뀌지 않습니다. 2026년 10월 조사 기준. [Y066]"
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "v-fig-73",
+      "caption": "그림 9-9 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/09-export.html",
+      "id": "v-fig-82",
+      "caption": "그림 10-1 프로젝트 파일과 내보낸 MP4를 구분하고 폰에서 완성본을 재생합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/09-export.html",
+      "id": "v-fig-76",
+      "caption": "그림 10-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/09-export.html",
+      "id": "v-fig-80",
+      "caption": "그림 10-3 540×960과 1080×1920은 같은 9:16 모양입니다. 가상 비교. 가로·세로 각각 절반, 전체 점 수는 1/4."
+    },
+    {
+      "page": "chapters/09-export.html",
+      "id": "v-fig-77",
+      "caption": "그림 10-4 비율은 화면 모양이며 해상도는 점의 수입니다. 가상 제작 규격: 1080÷120:1920÷120=9:16."
+    },
+    {
+      "page": "chapters/09-export.html",
+      "id": "v-fig-78",
+      "caption": "그림 10-5 출력 fps를 올려도 촬영하지 않은 중간 동작이 생기지는 않습니다. 가상 프레임 수 계산."
+    },
+    {
+      "page": "chapters/09-export.html",
+      "id": "v-fig-79",
+      "caption": "그림 10-6 같은 길이에서는 데이터 양과 실제 프레임을 함께 비교합니다. 가상 계산. 음성·파일 정보 제외. 2/8Mbps는 기존 도구의 비교값."
+    },
+    {
+      "page": "chapters/09-export.html",
+      "id": "v-fig-81",
+      "caption": "그림 10-9 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/10-templates.html",
+      "id": "v-fig-88",
+      "caption": "그림 11-1 재사용할 자막 모양과 새로 촬영할 이야기를 나눠 준비합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/10-templates.html",
+      "id": "v-fig-83",
+      "caption": "그림 11-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/10-templates.html",
+      "id": "v-fig-84",
+      "caption": "그림 11-3 이전 이야기는 비우고 자막 모양과 출력 설정을 남깁니다. 가상 편집 예."
+    },
+    {
+      "page": "chapters/10-templates.html",
+      "id": "v-fig-85",
+      "caption": "그림 11-4 자동으로 만든 결과도 사실·권리·재생은 사람이 대조합니다. 2026년 10월 조사 기준. [Y011][Y012]"
+    },
+    {
+      "page": "chapters/10-templates.html",
+      "id": "v-fig-86",
+      "caption": "그림 11-5 처음 빠진 파일을 고치고 그 뒤 단계도 다시 확인합니다. 가상 녹음 누락 예."
+    },
+    {
+      "page": "chapters/10-templates.html",
+      "id": "v-fig-87",
+      "caption": "그림 11-6 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/11-upload.html",
+      "id": "v-fig-96",
+      "caption": "그림 12-1 올리기 전에 제목·권리·공개 범위를 완성 영상과 대조합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/11-upload.html",
+      "id": "v-fig-89",
+      "caption": "그림 12-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/11-upload.html",
+      "id": "v-fig-94",
+      "caption": "그림 12-3 제목과 설명의 길이 상한은 권장 작성 분량이 아닙니다. 영문 기준으로 제시된 본문 숫자. 같은 글자 수 축. [Y032]"
+    },
+    {
+      "page": "chapters/11-upload.html",
+      "id": "v-fig-90",
+      "caption": "그림 12-4 제목과 설명은 실제 장면이 보여 주는 일을 적습니다. 2026년 10월 조사 기준. [Y032]"
+    },
+    {
+      "page": "chapters/11-upload.html",
+      "id": "v-fig-91",
+      "caption": "그림 12-5 시청자층·AI 공개·사용권은 각각 다른 질문입니다. 2026년 10월 조사 기준. [Y013][Y014][Y016]"
+    },
+    {
+      "page": "chapters/11-upload.html",
+      "id": "v-fig-92",
+      "caption": "그림 12-6 공개 전에 표지와 전체 재생을 함께 확인합니다. 2026년 10월 조사 기준. [Y032][Y070]"
+    },
+    {
+      "page": "chapters/11-upload.html",
+      "id": "v-fig-93",
+      "caption": "그림 12-7 공개 범위는 볼 수 있는 대상과 시점을 정합니다. 일부 공개는 비밀 보관 수단이 아닙니다. [Y032][Y036]"
+    },
+    {
+      "page": "chapters/11-upload.html",
+      "id": "v-fig-95",
+      "caption": "그림 12-8 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/12-analytics.html",
+      "id": "v-fig-103",
+      "caption": "그림 13-1 곡선이 내려간 위치를 장면표와 대조해 다음 수정 한 가지를 고릅니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/12-analytics.html",
+      "id": "v-fig-97",
+      "caption": "그림 13-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/12-analytics.html",
+      "id": "v-fig-98",
+      "caption": "그림 13-3 재생 시작과 머문 시청을 나눠 기록합니다. 2026년 10월 조사 기준. [Y034][Y056][Y089]"
+    },
+    {
+      "page": "chapters/12-analytics.html",
+      "id": "v-fig-100",
+      "caption": "그림 13-5 같은 영상의 평균 시간과 전체 길이로 조회율을 읽습니다. 가상 계산: 24÷30×100=80%."
+    },
+    {
+      "page": "chapters/12-analytics.html",
+      "id": "v-fig-101",
+      "caption": "그림 13-6 곡선은 다시 볼 위치를 알려 주고 원인은 장면에서 확인합니다. 본문의 가상 중간 하락 예. 10초 85% → 15초 55%."
+    },
+    {
+      "page": "chapters/12-analytics.html",
+      "id": "v-fig-102",
+      "caption": "그림 13-7 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/13-policy.html",
+      "id": "v-fig-110",
+      "caption": "그림 14-1 소재 허락·내가 더한 설명·AI 공개를 각각 확인합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/13-policy.html",
+      "id": "v-fig-104",
+      "caption": "그림 14-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/13-policy.html",
+      "id": "v-fig-105",
+      "caption": "그림 14-3 허락받은 소재도 독창적 설명이 충분한지 확인합니다. 2026년 10월 조사 기준. [Y011][Y012]"
+    },
+    {
+      "page": "chapters/13-policy.html",
+      "id": "v-fig-106",
+      "caption": "그림 14-4 아동용·AI·협찬 표시는 각각 내용에 맞춰 판단합니다. 2026년 10월 조사 기준. [Y013][Y014][Y032]"
+    },
+    {
+      "page": "chapters/13-policy.html",
+      "id": "v-fig-107",
+      "caption": "그림 14-5 출처를 적는 일과 사용 허락을 받는 일을 구분합니다. 2026년 10월 조사 기준. [Y016][Y080]"
+    },
+    {
+      "page": "chapters/13-policy.html",
+      "id": "v-fig-108",
+      "caption": "그림 14-6 수입에서 비용을 뺀 금액과 최종 세금은 따로 확인합니다. 가상 계산: 10만 원−2만 원=8만 원. 세율·확정 세금 아님."
+    },
+    {
+      "page": "chapters/13-policy.html",
+      "id": "v-fig-109",
+      "caption": "그림 14-7 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/14-plan.html",
+      "id": "v-fig-117",
+      "caption": "그림 15-1 활동일에 완성 파일·검수·관찰을 나눠 배치합니다. 도윤·서진은 가상 인물입니다."
+    },
+    {
+      "page": "chapters/14-plan.html",
+      "id": "v-fig-111",
+      "caption": "그림 15-2 궁금한 축을 선택하면 해당 설명으로 이동합니다. "
+    },
+    {
+      "page": "chapters/14-plan.html",
+      "id": "v-fig-112",
+      "caption": "그림 15-3 첫 달의 완료 기준을 파일·공개 주소·개선 기록으로 정합니다. 가상 목표."
+    },
+    {
+      "page": "chapters/14-plan.html",
+      "id": "v-fig-115",
+      "caption": "그림 15-4 한 달의 제작 예산은 실제 활동일로 계산합니다. 가상: 30−22=8일. 22×(60−10)=1,100분. 수입·완성 편수 예측 아님."
+    },
+    {
+      "page": "chapters/14-plan.html",
+      "id": "v-fig-113",
+      "caption": "그림 15-5 검수·메모 시간을 먼저 빼고 제작 시간을 배정합니다. 가상 계산: 60−10=50분, 22활동일×50=1,100분."
+    },
+    {
+      "page": "chapters/14-plan.html",
+      "id": "v-fig-114",
+      "caption": "그림 15-6 완료한 결과를 보관하고 미완료는 다음 활동일로 옮깁니다. 가상 일정 조정 예."
+    },
+    {
+      "page": "chapters/14-plan.html",
+      "id": "v-fig-116",
+      "caption": "그림 15-7 좋은 결과와 고칠 결과를 같은 조건에서 비교합니다. 가상 비교 예."
+    },
+    {
+      "page": "chapters/coming-soon.html",
+      "id": "v-fig-211",
+      "caption": "그림 안내-1 원하는 설명이나 실습으로 바로 이동할 수 있습니다. "
+    },
+    {
+      "page": "credits.html",
+      "id": "v-fig-210",
+      "caption": "그림 출처-1 출처 원문과 실제 사용할 파일의 조건을 함께 확인합니다. "
+    },
+    {
+      "page": "credits.html",
+      "id": "v-fig-209",
+      "caption": "그림 출처-2 장 머리의 AI 생성 삽화는 같은 인물 기준 시트로 외형과 그림체를 맞췄습니다. 도윤·서진은 가상 인물이며 실존 인물을 본뜨지 않았습니다."
+    },
+    {
+      "page": "glossary.html",
+      "id": "v-fig-207",
+      "caption": "그림 용어-1 용어를 제작 순서에 놓으면 어느 단계의 말인지 알 수 있습니다. "
+    },
+    {
+      "page": "index.html",
+      "id": "v-fig-194",
+      "caption": "그림 표지-3 이론에서 원리를 찾고 실습에서 내 영상과 공개 주소를 남깁니다. "
+    },
+    {
+      "page": "lab.html",
+      "id": "v-fig-208",
+      "caption": "그림 실험-1 한 번에 한 설정만 바꾸고 실제 영상에서 다시 확인합니다. "
+    },
+    {
+      "page": "practice/00-start.html",
+      "id": "v-fig-118",
+      "caption": "그림 실습 00-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/00-start.html",
+      "id": "v-fig-123",
+      "caption": "그림 실습 00-2 제작 외에 준비 시간과 업로드 시간을 더 잡으세요. 본문 학습 일정. 준비 A + 제작 60/65/80 + 업로드 약 20분. [Y394][Y391][Y367]"
+    },
+    {
+      "page": "practice/00-start.html",
+      "id": "v-fig-119",
+      "caption": "그림 실습 00-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y300][Y334][Y385][Y394][Y329][Y330][Y374][Y391][Y342][Y343][Y347][Y367][Y022]"
+    },
+    {
+      "page": "practice/00-start.html",
+      "id": "v-fig-120",
+      "caption": "그림 실습 00-4 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요."
+    },
+    {
+      "page": "practice/00-start.html",
+      "id": "v-fig-121",
+      "caption": "그림 실습 00-5 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y032]"
+    },
+    {
+      "page": "practice/00-start.html",
+      "id": "v-fig-122",
+      "caption": "그림 실습 00-6 원본·권리·완성본을 나누어 보관할 자리가 준비됐습니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/01-account.html",
+      "id": "v-fig-124",
+      "caption": "그림 실습 01-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/01-account.html",
+      "id": "v-fig-125",
+      "caption": "그림 실습 01-2 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y043]"
+    },
+    {
+      "page": "practice/01-account.html",
+      "id": "v-fig-126",
+      "caption": "그림 실습 01-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y044][Y093]"
+    },
+    {
+      "page": "practice/01-account.html",
+      "id": "v-fig-127",
+      "caption": "그림 실습 01-4 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y092][Y043][Y057]"
+    },
+    {
+      "page": "practice/01-account.html",
+      "id": "v-fig-128",
+      "caption": "그림 실습 01-5 이 결과물을 직접 열고 확인한 뒤 다음 실습으로 갑니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/02-setup.html",
+      "id": "v-fig-129",
+      "caption": "그림 실습 02-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/02-setup.html",
+      "id": "v-fig-130",
+      "caption": "그림 실습 02-2 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y300][Y374]"
+    },
+    {
+      "page": "practice/02-setup.html",
+      "id": "v-fig-131",
+      "caption": "그림 실습 02-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y334][Y333][Y022][Y332]"
+    },
+    {
+      "page": "practice/02-setup.html",
+      "id": "v-fig-132",
+      "caption": "그림 실습 02-4 이 결과물을 직접 열고 확인한 뒤 다음 실습으로 갑니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/03-script.html",
+      "id": "v-fig-133",
+      "caption": "그림 실습 03-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/03-script.html",
+      "id": "v-fig-134",
+      "caption": "그림 실습 03-2 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y300][Y302]"
+    },
+    {
+      "page": "practice/03-script.html",
+      "id": "v-fig-135",
+      "caption": "그림 실습 03-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y302]"
+    },
+    {
+      "page": "practice/03-script.html",
+      "id": "v-fig-136",
+      "caption": "그림 실습 03-4 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요."
+    },
+    {
+      "page": "practice/03-script.html",
+      "id": "v-fig-137",
+      "caption": "그림 실습 03-5 읽을 말·행동 장면·짧은 자막이 나란히 있으면 촬영할 수 있습니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/04-voice.html",
+      "id": "v-fig-138",
+      "caption": "그림 실습 04-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/04-voice.html",
+      "id": "v-fig-139",
+      "caption": "그림 실습 04-2 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y097][Y100]"
+    },
+    {
+      "page": "practice/04-voice.html",
+      "id": "v-fig-140",
+      "caption": "그림 실습 04-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y098][Y100]"
+    },
+    {
+      "page": "practice/04-voice.html",
+      "id": "v-fig-143",
+      "caption": "그림 실습 04-4 TTS의 다운로드량과 상업 조건을 함께 확인하세요. 타입캐스트 최초 3,000크레딧 / Basic 30,000크레딧·월 9,900원. [Y336][Y337]"
+    },
+    {
+      "page": "practice/04-voice.html",
+      "id": "v-fig-141",
+      "caption": "그림 실습 04-5 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y329][Y388][Y330][Y391][Y336][Y337][Y338][Y339][Y366][Y363]"
+    },
+    {
+      "page": "practice/04-voice.html",
+      "id": "v-fig-142",
+      "caption": "그림 실습 04-6 이 결과물을 직접 열고 확인한 뒤 다음 실습으로 갑니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-144",
+      "caption": "그림 실습 05-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-145",
+      "caption": "그림 실습 05-2 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y079]"
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-146",
+      "caption": "그림 실습 05-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y018][Y019]"
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-147",
+      "caption": "그림 실습 05-4 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y374][Y369][Y334][Y394]"
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-191",
+      "caption": "그림 실습 05-6 새싹 가까이 다가갈 샷에서는 잎 모양이 보이도록 구도를 좁힙니다. 이미지 생성으로 만든 정지 그림입니다."
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-190",
+      "caption": "그림 실습 05-7 마지막 샷은 같은 로봇이 몸을 바로 세운 자세로 끝냅니다. 이미지 생성으로 만든 정지 그림입니다."
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-150",
+      "caption": "그림 실습 05-8 재시도 계획까지 더하면 하루 무료 잔액을 넘습니다. 비Ultra Fast 4×2×20=160. 생성 접근은 계정에서 확인. [Y343]"
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-148",
+      "caption": "그림 실습 05-9 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y342][Y343][Y382][Y347][Y383][Y384][Y378][Y367][Y349][Y364][Y348]"
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "v-fig-149",
+      "caption": "그림 실습 05-10 장면 원본과 권리·생성 기록을 함께 남깁니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/06-edit.html",
+      "id": "v-fig-151",
+      "caption": "그림 실습 06-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/06-edit.html",
+      "id": "v-fig-152",
+      "caption": "그림 실습 06-2 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y394]"
+    },
+    {
+      "page": "practice/06-edit.html",
+      "id": "v-fig-153",
+      "caption": "그림 실습 06-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y394]"
+    },
+    {
+      "page": "practice/06-edit.html",
+      "id": "v-fig-154",
+      "caption": "그림 실습 06-5 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y385][Y080][Y332]"
+    },
+    {
+      "page": "practice/06-edit.html",
+      "id": "v-fig-155",
+      "caption": "그림 실습 06-6 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y016][Y360][Y363]"
+    },
+    {
+      "page": "practice/06-edit.html",
+      "id": "v-fig-156",
+      "caption": "그림 실습 06-7 장면·음성·자막의 끝이 맞으면 다음 출력으로 갑니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/07-export.html",
+      "id": "v-fig-157",
+      "caption": "그림 실습 07-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/07-export.html",
+      "id": "v-fig-158",
+      "caption": "그림 실습 07-2 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y334][Y394][Y003]"
+    },
+    {
+      "page": "practice/07-export.html",
+      "id": "v-fig-159",
+      "caption": "그림 실습 07-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y001][Y031][Y032]"
+    },
+    {
+      "page": "practice/07-export.html",
+      "id": "v-fig-160",
+      "caption": "그림 실습 07-4 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y363][Y376]"
+    },
+    {
+      "page": "practice/07-export.html",
+      "id": "v-fig-161",
+      "caption": "그림 실습 07-5 이 결과물을 직접 열고 확인한 뒤 다음 실습으로 갑니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-162",
+      "caption": "그림 실습 08-2 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-163",
+      "caption": "그림 실습 08-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y031][Y032][Y033]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-164",
+      "caption": "그림 실습 08-4 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y001][Y031][Y033]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-165",
+      "caption": "그림 실습 08-5 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y032][Y016][Y001][Y031]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-166",
+      "caption": "그림 실습 08-6 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y014][Y033]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-167",
+      "caption": "그림 실습 08-7 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y013][Y032]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-168",
+      "caption": "그림 실습 08-8 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y032]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-169",
+      "caption": "그림 실습 08-9 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y032][Y068][Y016]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-170",
+      "caption": "그림 실습 08-10 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y032][Y033]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-171",
+      "caption": "그림 실습 08-11 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y032][Y036]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-172",
+      "caption": "그림 실습 08-12 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y031][Y001][Y068]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-173",
+      "caption": "그림 실습 08-13 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y032]"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "v-fig-174",
+      "caption": "그림 실습 08-14 현재 공개 상태와 같은 영상의 주소를 함께 확인해야 완료입니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/09-api.html",
+      "id": "v-fig-175",
+      "caption": "그림 실습 09-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/09-api.html",
+      "id": "v-fig-181",
+      "caption": "그림 실습 09-2 API 호출 예산과 실제 채널의 게시 가능량을 구분하세요. 전용 묶음의 1 unit/호출 × 기본 100호출=100 units. 실제 프로젝트 할당량 확인. [Y037][Y038][Y088]"
+    },
+    {
+      "page": "practice/09-api.html",
+      "id": "v-fig-176",
+      "caption": "그림 실습 09-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y037][Y038][Y041][Y099][Y101][Y088]"
+    },
+    {
+      "page": "practice/09-api.html",
+      "id": "v-fig-177",
+      "caption": "그림 실습 09-4 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y101][Y102][Y042]"
+    },
+    {
+      "page": "practice/09-api.html",
+      "id": "v-fig-178",
+      "caption": "그림 실습 09-5 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y014][Y037][Y363][Y001]"
+    },
+    {
+      "page": "practice/09-api.html",
+      "id": "v-fig-179",
+      "caption": "그림 실습 09-6 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y032][Y037][Y086][Y040][Y087][Y041]"
+    },
+    {
+      "page": "practice/09-api.html",
+      "id": "v-fig-180",
+      "caption": "그림 실습 09-7 이 결과물을 직접 열고 확인한 뒤 다음 실습으로 갑니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/10-insights.html",
+      "id": "v-fig-182",
+      "caption": "그림 실습 10-1 오늘 이 페이지에서 할 순서를 따라 결과를 확인하세요. "
+    },
+    {
+      "page": "practice/10-insights.html",
+      "id": "v-fig-183",
+      "caption": "그림 실습 10-2 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y045][Y046]"
+    },
+    {
+      "page": "practice/10-insights.html",
+      "id": "v-fig-184",
+      "caption": "그림 실습 10-3 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y034][Y089][Y056][Y045]"
+    },
+    {
+      "page": "practice/10-insights.html",
+      "id": "v-fig-187",
+      "caption": "그림 실습 10-4 전체 길이와 평균 시청 시간을 함께 읽으세요. 가상 계산: 24÷30×100=80%. 보편 합격률 아님."
+    },
+    {
+      "page": "practice/10-insights.html",
+      "id": "v-fig-185",
+      "caption": "그림 실습 10-5 번호 순서로 해당 작업 영역을 찾고 결과를 대조하세요. 직접 그린 위치 그림입니다. 버튼 이름은 버전에 따라 다를 수 있어요. 실제 배치는 내 화면에서 확인하세요. [Y056][Y046]"
+    },
+    {
+      "page": "practice/10-insights.html",
+      "id": "v-fig-186",
+      "caption": "그림 실습 10-6 이 결과물을 직접 열고 확인한 뒤 다음 실습으로 갑니다. 가상 완료 예입니다. 내 파일·화면과 대조하세요."
+    },
+    {
+      "page": "practice/coming-soon.html",
+      "id": "v-fig-212",
+      "caption": "그림 안내-1 원하는 설명이나 실습으로 바로 이동할 수 있습니다. "
+    },
+    {
+      "page": "practice/e2e.html",
+      "id": "v-fig-195",
+      "caption": "그림 완성-1 체크 개수와 별도로 내 파일·실제 공개 상태를 확인하세요. "
+    },
+    {
+      "page": "practice/e2e.html",
+      "id": "v-fig-196",
+      "caption": "그림 완성-2 완성 MP4·게시 상태·개선 메모를 함께 남깁니다. 2026년 10월 조사 기준. [Y031][Y032]"
+    },
+    {
+      "page": "prompts.html",
+      "id": "v-fig-197",
+      "caption": "그림 프롬프트-1 프롬프트의 대괄호를 내 재료로 바꾸고 결과를 검수합니다. "
+    },
+    {
+      "page": "prompts.html",
+      "id": "v-fig-199",
+      "caption": "그림 프롬프트-2 새싹 가까이 다가갈 샷에서는 잎 모양이 보이도록 구도를 좁힙니다. 이미지 생성으로 만든 정지 그림입니다."
+    },
+    {
+      "page": "prompts.html",
+      "id": "v-fig-198",
+      "caption": "그림 프롬프트-3 마지막 샷은 같은 로봇이 몸을 바로 세운 자세로 끝냅니다. 이미지 생성으로 만든 정지 그림입니다."
+    },
+    {
+      "page": "prompts.html",
+      "id": "v-fig-200",
+      "caption": "그림 프롬프트-4 다음 샷은 외형을 유지하면서 한 동작만 바꿉니다. 2026년 10월 조사 기준. [Y349][Y364]"
+    },
+    {
+      "page": "prompts.html",
+      "id": "v-fig-201",
+      "caption": "그림 프롬프트-5 부정어를 빠뜨린 자막은 원음을 듣고 복구합니다. 학습을 위해 만든 가상 오독 비교."
+    }
+  ],
+  "addedOrReplacedFigures": [
+    {
+      "page": "chapters/05-audio.html",
+      "id": "audio-tracks",
+      "kind": "파형·트랙 비교"
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "shot-sizes",
+      "kind": "샷 크기 2칸 비교"
+    },
+    {
+      "page": "chapters/06-scenes.html",
+      "id": "keyframe-comparison",
+      "kind": "이전 키프레임 통합"
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "caption-placement",
+      "kind": "자막 위치·가림 비교"
+    },
+    {
+      "page": "chapters/08-captions.html",
+      "id": "subtitle-files",
+      "kind": "자막 파일 분기"
+    },
+    {
+      "page": "chapters/09-export.html",
+      "id": "aspect-resolution",
+      "kind": "비율·해상도 비교"
+    },
+    {
+      "page": "chapters/10-templates.html",
+      "id": "template-layers",
+      "kind": "템플릿 층 비교"
+    },
+    {
+      "page": "practice/05-scenes.html",
+      "id": "paper-shot-sizes",
+      "kind": "실습 샷 비교"
+    },
+    {
+      "page": "practice/06-edit.html",
+      "id": "editor-regions",
+      "kind": "편집 화면 영역"
+    },
+    {
+      "page": "practice/07-export.html",
+      "id": "export-settings",
+      "kind": "출력 설정·파일 결과"
+    },
+    {
+      "page": "practice/08-publish.html",
+      "id": "published-result",
+      "kind": "업로드 완료 결과"
+    },
+    {
+      "page": "practice/09-api.html",
+      "id": "api-sequence",
+      "kind": "API 파일·호출 순서"
+    }
+  ],
+  "deletedAssets": [
+    {
+      "path": "assets/img/characters/01-map.webp",
+      "bytes": 68510
+    },
+    {
+      "path": "assets/img/characters/02-revenue.webp",
+      "bytes": 65806
+    },
+    {
+      "path": "assets/img/characters/02b-ai-tools.webp",
+      "bytes": 52110
+    },
+    {
+      "path": "assets/img/characters/03-hook.webp",
+      "bytes": 65126
+    },
+    {
+      "path": "assets/img/characters/04-script.webp",
+      "bytes": 65618
+    },
+    {
+      "path": "assets/img/characters/05-audio.webp",
+      "bytes": 55514
+    },
+    {
+      "path": "assets/img/characters/06-scenes.webp",
+      "bytes": 69822
+    },
+    {
+      "path": "assets/img/characters/07-editing.webp",
+      "bytes": 61188
+    },
+    {
+      "path": "assets/img/characters/08-captions.webp",
+      "bytes": 60024
+    },
+    {
+      "path": "assets/img/characters/09-export.webp",
+      "bytes": 62344
+    },
+    {
+      "path": "assets/img/characters/10-templates.webp",
+      "bytes": 63968
+    },
+    {
+      "path": "assets/img/characters/11-upload.webp",
+      "bytes": 60746
+    },
+    {
+      "path": "assets/img/characters/12-analytics.webp",
+      "bytes": 62322
+    },
+    {
+      "path": "assets/img/characters/13-policy.webp",
+      "bytes": 87708
+    },
+    {
+      "path": "assets/img/characters/14-plan.webp",
+      "bytes": 64114
+    },
+    {
+      "path": "assets/img/characters/doyun-seojin-reference.webp",
+      "bytes": 94990
+    },
+    {
+      "path": "assets/img/fig/safe-area-template.svg",
+      "bytes": 1291
+    },
+    {
+      "path": "assets/img/fig/screen-location-template.svg",
+      "bytes": 1558
+    },
+    {
+      "path": "assets/img/fig/timeline-template.svg",
+      "bytes": 1604
+    },
+    {
+      "path": "assets/img/fig/v-fig-1-1.svg",
+      "bytes": 2798
+    },
+    {
+      "path": "assets/img/fig/v-fig-10-1.svg",
+      "bytes": 2468
+    },
+    {
+      "path": "assets/img/fig/v-fig-100-1.svg",
+      "bytes": 1844
+    },
+    {
+      "path": "assets/img/fig/v-fig-101-1.svg",
+      "bytes": 2249
+    },
+    {
+      "path": "assets/img/fig/v-fig-102-1.svg",
+      "bytes": 1657
+    },
+    {
+      "path": "assets/img/fig/v-fig-102-2.svg",
+      "bytes": 1650
+    },
+    {
+      "path": "assets/img/fig/v-fig-104-1.svg",
+      "bytes": 3106
+    },
+    {
+      "path": "assets/img/fig/v-fig-105-1.svg",
+      "bytes": 2491
+    },
+    {
+      "path": "assets/img/fig/v-fig-106-1.svg",
+      "bytes": 2169
+    },
+    {
+      "path": "assets/img/fig/v-fig-107-1.svg",
+      "bytes": 2356
+    },
+    {
+      "path": "assets/img/fig/v-fig-108-1.svg",
+      "bytes": 2185
+    },
+    {
+      "path": "assets/img/fig/v-fig-109-1.svg",
+      "bytes": 1665
+    },
+    {
+      "path": "assets/img/fig/v-fig-109-2.svg",
+      "bytes": 1670
+    },
+    {
+      "path": "assets/img/fig/v-fig-11-1.svg",
+      "bytes": 2185
+    },
+    {
+      "path": "assets/img/fig/v-fig-111-1.svg",
+      "bytes": 2619
+    },
+    {
+      "path": "assets/img/fig/v-fig-112-1.svg",
+      "bytes": 2455
+    },
+    {
+      "path": "assets/img/fig/v-fig-113-1.svg",
+      "bytes": 2179
+    },
+    {
+      "path": "assets/img/fig/v-fig-114-1.svg",
+      "bytes": 2473
+    },
+    {
+      "path": "assets/img/fig/v-fig-115-1.svg",
+      "bytes": 1877
+    },
+    {
+      "path": "assets/img/fig/v-fig-116-1.svg",
+      "bytes": 1665
+    },
+    {
+      "path": "assets/img/fig/v-fig-116-2.svg",
+      "bytes": 1658
+    },
+    {
+      "path": "assets/img/fig/v-fig-118-1.svg",
+      "bytes": 2817
+    },
+    {
+      "path": "assets/img/fig/v-fig-119-1.svg",
+      "bytes": 2680
+    },
+    {
+      "path": "assets/img/fig/v-fig-12-1.svg",
+      "bytes": 2197
+    },
+    {
+      "path": "assets/img/fig/v-fig-120-1.svg",
+      "bytes": 2713
+    },
+    {
+      "path": "assets/img/fig/v-fig-121-1.svg",
+      "bytes": 2701
+    },
+    {
+      "path": "assets/img/fig/v-fig-122-1.svg",
+      "bytes": 2245
+    },
+    {
+      "path": "assets/img/fig/v-fig-123-1.svg",
+      "bytes": 2167
+    },
+    {
+      "path": "assets/img/fig/v-fig-124-1.svg",
+      "bytes": 2888
+    },
+    {
+      "path": "assets/img/fig/v-fig-125-1.svg",
+      "bytes": 2686
+    },
+    {
+      "path": "assets/img/fig/v-fig-126-1.svg",
+      "bytes": 2656
+    },
+    {
+      "path": "assets/img/fig/v-fig-127-1.svg",
+      "bytes": 2644
+    },
+    {
+      "path": "assets/img/fig/v-fig-128-1.svg",
+      "bytes": 2079
+    },
+    {
+      "path": "assets/img/fig/v-fig-129-1.svg",
+      "bytes": 2257
+    },
+    {
+      "path": "assets/img/fig/v-fig-13-1.svg",
+      "bytes": 1891
+    },
+    {
+      "path": "assets/img/fig/v-fig-130-1.svg",
+      "bytes": 2866
+    },
+    {
+      "path": "assets/img/fig/v-fig-131-1.svg",
+      "bytes": 2965
+    },
+    {
+      "path": "assets/img/fig/v-fig-132-1.svg",
+      "bytes": 2088
+    },
+    {
+      "path": "assets/img/fig/v-fig-133-1.svg",
+      "bytes": 2771
+    },
+    {
+      "path": "assets/img/fig/v-fig-134-1.svg",
+      "bytes": 2905
+    },
+    {
+      "path": "assets/img/fig/v-fig-135-1.svg",
+      "bytes": 2870
+    },
+    {
+      "path": "assets/img/fig/v-fig-136-1.svg",
+      "bytes": 2704
+    },
+    {
+      "path": "assets/img/fig/v-fig-137-1.svg",
+      "bytes": 2067
+    },
+    {
+      "path": "assets/img/fig/v-fig-138-1.svg",
+      "bytes": 2778
+    },
+    {
+      "path": "assets/img/fig/v-fig-139-1.svg",
+      "bytes": 2698
+    },
+    {
+      "path": "assets/img/fig/v-fig-14-1.svg",
+      "bytes": 2587
+    },
+    {
+      "path": "assets/img/fig/v-fig-140-1.svg",
+      "bytes": 2683
+    },
+    {
+      "path": "assets/img/fig/v-fig-141-1.svg",
+      "bytes": 2713
+    },
+    {
+      "path": "assets/img/fig/v-fig-142-1.svg",
+      "bytes": 2100
+    },
+    {
+      "path": "assets/img/fig/v-fig-143-1.svg",
+      "bytes": 1918
+    },
+    {
+      "path": "assets/img/fig/v-fig-144-1.svg",
+      "bytes": 3361
+    },
+    {
+      "path": "assets/img/fig/v-fig-145-1.svg",
+      "bytes": 2733
+    },
+    {
+      "path": "assets/img/fig/v-fig-146-1.svg",
+      "bytes": 2734
+    },
+    {
+      "path": "assets/img/fig/v-fig-147-1.svg",
+      "bytes": 2873
+    },
+    {
+      "path": "assets/img/fig/v-fig-148-1.svg",
+      "bytes": 2731
+    },
+    {
+      "path": "assets/img/fig/v-fig-149-1.svg",
+      "bytes": 2257
+    },
+    {
+      "path": "assets/img/fig/v-fig-15-1.svg",
+      "bytes": 1954
+    },
+    {
+      "path": "assets/img/fig/v-fig-150-1.svg",
+      "bytes": 1899
+    },
+    {
+      "path": "assets/img/fig/v-fig-151-1.svg",
+      "bytes": 3404
+    },
+    {
+      "path": "assets/img/fig/v-fig-152-1.svg",
+      "bytes": 3020
+    },
+    {
+      "path": "assets/img/fig/v-fig-153-1.svg",
+      "bytes": 3006
+    },
+    {
+      "path": "assets/img/fig/v-fig-154-1.svg",
+      "bytes": 3035
+    },
+    {
+      "path": "assets/img/fig/v-fig-155-1.svg",
+      "bytes": 3052
+    },
+    {
+      "path": "assets/img/fig/v-fig-156-1.svg",
+      "bytes": 2656
+    },
+    {
+      "path": "assets/img/fig/v-fig-157-1.svg",
+      "bytes": 2864
+    },
+    {
+      "path": "assets/img/fig/v-fig-158-1.svg",
+      "bytes": 2961
+    },
+    {
+      "path": "assets/img/fig/v-fig-159-1.svg",
+      "bytes": 2710
+    },
+    {
+      "path": "assets/img/fig/v-fig-16-1.svg",
+      "bytes": 2015
+    },
+    {
+      "path": "assets/img/fig/v-fig-160-1.svg",
+      "bytes": 2686
+    },
+    {
+      "path": "assets/img/fig/v-fig-161-1.svg",
+      "bytes": 2076
+    },
+    {
+      "path": "assets/img/fig/v-fig-162-1.svg",
+      "bytes": 7054
+    },
+    {
+      "path": "assets/img/fig/v-fig-163-1.svg",
+      "bytes": 2650
+    },
+    {
+      "path": "assets/img/fig/v-fig-164-1.svg",
+      "bytes": 2659
+    },
+    {
+      "path": "assets/img/fig/v-fig-165-1.svg",
+      "bytes": 2692
+    },
+    {
+      "path": "assets/img/fig/v-fig-166-1.svg",
+      "bytes": 2737
+    },
+    {
+      "path": "assets/img/fig/v-fig-167-1.svg",
+      "bytes": 2731
+    },
+    {
+      "path": "assets/img/fig/v-fig-168-1.svg",
+      "bytes": 2647
+    },
+    {
+      "path": "assets/img/fig/v-fig-169-1.svg",
+      "bytes": 2668
+    },
+    {
+      "path": "assets/img/fig/v-fig-17-1.svg",
+      "bytes": 1651
+    },
+    {
+      "path": "assets/img/fig/v-fig-17-2.svg",
+      "bytes": 1652
+    },
+    {
+      "path": "assets/img/fig/v-fig-170-1.svg",
+      "bytes": 2677
+    },
+    {
+      "path": "assets/img/fig/v-fig-171-1.svg",
+      "bytes": 2689
+    },
+    {
+      "path": "assets/img/fig/v-fig-172-1.svg",
+      "bytes": 2740
+    },
+    {
+      "path": "assets/img/fig/v-fig-173-1.svg",
+      "bytes": 2707
+    },
+    {
+      "path": "assets/img/fig/v-fig-174-1.svg",
+      "bytes": 2226
+    },
+    {
+      "path": "assets/img/fig/v-fig-175-1.svg",
+      "bytes": 3447
+    },
+    {
+      "path": "assets/img/fig/v-fig-176-1.svg",
+      "bytes": 2734
+    },
+    {
+      "path": "assets/img/fig/v-fig-177-1.svg",
+      "bytes": 2725
+    },
+    {
+      "path": "assets/img/fig/v-fig-178-1.svg",
+      "bytes": 2653
+    },
+    {
+      "path": "assets/img/fig/v-fig-179-1.svg",
+      "bytes": 2740
+    },
+    {
+      "path": "assets/img/fig/v-fig-180-1.svg",
+      "bytes": 2088
+    },
+    {
+      "path": "assets/img/fig/v-fig-181-1.svg",
+      "bytes": 1879
+    },
+    {
+      "path": "assets/img/fig/v-fig-182-1.svg",
+      "bytes": 2850
+    },
+    {
+      "path": "assets/img/fig/v-fig-183-1.svg",
+      "bytes": 2540
+    },
+    {
+      "path": "assets/img/fig/v-fig-184-1.svg",
+      "bytes": 2577
+    },
+    {
+      "path": "assets/img/fig/v-fig-185-1.svg",
+      "bytes": 2575
+    },
+    {
+      "path": "assets/img/fig/v-fig-186-1.svg",
+      "bytes": 2115
+    },
+    {
+      "path": "assets/img/fig/v-fig-187-1.svg",
+      "bytes": 1865
+    },
+    {
+      "path": "assets/img/fig/v-fig-19-1.svg",
+      "bytes": 2839
+    },
+    {
+      "path": "assets/img/fig/v-fig-192-1.svg",
+      "bytes": 2468
+    },
+    {
+      "path": "assets/img/fig/v-fig-193-1.svg",
+      "bytes": 2468
+    },
+    {
+      "path": "assets/img/fig/v-fig-194-1.svg",
+      "bytes": 2786
+    },
+    {
+      "path": "assets/img/fig/v-fig-195-1.svg",
+      "bytes": 2646
+    },
+    {
+      "path": "assets/img/fig/v-fig-196-1.svg",
+      "bytes": 2235
+    },
+    {
+      "path": "assets/img/fig/v-fig-197-1.svg",
+      "bytes": 2595
+    },
+    {
+      "path": "assets/img/fig/v-fig-2-1.svg",
+      "bytes": 2180
+    },
+    {
+      "path": "assets/img/fig/v-fig-20-1.svg",
+      "bytes": 2518
+    },
+    {
+      "path": "assets/img/fig/v-fig-200-1.svg",
+      "bytes": 2466
+    },
+    {
+      "path": "assets/img/fig/v-fig-201-1.svg",
+      "bytes": 1616
+    },
+    {
+      "path": "assets/img/fig/v-fig-201-2.svg",
+      "bytes": 1734
+    },
+    {
+      "path": "assets/img/fig/v-fig-202-1.svg",
+      "bytes": 2636
+    },
+    {
+      "path": "assets/img/fig/v-fig-203-1.svg",
+      "bytes": 1903
+    },
+    {
+      "path": "assets/img/fig/v-fig-204-1.svg",
+      "bytes": 2215
+    },
+    {
+      "path": "assets/img/fig/v-fig-205-1.svg",
+      "bytes": 2681
+    },
+    {
+      "path": "assets/img/fig/v-fig-206-1.svg",
+      "bytes": 1889
+    },
+    {
+      "path": "assets/img/fig/v-fig-207-1.svg",
+      "bytes": 2563
+    },
+    {
+      "path": "assets/img/fig/v-fig-208-1.svg",
+      "bytes": 2516
+    },
+    {
+      "path": "assets/img/fig/v-fig-21-1.svg",
+      "bytes": 2506
+    },
+    {
+      "path": "assets/img/fig/v-fig-210-1.svg",
+      "bytes": 2528
+    },
+    {
+      "path": "assets/img/fig/v-fig-211-1.svg",
+      "bytes": 2607
+    },
+    {
+      "path": "assets/img/fig/v-fig-212-1.svg",
+      "bytes": 2607
+    },
+    {
+      "path": "assets/img/fig/v-fig-213-1.svg",
+      "bytes": 2474
+    },
+    {
+      "path": "assets/img/fig/v-fig-22-1.svg",
+      "bytes": 2472
+    },
+    {
+      "path": "assets/img/fig/v-fig-23-1.svg",
+      "bytes": 2230
+    },
+    {
+      "path": "assets/img/fig/v-fig-24-1.svg",
+      "bytes": 2266
+    },
+    {
+      "path": "assets/img/fig/v-fig-25-1.svg",
+      "bytes": 2244
+    },
+    {
+      "path": "assets/img/fig/v-fig-26-1.svg",
+      "bytes": 1659
+    },
+    {
+      "path": "assets/img/fig/v-fig-26-2.svg",
+      "bytes": 1656
+    },
+    {
+      "path": "assets/img/fig/v-fig-28-1.svg",
+      "bytes": 2839
+    },
+    {
+      "path": "assets/img/fig/v-fig-29-1.svg",
+      "bytes": 2438
+    },
+    {
+      "path": "assets/img/fig/v-fig-3-1.svg",
+      "bytes": 2157
+    },
+    {
+      "path": "assets/img/fig/v-fig-30-1.svg",
+      "bytes": 2343
+    },
+    {
+      "path": "assets/img/fig/v-fig-31-1.svg",
+      "bytes": 2180
+    },
+    {
+      "path": "assets/img/fig/v-fig-32-1.svg",
+      "bytes": 1592
+    },
+    {
+      "path": "assets/img/fig/v-fig-32-2.svg",
+      "bytes": 1726
+    },
+    {
+      "path": "assets/img/fig/v-fig-34-1.svg",
+      "bytes": 2820
+    },
+    {
+      "path": "assets/img/fig/v-fig-35-1.svg",
+      "bytes": 1576
+    },
+    {
+      "path": "assets/img/fig/v-fig-35-2.svg",
+      "bytes": 1740
+    },
+    {
+      "path": "assets/img/fig/v-fig-36-1.svg",
+      "bytes": 2483
+    },
+    {
+      "path": "assets/img/fig/v-fig-37-1.svg",
+      "bytes": 2025
+    },
+    {
+      "path": "assets/img/fig/v-fig-38-1.svg",
+      "bytes": 1847
+    },
+    {
+      "path": "assets/img/fig/v-fig-39-1.svg",
+      "bytes": 1637
+    },
+    {
+      "path": "assets/img/fig/v-fig-39-2.svg",
+      "bytes": 1646
+    },
+    {
+      "path": "assets/img/fig/v-fig-4-1.svg",
+      "bytes": 2464
+    },
+    {
+      "path": "assets/img/fig/v-fig-41-1.svg",
+      "bytes": 2533
+    },
+    {
+      "path": "assets/img/fig/v-fig-42-1.svg",
+      "bytes": 2842
+    },
+    {
+      "path": "assets/img/fig/v-fig-43-1.svg",
+      "bytes": 2509
+    },
+    {
+      "path": "assets/img/fig/v-fig-44-1.svg",
+      "bytes": 2119
+    },
+    {
+      "path": "assets/img/fig/v-fig-45-1.svg",
+      "bytes": 2525
+    },
+    {
+      "path": "assets/img/fig/v-fig-46-1.svg",
+      "bytes": 1897
+    },
+    {
+      "path": "assets/img/fig/v-fig-47-1.svg",
+      "bytes": 2125
+    },
+    {
+      "path": "assets/img/fig/v-fig-48-1.svg",
+      "bytes": 1657
+    },
+    {
+      "path": "assets/img/fig/v-fig-48-2.svg",
+      "bytes": 1644
+    },
+    {
+      "path": "assets/img/fig/v-fig-5-1.svg",
+      "bytes": 1655
+    },
+    {
+      "path": "assets/img/fig/v-fig-5-2.svg",
+      "bytes": 1642
+    },
+    {
+      "path": "assets/img/fig/v-fig-50-1.svg",
+      "bytes": 2479
+    },
+    {
+      "path": "assets/img/fig/v-fig-51-1.svg",
+      "bytes": 2527
+    },
+    {
+      "path": "assets/img/fig/v-fig-52-1.svg",
+      "bytes": 2343
+    },
+    {
+      "path": "assets/img/fig/v-fig-53-1.svg",
+      "bytes": 2272
+    },
+    {
+      "path": "assets/img/fig/v-fig-54-1.svg",
+      "bytes": 2494
+    },
+    {
+      "path": "assets/img/fig/v-fig-55-1.svg",
+      "bytes": 2199
+    },
+    {
+      "path": "assets/img/fig/v-fig-56-1.svg",
+      "bytes": 1841
+    },
+    {
+      "path": "assets/img/fig/v-fig-57-1.svg",
+      "bytes": 2343
+    },
+    {
+      "path": "assets/img/fig/v-fig-57-2.svg",
+      "bytes": 2343
+    },
+    {
+      "path": "assets/img/fig/v-fig-59-1.svg",
+      "bytes": 2548
+    },
+    {
+      "path": "assets/img/fig/v-fig-60-1.svg",
+      "bytes": 2564
+    },
+    {
+      "path": "assets/img/fig/v-fig-61-1.svg",
+      "bytes": 2478
+    },
+    {
+      "path": "assets/img/fig/v-fig-62-1.svg",
+      "bytes": 2505
+    },
+    {
+      "path": "assets/img/fig/v-fig-63-1.svg",
+      "bytes": 2656
+    },
+    {
+      "path": "assets/img/fig/v-fig-64-1.svg",
+      "bytes": 2656
+    },
+    {
+      "path": "assets/img/fig/v-fig-64-2.svg",
+      "bytes": 2664
+    },
+    {
+      "path": "assets/img/fig/v-fig-66-1.svg",
+      "bytes": 2497
+    },
+    {
+      "path": "assets/img/fig/v-fig-67-1.svg",
+      "bytes": 2621
+    },
+    {
+      "path": "assets/img/fig/v-fig-68-1.svg",
+      "bytes": 2514
+    },
+    {
+      "path": "assets/img/fig/v-fig-69-1.svg",
+      "bytes": 2343
+    },
+    {
+      "path": "assets/img/fig/v-fig-7-1.svg",
+      "bytes": 3443
+    },
+    {
+      "path": "assets/img/fig/v-fig-70-1.svg",
+      "bytes": 2220
+    },
+    {
+      "path": "assets/img/fig/v-fig-71-1.svg",
+      "bytes": 1553
+    },
+    {
+      "path": "assets/img/fig/v-fig-72-1.svg",
+      "bytes": 1849
+    },
+    {
+      "path": "assets/img/fig/v-fig-73-1.svg",
+      "bytes": 1642
+    },
+    {
+      "path": "assets/img/fig/v-fig-73-2.svg",
+      "bytes": 1760
+    },
+    {
+      "path": "assets/img/fig/v-fig-75-1.svg",
+      "bytes": 2485
+    },
+    {
+      "path": "assets/img/fig/v-fig-76-1.svg",
+      "bytes": 2552
+    },
+    {
+      "path": "assets/img/fig/v-fig-77-1.svg",
+      "bytes": 1874
+    },
+    {
+      "path": "assets/img/fig/v-fig-78-1.svg",
+      "bytes": 1859
+    },
+    {
+      "path": "assets/img/fig/v-fig-79-1.svg",
+      "bytes": 1873
+    },
+    {
+      "path": "assets/img/fig/v-fig-8-1.svg",
+      "bytes": 1856
+    },
+    {
+      "path": "assets/img/fig/v-fig-80-1.svg",
+      "bytes": 1862
+    },
+    {
+      "path": "assets/img/fig/v-fig-81-1.svg",
+      "bytes": 1669
+    },
+    {
+      "path": "assets/img/fig/v-fig-81-2.svg",
+      "bytes": 1682
+    },
+    {
+      "path": "assets/img/fig/v-fig-83-1.svg",
+      "bytes": 2576
+    },
+    {
+      "path": "assets/img/fig/v-fig-84-1.svg",
+      "bytes": 2380
+    },
+    {
+      "path": "assets/img/fig/v-fig-85-1.svg",
+      "bytes": 2433
+    },
+    {
+      "path": "assets/img/fig/v-fig-86-1.svg",
+      "bytes": 2500
+    },
+    {
+      "path": "assets/img/fig/v-fig-87-1.svg",
+      "bytes": 1643
+    },
+    {
+      "path": "assets/img/fig/v-fig-87-2.svg",
+      "bytes": 1658
+    },
+    {
+      "path": "assets/img/fig/v-fig-89-1.svg",
+      "bytes": 3116
+    },
+    {
+      "path": "assets/img/fig/v-fig-9-1.svg",
+      "bytes": 1909
+    },
+    {
+      "path": "assets/img/fig/v-fig-90-1.svg",
+      "bytes": 2414
+    },
+    {
+      "path": "assets/img/fig/v-fig-91-1.svg",
+      "bytes": 2166
+    },
+    {
+      "path": "assets/img/fig/v-fig-92-1.svg",
+      "bytes": 2494
+    },
+    {
+      "path": "assets/img/fig/v-fig-93-1.svg",
+      "bytes": 2426
+    },
+    {
+      "path": "assets/img/fig/v-fig-94-1.svg",
+      "bytes": 1834
+    },
+    {
+      "path": "assets/img/fig/v-fig-95-1.svg",
+      "bytes": 1663
+    },
+    {
+      "path": "assets/img/fig/v-fig-95-2.svg",
+      "bytes": 1670
+    },
+    {
+      "path": "assets/img/fig/v-fig-97-1.svg",
+      "bytes": 2705
+    },
+    {
+      "path": "assets/img/fig/v-fig-98-1.svg",
+      "bytes": 2151
+    },
+    {
+      "path": "assets/img/fig/v-fig-99-1.svg",
+      "bytes": 1847
+    },
+    {
+      "path": "assets/img/fig/volume-template.svg",
+      "bytes": 1067
+    }
+  ]
+}
