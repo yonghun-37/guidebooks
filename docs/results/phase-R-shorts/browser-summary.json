@@ -1,0 +1,751 @@
+{
+  "environment": {
+    "os": "Linux",
+    "python": "3.10.12",
+    "browser": "Chromium 149 / Playwright core",
+    "site_url": "http://127.0.0.1:8873/site-shorts/",
+    "kit_url": "http://127.0.0.1:8874/output/my-script/preview.html",
+    "widths": [
+      1280,
+      375,
+      360
+    ]
+  },
+  "pages": [
+    {
+      "file": "index.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/00-start.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/01-account.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/02-setup.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/03-script.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/04-voice.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/05-scenes.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/06-edit.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/07-export.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/08-publish.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/09-api.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/10-insights.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "practice/e2e.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/01-map.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/02-revenue.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/02b-ai-tools.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/03-hook.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/04-script.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/05-audio.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/06-scenes.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/07-editing.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/08-captions.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/09-export.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/10-templates.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/11-upload.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/12-analytics.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/13-policy.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "chapters/14-plan.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "prompts.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "ai-models.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "lab.html",
+      "errors": [],
+      "overflow": null
+    },
+    {
+      "file": "glossary.html",
+      "errors": [],
+      "overflow": null
+    }
+  ],
+  "interaction_actions": 199,
+  "console_page_errors": [],
+  "issues": [],
+  "quiz_chapters": [
+    {
+      "file": "chapters/01-map.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/02-revenue.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/02b-ai-tools.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/03-hook.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/04-script.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/05-audio.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/06-scenes.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/07-editing.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/08-captions.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/09-export.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/10-templates.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/11-upload.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/12-analytics.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/13-policy.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    },
+    {
+      "file": "chapters/14-plan.html",
+      "count": 3,
+      "result": "3문항 중 3문항 풀이 · 3문항 정답"
+    }
+  ],
+  "observations": [
+    {
+      "test": "route-after-reload",
+      "selected": "film",
+      "checked": true
+    },
+    {
+      "test": "caption-bad",
+      "result": [
+        "0/4 단계 확인 · 이 브라우저에만 저장됨",
+        "5.0초 일찍 끝나요. 말이 끝나는 6초까지 늘려 보세요.",
+        ""
+      ]
+    },
+    {
+      "test": "caption-fixed",
+      "result": [
+        "0/4 단계 확인 · 이 브라우저에만 저장됨",
+        "0.0초 차이예요. 가상 발화와 자막의 끝이 맞아요.",
+        ""
+      ]
+    },
+    {
+      "test": "upload-options",
+      "id": "audience",
+      "options": [
+        {
+          "value": "",
+          "text": "아동용 여부 선택"
+        },
+        {
+          "value": "kids",
+          "text": "어린이를 주된 대상으로 만들었어요"
+        },
+        {
+          "value": "general",
+          "text": "일반 시청자용이며 아동 대상 요소를 확인했어요"
+        },
+        {
+          "value": "unsure",
+          "text": "아직 판단하기 어려워요"
+        }
+      ]
+    },
+    {
+      "test": "upload-options",
+      "id": "ai-content",
+      "options": [
+        {
+          "value": "",
+          "text": "AI 사용 방식 선택"
+        },
+        {
+          "value": "realistic",
+          "text": "실제처럼 보이는 인물·사건·장면을 합성했어요"
+        },
+        {
+          "value": "music",
+          "text": "영상의 중심이 되는 음악을 AI로 만들었어요"
+        },
+        {
+          "value": "assist",
+          "text": "대본·자막 보조에만 썼어요"
+        },
+        {
+          "value": "none",
+          "text": "AI로 만든 내용이 없어요"
+        },
+        {
+          "value": "unsure",
+          "text": "어떻게 표시할지 모르겠어요"
+        }
+      ]
+    },
+    {
+      "test": "upload-options",
+      "id": "music-rights",
+      "options": [
+        {
+          "value": "",
+          "text": "음악 권리 선택"
+        },
+        {
+          "value": "own",
+          "text": "음악 없음 / 전부 직접 만든 음악"
+        },
+        {
+          "value": "library",
+          "text": "Studio 오디오 보관함 음원, 필요한 저작자 표시 확인"
+        },
+        {
+          "value": "licensed",
+          "text": "이 영상에 허용된 사용권과 증거를 확보했어요"
+        },
+        {
+          "value": "unknown",
+          "text": "인기곡을 넣었고 사용권은 확인하지 않았어요"
+        }
+      ]
+    },
+    {
+      "test": "e2e-shared",
+      "status": [
+        "1/43 단계 확인 · 이 브라우저에만 저장됨",
+        ""
+      ]
+    },
+    {
+      "test": "prompt-copies",
+      "count": 12
+    },
+    {
+      "test": "models-search",
+      "q": "Veo",
+      "status": "6개 항목 · 검색 결과를 펼쳤습니다.",
+      "visible": 6
+    },
+    {
+      "test": "models-search",
+      "q": "Vrew",
+      "status": "4개 항목 · 검색 결과를 펼쳤습니다.",
+      "visible": 4
+    },
+    {
+      "test": "models-search",
+      "q": "한국",
+      "status": "236개 항목 · 검색 결과를 펼쳤습니다.",
+      "visible": 236
+    },
+    {
+      "test": "models-search",
+      "q": "찾을수없는모델zz",
+      "status": "0개 항목 · 검색 결과를 펼쳤습니다.",
+      "visible": 0
+    },
+    {
+      "test": "models-search",
+      "q": "",
+      "status": "271개 항목 · 분류를 펼쳐 모델과 버전을 읽으세요.",
+      "visible": 271
+    },
+    {
+      "test": "glossary-search",
+      "q": "토큰",
+      "status": "2/48개 용어"
+    },
+    {
+      "test": "glossary-search",
+      "q": "SRT",
+      "status": "1/48개 용어"
+    },
+    {
+      "test": "glossary-search",
+      "q": "OAuth",
+      "status": "1/48개 용어"
+    },
+    {
+      "test": "glossary-search",
+      "q": "없는용어zz",
+      "status": "0/48개 용어"
+    },
+    {
+      "test": "glossary-search",
+      "q": "",
+      "status": "48/48개 용어"
+    },
+    {
+      "test": "lab",
+      "opt": "01-map:figure",
+      "range": [],
+      "height": 555,
+      "content": 523,
+      "src": "chapters/01-map.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "01-map:pipeline-tool",
+      "range": [],
+      "height": 903,
+      "content": 871,
+      "src": "chapters/01-map.html?embed=pipeline-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "02-revenue:figure",
+      "range": [],
+      "height": 771,
+      "content": 739,
+      "src": "chapters/02-revenue.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "02-revenue:rpm-tool",
+      "range": [],
+      "height": 843,
+      "content": 811,
+      "src": "chapters/02-revenue.html?embed=rpm-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "02b-ai-tools:figure",
+      "range": [],
+      "height": 683,
+      "content": 651,
+      "src": "chapters/02b-ai-tools.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "02b-ai-tools:simulator",
+      "range": [],
+      "height": 576,
+      "content": 544,
+      "src": "chapters/02b-ai-tools.html?embed=simulator"
+    },
+    {
+      "test": "lab",
+      "opt": "03-hook:figure",
+      "range": [],
+      "height": 555,
+      "content": 523,
+      "src": "chapters/03-hook.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "03-hook:hook-tool",
+      "range": [
+        "hook-time"
+      ],
+      "height": 1237,
+      "content": 1205,
+      "src": "chapters/03-hook.html?embed=hook-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "04-script:figure",
+      "range": [],
+      "height": 472,
+      "content": 440,
+      "src": "chapters/04-script.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "04-script:script-tool",
+      "range": [],
+      "height": 1170,
+      "content": 1138,
+      "src": "chapters/04-script.html?embed=script-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "05-audio:figure",
+      "range": [],
+      "height": 555,
+      "content": 523,
+      "src": "chapters/05-audio.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "05-audio:audio-tool",
+      "range": [
+        "voice-level",
+        "music-level"
+      ],
+      "height": 1506,
+      "content": 1474,
+      "src": "chapters/05-audio.html?embed=audio-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "06-scenes:figure",
+      "range": [],
+      "height": 527,
+      "content": 495,
+      "src": "chapters/06-scenes.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "06-scenes:framing-tool",
+      "range": [
+        "subject-x",
+        "subject-y"
+      ],
+      "height": 1006,
+      "content": 974,
+      "src": "chapters/06-scenes.html?embed=framing-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "07-editing:figure",
+      "range": [],
+      "height": 527,
+      "content": 495,
+      "src": "chapters/07-editing.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "07-editing:rhythm-tool",
+      "range": [
+        "edit-seek"
+      ],
+      "height": 1654,
+      "content": 1622,
+      "src": "chapters/07-editing.html?embed=rhythm-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "08-captions:figure",
+      "range": [],
+      "height": 527,
+      "content": 495,
+      "src": "chapters/08-captions.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "08-captions:caption-tool",
+      "range": [
+        "caption-size",
+        "caption-y"
+      ],
+      "height": 1221,
+      "content": 1189,
+      "src": "chapters/08-captions.html?embed=caption-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "09-export:figure",
+      "range": [],
+      "height": 527,
+      "content": 495,
+      "src": "chapters/09-export.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "09-export:quality-tool",
+      "range": [],
+      "height": 1234,
+      "content": 1202,
+      "src": "chapters/09-export.html?embed=quality-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "10-templates:figure",
+      "range": [],
+      "height": 472,
+      "content": 440,
+      "src": "chapters/10-templates.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "10-templates:pipeline-tool",
+      "range": [],
+      "height": 945,
+      "content": 913,
+      "src": "chapters/10-templates.html?embed=pipeline-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "11-upload:figure",
+      "range": [],
+      "height": 472,
+      "content": 440,
+      "src": "chapters/11-upload.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "11-upload:metadata-tool",
+      "range": [],
+      "height": 1365,
+      "content": 1333,
+      "src": "chapters/11-upload.html?embed=metadata-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "11-upload:upload-tool",
+      "range": [],
+      "height": 986,
+      "content": 954,
+      "src": "chapters/11-upload.html?embed=upload-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "12-analytics:figure",
+      "range": [],
+      "height": 472,
+      "content": 440,
+      "src": "chapters/12-analytics.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "12-analytics:retention-tool",
+      "range": [
+        "curve-time"
+      ],
+      "height": 2047,
+      "content": 2015,
+      "src": "chapters/12-analytics.html?embed=retention-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "13-policy:figure",
+      "range": [],
+      "height": 472,
+      "content": 440,
+      "src": "chapters/13-policy.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "13-policy:policy-tool",
+      "range": [],
+      "height": 1163,
+      "content": 1131,
+      "src": "chapters/13-policy.html?embed=policy-tool"
+    },
+    {
+      "test": "lab",
+      "opt": "14-plan:figure",
+      "range": [],
+      "height": 472,
+      "content": 440,
+      "src": "chapters/14-plan.html?embed=figure"
+    },
+    {
+      "test": "lab",
+      "opt": "14-plan:plan-tool",
+      "range": [],
+      "height": 3724,
+      "content": 3692,
+      "src": "chapters/14-plan.html?embed=plan-tool"
+    },
+    {
+      "test": "rpm-10000",
+      "result": [
+        "US$1.85가상 참고 계산입니다. 실제 수입은 Studio에서 확인하세요.",
+        "",
+        "3문항 중 0문항 풀이 · 0문항 정답"
+      ]
+    },
+    {
+      "test": "rpm-unjoined",
+      "result": [
+        "US$0.00광고 미가입·약관 동의 전 조회수는 피드 광고 수입에 반영되지 않습니다.",
+        "",
+        "3문항 중 0문항 풀이 · 0문항 정답"
+      ]
+    },
+    {
+      "test": "rpm-invalid",
+      "result": [
+        "— · 입력값을 확인하면 다시 계산합니다.",
+        "",
+        "3문항 중 0문항 풀이 · 0문항 정답"
+      ]
+    },
+    {
+      "test": "script-zero-seconds",
+      "result": [
+        "",
+        "",
+        "",
+        "",
+        "입력값을 확인하세요. 샘플은 양수, 추가 쉼은 0 이상으로 넣으세요.",
+        "",
+        "3문항 중 0문항 풀이 · 0문항 정답"
+      ]
+    },
+    {
+      "test": "plan-zero",
+      "result": [
+        "0분제작 배정 시간이 없으니 확보 시간·활동일·기간을 조정하세요.",
+        "",
+        "3문항 중 0문항 풀이 · 0문항 정답"
+      ]
+    },
+    {
+      "test": "plan-default",
+      "result": [
+        "1,100분검수·메모를 뺀 제작 예산입니다. 날짜별 배정과 보류 작업을 확인하세요.",
+        "",
+        "3문항 중 0문항 풀이 · 0문항 정답"
+      ]
+    }
+  ],
+  "model_rows": 271,
+  "glossary_entries": 48,
+  "copied_prompts": 12,
+  "kit_tests": {
+    "passed": 38,
+    "duration_seconds": 7.92,
+    "pytest": "9.0.2"
+  },
+  "limits": [
+    "외부 서비스 로그인·실제 업로드·유료 API 호출 없음",
+    "Linux Chromium으로 검사. Windows/macOS/실물 폰 실행 아님",
+    "브라우저에서 자동화로 페이지·도구 확인. 실제 초보자 참여 실험 아님"
+  ]
+}

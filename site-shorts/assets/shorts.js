@@ -47,15 +47,25 @@
   const audience = form.querySelector('#audience');
   const ai = form.querySelector('#ai-content');
   const music = form.querySelector('#music-rights');
+  const voice = form.querySelector('#ai-voice');
+  const voiceBranch = form.querySelector('[data-voice-branch]');
   const render = () => {
+    const needsVoice = ['cartoon', 'tts'].includes(ai.value);
+    voiceBranch.hidden = !needsVoice;
+    voice.disabled = !needsVoice;
+    const voicePending = needsVoice && !['own', 'clone', 'realistic'].includes(voice.value);
     const answered = [audience, ai, music].filter(input => input.value !== '').length;
     const unresolved = [!audience.value || audience.value === 'unsure',
-      !ai.value || ai.value === 'unsure', !music.value || music.value === 'unknown'].filter(Boolean).length;
+      !ai.value || ai.value === 'unsure' || voicePending, !music.value || music.value === 'unknown'].filter(Boolean).length;
     const actions = [];
     if (audience.value === 'kids') actions.push(['시청자층: 아동용 예를 선택하세요. 의도한 시청자와 콘텐츠 요소를 다시 대조하세요.', '#audience-step']);
     else if (audience.value === 'general') actions.push(['시청자층: 아동용 아니요. 어린이 대상 영상이 아닌지 실제 내용을 대조하세요.', '#audience-step']);
     else actions.push(['아동용 여부를 먼저 판단하세요. 공식 판단 기준에서 의도한 시청자·주제·표현을 확인하세요.', '#audience-step']);
-    if (['realistic', 'music'].includes(ai.value)) actions.push(['AI 사용: 예. 속성 → AI 사용 또는 더보기 → 변경된 콘텐츠에서 표시하세요. 소재 권리도 확인하세요.', '#ai-step']);
+    if (['realistic', 'music'].includes(ai.value) || (needsVoice && ['clone', 'realistic'].includes(voice.value))) actions.push(['AI 사용: 예. 사실적 합성·타인 목소리 복제·AI 음악 등 공개 대상이 있습니다. 속성 → AI 사용 또는 더보기 → 변경된 콘텐츠에서 표시하고 소재 권리도 확인하세요.', '#ai-step']);
+    else if (needsVoice && voice.value === 'own') actions.push([ai.value === 'cartoon'
+      ? 'AI 사용: 선택한 조건만이라면 아니요. 비현실적 종이 로봇 삽화·본인 음성은 공개 불필요 예시에 대조할 수 있습니다. 실제처럼 보이는 합성이나 AI 음악이 섞이지 않았는지 확인하세요.'
+      : 'AI 사용: 선택한 조건만이라면 아니요. 본인 녹음·본인 음성 복제 외 공개 대상 합성이 없는지 확인하세요.', '#ai-step']);
+    else if (needsVoice) actions.push(['AI 사용: 음성 조건 확인 전에는 판단을 보류하세요. 일반 TTS도 실제 인물의 발언으로 오인될지 듣고 공식 예시와 대조하세요. 사용 허락도 확인한 뒤 실제 화면에서 결정하세요.', '#ai-step']);
     else if (['assist', 'none'].includes(ai.value)) actions.push(['AI 사용: 선택한 조건만이라면 아니요. 대본·자막 보조 외 사실적 합성이나 AI 음악이 없는지 확인하세요.', '#ai-step']);
     else actions.push(['AI 사용 방식부터 확인하세요. 실제처럼 보이는 합성·생성 내용이 있는지 공식 예시와 대조하세요.', '#ai-step']);
     if (music.value === 'own') actions.push(['음악: 넣지 않았거나 모두 직접 만든 음악인지 확인하세요. 타인의 녹음·샘플을 섞었다면 사용권을 다시 확인하세요.', '#review']);

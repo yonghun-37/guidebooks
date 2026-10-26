@@ -1,0 +1,1017 @@
+{
+  "review_date": "2026-10-26",
+  "git_head": "8470c9893d17a4f59b3f48bd574c91e44f0d8254",
+  "scope": "read-only beginner review; only review records written",
+  "server": "python3 -m http.server 8647 --bind 127.0.0.1 --directory site",
+  "browser": "149.0.7827.55",
+  "reading_pages": [
+    {
+      "path": "practice/00-start.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/01-account.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/02-setup.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/03-copy.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/04-cards.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/05-reel.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/06-review.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/07-publish.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/08-api.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/09-schedule.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/10-insights.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "1문항 중 1문항 풀이 · 1문항 정답"
+      ]
+    },
+    {
+      "path": "practice/e2e.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": []
+    },
+    {
+      "path": "chapters/01-map.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/02-formats.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/03-revenue.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/04-niche.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/05-sources.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/05b-ai-tools.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/06-writing.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/07-cards.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/08-reels.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/09-pipeline.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/10-publishing.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/11-analytics.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/12-safety.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "4문항 중 4문항 풀이 · 4문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/13-roadmap.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "chapters/14-plan.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": [
+        "3문항 중 3문항 풀이 · 3문항 정답"
+      ]
+    },
+    {
+      "path": "prompts.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": []
+    },
+    {
+      "path": "ai-models.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": []
+    },
+    {
+      "path": "lab.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": []
+    },
+    {
+      "path": "glossary.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": []
+    },
+    {
+      "path": "index.html",
+      "widths": [
+        {
+          "width": 1280,
+          "scroll": 1280
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 360,
+          "scroll": 360
+        }
+      ],
+      "quiz_status": []
+    }
+  ],
+  "reading_errors": [],
+  "interaction_checks": 877,
+  "interaction_errors": [],
+  "extra_checks": 105,
+  "extra_failed": [],
+  "extra_errors": [],
+  "cost_cases": [
+    {
+      "name": "cost cardsfree1",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 0원",
+        "formula": "무료 채팅 + 본인 사진·도형 + 본인 녹음 + 무료 편집 = 0원.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost cardsfree2",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 0원",
+        "formula": "무료 채팅 + 본인 사진·도형 + 본인 녹음 + 무료 편집 = 0원.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost cardsfree3",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 0원",
+        "formula": "무료 채팅 + 본인 사진·도형 + 본인 녹음 + 무료 편집 = 0원.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost cardslow1",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 95.45원",
+        "formula": "(문안 $0.0007 + 이미지 5장 × $0.014) × 1회 = $0.0707 × 1,350원 = 약 95.45원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost cardslow2",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 190.89원",
+        "formula": "(문안 $0.0007 + 이미지 5장 × $0.014) × 2회 = $0.1414 × 1,350원 = 약 190.89원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost cardslow3",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 286.34원",
+        "formula": "(문안 $0.0007 + 이미지 5장 × $0.014) × 3회 = $0.2121 × 1,350원 = 약 286.34원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost cardshigh1",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 1,211.63원",
+        "formula": "(문안 $0.07 + 이미지 출력 5장 × $0.165 + 입력 $0.0025) × 1회 = $0.8975 × 1,350원 = 약 1,211.63원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost cardshigh2",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 2,423.25원",
+        "formula": "(문안 $0.07 + 이미지 출력 5장 × $0.165 + 입력 $0.0025) × 2회 = $1.795 × 1,350원 = 약 2,423.25원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost cardshigh3",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 3,634.88원",
+        "formula": "(문안 $0.07 + 이미지 출력 5장 × $0.165 + 입력 $0.0025) × 3회 = $2.6925 × 1,350원 = 약 3,634.88원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost explainfree1",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 0원",
+        "formula": "무료 채팅 + 본인 사진·도형 + 본인 녹음 + 무료 편집 = 0원.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost explainfree2",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 0원",
+        "formula": "무료 채팅 + 본인 사진·도형 + 본인 녹음 + 무료 편집 = 0원.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost explainfree3",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 0원",
+        "formula": "무료 채팅 + 본인 사진·도형 + 본인 녹음 + 무료 편집 = 0원.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost explainlow1",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 101.66원",
+        "formula": "(문안 $0.0007 + 이미지 5장 × $0.014) × 1회 + TTS $0.0046 × 1회 = $0.0753 × 1,350원 = 약 101.66원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost explainlow2",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 203.31원",
+        "formula": "(문안 $0.0007 + 이미지 5장 × $0.014) × 2회 + TTS $0.0046 × 2회 = $0.1506 × 1,350원 = 약 203.31원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost explainlow3",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 304.97원",
+        "formula": "(문안 $0.0007 + 이미지 5장 × $0.014) × 3회 + TTS $0.0046 × 3회 = $0.2259 × 1,350원 = 약 304.97원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost explainhigh1",
+      "ok": true,
+      "detail": {
+        "result": "편당 배분액 약 1,294.13원",
+        "formula": "(문안 $0.07 + 이미지 출력 5장 × $0.165 + 입력 $0.0025) × 1회 + 타입캐스트 9,900원 × 0.5분 ÷ 60분 = $0.8975 × 1,350원 + 82.5원 = 약 1,294.13원.",
+        "cash": "타입캐스트 신규 월 구독 9,900원 + API 사용분 약 1,211.63원 = 약 11,111.63원. API 최소 충전액·세금·수수료는 추가 확인하세요."
+      }
+    },
+    {
+      "name": "cost explainhigh2",
+      "ok": true,
+      "detail": {
+        "result": "편당 배분액 약 2,505.75원",
+        "formula": "(문안 $0.07 + 이미지 출력 5장 × $0.165 + 입력 $0.0025) × 2회 + 타입캐스트 9,900원 × 0.5분 ÷ 60분 = $1.795 × 1,350원 + 82.5원 = 약 2,505.75원.",
+        "cash": "타입캐스트 신규 월 구독 9,900원 + API 사용분 약 2,423.25원 = 약 12,323.25원. API 최소 충전액·세금·수수료는 추가 확인하세요."
+      }
+    },
+    {
+      "name": "cost explainhigh3",
+      "ok": true,
+      "detail": {
+        "result": "편당 배분액 약 3,717.38원",
+        "formula": "(문안 $0.07 + 이미지 출력 5장 × $0.165 + 입력 $0.0025) × 3회 + 타입캐스트 9,900원 × 0.5분 ÷ 60분 = $2.6925 × 1,350원 + 82.5원 = 약 3,717.38원.",
+        "cash": "타입캐스트 신규 월 구독 9,900원 + API 사용분 약 3,634.88원 = 약 13,534.88원. API 최소 충전액·세금·수수료는 추가 확인하세요."
+      }
+    },
+    {
+      "name": "cost videofree1",
+      "ok": true,
+      "detail": {
+        "result": "추가 지출 0원 · 무료 접근·채택 조건부",
+        "formula": "4클립 × 1회 × 12크레딧 = 48크레딧. Flow Omni 720p·8초 기준.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost videofree2",
+      "ok": true,
+      "detail": {
+        "result": "당일 무료량 초과 · 96크레딧",
+        "formula": "4클립 × 2회 × 12크레딧 = 96크레딧. Flow Omni 720p·8초 기준.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost videofree3",
+      "ok": true,
+      "detail": {
+        "result": "당일 무료량 초과 · 144크레딧",
+        "formula": "4클립 × 3회 × 12크레딧 = 144크레딧. Flow Omni 720p·8초 기준.",
+        "cash": "새 구독료 0원 · 기기·인터넷·작업 시간은 제외합니다."
+      }
+    },
+    {
+      "name": "cost videolow1",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 2,776.55원",
+        "formula": "(문안 $0.0007 + Runway Gen-4 Turbo 4클립 × 10초 × $0.05 + 시작 이미지 4장 × $0.014) × 1회 = $2.0567 × 1,350원 = 약 2,776.55원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost videolow2",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 5,553.09원",
+        "formula": "(문안 $0.0007 + Runway Gen-4 Turbo 4클립 × 10초 × $0.05 + 시작 이미지 4장 × $0.014) × 2회 = $4.1134 × 1,350원 = 약 5,553.09원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost videolow3",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 8,329.64원",
+        "formula": "(문안 $0.0007 + Runway Gen-4 Turbo 4클립 × 10초 × $0.05 + 시작 이미지 4장 × $0.014) × 3회 = $6.1701 × 1,350원 = 약 8,329.64원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost videohigh1",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 17,374.5원",
+        "formula": "(문안 $0.07 + Runway Dev의 Veo 3.1 음성 4클립 × 8초 × $0.40) × 1회 = $12.87 × 1,350원 = 약 17,374.5원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost videohigh2",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 34,749원",
+        "formula": "(문안 $0.07 + Runway Dev의 Veo 3.1 음성 4클립 × 8초 × $0.40) × 2회 = $25.74 × 1,350원 = 약 34,749원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    },
+    {
+      "name": "cost videohigh3",
+      "ok": true,
+      "detail": {
+        "result": "편당 사용분 약 52,123.5원",
+        "formula": "(문안 $0.07 + Runway Dev의 Veo 3.1 음성 4클립 × 8초 × $0.40) × 3회 = $38.61 × 1,350원 = 약 52,123.5원.",
+        "cash": "구독료는 포함하지 않았습니다. 실제 API 첫 결제는 최소 충전액·세금·수수료 때문에 위 사용분보다 클 수 있습니다."
+      }
+    }
+  ],
+  "static_check": {
+    "html_pages": 40,
+    "internal_references": 3325,
+    "catalog_entries": 31,
+    "practice_steps": 43,
+    "theory_chapters": 14,
+    "quiz_questions": 57,
+    "source_references": 945,
+    "term_references": 39,
+    "fact_pending": 0,
+    "deployment_bytes": {
+      "site": 3273493,
+      "shelf": 11703,
+      "samples": 1568333,
+      "site-shorts": 3307926,
+      "total": 8161455,
+      "files": 167,
+      "by_extension": {
+        ".css": 100702,
+        ".html": 2438577,
+        ".js": 242984,
+        ".json": 6801,
+        ".mp4": 2655794,
+        ".png": 2518482,
+        ".srt": 690,
+        ".svg": 19134,
+        ".txt": 15839,
+        ".webp": 162452
+      }
+    },
+    "errors": []
+  },
+  "style_baseline_summary": {
+    "files": 25,
+    "passed": 25,
+    "failed": 0,
+    "char_count": 87942,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 0,
+      "caveats_inside": 0
+    }
+  },
+  "style_new_summary": {
+    "files": 6,
+    "passed": 6,
+    "failed": 0,
+    "char_count": 82721,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 0,
+      "caveats_inside": 0
+    }
+  },
+  "automatic_style_limitation": "Rendered B3/B5/B11/B15/B17 references were not detected; see RI-10.",
+  "kit": {
+    "location": "/tmp/reelsbook-R-insta/starter-kit",
+    "python": "3.11.15",
+    "pytest": "........................................................................ [ 62%]\n............................................                             [100%]\n116 passed in 26.17s",
+    "media": {
+      "duration": 20,
+      "width": 1080,
+      "height": 1920,
+      "ended": {
+        "ended": true,
+        "currentTime": 20,
+        "error": null
+      }
+    },
+    "ffmpeg_decode": "480 frames, H.264 1080x1920 24fps, 20 seconds; exit 0",
+    "visual_inspection": "PNG cards 1-5; decoded MP4 frames at 2/6/10/14/18s",
+    "headless_capture_limitation": "Video screenshot surfaces black; decoded frame inspection used for image content.",
+    "dry_run_modes": {
+      "approve-first-post.json": "dry-run",
+      "publish-first-post.json": "dry-run",
+      "approve-date.json": "dry-run",
+      "publish-date.json": "dry-run",
+      "url-dry-run.json": "dry-run"
+    },
+    "daily_folder_created": true,
+    "scheduler_instructions": [
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "scheduler_registered": false
+  },
+  "image_prompt_test": {
+    "source": "site/practice/04-cards.html#image",
+    "prompt_unchanged": true,
+    "tool": "built-in image_gen",
+    "output_pixels": [
+      1122,
+      1402
+    ],
+    "bytes": 1590965,
+    "sha256": "33a7d73973a09e8760d9dfa2f65657ef5d59f807ead769696c1fdfb70eeb9fa3",
+    "observed": "green paper robot, brown flowerpot, cream desk, title space, no lettering or logo",
+    "service_login_tested": false
+  },
+  "findings_counts": {
+    "차단": 0,
+    "혼란": 11,
+    "사소": 2
+  },
+  "protected_file_changes": [],
+  "not_run": [
+    "external service login or checkout",
+    "ChatGPT web Free generation",
+    "Flow video generation",
+    "Instagram account posting",
+    "live API",
+    "OS scheduler registration and next-day execution",
+    "Windows/macOS native execution"
+  ],
+  "protected_snapshot": {
+    "files_compared": 2769,
+    "snapshot_sha256": "c2cd73dc72c10a91186c4d992831baf8191d6d7ffbd6586ab24d0033c6c9956f",
+    "changed_files": [],
+    "method": "SHA256 every pre-existing file under site/ and starter-kit/ before and after review; no changes. Individual temporary hashes are not copied into this public review record."
+  },
+  "notification": {
+    "sent": true,
+    "http_status": 200,
+    "method": "python3 scripts/notify.py",
+    "summary": "차단 0·혼란 11·사소 2"
+  }
+}

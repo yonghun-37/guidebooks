@@ -5,7 +5,7 @@
  if(choice) {
   const messages={film:'60분 · 폰 촬영·녹음과 AI 자동 자막으로 만들어요. 준비·업로드 시간은 더하세요.',explain:'65분 · 녹음/TTS와 스톡·AI 이미지로 설명해요. 준비·업로드 시간은 더하세요.',generate:'80분 + 생성 대기 · 기준 이미지와 짧은 샷을 연결해요. 무료 접근·크레딧을 먼저 확인하세요.'};
   const render=()=>{document.querySelector('[data-route-result]').textContent=messages[choice.querySelector(':checked').value];};
-  choice.addEventListener('change',render);render();
+  choice.addEventListener('change',render);choice.addEventListener('practice-restored',render);render();
  }
  const lab=document.querySelector('[data-caption-lab]');
  if(!lab)return;

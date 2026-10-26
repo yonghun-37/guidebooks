@@ -79,6 +79,6 @@
    $('cost-formula').textContent=formula;$('cost-cash').textContent=cash;$('cost-note').textContent=note;
   };
   ['cost-content','cost-combo','cost-attempts'].forEach(id=>$(id).addEventListener('change',update));
-  document.querySelector('[data-cost-reset]').addEventListener('click',()=>{$('cost-content').value='cards';$('cost-combo').value='low';$('cost-attempts').value='1';update()});update();
+  document.querySelector('[data-cost-reset]').addEventListener('click',()=>{$('cost-content').value='cards';$('cost-combo').value='free';$('cost-attempts').value='1';update()});update();
  }
 })();

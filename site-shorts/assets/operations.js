@@ -74,7 +74,7 @@
       if (!visibility.value) pending.push('공개 범위 결정');
       if (visibility.value === 'schedule' && !zone.value.trim()) pending.push('예약 날짜·시간·시간대 메모');
       if (!audience.value || audience.value === 'unsure') pending.push('아동용 판단');
-      if (!ai.value || ai.value === 'unsure') pending.push('AI 공개 판단');
+      if (!ai.value || ai.value === 'unsure' || (['cartoon', 'tts'].includes(ai.value) && !['own', 'clone', 'realistic'].includes($(upload, '#ai-voice').value))) pending.push('AI 공개 판단');
       if (!music.value || music.value === 'unknown') pending.push('음악 권리 확인');
       report(metadata, `${pending.length}개 확인 필요`, pending.length ? pending.join(' / ') : '메모가 채워졌습니다. 실제 영상·설정·사용권을 대조한 뒤 공개를 결정하세요.');
     };

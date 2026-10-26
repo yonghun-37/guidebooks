@@ -32,6 +32,8 @@
 
   const checks = [...document.querySelectorAll('[data-practice-check]')];
   const fields = [...document.querySelectorAll('[data-practice-field]')];
+  const route = document.querySelector('.route-choice');
+  const routeValues = ['film', 'explain', 'generate'];
   const key = 'shortsbook:practice:v1';
   let state = { checks: {}, fields: {} }, available = true;
   const read = () => {
@@ -39,7 +41,9 @@
       const parsed = JSON.parse(localStorage.getItem(key) || '{}');
       if (parsed && parsed.version === 1 && parsed.checks && typeof parsed.checks === 'object' && !Array.isArray(parsed.checks)) {
         state.checks = Object.fromEntries(Object.entries(parsed.checks).filter(([name, value]) => /^\d+:\w[\w-]*$/.test(name) && value === true));
-        state.fields = parsed.fields && typeof parsed.fields['posted-url'] === 'string' ? { 'posted-url': parsed.fields['posted-url'].slice(0, 500) } : {};
+        state.fields = {};
+        if (parsed.fields && typeof parsed.fields['posted-url'] === 'string') state.fields['posted-url'] = parsed.fields['posted-url'].slice(0, 500);
+        if (parsed.fields && routeValues.includes(parsed.fields.route)) state.fields.route = parsed.fields.route;
       }
     } catch { /* 손상된 기록은 비워서 읽고 현재 페이지 조작을 유지한다. */ }
   };
@@ -57,6 +61,11 @@
     announce();
   };
   const restore = () => {
+    if (route) {
+      const value = routeValues.includes(state.fields.route) ? state.fields.route : 'film';
+      route.querySelectorAll('input[type=radio]').forEach(input => { input.checked = input.value === value; });
+      route.dispatchEvent(new Event('practice-restored'));
+    }
     checks.forEach(input => { input.checked = state.checks[input.dataset.practiceCheck] === true; });
     fields.forEach(input => { input.value = state.fields[input.dataset.practiceField] || ''; });
     announce();
@@ -64,6 +73,10 @@
   restore();
   // 처음부터 저장이 차단되면 조작 전에 알린다.
   save();
+  if (route) route.addEventListener('change', () => {
+    state.fields.route = route.querySelector(':checked').value;
+    save();
+  });
   checks.forEach(input => input.addEventListener('change', () => {
     if (input.checked) state.checks[input.dataset.practiceCheck] = true;
     else delete state.checks[input.dataset.practiceCheck];

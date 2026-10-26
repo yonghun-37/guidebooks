@@ -1,0 +1,40 @@
+{
+  "execution": "검토 중인 Codex가 키트 prompt.md를 읽고 JSON 응답 작성. 별도 ChatGPT 소비자 계정 또는 독립 API 호출 아님. 낭독 시간·TTS 미검증.",
+  "response": {
+    "label": "가상 사례 · 독립 검토용 종이 분류",
+    "hooks": [
+      "책상 위 종이, 무엇부터 남길까요?",
+      "지금 쓸 종이만 책상에 남겼어요.",
+      "종이를 세 갈래로 나눠 보세요."
+    ],
+    "title": "지금 쓸 종이만 책상에 남기기",
+    "description": "직접 촬영을 계획하는 가상 종이 분류 연습입니다. 독립 검토용이며 게시하지 않습니다.",
+    "hashtags": [
+      "#책상정리",
+      "#종이분류"
+    ],
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": null,
+    "containsSyntheticMedia": null,
+    "scenes": [
+      {
+        "title": "종이를 세 갈래로",
+        "narration": "책상 위 종이, 무엇부터 남길까요? 지금 쓸 것과 보관할 것, 버릴 것으로 나눠 볼게요.",
+        "subtitle": "지금 쓸 것 · 보관할 것 · 버릴 것",
+        "duration": 12
+      },
+      {
+        "title": "보관할 것은 따로",
+        "narration": "지금 필요한 종이는 한곳에 모아요. 보관할 종이는 따로 두고 버릴 것도 나눠요.",
+        "subtitle": "보관할 종이는 따로 두기",
+        "duration": 12
+      },
+      {
+        "title": "지금 쓸 것만 남기기",
+        "narration": "지금 쓸 종이만 책상에 남겼어요. 오늘은 종이 한 묶음부터 나눠 보세요.",
+        "subtitle": "오늘 쓸 종이만 남겨요",
+        "duration": 12
+      }
+    ]
+  }
+}
