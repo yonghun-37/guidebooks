@@ -144,7 +144,7 @@ def render(script, config, output):
             draw = ImageDraw.Draw(image)
             draw.rounded_rectangle((80, 300, 1000, 1250), radius=50, fill="#6e3651")
             draw.ellipse((650, 380, 900, 630), fill="#ed9469")
-            draw.text((120, 730), "직접 만드는 쇼츠", font=small, fill="#ffd7ac")
+            draw.text((120, 730), "자취생 10분 생존법", font=small, fill="#ffd7ac")
             lines = wrap(scene["title"], title_font, 810)
             if len(lines) > 3:
                 raise ValueError("장면 title이 너무 깁니다. 짧게 줄이세요.")

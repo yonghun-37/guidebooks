@@ -45,7 +45,9 @@ def select_topic(config, store, flow, *, live=False, http=None):
             text = response.text
         else:
             text = kit_path(feed).read_text(encoding='utf-8')
-        candidates.extend({**topic,'rights_reviewed':options.get('rights_reviewed',False),'entities':options.get('entities',[]),'category':options.get('category','RSS')} for topic in rss_topics(text))
+        candidates.extend({**topic,'rights_reviewed':options.get('rights_reviewed',False),'synthetic':options.get('synthetic',False),'flow':options.get('flow'),'entities':options.get('entities',[]),'category':options.get('category','RSS')} for topic in rss_topics(text))
+    # flow를 생략한 사용자 소스는 두 흐름에서 계속 사용할 수 있다.
+    candidates = [source for source in candidates if source.get('flow') in (None, flow)]
     history = store.runs()
     seen = {r.get('source_hash') for r in history if r['flow'] == flow and r['status'] in ('done', 'dry_run', 'scheduled', 'uncertain')}
     scores = {}

@@ -1,4 +1,22 @@
 [
-  {"title": "가상도서관의 책 소식", "text": "가상도서관은 책 12권을 소개해요. 관심 있는 책을 골라 원문에서 내용을 살펴봐요.", "url": "https://example.invalid/library", "entities": ["가상도서관"], "synthetic": true, "rights_reviewed": false, "category": "독서"},
-  {"title": "가상공원의 산책 안내", "text": "가상공원은 산책길 3곳을 소개해요. 길의 특징을 비교하고 내게 맞는 길을 골라봐요.", "url": "https://example.invalid/park", "entities": ["가상공원"], "synthetic": true, "rights_reviewed": false, "category": "생활"}
+  {
+    "flow": "insta",
+    "title": "청년 지원금, 신청 전 확인할 3가지",
+    "text": "직접 작성한 예시 문안입니다. 청년 지원금은 신청 전 대상·기간·서류 3가지를 확인해요.\n대상: 나이·거주지·소득 조건이 나에게 맞는지 공고에서 확인해요.\n기간: 접수 시작일과 마감일을 확인하고 달력에 적어요.\n서류: 필요한 서류와 발급 방법을 확인해 미리 준비해요.\n신청 전에 다시 보기: 저장한 뒤 실제 공고의 대상·기간·서류를 대조하세요. 자동 지급으로 오해하지 마세요.",
+    "url": "https://example.invalid/youth-support-checklist",
+    "entities": [],
+    "synthetic": true,
+    "rights_reviewed": false,
+    "category": "생활 뉴스"
+  },
+  {
+    "flow": "shorts",
+    "title": "월급날 10분, 돈을 네 칸으로 나누기",
+    "text": "직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\n월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\n생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\n비상금: 갑자기 지출할 때 쓸 돈을 적어요.\n목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.",
+    "url": "https://example.invalid/payday-four-boxes",
+    "entities": [],
+    "synthetic": true,
+    "rights_reviewed": false,
+    "category": "자취 생활"
+  }
 ]

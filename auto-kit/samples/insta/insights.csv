@@ -1,5 +1,5 @@
 ﻿run_id,flow,media_id,date,metric,value,unit,availability,collected_at,mock
-65cf4b3d6b16,insta,dry-65cf4b3d6b16,2026-10-26,views,12,회,available,2026-10-26T09:36:57.100424+00:00,True
-65cf4b3d6b16,insta,dry-65cf4b3d6b16,2026-10-26,reach,,계정,missing,2026-10-26T09:36:57.100424+00:00,True
-65cf4b3d6b16,insta,dry-65cf4b3d6b16,2026-10-26,saved,0,회,available,2026-10-26T09:36:57.100424+00:00,True
-65cf4b3d6b16,insta,dry-65cf4b3d6b16,2026-10-26,shares,,회,missing,2026-10-26T09:36:57.100424+00:00,True
+a8ac978eec8c,insta,dry-a8ac978eec8c,2026-10-26,views,12,회,available,2026-10-26T09:56:22.441479+00:00,True
+a8ac978eec8c,insta,dry-a8ac978eec8c,2026-10-26,reach,,계정,missing,2026-10-26T09:56:22.441479+00:00,True
+a8ac978eec8c,insta,dry-a8ac978eec8c,2026-10-26,saved,0,회,available,2026-10-26T09:56:22.441479+00:00,True
+a8ac978eec8c,insta,dry-a8ac978eec8c,2026-10-26,shares,,회,missing,2026-10-26T09:56:22.441479+00:00,True

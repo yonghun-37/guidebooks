@@ -12,7 +12,7 @@ def test_live_orchestration_all_external_mocked(tmp_path,monkeypatch,flow):
     cfg=load_config();cfg['mode']='auto';cfg['providers']['llm']='openai';cfg['budget']['provider_hard_cap_confirmed']=True
     cfg['instagram']['account']='123';cfg['youtube']['quota_confirmed_at']=now().isoformat()
     p=Pipeline(cfg,tmp_path)
-    source={'title':'책 이야기','text':'책을 함께 읽어요.','entities':[],'rights_reviewed':True,'synthetic':False,'url':'https://example.org/source','source_hash':hashed('책을 함께 읽어요.')}
+    source={'title':'월세·생활비를 메모해요.','text':'이번 달 월세와 생활비를 적어요.','entities':[],'rights_reviewed':True,'synthetic':False,'url':'https://example.org/source','source_hash':hashed('이번 달 월세와 생활비를 적어요.')}
     p.select=lambda *a,**kw:source
     monkeypatch.setattr(Provider,'draft',lambda *a:Provider.mock_draft(source,flow))
     monkeypatch.setattr(module,'host',lambda *a,**kw:{'adapter':'r2','urls':['https://example.org/a.jpg','https://example.org/b.jpg']})

@@ -5,6 +5,17 @@ from common import load_config
 from doctor import diagnose
 from schedule.install import generate
 from hosting import host
+import doctor
+
+@pytest.mark.parametrize('version', [(3, 10, 12), (3, 11, 15), (3, 12, 0)])
+def test_doctor_python_minimum(monkeypatch, version):
+    monkeypatch.setattr(doctor.sys, 'version_info', version)
+    results = diagnose(load_config(), values={})
+    assert results[0]['level'] == ('error' if version < (3, 11) else 'ok')
+    assert '3.11' in results[0]['message']
+    if version < (3, 11):
+        assert len(results) == 1
+        assert 'mock 준비 완료' not in str(results)
 
 def test_doctor_mock_and_live_missing():
     cfg=load_config()

@@ -79,13 +79,13 @@ def render(draft, config, output, flow, provider):
             if backgrounds and backgrounds[i].suffix.lower() in short_base.PHOTO:
                 row['image'] = str(backgrounds[i])
             scenes.append(row)
-        copy = {'account_name': '나의 자동화 작업실', 'scenes': scenes, 'synthetic': True, 'label': 'AI 제작 보조 · 원문 확인', 'caption': draft['caption']}
+        copy = {'account_name': '출근길 3분 생활 뉴스' if provider.mock else '나의 자동화 작업실', 'scenes': scenes, 'synthetic': True, 'label': '직접 작성한 예시 문안 · AI 제작 보조' if provider.mock else 'AI 제작 보조 · 원문 확인', 'caption': draft['caption']}
         cards.render_cards(copy, {'font': font, 'colors': cards.THEMES['forest'], 'asset_root': '/'}, output / 'cards')
         files = sorted((output / 'cards').glob('*.jpg'))
     if flow == 'shorts' or media['motion_reel'] or config['instagram']['format'] == 'reel':
         recording = kit_path(media['recording']) if media.get('recording') else output / 'narration.wav'
         if not recording.exists():
-            provider.media('tts', draft['narration'], recording)
+            provider.media('tts', draft['narration'], recording, seconds=sum(s['duration'] for s in draft['scenes']))
         duration = short_base.probe(recording)['duration']
         if not 3 <= duration <= (180 if flow == 'shorts' else 900):
             raise ValueError('녹음/TTS 길이가 범위를 벗어났습니다. 음성을 자르지 않고 중단합니다.')

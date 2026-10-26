@@ -63,14 +63,14 @@ def test_run_envelope_is_not_double_charged(tmp_path):
     assert s.spend()['total']==pytest.approx(.02)
 
 def test_rss_explicit_rights_confirmation(tmp_path):
-    path=tmp_path/'feed.xml';path.write_text('<rss><channel><item><title>소식</title><description>책 소식</description></item></channel></rss>')
-    cfg=load_config();cfg['sources']['files']=[];cfg['sources']['rss']=[{'url':str(path),'rights_reviewed':True,'category':'독서'}]
+    path=tmp_path/'feed.xml';path.write_text('<rss><channel><item><title>소식</title><description>청년 지원금 신청 전 확인</description></item></channel></rss>')
+    cfg=load_config();cfg['sources']['files']=[];cfg['sources']['rss']=[{'url':str(path),'rights_reviewed':True,'category':'생활 뉴스'}]
     source=select_topic(cfg,Store(tmp_path/'state'),'insta')
     assert source['rights_reviewed'] is True
 
 def test_live_upload_channel_swap_is_blocked(tmp_path,monkeypatch):
     cfg=load_config();cfg['mode']='approval';cfg['providers']['llm']='openai';cfg['budget']['provider_hard_cap_confirmed']=True;cfg['media']['recording']=str(tmp_path/'recording.wav')
-    p=Pipeline(cfg,tmp_path);source={'title':'책','text':'책 이야기','entities':[],'rights_reviewed':True,'synthetic':False,'source_hash':hashed('책 이야기')}
+    p=Pipeline(cfg,tmp_path);source={'title':'청년 지원금 확인','text':'월세·생활비를 메모해요.','entities':[],'rights_reviewed':True,'synthetic':False,'source_hash':hashed('월세·생활비를 메모해요.')}
     p.select=lambda *a,**kw:source
     monkeypatch.setattr(Provider,'draft',lambda *a:Provider.mock_draft(source,'shorts'))
     Provider(cfg,p.store,'fixture',mock=True).media('tts','음성',tmp_path/'recording.wav')

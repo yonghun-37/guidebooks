@@ -18,10 +18,20 @@ class Provider:
 
     @staticmethod
     def mock_draft(source, flow):
-        text = source['text'][:140]
-        title = source['title'][:36]
-        return {'title': title, 'caption': text, 'narration': text,
-                'entities': source.get('entities', []), 'scenes': [{'title': title, 'text': text, 'duration': 3}, {'title': '함께 살펴봐요', 'text': '원문을 읽고 내 생활에서 활용할 점을 찾아봐요.', 'duration': 3}]}
+        # 동봉 원문은 첫 줄이 훅, 다음 줄이 '항목: 설명'이다. 새 사실을 덧붙이지 않는다.
+        lines = [line.strip() for line in source['text'].splitlines() if line.strip()]
+        title = source['title'][:40]
+        scenes = [{'title': title, 'text': lines[0][:150], 'duration': 3 if flow == 'insta' else 6}]
+        for line in lines[1:5]:
+            heading, separator, body = line.partition(':')
+            scenes.append({'title': heading[:40] if separator else title,
+                           'text': (body.strip() if separator else line)[:150],
+                           'duration': 3 if flow == 'insta' else 7.5})
+        if len(scenes) == 1:
+            scenes.append({'title': '원문에서 다시 확인', 'text': lines[0][:150], 'duration': 3})
+        text = '\n'.join(lines)
+        return {'title': title, 'caption': text[:2000], 'narration': text[:4000],
+                'entities': source.get('entities', []), 'scenes': scenes}
 
     def reserve_run(self, source, flow):
         """장면 최대 5개·대본 최대 4000자·모든 재시도를 포함한 실행 견적."""
@@ -146,7 +156,7 @@ class Provider:
                 import wave, struct
                 with wave.open(str(path), 'wb') as f:
                     f.setnchannels(1); f.setsampwidth(2); f.setframerate(24000)
-                    f.writeframes(b''.join(struct.pack('<h', int(3000 * math.sin(2 * math.pi * 220 * n / 24000))) for n in range(24000 * 6)))
+                    f.writeframes(b''.join(struct.pack('<h', int(3000 * math.sin(2 * math.pi * 220 * n / 24000))) for n in range(round(24000 * kwargs.get('seconds', 6)))))
             else:
                 from rendering.media import ffmpeg
                 ffmpeg(['-loop', '1', '-i', kwargs['image'], '-t', str(kwargs.get('seconds', 5)), '-vf', 'scale=720:1280', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-threads', '2', str(path)])

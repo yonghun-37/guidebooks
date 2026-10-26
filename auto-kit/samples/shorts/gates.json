@@ -25,7 +25,7 @@
         "fps": 30.0,
         "video_codec": "h264",
         "audio_codec": "aac",
-        "duration": 6.1,
+        "duration": 36.1,
         "lufs": -16.05,
         "probe_method": "pip ffmpeg stderr parser (shorts-kit 재사용)"
       }

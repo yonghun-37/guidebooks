@@ -65,9 +65,28 @@ def test_live_requires_credentials_and_non_mock(tmp_path):
     with pytest.raises(ValueError): p.run('insta', live=True, provider='mock')
 
 def test_quality_failure_queue_contains_reasons(tmp_path, monkeypatch):
-    cfg = load_config(); cfg['mode'] = 'auto'; cfg['gates']['blocked_words'] = ['책']
+    cfg = load_config(); cfg['mode'] = 'auto'; cfg['gates']['blocked_words'] = ['지원금']
     p = Pipeline(cfg, tmp_path)
     run = p.run('insta')
     assert run['status'] == 'exception'
-    assert any('책' in r for r in run['gates']['policy']['reasons'])
+    assert any('지원금' in r for r in run['gates']['policy']['reasons'])
     assert (tmp_path / run['id'] / 'notification.json').exists()
+
+def test_invented_support_amount_enters_exception_queue(tmp_path, monkeypatch):
+    from providers import Provider
+    original = Provider.mock_draft
+    def wrong(source, flow):
+        draft = original(source, flow)
+        draft['caption'] += '\n지원금 99만원'
+        return draft
+    monkeypatch.setattr(Provider, 'mock_draft', staticmethod(wrong))
+    cfg = load_config(); cfg['mode'] = 'auto'
+    p = Pipeline(cfg, tmp_path)
+    run = p.run('insta', provider='mock')
+    assert run['status'] == 'exception'
+    assert run['gates']['facts']['reasons'] == ['원문에 없는 숫자: 99']
+    assert 'publish' not in run['steps']
+    assert not (tmp_path / run['id'] / 'request-plan.json').exists()
+    assert '원문에 없는 숫자: 99' in read_json(tmp_path / run['id'] / 'notification.json')['message']
+    with pytest.raises(ValueError):
+        p.approve(run['id'])

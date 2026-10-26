@@ -18,9 +18,13 @@ def main():
             if run['status']!='dry_run':raise ValueError('샘플 관문 실패: '+run['status'])
             ids[run['id']]=flow
             directory=target/flow;directory.mkdir(exist_ok=True)
-            for name in ('draft.json','gates.json','request-plan.json','notification.json','insights.csv','preview.html','subtitles.srt','short.mp4'):
+            for name in ('source.json','draft.json','gates.json','request-plan.json','notification.json','insights.csv','preview.html','subtitles.srt','short.mp4'):
                 path=Path(run['output'])/name
-                if path.is_file():shutil.copyfile(path,directory/name)
+                if path.is_file():
+                    if path.suffix == '.csv':
+                        (directory/name).write_text(path.read_text(encoding='utf-8'),encoding='utf-8',newline='\n')
+                    else:
+                        shutil.copyfile(path,directory/name)
             if flow=='insta':
                 shutil.copytree(Path(run['output'])/'cards',directory/'cards',dirs_exist_ok=True)
             save_json(directory/'result.json',{'status':run['status'],'flow':flow,'steps':run['steps'],'mock':True,'network_calls':0,'generation_cost_usd':run['generation_cost']})

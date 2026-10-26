@@ -22,13 +22,31 @@
         "file": "card-01.jpg",
         "width": 1080,
         "height": 1350,
-        "bytes": 120664
+        "bytes": 139042
       },
       {
         "file": "card-02.jpg",
         "width": 1080,
         "height": 1350,
-        "bytes": 92521
+        "bytes": 91450
+      },
+      {
+        "file": "card-03.jpg",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 88902
+      },
+      {
+        "file": "card-04.jpg",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 89442
+      },
+      {
+        "file": "card-05.jpg",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 108901
       }
     ]
   },

@@ -30,7 +30,7 @@ def test_session_resume_can_query_after_publish_time():
 def test_partial_usage_keeps_reservation(tmp_path):
     cfg=load_config();cfg['providers']['llm']='openai';store=Store(tmp_path)
     def invoke(kind,payload,model): return {'value':Provider.mock_draft(payload['source'],'insta'),'usage':{'input_tokens':3}}
-    Provider(cfg,store,'r',invoke=invoke).draft({'title':'책','text':'책 소식','entities':[]},'insta')
+    Provider(cfg,store,'r',invoke=invoke).draft({'title':'청년 지원금 확인','text':'청년 지원금 신청 전 확인','entities':[]},'insta')
     call=store.calls()[0]
     assert call['actual']==call['reserved']
 

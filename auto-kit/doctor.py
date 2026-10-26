@@ -3,13 +3,19 @@ import argparse
 from datetime import timedelta
 import shutil
 import subprocess
-import imageio_ffmpeg
+import sys
 from common import ROOT, cli, kit_path, load_config, secrets, read_json, timestamp, now
 
 def diagnose(config, values=None, live=False, flow=None):
     values = values if values is not None else secrets()
     results = []
     def add(level, message): results.append({'level':level,'message':message})
+    version = '.'.join(map(str, sys.version_info[:3]))
+    if sys.version_info < (3, 11):
+        add('error',f'Python {version}: Python 3.11 이상이 필요합니다. Windows는 py -3.11, macOS는 python3.11로 가상환경을 새로 만드세요.')
+        return results
+    add('ok',f'Python {version} · 최소 3.11 이상 충족')
+    import imageio_ffmpeg
     if not kit_path(config['media']['font']).is_file(): add('error','한글 폰트 파일이 없습니다. media.font 경로를 확인하세요.')
     try:
         subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(),'-version'],check=True,capture_output=True)

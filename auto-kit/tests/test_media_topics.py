@@ -1,6 +1,6 @@
 from pathlib import Path
 import pytest
-from common import load_config
+from common import load_config, read_json, ROOT, hashed
 from state import Store
 from providers import Provider
 from topics import select_topic
@@ -11,16 +11,41 @@ def test_topic_uses_performance_and_rss(tmp_path):
     config = load_config()
     config['sources']['files'] = []
     feed = tmp_path / 'feed.xml'
-    feed.write_text('<rss><channel><item><title>책 소식</title><description>책을 읽어요.</description><link>https://example.invalid/1</link></item></channel></rss>')
+    feed.write_text('<rss><channel><item><title>청년 지원금 신청 전 확인</title><description>공고에서 신청 기간을 확인해요.</description><link>https://example.invalid/1</link></item></channel></rss>')
     config['sources']['rss'] = [str(feed)]
     topic = select_topic(config, Store(tmp_path / 'state'), 'insta', live=False)
-    assert topic['text'] == '책을 읽어요.'
+    assert topic['text'] == '공고에서 신청 기간을 확인해요.'
+
+@pytest.mark.parametrize('flow', ['insta', 'shorts'])
+def test_example_json_and_rss_select_same_flow(tmp_path, flow):
+    config = load_config()
+    store = Store(tmp_path / 'state')
+    direct = select_topic(config, store, flow)
+    config['sources']['files'] = []
+    config['sources']['rss'] = [
+        {'url': f'sources/{name}-feed.xml', 'flow': name, 'synthetic': True,
+         'rights_reviewed': False, 'category': category}
+        for name, category in [('insta', '생활 뉴스'), ('shorts', '자취 생활')]
+    ]
+    rss = select_topic(config, store, flow)
+    assert rss['title'] == direct['title']
+    assert rss['text'] == direct['text']
+    assert rss['source_hash'] == hashed(direct['text'].strip())
+    assert rss['synthetic'] is True and rss['rights_reviewed'] is False
+    assert Provider.mock_draft(rss, flow) == Provider.mock_draft(direct, flow)
+
+def test_sources_without_flow_remain_shared(tmp_path):
+    config = load_config()
+    config['sources']['files'] = []
+    config['sources']['rss'] = ['sources/insta-feed.xml']
+    store = Store(tmp_path / 'state')
+    assert select_topic(config, store, 'shorts')['title'] == select_topic(config, store, 'insta')['title']
 
 @pytest.mark.parametrize('flow', ['insta', 'shorts'])
 def test_real_local_media_and_gates(tmp_path, flow):
     config, store = load_config(), Store(tmp_path / 'state')
     p = Provider(config, store, 'r', mock=True)
-    source = {'title': '가상도서관 소식', 'text': '가상도서관은 책 12권을 소개해요.', 'entities': ['가상도서관']}
+    source = next(s for s in read_json(ROOT / 'sources/sample.json') if s['flow'] == flow)
     draft = p.draft(source, flow)
     files = render(draft, config, tmp_path / 'render', flow, p)
     results = inspect_media(files, flow, config['gates'], config['instagram' if flow == 'insta' else 'youtube'])

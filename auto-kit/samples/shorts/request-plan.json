@@ -3,8 +3,8 @@
   "network_calls": 0,
   "metadata": {
     "snippet": {
-      "title": "가상도서관의 책 소식",
-      "description": "가상도서관은 책 12권을 소개해요. 관심 있는 책을 골라 원문에서 내용을 살펴봐요.\n원문: https://example.invalid/library",
+      "title": "월급날 10분, 돈을 네 칸으로 나누기",
+      "description": "직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\n월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\n생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\n비상금: 갑자기 지출할 때 쓸 돈을 적어요.\n목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.\n원문: https://example.invalid/payday-four-boxes",
       "categoryId": "22",
       "defaultLanguage": "ko"
     },
@@ -20,13 +20,13 @@
       "url": "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet%2Cstatus",
       "headers": {
         "Authorization": "Bearer <REDACTED>",
-        "X-Upload-Content-Length": "149031",
+        "X-Upload-Content-Length": "767406",
         "X-Upload-Content-Type": "video/mp4"
       },
       "json": {
         "snippet": {
-          "title": "가상도서관의 책 소식",
-          "description": "가상도서관은 책 12권을 소개해요. 관심 있는 책을 골라 원문에서 내용을 살펴봐요.\n원문: https://example.invalid/library",
+          "title": "월급날 10분, 돈을 네 칸으로 나누기",
+          "description": "직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\n월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\n생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\n비상금: 갑자기 지출할 때 쓸 돈을 적어요.\n목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.\n원문: https://example.invalid/payday-four-boxes",
           "categoryId": "22",
           "defaultLanguage": "ko"
         },
@@ -41,7 +41,7 @@
       "method": "PUT",
       "url": "<saved Location>",
       "headers": {
-        "Content-Range": "bytes 0-149030/149031"
+        "Content-Range": "bytes 0-767405/767406"
       },
       "note": "마지막 외 256KiB 배수 청크. 308 Range 다음부터 재개"
     },
@@ -50,7 +50,7 @@
       "url": "<same Location>",
       "headers": {
         "Content-Length": "0",
-        "Content-Range": "bytes */149031"
+        "Content-Range": "bytes */767406"
       },
       "note": "응답 유실·재시작 때 서버 상태 조회"
     }

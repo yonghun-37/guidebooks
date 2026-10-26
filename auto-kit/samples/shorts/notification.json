@@ -1,9 +1,9 @@
 {
   "event": "실행 보고",
-  "id": "45e9c61b398b",
+  "id": "0bfa8bde897b",
   "status": "dry_run",
-  "message": "[실행 보고] 45e9c61b398b · shorts · dry_run\n\n생성비 $0.000000 · 미리보기 첨부/로컬 preview.html",
+  "message": "[실행 보고] 0bfa8bde897b · shorts · dry_run\n\n생성비 $0.000000 · 미리보기 첨부/로컬 preview.html",
   "preview": "preview.html",
-  "binding": "c456309fff7f75133dfacbd179a96bd53b7526301e4a68f6769ed1d059267bbb",
+  "binding": "91be1561d16aa06c4e191c84997f18d0d649de59a5c61fa4268b4b2dcbf0d7ca",
   "cost_usd": 0.0
 }

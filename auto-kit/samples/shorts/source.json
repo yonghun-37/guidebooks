@@ -1,0 +1,13 @@
+{
+  "flow": "shorts",
+  "title": "월급날 10분, 돈을 네 칸으로 나누기",
+  "text": "직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.\n월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.\n생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.\n비상금: 갑자기 지출할 때 쓸 돈을 적어요.\n목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.",
+  "url": "https://example.invalid/payday-four-boxes",
+  "entities": [],
+  "synthetic": true,
+  "rights_reviewed": false,
+  "category": "자취 생활",
+  "selection_score": 1.0,
+  "performance_score": 0,
+  "source_hash": "08b0e4802941a70c1a152ffbcda749500aa6c939c72de419fc5370ce9fcf7661"
+}

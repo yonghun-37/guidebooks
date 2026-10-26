@@ -15,7 +15,7 @@
       "method": "POST",
       "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
       "data": {
-        "image_url": "https://example.invalid/media/65cf4b3d6b16/00-card-01.jpg",
+        "image_url": "https://example.invalid/media/a8ac978eec8c/00-card-01.jpg",
         "is_carousel_item": "true"
       },
       "save_as": "CHILD_0"
@@ -32,7 +32,7 @@
       "method": "POST",
       "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
       "data": {
-        "image_url": "https://example.invalid/media/65cf4b3d6b16/01-card-02.jpg",
+        "image_url": "https://example.invalid/media/a8ac978eec8c/01-card-02.jpg",
         "is_carousel_item": "true"
       },
       "save_as": "CHILD_1"
@@ -49,9 +49,60 @@
       "method": "POST",
       "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
       "data": {
+        "image_url": "https://example.invalid/media/a8ac978eec8c/02-card-03.jpg",
+        "is_carousel_item": "true"
+      },
+      "save_as": "CHILD_2"
+    },
+    {
+      "method": "GET",
+      "url": "https://graph.instagram.com/v26.0/{CHILD_2}",
+      "params": {
+        "fields": "status_code"
+      },
+      "until": "FINISHED"
+    },
+    {
+      "method": "POST",
+      "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+      "data": {
+        "image_url": "https://example.invalid/media/a8ac978eec8c/03-card-04.jpg",
+        "is_carousel_item": "true"
+      },
+      "save_as": "CHILD_3"
+    },
+    {
+      "method": "GET",
+      "url": "https://graph.instagram.com/v26.0/{CHILD_3}",
+      "params": {
+        "fields": "status_code"
+      },
+      "until": "FINISHED"
+    },
+    {
+      "method": "POST",
+      "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+      "data": {
+        "image_url": "https://example.invalid/media/a8ac978eec8c/04-card-05.jpg",
+        "is_carousel_item": "true"
+      },
+      "save_as": "CHILD_4"
+    },
+    {
+      "method": "GET",
+      "url": "https://graph.instagram.com/v26.0/{CHILD_4}",
+      "params": {
+        "fields": "status_code"
+      },
+      "until": "FINISHED"
+    },
+    {
+      "method": "POST",
+      "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+      "data": {
         "media_type": "CAROUSEL",
-        "children": "{CHILD_0},{CHILD_1}",
-        "caption": "가상도서관은 책 12권을 소개해요. 관심 있는 책을 골라 원문에서 내용을 살펴봐요.\n원문: https://example.invalid/library",
+        "children": "{CHILD_0},{CHILD_1},{CHILD_2},{CHILD_3},{CHILD_4}",
+        "caption": "직접 작성한 예시 문안입니다. 청년 지원금은 신청 전 대상·기간·서류 3가지를 확인해요.\n대상: 나이·거주지·소득 조건이 나에게 맞는지 공고에서 확인해요.\n기간: 접수 시작일과 마감일을 확인하고 달력에 적어요.\n서류: 필요한 서류와 발급 방법을 확인해 미리 준비해요.\n신청 전에 다시 보기: 저장한 뒤 실제 공고의 대상·기간·서류를 대조하세요. 자동 지급으로 오해하지 마세요.\n원문: https://example.invalid/youth-support-checklist",
         "is_ai_generated": "true"
       },
       "save_as": "PARENT"

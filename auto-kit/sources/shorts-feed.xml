@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>자취생 10분 생존법</title>
+    <link>https://example.invalid/payday-four-boxes</link>
+    <description>직접 작성한 연습용 예시 피드입니다. 실제공고·금융 조언이 아닙니다.</description>
+    <item>
+      <title>월급날 10분, 돈을 네 칸으로 나누기</title>
+      <description>직접 작성한 예시 문안입니다. 월급은 들어왔는데 어디에 쓸지 막막한가요? 10분 동안 네 칸 메모를 해 봐요.
+월세: 월세·관리비처럼 이번 달 꼭 나갈 돈을 먼저 적어요.
+생활비: 식비·교통비처럼 매일 쓰는 돈을 따로 적어요.
+비상금: 갑자기 지출할 때 쓸 돈을 적어요.
+목표: 모으고 싶은 목적을 적어요. 네 칸에 내 지출을 넣어 보세요. 금액과 비율은 내 상황에 맞춰 정해요.</description>
+      <link>https://example.invalid/payday-four-boxes</link>
+    </item>
+  </channel>
+</rss>

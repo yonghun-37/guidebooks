@@ -1,7 +1,7 @@
 # auto-kit A2 구현 계획·진행
 
 **목표:** 키 없이 두 흐름을 완주하고 사용자 인증을 추가하면 같은 상태·관문·승인 절차로 실제 API에 연결한다.
-**설계:** [확정 설계](../../docs/DESIGN-advanced.md) 3·6절. Python 3.10+, SQLite, Pillow, pip ffmpeg, requests, JSON Schema. 다른 키트에서 필요한 코드만 복사한다.
+**설계:** [확정 설계](../../docs/DESIGN-advanced.md) 3·6절. Python 3.11+, SQLite, Pillow, pip ffmpeg, requests, JSON Schema. 다른 키트에서 필요한 코드만 복사한다.
 
 ## 범위와 결정
 
@@ -31,3 +31,9 @@
 - 업로드 직후 미준비 지표를 놓치지 않도록 tick이 최근 완료 게시물을 매일 재수집한다.
 - RSS의 권리 확인은 기본 보류이며 feed 객체에서 사용자가 명시할 수 있다. 진행 중 영상 작업의 비용 예약은 같은 ticket을 재사용한다.
 - 실계정·유료 생성·OS 실제 등록은 수행하지 않는다. 통합 상태 문서는 다른 작업자 소유이므로 갱신 요청만 결과에 남긴다.
+
+## A2b 검수 수정
+
+- [x] 생활 뉴스·네 칸 메모 원문/로컬 RSS를 흐름별로 선택하고 mock 장면·공개 샘플·도식을 같은 예시로 연결한다. 예시 문안 표시와 synthetic live 차단을 유지한다.
+- [x] 최소 Python 3.11·doctor·OS 설치 명령을 통일한다.
+- [x] 깨끗한 Python 3.11 복사본에서 README 명령·전체 pytest·새 미디어와 도식을 검증했다. 결과는 기존 phase-A2.md의 A2b 절에 기록한다.

@@ -1,6 +1,6 @@
 # API로 카드·쇼츠를 자동 제작하기
 
-**키 없이 카드와 쇼츠를 끝까지 만든 뒤, 인증을 하나씩 추가해 실제 운영으로 바꿔요.** Python 3.10 이상이 필요해요. 권장 버전은 3.11 이상이에요. 터미널은 아래 명령을 입력하는 창이에요. 예제의 가상 소식·신호음은 연습용이에요.
+**키 없이 카드와 쇼츠를 끝까지 만든 뒤, 인증을 하나씩 추가해 실제 운영으로 바꿔요.** Python 3.11 이상이 필요해요. 터미널은 아래 명령을 입력하는 창이에요. 하린의 가상 계정 「출근길 3분 생활 뉴스」와 도윤의 가상 채널 「자취생 10분 생존법」을 예제로 써요. 문안은 직접 작성한 예시이고, 소리는 연습용 신호음이에요.
 
 2026년 10월 조사 기준. [조사·구현 근거](docs/sources.md) · [그림 모음](docs/figures.html) · [미리 만든 결과](samples/README.md).
 
@@ -23,10 +23,12 @@ Set-Alias python "$PWD\.venv\Scripts\python.exe"
 macOS 터미널:
 
 ```bash
-python3 -m venv .venv
+python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --only-binary=:all: -r requirements-dev.txt
 ```
+
+설치한 버전이 3.12 이상이면 첫 명령의 `python3.11`을 그 버전의 실행 이름으로 바꿔요.
 
 이렇게 보이면 성공: 프롬프트에 `(.venv)`가 보이고 설치가 끝나요. 다음 명령의 `python`은 이 가상환경을 가리켜요.
 
@@ -37,7 +39,7 @@ python doctor.py
 python -m pytest -q
 ```
 
-이렇게 보이면 성공: `mock 준비 완료`, `pip ffmpeg 실행 가능`, 마지막에 `passed`가 보여요. doctor는 기본으로 인터넷에 연결하지 않아요. ffprobe가 없으면 pip ffmpeg의 검사기로 대체해요.
+이렇게 보이면 성공: `Python 3.11`(또는 설치한 상위 버전), `mock 준비 완료`, `pip ffmpeg 실행 가능`, pytest 마지막에 `passed`가 보여요. doctor는 기본으로 인터넷에 연결하지 않아요. ffprobe가 없으면 pip ffmpeg의 검사기로 대체해요.
 
 ## 2. mock 전체 실행
 
@@ -49,7 +51,7 @@ python pipeline.py run --flow shorts --provider mock --mode auto
 python pipeline.py status
 ```
 
-이렇게 보이면 성공: 두 실행에 `dry_run`이 보여요. 각 명령 첫 줄의 12자리 실행 ID와 미리보기 경로를 확인해요. `private/state/실행ID/preview.html`을 브라우저로 열면 카드 또는 MP4가 보여요. 쇼츠의 소리는 설명용 신호음이에요.
+이렇게 보이면 성공: 두 실행에 `dry_run`이 보여요. 각 명령 첫 줄의 12자리 실행 ID와 미리보기 경로를 확인해요. `private/state/실행ID/preview.html`을 브라우저로 열면 카드 또는 MP4가 보여요. 인스타는 **「청년 지원금, 신청 전 확인할 3가지」 카드 5장**, 쇼츠는 **「월급날 10분, 돈을 네 칸으로 나누기」 36초 영상**이에요. 쇼츠의 소리는 설명용 신호음이며 실제 낭독이 아니에요. 제목의 10분은 메모 활동 시간이에요.
 
 | 남는 파일 | 확인할 내용 |
 |---|---|
@@ -62,7 +64,7 @@ python pipeline.py status
 | `private/state/dashboard.html` | 실행·관문·비용 막대·지표 |
 | `state.sqlite`, `execution.log` | 단계·중복 해시·비용·안전한 실행 로그 |
 
-같은 소스는 다시 고르지 않아요. 예제에는 두 주제가 들어 있어요. 연습을 새로 시작하려면 기존 상태를 지우지 말고 새 `--state private/새연습` 경로를 사용해요.
+같은 소스는 다시 고르지 않아요. 예제에는 흐름별로 주제가 하나씩 들어 있어요. 연습을 새로 시작하려면 기존 상태를 지우지 말고 새 `--state private/새연습` 경로를 사용해요.
 
 ## 3. 승인·재개·거부 연습
 
@@ -130,7 +132,9 @@ python doctor.py --config config.json --live --flow insta
 
 ### 원문·RSS·권리
 
-예제 소스 대신 `private/my-sources.json`에 다음처럼 본인 원문을 저장해요. `sources.files`를 이 경로로 바꿔요. `text`는 실제 내용으로 바꿔야 해요.
+예제 소스 대신 `private/my-sources.json`에 다음처럼 본인 원문을 저장해요. `sources.files`를 이 경로로 바꿔요. `text`는 실제 내용으로 바꿔야 해요. 동봉 예시는 실제 제도명·금액·마감일을 넣지 않았어요. 실제 생활 뉴스는 본인이 확인한 공고로 바꿔요. `example.invalid`는 실제 출처를 채울 자리예요. 동봉 예시의 `synthetic: true`와 `rights_reviewed: false`는 live 실행을 차단해요.
+
+소스의 `flow`를 `insta` 또는 `shorts`로 쓰면 해당 흐름에서만 골라요. 생략한 사용자 소스는 두 흐름에서 사용할 수 있어요. mock은 원문의 첫 줄을 훅으로, 다음 네 줄의 `항목: 설명`을 장면으로 옮겨요. 실제 LLM 요약은 사용자 API 연결 후 실행해요.
 
 ```json
 [{"title":"직접 확인한 주제","text":"여기에 실제 원문을 넣어요.","url":"https://example.org/original","entities":[],"synthetic":false,"rights_reviewed":true,"category":"내 주제"}]
@@ -142,7 +146,23 @@ RSS는 `sources.rss`에 주소 문자열 또는 아래 객체를 넣어요. 문�
 {"url":"https://example.org/feed.xml","rights_reviewed":true,"category":"내 주제","entities":["원문 기관명"]}
 ```
 
-드라이런은 RSS도 내려받은 로컬 XML로 지정해요. 주제 점수는 소스 순서 점수 `1/(순서+1)`에 지난 views/engagedViews의 `log(1+값)` 평균×가중치를 더해요. 성과 값이 없는 주제의 성과 점수는 0이에요. 같은 흐름의 최근 게시 지표를 사용해요.
+드라이런은 RSS도 내려받은 로컬 XML로 지정해요. 동봉 피드를 연습하려면 `sources.files`를 `[]`로, `sources.rss`를 아래 목록으로 바꿔요. JSON 직접 입력과 같은 예시 문안이에요.
+
+```json
+[
+  {"url":"sources/insta-feed.xml","flow":"insta","synthetic":true,"rights_reviewed":false,"category":"생활 뉴스"},
+  {"url":"sources/shorts-feed.xml","flow":"shorts","synthetic":true,"rights_reviewed":false,"category":"자취 생활"}
+]
+```
+
+```bash
+python pipeline.py run --flow insta --provider mock --mode auto --config config.json --state private/rss-demo
+python pipeline.py run --flow shorts --provider mock --mode auto --config config.json --state private/rss-demo
+```
+
+이렇게 보이면 성공: 두 실행이 `dry_run`으로 끝나고 같은 카드·쇼츠가 만들어져요.
+
+주제 점수는 소스 순서 점수 `1/(순서+1)`에 지난 views/engagedViews의 `log(1+값)` 평균×가중치를 더해요. 성과 값이 없는 주제의 성과 점수는 0이에요. 같은 흐름의 최근 게시 지표를 사용해요.
 
 ### 비용 상한
 
@@ -153,6 +173,14 @@ RSS는 `sources.rss`에 주소 문자열 또는 아래 객체를 넣어요. 문�
 공급자 콘솔의 강제 지출 상한도 직접 설정한 뒤 `provider_hard_cap_confirmed: true`로 바꿔요. Cloud 예산 알림은 자동 중지가 아니에요. 이미지·영상 추가 시 실행 최대비가 일 상한보다 클 수 있어요. 상한을 무작정 올리기 전에 생성 구성을 줄여요. [공급자별 근거](docs/sources.md)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="docs/figures/gates-dark.svg"><img src="docs/figures/gates.svg" alt="사실·정책·유사도·규격·AI·비용 관문에서 실패하면 예외로, 모두 통과하면 운영 모드별로 진행"></picture>
+
+사실 대조 예: 원문의 **확인할 3가지**는 통과해요. 원문에 없는 **지원금 99만원**을 문안에 추가하면 `원문에 없는 숫자: 99`로 실패해요. 실패 문안은 게시하지 않는 테스트 전용이에요.
+
+```bash
+python -m pytest -q tests/test_core.py -k example_fact
+```
+
+이렇게 보이면 성공: 두 흐름의 통과·숫자 오류 검사가 `4 passed`로 끝나요.
 
 > 확인할 점: 숫자·이름의 문자열 대조는 문맥의 참거짓과 모든 한국어 인명을 판별하지 못해요. 유사도·음량·문안 길이 기준은 **키트 기본값(바꿀 수 있음)**이에요. ffmpeg가 실제 규격·LUFS를 측정하며 무음은 관문을 통과하지 못해요. LLM 대조도 오판할 수 있어요. 최초 몇 편의 원문·권리·자막·발음을 직접 확인하며 기준을 맞추세요.
 
@@ -255,10 +283,10 @@ python pipeline.py telegram --live
 
 ```bash
 python pipeline.py report
-python insights.py RUN_ID
+python insights.py RUN_ID --state private/review-demo
 ```
 
-이렇게 보이면 성공: `daily-report.json`, `dashboard.html`, 해당 실행의 `insights.csv`가 생겨요. 위 insights는 mock 지표만 저장해요. 실계정 지표에는 `--live`와 실제 게시 ID·분석 권한이 필요해요.
+이렇게 보이면 성공: `daily-report.json`, `dashboard.html`, 해당 실행의 `insights.csv`가 생겨요. `RUN_ID`는 3절에서 승인한 실행 ID예요. 위 insights는 `private/review-demo/실행ID/insights.csv`에 mock 지표만 저장하며 `지표 CSV 저장 완료`를 출력해요. 실계정 지표에는 `--live`와 실제 게시 ID·분석 권한이 필요해요.
 
 ```bash
 python insights.py RUN_ID --live --start 2026-10-01 --end 2026-10-26
@@ -299,10 +327,10 @@ python -m schedule.install --os cron --flow insta --time 09:17
 수동 예약 실행 확인:
 
 ```bash
-python pipeline.py tick --flow insta --provider mock --mode auto --daily-at 09:17
+python pipeline.py tick --flow insta --provider mock --mode auto --state private/daily --daily-at 09:17
 ```
 
-이렇게 보이면 성공: 현재 시각이 기준 이후면 오늘의 새 실행, 이전이면 빈 결과가 나와요. 같은 현지 날짜에는 새 실행이 한 번만 생겨요. 실패한 기존 실행은 해당 단계부터 다시 시도해요. 로그는 `private/state/`에 있어요. PC의 전원·절전·로그인 사용자 조건을 실제 다음 날 확인해요.
+이렇게 보이면 성공: 현재 시각이 기준 이후면 오늘의 새 실행, 이전이면 빈 결과가 나와요. 같은 현지 날짜에는 새 실행이 한 번만 생겨요. 실패한 기존 실행은 해당 단계부터 다시 시도해요. 이 연습의 로그는 `private/daily/execution.log`에 있어요. PC의 전원·절전·로그인 사용자 조건을 실제 다음 날 확인해요.
 
 ## 9. GitHub Actions와 상태 보존
 
@@ -334,7 +362,7 @@ python ops/state_sync.py push --live
 
 | 표시 | 할 일 |
 |---|---|
-| `No matching distribution` | Python 버전·OS CPU에 바이너리가 있는지 확인. 3.11 이상 환경부터 사용 |
+| `No matching distribution` 또는 `Python 3.11 이상이 필요합니다` | Python 3.11 이상으로 가상환경을 새로 만들어요. Windows `py -3.11`, macOS `python3.11`. 지원 버전에서도 설치가 안 되면 OS·CPU에 맞는 바이너리를 확인해요. |
 | `mock 준비 완료`지만 실제 키 없음 | 정상. 실제 전환 점검은 doctor에 `--live --flow ...` 추가 |
 | `새 주제가 없습니다` | 새 원문을 소스에 추가. 연습은 새 `--state` 경로 |
 | `exception` | gates.json의 실패 이유 확인. 문안·출처·권리/설정 수정 후 새 실행 |

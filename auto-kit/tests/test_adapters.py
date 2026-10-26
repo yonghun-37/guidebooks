@@ -13,7 +13,7 @@ from publish.instagram import Instagram
 
 @pytest.mark.parametrize('provider',['openai','gemini','anthropic'])
 def test_actual_llm_adapter_payload_and_usage(provider):
-    draft=Provider.mock_draft({'title':'책','text':'책을 읽어요.','entities':[]},'insta')
+    draft=Provider.mock_draft({'title':'청년 지원금 확인','text':'공고에서 신청 기간을 확인해요.','entities':[]},'insta')
     answer=json.dumps(draft,ensure_ascii=False)
     bodies={
       'openai':{'output':[{'content':[{'type':'output_text','text':answer}]}],'usage':{'input_tokens':3,'output_tokens':4}},
@@ -56,7 +56,7 @@ def test_cost_limit_prevents_adapter_call(tmp_path):
     cfg=load_config();cfg['providers']['llm']='openai';cfg['budget']['daily_usd']=.000001
     calls=[]
     p=Provider(cfg,Store(tmp_path),'r',invoke=lambda *a:calls.append(a))
-    with pytest.raises(BudgetExceeded):p.draft({'title':'책','text':'원문','entities':[]},'insta')
+    with pytest.raises(BudgetExceeded):p.draft({'title':'청년 지원금 확인','text':'원문','entities':[]},'insta')
     assert calls==[]
 
 def test_http_does_not_follow_auth_redirect():

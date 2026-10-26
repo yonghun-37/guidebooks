@@ -1,0 +1,83 @@
+{
+  "python_version": "3.11.15",
+  "clean_copy": "Python 3.11 새 venv, requirements-dev.txt --only-binary=:all: 설치 성공",
+  "pytest": {
+    "passed": 75,
+    "result": "75 passed in 44.58s",
+    "log": "pytest.txt"
+  },
+  "readme": {
+    "commands": 21,
+    "local_links": 75,
+    "link_errors": 0,
+    "log": "commands.json"
+  },
+  "browser": {
+    "checks": 40,
+    "widths": [
+      1280,
+      375,
+      360
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "page_errors": 0
+  },
+  "python_310_doctor": {
+    "exit": 1,
+    "stdout": "[error] Python 3.10.12: Python 3.11 이상이 필요합니다. Windows는 py -3.11, macOS는 python3.11로 가상환경을 새로 만드세요."
+  },
+  "samples": {
+    "bytes": 1587276,
+    "cards": 5,
+    "card_size": [
+      1080,
+      1350
+    ],
+    "shorts": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 36.1,
+      "lufs": -16.05,
+      "probe_method": "pip ffmpeg stderr parser (shorts-kit 재사용)"
+    },
+    "full_decode": "통과",
+    "draft_matches_source": true
+  },
+  "fact_gates": {
+    "insta": {
+      "pass": {
+        "passed": true,
+        "reasons": [],
+        "method": "숫자·이름 문자열 대조(문맥·한국어 인명 누락 가능)"
+      },
+      "invented_number": {
+        "passed": false,
+        "reasons": [
+          "원문에 없는 숫자: 99"
+        ],
+        "method": "숫자·이름 문자열 대조(문맥·한국어 인명 누락 가능)"
+      }
+    },
+    "shorts": {
+      "pass": {
+        "passed": true,
+        "reasons": [],
+        "method": "숫자·이름 문자열 대조(문맥·한국어 인명 누락 가능)"
+      },
+      "invented_number": {
+        "passed": false,
+        "reasons": [
+          "원문에 없는 숫자: 99"
+        ],
+        "method": "숫자·이름 문자열 대조(문맥·한국어 인명 누락 가능)"
+      }
+    }
+  },
+  "legacy_example_matches": 0
+}
