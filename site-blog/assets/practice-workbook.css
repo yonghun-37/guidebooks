@@ -20,3 +20,10 @@
 .chapter a:focus-visible,.chapter button:focus-visible,.chapter textarea:focus-visible,.chapter pre:focus-visible {outline:3px solid var(--accent);outline-offset:4px}
 @media(max-width:600px){.chapter .practice-compare{grid-template-columns:1fr}.practice-compare>div{padding:12px}.practice-map .map-detail{font-size:13px}.thumbnail-demo{padding:12px}.chapter table{font-size:.88rem}}
 .chapter .blog-figure>img {display:block;max-width:100%;height:auto;margin-inline:auto;border-radius:8px}
+
+/* 위치 그림: 좁은 화면에서도 번호와 영역 관계를 함께 읽는다. */
+.screen-map svg {max-width:440px}
+.screen-map svg circle {fill:var(--accent)}
+.screen-map svg .screen-number {fill:var(--surface);font-size:14px;font-weight:700}
+.screen-map svg text {font-size:14px}
+.screen-map ol {margin-bottom:0}
