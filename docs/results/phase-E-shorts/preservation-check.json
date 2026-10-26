@@ -1,0 +1,8 @@
+{
+  "checks": 230,
+  "failures": [],
+  "notes": [
+    "moving-cable → moving-note는 훅 도식 내부 ID이며 재생·시간·선택 필드는 유지했다.",
+    "y4b.js scene()의 그리기 명령과 SVG 소재만 다시 그렸고 계산·시간축·이벤트는 그대로다."
+  ]
+}

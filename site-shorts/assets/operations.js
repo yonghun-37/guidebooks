@@ -23,7 +23,7 @@
       voice: '녹음 파일이 없습니다. 파일명·이동한 폴더를 확인하고 다시 연결하세요.',
       captions: '자막 파일이 없습니다. 저장한 자막을 불러오거나 녹음에 맞춰 다시 만드세요.',
       clip: '장면 원본이 없습니다. 원본 위치를 찾아 다시 연결하고 빈 화면을 확인하세요.',
-      sync: '말은 “빼기”, 자막은 “꽂기”입니다. 자막 내용을 고친 뒤 해당 구간을 다시 재생하세요.',
+      sync: '말은 “비상금”, 자막은 “비상근”입니다. 자막 내용을 고친 뒤 해당 구간을 다시 재생하세요.',
       all: '녹음·자막·장면 파일이 모두 없습니다. 우선 녹음부터 복구하고 이후 단계도 다시 점검하세요.'
     };
     const render = () => {
@@ -68,7 +68,7 @@
     const render = () => {
       zone.disabled = visibility.value !== 'schedule';
       const pending = [];
-      if (title.value !== 'honest') pending.push('제목이 실제 케이블 정리 장면과 맞는지 확인');
+      if (title.value !== 'honest') pending.push('제목이 실제 돈의 용도 네 칸 설명과 맞는지 확인');
       if (!description.value.trim()) pending.push('설명에 영상 요약과 필요한 표시 작성');
       if (!credit.checked) pending.push('소재·음악의 필수 표시 대조');
       if (!visibility.value) pending.push('공개 범위 결정');
@@ -82,7 +82,7 @@
     upload.querySelector('form').addEventListener('reset', () => setTimeout(render, 0));
     metadata.querySelectorAll('[data-meta-preset]').forEach(button => button.addEventListener('click', () => {
       const base = button.dataset.metaPreset === 'base';
-      title.value = base ? 'honest' : ''; description.value = base ? '흩어진 케이블을 집게로 고정한 과정. 직접 촬영·녹음, 음악 없음.' : '';
+      title.value = base ? 'honest' : ''; description.value = base ? '월세·생활비·비상금·목표 네 칸을 적는 과정. 직접 만든 카드·본인 녹음, 음악 없음.' : '';
       credit.checked = base; visibility.value = base ? 'unlisted' : ''; zone.value = '';
       audience.value = base ? 'general' : ''; ai.value = base ? 'none' : ''; music.value = base ? 'own' : '';
       upload.querySelector('form').dispatchEvent(new Event('change', {bubbles: true})); render();
@@ -97,7 +97,7 @@
       middle: [100, 92, 85, 55, 50, 48, 45],
       replay: [100, 92, 85, 80, 95, 78, 70]
     };
-    const frames = ['가상 영상 시작 · 정리 전 책상', '책상 전체를 보여 주며 인사', '엉킨 선을 모으기', '집게 사용법을 길게 설명', '작은 글자로 주의사항 표시', '케이블을 집게에 고정', '정리된 책상 보여 주기'];
+    const frames = ['가상 영상 시작 · 돈의 용도 네 칸', '빈 메모를 보여 주며 긴 인사', '월세·생활비 칸을 채우기', '네 칸의 뜻을 길게 반복 설명', '작은 글자로 비상금·목표 표시', '내 메모에 쓸 곳 적기', '완성된 네 칸 메모 보여 주기'];
     const kind = $(retention, '#curve-case'), time = $(retention, '#curve-time'), hypothesis = $(retention, '#curve-hypothesis');
     const button = $(retention, '[data-curve-suggest]');
     const render = () => {
@@ -125,7 +125,7 @@
     time.addEventListener('input', render); time.addEventListener('change', render);
     hypothesis.addEventListener('change', render);
     button.addEventListener('click', () => {
-      const edits = {intro:'완성된 정리 장면을 먼저 보여 주고 긴 인사말을 줄이세요.', dense:'반복 설명을 빼거나 자막을 나눠 읽을 시간을 주세요.', replay:'같은 구간을 직접 읽어 보고 작은 글자를 나누는 안을 비교하세요.'};
+      const edits = {intro:'완성된 네 칸 메모를 먼저 보여 주고 긴 인사말을 줄이세요.', dense:'반복 설명을 빼거나 자막을 나눠 읽을 시간을 주세요.', replay:'같은 구간을 직접 읽어 보고 작은 글자를 나누는 안을 비교하세요.'};
       if (!edits[hypothesis.value]) { report(retention, '—', '원인 가설을 먼저 선택하세요.'); return; }
       report(retention, `${time.value}초 수정안`, `${edits[hypothesis.value]} 이 가설을 다음 편에서 시험하고 같은 기간의 지표를 비교하세요.`);
     });

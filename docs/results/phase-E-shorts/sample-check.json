@@ -1,0 +1,20 @@
+{
+  "sample_folder_bytes": 327619,
+  "video_bytes": 313025,
+  "video_sha256": "b8d17bc0a17a06d7bf94b7a26b532935672fca182a2d957f4148bbf550695788",
+  "spec": {
+    "duration": 36.0,
+    "video_codec": "h264",
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30.0,
+    "audio_codec": "aac"
+  },
+  "full_decode": "passed",
+  "audio": "silent AAC; no narration recording supplied",
+  "default_script_matches_sample": true,
+  "site_copy_matches": true,
+  "execution": "Clean temporary copy; run, create_scenes.py, validate, render with config.yaml; paid API and upload not run."
+}

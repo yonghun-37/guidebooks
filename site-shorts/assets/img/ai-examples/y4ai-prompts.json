@@ -1,16 +1,58 @@
 {
   "method": "built-in image_gen",
   "created": "2026-10-26",
+  "postprocess": "Proportional resize and WebP encoding only; no retouch. All assets are still images, not generated videos.",
   "assets": [
     {
-      "file": "y4ai-robot-reference.webp",
-      "prompt": "Use case: illustration-story. Asset type: Korean beginner video textbook reference still for an AI short. Generate one portrait 9:16 illustration, exact target 864 by 1536 or equivalent 9:16. A small mint green folded-paper robot with a square head, two dark round eyes, short rectangular arms, no mouth, stands to the LEFT of a single small terracotta plant pot containing a seedling with two leaves, on a light wooden desk. Full robot and full pot visible, medium shot at desk height, simple uncluttered warm cream background, soft morning window light from left, handmade matte paper texture, restrained mint/terracotta/cream palette. Leave generous empty space above and below for captions added later. Fictional character only, no humans, no real people, no logos, no brands, no lettering, no numbers, no UI, no watermark. This is a reference still, not a screenshot. Save output as an available local file and provide its path."
+      "file": "penguin-reference.webp",
+      "role": "기준 캐릭터",
+      "prompt": "Use case: illustration-story. Asset type: original character reference for a vertical short film tutorial. Create a single full-body front three-quarter portrait of an original small penguin courier: round charcoal body, creamy white face and belly, tiny oval eyes, short orange beak and feet, mustard yellow knit scarf with one loose end, teal crossbody delivery satchel with a single cream circular clasp, NO hat. Soft handmade clay 3D animation look, tactile felt and paper textures, warm cinematic lighting. Penguin standing on pale snowy ground, simple blue-gray background, a plain small kraft parcel beside it. Vertical 9:16 composition, full body centered with generous margin for later subtitles. Same design must be easy to keep across subsequent story keyframes. No other characters, no writing, no letters, no logos, no watermark, no brand or existing fictional character resemblance.",
+      "width": 720,
+      "height": 1279,
+      "bytes": 60094
     },
     {
-      "file": "y4ai-robot-observe.webp",
-      "reference": "y4ai-robot-reference.webp",
-      "prompt": "Use case: illustration-story. Create a SECOND portrait 9:16 still for the same beginner AI video textbook, matching the attached reference image. Keep the exact mint green folded paper robot design with square head, two round dark eyes and no mouth; same terracotta pot and single two-leaf seedling, same wooden desk and warm cream room, same soft morning window light from left and matte paper style. Change only framing and pose: medium close-up, robot bends its square head slightly toward the seedling to observe it, its short rectangular arms at its sides, full head and pot visible. Leave empty space above/below for later captions. No watering can, no added objects, no extra leaves or limbs, no humans, no real person, no brands, no logos, no text, no numbers, no UI, no watermark. Target a true 9:16 image."
+      "file": "penguin-parcel.webp",
+      "role": "소포를 들어 보려는 첫 장면",
+      "prompt": "Use case: illustration-story. Reference image is the approved original penguin courier character. Generate a vertical 9:16 keyframe STILL, scene 1 of 'A penguin courier's day'. Preserve exactly the charcoal round body, creamy white face/belly, tiny oval eyes, short orange beak/feet, mustard yellow knit scarf with loose end, teal crossbody satchel with one cream circular clasp; no hat. Same soft handmade felt/clay 3D look and warm cinematic light. Medium wide shot in a quiet snowy village with pastel houses: the penguin stands beside a plain small kraft parcel nearly its own size and leans to lift it, funny but tender expression. Whole penguin and feet visible, clear room top/bottom for captions. No writing, text, logos, brands, watermark, existing IP or humans. This is a storyboard still, not video.",
+      "reference": "penguin-reference.webp",
+      "width": 720,
+      "height": 1279,
+      "bytes": 81438
+    },
+    {
+      "file": "penguin-sled.webp",
+      "role": "썰매로 방법을 바꾸는 장면",
+      "prompt": "Use case: illustration-story. Reference image is the approved original penguin courier. Create a vertical 9:16 storyboard keyframe STILL for scene 2 of 'A penguin courier's day'. Preserve exactly the small charcoal penguin, creamy white face/belly, oval eyes, short orange beak and feet, mustard knit scarf with loose end, teal crossbody satchel with single cream round clasp, no hat. Same handmade felt/clay 3D look, blue-gray snow palette and warm light. Medium shot, penguin has set the SAME plain kraft parcel on a tiny plain wooden sled and is pulling it by a simple rope along snowy lane, waddling determinedly. Sled and parcel behind, clear curved tracks visible in foreground, pastel village background softly out of focus. Whole body visible, only one penguin. Clear margin for subtitles. No writing, lettering, logos, brands, watermark, real humans or existing IP. Still planning frame, not video.",
+      "reference": "penguin-reference.webp",
+      "width": 720,
+      "height": 1279,
+      "bytes": 77922
+    },
+    {
+      "file": "penguin-delivery.webp",
+      "role": "현관 앞 배달 완료",
+      "prompt": "Use case: illustration-story. Reference image is the approved original penguin courier. Generate vertical 9:16 storyboard keyframe STILL for final scene of 'A penguin courier's day'. Exactly preserve charcoal round body, creamy face and belly, oval eyes, orange beak/feet, mustard yellow knitted scarf with loose end, teal crossbody satchel with single cream circular clasp, no hat. Same tactile handmade felt/clay 3D style, warm soft light over blue-gray snow. Medium wide shot: penguin has delivered the SAME plain kraft parcel to a pastel coral cottage doorway, parcel resting safely on doorstep, small empty wooden sled beside it, penguin raising a flipper in a satisfied little wave. No recipient character. Full body in frame, space above and below for captions, gentle evening light consistent with snowy village. No writing, lettering, logo, brand, watermark, humans or existing IP. A still frame for a planned story, not video.",
+      "reference": "penguin-reference.webp",
+      "width": 720,
+      "height": 1279,
+      "bytes": 119672
+    },
+    {
+      "file": "money-four-purposes.webp",
+      "role": "얼굴 없는 해설의 네 가지 용도",
+      "prompt": "Use case: illustration-story. Asset type: background illustration for a vertical 9:16 Korean faceless practical-living short about giving money a purpose on payday. Warm sophisticated editorial cut-paper and soft clay illustration, no people. Four equal simple open trays arranged in a neat 2 by 2 grid on a cream apartment tabletop: upper left terracotta tray with a tiny simple house model (rent), upper right sage tray with a grocery bag and vegetables (daily living), lower left blue tray with a small closed emergency pouch (emergency), lower right mustard tray with a small blank flag on a hill (personal goal). Each tray visually separate with generous whitespace. No currency, no banknotes, no amounts, no percent signs, no financial returns claims. Objects occupy middle half of the vertical frame, clear empty top and bottom to add Korean titles later. Premium warm editorial light, cohesive material, readable shapes and appealing color. No words, letters, numbers, logos, brands, bank interface, humans or watermark.",
+      "width": 720,
+      "height": 1279,
+      "bytes": 48006
+    },
+    {
+      "file": "egg-rice-finish.webp",
+      "role": "직접 촬영 레시피의 완성 구도 참고",
+      "prompt": "Use case: photorealistic-natural. Asset type: illustrative finished dish example for a beginner vertical Korean home-cooking short, clearly an AI example rather than evidence of real cooking. An appetizing simple soy-sauce egg rice bowl in a small modern studio apartment kitchen: fluffy white rice, a fully cooked fried egg with opaque set yolk and edges, a little soy sauce sheen, a few finely chopped green onion pieces and sesame seeds. Plain ivory ceramic bowl centered on a light wood countertop with simple wooden spoon beside it. Cozy evening window light, natural food texture, elevated but attainable home cooking, gentle steam, no extravagant props. Vertical 9:16 close medium shot with generous clear top/bottom for later captions. No raw or runny egg, no person, hands, words, numbers, logos, packaging, brands, watermark or actual product replicas.",
+      "width": 720,
+      "height": 1279,
+      "bytes": 78370
     }
-  ],
-  "postprocess": "9:16 center crop and resize to 720x1280; WebP compression; no retouch"
+  ]
 }

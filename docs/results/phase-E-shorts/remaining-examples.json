@@ -1,0 +1,6 @@
+{
+  "command": "grep -RInE \"케이블|종이[ -]?로봇|종이[ -]?분류|책상[ -]?정리|cable|paper-robot|seedling|flowerpot|정리 전|정리 후\" site-shorts shorts-kit (binary assets excluded)",
+  "exit_code": 1,
+  "matches": [],
+  "stderr": ""
+}

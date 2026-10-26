@@ -47,7 +47,7 @@ def test_offline_full_output(rendered):
     srt = (rendered / "subtitles.srt").read_text()
     assert "00:00:00,000 --> 00:00:12,000" in srt
     assert "00:00:24,000 --> 00:00:36,000" in srt
-    assert "자주 쓰는 물건" in srt
+    assert "월세" in srt and "비상금" in srt
     assert not (rendered / "APPROVED.json").exists()
     # 실제 전체 디코딩으로 프레임 손상과 오디오 누락을 확인한다.
     ffmpeg(["-i", str(rendered / "short.mp4"), "-f", "null", "-"])

@@ -1,0 +1,3695 @@
+{
+  "pages": 36,
+  "variants": 6,
+  "pageRenders": 216,
+  "checks": 1652,
+  "failures": [],
+  "errors": [],
+  "metrics": [
+    {
+      "key": "ai-models.html/1280/light",
+      "id": "v-fig-203",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "Basic 실제 월결제",
+          "pixels": 25
+        },
+        {
+          "text": "9,900원",
+          "pixels": 23.68
+        },
+        {
+          "text": "30초 사용분 배분",
+          "pixels": 25
+        },
+        {
+          "text": "약 82.5원",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/1280/light",
+      "id": "v-fig-205",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "짧은 무음 API",
+          "pixels": 25
+        },
+        {
+          "text": "약 2,777원",
+          "pixels": 23.68
+        },
+        {
+          "text": "무음 API · 2배 시도",
+          "pixels": 25
+        },
+        {
+          "text": "약 5,553원",
+          "pixels": 23.68
+        },
+        {
+          "text": "오디오 포함 API",
+          "pixels": 25
+        },
+        {
+          "text": "약 17,374.5원",
+          "pixels": 23.68
+        },
+        {
+          "text": "오디오 API · 2배 시도",
+          "pixels": 25
+        },
+        {
+          "text": "약 34,749원",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/1280/light",
+      "id": "v-fig-204",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "Omni 4샷 × 1안",
+          "pixels": 25
+        },
+        {
+          "text": "48크레딧",
+          "pixels": 23.68
+        },
+        {
+          "text": "무료 일일",
+          "pixels": 25
+        },
+        {
+          "text": "50크레딧",
+          "pixels": 23.68
+        },
+        {
+          "text": "Omni 4샷 × 2안",
+          "pixels": 25
+        },
+        {
+          "text": "96크레딧",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "chapters/01-map.html/1280/light",
+      "id": "v-fig-4",
+      "min": 22.5,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 22.5
+        },
+        {
+          "text": "프로젝트",
+          "pixels": 23.75
+        },
+        {
+          "text": "편집을 이어 가는 문서",
+          "pixels": 22.5
+        },
+        {
+          "text": "2",
+          "pixels": 22.5
+        },
+        {
+          "text": "MP4로 내보내기",
+          "pixels": 23.75
+        },
+        {
+          "text": "편집기 밖에서 전체 재생",
+          "pixels": 22.5
+        },
+        {
+          "text": "3",
+          "pixels": 22.5
+        },
+        {
+          "text": "공식 업로드",
+          "pixels": 23.75
+        },
+        {
+          "text": "상태·주소 확인",
+          "pixels": 22.5
+        }
+      ]
+    },
+    {
+      "key": "chapters/02-revenue.html/1280/light",
+      "id": "v-fig-8",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "내 배정액",
+          "pixels": 25
+        },
+        {
+          "text": "10만 원",
+          "pixels": 23.68
+        },
+        {
+          "text": "배정액의 45%",
+          "pixels": 25
+        },
+        {
+          "text": "45,000원",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "chapters/05-audio.html/1280/light",
+      "id": "audio-tracks",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "① 말만 듣기",
+          "pixels": 28
+        },
+        {
+          "text": "말",
+          "pixels": 24
+        },
+        {
+          "text": "음악",
+          "pixels": 24
+        },
+        {
+          "text": "② 음악만 듣기",
+          "pixels": 28
+        },
+        {
+          "text": "말",
+          "pixels": 24
+        },
+        {
+          "text": "음악",
+          "pixels": 24
+        },
+        {
+          "text": "③ 함께 듣기",
+          "pixels": 28
+        },
+        {
+          "text": "말",
+          "pixels": 24
+        },
+        {
+          "text": "음악",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "chapters/07-editing.html/1280/light",
+      "id": "v-fig-63",
+      "min": 22.5,
+      "sizes": [
+        {
+          "text": "같은 시간 위에서 끝을 대조",
+          "pixels": 22.5
+        },
+        {
+          "text": "장면",
+          "pixels": 23.75
+        },
+        {
+          "text": "음성",
+          "pixels": 23.75
+        },
+        {
+          "text": "자막",
+          "pixels": 23.75
+        },
+        {
+          "text": "음악",
+          "pixels": 23.75
+        },
+        {
+          "text": "0초",
+          "pixels": 22.5
+        },
+        {
+          "text": "8초",
+          "pixels": 22.5
+        },
+        {
+          "text": "12초",
+          "pixels": 22.5
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/1280/light",
+      "id": "caption-placement",
+      "min": 21,
+      "sizes": [
+        {
+          "text": "월세와 생활비를",
+          "pixels": 21
+        },
+        {
+          "text": "따로 적어요",
+          "pixels": 21
+        },
+        {
+          "text": "설명에 가림",
+          "pixels": 21
+        },
+        {
+          "text": "용도를 나눠요",
+          "pixels": 21
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/1280/light",
+      "id": "subtitle-files",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "편집 프로젝트",
+          "pixels": 28
+        },
+        {
+          "text": "SRT",
+          "pixels": 28
+        },
+        {
+          "text": "글·표시 시간",
+          "pixels": 24
+        },
+        {
+          "text": "MP4",
+          "pixels": 28
+        },
+        {
+          "text": "화면에 입힌 글",
+          "pixels": 24
+        },
+        {
+          "text": "SRT 수정",
+          "pixels": 24
+        },
+        {
+          "text": "자막 파일 변경",
+          "pixels": 24
+        },
+        {
+          "text": "프로젝트 수정",
+          "pixels": 24
+        },
+        {
+          "text": "MP4 재출력",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "chapters/09-export.html/1280/light",
+      "id": "aspect-resolution",
+      "min": 24.5,
+      "sizes": [
+        {
+          "text": "9:16",
+          "pixels": 24.5
+        },
+        {
+          "text": "9:16",
+          "pixels": 24.5
+        }
+      ]
+    },
+    {
+      "key": "chapters/10-templates.html/1280/light",
+      "id": "template-layers",
+      "min": 16.8,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "이전 장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "이전 동작",
+          "pixels": 16.8
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.8
+        },
+        {
+          "text": "장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "새 장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "새 동작",
+          "pixels": 16.8
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.8
+        }
+      ]
+    },
+    {
+      "key": "chapters/12-analytics.html/1280/light",
+      "id": "v-fig-99",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "가상 선택 표본",
+          "pixels": 25
+        },
+        {
+          "text": "100회",
+          "pixels": 23.68
+        },
+        {
+          "text": "계속 시청",
+          "pixels": 25
+        },
+        {
+          "text": "60회",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/1280/light",
+      "id": "editor-regions",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 24
+        },
+        {
+          "text": "음성·장면",
+          "pixels": 24
+        },
+        {
+          "text": "파일 목록",
+          "pixels": 24
+        },
+        {
+          "text": "2",
+          "pixels": 24
+        },
+        {
+          "text": "9:16 미리보기",
+          "pixels": 24
+        },
+        {
+          "text": "타임라인으로 끌어 놓기",
+          "pixels": 24
+        },
+        {
+          "text": "3",
+          "pixels": 24
+        },
+        {
+          "text": "같은 시간 위에 배치",
+          "pixels": 28
+        },
+        {
+          "text": "장면",
+          "pixels": 24
+        },
+        {
+          "text": "음성",
+          "pixels": 24
+        },
+        {
+          "text": "자막",
+          "pixels": 24
+        },
+        {
+          "text": "↑ 같은 말에 같은 장면·글",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/1280/light",
+      "id": "practice-timeline",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 28
+        },
+        {
+          "text": "네 칸 소개",
+          "pixels": 24
+        },
+        {
+          "text": "용도 설명",
+          "pixels": 24
+        },
+        {
+          "text": "메모 완성",
+          "pixels": 24
+        },
+        {
+          "text": "음성",
+          "pixels": 28
+        },
+        {
+          "text": "내가 읽은 말",
+          "pixels": 24
+        },
+        {
+          "text": "자막",
+          "pixels": 28
+        },
+        {
+          "text": "월세·생활비",
+          "pixels": 24
+        },
+        {
+          "text": "비상금·목표",
+          "pixels": 24
+        },
+        {
+          "text": "지금 할 일",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "practice/07-export.html/1280/light",
+      "id": "export-settings",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "출력 항목 대조",
+          "pixels": 28
+        },
+        {
+          "text": "1",
+          "pixels": 24
+        },
+        {
+          "text": "화면",
+          "pixels": 24
+        },
+        {
+          "text": "9:16",
+          "pixels": 24
+        },
+        {
+          "text": "2",
+          "pixels": 24
+        },
+        {
+          "text": "품질",
+          "pixels": 24
+        },
+        {
+          "text": "1080p",
+          "pixels": 24
+        },
+        {
+          "text": "3",
+          "pixels": 24
+        },
+        {
+          "text": "파일",
+          "pixels": 24
+        },
+        {
+          "text": "MP4",
+          "pixels": 24
+        },
+        {
+          "text": "저장한 파일 정보",
+          "pixels": 28
+        },
+        {
+          "text": "1080 × 1920 확인",
+          "pixels": 24
+        },
+        {
+          "text": "길이·실제 fps·재생 확인",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "practice/08-publish.html/1280/light",
+      "id": "published-result",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "내가 확인한 영상",
+          "pixels": 28
+        },
+        {
+          "text": "월급날 네 칸 메모",
+          "pixels": 24
+        },
+        {
+          "text": "1",
+          "pixels": 24
+        },
+        {
+          "text": "같은 제목",
+          "pixels": 24
+        },
+        {
+          "text": "2",
+          "pixels": 24
+        },
+        {
+          "text": "공개 · Shorts",
+          "pixels": 24
+        },
+        {
+          "text": "3",
+          "pixels": 24
+        },
+        {
+          "text": "내 주소 메모로 돌아가요",
+          "pixels": 24
+        },
+        {
+          "text": "저장한 주소로 전체 재생",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/1280/dark",
+      "id": "v-fig-203",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "Basic 실제 월결제",
+          "pixels": 25
+        },
+        {
+          "text": "9,900원",
+          "pixels": 23.68
+        },
+        {
+          "text": "30초 사용분 배분",
+          "pixels": 25
+        },
+        {
+          "text": "약 82.5원",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/1280/dark",
+      "id": "v-fig-205",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "짧은 무음 API",
+          "pixels": 25
+        },
+        {
+          "text": "약 2,777원",
+          "pixels": 23.68
+        },
+        {
+          "text": "무음 API · 2배 시도",
+          "pixels": 25
+        },
+        {
+          "text": "약 5,553원",
+          "pixels": 23.68
+        },
+        {
+          "text": "오디오 포함 API",
+          "pixels": 25
+        },
+        {
+          "text": "약 17,374.5원",
+          "pixels": 23.68
+        },
+        {
+          "text": "오디오 API · 2배 시도",
+          "pixels": 25
+        },
+        {
+          "text": "약 34,749원",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/1280/dark",
+      "id": "v-fig-204",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "Omni 4샷 × 1안",
+          "pixels": 25
+        },
+        {
+          "text": "48크레딧",
+          "pixels": 23.68
+        },
+        {
+          "text": "무료 일일",
+          "pixels": 25
+        },
+        {
+          "text": "50크레딧",
+          "pixels": 23.68
+        },
+        {
+          "text": "Omni 4샷 × 2안",
+          "pixels": 25
+        },
+        {
+          "text": "96크레딧",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "chapters/01-map.html/1280/dark",
+      "id": "v-fig-4",
+      "min": 22.5,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 22.5
+        },
+        {
+          "text": "프로젝트",
+          "pixels": 23.75
+        },
+        {
+          "text": "편집을 이어 가는 문서",
+          "pixels": 22.5
+        },
+        {
+          "text": "2",
+          "pixels": 22.5
+        },
+        {
+          "text": "MP4로 내보내기",
+          "pixels": 23.75
+        },
+        {
+          "text": "편집기 밖에서 전체 재생",
+          "pixels": 22.5
+        },
+        {
+          "text": "3",
+          "pixels": 22.5
+        },
+        {
+          "text": "공식 업로드",
+          "pixels": 23.75
+        },
+        {
+          "text": "상태·주소 확인",
+          "pixels": 22.5
+        }
+      ]
+    },
+    {
+      "key": "chapters/02-revenue.html/1280/dark",
+      "id": "v-fig-8",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "내 배정액",
+          "pixels": 25
+        },
+        {
+          "text": "10만 원",
+          "pixels": 23.68
+        },
+        {
+          "text": "배정액의 45%",
+          "pixels": 25
+        },
+        {
+          "text": "45,000원",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "chapters/05-audio.html/1280/dark",
+      "id": "audio-tracks",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "① 말만 듣기",
+          "pixels": 28
+        },
+        {
+          "text": "말",
+          "pixels": 24
+        },
+        {
+          "text": "음악",
+          "pixels": 24
+        },
+        {
+          "text": "② 음악만 듣기",
+          "pixels": 28
+        },
+        {
+          "text": "말",
+          "pixels": 24
+        },
+        {
+          "text": "음악",
+          "pixels": 24
+        },
+        {
+          "text": "③ 함께 듣기",
+          "pixels": 28
+        },
+        {
+          "text": "말",
+          "pixels": 24
+        },
+        {
+          "text": "음악",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "chapters/07-editing.html/1280/dark",
+      "id": "v-fig-63",
+      "min": 22.5,
+      "sizes": [
+        {
+          "text": "같은 시간 위에서 끝을 대조",
+          "pixels": 22.5
+        },
+        {
+          "text": "장면",
+          "pixels": 23.75
+        },
+        {
+          "text": "음성",
+          "pixels": 23.75
+        },
+        {
+          "text": "자막",
+          "pixels": 23.75
+        },
+        {
+          "text": "음악",
+          "pixels": 23.75
+        },
+        {
+          "text": "0초",
+          "pixels": 22.5
+        },
+        {
+          "text": "8초",
+          "pixels": 22.5
+        },
+        {
+          "text": "12초",
+          "pixels": 22.5
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/1280/dark",
+      "id": "caption-placement",
+      "min": 21,
+      "sizes": [
+        {
+          "text": "월세와 생활비를",
+          "pixels": 21
+        },
+        {
+          "text": "따로 적어요",
+          "pixels": 21
+        },
+        {
+          "text": "설명에 가림",
+          "pixels": 21
+        },
+        {
+          "text": "용도를 나눠요",
+          "pixels": 21
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/1280/dark",
+      "id": "subtitle-files",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "편집 프로젝트",
+          "pixels": 28
+        },
+        {
+          "text": "SRT",
+          "pixels": 28
+        },
+        {
+          "text": "글·표시 시간",
+          "pixels": 24
+        },
+        {
+          "text": "MP4",
+          "pixels": 28
+        },
+        {
+          "text": "화면에 입힌 글",
+          "pixels": 24
+        },
+        {
+          "text": "SRT 수정",
+          "pixels": 24
+        },
+        {
+          "text": "자막 파일 변경",
+          "pixels": 24
+        },
+        {
+          "text": "프로젝트 수정",
+          "pixels": 24
+        },
+        {
+          "text": "MP4 재출력",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "chapters/09-export.html/1280/dark",
+      "id": "aspect-resolution",
+      "min": 24.5,
+      "sizes": [
+        {
+          "text": "9:16",
+          "pixels": 24.5
+        },
+        {
+          "text": "9:16",
+          "pixels": 24.5
+        }
+      ]
+    },
+    {
+      "key": "chapters/10-templates.html/1280/dark",
+      "id": "template-layers",
+      "min": 16.8,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "이전 장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "이전 동작",
+          "pixels": 16.8
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.8
+        },
+        {
+          "text": "장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "새 장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "새 동작",
+          "pixels": 16.8
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.8
+        }
+      ]
+    },
+    {
+      "key": "chapters/12-analytics.html/1280/dark",
+      "id": "v-fig-99",
+      "min": 23.68,
+      "sizes": [
+        {
+          "text": "가상 선택 표본",
+          "pixels": 25
+        },
+        {
+          "text": "100회",
+          "pixels": 23.68
+        },
+        {
+          "text": "계속 시청",
+          "pixels": 25
+        },
+        {
+          "text": "60회",
+          "pixels": 23.68
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/1280/dark",
+      "id": "editor-regions",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 24
+        },
+        {
+          "text": "음성·장면",
+          "pixels": 24
+        },
+        {
+          "text": "파일 목록",
+          "pixels": 24
+        },
+        {
+          "text": "2",
+          "pixels": 24
+        },
+        {
+          "text": "9:16 미리보기",
+          "pixels": 24
+        },
+        {
+          "text": "타임라인으로 끌어 놓기",
+          "pixels": 24
+        },
+        {
+          "text": "3",
+          "pixels": 24
+        },
+        {
+          "text": "같은 시간 위에 배치",
+          "pixels": 28
+        },
+        {
+          "text": "장면",
+          "pixels": 24
+        },
+        {
+          "text": "음성",
+          "pixels": 24
+        },
+        {
+          "text": "자막",
+          "pixels": 24
+        },
+        {
+          "text": "↑ 같은 말에 같은 장면·글",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/1280/dark",
+      "id": "practice-timeline",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 28
+        },
+        {
+          "text": "네 칸 소개",
+          "pixels": 24
+        },
+        {
+          "text": "용도 설명",
+          "pixels": 24
+        },
+        {
+          "text": "메모 완성",
+          "pixels": 24
+        },
+        {
+          "text": "음성",
+          "pixels": 28
+        },
+        {
+          "text": "내가 읽은 말",
+          "pixels": 24
+        },
+        {
+          "text": "자막",
+          "pixels": 28
+        },
+        {
+          "text": "월세·생활비",
+          "pixels": 24
+        },
+        {
+          "text": "비상금·목표",
+          "pixels": 24
+        },
+        {
+          "text": "지금 할 일",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "practice/07-export.html/1280/dark",
+      "id": "export-settings",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "출력 항목 대조",
+          "pixels": 28
+        },
+        {
+          "text": "1",
+          "pixels": 24
+        },
+        {
+          "text": "화면",
+          "pixels": 24
+        },
+        {
+          "text": "9:16",
+          "pixels": 24
+        },
+        {
+          "text": "2",
+          "pixels": 24
+        },
+        {
+          "text": "품질",
+          "pixels": 24
+        },
+        {
+          "text": "1080p",
+          "pixels": 24
+        },
+        {
+          "text": "3",
+          "pixels": 24
+        },
+        {
+          "text": "파일",
+          "pixels": 24
+        },
+        {
+          "text": "MP4",
+          "pixels": 24
+        },
+        {
+          "text": "저장한 파일 정보",
+          "pixels": 28
+        },
+        {
+          "text": "1080 × 1920 확인",
+          "pixels": 24
+        },
+        {
+          "text": "길이·실제 fps·재생 확인",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "practice/08-publish.html/1280/dark",
+      "id": "published-result",
+      "min": 24,
+      "sizes": [
+        {
+          "text": "내가 확인한 영상",
+          "pixels": 28
+        },
+        {
+          "text": "월급날 네 칸 메모",
+          "pixels": 24
+        },
+        {
+          "text": "1",
+          "pixels": 24
+        },
+        {
+          "text": "같은 제목",
+          "pixels": 24
+        },
+        {
+          "text": "2",
+          "pixels": 24
+        },
+        {
+          "text": "공개 · Shorts",
+          "pixels": 24
+        },
+        {
+          "text": "3",
+          "pixels": 24
+        },
+        {
+          "text": "내 주소 메모로 돌아가요",
+          "pixels": 24
+        },
+        {
+          "text": "저장한 주소로 전체 재생",
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/375/light",
+      "id": "v-fig-203",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "Basic 실제 월결제",
+          "pixels": 19.31
+        },
+        {
+          "text": "9,900원",
+          "pixels": 18.3
+        },
+        {
+          "text": "30초 사용분 배분",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 82.5원",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/375/light",
+      "id": "v-fig-205",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "짧은 무음 API",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 2,777원",
+          "pixels": 18.3
+        },
+        {
+          "text": "무음 API · 2배 시도",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 5,553원",
+          "pixels": 18.3
+        },
+        {
+          "text": "오디오 포함 API",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 17,374.5원",
+          "pixels": 18.3
+        },
+        {
+          "text": "오디오 API · 2배 시도",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 34,749원",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/375/light",
+      "id": "v-fig-204",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "Omni 4샷 × 1안",
+          "pixels": 19.31
+        },
+        {
+          "text": "48크레딧",
+          "pixels": 18.3
+        },
+        {
+          "text": "무료 일일",
+          "pixels": 19.31
+        },
+        {
+          "text": "50크레딧",
+          "pixels": 18.3
+        },
+        {
+          "text": "Omni 4샷 × 2안",
+          "pixels": 19.31
+        },
+        {
+          "text": "96크레딧",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "chapters/01-map.html/375/light",
+      "id": "v-fig-4",
+      "min": 17.38,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 17.38
+        },
+        {
+          "text": "프로젝트",
+          "pixels": 18.35
+        },
+        {
+          "text": "편집을 이어 가는 문서",
+          "pixels": 17.38
+        },
+        {
+          "text": "2",
+          "pixels": 17.38
+        },
+        {
+          "text": "MP4로 내보내기",
+          "pixels": 18.35
+        },
+        {
+          "text": "편집기 밖에서 전체 재생",
+          "pixels": 17.38
+        },
+        {
+          "text": "3",
+          "pixels": 17.38
+        },
+        {
+          "text": "공식 업로드",
+          "pixels": 18.35
+        },
+        {
+          "text": "상태·주소 확인",
+          "pixels": 17.38
+        }
+      ]
+    },
+    {
+      "key": "chapters/02-revenue.html/375/light",
+      "id": "v-fig-8",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "내 배정액",
+          "pixels": 19.31
+        },
+        {
+          "text": "10만 원",
+          "pixels": 18.3
+        },
+        {
+          "text": "배정액의 45%",
+          "pixels": 19.31
+        },
+        {
+          "text": "45,000원",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "chapters/05-audio.html/375/light",
+      "id": "audio-tracks",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "① 말만 듣기",
+          "pixels": 21.63
+        },
+        {
+          "text": "말",
+          "pixels": 18.54
+        },
+        {
+          "text": "음악",
+          "pixels": 18.54
+        },
+        {
+          "text": "② 음악만 듣기",
+          "pixels": 21.63
+        },
+        {
+          "text": "말",
+          "pixels": 18.54
+        },
+        {
+          "text": "음악",
+          "pixels": 18.54
+        },
+        {
+          "text": "③ 함께 듣기",
+          "pixels": 21.63
+        },
+        {
+          "text": "말",
+          "pixels": 18.54
+        },
+        {
+          "text": "음악",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "chapters/07-editing.html/375/light",
+      "id": "v-fig-63",
+      "min": 17.38,
+      "sizes": [
+        {
+          "text": "같은 시간 위에서 끝을 대조",
+          "pixels": 17.38
+        },
+        {
+          "text": "장면",
+          "pixels": 18.35
+        },
+        {
+          "text": "음성",
+          "pixels": 18.35
+        },
+        {
+          "text": "자막",
+          "pixels": 18.35
+        },
+        {
+          "text": "음악",
+          "pixels": 18.35
+        },
+        {
+          "text": "0초",
+          "pixels": 17.38
+        },
+        {
+          "text": "8초",
+          "pixels": 17.38
+        },
+        {
+          "text": "12초",
+          "pixels": 17.38
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/375/light",
+      "id": "caption-placement",
+      "min": 21,
+      "sizes": [
+        {
+          "text": "월세와 생활비를",
+          "pixels": 21
+        },
+        {
+          "text": "따로 적어요",
+          "pixels": 21
+        },
+        {
+          "text": "설명에 가림",
+          "pixels": 21
+        },
+        {
+          "text": "용도를 나눠요",
+          "pixels": 21
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/375/light",
+      "id": "subtitle-files",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "편집 프로젝트",
+          "pixels": 21.63
+        },
+        {
+          "text": "SRT",
+          "pixels": 21.63
+        },
+        {
+          "text": "글·표시 시간",
+          "pixels": 18.54
+        },
+        {
+          "text": "MP4",
+          "pixels": 21.63
+        },
+        {
+          "text": "화면에 입힌 글",
+          "pixels": 18.54
+        },
+        {
+          "text": "SRT 수정",
+          "pixels": 18.54
+        },
+        {
+          "text": "자막 파일 변경",
+          "pixels": 18.54
+        },
+        {
+          "text": "프로젝트 수정",
+          "pixels": 18.54
+        },
+        {
+          "text": "MP4 재출력",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "chapters/09-export.html/375/light",
+      "id": "aspect-resolution",
+      "min": 24.5,
+      "sizes": [
+        {
+          "text": "9:16",
+          "pixels": 24.5
+        },
+        {
+          "text": "9:16",
+          "pixels": 24.5
+        }
+      ]
+    },
+    {
+      "key": "chapters/10-templates.html/375/light",
+      "id": "template-layers",
+      "min": 16.8,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "이전 장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "이전 동작",
+          "pixels": 16.8
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.8
+        },
+        {
+          "text": "장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "새 장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "새 동작",
+          "pixels": 16.8
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.8
+        }
+      ]
+    },
+    {
+      "key": "chapters/12-analytics.html/375/light",
+      "id": "v-fig-99",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "가상 선택 표본",
+          "pixels": 19.31
+        },
+        {
+          "text": "100회",
+          "pixels": 18.3
+        },
+        {
+          "text": "계속 시청",
+          "pixels": 19.31
+        },
+        {
+          "text": "60회",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/375/light",
+      "id": "editor-regions",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 18.54
+        },
+        {
+          "text": "음성·장면",
+          "pixels": 18.54
+        },
+        {
+          "text": "파일 목록",
+          "pixels": 18.54
+        },
+        {
+          "text": "2",
+          "pixels": 18.54
+        },
+        {
+          "text": "9:16 미리보기",
+          "pixels": 18.54
+        },
+        {
+          "text": "타임라인으로 끌어 놓기",
+          "pixels": 18.54
+        },
+        {
+          "text": "3",
+          "pixels": 18.54
+        },
+        {
+          "text": "같은 시간 위에 배치",
+          "pixels": 21.63
+        },
+        {
+          "text": "장면",
+          "pixels": 18.54
+        },
+        {
+          "text": "음성",
+          "pixels": 18.54
+        },
+        {
+          "text": "자막",
+          "pixels": 18.54
+        },
+        {
+          "text": "↑ 같은 말에 같은 장면·글",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/375/light",
+      "id": "practice-timeline",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 21.63
+        },
+        {
+          "text": "네 칸 소개",
+          "pixels": 18.54
+        },
+        {
+          "text": "용도 설명",
+          "pixels": 18.54
+        },
+        {
+          "text": "메모 완성",
+          "pixels": 18.54
+        },
+        {
+          "text": "음성",
+          "pixels": 21.63
+        },
+        {
+          "text": "내가 읽은 말",
+          "pixels": 18.54
+        },
+        {
+          "text": "자막",
+          "pixels": 21.63
+        },
+        {
+          "text": "월세·생활비",
+          "pixels": 18.54
+        },
+        {
+          "text": "비상금·목표",
+          "pixels": 18.54
+        },
+        {
+          "text": "지금 할 일",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "practice/07-export.html/375/light",
+      "id": "export-settings",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "출력 항목 대조",
+          "pixels": 21.63
+        },
+        {
+          "text": "1",
+          "pixels": 18.54
+        },
+        {
+          "text": "화면",
+          "pixels": 18.54
+        },
+        {
+          "text": "9:16",
+          "pixels": 18.54
+        },
+        {
+          "text": "2",
+          "pixels": 18.54
+        },
+        {
+          "text": "품질",
+          "pixels": 18.54
+        },
+        {
+          "text": "1080p",
+          "pixels": 18.54
+        },
+        {
+          "text": "3",
+          "pixels": 18.54
+        },
+        {
+          "text": "파일",
+          "pixels": 18.54
+        },
+        {
+          "text": "MP4",
+          "pixels": 18.54
+        },
+        {
+          "text": "저장한 파일 정보",
+          "pixels": 21.63
+        },
+        {
+          "text": "1080 × 1920 확인",
+          "pixels": 18.54
+        },
+        {
+          "text": "길이·실제 fps·재생 확인",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "practice/08-publish.html/375/light",
+      "id": "published-result",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "내가 확인한 영상",
+          "pixels": 21.63
+        },
+        {
+          "text": "월급날 네 칸 메모",
+          "pixels": 18.54
+        },
+        {
+          "text": "1",
+          "pixels": 18.54
+        },
+        {
+          "text": "같은 제목",
+          "pixels": 18.54
+        },
+        {
+          "text": "2",
+          "pixels": 18.54
+        },
+        {
+          "text": "공개 · Shorts",
+          "pixels": 18.54
+        },
+        {
+          "text": "3",
+          "pixels": 18.54
+        },
+        {
+          "text": "내 주소 메모로 돌아가요",
+          "pixels": 18.54
+        },
+        {
+          "text": "저장한 주소로 전체 재생",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/375/dark",
+      "id": "v-fig-203",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "Basic 실제 월결제",
+          "pixels": 19.31
+        },
+        {
+          "text": "9,900원",
+          "pixels": 18.3
+        },
+        {
+          "text": "30초 사용분 배분",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 82.5원",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/375/dark",
+      "id": "v-fig-205",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "짧은 무음 API",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 2,777원",
+          "pixels": 18.3
+        },
+        {
+          "text": "무음 API · 2배 시도",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 5,553원",
+          "pixels": 18.3
+        },
+        {
+          "text": "오디오 포함 API",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 17,374.5원",
+          "pixels": 18.3
+        },
+        {
+          "text": "오디오 API · 2배 시도",
+          "pixels": 19.31
+        },
+        {
+          "text": "약 34,749원",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/375/dark",
+      "id": "v-fig-204",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "Omni 4샷 × 1안",
+          "pixels": 19.31
+        },
+        {
+          "text": "48크레딧",
+          "pixels": 18.3
+        },
+        {
+          "text": "무료 일일",
+          "pixels": 19.31
+        },
+        {
+          "text": "50크레딧",
+          "pixels": 18.3
+        },
+        {
+          "text": "Omni 4샷 × 2안",
+          "pixels": 19.31
+        },
+        {
+          "text": "96크레딧",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "chapters/01-map.html/375/dark",
+      "id": "v-fig-4",
+      "min": 17.38,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 17.38
+        },
+        {
+          "text": "프로젝트",
+          "pixels": 18.35
+        },
+        {
+          "text": "편집을 이어 가는 문서",
+          "pixels": 17.38
+        },
+        {
+          "text": "2",
+          "pixels": 17.38
+        },
+        {
+          "text": "MP4로 내보내기",
+          "pixels": 18.35
+        },
+        {
+          "text": "편집기 밖에서 전체 재생",
+          "pixels": 17.38
+        },
+        {
+          "text": "3",
+          "pixels": 17.38
+        },
+        {
+          "text": "공식 업로드",
+          "pixels": 18.35
+        },
+        {
+          "text": "상태·주소 확인",
+          "pixels": 17.38
+        }
+      ]
+    },
+    {
+      "key": "chapters/02-revenue.html/375/dark",
+      "id": "v-fig-8",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "내 배정액",
+          "pixels": 19.31
+        },
+        {
+          "text": "10만 원",
+          "pixels": 18.3
+        },
+        {
+          "text": "배정액의 45%",
+          "pixels": 19.31
+        },
+        {
+          "text": "45,000원",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "chapters/05-audio.html/375/dark",
+      "id": "audio-tracks",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "① 말만 듣기",
+          "pixels": 21.63
+        },
+        {
+          "text": "말",
+          "pixels": 18.54
+        },
+        {
+          "text": "음악",
+          "pixels": 18.54
+        },
+        {
+          "text": "② 음악만 듣기",
+          "pixels": 21.63
+        },
+        {
+          "text": "말",
+          "pixels": 18.54
+        },
+        {
+          "text": "음악",
+          "pixels": 18.54
+        },
+        {
+          "text": "③ 함께 듣기",
+          "pixels": 21.63
+        },
+        {
+          "text": "말",
+          "pixels": 18.54
+        },
+        {
+          "text": "음악",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "chapters/07-editing.html/375/dark",
+      "id": "v-fig-63",
+      "min": 17.38,
+      "sizes": [
+        {
+          "text": "같은 시간 위에서 끝을 대조",
+          "pixels": 17.38
+        },
+        {
+          "text": "장면",
+          "pixels": 18.35
+        },
+        {
+          "text": "음성",
+          "pixels": 18.35
+        },
+        {
+          "text": "자막",
+          "pixels": 18.35
+        },
+        {
+          "text": "음악",
+          "pixels": 18.35
+        },
+        {
+          "text": "0초",
+          "pixels": 17.38
+        },
+        {
+          "text": "8초",
+          "pixels": 17.38
+        },
+        {
+          "text": "12초",
+          "pixels": 17.38
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/375/dark",
+      "id": "caption-placement",
+      "min": 21,
+      "sizes": [
+        {
+          "text": "월세와 생활비를",
+          "pixels": 21
+        },
+        {
+          "text": "따로 적어요",
+          "pixels": 21
+        },
+        {
+          "text": "설명에 가림",
+          "pixels": 21
+        },
+        {
+          "text": "용도를 나눠요",
+          "pixels": 21
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/375/dark",
+      "id": "subtitle-files",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "편집 프로젝트",
+          "pixels": 21.63
+        },
+        {
+          "text": "SRT",
+          "pixels": 21.63
+        },
+        {
+          "text": "글·표시 시간",
+          "pixels": 18.54
+        },
+        {
+          "text": "MP4",
+          "pixels": 21.63
+        },
+        {
+          "text": "화면에 입힌 글",
+          "pixels": 18.54
+        },
+        {
+          "text": "SRT 수정",
+          "pixels": 18.54
+        },
+        {
+          "text": "자막 파일 변경",
+          "pixels": 18.54
+        },
+        {
+          "text": "프로젝트 수정",
+          "pixels": 18.54
+        },
+        {
+          "text": "MP4 재출력",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "chapters/09-export.html/375/dark",
+      "id": "aspect-resolution",
+      "min": 24.5,
+      "sizes": [
+        {
+          "text": "9:16",
+          "pixels": 24.5
+        },
+        {
+          "text": "9:16",
+          "pixels": 24.5
+        }
+      ]
+    },
+    {
+      "key": "chapters/10-templates.html/375/dark",
+      "id": "template-layers",
+      "min": 16.8,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "이전 장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "이전 동작",
+          "pixels": 16.8
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.8
+        },
+        {
+          "text": "장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "새 장면",
+          "pixels": 16.8
+        },
+        {
+          "text": "새 동작",
+          "pixels": 16.8
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.8
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.8
+        }
+      ]
+    },
+    {
+      "key": "chapters/12-analytics.html/375/dark",
+      "id": "v-fig-99",
+      "min": 18.3,
+      "sizes": [
+        {
+          "text": "가상 선택 표본",
+          "pixels": 19.31
+        },
+        {
+          "text": "100회",
+          "pixels": 18.3
+        },
+        {
+          "text": "계속 시청",
+          "pixels": 19.31
+        },
+        {
+          "text": "60회",
+          "pixels": 18.3
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/375/dark",
+      "id": "editor-regions",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 18.54
+        },
+        {
+          "text": "음성·장면",
+          "pixels": 18.54
+        },
+        {
+          "text": "파일 목록",
+          "pixels": 18.54
+        },
+        {
+          "text": "2",
+          "pixels": 18.54
+        },
+        {
+          "text": "9:16 미리보기",
+          "pixels": 18.54
+        },
+        {
+          "text": "타임라인으로 끌어 놓기",
+          "pixels": 18.54
+        },
+        {
+          "text": "3",
+          "pixels": 18.54
+        },
+        {
+          "text": "같은 시간 위에 배치",
+          "pixels": 21.63
+        },
+        {
+          "text": "장면",
+          "pixels": 18.54
+        },
+        {
+          "text": "음성",
+          "pixels": 18.54
+        },
+        {
+          "text": "자막",
+          "pixels": 18.54
+        },
+        {
+          "text": "↑ 같은 말에 같은 장면·글",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/375/dark",
+      "id": "practice-timeline",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 21.63
+        },
+        {
+          "text": "네 칸 소개",
+          "pixels": 18.54
+        },
+        {
+          "text": "용도 설명",
+          "pixels": 18.54
+        },
+        {
+          "text": "메모 완성",
+          "pixels": 18.54
+        },
+        {
+          "text": "음성",
+          "pixels": 21.63
+        },
+        {
+          "text": "내가 읽은 말",
+          "pixels": 18.54
+        },
+        {
+          "text": "자막",
+          "pixels": 21.63
+        },
+        {
+          "text": "월세·생활비",
+          "pixels": 18.54
+        },
+        {
+          "text": "비상금·목표",
+          "pixels": 18.54
+        },
+        {
+          "text": "지금 할 일",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "practice/07-export.html/375/dark",
+      "id": "export-settings",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "출력 항목 대조",
+          "pixels": 21.63
+        },
+        {
+          "text": "1",
+          "pixels": 18.54
+        },
+        {
+          "text": "화면",
+          "pixels": 18.54
+        },
+        {
+          "text": "9:16",
+          "pixels": 18.54
+        },
+        {
+          "text": "2",
+          "pixels": 18.54
+        },
+        {
+          "text": "품질",
+          "pixels": 18.54
+        },
+        {
+          "text": "1080p",
+          "pixels": 18.54
+        },
+        {
+          "text": "3",
+          "pixels": 18.54
+        },
+        {
+          "text": "파일",
+          "pixels": 18.54
+        },
+        {
+          "text": "MP4",
+          "pixels": 18.54
+        },
+        {
+          "text": "저장한 파일 정보",
+          "pixels": 21.63
+        },
+        {
+          "text": "1080 × 1920 확인",
+          "pixels": 18.54
+        },
+        {
+          "text": "길이·실제 fps·재생 확인",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "practice/08-publish.html/375/dark",
+      "id": "published-result",
+      "min": 18.54,
+      "sizes": [
+        {
+          "text": "내가 확인한 영상",
+          "pixels": 21.63
+        },
+        {
+          "text": "월급날 네 칸 메모",
+          "pixels": 18.54
+        },
+        {
+          "text": "1",
+          "pixels": 18.54
+        },
+        {
+          "text": "같은 제목",
+          "pixels": 18.54
+        },
+        {
+          "text": "2",
+          "pixels": 18.54
+        },
+        {
+          "text": "공개 · Shorts",
+          "pixels": 18.54
+        },
+        {
+          "text": "3",
+          "pixels": 18.54
+        },
+        {
+          "text": "내 주소 메모로 돌아가요",
+          "pixels": 18.54
+        },
+        {
+          "text": "저장한 주소로 전체 재생",
+          "pixels": 18.54
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/360/light",
+      "id": "v-fig-203",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "Basic 실제 월결제",
+          "pixels": 18.37
+        },
+        {
+          "text": "9,900원",
+          "pixels": 17.41
+        },
+        {
+          "text": "30초 사용분 배분",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 82.5원",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/360/light",
+      "id": "v-fig-205",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "짧은 무음 API",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 2,777원",
+          "pixels": 17.41
+        },
+        {
+          "text": "무음 API · 2배 시도",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 5,553원",
+          "pixels": 17.41
+        },
+        {
+          "text": "오디오 포함 API",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 17,374.5원",
+          "pixels": 17.41
+        },
+        {
+          "text": "오디오 API · 2배 시도",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 34,749원",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/360/light",
+      "id": "v-fig-204",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "Omni 4샷 × 1안",
+          "pixels": 18.37
+        },
+        {
+          "text": "48크레딧",
+          "pixels": 17.41
+        },
+        {
+          "text": "무료 일일",
+          "pixels": 18.37
+        },
+        {
+          "text": "50크레딧",
+          "pixels": 17.41
+        },
+        {
+          "text": "Omni 4샷 × 2안",
+          "pixels": 18.37
+        },
+        {
+          "text": "96크레딧",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "chapters/01-map.html/360/light",
+      "id": "v-fig-4",
+      "min": 16.54,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 16.54
+        },
+        {
+          "text": "프로젝트",
+          "pixels": 17.46
+        },
+        {
+          "text": "편집을 이어 가는 문서",
+          "pixels": 16.54
+        },
+        {
+          "text": "2",
+          "pixels": 16.54
+        },
+        {
+          "text": "MP4로 내보내기",
+          "pixels": 17.46
+        },
+        {
+          "text": "편집기 밖에서 전체 재생",
+          "pixels": 16.54
+        },
+        {
+          "text": "3",
+          "pixels": 16.54
+        },
+        {
+          "text": "공식 업로드",
+          "pixels": 17.46
+        },
+        {
+          "text": "상태·주소 확인",
+          "pixels": 16.54
+        }
+      ]
+    },
+    {
+      "key": "chapters/02-revenue.html/360/light",
+      "id": "v-fig-8",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "내 배정액",
+          "pixels": 18.37
+        },
+        {
+          "text": "10만 원",
+          "pixels": 17.41
+        },
+        {
+          "text": "배정액의 45%",
+          "pixels": 18.37
+        },
+        {
+          "text": "45,000원",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "chapters/05-audio.html/360/light",
+      "id": "audio-tracks",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "① 말만 듣기",
+          "pixels": 20.58
+        },
+        {
+          "text": "말",
+          "pixels": 17.64
+        },
+        {
+          "text": "음악",
+          "pixels": 17.64
+        },
+        {
+          "text": "② 음악만 듣기",
+          "pixels": 20.58
+        },
+        {
+          "text": "말",
+          "pixels": 17.64
+        },
+        {
+          "text": "음악",
+          "pixels": 17.64
+        },
+        {
+          "text": "③ 함께 듣기",
+          "pixels": 20.58
+        },
+        {
+          "text": "말",
+          "pixels": 17.64
+        },
+        {
+          "text": "음악",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "chapters/07-editing.html/360/light",
+      "id": "v-fig-63",
+      "min": 16.54,
+      "sizes": [
+        {
+          "text": "같은 시간 위에서 끝을 대조",
+          "pixels": 16.54
+        },
+        {
+          "text": "장면",
+          "pixels": 17.46
+        },
+        {
+          "text": "음성",
+          "pixels": 17.46
+        },
+        {
+          "text": "자막",
+          "pixels": 17.46
+        },
+        {
+          "text": "음악",
+          "pixels": 17.46
+        },
+        {
+          "text": "0초",
+          "pixels": 16.54
+        },
+        {
+          "text": "8초",
+          "pixels": 16.54
+        },
+        {
+          "text": "12초",
+          "pixels": 16.54
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/360/light",
+      "id": "caption-placement",
+      "min": 20.7,
+      "sizes": [
+        {
+          "text": "월세와 생활비를",
+          "pixels": 20.7
+        },
+        {
+          "text": "따로 적어요",
+          "pixels": 20.7
+        },
+        {
+          "text": "설명에 가림",
+          "pixels": 20.7
+        },
+        {
+          "text": "용도를 나눠요",
+          "pixels": 20.7
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/360/light",
+      "id": "subtitle-files",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "편집 프로젝트",
+          "pixels": 20.58
+        },
+        {
+          "text": "SRT",
+          "pixels": 20.58
+        },
+        {
+          "text": "글·표시 시간",
+          "pixels": 17.64
+        },
+        {
+          "text": "MP4",
+          "pixels": 20.58
+        },
+        {
+          "text": "화면에 입힌 글",
+          "pixels": 17.64
+        },
+        {
+          "text": "SRT 수정",
+          "pixels": 17.64
+        },
+        {
+          "text": "자막 파일 변경",
+          "pixels": 17.64
+        },
+        {
+          "text": "프로젝트 수정",
+          "pixels": 17.64
+        },
+        {
+          "text": "MP4 재출력",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "chapters/09-export.html/360/light",
+      "id": "aspect-resolution",
+      "min": 24.15,
+      "sizes": [
+        {
+          "text": "9:16",
+          "pixels": 24.15
+        },
+        {
+          "text": "9:16",
+          "pixels": 24.15
+        }
+      ]
+    },
+    {
+      "key": "chapters/10-templates.html/360/light",
+      "id": "template-layers",
+      "min": 16.56,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 16.56
+        },
+        {
+          "text": "이전 장면",
+          "pixels": 16.56
+        },
+        {
+          "text": "이전 동작",
+          "pixels": 16.56
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.56
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.56
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.56
+        },
+        {
+          "text": "장면",
+          "pixels": 16.56
+        },
+        {
+          "text": "새 장면",
+          "pixels": 16.56
+        },
+        {
+          "text": "새 동작",
+          "pixels": 16.56
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.56
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.56
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.56
+        }
+      ]
+    },
+    {
+      "key": "chapters/12-analytics.html/360/light",
+      "id": "v-fig-99",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "가상 선택 표본",
+          "pixels": 18.37
+        },
+        {
+          "text": "100회",
+          "pixels": 17.41
+        },
+        {
+          "text": "계속 시청",
+          "pixels": 18.37
+        },
+        {
+          "text": "60회",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/360/light",
+      "id": "editor-regions",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 17.64
+        },
+        {
+          "text": "음성·장면",
+          "pixels": 17.64
+        },
+        {
+          "text": "파일 목록",
+          "pixels": 17.64
+        },
+        {
+          "text": "2",
+          "pixels": 17.64
+        },
+        {
+          "text": "9:16 미리보기",
+          "pixels": 17.64
+        },
+        {
+          "text": "타임라인으로 끌어 놓기",
+          "pixels": 17.64
+        },
+        {
+          "text": "3",
+          "pixels": 17.64
+        },
+        {
+          "text": "같은 시간 위에 배치",
+          "pixels": 20.58
+        },
+        {
+          "text": "장면",
+          "pixels": 17.64
+        },
+        {
+          "text": "음성",
+          "pixels": 17.64
+        },
+        {
+          "text": "자막",
+          "pixels": 17.64
+        },
+        {
+          "text": "↑ 같은 말에 같은 장면·글",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/360/light",
+      "id": "practice-timeline",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 20.58
+        },
+        {
+          "text": "네 칸 소개",
+          "pixels": 17.64
+        },
+        {
+          "text": "용도 설명",
+          "pixels": 17.64
+        },
+        {
+          "text": "메모 완성",
+          "pixels": 17.64
+        },
+        {
+          "text": "음성",
+          "pixels": 20.58
+        },
+        {
+          "text": "내가 읽은 말",
+          "pixels": 17.64
+        },
+        {
+          "text": "자막",
+          "pixels": 20.58
+        },
+        {
+          "text": "월세·생활비",
+          "pixels": 17.64
+        },
+        {
+          "text": "비상금·목표",
+          "pixels": 17.64
+        },
+        {
+          "text": "지금 할 일",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "practice/07-export.html/360/light",
+      "id": "export-settings",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "출력 항목 대조",
+          "pixels": 20.58
+        },
+        {
+          "text": "1",
+          "pixels": 17.64
+        },
+        {
+          "text": "화면",
+          "pixels": 17.64
+        },
+        {
+          "text": "9:16",
+          "pixels": 17.64
+        },
+        {
+          "text": "2",
+          "pixels": 17.64
+        },
+        {
+          "text": "품질",
+          "pixels": 17.64
+        },
+        {
+          "text": "1080p",
+          "pixels": 17.64
+        },
+        {
+          "text": "3",
+          "pixels": 17.64
+        },
+        {
+          "text": "파일",
+          "pixels": 17.64
+        },
+        {
+          "text": "MP4",
+          "pixels": 17.64
+        },
+        {
+          "text": "저장한 파일 정보",
+          "pixels": 20.58
+        },
+        {
+          "text": "1080 × 1920 확인",
+          "pixels": 17.64
+        },
+        {
+          "text": "길이·실제 fps·재생 확인",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "practice/08-publish.html/360/light",
+      "id": "published-result",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "내가 확인한 영상",
+          "pixels": 20.58
+        },
+        {
+          "text": "월급날 네 칸 메모",
+          "pixels": 17.64
+        },
+        {
+          "text": "1",
+          "pixels": 17.64
+        },
+        {
+          "text": "같은 제목",
+          "pixels": 17.64
+        },
+        {
+          "text": "2",
+          "pixels": 17.64
+        },
+        {
+          "text": "공개 · Shorts",
+          "pixels": 17.64
+        },
+        {
+          "text": "3",
+          "pixels": 17.64
+        },
+        {
+          "text": "내 주소 메모로 돌아가요",
+          "pixels": 17.64
+        },
+        {
+          "text": "저장한 주소로 전체 재생",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/360/dark",
+      "id": "v-fig-203",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "Basic 실제 월결제",
+          "pixels": 18.37
+        },
+        {
+          "text": "9,900원",
+          "pixels": 17.41
+        },
+        {
+          "text": "30초 사용분 배분",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 82.5원",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/360/dark",
+      "id": "v-fig-205",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "짧은 무음 API",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 2,777원",
+          "pixels": 17.41
+        },
+        {
+          "text": "무음 API · 2배 시도",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 5,553원",
+          "pixels": 17.41
+        },
+        {
+          "text": "오디오 포함 API",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 17,374.5원",
+          "pixels": 17.41
+        },
+        {
+          "text": "오디오 API · 2배 시도",
+          "pixels": 18.37
+        },
+        {
+          "text": "약 34,749원",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "ai-models.html/360/dark",
+      "id": "v-fig-204",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "Omni 4샷 × 1안",
+          "pixels": 18.37
+        },
+        {
+          "text": "48크레딧",
+          "pixels": 17.41
+        },
+        {
+          "text": "무료 일일",
+          "pixels": 18.37
+        },
+        {
+          "text": "50크레딧",
+          "pixels": 17.41
+        },
+        {
+          "text": "Omni 4샷 × 2안",
+          "pixels": 18.37
+        },
+        {
+          "text": "96크레딧",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "chapters/01-map.html/360/dark",
+      "id": "v-fig-4",
+      "min": 16.54,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 16.54
+        },
+        {
+          "text": "프로젝트",
+          "pixels": 17.46
+        },
+        {
+          "text": "편집을 이어 가는 문서",
+          "pixels": 16.54
+        },
+        {
+          "text": "2",
+          "pixels": 16.54
+        },
+        {
+          "text": "MP4로 내보내기",
+          "pixels": 17.46
+        },
+        {
+          "text": "편집기 밖에서 전체 재생",
+          "pixels": 16.54
+        },
+        {
+          "text": "3",
+          "pixels": 16.54
+        },
+        {
+          "text": "공식 업로드",
+          "pixels": 17.46
+        },
+        {
+          "text": "상태·주소 확인",
+          "pixels": 16.54
+        }
+      ]
+    },
+    {
+      "key": "chapters/02-revenue.html/360/dark",
+      "id": "v-fig-8",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "내 배정액",
+          "pixels": 18.37
+        },
+        {
+          "text": "10만 원",
+          "pixels": 17.41
+        },
+        {
+          "text": "배정액의 45%",
+          "pixels": 18.37
+        },
+        {
+          "text": "45,000원",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "chapters/05-audio.html/360/dark",
+      "id": "audio-tracks",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "① 말만 듣기",
+          "pixels": 20.58
+        },
+        {
+          "text": "말",
+          "pixels": 17.64
+        },
+        {
+          "text": "음악",
+          "pixels": 17.64
+        },
+        {
+          "text": "② 음악만 듣기",
+          "pixels": 20.58
+        },
+        {
+          "text": "말",
+          "pixels": 17.64
+        },
+        {
+          "text": "음악",
+          "pixels": 17.64
+        },
+        {
+          "text": "③ 함께 듣기",
+          "pixels": 20.58
+        },
+        {
+          "text": "말",
+          "pixels": 17.64
+        },
+        {
+          "text": "음악",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "chapters/07-editing.html/360/dark",
+      "id": "v-fig-63",
+      "min": 16.54,
+      "sizes": [
+        {
+          "text": "같은 시간 위에서 끝을 대조",
+          "pixels": 16.54
+        },
+        {
+          "text": "장면",
+          "pixels": 17.46
+        },
+        {
+          "text": "음성",
+          "pixels": 17.46
+        },
+        {
+          "text": "자막",
+          "pixels": 17.46
+        },
+        {
+          "text": "음악",
+          "pixels": 17.46
+        },
+        {
+          "text": "0초",
+          "pixels": 16.54
+        },
+        {
+          "text": "8초",
+          "pixels": 16.54
+        },
+        {
+          "text": "12초",
+          "pixels": 16.54
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/360/dark",
+      "id": "caption-placement",
+      "min": 20.7,
+      "sizes": [
+        {
+          "text": "월세와 생활비를",
+          "pixels": 20.7
+        },
+        {
+          "text": "따로 적어요",
+          "pixels": 20.7
+        },
+        {
+          "text": "설명에 가림",
+          "pixels": 20.7
+        },
+        {
+          "text": "용도를 나눠요",
+          "pixels": 20.7
+        }
+      ]
+    },
+    {
+      "key": "chapters/08-captions.html/360/dark",
+      "id": "subtitle-files",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "편집 프로젝트",
+          "pixels": 20.58
+        },
+        {
+          "text": "SRT",
+          "pixels": 20.58
+        },
+        {
+          "text": "글·표시 시간",
+          "pixels": 17.64
+        },
+        {
+          "text": "MP4",
+          "pixels": 20.58
+        },
+        {
+          "text": "화면에 입힌 글",
+          "pixels": 17.64
+        },
+        {
+          "text": "SRT 수정",
+          "pixels": 17.64
+        },
+        {
+          "text": "자막 파일 변경",
+          "pixels": 17.64
+        },
+        {
+          "text": "프로젝트 수정",
+          "pixels": 17.64
+        },
+        {
+          "text": "MP4 재출력",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "chapters/09-export.html/360/dark",
+      "id": "aspect-resolution",
+      "min": 24.15,
+      "sizes": [
+        {
+          "text": "9:16",
+          "pixels": 24.15
+        },
+        {
+          "text": "9:16",
+          "pixels": 24.15
+        }
+      ]
+    },
+    {
+      "key": "chapters/10-templates.html/360/dark",
+      "id": "template-layers",
+      "min": 16.56,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 16.56
+        },
+        {
+          "text": "이전 장면",
+          "pixels": 16.56
+        },
+        {
+          "text": "이전 동작",
+          "pixels": 16.56
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.56
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.56
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.56
+        },
+        {
+          "text": "장면",
+          "pixels": 16.56
+        },
+        {
+          "text": "새 장면",
+          "pixels": 16.56
+        },
+        {
+          "text": "새 동작",
+          "pixels": 16.56
+        },
+        {
+          "text": "자막 모양 · 위치 유지",
+          "pixels": 16.56
+        },
+        {
+          "text": "출력 설정 유지",
+          "pixels": 16.56
+        },
+        {
+          "text": "세로 MP4",
+          "pixels": 16.56
+        }
+      ]
+    },
+    {
+      "key": "chapters/12-analytics.html/360/dark",
+      "id": "v-fig-99",
+      "min": 17.41,
+      "sizes": [
+        {
+          "text": "가상 선택 표본",
+          "pixels": 18.37
+        },
+        {
+          "text": "100회",
+          "pixels": 17.41
+        },
+        {
+          "text": "계속 시청",
+          "pixels": 18.37
+        },
+        {
+          "text": "60회",
+          "pixels": 17.41
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/360/dark",
+      "id": "editor-regions",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "1",
+          "pixels": 17.64
+        },
+        {
+          "text": "음성·장면",
+          "pixels": 17.64
+        },
+        {
+          "text": "파일 목록",
+          "pixels": 17.64
+        },
+        {
+          "text": "2",
+          "pixels": 17.64
+        },
+        {
+          "text": "9:16 미리보기",
+          "pixels": 17.64
+        },
+        {
+          "text": "타임라인으로 끌어 놓기",
+          "pixels": 17.64
+        },
+        {
+          "text": "3",
+          "pixels": 17.64
+        },
+        {
+          "text": "같은 시간 위에 배치",
+          "pixels": 20.58
+        },
+        {
+          "text": "장면",
+          "pixels": 17.64
+        },
+        {
+          "text": "음성",
+          "pixels": 17.64
+        },
+        {
+          "text": "자막",
+          "pixels": 17.64
+        },
+        {
+          "text": "↑ 같은 말에 같은 장면·글",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "practice/06-edit.html/360/dark",
+      "id": "practice-timeline",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "장면",
+          "pixels": 20.58
+        },
+        {
+          "text": "네 칸 소개",
+          "pixels": 17.64
+        },
+        {
+          "text": "용도 설명",
+          "pixels": 17.64
+        },
+        {
+          "text": "메모 완성",
+          "pixels": 17.64
+        },
+        {
+          "text": "음성",
+          "pixels": 20.58
+        },
+        {
+          "text": "내가 읽은 말",
+          "pixels": 17.64
+        },
+        {
+          "text": "자막",
+          "pixels": 20.58
+        },
+        {
+          "text": "월세·생활비",
+          "pixels": 17.64
+        },
+        {
+          "text": "비상금·목표",
+          "pixels": 17.64
+        },
+        {
+          "text": "지금 할 일",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "practice/07-export.html/360/dark",
+      "id": "export-settings",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "출력 항목 대조",
+          "pixels": 20.58
+        },
+        {
+          "text": "1",
+          "pixels": 17.64
+        },
+        {
+          "text": "화면",
+          "pixels": 17.64
+        },
+        {
+          "text": "9:16",
+          "pixels": 17.64
+        },
+        {
+          "text": "2",
+          "pixels": 17.64
+        },
+        {
+          "text": "품질",
+          "pixels": 17.64
+        },
+        {
+          "text": "1080p",
+          "pixels": 17.64
+        },
+        {
+          "text": "3",
+          "pixels": 17.64
+        },
+        {
+          "text": "파일",
+          "pixels": 17.64
+        },
+        {
+          "text": "MP4",
+          "pixels": 17.64
+        },
+        {
+          "text": "저장한 파일 정보",
+          "pixels": 20.58
+        },
+        {
+          "text": "1080 × 1920 확인",
+          "pixels": 17.64
+        },
+        {
+          "text": "길이·실제 fps·재생 확인",
+          "pixels": 17.64
+        }
+      ]
+    },
+    {
+      "key": "practice/08-publish.html/360/dark",
+      "id": "published-result",
+      "min": 17.64,
+      "sizes": [
+        {
+          "text": "내가 확인한 영상",
+          "pixels": 20.58
+        },
+        {
+          "text": "월급날 네 칸 메모",
+          "pixels": 17.64
+        },
+        {
+          "text": "1",
+          "pixels": 17.64
+        },
+        {
+          "text": "같은 제목",
+          "pixels": 17.64
+        },
+        {
+          "text": "2",
+          "pixels": 17.64
+        },
+        {
+          "text": "공개 · Shorts",
+          "pixels": 17.64
+        },
+        {
+          "text": "3",
+          "pixels": 17.64
+        },
+        {
+          "text": "내 주소 메모로 돌아가요",
+          "pixels": 17.64
+        },
+        {
+          "text": "저장한 주소로 전체 재생",
+          "pixels": 17.64
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "shot-sizes-1280-light.png",
+    "caption-placement-1280-light.png",
+    "editor-regions-1280-light.png",
+    "export-settings-1280-light.png",
+    "shot-sizes-1280-dark.png",
+    "caption-placement-1280-dark.png",
+    "editor-regions-1280-dark.png",
+    "export-settings-1280-dark.png",
+    "shot-sizes-375-light.png",
+    "caption-placement-375-light.png",
+    "editor-regions-375-light.png",
+    "export-settings-375-light.png",
+    "shot-sizes-375-dark.png",
+    "caption-placement-375-dark.png",
+    "editor-regions-375-dark.png",
+    "export-settings-375-dark.png",
+    "shot-sizes-360-light.png",
+    "caption-placement-360-light.png",
+    "editor-regions-360-light.png",
+    "export-settings-360-light.png",
+    "v-fig-203-360-dark.png",
+    "v-fig-205-360-dark.png",
+    "v-fig-204-360-dark.png",
+    "v-fig-4-360-dark.png",
+    "v-fig-8-360-dark.png",
+    "audio-tracks-360-dark.png",
+    "keyframe-comparison-360-dark.png",
+    "shot-sizes-360-dark.png",
+    "v-fig-63-360-dark.png",
+    "caption-placement-360-dark.png",
+    "subtitle-files-360-dark.png",
+    "aspect-resolution-360-dark.png",
+    "template-layers-360-dark.png",
+    "v-fig-99-360-dark.png",
+    "paper-shot-sizes-360-dark.png",
+    "editor-regions-360-dark.png",
+    "practice-timeline-360-dark.png",
+    "export-settings-360-dark.png",
+    "upload-overview-360-dark.png",
+    "published-result-360-dark.png",
+    "api-sequence-360-dark.png",
+    "three-videos-1280-light.png",
+    "actual-image-prompts-1280-light.png",
+    "sample-1280-light.png",
+    "three-videos-1280-dark.png",
+    "actual-image-prompts-1280-dark.png",
+    "sample-1280-dark.png",
+    "three-videos-375-light.png",
+    "actual-image-prompts-375-light.png",
+    "sample-375-light.png",
+    "three-videos-375-dark.png",
+    "actual-image-prompts-375-dark.png",
+    "sample-375-dark.png",
+    "three-videos-360-light.png",
+    "actual-image-prompts-360-light.png",
+    "sample-360-light.png",
+    "three-videos-360-dark.png",
+    "actual-image-prompts-360-dark.png",
+    "sample-360-dark.png"
+  ]
+}

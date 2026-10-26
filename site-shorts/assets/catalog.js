@@ -88,7 +88,7 @@ window.ShortsCatalog = Object.freeze([
     "chapter": 7,
     "slug": "06-scenes",
     "id": "figure",
-    "title": "책상 정리 영상으로 이어 갑니다",
+    "title": "월급날 네 칸 해설로 이어 갑니다",
     "section": "figure"
   },
   {
@@ -102,7 +102,7 @@ window.ShortsCatalog = Object.freeze([
     "chapter": 8,
     "slug": "07-editing",
     "id": "figure",
-    "title": "책상 정리 영상으로 이어 갑니다",
+    "title": "월급날 네 칸 해설로 이어 갑니다",
     "section": "figure"
   },
   {
@@ -116,7 +116,7 @@ window.ShortsCatalog = Object.freeze([
     "chapter": 9,
     "slug": "08-captions",
     "id": "figure",
-    "title": "책상 정리 영상으로 이어 갑니다",
+    "title": "월급날 네 칸 해설로 이어 갑니다",
     "section": "figure"
   },
   {
@@ -130,7 +130,7 @@ window.ShortsCatalog = Object.freeze([
     "chapter": 10,
     "slug": "09-export",
     "id": "figure",
-    "title": "책상 정리 영상으로 이어 갑니다",
+    "title": "월급날 네 칸 해설로 이어 갑니다",
     "section": "figure"
   },
   {

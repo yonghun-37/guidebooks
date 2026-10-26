@@ -1,4 +1,4 @@
-/* 직접 만든 책상 예제로 구도·시간·글자·압축을 비교한다. 계정/네트워크 호출 없음. */
+/* 직접 만든 네 칸 메모 예제로 구도·시간·글자·압축을 비교한다. 계정/네트워크 호출 없음. */
 (() => {
   'use strict';
   const one = (root, selector) => root.querySelector(selector);
@@ -95,7 +95,7 @@
     const val = key => fields[key].valueAsNumber;
     const seek = one(editing, '#edit-seek');
     const loop = one(editing, '#loop-on');
-    const names = ['정리 전', '케이블을 묶어요', '정리 후'];
+    const names = ['네 칸 소개', '월세부터 따로', '메모 완성'];
     let valid = true, player;
     const check = () => {
       let okay = valuesValid(Object.values(fields));
@@ -119,7 +119,7 @@
       const scene = time < val('cut-time') ? 0 : time < 8 ? 1 : 2;
       one(editing, '[data-edit-scene]').textContent = names[scene];
       one(editing, '[data-subject]').setAttribute('transform', `translate(${scene === 1 ? Math.sin(time * 2) * 8 : 0} 0)`);
-      const captions = [[0, 4, '정리 전'], [val('caption-start'), val('caption-end'), names[1]], [8, 12, '정리 후']];
+      const captions = [[0, 4, '네 칸 소개'], [val('caption-start'), val('caption-end'), names[1]], [8, 12, '메모 완성']];
       one(editing, '[data-edit-caption]').textContent = captions.filter(([s,e]) => time >= s && time < e).map(a => a[2]).join(' / ');
     };
     player = transport(editing, paint, {end: () => 12, fps: () => 30, getLoop: () => valid && loop.checked ? [val('loop-start'), val('loop-end')] : null});
@@ -133,8 +133,8 @@
         return;
       }
       const tracks = {
-        scene: [[0,val('cut-time'),names[0]],[val('cut-time'),8,'묶기'],[8,12,names[2]]],
-        caption: [[0,4,'정리 전'],[val('caption-start'),val('caption-end'),'묶어요'],[8,12,'정리 후']],
+        scene: [[0,val('cut-time'),names[0]],[val('cut-time'),8,'용도'],[8,12,names[2]]],
+        caption: [[0,4,'네 칸 소개'],[val('caption-start'),val('caption-end'),'월세'],[8,12,'메모 완성']],
         voice: [[val('voice-start'),4+val('voice-start'),'상황'],[4+val('voice-start'),8+val('voice-start'),'방법'],[8+val('voice-start'),12+val('voice-start'),'결과']],
         music: [[0,val('music-end'),'가상 음악 구간']]
       };
@@ -205,7 +205,7 @@
     one(caption, '[data-caption-show]').addEventListener('click', () => { preview = true; player.pause(); render(); });
     caption.querySelectorAll('[data-caption-preset]').forEach(button => button.addEventListener('click', () => {
       const fast = button.dataset.captionPreset === 'fast';
-      copy.value = fast ? '케이블을 묶으면 책상이 넓어지니 지금 서랍에서 정리 도구를 꺼내 따라 해 보세요' : '케이블을 묶어요';
+      copy.value = fast ? '월세와 생활비와 비상금과 목표를 한꺼번에 길게 적으면 작은 화면에서 끝까지 읽기 어려워요' : '월세부터 따로';
       duration.value = fast ? .5 : 3; size.value = 64; y.value = fast ? 90 : 65;
       one(caption, '#caption-contrast').value = 'back'; preview = true; player.seek(0); render();
     }));
@@ -222,18 +222,21 @@
     const size = one(quality, '#export-size'), fps = one(quality, '#export-fps'), rate = one(quality, '#export-rate');
     function scene(ctx, time) {
       ctx.fillStyle = '#f7d4a5'; ctx.fillRect(0,0,270,480);
-      ctx.fillStyle = '#c28c69'; ctx.fillRect(0,160,270,320);
-      for (let x=0; x<270; x+=7) { ctx.strokeStyle = x % 2 ? '#ba845f' : '#d8a37c'; ctx.beginPath(); ctx.moveTo(x,160); ctx.lineTo(x,480); ctx.stroke(); }
-      ctx.fillStyle='#59374b'; ctx.fillRect(60,180,120,135);
-      ctx.fillStyle='#fff0d9'; ctx.fillRect(70,190,100,115);
-      ctx.fillStyle='#59374b'; ctx.font='bold 18px sans-serif'; ctx.fillText('정리 전 → 후',78,226);
-      for(let y=240;y<295;y+=7)ctx.fillRect(80,y,80,2);
+      ctx.fillStyle='#59374b'; ctx.font='bold 22px sans-serif'; ctx.fillText('월급날 네 칸',45,86);
+      const names=['월세','생활비','비상금','목표'];
+      for(let i=0;i<4;i++) {
+        const x=25+(i%2)*120,y=140+Math.floor(i/2)*98;
+        ctx.fillStyle=['#d88060','#719882','#7196af','#d7b255'][i]; ctx.fillRect(x,y,100,78);
+        ctx.fillStyle='#302134'; ctx.font='bold 18px sans-serif'; ctx.fillText(names[i],x+13,y+46);
+      }
+      // 이동하는 메모와 가는 글자 가장자리로 같은 압축 비교를 한다.
       const x=135+Math.sin(time * 2.5)*67;
-      ctx.fillStyle='#f1b6a0'; ctx.beginPath(); ctx.ellipse(x,350,42,19,-.4,0,Math.PI*2); ctx.fill();
-      ctx.strokeStyle='#52364c'; ctx.lineWidth=4; ctx.beginPath(); ctx.arc(x,342,14,0,Math.PI*1.7); ctx.stroke();
+      ctx.fillStyle='#fff7e9'; ctx.fillRect(x-23,348,46,25);
+      ctx.strokeStyle='#59374b'; ctx.lineWidth=2; ctx.strokeRect(x-23,348,46,25);
       ctx.fillStyle='#352135'; ctx.fillRect(24,395,222,42);
-      ctx.fillStyle='#fff7e9'; ctx.font='bold 20px sans-serif'; ctx.fillText('케이블을 묶어요',40,423);
+      ctx.fillStyle='#fff7e9'; ctx.font='bold 20px sans-serif'; ctx.fillText('월세부터 따로',55,423);
     }
+
     const paint = (time, running) => {
       scene(sc, Math.floor(time*60)/60);
       const sample = Math.floor((time + 1e-7)*Number(fps.value))/Number(fps.value);

@@ -9,32 +9,45 @@
   "audio_codec": "aac",
   "timeline": [
     {
-      "title": "책상에서 하나만 바꿔요",
+      "title": "월급날, 돈을 네 칸으로",
       "start": 0.0,
       "end": 12.0,
-      "subtitle": "자주 쓰는 물건 하나를 골라요",
-      "source": "자체 타이틀"
+      "subtitle": "월세 · 생활비 · 비상금 · 목표",
+      "source": "01.png"
     },
     {
-      "title": "손이 닿는 곳으로",
+      "title": "나갈 돈과 모을 돈",
       "start": 12.0,
       "end": 24.0,
-      "subtitle": "편하게 꺼낼 곳으로 옮겨요",
-      "source": "자체 타이틀"
+      "subtitle": "나갈 돈과 모을 돈을 나눠요",
+      "source": "02.png"
     },
     {
-      "title": "바뀐 점을 보여 줘요",
+      "title": "내 메모에 쓸 곳부터",
       "start": 24.0,
       "end": 36.0,
-      "subtitle": "바꾸기 전과 후를 찍어 봐요",
-      "source": "자체 타이틀"
+      "subtitle": "내 메모에 쓸 곳부터 적어요",
+      "source": "03.png"
     }
   ],
   "audio": {
     "silent": true
   },
   "warnings": [],
-  "sources": [],
+  "sources": [
+    {
+      "name": "01.png",
+      "sha256": "3cb643e92f6d1f5dc3671eb93de66ad49e0caa9793d9ce09f4e6b96579e4b8a3"
+    },
+    {
+      "name": "02.png",
+      "sha256": "9e43de8f3749f6135bb011b5234a38b7d756a361bad7dc3d64725052d0579677"
+    },
+    {
+      "name": "03.png",
+      "sha256": "8effffa74438f6cecc9009df0f9d1ceab5c650556d76473af47684c27c555243"
+    }
+  ],
   "caption_source": "script.json (대본 기반, 음성 인식 없음)",
   "caption_size": 56,
   "rights_files": []

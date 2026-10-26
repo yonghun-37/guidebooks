@@ -3,7 +3,7 @@
 기준은 `docs/STYLE-GUIDE.md` 6절이다. 그림 개수 목표는 없다. 새 그림을 만들기 전에 기존 도구·표가 같은 내용을 이미 보여 주는지 확인한다.
 
 - `figures.css`: `book-figure`와 결론 캡션, `v-compare`/`v-panel`의 같은 크기 비교, `v-steps` 단계 띠, `v-svg`와 차트·파형·선·번호 스타일이다. 680px 이하에서는 비교를 위아래로 배치해 글자를 줄이지 않는다.
-- `figure-components.svg`: `screen-frame`은 서비스와 무관한 화면 틀, `number-circle`은 번호 배경이다. `cable-desk`/`paper-desk`는 같은 피사체를 넓게·가까이 보여 주는 직접 그린 세로 장면이다.
+- `figure-components.svg`: `screen-frame`은 서비스와 무관한 화면 틀, `number-circle`은 번호 배경이다. `egg-rice`는 간장 계란밥의 전체·가까운 샷, `money-card`는 대표 해설의 네 칸 메모다.
 - `upload-flow.svg#upload-flow`: 실습 8의 업로드 순서다. `<img>` 대신 제목이 있는 바깥 SVG에서 `<use>`로 불러와 문서의 테마 색을 물려받는다.
 - `--fig-main/alt/warn/good/bad/grid`와 본문의 `--surface/ink/soft/muted`를 쓴다. 외부 심벌에도 같은 변수가 전달된다. 새 색이 필요하면 라이트·다크 값을 함께 정한다.
 

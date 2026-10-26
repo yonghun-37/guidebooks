@@ -63,7 +63,7 @@
     else actions.push(['아동용 여부를 먼저 판단하세요. 공식 판단 기준에서 의도한 시청자·주제·표현을 확인하세요.', '#audience-step']);
     if (['realistic', 'music'].includes(ai.value) || (needsVoice && ['clone', 'realistic'].includes(voice.value))) actions.push(['AI 사용: 예. 사실적 합성·타인 목소리 복제·AI 음악 등 공개 대상이 있습니다. 속성 → AI 사용 또는 더보기 → 변경된 콘텐츠에서 표시하고 소재 권리도 확인하세요.', '#ai-step']);
     else if (needsVoice && voice.value === 'own') actions.push([ai.value === 'cartoon'
-      ? 'AI 사용: 선택한 조건만이라면 아니요. 비현실적 종이 로봇 삽화·본인 음성은 공개 불필요 예시에 대조할 수 있습니다. 실제처럼 보이는 합성이나 AI 음악이 섞이지 않았는지 확인하세요.'
+      ? 'AI 사용: 선택한 조건만이라면 아니요. 비현실적 펭귄 택배기사 삽화·본인 음성은 공개 불필요 예시에 대조할 수 있습니다. 실제처럼 보이는 합성이나 AI 음악이 섞이지 않았는지 확인하세요.'
       : 'AI 사용: 선택한 조건만이라면 아니요. 본인 녹음·본인 음성 복제 외 공개 대상 합성이 없는지 확인하세요.', '#ai-step']);
     else if (needsVoice) actions.push(['AI 사용: 음성 조건 확인 전에는 판단을 보류하세요. 일반 TTS도 실제 인물의 발언으로 오인될지 듣고 공식 예시와 대조하세요. 사용 허락도 확인한 뒤 실제 화면에서 결정하세요.', '#ai-step']);
     else if (['assist', 'none'].includes(ai.value)) actions.push(['AI 사용: 선택한 조건만이라면 아니요. 대본·자막 보조 외 사실적 합성이나 AI 음악이 없는지 확인하세요.', '#ai-step']);

@@ -1,6 +1,6 @@
 /* 독립적으로 읽히는 시각자료. 서비스 UI와 로고를 재현하지 않는다. */
-:root{--fig-main:#20644f;--fig-alt:#355b98;--fig-warn:#a34029;--fig-good:#e5f0e7;--fig-bad:#f8e7df;--fig-grid:#acc0b3}
-:root[data-theme='dark']{--fig-main:#9ce0bd;--fig-alt:#aecaff;--fig-warn:#ffb499;--fig-good:#233d32;--fig-bad:#4b302d;--fig-grid:#668976}
+:root{--fig-main:#20644f;--fig-alt:#355b98;--fig-warn:#a34029;--fig-good:#e5f0e7;--fig-bad:#f8e7df;--fig-yolk:#e6ad38;--fig-grid:#acc0b3}
+:root[data-theme='dark']{--fig-main:#9ce0bd;--fig-alt:#aecaff;--fig-warn:#ffb499;--fig-good:#233d32;--fig-bad:#4b302d;--fig-yolk:#f2c55d;--fig-grid:#668976}
 .book-figure{min-width:0;margin:28px 0;padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--surface);break-inside:avoid}
 .book-figure figcaption{margin:18px 0 0;color:var(--ink);font-size:14px;line-height:1.8}
 .book-figure .figure-kicker{margin:0 0 16px;font-size:14px;font-weight:750;color:var(--accent)}
