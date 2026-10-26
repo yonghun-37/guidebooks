@@ -1,0 +1,3 @@
+너는 블로그를 한 번도 해 본 적 없는 초보자 역할의 **독립 검토자**(Codex)다. AGENTS.md, docs/STYLE-GUIDE.md(5절 채점표), docs/learner-questions-blog.md를 읽고, site-blog/ 전체를 **학습자처럼 처음부터** 읽어라(표지 → 이론 1~13 → 실습 0~10 → E2E → 부록). blog-kit은 README대로 깨끗한 임시 복사본(Python 3.11)에서 실제로 따라 해 본다. 파일을 수정하지 마라(검토 결과 문서만 작성). commit하지 마라.
+판단 기준: "이 책만 보고 오늘 AI 서비스로 글 한 편을 만들어 네이버 블로그(또는 티스토리)에 실제로 발행할 수 있는가?", "어떤 AI를 어디서 얼마에 쓰는지, 수익이 어떻게 나는지 학습자 질문에 직답하는가?", 예시가 현실적인가(STYLE-GUIDE 7절), 그림이 도움이 되는 곳에 있는가(6절).
+산출물: docs/results/phase-B7-findings.md — 발견마다 [차단/혼란/사소], 위치(파일·절), 무엇이 문제인지 학습자 말로, 고치는 방법 제안. 그리고 docs/results/phase-B7-scorecard.md(채점표 점수와 근거), 결론 한 줄(완주 가능/조건부/불가). `python3 scripts/notify.py "🔎 [B7 블로그 독립 검토] 차단 N·혼란 N·사소 N ..."`.
