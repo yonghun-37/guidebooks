@@ -5,6 +5,7 @@
   <meta name="description" content="AI로 뉴스카드와 릴스를 만들고 작은 콘텐츠 작업실을 꾸리는 입문 웹 교과서. 전체 지도와 첫 시간 예산부터 시작하세요.">
   <title>ReelsBook · 작은 콘텐츠 작업실을 만드는 책</title>
   <link rel="icon" href="data:,"><link rel="stylesheet" href="assets/book.css">
+  <script src="assets/catalog.js" defer></script>
   <script src="assets/book.js" defer></script>
 </head>
 <body>
@@ -16,8 +17,8 @@
         <p class="eyebrow">A SMALL STUDIO, A STEADY PRACTICE</p>
         <h1 id="cover-title">콘텐츠 하나에서,<br>나만의 작업실로.</h1>
         <p class="lead">AI로 뉴스카드와 릴스를 만들고,<br>검수하고, 운영하는 법을 배우는 책.<br>첫걸음은 도구 설치보다 작은 계획입니다.</p>
-        <div class="button-row"><a class="button primary" href="chapters/01-map.html">1장부터 시작하기 <span aria-hidden="true">↗</span></a><a class="button" href="lab.html">자동화 실험실 <span class="status">준비 중</span></a></div>
-        <p class="hero-foot">사전 지식 필요 없음 · 읽고, 만져 보고, 직접 남기는 교과서</p>
+        <div class="button-row"><a class="button primary" href="chapters/01-map.html">1장부터 시작하기 <span aria-hidden="true">↗</span></a><a class="button" href="lab.html">자동화 실험실 ↗</a></div>
+        <p class="book-counts"><strong data-chapter-count></strong>개 장 · <strong data-sim-count></strong>개 시뮬레이터 <span class="small">(그림·시간 도구 포함)</span></p><p class="hero-foot">사전 지식 필요 없음 · 읽고, 만져 보고, 직접 남기는 교과서</p>
       </div>
       <figure class="cover-art">
         <div class="art-top"><span>REELSBOOK / FIELD NOTES</span><span>VOL. 01</span></div>
@@ -40,13 +41,14 @@
     <section class="home-section" aria-labelledby="paths-title">
       <div class="section-heading"><h2 id="paths-title">어디서 시작할까요?</h2><p>지금 품고 있는 질문에서 출발하세요.</p></div>
       <div class="path-grid">
-        <article class="path-card"><p class="path-number">PATH 01 / 처음이라면</p><h3>“무엇부터 해야 하죠?”</h3><p>계정이 하나의 작업실이 되는 과정을 보고, 내 시간을 정합니다.</p><a href="chapters/01-map.html">전체 지도부터 읽기 →</a></article>
-        <article class="path-card"><p class="path-number">PATH 02 / 만들어 보고 싶다면</p><h3>“첫 카드 한 장부터.”</h3><p>1장에서 제작 단계와 시간 예산을 살펴보세요. 제작 실습은 이어서 공개합니다.</p><a href="chapters/01-map.html#pipeline-map">카드·릴스 단계 살펴보기 →</a></article>
-        <article class="path-card"><p class="path-number">PATH 03 / 자동화가 궁금하다면</p><h3>“어디까지 연결할까요?”</h3><p>검수부터 게시까지 사람이 결정할 자리를 지도에서 확인합니다.</p><a href="chapters/01-map.html#principle">파이프라인 원리 읽기 →</a></article>
+<article class="path-card"><p class="path-number">PATH 01 / 완전 초보</p><h3>질문과 시간부터.</h3><p>1~5장으로 독자·소재·권리를 정하고, 6~8장에서 첫 카드와 릴스를 만듭니다. 9~14장으로 검수·운영을 잇습니다.</p><a href="chapters/01-map.html">1장 전체 지도 →</a></article>
+<article class="path-card"><p class="path-number">PATH 02 / 코딩 가능</p><h3>생성에서 승인까지.</h3><p>5장의 권리 확인 → 6~8장 키트 제작 → 9~10장 파이프라인·드라이런 순서. 12장 게시 전 점검도 함께 읽으세요.</p><a href="chapters/09-pipeline.html">9장 파이프라인 →</a></article>
+<article class="path-card"><p class="path-number">PATH 03 / 이미 계정 운영 중</p><h3>내 기록으로 다시 보기.</h3><p>11장 지표와 12장 안전 점검을 먼저 확인하고, 3·13장 장부 → 14장 실행 계획을 내 시간에 맞춥니다.</p><a href="chapters/11-analytics.html">11장 운영과 분석 →</a></article>
       </div>
     </section>
+    <section id="samples" class="home-section" aria-labelledby="samples-title"><p class="eyebrow">스타터 키트로 실제 만든 파일</p><h2 id="samples-title">첫 결과물은 이렇게 생겼어요.</h2><p>가상의 합성 피드로 만든 교육용 샘플입니다. 실제 뉴스·성과가 아닙니다. 유료 API 없이 오프라인 모드로 생성했습니다.</p><div class="sample-grid"><figure><a href="assets/img/samples/card-01.png"><img src="assets/img/samples/card-01.png" width="1080" height="1350" loading="lazy" alt="합성 AI 소식의 제목·요점·출처를 배치한 첫 뉴스카드"></a><figcaption>1080×1350 카드 · <a href="chapters/07-cards.html">7장에서 만들어 보기</a> · <a href="assets/img/samples/card-02.png">2</a> / <a href="assets/img/samples/card-03.png">3</a> / <a href="assets/img/samples/card-04.png">4</a> / <a href="assets/img/samples/card-05.png">5번 카드</a></figcaption></figure><figure><video controls playsinline preload="metadata" poster="assets/img/samples/card-01.png" width="1080" height="1920" aria-label="합성 뉴스카드로 만든 20초 무음 릴스. 한글 자막이 화면에 포함됩니다."><source src="assets/img/samples/reel.mp4" type="video/mp4"><p><a href="assets/img/samples/reel.mp4">릴스 MP4 내려받기</a></p></video><figcaption>1080×1920 · 20초 · 무음·화면 자막 · <a href="assets/img/samples/subtitles.srt">자막 SRT</a> · <a href="chapters/08-reels.html">8장 제작 실습</a></figcaption></figure></div></section>
     <section id="contents" class="home-section" aria-labelledby="contents-title">
-      <div class="section-heading"><h2 id="contents-title">이 책의 지도</h2><p>1장 공개 · 다음 장은 순서대로 준비합니다.</p></div>
+      <div class="section-heading"><h2 id="contents-title">이 책의 지도</h2><p>기획부터 제작·검수·운영, 그리고 실험실과 용어집까지.</p></div>
       <div data-chapter-toc><p><a href="chapters/01-map.html">1장 · 계정 하나가 돈이 되기까지</a></p></div>
       <noscript><p class="note">자바스크립트가 꺼져 있습니다. 1장 본문은 위 링크에서 읽을 수 있습니다.</p></noscript>
     </section>

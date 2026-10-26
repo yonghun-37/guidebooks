@@ -1,0 +1,110 @@
+{
+  "phase": "7r",
+  "checked_at": "2026-10-26T01:13:28.872276+00:00",
+  "meaning": "문서/예산/증거 정합성만 검증. 실제 계정/앱/API/기기/키트 성공 테스트 아님.",
+  "checks": [
+    {
+      "name": "source_ids",
+      "passed": true,
+      "detail": "195 unique source entries/anchors"
+    },
+    {
+      "name": "practice_facts",
+      "passed": true,
+      "detail": "26 facts/gaps"
+    },
+    {
+      "name": "prior_facts_preserved",
+      "passed": true,
+      "detail": "173 preexisting fact rows preserved"
+    },
+    {
+      "name": "practice_sections",
+      "passed": true,
+      "detail": "practice 1..10 in order"
+    },
+    {
+      "name": "source_references",
+      "passed": true,
+      "detail": "189 distinct referenced source IDs"
+    },
+    {
+      "name": "hermes_budget",
+      "passed": true,
+      "detail": "initial 6 + supplements 2"
+    },
+    {
+      "name": "query_raw_inventory",
+      "passed": true,
+      "detail": "8 query files and 8 raw files in external RUN"
+    },
+    {
+      "name": "query_requirements",
+      "passed": true,
+      "detail": "each query includes required format/date/change/unknown instructions"
+    },
+    {
+      "name": "raw_and_query_sha256",
+      "passed": true,
+      "detail": "all 16 files match recorded hashes"
+    },
+    {
+      "name": "execution_vs_quality",
+      "passed": true,
+      "detail": "8 exit0 results explicitly failed evidence gathering"
+    },
+    {
+      "name": "maximum_concurrency",
+      "passed": true,
+      "detail": "observed max 4"
+    },
+    {
+      "name": "direct_official_body_minimum",
+      "passed": true,
+      "detail": "22 direct body confirmations; 16 new + 6 existing"
+    },
+    {
+      "name": "official_response_hashes",
+      "passed": true,
+      "detail": "all recorded local official HTTP response hashes match"
+    },
+    {
+      "name": "limited_sources_excluded",
+      "passed": true,
+      "detail": "metadata/search/title-only excluded from body confirmation count"
+    },
+    {
+      "name": "dated_changes",
+      "passed": true,
+      "detail": "scope, alt_text, partnership, AI, Graph release dates retained"
+    },
+    {
+      "name": "unknowns_and_conflicts",
+      "passed": true,
+      "detail": "unresolved app steps and document conflicts explicit"
+    },
+    {
+      "name": "local_links",
+      "passed": true,
+      "detail": "all owned-document local links and source anchors resolve"
+    },
+    {
+      "name": "diff_whitespace",
+      "passed": true,
+      "detail": "git diff --check passed for owned files"
+    },
+    {
+      "name": "no_trailing_whitespace",
+      "passed": true,
+      "detail": "owned documents contain no trailing whitespace"
+    },
+    {
+      "name": "raw_not_copied",
+      "passed": true,
+      "detail": "no full raw response/session header copied to repository documents"
+    }
+  ],
+  "passed": true,
+  "total": 20,
+  "passed_count": 20
+}

@@ -1,0 +1,524 @@
+{
+  "phase": "7r",
+  "cutoff": "2026-10-26",
+  "meaning": "HTTP200·제목·메타데이터·검색을 본문 확인으로 세지 않음. 원 HTML/텍스트는 /tmp 캐시로만 보관. 한국 실계정·실제 게시는 미검증.",
+  "sources": [
+    {
+      "id": "S174",
+      "title": "Graph API versions",
+      "url": "https://developers.facebook.com/docs/graph-api/changelog/versions",
+      "org": "Meta for Developers",
+      "date": "최종 갱신일 미상; v26.0 릴리스 2026-07-29",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Graph API 버전표의 v26.0 최상단 행·v25.0·v20.0 만료일. Marketing API 표와 구분",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 176383,
+        "sha256": "c091e2a835d54dac289d136aa8776cff02a731d39ef1843857a76269fd74f5bc",
+        "status": 200
+      }
+    },
+    {
+      "id": "S175",
+      "title": "Graph API v26.0 changelog",
+      "url": "https://developers.facebook.com/docs/graph-api/changelog/version26.0",
+      "org": "Meta for Developers",
+      "date": "릴리스 2026-07-29; 최종 갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Version 26.0·Released July 29, 2026·Available until TBD",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 176724,
+        "sha256": "36597ad92e2d2aa0b546ea751716fda94e31f85253133beebe533bf1f64787f4",
+        "status": 200
+      }
+    },
+    {
+      "id": "S176",
+      "title": "Create a Meta app for the Instagram API",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/create-an-instagram-app",
+      "org": "Meta for Developers",
+      "date": "최종 갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Create App→Other→Business→앱 상세→Instagram Set up→계정 추가. Step 10의 live data 검수 필요 문장은 S031과 적용 범위 상충/모호성 보존",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 9718,
+        "sha256": "c7e1e43c229873a8527c6b7d3a220eec6b8cf745ad24baf482d407ac6a19a5fb",
+        "status": 200
+      }
+    },
+    {
+      "id": "S177",
+      "title": "Get started with Instagram API with Instagram Login",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login/get-started",
+      "org": "Meta for Developers",
+      "date": "최종 갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Instagram > API setup with Instagram business login > Generate token. 대시보드 토큰 60일·OAuth 토큰 1시간·GET /me fields=user_id,username",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 6344,
+        "sha256": "cbc91064491d640f0d43d2b01ee8c7c276b46cdcd81aea763e32252cc2af38e3",
+        "status": 200
+      }
+    },
+    {
+      "id": "S178",
+      "title": "App Modes",
+      "url": "https://developers.facebook.com/documentation/development/build-and-test/app-modes",
+      "org": "Meta for Developers",
+      "date": "최종 갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "개발 모드 권한 요청은 역할 사용자 한정. 테스트 게시물 비역할 사용자 비노출 설명. Instagram별 예외와 실제 공개 결과는 미확인",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 3329,
+        "sha256": "355b9145f3dc69c9dd0b0aa21f2cfebb1aa2aa37459f1c6174c9fb8defbf34cc",
+        "status": 200
+      }
+    },
+    {
+      "id": "S179",
+      "title": "App Roles",
+      "url": "https://developers.facebook.com/documentation/development/build-and-test/app-roles",
+      "org": "Meta for Developers",
+      "date": "최종 갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Administrator/Developer/Tester 개발 중 권한·Roles 초대. Facebook Authorized App Tester 수락 경로를 Instagram 테스터 경로로 확대하지 않음",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 5775,
+        "sha256": "fe5d8247276690be748b144b55b92fbefc3ffd8f463f20b046613b434a4e874d",
+        "status": 200
+      }
+    },
+    {
+      "id": "S180",
+      "title": "Set up a professional Instagram account",
+      "url": "https://help.instagram.com/502981923235522",
+      "org": "Instagram Help Center",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "메타데이터만 확인",
+      "body_confirmed": false,
+      "scope": "제목·소개만 수신. 전환 단계·공개 조건·한국 앱 메뉴 본문 미확인",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 345676,
+        "sha256": "57c6e6012629874dfec1ea53c6df9198e40c35f4b344c1705ecc451db4ca046c",
+        "status": 200
+      }
+    },
+    {
+      "id": "S181",
+      "title": "Instagram 인증앱을 통한 2단계 인증 도움말",
+      "url": "https://help.instagram.com/1582474155197965",
+      "org": "Instagram Help Center",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "메타데이터만 확인",
+      "body_confirmed": false,
+      "scope": "소개에 인증앱·알 수 없는 기기 로그인 코드. Accounts Center의 현재 설정 순서는 미확인. 566810106808145는 Meta Account 제목으로 Instagram 절차 근거에서 제외",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 345831,
+        "sha256": "5c29f51f12bdcf7e8ad740e08b6d67c495dd98a6720973e805f362b418fd1c9e",
+        "status": 200
+      }
+    },
+    {
+      "id": "S182",
+      "title": "How You Can Use a Backup Code on Instagram",
+      "url": "https://help.instagram.com/1006568999411025",
+      "org": "Instagram Help Center",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "메타데이터만 확인",
+      "body_confirmed": false,
+      "scope": "백업코드 주제의 제목·소개만 확인. 발급·재발급·개수·현재 메뉴는 미확인",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 345569,
+        "sha256": "08da42f50d71bbb0e68843bc1bc3abef0127f9dcec8475f3685df434d92e55ca",
+        "status": 200
+      }
+    },
+    {
+      "id": "S183",
+      "title": "AI Content Labeling on Instagram",
+      "url": "https://help.instagram.com/761121959519495",
+      "org": "Instagram Help Center",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "메타데이터만 확인",
+      "body_confirmed": false,
+      "scope": "공유 전 AI 콘텐츠 표시를 안내한다는 제목·소개만 확인. Add AI label 토글 위치·한국 번역·게시 후 수정은 미확인",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 345105,
+        "sha256": "fdee5e726e310094c9b6e12f130098347660c7f0d0a2e3724e281767313b3e98",
+        "status": 200
+      }
+    },
+    {
+      "id": "S184",
+      "title": "유료 파트너십 표시 도움말 후보",
+      "url": "https://help.instagram.com/116947042301556",
+      "org": "Instagram Help Center",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 미확인",
+      "body_confirmed": false,
+      "scope": "후보 URL 직접 열었으나 본문·제목을 확인하지 못함. Partnership label & ads / Advanced settings 경로를 확정하지 않음",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 345054,
+        "sha256": "8018f79b6698a53ab5462291aa939fbb9b82e460e09ca0ede038bb71a0fb4ad7",
+        "status": 200
+      }
+    },
+    {
+      "id": "S185",
+      "title": "Quickstart for GitHub Pages",
+      "url": "https://docs.github.com/en/pages/quickstart",
+      "org": "GitHub Docs",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "GitHub Free 공개 저장소·Settings > Pages > Deploy from a branch·배포 확인. 교육용 공개 파일 호스팅 후보이며 Meta 수신 보장 아님",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 122348,
+        "sha256": "544debff7e008e9072eca987ddfe68ed6c7042bc1d8d22136a4d8b40176a438b",
+        "status": 200
+      }
+    },
+    {
+      "id": "S186",
+      "title": "GitHub Pages limits",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "org": "GitHub Docs",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "상업용 무료 웹호스팅 이용 제한·민감정보 금지·사이트 1GB·월 대역폭 soft 100GB·rate limit. 운영 미디어 CDN으로 포괄 권장하지 않음",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 88733,
+        "sha256": "7f2af92e0ccdc5f7ab480ca66e3b436fa72448d76a0514b31baeea04aa7fac4b",
+        "status": 200
+      }
+    },
+    {
+      "id": "S187",
+      "title": "Viewing and understanding files",
+      "url": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files",
+      "org": "GitHub Docs",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Viewing or copying the raw file content 절의 파일 열기→Raw. 공개 파일 URL 후보; 바이너리 버튼·MIME·Meta 수신 및 CDN 보장은 별도 미확인",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 240075,
+        "sha256": "d42a5c27c396f4b7a7f16cf17c755c25369fcbded14406986ea325d190397298",
+        "status": 200
+      }
+    },
+    {
+      "id": "S188",
+      "title": "Adding a file to a repository",
+      "url": "https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository",
+      "org": "GitHub Docs",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Add file > Upload files·업로드·Commit changes. 웹 파일당 25MiB·명령행 100MiB. 여기의 사용자 호스팅 절차는 Codex commit 실행 허가가 아님",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 218984,
+        "sha256": "fcc7912a513d244c071637fbe047295699cb98d105d4591f796d6a994ee0b4b8",
+        "status": 200
+      }
+    },
+    {
+      "id": "S189",
+      "title": "Public buckets",
+      "url": "https://developers.cloudflare.com/r2/buckets/public-buckets/",
+      "org": "Cloudflare R2 Docs",
+      "date": "2026-09-25 갱신",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "web 직접 열람. Settings > Public Development URL > Enable > allow > Allow. 기본 비공개·r2.dev 개발용/rate limit·운영은 custom domain",
+      "method": "Codex web 직접 열람"
+    },
+    {
+      "id": "S190",
+      "title": "R2 Pricing",
+      "url": "https://developers.cloudflare.com/r2/pricing/",
+      "org": "Cloudflare R2 Docs",
+      "date": "2026-10-01 갱신",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "web 직접 열람. Standard 월 무료 저장 10GB-month·Class A 100만·Class B 1000만·초과 과금. Infrequent Access는 무료 등급 제외",
+      "method": "Codex web 직접 열람"
+    },
+    {
+      "id": "S191",
+      "title": "Get started with Cloudflare R2",
+      "url": "https://developers.cloudflare.com/r2/get-started/",
+      "org": "Cloudflare R2 Docs",
+      "date": "2026-04-21 갱신",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "web 직접 열람. R2 subscription·Storage & databases > R2 > Overview > checkout·월별 종량 과금. 카드 없는 가입은 미확인",
+      "method": "Codex web 직접 열람"
+    },
+    {
+      "id": "S192",
+      "title": "Use AirDrop to send items to nearby Apple devices",
+      "url": "https://support.apple.com/en-us/guide/mac-help/mh35868/mac",
+      "org": "Apple Support",
+      "date": "게시·갱신일 미상; 본문 iOS/macOS 26.2 이후 코드 절차 별도",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Wi-Fi/Bluetooth·Finder/AirDrop/Share·수신 Accept·Photos/Files 저장 위치. 같은 Apple Account 자동 수신 및 새 코드 흐름. 실제 기기 전송 미실시",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 732172,
+        "sha256": "916d41bb28f7c5acabfb5a36563a178dcbc05a071c531683f294c31a5e655cb7",
+        "status": 200
+      }
+    },
+    {
+      "id": "S193",
+      "title": "Download a file — iPhone & iPad",
+      "url": "https://support.google.com/drive/answer/2423534?hl=en&co=GENIE.Platform%3DiOS",
+      "org": "Google Drive Help",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Drive 앱 > More > Send a copy > Save image/Save video. Open in > Save to Files는 사진 보관함 저장과 다름",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 1618034,
+        "sha256": "f1b50ab07f078b484886166becea07fa320aa6ab60edc0c1b36006edea3cf629",
+        "status": 200
+      }
+    },
+    {
+      "id": "S194",
+      "title": "Transfer files between your computer & Android device",
+      "url": "https://support.google.com/android/answer/9064445?hl=en",
+      "org": "Google Android Help",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "scope": "Windows USB: 잠금해제→USB알림→Use USB for > File Transfer→드래그→꺼내기. 일부 Android14 이상·데이터 케이블 조건",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 1546267,
+        "sha256": "4f17badc87725d462cb2e90fdcedaf816ab8ce379276cb14e8a021ad689d8340",
+        "status": 200
+      }
+    },
+    {
+      "id": "S195",
+      "title": "About Instagram insights",
+      "url": "https://help.instagram.com/788388387972460",
+      "org": "Instagram Help Center",
+      "date": "게시·갱신일 미상",
+      "accessed": "2026-10-26",
+      "grade": "A",
+      "status": "메타데이터만 확인",
+      "body_confirmed": false,
+      "scope": "인사이트 주제 제목·소개만 확인. 앱의 View insights·날짜 필터·지표 배치는 본문 미확인",
+      "method": "Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음",
+      "http_evidence": {
+        "bytes": 345871,
+        "sha256": "204d0ba1757fa134f86101fc4b57c9699e25aea89418461823bbf3b83e3d9d2d",
+        "status": 200
+      }
+    },
+    {
+      "id": "S001",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/content-publishing",
+      "accessed": "2026-10-26",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "method": "Codex Python urllib 직접 요청 후 텍스트/HTMLParser로 읽음",
+      "scope": "공개 URL·캐러셀20개 혼합·Facebook Login for Business만 동영상 재개 업로드·AI/파트너십·100/50 내부 상충",
+      "date": "이번 응답의 최종 갱신일 미상; 기존 SOURCES 기록의 날짜와 별도",
+      "http_evidence": {
+        "bytes": 19781,
+        "sha256": "26cfcc6cee5f4dc01451e448a58a968121777626af09eea2ede2237667e58179",
+        "status": 200
+      }
+    },
+    {
+      "id": "S002",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login",
+      "accessed": "2026-10-26",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "method": "Codex Python urllib 직접 요청 후 텍스트/HTMLParser로 읽음",
+      "scope": "프로페셔널 계정·페이지 불필요·현행 publish scope·2025-01-27 변경",
+      "date": "이번 응답의 최종 갱신일 미상; 기존 SOURCES 기록의 날짜와 별도",
+      "http_evidence": {
+        "bytes": 2520,
+        "sha256": "997eddb44801de818ecefd2ef96fa149248880b321788595da2b2f8b913a1699",
+        "status": 200
+      }
+    },
+    {
+      "id": "S004",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "accessed": "2026-10-26",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "method": "Codex Python urllib 직접 요청 후 텍스트/HTMLParser로 읽음",
+      "scope": "이미지 image_url 필수·upload_type은 동영상·캐러셀 VIDEO 자식·20개·JPEG규격",
+      "date": "이번 응답의 최종 갱신일 미상; 기존 SOURCES 기록의 날짜와 별도",
+      "http_evidence": {
+        "bytes": 28307,
+        "sha256": "4304c2580f9c4199f28516c75840d195cc56b3862972a47f4b8e3514fe513e44",
+        "status": 200
+      }
+    },
+    {
+      "id": "S030",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login/business-login",
+      "accessed": "2026-10-26",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "method": "Codex Python urllib 직접 요청 후 텍스트/HTMLParser로 읽음",
+      "scope": "Standard 계정 범위·장기60일·24시간 이후 유효토큰 갱신·서버 교환",
+      "date": "이번 응답의 최종 갱신일 미상; 기존 SOURCES 기록의 날짜와 별도",
+      "http_evidence": {
+        "bytes": 14573,
+        "sha256": "a064cca47304871115540612982462a3468e2dcb8aeea51e6da2d6fe6c8bbd18",
+        "status": 200
+      }
+    },
+    {
+      "id": "S031",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/app-review",
+      "accessed": "2026-10-26",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "method": "Codex Python urllib 직접 요청 후 텍스트/HTMLParser로 읽음",
+      "scope": "본인소유/관리 Standard 검수불필요·Advanced 검수필수. 권한표 *_publishing 표기와 제품 *_publish 표기 불일치",
+      "date": "이번 응답의 최종 갱신일 미상; 기존 SOURCES 기록의 날짜와 별도",
+      "http_evidence": {
+        "bytes": 8739,
+        "sha256": "f365b744f75ad7a60ad72318a75dbc05d5fc04fad32d277b621df0e245652056",
+        "status": 200
+      }
+    },
+    {
+      "id": "S032",
+      "url": "https://developers.facebook.com/documentation/instagram-platform/changelog",
+      "accessed": "2026-10-26",
+      "status": "본문 확인",
+      "body_confirmed": true,
+      "method": "Codex Python urllib 직접 요청 후 텍스트/HTMLParser로 읽음",
+      "scope": "2026-06-22 AI·2026-04-22 유료파트너십·2025-03-24 alt_text 변경",
+      "date": "이번 응답의 최종 갱신일 미상; 기존 SOURCES 기록의 날짜와 별도",
+      "http_evidence": {
+        "bytes": 51313,
+        "sha256": "18206d0e5ca83c2f081a04ad74f3820a964f6a7687bfe4803d9b853d8a16854a",
+        "status": 200
+      }
+    },
+    {
+      "id": "S068",
+      "url": "https://help.instagram.com/269314186824048",
+      "accessed": "2026-10-26",
+      "status": "메타데이터만 확인",
+      "body_confirmed": false,
+      "method": "Codex Python urllib 직접 요청 후 텍스트/HTMLParser로 읽음",
+      "scope": "제목·meta description에 사진+동영상 합계20개. 단계 본문은 미수신",
+      "date": "이번 응답의 최종 갱신일 미상; 기존 SOURCES 기록의 날짜와 별도",
+      "http_evidence": {
+        "bytes": 345665,
+        "sha256": "a4212c4dcbd5fa6f2a9291c1e78333c9995f0025cb938a4cc3f53cc2f75b2a62",
+        "status": 200
+      }
+    }
+  ],
+  "body_confirmed_count": 22,
+  "failed_or_limited": [
+    {
+      "url": "https://help.instagram.com/225190788256708",
+      "finding": "후보가 IGTV 메타설명을 반환. 현재 릴스 게시 근거로 채택하지 않음"
+    },
+    {
+      "url": "https://help.instagram.com/566810106808145",
+      "finding": "Meta Account 2FA 제목. Instagram 인증앱 절차 근거로 채택하지 않음"
+    },
+    {
+      "url": "https://ko-kr.facebook.com/help/456185931138729",
+      "finding": "S066 재요청은 본문 없음·meta description 최대3분. 이전 Hermes 본문20분과 상충이며 앱 현행 최대 길이 확정 보류"
+    },
+    {
+      "url": "https://www.facebook.com/business/help/609176706604372",
+      "finding": "S039 재요청 제목은 Meta Business Suite 모바일 앱 예약. 데스크톱 단계 근거로 확대하지 않음"
+    },
+    {
+      "url": "https://help.instagram.com/439971288310029",
+      "finding": "본문 미수신. 검색의 터키어75일과 기존영문30일 단편을 현행 한국값으로 채택하지 않음"
+    },
+    {
+      "url": "https://www.facebook.com/business/help/942827662903020",
+      "finding": "S040 관련 제목만 수신. 데스크톱 예약 클릭 절차 미확인"
+    },
+    {
+      "url": "https://developers.cloudflare.com/r2/",
+      "finding": "urllib403과 web본문확인 결과는 다른 요청. web에서 직접 읽은 세 문서만 확인으로 계산"
+    }
+  ]
+}

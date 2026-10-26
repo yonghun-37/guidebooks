@@ -5,26 +5,27 @@
   const root = new URL('../', document.currentScript.src);
   const chapterRows = [
     [1, '01-map', '전체 지도', '계정 하나가 돈이 되기까지', '나의 목표와 시간 예산 메모', '30분 · 실습용 예상', '입문', '완성'],
-    [2, '02-formats', '1부 · 이해하기', '인스타그램은 무엇을 보여 주는가: 알고리즘과 포맷', '포맷 선택 메모'],
-    [3, '03-revenue', '1부 · 이해하기', '돈은 어디서 들어오는가: 수익 구조 6가지', '내 계정에 맞는 수익 경로 2개'],
-    [4, '04-niche', '1부 · 이해하기', '니치와 계정 기획', '계정 기획 시트'],
-    [5, '05-sources', '2부 · 만들기', '소재 찾기: 뉴스 소싱과 저작권', 'RSS 소스 목록과 인용 규칙'],
-    [6, '06-writing', '2부 · 만들기', 'AI로 글쓰기: 카드 문안과 릴스 대본', '프롬프트 템플릿 3종'],
-    [7, '07-cards', '2부 · 만들기', '뉴스카드 디자인 자동화', '첫 뉴스카드 캐러셀 PNG'],
-    [8, '08-reels', '2부 · 만들기', '릴스 자동 생성: 대본에서 영상까지', '첫 릴스 MP4'],
-    [9, '09-pipeline', '3부 · 자동화', '파이프라인 잇기', '한 번 실행으로 카드와 릴스 생성'],
-    [10, '10-publishing', '3부 · 자동화', '자동 포스팅: 공식 API와 예약', '업로드 설정(드라이런)과 예약 실행'],
-    [11, '11-analytics', '3부 · 자동화', '운영과 분석: 숫자 읽기', '주간 지표 대시보드 시트'],
-    [12, '12-safety', '4부 · 지키기·벌기', '정책·법·세금: 계정을 잃지 않는 법', '게시 전 체크리스트'],
-    [13, '13-roadmap', '4부 · 지키기·벌기', '수익화 로드맵: 0→1천→1만', '단계별 수익화 계획'],
-    [14, '14-plan', '4부 · 지키기·벌기', '30일 실행 플랜', '30일 캘린더와 주간 점검표'],
-    [15, 'lab', '실험실', '자동화 실험실', '시뮬레이터 모음'],
-    [16, 'glossary', '부록', '용어집', '용어 찾아보기'],
-    [null, 'credits', '부록', '출처·크레딧', '출처와 업데이트 기록']
+    [2, '02-formats', '1부 · 이해하기', '인스타그램은 무엇을 보여 주는가: 알고리즘과 포맷', '포맷 선택 메모', '30분 · 실습용 배분', '입문', '완성'],
+    [3, '03-revenue', '1부 · 이해하기', '돈은 어디서 들어오는가: 수익 구조 6가지', '내 계정에 맞는 수익 경로 2개', '35분 · 실습용 배분', '입문', '완성'],
+    [4, '04-niche', '1부 · 이해하기', '니치와 계정 기획', '계정 기획 시트', '40분 · 실습용 배분', '입문', '완성'],
+    [5, '05-sources', '2부 · 만들기', '소재 찾기: 뉴스 소싱과 저작권', 'RSS 소스 목록과 인용 규칙', '45분 · 실습용 배분', '입문', '완성'],
+    [6, '06-writing', '2부 · 만들기', 'AI로 글쓰기: 카드 문안과 릴스 대본', '프롬프트 템플릿 3종', '55분 · 설치 제외, 실습용 배분', '입문 · 파일 편집', '완성'],
+    [7, '07-cards', '2부 · 만들기', '뉴스카드 디자인 자동화', '첫 뉴스카드 캐러셀 PNG', '50분 · 설치 제외, 실습용 배분', '입문 · 문안과 색 편집', '완성'],
+    [8, '08-reels', '2부 · 만들기', '릴스 자동 생성: 대본에서 영상까지', '첫 릴스 MP4', '60분 · 설치 제외, 실습용 배분', '입문 · 영상 검수', '완성'],
+    [9, '09-pipeline', '3부 · 자동화', '파이프라인 잇기', '한 번 실행으로 카드와 릴스 생성', '60분 · 설치 제외, 실습용 배분', '입문 · 생성과 승인', '완성'],
+    [10, '10-publishing', '3부 · 자동화', '자동 포스팅: 공식 API와 예약', '업로드 설정(드라이런)과 예약 실행', '45분 · 연습용 예상', '따라 하기 · API 부분은 천천히', '완성'],
+    [11, '11-analytics', '3부 · 자동화', '운영과 분석: 숫자 읽기', '주간 지표 대시보드 시트', '30분 · 연습용 예상', '입문 · 나눗셈 연습', '완성'],
+    [12, '12-safety', '4부 · 지키기·벌기', '정책·법·세금: 계정을 잃지 않는 법', '게시 전 체크리스트', '40분 · 연습용 예상', '입문 · 법률 용어는 천천히', '완성'],
+    [13, '13-roadmap', '4부 · 지키기·벌기', '수익화 로드맵: 0→1천→1만', '단계별 수익화 계획', '35분 · 연습용 예상', '입문 · 계획과 장부', '완성'],
+    [14, '14-plan', '4부 · 지키기·벌기', '30일 실행 플랜', '30일 캘린더와 주간 점검표', '25분 · 연습용 예상', '입문 · 계획표 만들기', '완성'],
+    [15, 'lab', '실험실', '자동화 실험실', '시뮬레이터 모음', '자유롭게', '입문', '완성'],
+    [16, 'glossary', '부록', '용어집', '용어 찾아보기', '자유롭게', '입문', '완성'],
+    [null, 'credits', '부록', '출처·크레딧', '출처와 업데이트 기록', '자유롭게', '입문', '완성']
   ];
   const chapters = chapterRows.map(([number, slug, part, title, deliverable, duration = '추후 안내', difficulty = '추후 안내', status = '준비중']) =>
     Object.freeze({ number, slug, part, title, deliverable, duration, difficulty, status }));
-  const url = path => new URL(path, root).href;
+  const prefix = new URL('.', location.href).href === root.href ? '' : '../';
+  const url = path => prefix + path;
   const chapterUrl = chapter => {
     if (['lab', 'glossary', 'credits'].includes(chapter.slug)) return url(`${chapter.slug}.html`);
     return chapter.status === '완성' ? url(`chapters/${chapter.slug}.html`) : url(`chapters/coming-soon.html?chapter=${chapter.slug}`);
@@ -36,6 +37,8 @@
   const link = chapter => `<a href="${chapterUrl(chapter)}">${esc(label(chapter))} ${status(chapter)}</a>`;
   const selected = document.body.dataset.chapter === 'pending' ? new URLSearchParams(location.search).get('chapter') : document.body.dataset.chapter;
   const current = chapters.find(chapter => chapter.slug === selected);
+  document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.filter(c => c.number && c.status === '완성').length; });
+  document.querySelectorAll('[data-sim-count]').forEach(node => { node.textContent = (window.ReelsCatalog || []).length; });
   window.ReelsBook = Object.freeze({ chapters: Object.freeze(chapters), url, chapterUrl, byNumber });
 
   document.querySelectorAll('[data-site-header]').forEach(header => {
@@ -85,7 +88,7 @@
   }
   document.querySelectorAll('[data-site-footer]').forEach(footer => {
     footer.className = 'site-footer';
-    footer.innerHTML = `<span>ReelsBook · 작은 콘텐츠 작업실을 만드는 책</span><span><a href="${url('glossary.html')}">용어집 · 준비 중</a> &nbsp; <a href="${url('credits.html')}">출처·크레딧 · 준비 중</a></span>`;
+    footer.innerHTML = `<span>ReelsBook · 작은 콘텐츠 작업실을 만드는 책</span><span><a href="${url('glossary.html')}">용어집</a> &nbsp; <a href="${url('credits.html')}">출처·크레딧</a></span>`;
   });
 
   // 저장소 접근 자체도 실패할 수 있다. 테마와 체크 상태 모두 읽기/쓰기를 보호한다.
@@ -106,13 +109,31 @@
   document.querySelectorAll('[data-theme-select]').forEach(select => select.addEventListener('change', () => setTheme(select.value)));
   document.querySelectorAll('[data-theme-toggle]').forEach(button => button.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark')));
   media.addEventListener('change', applyTheme);
+  window.addEventListener('storage', event => {
+    if (event.key !== 'reelsbook:theme') return;
+    const savedTheme = storage.get('reelsbook:theme');
+    theme = ['light', 'dark', 'system'].includes(savedTheme) ? savedTheme : 'system';
+    applyTheme();
+  });
   applyTheme();
 
+  const embedId = new URLSearchParams(location.search).get('embed');
+  const embedded = embedId && document.getElementById(embedId);
+  if (embedded?.closest('.block-figure, .block-simulator')) {
+    const block = embedded.closest('.chapter-block') || embedded;
+    let node = block;
+    while (node && node !== document.body) {
+      [...node.parentElement.children].forEach(sibling => { if (sibling !== node && !['SCRIPT', 'STYLE'].includes(sibling.tagName)) sibling.hidden = true; });
+      node = node.parentElement;
+    }
+    block.querySelectorAll('.simulator').forEach(sim => { if (sim !== embedded) sim.hidden = true; });
+    document.documentElement.classList.add('sim-embed');
+  }
   document.querySelectorAll('a[data-term]').forEach((anchor, index) => {
     anchor.classList.add('term');
     const tooltip = document.createElement('span');
     tooltip.className = 'term-tip'; tooltip.id = `term-tip-${index}`; tooltip.role = 'tooltip';
-    tooltip.textContent = `${anchor.dataset.term} · 용어집에서 보기`;
+    tooltip.textContent = `${(anchor.dataset.termDescription || anchor.dataset.term)} · 용어집에서 보기`;
     anchor.setAttribute('aria-describedby', tooltip.id);
     anchor.append(tooltip);
     anchor.addEventListener('keydown', event => { if (event.key === 'Escape') tooltip.hidden = true; });

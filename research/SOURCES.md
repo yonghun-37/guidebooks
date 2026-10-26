@@ -14,6 +14,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Codex curl 본문 확인; 한도 설명 100/50 내부 충돌, 캐러셀 20개·JPEG·게시 절차 확인
 
+- Phase 7r 재확인(2026-10-26): **본문 확인**. 공개 URL·캐러셀20개 혼합·Facebook Login for Business만 동영상 재개 업로드·AI/파트너십·100/50 내부 상충. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
+
 <a id="s002"></a>
 ### S002. Instagram API with Instagram Login
 
@@ -23,6 +25,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Codex curl 본문 확인; 프로페셔널 계정·페이지 불필요·scope 변경일 확인
+
+- Phase 7r 재확인(2026-10-26): **본문 확인**. 프로페셔널 계정·페이지 불필요·현행 publish scope·2025-01-27 변경. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
 
 <a id="s003"></a>
 ### S003. IG User content_publishing_limit
@@ -43,6 +47,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Codex curl 본문 확인; JPEG 8MB·이미지 비율·릴스 3초~15분·23~60fps·300MB 확인
+
+- Phase 7r 재확인(2026-10-26): **본문 확인**. 이미지 image_url 필수·upload_type은 동영상·캐러셀 VIDEO 자식·20개·JPEG규격. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
 
 <a id="s005"></a>
 ### S005. How to earn money on Instagram Gifts
@@ -304,6 +310,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Codex curl 본문 확인; 장기 60일·24시간 지난 유효 토큰 갱신·앱 시크릿 서버 보관 확인
 
+- Phase 7r 재확인(2026-10-26): **본문 확인**. Standard 계정 범위·장기60일·24시간 이후 유효토큰 갱신·서버 교환. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
+
 <a id="s031"></a>
 ### S031. App Review for Instagram API
 
@@ -313,6 +321,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Codex curl 본문 확인; 소유/관리 계정 Standard와 타 비즈니스 Advanced·검수 구분 확인
+
+- Phase 7r 재확인(2026-10-26): **본문 확인**. 본인소유/관리 Standard 검수불필요·Advanced 검수필수. 권한표 *_publishing 표기와 제품 *_publish 표기 불일치. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
 
 <a id="s032"></a>
 ### S032. Instagram Platform Changelog
@@ -325,6 +335,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 확인 범위: Codex curl 본문 확인; 2026-06-22 AI info 파라미터와 파트너십 라벨 항목 확인
 - Phase 1b 재확인: 2026-10-26 · Codex curl 직접 열람 · 확인함 · Phase1b curl본문재확인:2025-01-21views도입·폐기v22+/4-21전체;impressions미디어생성일예외
 
+
+- Phase 7r 재확인(2026-10-26): **본문 확인**. 2026-06-22 AI·2026-04-22 유료파트너십·2025-03-24 alt_text 변경. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
 
 <a id="s033"></a>
 ### S033. Instagram Platform Overview
@@ -689,6 +701,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 한국어 원문; 직접 게시 최대20개·캐러셀 영상은 독립 릴스가 아님
+
+- Phase 7r 재확인(2026-10-26): **메타데이터만 확인**. 제목·meta description에 사진+동영상 합계20개. 단계 본문은 미수신. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
 
 <a id="s069"></a>
 ### S069. Instagram에서 공유하는 사진의 이미지 해상도
@@ -1807,4 +1821,251 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: 검색 발췌 · Codex web 직접 열람 · 검색본문팔로워1000·90일300만·동영상/게시물·심사·최소5만원·익익월6일.직접열람은메뉴셸이므로미확정
 - 확인 위치: 검색색인·직접본문메뉴만
+
+
+## Phase 7r — 오늘 기준 실습 절차 재조사
+
+2026-10-26 재확인. `본문 확인`도 해당 절의 문서 확인이며 한국 실계정·화면·게시 성공을 뜻하지 않는다. 세부 확인 범위와 응답 해시는 [verification-phase-7r.json](verification-phase-7r.json)을 따른다.
+
+<a id="s174"></a>
+### S174. Graph API versions
+
+- URL: https://developers.facebook.com/docs/graph-api/changelog/versions
+- 기관: Meta for Developers
+- 게시·갱신일: 최종 갱신일 미상; v26.0 릴리스 2026-07-29
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Graph API 버전표의 v26.0 최상단 행·v25.0·v20.0 만료일. Marketing API 표와 구분
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s175"></a>
+### S175. Graph API v26.0 changelog
+
+- URL: https://developers.facebook.com/docs/graph-api/changelog/version26.0
+- 기관: Meta for Developers
+- 게시·갱신일: 릴리스 2026-07-29; 최종 갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Version 26.0·Released July 29, 2026·Available until TBD
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s176"></a>
+### S176. Create a Meta app for the Instagram API
+
+- URL: https://developers.facebook.com/documentation/instagram-platform/create-an-instagram-app
+- 기관: Meta for Developers
+- 게시·갱신일: 최종 갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Create App→Other→Business→앱 상세→Instagram Set up→계정 추가. Step 10의 live data 검수 필요 문장은 S031과 적용 범위 상충/모호성 보존
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s177"></a>
+### S177. Get started with Instagram API with Instagram Login
+
+- URL: https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login/get-started
+- 기관: Meta for Developers
+- 게시·갱신일: 최종 갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Instagram > API setup with Instagram business login > Generate token. 대시보드 토큰 60일·OAuth 토큰 1시간·GET /me fields=user_id,username
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s178"></a>
+### S178. App Modes
+
+- URL: https://developers.facebook.com/documentation/development/build-and-test/app-modes
+- 기관: Meta for Developers
+- 게시·갱신일: 최종 갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · 개발 모드 권한 요청은 역할 사용자 한정. 테스트 게시물 비역할 사용자 비노출 설명. Instagram별 예외와 실제 공개 결과는 미확인
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s179"></a>
+### S179. App Roles
+
+- URL: https://developers.facebook.com/documentation/development/build-and-test/app-roles
+- 기관: Meta for Developers
+- 게시·갱신일: 최종 갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Administrator/Developer/Tester 개발 중 권한·Roles 초대. Facebook Authorized App Tester 수락 경로를 Instagram 테스터 경로로 확대하지 않음
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s180"></a>
+### S180. Set up a professional Instagram account
+
+- URL: https://help.instagram.com/502981923235522
+- 기관: Instagram Help Center
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **메타데이터만 확인** · 제목·소개만 수신. 전환 단계·공개 조건·한국 앱 메뉴 본문 미확인
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s181"></a>
+### S181. Instagram 인증앱을 통한 2단계 인증 도움말
+
+- URL: https://help.instagram.com/1582474155197965
+- 기관: Instagram Help Center
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **메타데이터만 확인** · 소개에 인증앱·알 수 없는 기기 로그인 코드. Accounts Center의 현재 설정 순서는 미확인. 566810106808145는 Meta Account 제목으로 Instagram 절차 근거에서 제외
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s182"></a>
+### S182. How You Can Use a Backup Code on Instagram
+
+- URL: https://help.instagram.com/1006568999411025
+- 기관: Instagram Help Center
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **메타데이터만 확인** · 백업코드 주제의 제목·소개만 확인. 발급·재발급·개수·현재 메뉴는 미확인
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s183"></a>
+### S183. AI Content Labeling on Instagram
+
+- URL: https://help.instagram.com/761121959519495
+- 기관: Instagram Help Center
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **메타데이터만 확인** · 공유 전 AI 콘텐츠 표시를 안내한다는 제목·소개만 확인. Add AI label 토글 위치·한국 번역·게시 후 수정은 미확인
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s184"></a>
+### S184. 유료 파트너십 표시 도움말 후보
+
+- URL: https://help.instagram.com/116947042301556
+- 기관: Instagram Help Center
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 미확인** · 후보 URL 직접 열었으나 본문·제목을 확인하지 못함. Partnership label & ads / Advanced settings 경로를 확정하지 않음
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s185"></a>
+### S185. Quickstart for GitHub Pages
+
+- URL: https://docs.github.com/en/pages/quickstart
+- 기관: GitHub Docs
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · GitHub Free 공개 저장소·Settings > Pages > Deploy from a branch·배포 확인. 교육용 공개 파일 호스팅 후보이며 Meta 수신 보장 아님
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s186"></a>
+### S186. GitHub Pages limits
+
+- URL: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
+- 기관: GitHub Docs
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · 상업용 무료 웹호스팅 이용 제한·민감정보 금지·사이트 1GB·월 대역폭 soft 100GB·rate limit. 운영 미디어 CDN으로 포괄 권장하지 않음
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s187"></a>
+### S187. Viewing and understanding files
+
+- URL: https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files
+- 기관: GitHub Docs
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Viewing or copying the raw file content 절의 파일 열기→Raw. 공개 파일 URL 후보; 바이너리 버튼·MIME·Meta 수신 및 CDN 보장은 별도 미확인
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s188"></a>
+### S188. Adding a file to a repository
+
+- URL: https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+- 기관: GitHub Docs
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Add file > Upload files·업로드·Commit changes. 웹 파일당 25MiB·명령행 100MiB. 문서의 저장 단계는 Propose changes이며 저장소 권한/브랜치에 따라 검토가 필요할 수 있다. 여기의 사용자 호스팅 절차는 Codex commit 실행 허가가 아님
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s189"></a>
+### S189. Public buckets
+
+- URL: https://developers.cloudflare.com/r2/buckets/public-buckets/
+- 기관: Cloudflare R2 Docs
+- 게시·갱신일: 2026-09-25 갱신
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · web 직접 열람. Settings > Public Development URL > Enable > allow > Allow. 기본 비공개·r2.dev 개발용/rate limit·운영은 custom domain
+- 확인 방법: Codex web 직접 열람
+
+<a id="s190"></a>
+### S190. R2 Pricing
+
+- URL: https://developers.cloudflare.com/r2/pricing/
+- 기관: Cloudflare R2 Docs
+- 게시·갱신일: 2026-10-01 갱신
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · web 직접 열람. Standard 월 무료 저장 10GB-month·Class A 100만·Class B 1000만·초과 과금. Infrequent Access는 무료 등급 제외
+- 확인 방법: Codex web 직접 열람
+
+<a id="s191"></a>
+### S191. Get started with Cloudflare R2
+
+- URL: https://developers.cloudflare.com/r2/get-started/
+- 기관: Cloudflare R2 Docs
+- 게시·갱신일: 2026-04-21 갱신
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · web 직접 열람. R2 subscription·Storage & databases > R2 > Overview > checkout·월별 종량 과금. 카드 없는 가입은 미확인
+- 확인 방법: Codex web 직접 열람
+
+<a id="s192"></a>
+### S192. Use AirDrop to send items to nearby Apple devices
+
+- URL: https://support.apple.com/en-us/guide/mac-help/mh35868/mac
+- 기관: Apple Support
+- 게시·갱신일: 게시·갱신일 미상; 본문 iOS/macOS 26.2 이후 코드 절차 별도
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Wi-Fi/Bluetooth·Finder/AirDrop/Share·수신 Accept·Photos/Files 저장 위치. 같은 Apple Account 자동 수신 및 새 코드 흐름. 실제 기기 전송 미실시
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s193"></a>
+### S193. Download a file — iPhone & iPad
+
+- URL: https://support.google.com/drive/answer/2423534?hl=en&co=GENIE.Platform%3DiOS
+- 기관: Google Drive Help
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Drive 앱 > More > Send a copy > Save image/Save video. Open in > Save to Files는 사진 보관함 저장과 다름
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s194"></a>
+### S194. Transfer files between your computer & Android device
+
+- URL: https://support.google.com/android/answer/9064445?hl=en
+- 기관: Google Android Help
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **본문 확인** · Windows USB: 잠금해제→USB알림→Use USB for > File Transfer→드래그→꺼내기. 일부 Android14 이상·데이터 케이블 조건
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+<a id="s195"></a>
+### S195. About Instagram insights
+
+- URL: https://help.instagram.com/788388387972460
+- 기관: Instagram Help Center
+- 게시·갱신일: 게시·갱신일 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: **메타데이터만 확인** · 인사이트 주제 제목·소개만 확인. 앱의 View insights·날짜 필터·지표 배치는 본문 미확인
+- 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
 
