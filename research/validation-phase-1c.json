@@ -1,0 +1,117 @@
+{
+  "phase": "1c",
+  "cutoff": "2026-10-26",
+  "kind": "조사 문서/해시/범위 검증. 실제 앱·API·결제·사이트 테스트 아님",
+  "passed": 21,
+  "total": 21,
+  "checks": [
+    {
+      "name": "query_budget_and_parallel_configuration",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "40_turns_provider_web",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "common_requirements_in_each_query",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "query_and_raw_hashes_match",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "all_raw_exit_zero_and_source_urls",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "failure_markers_context_review",
+      "passed": true,
+      "details": "session_id 해시 속403문자열1회, HTTP/검색 실패표시0"
+    },
+    {
+      "name": "16_topic_notes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "note_raw_sha_and_cutoff",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "source_ids_and_anchors_unique",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "new_source_metadata_fields",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "45_unique_new_fact_ids",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "all_fact_source_ids_resolve",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "existing_fact_ids_preserved",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "18_checklist_rows_and_original_four_cells",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "checklist_new_status_column",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "12_direct_official_bodies_minimum8",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "36_gap_counts",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "research_and_handoff_relative_links",
+      "passed": true,
+      "details": {
+        "links_checked": 272,
+        "bad": []
+      }
+    },
+    {
+      "name": "no_raw_response_copy_in_notes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "no_secret_patterns_in_new_artifacts",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "git_diff_whitespace",
+      "passed": true,
+      "details": ""
+    }
+  ]
+}

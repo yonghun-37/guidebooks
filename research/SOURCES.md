@@ -16,6 +16,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 
 - Phase 7r 재확인(2026-10-26): **본문 확인**. 공개 URL·캐러셀20개 혼합·Facebook Login for Business만 동영상 재개 업로드·AI/파트너십·100/50 내부 상충. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
 
+- **Phase 1c 갱신(2026-10-26)**: Codex 직접 본문100/50 내부 상충 재확인. Hermes 기본/한국어 표시 갱신2026-10-20 보고; 시행일 미확인. r2-api-limits.md
+
 <a id="s002"></a>
 ### S002. Instagram API with Instagram Login
 
@@ -38,6 +40,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Codex curl 본문 확인; quota_total=50·86400초 예시가 게시 가이드 100과 충돌
 
+- **Phase 1c 갱신(2026-10-26)**: Codex 직접 필드 설명·예시50·86400 재확인. 실제 계정 실효 한도 미조회. r2-api-limits.md
+
 <a id="s004"></a>
 ### S004. IG User Media
 
@@ -59,6 +63,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: 열 수 없음: curl HTTP 200이나 제목 외 본문 없음; web 429; 현행 자격 독립 확인 불가
+
+- **Phase 1c 갱신(2026-10-26)**: 기존 부분/독립실패 → Hermes 한영 본문:500명·Star당$0.01·한국어만19세/영문18세·정산 요건. 한국 현행 국가 목록은 검색 발췌; 한국 출시 과거 공지와 구분. Codex 본문 미제공 유지. 한국어 ?locale=ko_KR. r2-gifts-subscriptions.md
 
 <a id="s006"></a>
 ### S006. Giving Creators More Ways to Earn Money on Facebook and Instagram
@@ -130,6 +136,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: 열 수 없음: curl HTTP 200이나 제목 외 본문 없음; web 429. 수익화 포맷 제한 독립 확인 불가
 
+- **Phase 1c 갱신(2026-10-26)**: 기존 부분 → Hermes 한국어 본문 네 금지 형식 정의 확보. 게시 허용/직접수익화/브랜디드 도구 정책 준수 분리. Codex 독립 본문 미제공 유지. ?locale=ko_KR. r2-monetization-policy.md
+
 <a id="s013"></a>
 ### S013. Eligibility requirements for Instagram Subscriptions
 
@@ -139,6 +147,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 원문 확인 보고; Codex curl HTTP200이나 본문 미제공으로 독립 확인 실패
+
+- **Phase 1c 갱신(2026-10-26)**: Hermes 한국어 본문:프로페셔널·1만·만19세/영문18세·국가목록 대한민국·도구 노출 미보장. Codex 본문 미제공 유지. ?locale=ko_KR&platform=iphone. r2-gifts-subscriptions.md
 
 <a id="s014"></a>
 ### S014. Why am I unable to subscribe to a creator?
@@ -160,6 +170,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Hermes 검색 요약만; 호스트/구매자 국가 구분 필요
 
+- **Phase 1c 갱신(2026-10-26)**: 검색 발췌 → Hermes 한국어 전체 호스트 목록 본문; 한국 없음. 한국 시청자 구매와 호스트 수익화 분리. r2-gifts-subscriptions.md
+
 <a id="s016"></a>
 ### S016. Earn money with badges on Instagram Live
 
@@ -179,6 +191,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 검색 요약만; 기능별 최소 지급·한국 지급 방식 미확인
+
+- **Phase 1c 갱신(2026-10-26)**: Hermes 한영 본문:미국외송금$100/기타$25·21일경·한국어 문구 상충·한국 실제 수단 미확인. r2-gifts-subscriptions.md
 
 <a id="s018"></a>
 ### S018. Instagram Partner Monetization Policies
@@ -388,6 +402,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Hermes 검색 요약만; 30일·공개 계정 문구, 한국 적용·변경일 미확인
 
+- **Phase 1c 갱신(2026-10-26)**: 검색 발췌/상충 → Hermes 한영 본문 공개계정·30일전·하루25개·옵션 더 보기·예약/관리 메뉴. 75일은 색인/과거 상충으로 보존. Codex 본문 미제공·한국계정/조합 미검증. r2-schedule.md
+
 <a id="s038"></a>
 ### S038. Connect your Instagram account to Meta Business Suite
 
@@ -397,6 +413,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 검색 요약만; 페이지 미연결 프로페셔널 계정 접근 경로 보고
+
+- **Phase 1c 갱신(2026-10-26)**: 검색 요약 → Hermes 영문 본문:페이지미연결프로계정 Suite접근·포트폴리오와 페이지 연결 구분. 영문 https://business.facebook.com/business/help/428687951269163. r2-tester-suite.md
 
 <a id="s039"></a>
 ### S039. Schedule Facebook and Instagram Content on Meta Business Suite
@@ -417,6 +435,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 검색 요약만; 10장 문구는 도구 기능이며 API 전체 한도로 사용 금지
+
+- **Phase 1c 갱신(2026-10-26)**: 검색 요약 → Hermes 한국어 데스크톱 본문:게시물 만들기/게시할 위치/예약 옵션·권한·10장(제품 한정). ?locale=ko_KR&helpref=uf_permalink. r2-tester-suite.md
 
 <a id="s041"></a>
 ### S041. n8n Plans and Pricing
@@ -642,6 +662,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Hermes 반환 원문; 추천 자격과 보장은 다르다는 설명 확인 보고
 
+- **Phase 1c 갱신(2026-10-26)**: Hermes 관련 본문 재확인:추천 적격과 실제 추천 구분·계정상태. 실계정 미검증. r2-failures.md
+
 <a id="s063"></a>
 ### S063. Check your Account Status on Instagram
 
@@ -651,6 +673,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 접근일: 2026-10-26
 - 신뢰도: A
 - 확인 범위: Hermes 반환 원문; 삭제·기능 제한·검토 요청 확인 보고
+
+- **Phase 1c 갱신(2026-10-26)**: Hermes 영문 본문 일부·한국어 표현; 실제 한국어 메뉴 전체 경로는 미확인. r2-failures.md
 
 <a id="s064"></a>
 ### S064. Helping Creators Find New Audiences
@@ -703,6 +727,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 확인 범위: Hermes 한국어 원문; 직접 게시 최대20개·캐러셀 영상은 독립 릴스가 아님
 
 - Phase 7r 재확인(2026-10-26): **메타데이터만 확인**. 제목·meta description에 사진+동영상 합계20개. 단계 본문은 미수신. 이번 응답에서 최종 갱신일은 재확인하지 못했으며 위 기존 날짜 기록과 구분한다.
+
+- **Phase 1c 갱신(2026-10-26)**: 메타데이터/과거 보고 → Hermes Android/iPhone 한국어 본문:만들기/게시/여러 항목 선택·20개·끌기 재정렬·공유. Codex는 메타 설명20개만. 한국어본문 https://help.instagram.com/269314186824048/?cms_platform=android-app&helpref=platform_switcher&locale=ko_KR. r2-publishing.md
 
 <a id="s069"></a>
 ### S069. Instagram에서 공유하는 사진의 이미지 해상도
@@ -1152,6 +1178,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Hermes 접근 실패; Codex curl도 본문 미제공. 무단 자동 접근 예외·현행 조문 미확인
 
+- **Phase 1c 갱신(2026-10-26)**: 기존 접근실패 → Hermes 한국어 약관 일부 본문 무허가 접근/수집 금지. 자동/로그인 무관 세부는 영어 발췌. r2-failures.md
+
 <a id="s113"></a>
 ### S113. Spam(확인 대상)
 
@@ -1192,6 +1220,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Hermes 접근 실패; 현행 메뉴·처리 기간·이의제기 조건 미확인
 
+- **Phase 1c 갱신(2026-10-26)**: Hermes 한국어 비활성화 본문·로그인 후 안내로 검토요청. 실제 복구 미실시. r2-failures.md
+
 <a id="s117"></a>
 ### S117. Instagram 해킹 복구 경로(확인 대상)
 
@@ -1216,6 +1246,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: 확인함 · Codex web 직접 열람 · 한국 포함 국가 목록, 초기 후원/쇼핑과 광고수익 조건·기간·심사 구분
 - 확인 위치: 가입 기준·대한민국 국가행
+
+- **Phase 1c 갱신(2026-10-26)**: Codex 직접 초기500/광고1000·90일1000만 조건·대한민국 재확인. r2-cross-platform.md
 
 <a id="s119"></a>
 ### S119. YouTube 채널 수익 창출 정책
@@ -1459,6 +1491,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 확인 범위: 확인함 · Codex web 직접 열람 · 한국19세·5만팔로워·30일10만조회·개인계정·1분·지급수단·권리;2026뉴스룸1만과 상충
 - 확인 위치: Eligibility1.a-f·Rewards·Payment
 
+- **Phase 1c 갱신(2026-10-26)**: Codex 영문5만 재확인. 신규S216 한국어 약관1만·한국19세도 Codex 직접 확인; 같은갱신표시2025-04 언어판상충. r2-cross-platform.md
+
 <a id="s141"></a>
 ### S141. Creating the Next Wave: 한국 콘텐츠 생태계 투자 발표
 
@@ -1469,6 +1503,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: 확인함 · Codex web 직접 열람 · 4/1한국어2X·팔로워1만·30일10만·1분 오리지널 발표;약관5만과 상충.2배는 발표조건이지 개인예상액 아님
 - 확인 위치: 크리에이터 성장 지원 절
+
+- **Phase 1c 갱신(2026-10-26)**: Codex 본문2026-04-02·4/1한국어2X·1만/30일10만/1분 재확인. 10월개별적용/종료일 미확인. r2-cross-platform.md
 
 <a id="s142"></a>
 ### S142. 새로운 Creator Rewards Program을 만나보세요
@@ -1904,6 +1940,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 확인 범위: **메타데이터만 확인** · 제목·소개만 수신. 전환 단계·공개 조건·한국 앱 메뉴 본문 미확인
 - 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
 
+- **Phase 1c 갱신(2026-10-26)**: 메타데이터 → Hermes 한국어 본문:동시로그인10개·프로전환공개효과. 전환 중간 메뉴는 한국어 공식 검색 발췌만. Codex 본문 미제공. ?locale=ko_KR&cms_platform=android-app. r2-account.md
+
 <a id="s181"></a>
 ### S181. Instagram 인증앱을 통한 2단계 인증 도움말
 
@@ -1914,6 +1952,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: **메타데이터만 확인** · 소개에 인증앱·알 수 없는 기기 로그인 코드. Accounts Center의 현재 설정 순서는 미확인. 566810106808145는 Meta Account 제목으로 Instagram 절차 근거에서 제외
 - 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+- **Phase 1c 갱신(2026-10-26)**: 메타데이터 → Hermes 한국어 Android 본문 설정 단계 확보. QR/설정키·iPhone전체 미확인. Codex 독립요청 본문미제공. ?cms_platform=android-app&locale=ko_KR. r2-security.md
 
 <a id="s182"></a>
 ### S182. How You Can Use a Backup Code on Instagram
@@ -1926,6 +1966,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 확인 범위: **메타데이터만 확인** · 백업코드 주제의 제목·소개만 확인. 발급·재발급·개수·현재 메뉴는 미확인
 - 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
 
+- **Phase 1c 갱신(2026-10-26)**: 메타데이터 → Hermes 한국어 Android 본문 추가 방법/백업 코드/새 코드 받기. 개수·자릿수 미확인. Codex 본문미제공. ?cms_platform=android-app&locale=ko_KR. r2-security.md
+
 <a id="s183"></a>
 ### S183. AI Content Labeling on Instagram
 
@@ -1937,6 +1979,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 확인 범위: **메타데이터만 확인** · 공유 전 AI 콘텐츠 표시를 안내한다는 제목·소개만 확인. Add AI label 토글 위치·한국 번역·게시 후 수정은 미확인
 - 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
 
+- **Phase 1c 갱신(2026-10-26)**: 메타데이터 → Hermes 한국어 본문 AI 레이블 추가·표시명 AI 콘텐츠. 일반게시물/릴스 정확한 화면계층·게시후변경 미확인. Codex 본문미제공. ?cms_platform=android-app&locale=ko_KR. r2-labels.md
+
 <a id="s184"></a>
 ### S184. 유료 파트너십 표시 도움말 후보
 
@@ -1947,6 +1991,8 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: **본문 미확인** · 후보 URL 직접 열었으나 본문·제목을 확인하지 못함. Partnership label & ads / Advanced settings 경로를 확정하지 않음
 - 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
+
+- **Phase 1c 갱신(2026-10-26)**: 후보 미확인 → Hermes 한국어 파트너십 광고 개요·권한 목차 확인. 상세 레이블 경로 증거는S237/S239/S240을 사용. r2-labels.md
 
 <a id="s185"></a>
 ### S185. Quickstart for GitHub Pages
@@ -2069,3 +2115,705 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 확인 범위: **메타데이터만 확인** · 인사이트 주제 제목·소개만 확인. 앱의 View insights·날짜 필터·지표 배치는 본문 미확인
 - 확인 방법: Codex Python urllib 직접 요청 후 HTMLParser/텍스트로 관련 본문 직접 읽음
 
+- **Phase 1c 갱신(2026-10-26)**: 메타데이터 → Hermes 한영 본문 지표 소개 확보. 실제 진입/기간은S232~236; 공개개인/프로전용 문서상충. Codex 본문미제공. r2-insights-postmanage.md
+
+<a id="s196"></a>
+### S196. About bonuses on Instagram
+
+- URL: https://help.instagram.com/331274061770840
+- 기관: Meta / Instagram Help Center
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: web 429·직접 HTTP200 메타데이터만. 한국 2026 운영·종료 확정 불가
+- 확인 방법: Phase 8s 웹 검색·원문 대조. [보강 노트](monetization-explainer.md)
+
+- **Phase 1c 갱신(2026-10-26)**: 메타데이터 → Hermes 한국어 본문 초대 테스트/계정 범위 확보. 2026한국 신규초대/지급은 여전히 미확인. Codex 본문미제공. ?locale=ko_KR. r2-bonuses.md
+
+<a id="s197"></a>
+### S197. YouTube Shorts 수익 창출 정책
+
+- URL: https://support.google.com/youtube/answer/12504220?hl=ko
+- 기관: YouTube 고객센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 공식 본문 확인: 음악 비용 반영한 풀·국가별 유효조회·배분금의45%. 2027 시행 예정은 미적용
+- 확인 방법: Phase 8s 웹 검색·원문 대조. [보강 노트](monetization-explainer.md)
+
+- **Phase 1c 갱신(2026-10-26)**: Codex 직접 풀·국가별 유효조회·45% 재확인.2027예정문구 현행적용 제외. r2-cross-platform.md
+
+<a id="s198"></a>
+### S198. What RPM Can You Expect from Shorts in 2026?
+
+- URL: https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026
+- 기관: AIR Media-Tech
+- 게시·갱신일: 2026-01-23 갱신; 표는2025년
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 본문 확인: 국가평균 $0.008~$0.328, 한국 $0.185. 사업자 자체집계·한국 개인 수익범위 아님
+- 확인 방법: Phase 8s 웹 검색·원문 대조. [보강 노트](monetization-explainer.md)
+
+<a id="s199"></a>
+### S199. 2026 인플루언서 마케팅 제품 협찬 vs 원고료 지급 결정 가이드
+
+- URL: https://blog.tagby.io/influencer-marketing-unit-price/
+- 기관: 태그바이
+- 게시·갱신일: 2026-04-08
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 본문 확인: 1천~1만 제품가1~10만, 1만~10만 원고료10~100만, 10만 이상100만 이상. 사업자 실무 안내·실거래 통계 아님
+- 확인 방법: Phase 8s 웹 검색·원문 대조. [보강 노트](monetization-explainer.md)
+
+- **Phase 1c 갱신(2026-10-26)**: Hermes 본문 재대조. 나노제품1~10만/마이크로원고료10~100만/10만이상100만+는 업체 실무안내·실거래통계 아님. r2-sponsorship.md
+
+<a id="s200"></a>
+### S200. 쿠팡 파트너스 이용 가이드(20250714121952)
+
+- URL: https://partners.coupangcdn.com/partners-guide/partners-guide-20250714121952.pdf
+- 기관: 쿠팡 파트너스
+- 게시·갱신일: 정확 게시·갱신일 미상; 파일명2025-07-14
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 직접 PDF 다운로드·pypdf79쪽 추출.32·35·42·43·45·55쪽 기본3%·24시간·자기구매 제외·취소반품. 실시간 전체요율 미검증
+- 확인 방법: Phase 8s 웹 검색·원문 대조. [보강 노트](monetization-explainer.md)
+
+- **Phase 1c 갱신(2026-10-26)**: Codex PDF79쪽 직접 재추출:20/25/42/43/45/46/62~71쪽 승인·3%/1%/제외·정산·SNS표시·금지 확인. 표지2024.12·파일명은 게시일 아님. S215두번째PDF 같은 핵심 비교. r2-coupang.md
+
+<a id="s201"></a>
+### S201. How to Make Money on Instagram in 2026
+
+- URL: https://buffer.com/resources/how-to-make-money-on-instagram/
+- 기관: Buffer / Sabreen Haziq
+- 게시·갱신일: 2026-04-23
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 본문 확인: Gifts500·18세·프로페셔널·Star당$0.01; 초대형보너스. 한국 실계정 개설·지급 미검증
+- 확인 방법: Phase 8s 웹 검색·원문 대조. [보강 노트](monetization-explainer.md)
+
+<a id="s202"></a>
+### S202. How To Make Money on Instagram in 2026
+
+- URL: https://www.shopify.com/blog/make-money-on-instagram
+- 기관: Shopify / Joe Hitchcock
+- 게시·갱신일: 2026-04-29
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: 본문 확인: 구독1만·18세·지원국가·정책. 한국 실계정 개설·지급 미검증
+- 확인 방법: Phase 8s 웹 검색·원문 대조. [보강 노트](monetization-explainer.md)
+
+<a id="s203"></a>
+### S203. Instagram 계정/프로필을 추가하고 여러 계정 간에 전환하기
+
+- URL: https://help.instagram.com/1682672155283228?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문 일부:새계정 진입·계정추가/전환. 후반가입·기존로그인버튼 미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-account.md](r2-account.md)
+
+<a id="s204"></a>
+### S204. Instagram 프로페셔널 계정 정보
+
+- URL: https://help.instagram.com/138925576505882/?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:프로계정유형·비공개불가·공개/대기요청효과; 실제 계정 실행 미검증
+- 연결 노트: [r2-account.md](r2-account.md)
+
+<a id="s205"></a>
+### S205. 계정 센터의 연결된 경험과 계정 수
+
+- URL: https://www.facebook.com/help/173102953236749
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 영문 본문:계정센터Facebook1/Instagram25. 한국어 수치 미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-account.md](r2-account.md)
+
+<a id="s206"></a>
+### S206. 새로운 Instagram 프로필 만들기
+
+- URL: https://help.instagram.com/155940534568753/?locale=ko_KR&cms_platform=android-app
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 본문 일부:앱/웹가입 가능. 로그아웃화면 한국어순서 미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-account.md](r2-account.md)
+
+<a id="s207"></a>
+### S207. Content Publishing Limit — Instagram Platform
+
+- URL: https://developers.facebook.com/docs/instagram-api/reference/ig-user/content_publishing_limit
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 게시·갱신일 미상(다른 언어 응답은2024-07-23 표시)
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 본문:한도조회 경로·fields기본값·since·예시JSON50. 실계정아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-api-limits.md](r2-api-limits.md)
+
+<a id="s208"></a>
+### S208. About Instagram's bonus program rules
+
+- URL: https://help.instagram.com/708013994693013?locale=ko_KR
+- 기관: Meta / Instagram Help Center
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한영규칙 본문:초대조건·RPM·기간·언어상충. 2026실운영 미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-bonuses.md](r2-bonuses.md)
+
+<a id="s209"></a>
+### S209. Instagram에서 보너스 사용하기
+
+- URL: https://help.instagram.com/494096628491527?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:보너스/보너스활성화 메뉴. 실계정미검증; 실제 계정 실행 미검증
+- 연결 노트: [r2-bonuses.md](r2-bonuses.md)
+
+<a id="s210"></a>
+### S210. Instagram, 크리에이터 위한 새로운 수익 창출 도구 세 가지 도입
+
+- URL: https://about.fb.com/ko/news/2023/12/instagram-gift-subscription-bonus-program
+- 기관: Meta 한국 뉴스룸
+- 게시·갱신일: 게시일: 2023-12-20 / 별도 갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식발표 본문:2023한국 기프트/구독/초대보너스 도입. 현재운영아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-bonuses.md](r2-bonuses.md), [r2-gifts-subscriptions.md](r2-gifts-subscriptions.md)
+
+<a id="s211"></a>
+### S211. Instagram Pulls Plug On Creator Ad Program Months After Global Expansion
+
+- URL: https://www.netinfluencer.com/instagram-reels-bonus-program-shutting-down/
+- 기관: Net Influencer
+- 게시·갱신일: 게시2025-01-09(검색 표시); 갱신미상
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: Phase1c · Hermes 보도 본문:프로필광고 종료 회사확인 재인용. Meta자체 종료원문 아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-bonuses.md](r2-bonuses.md)
+
+<a id="s212"></a>
+### S212. 저작권법위반 — 대법원 97도2227
+
+- URL: https://www.law.go.kr/precInfoP.do?precSeq=211173
+- 기관: 국가법령정보센터 / 대법원
+- 게시·갱신일: 미상. 선고일: 1997-11-25.
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식판결 본문·주문:인용/시장대체·상고기각. 뉴스카드 직접사건아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-copyright.md](r2-copyright.md)
+
+<a id="s213"></a>
+### S213. 생성형 인공지능의 저작물 학습에 대한 저작권법상 공정이용 안내서
+
+- URL: https://www.copyright.or.kr/information-materials/publication/research-report/view.do?brdctsno=55211
+- 기관: 한국저작권위원회
+- 게시·갱신일: 등록2026-02-25; 발행2026-02-26; 갱신미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식게시 본문·등록/발행일. PDF뉴스요약사례 문단은 미확보; 실제 계정 실행 미검증
+- 연결 노트: [r2-copyright.md](r2-copyright.md)
+
+<a id="s214"></a>
+### S214. KBS·MBC·SBS 방송 3사, 오픈AI 상대 뉴스콘텐츠 무단이용에 대한 소송 제기
+
+- URL: http://www.kba.or.kr/bbs/board.php?bo_table=m02_06&wr_id=321
+- 기관: 한국방송협회
+- 게시·갱신일: 게시일: 2026-02-23. 갱신일: 미상.
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 협회 보도자료 본문:원고측 제소발표. 판결/사건번호 미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-copyright.md](r2-copyright.md)
+
+<a id="s215"></a>
+### S215. 쿠팡 파트너스 이용 가이드(20251028182159)
+
+- URL: https://partners.coupangcdn.com/partners-guide/partners-guide-20251028182159.pdf
+- 기관: 쿠팡 파트너스
+- 게시·갱신일: 게시·갱신일 미상; 표지2024.12; 파일명20251028은 게시일로 간주하지 않음
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Codex 직접PDF79쪽 추출·두판42/43/45/46/63/66쪽 등 요율·정산·SNS대조. 실시간현행미검증; 실제 계정 실행 미검증
+- 연결 노트: [r2-coupang.md](r2-coupang.md)
+
+<a id="s216"></a>
+### S216. Creator Rewards Program Terms — 한국어 일·한 약관
+
+- URL: https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-jp-kr/ko
+- 기관: TikTok
+- 게시·갱신일: 갱신일: 2025년 4월, 일자 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Codex 직접 한국어약관 본문1만/한국19세/30일10만/1분. 영문5만과 상충; 실제 계정 실행 미검증
+- 연결 노트: [r2-cross-platform.md](r2-cross-platform.md)
+
+<a id="s217"></a>
+### S217. Creator Rewards Program
+
+- URL: https://support.tiktok.com/ko/business-and-creator/creator-rewards-program/creator-rewards-program
+- 기관: TikTok Support
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 반환된영문 본문일부:적격조회1000·보상구조. 한국어메뉴아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-cross-platform.md](r2-cross-platform.md)
+
+<a id="s218"></a>
+### S218. How rewards work / How are rewards calculated in the Creator Rewards Program?
+
+- URL: https://www.tiktok.com/support/faq_detail?id=7543897461245450808
+- 기관: TikTok Support
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 영문FAQ 본문:적격조회 제외조건. 5초경계 표현차이 미해결; 실제 계정 실행 미검증
+- 연결 노트: [r2-cross-platform.md](r2-cross-platform.md)
+
+<a id="s219"></a>
+### S219. Shorts vs TikTok: Which Pays More in 2026?
+
+- URL: https://air.io/en/monetization/comparing-shorts-monetization-to-tiktok-creator-rewards
+- 기관: AIR Media-Tech
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: Phase1c · Hermes 업계사업자 본문:TikTok$0.40~2.00. 한국표본·연도미확인·한국예상액미채택; 실제 계정 실행 미검증
+- 연결 노트: [r2-cross-platform.md](r2-cross-platform.md)
+
+<a id="s220"></a>
+### S220. Spam
+
+- URL: https://transparency.meta.com/en-us/policies/community-standards/spam
+- 기관: Meta Transparency Center
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식Spam 본문:고빈도 수동/자동·반복성. 안전횟수미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-failures.md](r2-failures.md)
+
+<a id="s221"></a>
+### S221. Rewarding original creators on Instagram
+
+- URL: https://creators.instagram.com/blog/rewarding-original-creators-on-instagram
+- 기관: Instagram for Creators
+- 게시·갱신일: 게시일: 2026-04-30 / 갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식2026본문:사진/캐러셀독창성·이동30일회복평가. 한국배포/실계정미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-failures.md](r2-failures.md)
+
+<a id="s222"></a>
+### S222. Taking Action Against Scraping for Hire
+
+- URL: https://about.fb.com/news/2022/07/actions-against-scraping-for-hire
+- 기관: Meta Newsroom
+- 게시·갱신일: 게시일: 2022-07-05
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes Meta집행발표 본문:Mystalk관련당사자주장·제소. 확정판결아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-failures.md](r2-failures.md)
+
+<a id="s223"></a>
+### S223. “We have continued to dig into the root cause here…”로 시작하는 게시물
+
+- URL: https://x.com/andymstone/status/2111920686306627816
+- 기관: Meta 커뮤니케이션 담당 Andy Stone / X
+- 게시·갱신일: 게시일: 2026-10-18 — 검색 결과 표시 / 갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식대변인 발언원문 일부+검색발췌. 전체발언/기술감사 미확보; 실제 계정 실행 미검증
+- 연결 노트: [r2-failures.md](r2-failures.md)
+
+<a id="s224"></a>
+### S224. Meta says Claude AI tool triggered No Kings Instagram suspension
+
+- URL: https://www.straitstimes.com/world/united-states/meta-says-claude-ai-tool-triggered-no-kings-instagram-suspension
+- 기관: The Straits Times / Bloomberg 전재
+- 게시·갱신일: 게시일·갱신일: 2026-10-19 09:03 — 페이지 표시
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: Phase1c · Hermes Bloomberg전재기사 본문:Meta오집행설명·주최측복구주장 구분; 실제 계정 실행 미검증
+- 연결 노트: [r2-failures.md](r2-failures.md)
+
+<a id="s225"></a>
+### S225. About Instagram Subscriptions for creators
+
+- URL: https://help.instagram.com/856296695055001
+- 기관: Meta / Instagram Help Center
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 구독소개 본문:Instagram0%/앱구매30% 안내. 한국실효수수료미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-gifts-subscriptions.md](r2-gifts-subscriptions.md)
+
+<a id="s226"></a>
+### S226. Instagram에서 구독 사용 설정하기
+
+- URL: https://help.instagram.com/406451644272016?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어본문:월구독료변경·신규/기존 차이. 최초개설전체누락; 실제 계정 실행 미검증
+- 연결 노트: [r2-gifts-subscriptions.md](r2-gifts-subscriptions.md)
+
+<a id="s227"></a>
+### S227. About gifts on Instagram
+
+- URL: https://help.instagram.com/523408036294825
+- 기관: Meta / Instagram Help Center
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 검색발췌만:현행Gifts지원지역South Korea. 국가목록 본문 미확보; 실제 계정 실행 미검증
+- 연결 노트: [r2-gifts-subscriptions.md](r2-gifts-subscriptions.md)
+
+<a id="s228"></a>
+### S228. Instagram에 공유한 게시물 아카이브하기
+
+- URL: https://help.instagram.com/136706673552668?locale=ko_KR&cms_platform=android-app
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어Android 본문:보관효과·프로필/옵션/보관; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s229"></a>
+### S229. Instagram에 공유한 게시물 삭제하기
+
+- URL: https://help.instagram.com/289302621183285?locale=ko_KR&cms_platform=iphone-app
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어iPhone 본문:삭제포맷·삭제재확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s230"></a>
+### S230. 삭제된 Instagram 사진, 동영상, 릴스, 스토리를 복원하는 방법
+
+- URL: https://help.instagram.com/866270964166174?locale=ko_KR&cms_platform=iphone-app
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:최근삭제 전체경로·복원/영구삭제·기간; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s231"></a>
+### S231. Instagram에서 삭제한 콘텐츠는 어떻게 되나요?
+
+- URL: https://help.instagram.com/711062676142607?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:30일/미보관스토리24시간·서버90일·백업잔존; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s232"></a>
+### S232. Instagram 게시물에 대한 인사이트 보기
+
+- URL: https://help.instagram.com/553860108359435?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:게시물인사이트 보기. 시작계정조건일부누락; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s233"></a>
+### S233. Instagram 대시보드 정보
+
+- URL: https://help.instagram.com/257516379077270?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:공개개인/프로대시보드·진입. 타문서프로전용과상충; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s234"></a>
+### S234. Instagram에서 계정 및 콘텐츠 인사이트 보기
+
+- URL: https://help.instagram.com/1533933820244654?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:최근90일·기본기간5개. 진입세부누락; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s235"></a>
+### S235. Instagram 계정 인사이트의 기간 선택하기
+
+- URL: https://help.instagram.com/1407497629635879?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:프로계정 조건·최근90일·기본기간5개; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s236"></a>
+### S236. 비즈니스 또는 크리에이터 계정에서 Instagram 인사이트 보기와 관련된 문제 해결하기
+
+- URL: https://help.instagram.com/684550305010470?locale=ko_KR&cms_platform=iphone-app
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:개인전환시 접근제한·90일재전환보존; 실제 계정 실행 미검증
+- 연결 노트: [r2-insights-postmanage.md](r2-insights-postmanage.md)
+
+<a id="s237"></a>
+### S237. Instagram 브랜디드 콘텐츠의 공개 대상 제한 설정하기
+
+- URL: https://help.instagram.com/521368460486230/?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:게시준비화면 협찬레이블경로·브랜드최대2개; 실제 계정 실행 미검증
+- 연결 노트: [r2-labels.md](r2-labels.md)
+
+<a id="s238"></a>
+### S238. 브랜드와 파트너십을 맺고 수익 올리기
+
+- URL: https://creators.instagram.com/earn-money/branded-content?locale=ko_KR
+- 기관: Meta / Instagram for Creators
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어Creators 본문:협찬 광고 레이블 추가·브랜드 파트너 추가; 실제 계정 실행 미검증
+- 연결 노트: [r2-labels.md](r2-labels.md)
+
+<a id="s239"></a>
+### S239. 협찬 광고 레이블을 사용하여 Instagram의 일반 브랜디드 콘텐츠를 태그하는 방법
+
+- URL: https://help.instagram.com/1109894795810258/?cms_platform=android-app&locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문일부:승인/거절·브랜드프로조건. 접이식 세부클릭 미확보; 실제 계정 실행 미검증
+- 연결 노트: [r2-labels.md](r2-labels.md), [r2-monetization-policy.md](r2-monetization-policy.md)
+
+<a id="s240"></a>
+### S240. Instagram에서 브랜디드 콘텐츠 시작하기
+
+- URL: https://help.instagram.com/1123581461537025/?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:가치교환·레이블·콘텐츠수익화정책 준수연결; 실제 계정 실행 미검증
+- 연결 노트: [r2-labels.md](r2-labels.md), [r2-monetization-policy.md](r2-monetization-policy.md)
+
+<a id="s241"></a>
+### S241. 파트너십 광고 권한 정보
+
+- URL: https://help.instagram.com/442108830566254/?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문:협찬표시와 콘텐츠/계정수준 광고권한 분리; 실제 계정 실행 미검증
+- 연결 노트: [r2-labels.md](r2-labels.md)
+
+<a id="s242"></a>
+### S242. Instagram에서 릴스 녹화하기
+
+- URL: https://help.instagram.com/2720958398006062/?cms_platform=iphone-app&helpref=platform_switcher&locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes OS별 한국어본문:릴스진입/편집·iPhone표지/공유. Android후반 일부누락; 실제 계정 실행 미검증
+- 연결 노트: [r2-publishing.md](r2-publishing.md)
+
+<a id="s243"></a>
+### S243. Instagram에서 릴스의 선택 캡션 관리하기
+
+- URL: https://help.instagram.com/7487270478066359/?cms_platform=iphone-app&helpref=platform_switcher&locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes iPhone 한국어본문:옵션 더 보기/선택 캡션 활성화. Android세부누락; 실제 계정 실행 미검증
+- 연결 노트: [r2-publishing.md](r2-publishing.md)
+
+<a id="s244"></a>
+### S244. Instagram의 릴스에 보이스오버 추가하기
+
+- URL: https://help.instagram.com/2828827904041367/?cms_platform=android-app&helpref=platform_switcher&locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes Android 한국어본문:동영상 수정/보이스오버/녹화/완료. iPhone세부누락; 실제 계정 실행 미검증
+- 연결 노트: [r2-publishing.md](r2-publishing.md)
+
+<a id="s245"></a>
+### S245. Instagram 또는 Threads에서 사진이나 동영상 링크(URL) 얻기
+
+- URL: https://help.instagram.com/372819389498306/?cms_platform=android-app&locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes Android/iPhone 한국어본문:보내기/링크 복사·비공개열람조건; 실제 계정 실행 미검증
+- 연결 노트: [r2-publishing.md](r2-publishing.md)
+
+<a id="s246"></a>
+### S246. Instagram에서 릴스 관리하기
+
+- URL: https://help.instagram.com/742856103197927/?cms_platform=iphone-app&helpref=platform_switcher&locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes iPhone한국어본문:릴스 공유 옵션/링크 복사; 실제 계정 실행 미검증
+- 연결 노트: [r2-publishing.md](r2-publishing.md)
+
+<a id="s247"></a>
+### S247. How to create and manage scheduled posts and Reels on Instagram — 별도 공식 주소
+
+- URL: https://help.instagram.com/1043402509628629?locale=en_US
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 검색발췌75일/프로전용과 직접반환본문30일/공개계정 불일치. 변경일미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-schedule.md](r2-schedule.md)
+
+<a id="s248"></a>
+### S248. How to Schedule Posts on Instagram
+
+- URL: https://www.makeuseof.com/tag/how-to-schedule-posts-on-instagram/
+- 기관: MakeUseOf
+- 게시·갱신일: 게시미상; 갱신2023-05-30
+- 접근일: 2026-10-26
+- 신뢰도: B
+- 확인 범위: Phase1c · Hermes 과거본문:프로전용75일/25개. 현행값근거로미사용; 실제 계정 실행 미검증
+- 연결 노트: [r2-schedule.md](r2-schedule.md)
+
+<a id="s249"></a>
+### S249. Access to the licensed music library on Instagram
+
+- URL: https://help.instagram.com/402084904469945?locale=en_US
+- 기관: Meta / Instagram Help Center
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 영문본문 계정/지역 음원접근제한. 한국어 세부누락·예약음원전체금지근거아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-schedule.md](r2-schedule.md)
+
+<a id="s250"></a>
+### S250. REVU Corporation | Services
+
+- URL: https://corp.revu.net/service
+- 기관: 레뷰코퍼레이션
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 및 Codex web 직접본문:공개모집→광고주선정 서비스 구조. 성과/모집수치보장미채택; 실제 계정 실행 미검증
+- 연결 노트: [r2-sponsorship.md](r2-sponsorship.md)
+
+<a id="s251"></a>
+### S251. 레뷰 통합서비스 이용약관
+
+- URL: https://webview.revu.net/terms/terms-of-use?tab=integrated
+- 기관: 레뷰코퍼레이션
+- 게시·갱신일: 변경공고2026-02-19; 시행2026-03-03
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 약관본문:AI제출제한/포인트/유지/사용권. Codex검색색인 조문교차대조·직접열기는본문없음; 실제 계정 실행 미검증
+- 연결 노트: [r2-sponsorship.md](r2-sponsorship.md)
+
+<a id="s252"></a>
+### S252. 그린티 세럼+수딩크림 — 인스타 캠페인
+
+- URL: https://www.ringble.co.kr/detail.php?number=284743&category=
+- 기관: 링블코리아
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 실제인스타공고 본문:제공제품/미션/등록/유지/2차활용. 지급완료근거아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-sponsorship.md](r2-sponsorship.md)
+
+<a id="s253"></a>
+### S253. 가격표 | 링블 체험단 마케팅 전문 대행사
+
+- URL: https://www.ringble.co.kr/landing/pricing.html
+- 기관: 링블코리아
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식가격 본문:광고주서비스가격. Codex 직접열기는로딩껍데기·리뷰어보수아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-sponsorship.md](r2-sponsorship.md)
+
+<a id="s254"></a>
+### S254. 링블 | 체험단 마케팅 전문 대행사
+
+- URL: https://www.ringble.co.kr/landing/index.html
+- 기관: 링블코리아
+- 게시·갱신일: 게시/갱신: 미상 / 미상. “26년 최신 단가” 표시
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식소개 본문:광고주서비스·기자단원고비포함; 실제 계정 실행 미검증
+- 연결 노트: [r2-sponsorship.md](r2-sponsorship.md)
+
+<a id="s255"></a>
+### S255. 리뷰노트 – 대한민국 체험단 수 1위, 신뢰받는 리뷰 / 프리미엄 캠페인 목록
+
+- URL: https://www.reviewnote.co.kr/campaigns?isPremium=true&s=points
+- 기관: 리뷰노트
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 공식목록 본문:제공내역/포인트 구분. 세부정산/출금규칙미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-sponsorship.md](r2-sponsorship.md)
+
+<a id="s256"></a>
+### S256. Instagram에 로그인했거나 연결한 앱과 웹사이트의 개인정보 설정 관리하기
+
+- URL: https://help.instagram.com/1144624522593085?locale=ko_KR
+- 기관: Meta / Instagram 고객 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어웹관리 본문:웹사이트 권한/앱 및 웹사이트 진입. 테스터수락미확인; 실제 계정 실행 미검증
+- 연결 노트: [r2-tester-suite.md](r2-tester-suite.md)
+
+<a id="s257"></a>
+### S257. 데스크톱에서 Meta Business Suite의 플래너 사용하기
+
+- URL: https://www.facebook.com/business/help/1678733516458988?locale=ko_KR
+- 기관: Meta 비즈니스 지원 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 데스크톱 본문:대상선택/플래너/예약변경·삭제; 실제 계정 실행 미검증
+- 연결 노트: [r2-tester-suite.md](r2-tester-suite.md)
+
+<a id="s258"></a>
+### S258. Meta Business Suite에서 게시물을 저장 및 예약하고 일정 변경하기
+
+- URL: https://www.facebook.com/business/help/2223502627919449?locale=ko_KR
+- 기관: Meta 비즈니스 지원 센터
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: Phase1c · Hermes 한국어 본문 일부:콘텐츠/게시물 및 릴스/예약됨·일정변경. 데스크톱전용문서아님; 실제 계정 실행 미검증
+- 연결 노트: [r2-tester-suite.md](r2-tester-suite.md)
