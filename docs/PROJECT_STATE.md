@@ -4,9 +4,11 @@
 
 ## 프로젝트 개요
 
-Instagram 릴스·뉴스카드의 기획·제작·검수·게시·운영을 배우는 한국어 입문 교과서와 오프라인 스타터 키트다. [DESIGN](DESIGN.md)·[PLAN](PLAN.md)과 확정 [STYLE-GUIDE](STYLE-GUIDE.md)를 따른다.
+Instagram 릴스·뉴스카드와 YouTube 쇼츠 제작을 배우는 한국어 입문 교과서 모음이다. ReelsBook과 오프라인 스타터 키트, ShortsBook의 뼈대·확인용 샘플을 제공한다. [DESIGN](DESIGN.md)·[PLAN](PLAN.md)과 확정 [STYLE-GUIDE](STYLE-GUIDE.md)를 따른다.
 
 **Phase 6b 수정·품질 게이트 완료, Claude Code 최종 검수 대기.** [독립 초보자 검토](results/phase-6a-findings.md)의 차단1·혼란12·사소2건을 모두 수정했다. 항목별 수정·7개 게이트 판정·검증과 한계는 [Phase 6b 결과](results/phase-6b.md)에 보존한다. 실제 계정 게시나 OS 예약 실행을 완료했다는 상태는 아니다.
+
+**ShortsBook Y3 뼈대·샘플 작성, 사용자 확인 대기.** [설계](DESIGN-shorts.md)와 [쇼츠 조사](../research-shorts/BRIEFING.md)를 바탕으로 이론 2장·실습 8만 작성했다. 전체 집필·키트 확장은 시작하지 않았다. 산출물·검증은 [Y3 결과](results/phase-Y3.md)에 기록한다.
 
 ## 현재 구조와 구현
 
@@ -19,19 +21,23 @@ Instagram 릴스·뉴스카드의 기획·제작·검수·게시·운영을 배�
 - 실습7 앱 게시가 기본이며 첫 게시 경로는0~7이다. 매일 생성 설정까지 완성하려면 실습9도 따른다. 실습8 API는 선택이다. 실제자료 필수 분기와 두 날짜 확인을 더해 기존35키를 보존한 **E2E38단계**를 제공한다. `site/practice/*.html`이 현재 원고이며 옛 `scripts/build_practice.py`의 덮어쓰기는 차단돼 있다.
 - `starter-kit/`: Python3.11+·로컬 RSS→규칙 기반/선택 웹 채팅 문안→Pillow PNG/JPEG→FFmpeg MP4→사람 검수·승인→기본 드라이런이다. 본인 녹음·음악·명시적 LLM/TTS 연결은 선택이다. `daily.py`는 오프라인 날짜별 생성과 로그·중복 거절을 제공한다. `schedule_setup.py`는 Windows schtasks·macOS/Linux cron 등록/확인/수동 실행/해제 안내만 출력한다. 실제 등록은 하지 않았다.
 - 게시 API는 Instagram Login·v26.0이며 환경변수가 `.env`보다 우선한다. `prepare_hosting.py`는 승인된 JPEG/MP4만 복사한다. 이미지·영상 모두 공개 URL이 필요하다. 승인/변경 감지·합성 자료 live 거부·LIVE_ATTEMPT 중복 방지는 유지한다. `token_check.py`는 숨김 토큰으로 본인 ID·이름만 읽는 선택 도우미다. 무인 게시·자동 토큰 갱신·호스팅은 제공하지 않는다.
-- GitHub Actions는 `shelf/`→루트, `site/`→`reels/`, 키트 PNG/MP4→`progress/samples/`로 배포한다. 진행 페이지도 6a 검토·6b 작성/검증 완료로 갱신했다.
+- `site-shorts/`: ReelsBook 공통 CSS/JS의 독립 사본과 자체 주황·자주 테마다. 이론 1~16·실습 0~10의 상태는 준비중이며, 이론 2 수익·실습 8 업로드만 확인용 샘플이다. RPM 계산기·아동용/AI/음악 권리 분기·OS 탭·주소/체크 로컬 저장을 제공한다. 저장 키는 ReelsBook과 분리했다.
+- GitHub Actions는 `shelf/`→루트, `site/`→`reels/`, `site-shorts/`→`shorts/`, 키트 PNG/MP4→`progress/samples/`로 조립한다. ShortsBook 배포 경로는 추가했으며 commit·실제 배포는 아직 하지 않았다. 진행 페이지도 6a 검토·6b 작성/검증 완료로 갱신했다.
 
 ## 조사·검증
 
 - [SOURCES](../research/SOURCES.md)270개·[FACT-SHEET](../research/FACT-SHEET.md)와 확인 수준을 보존한다. [Phase1c](results/phase-1c.md)의 한국어 앱·정책 근거를 유지하고 [저장·음성·GitHub 절차](../research/phase-6b-procedures.md)와 [OS 예약](../research/phase-6b-scheduling.md) 근거12개를 추가했다. 사이트109개는 현재 본문 인용 범위다. 도구·폰트 고지는 [별도 노트](../research/tool-licenses.md)를 따른다.
-- 최신 키트 **116 tests**, 문체·정적 검사기 **23 tests** 통과. 깨끗한 복사본의 새 .venv에서 전체 오프라인 제작·문안/검수/승인/드라이런·호스팅 준비·음성 변환·일일 생성/중복 보존을 확인했다. 생성 샘플9개 SHA256이 동봉 파일과 같다.
-- `check_site.py`: HTML37개·내부 참조1,373개·2~14장9블록·S번호·용어·퀴즈54개·alt·fact-pending0·E2E38키 모두 통과한다. 실패 exit1을 fixture로 검사했다. 배포98파일 합계4,075,418바이트다.
+- 최신 키트 **116 tests**, 문체·정적 검사기 **25 tests** 통과. 깨끗한 복사본의 새 .venv에서 전체 오프라인 제작·문안/검수/승인/드라이런·호스팅 준비·음성 변환·일일 생성/중복 보존을 확인했다. 생성 샘플9개 SHA256이 동봉 파일과 같다.
+- `check_site.py`: HTML37개·내부 참조1,377개·2~14장9블록·S번호·용어·퀴즈54개·alt·fact-pending0·E2E38키 모두 통과한다. 실패 exit1을 fixture로 검사했다. 현재 두 책의 배포 조립은 `.nojekyll`을 제외한113파일 합계4,230,556바이트다.
 - 브라우저37페이지×1280/375/360px×라이트/다크·펼친 접기·동적 링크625개 포함 **2,140검사**, 기존 도구 **883검사**·경계 **15검사**, 신규 UI **55검사** 통과. 가로 넘침·콘솔/페이지 오류0. 문체37페이지·JS 구문·부록 재생성 동일성·diff 공백 검사 통과. 재현 스크립트/로그/화면은 [phase-6b/](results/phase-6b/)에 있다.
 - 별도6a 검토의 이론70개 질문·장별7/7 판정은 유지한다. 추가 코드 검토에서 발견한 프롬프트 계정 이름 복귀도 수정·재현 검사했다. 작성자 회귀 검증과 실제 비전공자 사용자 실험은 구분한다.
 
+- ShortsBook Y3는 검사기25개·도구164개·화면/탐색554개 검사 통과다. 실제 CDN 글꼴 및 글꼴 차단 대체 환경을 각각 검사했다. 1280/375/360px·라이트/다크 가로 넘침·콘솔 오류0이며 스크린샷13개와 재현 코드를 [Y3 검증 폴더](results/phase-Y3/)에 보존했다.
+- ShortsBook 조사 자료는 출처 102개·사실 89개·학습자 질문 125개다. Y3는 기존 노트를 사용하며 공식 YPP 확대·광고 배분·업로드·AI 공개 안내를 다시 대조했다. `check_site.py --site site-shorts`는 해당 출처의 Y번호와 샘플 9블록·퀴즈·링크를 검사한다. 문체 검사는 새 기준선 없이 금지어·내부 용어·단서만 적용하며 YT 사실 ID도 금지한다.
+
 ## 남은 확인과 제약
 
-- Claude Code의 최종 검수·커밋·배포가 남아 있다. Codex는 commit·push를 시도하지 않았다. ShortsBook은 이번 범위가 아니다.
+- Claude Code의 최종 검수·커밋·배포가 남아 있다. Codex는 commit·push를 시도하지 않았다. ShortsBook은 두 샘플에 대한 사용자 확인 뒤 다음 단계로 넘어간다. 쇼츠용 키트와 나머지 장 원고는 준비중이다.
 - 실제 Windows/macOS·OS 예약 등록·다음 날 실행·잠자기/전원/접근 권한, 휴대폰 녹음/전송·앱 조작·실계정 로그인/게시·예약 발행·토큰 발급/갱신은 미실행이다. Linux·Chromium·모킹·명령 구문 검증으로 한정한다. 사용자 테스트 계정이 제공되면 [앱 확인 목록18행](results/phase-7w-verify-list.md)을 따라 별도로 확인한다.
 - 한국 Gifts·구독·보너스의 개별 개설/지급, API 실효 한도100/50 충돌·Unified 온보딩, 라벨/음원/예약 조합, 교차 플랫폼 조건·클립 공지 전문·쿠팡 실시간 상품별 요율/정산·개별 권리·세무/법 적용은 확인 공백이다. 모형은 수익·성장 예측이 아니다.
 - 매일 생성은 현재 로컬 피드를 읽는다. 새 자료·권리를 사람이 갱신하고 파일마다 검수·승인한다. 화면의 진행·주소·시간 입력은 같은 브라우저/출처에만 저장되며 저장 차단·file:// 제한 시 이동 뒤 이어지지 않을 수 있다.

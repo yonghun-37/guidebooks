@@ -1,0 +1,43 @@
+/* ShortsBook의 자체 표지·샘플 도구. 공통 조판은 book.css 사본을 따른다. */
+.sample-label { color: var(--accent); font-size: 13px; font-weight: 700; }
+.sample-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.sample-card { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 26px; text-decoration: none; color: var(--ink); }
+.sample-card:hover { border-color: var(--accent); background: var(--soft); }
+.sample-card > span { color: var(--accent); font-size: 13px; }
+.sample-card h3 { margin-top: 16px; font-size: 1.4rem; }
+.sample-card p { color: var(--muted); }
+.sample-card strong { color: var(--accent); font-size: 14px; }
+.home-hero { gap: 44px; }
+.brand-mark { border-radius: 50% 50% 0 50%; }
+#upload-answers { display: grid; gap: 12px; }
+#upload-answers label { font-weight: 650; margin-top: 12px; }
+#upload-answers select { min-width: 0; width: 100%; padding: 10px 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); font-size: 14px; }
+#upload-answers button { justify-self: start; }
+#upload-answers p { margin: 0; }
+[data-upload-count] { display: block; font-size: 1.35rem; color: var(--accent); }
+[data-upload-message] { margin: 8px 0; }
+[data-upload-actions] { padding-left: 20px; margin-bottom: 0; }
+[data-upload-actions] li { margin-top: 10px; }
+[data-sim-result] strong { display: block; font-size: 1.7rem; color: var(--accent); }
+[data-rpm-formula] { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 14px; }
+[aria-invalid='true'] { border-color: var(--orange) !important; outline: 2px solid var(--orange); }
+.upload-diagram { padding: 28px 0; }
+.upload-diagram img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
+.upload-diagram figcaption { font-size: 13px; color: var(--muted); margin-top: 12px; }
+.table-scroll { max-width: 100%; overflow-x: auto; }
+.table-scroll th:first-child { width: 22%; }
+.quiz-options { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+[data-question] { padding: 18px 0; border-bottom: 1px dashed var(--line); }
+[data-question] h3 { font-size: 1.05rem; }
+.chapter progress { width: 100%; accent-color: var(--accent); }
+.os-tabs [data-tab-list] { flex-wrap: wrap; }
+@media(max-width:680px) {
+ .sample-grid { grid-template-columns: 1fr; }
+ .home-hero { gap: 32px; }
+ .cover-art { padding: 20px; transform: none; }
+ .sample-card { padding: 20px; }
+ .table-scroll table { font-size: 12px; }
+ #upload-answers select { font-size: 13px; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } .button:hover { transform: none; } }
+@media print { .sample-label { color: #333; } .table-scroll { overflow: visible; } }

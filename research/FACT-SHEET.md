@@ -321,3 +321,14 @@
 | R2-RISK-03 | Meta Mystalk집행발표와No Kings오집행보도는인접사례·당사자주장범위. AI자동뉴스계정행위→제재→항소완결사례/확률은미확보. | [S222](SOURCES.md#s222) [S223](SOURCES.md#s223) [S224](SOURCES.md#s224) [S116](SOURCES.md#s116) | 9/12 | 공식발표/보도구분·직접사례공백유지 |
 | R2-LAW-01 | 현행저작권법7/28/35조의5/37 재확인·사실/표현/사진분리·출처만으로허용아님·고정비율/문장수면책없음. | [S010](SOURCES.md#s010) [S080](SOURCES.md#s080) | 5/6/12 | Codex현행본문/판결직접확인 |
 | R2-LAW-02 | 97도2227의시장대체/비율판단을확보. 2026안내서발간/AI소송제기는확정판결과다름·최신뉴스요약확정판결미확보. | [S212](SOURCES.md#s212) [S213](SOURCES.md#s213) [S214](SOURCES.md#s214) | 5/12 | Hermes공식본문·제소주장구분 |
+
+
+## Phase 6b 초보자 절차·예약 보완
+
+| ID | 확인한 내용 | 근거 | 적용 | 한계 |
+| --- | --- | --- | --- | --- |
+| P6B-SAVE | 일반 텍스트·UTF-8·실제 확장자를 확인해 JSON/XML을 저장한다. TextEdit의 서식·스마트 따옴표·.txt 자동추가를 구분한다. | [S264](SOURCES.md#s264) [S265](SOURCES.md#s265) [S266](SOURCES.md#s266) [S267](SOURCES.md#s267) | 실습3 | Windows/macOS 실기기 미검증·현재 메뉴는 기기 확인 |
+| P6B-AUDIO | 녹음·잘라 듣기·WAV/MP3 내보내기와 FFmpeg 변환을 구분한다. 확장자만 바꿔도 변환되지는 않는다. | [S260](SOURCES.md#s260) [S261](SOURCES.md#s261) [S262](SOURCES.md#s262) [S263](SOURCES.md#s263) | 실습5 | 녹음 GUI 미실행·동봉 도구로 로컬 변환 검증 |
+| P6B-REPO | 새 저장소 이름·공개 여부·README 초기화 뒤 기본 브랜치가 있는 상태에서 파일을 업로드한다. | [S259](SOURCES.md#s259) | 실습8 | 계정 생성·원격 저장소 생성 미실행 |
+| P6B-TASK | schtasks create DAILY/ST/TN/TR 명령을 생성하고 Query/Run/Delete로 확인·수동 실행·해제하도록 안내한다. | [S268](SOURCES.md#s268) | 실습9·키트 | 모킹·문자열 구문 검증만. 실제 등록 없음 |
+| P6B-CRON | cron의 다섯 시각 필드 뒤 인용한 실행 명령을 두며 %는 별도 escape한다. crontab -e/-l로 편집·확인한다. | [S269](SOURCES.md#s269) [S270](SOURCES.md#s270) | 실습9·키트 | 실제 OS 등록·다음 날 실행 미검증 |

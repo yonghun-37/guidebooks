@@ -1,0 +1,31 @@
+{
+  "html_pages": 37,
+  "internal_references": 1377,
+  "catalog_entries": 29,
+  "practice_steps": 38,
+  "theory_chapters": 13,
+  "quiz_questions": 54,
+  "source_references": 429,
+  "term_references": 30,
+  "fact_pending": 0,
+  "deployment_bytes": {
+    "site": 2498524,
+    "shelf": 9704,
+    "samples": 1568333,
+    "site-shorts": 153995,
+    "total": 4230556,
+    "files": 113,
+    "by_extension": {
+      ".css": 79934,
+      ".html": 797432,
+      ".js": 182118,
+      ".json": 4685,
+      ".mp4": 2450792,
+      ".png": 685874,
+      ".srt": 476,
+      ".svg": 19134,
+      ".txt": 10111
+    }
+  },
+  "errors": []
+}

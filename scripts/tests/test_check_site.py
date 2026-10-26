@@ -149,5 +149,25 @@ class CheckSiteTests(unittest.TestCase):
         self.assertIn('없는 파일 missing.html', '\n'.join(json.loads(result.stdout)['errors']))
 
 
+class ShortsSiteTests(unittest.TestCase):
+    setUp = CheckSiteTests.setUp
+    write = CheckSiteTests.write
+
+    def test_shorts_mode_checks_deployed_links_and_y_sources(self):
+        self.write('research-shorts/SOURCES.md', '| <a id="y001"></a>Y001 | 공식 자료 |')
+        self.write('site-shorts/index.html', '<a href="chapters/02-revenue.html#figure">샘플</a>')
+        body = ''.join(f'<section data-block="{b}" id="{b}"></section>' for b in BLOCKS)
+        body += QUIZ.format(questions=QUESTION * 3)
+        self.write('site-shorts/chapters/02-revenue.html', body + '<p id="source-y001">[Y001]</p>')
+        self.write('shelf/index.html', '<a href="shorts/">쇼츠</a>')
+        result = checker.check(root=self.root, site='site-shorts')
+        self.assertEqual(result['errors'], [])
+        self.assertEqual(result['theory_chapters'], 1)
+        self.write('site-shorts/index.html', '<p>[Y999]</p><a href="missing.html">없음</a>')
+        errors = checker.check(root=self.root, site='site-shorts')['errors']
+        self.assertTrue(any('미등록 출처 Y999' in e for e in errors))
+        self.assertTrue(any('없는 파일 missing.html' in e for e in errors))
+
+
 if __name__ == '__main__':
     unittest.main()

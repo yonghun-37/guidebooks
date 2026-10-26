@@ -2817,3 +2817,135 @@ A=공식 문서·법령·정부기관·도구 제작자의 공식 약관/저장�
 - 신뢰도: A
 - 확인 범위: Phase1c · Hermes 한국어 본문 일부:콘텐츠/게시물 및 릴스/예약됨·일정변경. 데스크톱전용문서아님; 실제 계정 실행 미검증
 - 연결 노트: [r2-tester-suite.md](r2-tester-suite.md)
+
+<a id="s259"></a>
+### S259. Creating a new repository
+
+- URL: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
+- 기관: GitHub Docs
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 이름·공개 범위·README 초기화·기본 브랜치 준비
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s260"></a>
+### S260. Make your first recording
+
+- URL: https://www.audacityteam.org/manual/getting-started/make-your-first-recording/
+- 기관: Audacity
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 녹음·중지·재생 절차
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s261"></a>
+### S261. Export your audio
+
+- URL: https://www.audacityteam.org/manual/getting-started/export-your-audio/
+- 기관: Audacity
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 프로젝트와 오디오 내보내기·WAV/MP3 구분
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s262"></a>
+### S262. Trim audio
+
+- URL: https://www.audacityteam.org/features/trim/
+- 기관: Audacity
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 선택 구간 자르기·재생 확인
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s263"></a>
+### S263. FFmpeg Documentation
+
+- URL: https://ffmpeg.org/ffmpeg.html
+- 기관: FFmpeg
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 입력·출력 옵션과 오디오 변환
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s264"></a>
+### S264. Create, open, and convert documents in TextEdit
+
+- URL: https://support.apple.com/en-gb/guide/textedit/txtee6663a0e/1.20/mac/26
+- 기관: Apple
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 일반 텍스트 전환·저장
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s265"></a>
+### S265. Common file name extensions in Windows
+
+- URL: https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/common-file-name-extensions-in-windows
+- 기관: Microsoft
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 파일 확장자 표시·확장자 변경과 형식 변환의 구별
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s266"></a>
+### S266. Change settings in TextEdit on Mac
+
+- URL: https://support.apple.com/en-gb/guide/textedit/txted1063/1.20/mac/26
+- 기관: Apple
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 일반 텍스트 인코딩·.txt 자동 추가·스마트 따옴표 설정
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s267"></a>
+### S267. Announcing Windows 10 Insider Preview Build 18298
+
+- URL: https://blogs.windows.com/windows-insider/2018/12/10/announcing-windows-10-insider-preview-build-18298/
+- 기관: Microsoft Windows Blog
+- 게시·갱신일: 2018-12-10
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 메모장 UTF-8 인코딩 선택의 공식 기록. 현재 메뉴는 기기에서 확인
+- 연결 노트: [phase-6b-procedures.md](phase-6b-procedures.md)
+
+<a id="s268"></a>
+### S268. schtasks create
+
+- URL: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create
+- 기관: Microsoft Learn
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: DAILY·ST·TN·TR 명령 구문. Windows 실기기 실행 미검증
+- 연결 노트: [phase-6b-scheduling.md](phase-6b-scheduling.md)
+
+<a id="s269"></a>
+### S269. crontab(5) Linux manual page
+
+- URL: https://man7.org/linux/man-pages/man5/crontab.5.html
+- 기관: Linux man-pages / Michael Kerrisk
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: 다섯 시각 필드·명령부 퍼센트 처리
+- 연결 노트: [phase-6b-scheduling.md](phase-6b-scheduling.md)
+
+<a id="s270"></a>
+### S270. crontab(1p) POSIX Programmer’s Manual
+
+- URL: https://man7.org/linux/man-pages/man1/crontab.1p.html
+- 기관: IEEE / The Open Group POSIX
+- 게시·갱신일: 미상
+- 접근일: 2026-10-26
+- 신뢰도: A
+- 확인 범위: crontab 편집·목록·제거 명령과 예약 파일 구문
+- 연결 노트: [phase-6b-scheduling.md](phase-6b-scheduling.md)

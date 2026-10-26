@@ -2,8 +2,9 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ReelsBook 진행 현황</title>
+<title>Guidebooks 진행 현황</title>
 <style>
   :root { --bg:#f7f6f1; --fg:#1f2a24; --muted:#5b665f; --card:#fffefa; --line:#dfe3dc; --accent:#2f6b4f; --done:#2f6b4f; --wip:#b07a18; --todo:#8a918c; }
   @media (prefers-color-scheme: dark) { :root { --bg:#141916; --fg:#e7ece8; --muted:#a3ada6; --card:#1c231f; --line:#2c352f; --accent:#7cc49e; --done:#7cc49e; --wip:#e0b25a; --todo:#7d857f; } }
@@ -30,10 +31,10 @@
 <body>
 <main>
   <p class="lead"><a href="../">← Guidebooks</a></p>
-  <h1>ReelsBook 진행 현황</h1>
+  <h1>Guidebooks 진행 현황</h1>
   <p class="lead">마지막 갱신: <span id="updated">2026-10-26</span> · 수정·품질 검사 완료, Claude Code 최종 검수 대기입니다.</p>
 
-  <h2>단계별 상태</h2>
+  <h2>ReelsBook 단계별 상태</h2>
   <div class="wrap"><table>
     <thead><tr><th>단계</th><th>상태</th><th>내용</th></tr></thead>
     <tbody>
@@ -51,9 +52,18 @@
       <tr><td>실제 계정 확인</td><td class="s todo">조건부 대기</td><td>사용자 테스트 계정 제공 시 메뉴·라벨·예약·게시·공개 범위 확인. 7w는 실제 로그인·게시를 하지 않음</td></tr>
       <tr><td>6a 초보자 독립 검토</td><td class="s done">검토 완료</td><td>차단 1·혼란 12·사소 2건을 목록화하고 수정 단계에 반영</td></tr>
       <tr><td>6b 수정과 품질 게이트</td><td class="s done">작성·검증 완료</td><td>일일 생성·OS 예약 명령 도우미, 실습 9·E2E 연결, 초보자 안내 보완, SVG 수입·비용·잔액, 큰 미리보기·모바일 입력, 링크·출처·퀴즈 자동 검사</td></tr>
-      <tr><td>다음 책: 유튜브 쇼츠 편</td><td class="s todo">예정</td><td>영상 제작 집중, 이론편·실습편, YouTube Studio 업로드까지</td></tr>
+
     </tbody>
   </table></div>
+
+  <h2>ShortsBook · 유튜브 쇼츠 편</h2>
+  <p class="lead"><a href="../shorts/">영상 제작에 집중한 쇼츠 입문서</a> · 샘플 두 장 사용자 확인 대기</p>
+  <div class="wrap"><table><thead><tr><th>단계</th><th>상태</th><th>내용</th></tr></thead><tbody>
+    <tr><td>Y1 설계</td><td class="s done">설계 기록</td><td>이론 1~16·실습 0~10, 첫 영상 제작과 업로드</td></tr>
+    <tr><td>Y2 자료조사</td><td class="s done">조사 기록</td><td>학습자 질문 125개·16개 주제 조사 노트</td></tr>
+    <tr><td>Y3 뼈대·샘플</td><td class="s wip">사용자 확인 대기</td><td><a href="../shorts/chapters/02-revenue.html">이론 2장 · 수익</a> · <a href="../shorts/practice/08-publish.html">실습 8 · 첫 업로드</a>. 전체 집필·키트 확장은 준비중</td></tr>
+    <tr><td>Y4~Y6</td><td class="s todo">대기</td><td>샘플 선택 후 전체 집필·실습·통합 검증</td></tr>
+  </tbody></table></div>
 
   <h2>스타터 키트 샘플 결과물</h2>
   <p class="lead">교과서를 따라 하면 만들어지는 결과물 예시입니다. 내용은 연습용 합성 데이터입니다.</p>

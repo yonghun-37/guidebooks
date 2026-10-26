@@ -64,6 +64,11 @@ class StyleLintTests(unittest.TestCase):
         self.assertEqual(row['counts']['internal'], 0)
         self.assertEqual(row['counts']['forbidden'], 1)
 
+    def test_shorts_fact_ids_are_internal_but_footnotes_are_allowed(self):
+        row = self.analyze('<p>YT-001</p><sup class="footnote-ref">[Y001]</sup>')
+        self.assertEqual(row['counts']['internal'], 1)
+        self.assertEqual(row['matches']['internal'][0]['text'], 'YT-001')
+
     def test_forbidden_table_phrases(self):
         text = ('지급자 대가 장부 현금 잔액 적격성 로컬 키트 계약 실측 아님 시간 배분 예시 탐색 후보 '
                 '성공 화면을 본 것으로 서술하지 않습니다 독립 확인을 완료하지 못했다 '

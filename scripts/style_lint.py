@@ -41,7 +41,7 @@ FORBIDDEN = [
 # 사실표의 ID 계열만 잡아 UTF-8, ISO-8601 등 일반 기술 표기를 오인하지 않는다.
 FACT_PREFIXES = ('AI ALG API ASSET AUTO CRAFT ECON ETHIC EXPL GAP GLOBAL GROW '
                  'KCASE LABEL LAW LEARN META METRIC NEWS NOCODE PRAC PRICE REV '
-                 'RISK SEC TAX VIDEO XPLAT').split()
+                 'RISK SEC TAX VIDEO XPLAT YT').split()
 INTERNAL = [
     ('7r·7v', r'(?<![A-Za-z0-9])7[rv](?![A-Za-z0-9])'),
     ('Phase', r'(?<![A-Za-z])phase'), ('Hermes', r'hermes'),

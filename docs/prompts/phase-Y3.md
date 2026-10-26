@@ -1,0 +1,10 @@
+너는 ai-insta 프로젝트의 작업자(Codex)다. AGENTS.md, .agents/skills/guidebook-pipeline·guidebook-writing, **docs/STYLE-GUIDE.md**, **docs/DESIGN-shorts.md**, docs/learner-questions-shorts.md, research-shorts/BRIEFING.md·FACT-SHEET.md·SOURCES.md·QUESTION-MAP.md, docs/reference-analysis-books.md 8절, 그리고 완성된 ReelsBook(site/)의 구조(assets/book.css·book.js·common.js·practice.js, chapters/03-revenue.html, practice/07-publish.html, sim의 R03 타임라인 구현)를 읽어라.
+이번 작업은 **Phase Y3. ShortsBook 뼈대 + 샘플 2개(사용자 확인용)** 다. 전체 집필은 하지 않는다. commit하지 마라. ReelsBook(site/) 파일은 수정하지 마라.
+
+1. 뼈대: `site-shorts/`에 ShortsBook을 만든다. ReelsBook의 공통 자산을 복사해 재사용하되 책 이름·색 테마(유튜브 편임을 알 수 있되 YouTube 로고·브랜드 자산 복제 금지)·장 데이터(DESIGN-shorts 2·3절의 이론 1~16, 실습 0~10, 상태 '준비중')를 바꾼다. 표지(index.html)에 "영상 제작에 집중한 쇼츠 입문서", 이론/실습 두 트랙, "오늘 첫 쇼츠 업로드까지: 실습편 시작" 버튼. 인물은 새 가상 인물 2명(초보 제작자 + 영상 편집자 멘토)으로 정하고 DESIGN-shorts에 없는 설정은 docs/results/phase-Y3.md에 기록.
+2. 배포: .github/workflows/pages.yml에 `site-shorts` → `_site/shorts` 복사를 추가하고, shelf/index.html에 ShortsBook 카드(경로 shorts/), shelf/progress/index.html에 쇼츠 편 진행 상태를 추가한다.
+3. **샘플 A — (이론) 2장 "쇼츠는 어떻게 보이고 무엇으로 돈이 되나"**: STYLE-GUIDE 2절 틀 그대로(먼저 답부터 / 한눈에 보기 / 축별 설명 / 해 보기 / 사례 / 단계표 / 작업실 / FAQ 5 / 정리·퀴즈). 첫 질문 "조회수 100만이면 얼마?"에 research-shorts 근거(한국 RPM 참고치, 45% 구조, 유효 조회수)로 직답. 축 예: ① 쇼츠 광고 수익 공유 ② 팬 후원(슈퍼 땡스 등 조기 YPP 기능) ③ 쇼핑·제휴 ④ 협찬 ⑤ 내 상품. 단계표: 구독 0 → 500(조기 YPP) → 1,000(광고 단계)과 각 조건. 해 보기: "유효 조회수 × RPM 참고치" 계산기(가상·참고 표시, 내 Studio 값으로 바꿔 넣기).
+4. **샘플 B — (실습) 8 "YouTube Studio로 첫 쇼츠 올리기"**: ReelsBook 실습편 틀 그대로. research-shorts의 PC 업로드·모바일 업로드 절차(11·12 노트)로 단계별: 업로드 버튼 → 파일 선택 → 제목·설명 → 시청자층(아동용 여부) → 변경/합성 콘텐츠(AI) 표시 → 동영상 요소 → 검토 → 공개 범위(처음엔 '일부 공개'로 확인 후 공개 권장 여부는 근거로 판단) → 게시 → 쇼츠로 분류됐는지 확인하는 법 → 주소 기록. 앱 버튼 표준 안내 문구, 직접 그린 도식 SVG(YouTube UI·로고 복제 금지), Windows/macOS/모바일 탭.
+5. 샘플 인터랙션 1개: 샘플 A 또는 B에 들어갈 도구 하나를 완성도 있게(예: B의 '업로드 전 체크 분기' — 아동용/AI 표시/음악 권리 질문에 답하면 필요한 설정이 표시).
+6. 검증: style_lint(새 기준선은 만들지 말고 금지어·내부 용어·단서 기준만), check_site를 site-shorts에도 적용(필요하면 경로 인자 추가), 1280/375/360px·콘솔 오류·키보드. 스크린샷 docs/results/phase-Y3/.
+7. docs/results/phase-Y3.md, `python3 scripts/notify.py "🎬 [쇼츠 편 샘플 준비] ..." <샘플 A 스크린샷>`.
