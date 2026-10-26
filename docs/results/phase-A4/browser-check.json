@@ -1,0 +1,621 @@
+{
+  "checks": 986,
+  "layouts": [
+    {
+      "file": "advanced/00-overview.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/00-overview.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/00-overview.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/00-overview.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/00-overview.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/00-overview.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/01-pipeline.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/02-credentials.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/02-credentials.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/02-credentials.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/02-credentials.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/02-credentials.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/02-credentials.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/03-generation.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/03-generation.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/03-generation.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/03-generation.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/03-generation.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/03-generation.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/04-render.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/05-youtube.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/05-youtube.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/05-youtube.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/05-youtube.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/05-youtube.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/05-youtube.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/06-gates.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/07-operations.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/08-analytics.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/08-analytics.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/08-analytics.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/08-analytics.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/08-analytics.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/08-analytics.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/09-safety.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "index.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "index.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "index.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "index.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "index.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "index.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "glossary.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "glossary.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "glossary.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "glossary.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "glossary.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "glossary.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "credits.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "credits.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "credits.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "credits.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "credits.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "credits.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "practice/09-api.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "practice/09-api.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "practice/09-api.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "practice/09-api.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "practice/09-api.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "practice/09-api.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360
+    }
+  ],
+  "svgIssues": [],
+  "errors": [],
+  "internalLinks": 283,
+  "mockVideoDuration": 36.1
+}

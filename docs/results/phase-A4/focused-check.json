@@ -1,0 +1,30 @@
+{
+  "svgLinkKeyboard": true,
+  "gateNativeSelectKeyboard": true,
+  "snapshots": [
+    {
+      "width": 1280,
+      "theme": "light"
+    },
+    {
+      "width": 1280,
+      "theme": "dark"
+    },
+    {
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "width": 360,
+      "theme": "light"
+    },
+    {
+      "width": 360,
+      "theme": "dark"
+    }
+  ]
+}

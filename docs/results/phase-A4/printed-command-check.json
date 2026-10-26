@@ -1,0 +1,44 @@
+[
+  {
+    "chapter": "03-generation",
+    "command": "python -c \"from pathlib import Path; import json; d=json.loads(next(Path('private/state').glob('*/draft.json')).read_text()); print(d['title']); print(len(d['scenes']))\"",
+    "exit": 0,
+    "stdout": "월급날 10분, 돈을 네 칸으로 나누기\n5\n",
+    "stderr": ""
+  },
+  {
+    "chapter": "03-generation",
+    "command": "python -c \"from pathlib import Path; import json; d=json.loads(next(Path('private/state').glob('*/draft.json')).read_text()); print(d['title']); print(len(d['scenes']))\"",
+    "exit": 0,
+    "stdout": "월급날 10분, 돈을 네 칸으로 나누기\n5\n",
+    "stderr": ""
+  },
+  {
+    "chapter": "04-render",
+    "command": "python -c \"from pathlib import Path; import json; from rendering.media import probe_media; print(json.dumps(probe_media(next(Path('private/state').glob('*/short.mp4'))),ensure_ascii=False,indent=2))\"",
+    "exit": 0,
+    "stdout": "{\n  \"width\": 1080,\n  \"height\": 1920,\n  \"fps\": 30.0,\n  \"video_codec\": \"h264\",\n  \"audio_codec\": \"aac\",\n  \"duration\": 36.1,\n  \"lufs\": -16.05,\n  \"probe_method\": \"pip ffmpeg stderr parser (shorts-kit 재사용)\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "chapter": "04-render",
+    "command": "python -c \"from pathlib import Path; import json; from rendering.media import probe_media; print(json.dumps(probe_media(next(Path('private/state').glob('*/short.mp4'))),ensure_ascii=False,indent=2))\"",
+    "exit": 0,
+    "stdout": "{\n  \"width\": 1080,\n  \"height\": 1920,\n  \"fps\": 30.0,\n  \"video_codec\": \"h264\",\n  \"audio_codec\": \"aac\",\n  \"duration\": 36.1,\n  \"lufs\": -16.05,\n  \"probe_method\": \"pip ffmpeg stderr parser (shorts-kit 재사용)\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "chapter": "05-youtube",
+    "command": "python -c \"from pathlib import Path; import json; d=json.loads(next(Path('private/state').glob('*/request-plan.json')).read_text()); print(d['mode'],d['network_calls']); print(d['metadata']['status']); print(d['requests'][0]['headers']['Authorization'])\"",
+    "exit": 0,
+    "stdout": "dry-run 0\n{'privacyStatus': 'private', 'selfDeclaredMadeForKids': False, 'containsSyntheticMedia': True}\nBearer <REDACTED>\n",
+    "stderr": ""
+  },
+  {
+    "chapter": "05-youtube",
+    "command": "python -c \"from pathlib import Path; import json; d=json.loads(next(Path('private/state').glob('*/request-plan.json')).read_text()); print(d['mode'],d['network_calls']); print(d['metadata']['status']); print(d['requests'][0]['headers']['Authorization'])\"",
+    "exit": 0,
+    "stdout": "dry-run 0\n{'privacyStatus': 'private', 'selfDeclaredMadeForKids': False, 'containsSyntheticMedia': True}\nBearer <REDACTED>\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "args": [
+      "python",
+      "doctor.py",
+      "--config",
+      "config.json"
+    ],
+    "exit": 0,
+    "stdout": "[ok] Python 3.11.15 · 최소 3.11 이상 충족\n[ok] pip ffmpeg 실행 가능. 시스템 패키지 설치가 필요 없습니다.\n[info] ffprobe 없음: 동봉하지 않고 pip ffmpeg 규격 parser로 검사합니다.\n[ok] 일 $1.0, 월 $10.0 상한. UTC 기준, 재시도·예약 비용 포함.\n[ok] mock 준비 완료. 키·토큰 없이 두 흐름을 실행할 수 있습니다.\n"
+  },
+  {
+    "args": [
+      "python",
+      "pipeline.py",
+      "run",
+      "--flow",
+      "shorts",
+      "--config",
+      "rss-config.json",
+      "--provider",
+      "mock",
+      "--mode",
+      "auto",
+      "--state",
+      "private/rss-demo"
+    ],
+    "exit": 0,
+    "stdout": "cf6246d4e99c · shorts · dry_run\n미리보기: /tmp/shorts-a4-auto-kit/private/rss-demo/cf6246d4e99c/preview.html\n"
+  }
+]

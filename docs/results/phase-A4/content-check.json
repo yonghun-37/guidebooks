@@ -1,0 +1,86 @@
+{
+  "pages": [
+    {
+      "page": "00-overview.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 1,
+      "sources": 4
+    },
+    {
+      "page": "01-pipeline.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 2,
+      "sources": 3
+    },
+    {
+      "page": "02-credentials.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 2,
+      "sources": 17
+    },
+    {
+      "page": "03-generation.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 1,
+      "sources": 11
+    },
+    {
+      "page": "04-render.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 2,
+      "sources": 5
+    },
+    {
+      "page": "05-youtube.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 2,
+      "sources": 15
+    },
+    {
+      "page": "06-gates.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 1,
+      "sources": 4
+    },
+    {
+      "page": "07-operations.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 4,
+      "sources": 18
+    },
+    {
+      "page": "08-analytics.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 1,
+      "sources": 5
+    },
+    {
+      "page": "09-safety.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 1,
+      "sources": 8
+    },
+    {
+      "page": "e2e.html",
+      "faq": 5,
+      "quiz": 3,
+      "figures": 1,
+      "sources": 2
+    }
+  ],
+  "a_sources": 53,
+  "quiz_questions": 33,
+  "figures": 18,
+  "protected_files": 1996,
+  "errors": []
+}

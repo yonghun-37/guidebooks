@@ -1,0 +1,61 @@
+/* 심화편 전용. 공통 책 스타일의 색 변수와 네이티브 입력을 사용한다. */
+.advanced .adv-jump { margin:24px 0 0; border:1px solid var(--line); border-radius:10px; padding:12px 18px; background:var(--surface); }
+.adv-jump summary { cursor:pointer; font-size:14px; font-weight:700; }
+.adv-chapters { display:grid; grid-template-columns:1fr 1fr; gap:8px 20px; padding:16px 0; font-size:14px; }
+.advanced .adv-axis { margin-bottom:38px; scroll-margin-top:100px; }
+.advanced .adv-axis:last-child { margin-bottom:0; }
+.advanced h3 { line-height:1.55; }
+.advanced .adv-action { border-top:1px dashed var(--line); padding-top:13px; color:var(--accent); font-size:14px; }
+.adv-action strong { display:block; }
+.adv-figure { margin:24px 0 30px; padding:20px; background:var(--surface); border:1px solid var(--line); border-radius:14px; }
+.adv-figure svg { width:100%; max-width:410px; display:block; margin:auto; overflow:visible; }
+.adv-figure svg rect { fill:var(--soft); stroke:var(--line); stroke-width:1.5; }
+.adv-figure svg text,.adv-cost-chart svg text { fill:var(--ink); font-family:var(--body); font-size:19px; }
+.adv-figure svg .svg-strong { font-weight:750; }
+.adv-figure svg .svg-small { font-size:15px; fill:var(--muted); }
+.adv-figure svg path { fill:none; stroke:var(--accent); stroke-width:2; }
+.adv-figure svg .svg-life { stroke:var(--line); stroke-dasharray:4 5; }
+.adv-figure svg .svg-bar { stroke-width:13; }
+.adv-figure svg a { outline-offset:4px; }
+.adv-figure svg a:hover rect,.adv-figure svg a:focus rect { stroke:var(--accent); stroke-width:3; }
+.advanced figcaption { font-size:14px; color:var(--muted); line-height:1.7; margin-top:18px; }
+.adv-table { margin:24px 0; overflow-x:auto; border:1px solid var(--line); border-radius:10px; }
+.adv-table table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:14px; }
+.adv-table th,.adv-table td { padding:13px 12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; overflow-wrap:anywhere; word-break:normal; }
+.adv-table th { background:var(--soft); font-weight:700; }
+.adv-table tr:last-child td { border-bottom:0; }
+.adv-tabs { margin:24px 0; border:1px solid var(--line); border-radius:10px; padding:12px; background:var(--surface); }
+.adv-tabs [role=tablist] { display:flex; gap:10px; }
+.adv-tabs [aria-selected=true] { background:var(--accent); color:var(--paper); border-color:var(--accent); }
+.adv-tabs .code-box { margin:14px 0 0; }
+.advanced .code-box pre { white-space:pre-wrap; overflow-wrap:anywhere; word-break:break-word; font-size:13px; line-height:1.8; }
+.adv-success { padding:20px 22px; border:1px solid var(--accent); border-radius:10px; background:var(--soft); }
+.adv-success p:last-child,.advanced .note p:last-child { margin-bottom:0; }
+.advanced .note { margin:24px 0; }
+.adv-tool { margin:28px 0; }
+.adv-tool .sim-body label { display:block; font-size:14px; margin:12px 0; }
+.adv-tool input,.adv-tool select { display:block; width:100%; min-height:44px; min-width:0; padding:8px 10px; margin-top:7px; background:var(--paper); color:var(--ink); border:1px solid var(--line); border-radius:7px; }
+.adv-inputs { display:grid; grid-template-columns:1fr 1fr; gap:0 18px; }
+.adv-cost-chart { margin:22px 0 0; }
+.adv-cost-chart svg { display:block; width:100%; }
+.adv-cost-chart rect { fill:var(--accent); }
+.adv-cost-chart svg text { font-size:14px; }
+.adv-check { display:flex; align-items:flex-start; gap:10px; padding:14px; margin:14px 0; font-size:15px; background:var(--surface); border:1px solid var(--line); border-radius:9px; }
+.adv-check input { flex-shrink:0; }
+.adv-video { text-align:center; }
+.adv-video video { display:block; width:min(100%,320px); height:auto; margin:auto; border-radius:12px; background:#17141b; }
+.advanced [data-advanced-progress] { font-size:14px; color:var(--muted); }
+.advanced .chapter-faq details { border-bottom:1px solid var(--line); padding:16px 0; }
+.advanced .chapter-faq summary { cursor:pointer; font-weight:700; font-size:16px; }
+.advanced .faq-answer { padding:16px 0 0; font-size:15px; }
+.advanced .faq-answer p:last-child { margin-bottom:0; }
+@media(max-width:600px) {
+ .adv-chapters,.adv-inputs { grid-template-columns:1fr; }
+ .adv-figure { padding:10px; }
+ .adv-table th,.adv-table td { padding:10px 8px; font-size:13px; }
+ .adv-tabs { padding:9px; }
+ .adv-tabs .code-box pre { padding-left:12px; padding-right:12px; }
+ .adv-check { flex-wrap:wrap; }
+ .adv-check input { margin-right:2px; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
