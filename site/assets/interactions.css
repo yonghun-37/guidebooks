@@ -1,0 +1,74 @@
+/* 교과서 도구: 작은 화면에서도 대표 입력과 해석을 함께 둔다. */
+.interaction .sim-heading { gap: 8px; flex-wrap: wrap; }
+.interaction .sim-heading h3 { margin: 0; }
+.interaction .tool-body { padding: 16px; font-size: 14px; line-height: 1.5; }
+.interaction p { margin: 8px 0; }
+.interaction .tool-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0; }
+.interaction button { min-height: 44px; padding: 7px 10px; font-size: 13px; }
+.interaction button[aria-pressed="true"], .interaction [aria-current="step"] { background: var(--warm); border-color: var(--orange); color: var(--ink); }
+.interaction label { display: block; min-width: 0; font-size: 13px; }
+.interaction input:not([type="checkbox"]), .interaction textarea, .interaction select { display: block; width: 100%; max-width: 100%; min-width: 0; min-height: 44px; border: 1px solid var(--line); border-radius: 6px; padding: 6px; background: var(--surface); color: var(--ink); font: inherit; }
+.interaction textarea { resize: vertical; }
+.interaction input[type="range"] { padding: 0; margin: 0; }
+.interaction input[type="checkbox"] { min-width: 20px; min-height: 20px; vertical-align: middle; }
+.interaction [aria-invalid="true"] { outline: 2px solid #b33b26; outline-offset: 1px; }
+.interaction .tool-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+.interaction details { margin-top: 8px; }
+.interaction summary { cursor: pointer; padding: 10px 0; min-height: 44px; }
+.interaction .sim-result { margin: 0; font-size: 14px; padding: 12px 16px; min-height: 64px; }
+.interaction .sim-assumptions { margin: 0; padding: 10px 16px; font-size: 12px; }
+.interaction .tool-flow { list-style: none; padding: 0; margin: 10px 0; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; }
+.interaction .tool-flow li { padding: 8px; background: var(--soft); border: 1px solid var(--line); border-radius: 6px; overflow-wrap: anywhere; }
+.interaction .tool-flow small { display: block; color: var(--muted); }
+.interaction .card-editor { display: grid; grid-template-columns: minmax(0,1fr) 240px; gap: 12px; align-items: start; }
+.interaction .card-stage { position: relative; width: 240px; height: 300px; max-width: 100%; overflow: hidden; border: 1px solid var(--line); background: #fff8e9; color: #172b35; }
+.interaction .card-stage.is-small { width: 96px; height: 120px; }
+.interaction .card-sheet { position: absolute; top: 0; left: 0; width: 240px; height: 300px; transform-origin: top left; display: grid; grid-template-rows: 52px minmax(0,1fr) 28px; gap: 8px; box-sizing: border-box; font-family: system-ui, sans-serif; }
+.interaction .card-copy { white-space: pre-wrap; overflow-wrap: anywhere; overflow: hidden; margin: 0; line-height: 1.45; min-height: 0; }
+.interaction .card-head { font-weight: 750; }
+.interaction .card-source { border-top: 1px solid currentColor; padding-top: 3px; }
+.interaction .card-copy.is-clipped { outline: 2px dashed #b33b26; outline-offset: -2px; }
+.interaction .clip-label { color: var(--ink); font-weight: 700; font-size: 12px; }
+.interaction .reel-preview { display: grid; grid-template-columns: 72px minmax(0,1fr); align-items: center; gap: 10px; }
+.interaction .reel-screen { width: 72px; height: 112px; background: #172b35; color: #fff8e9; display: flex; flex-direction: column; justify-content: space-between; padding: 6px; font-size: 11px; overflow-wrap: anywhere; border-radius: 6px; }
+.interaction .reel-screen strong { color: #fff8e9; font-size: 13px; }
+.interaction .reel-screen p { line-height: 1.4; }
+.interaction .timeline { position: relative; margin: 8px 0 0 42px; }
+.interaction .track { position: relative; height: 32px; margin: 4px 0; background: var(--soft); border: 1px solid var(--line); border-radius: 3px; }
+.interaction .track-label { position: absolute; left: -42px; width: 40px; top: 5px; font-size: 12px; }
+.interaction .clip { position: absolute; top: 0; height: 30px; min-height: 30px; min-width: 0; overflow: hidden; padding: 2px; border-radius: 0; border: 1px solid var(--line); background: var(--surface); font-size: 11px; }
+.interaction .voice-clip { position: absolute; inset: 0; padding: 4px; font-size: 12px; }
+.interaction .playhead { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--orange); pointer-events: none; }
+.interaction .step-flow { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.interaction .step-flow li { font-size: 12px; padding: 6px; }
+.interaction .step-flow [aria-current="step"] { outline: 2px solid var(--orange); }
+.interaction .state-panel { padding: 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); }
+.interaction .tool-log { padding-left: 22px; max-height: 160px; overflow-y: auto; font-size: 13px; }
+.interaction .evidence-log { list-style: none; padding: 0; margin: 8px 0; }
+.interaction .evidence-log li { border-left: 3px solid var(--orange); padding: 5px 8px; margin: 5px 0; }
+.interaction .decision-row { display: grid; grid-template-columns: 40px minmax(0,1fr); align-items: center; gap: 6px; margin: 6px 0; }
+.interaction .decision-row select { min-height: 44px; }
+.interaction .decision-note { font-size: 12px; color: var(--muted); }
+.interaction .tool-body > .sim-result { margin: 10px -10px; }
+.tool-practice { margin: 24px 0; }
+.tool-shortcuts { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 0; }
+.tool-shortcuts a { padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; min-height: 44px; }
+@media (max-width: 500px) {
+  .interaction .tool-body { padding: 10px; }
+  .interaction .sim-heading { padding: 12px; }
+  .interaction .sim-heading h3 { font-size: 16px; }
+  .interaction .model-badge { font-size: 10px; }
+  .interaction .card-editor { grid-template-columns: 1fr; gap: 8px; }
+  .interaction .card-editor textarea { height: 60px; min-height: 60px; }
+  .interaction .card-stage { width: 264px; height: 330px; margin: auto; }
+  .interaction .card-stage.is-small { width: 96px; height: 120px; }
+  .interaction .card-editor .clip-label { margin: 3px 0; }
+  .interaction .tool-flow:not(.step-flow) { grid-template-columns: 1fr; gap: 3px; }
+  .interaction .tool-flow:not(.step-flow) li { padding: 5px 8px; }
+  .interaction .tool-flow small { display: inline; margin-right: 6px; }
+  .interaction .sim-result { padding: 10px; }
+  .interaction .sim-assumptions { padding: 8px 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .interaction *, .interaction *::before, .interaction *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

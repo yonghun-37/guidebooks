@@ -39,7 +39,7 @@ window.ReelsCatalog = Object.freeze([
     "chapter": 3,
     "slug": "03-revenue",
     "id": "ledger-sim",
-    "title": "쿠팡 인정 구매 수를 바꿔 보세요",
+    "title": "돈의 네 갈래를 따라가세요",
     "section": "simulator"
   },
   {
@@ -95,7 +95,7 @@ window.ReelsCatalog = Object.freeze([
     "chapter": 7,
     "slug": "07-cards",
     "id": "ch7-sim",
-    "title": "본문 글줄 계산",
+    "title": "내 문안이 카드 안에 들어갈까요?",
     "section": "simulator"
   },
   {
@@ -109,7 +109,7 @@ window.ReelsCatalog = Object.freeze([
     "chapter": 8,
     "slug": "08-reels",
     "id": "ch8-sim",
-    "title": "장면당 자막 속도",
+    "title": "자막을 재생하며 시간을 맞추세요",
     "section": "simulator"
   },
   {
@@ -136,8 +136,8 @@ window.ReelsCatalog = Object.freeze([
   {
     "chapter": 10,
     "slug": "10-publishing",
-    "id": "simulator",
-    "title": "지금 내 예약은 어디서 실행되나요?",
+    "id": "publishing-sim",
+    "title": "요청 성공과 게시 완료를 구별하세요",
     "section": "simulator"
   },
   {
@@ -164,8 +164,8 @@ window.ReelsCatalog = Object.freeze([
   {
     "chapter": 12,
     "slug": "12-safety",
-    "id": "simulator",
-    "title": "내 게시물에서 무엇을 고칠까요?",
+    "id": "safety-sim",
+    "title": "증거를 먼저 고르고 판단하세요",
     "section": "simulator"
   },
   {

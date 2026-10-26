@@ -159,7 +159,7 @@
       [...node.parentElement.children].forEach(sibling => { if (sibling !== node && !['SCRIPT', 'STYLE'].includes(sibling.tagName)) sibling.hidden = true; });
       node = node.parentElement;
     }
-    block.querySelectorAll('.simulator').forEach(sim => { if (sim !== embedded) sim.hidden = true; });
+    block.querySelectorAll('.simulator').forEach(sim => { if (sim !== embedded && !embedded.contains(sim)) sim.hidden = true; });
     document.documentElement.classList.add('sim-embed');
   }
   document.querySelectorAll('a[data-term]').forEach((anchor, index) => {
@@ -218,6 +218,12 @@
         if (!isCorrect) button.classList.add('incorrect');
         const feedback = question.querySelector('[data-feedback]'); feedback.hidden = false;
         feedback.textContent = `${isCorrect ? '✓ 정답입니다.' : '↻ 다시 살펴보세요.'} 정답: ${question.querySelector('[data-correct="true"]').textContent} — ${question.dataset.explanation}`;
+        if (!isCorrect && question.dataset.retryTool) {
+          const retry = document.createElement('a');
+          retry.href = question.dataset.retryTool;
+          retry.textContent = '관련 도구에서 다시 해 보기 →';
+          feedback.append(document.createElement('br'), retry);
+        }
         update();
       }));
     });
