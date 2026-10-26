@@ -216,3 +216,1821 @@
 | <a id="y397"></a>Y397 | [Firefly product description C2PA](https://helpx.adobe.com/legal/product-descriptions/adobe-firefly.html) | Adobe | 2026-08-27 | 2026-10-26 | A | Codex 직접 본문 확인(웹/HTTP): 08-27문서·조건부IP면책·제휴/베타예외·C2PA자동첨부  |
 | <a id="y398"></a>Y398 | [Nano Banana Pro prompting tips](https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/) | Google | 게시·갱신일 미표기 | 2026-10-26 | A | Codex 직접 본문 확인(웹/HTTP): Gemini이미지용피사체/용도/비율/참조/캐릭터/편집프롬프트  |
 | <a id="y399"></a>Y399 | [Firefly 한국 개인 월별 요금제](https://www.adobe.com/kr/products/firefly/plans.html) | Adobe | 게시·갱신일 미표기 | 2026-10-26 | A | Codex 직접 본문 확인(웹/HTTP): 한국Standard월13200·Pro26400/VAT포함·2000/4000크레딧·무료일일제한  |
+
+
+<a id="r3b-ai-모델사용처비용"></a>
+## R3b. AI 모델·사용처·비용
+
+기준/접근일 **2026-10-26**. 모델별 정리·구독별 포함량·계산식은 [공통 모델·가격 노트](../research/ai-models-pricing.md). HTTP200의 로그인 셸·빈 요금표는 직접 본문으로 세지 않았다. 기존 R3와 겹치는 공식 URL도 R3b 재확인 범위를 따로 기록했다.
+
+<a id="y400"></a>
+### Y400. OpenAI API 가격
+
+- URL: https://developers.openai.com/api/docs/pricing
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Standard와Batch/Fast 분리·현행/잔존 GPT 입력/출력·이미지/음성요율
+- Hermes 대조: `r3b-01-openai`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y401"></a>
+### Y401. OpenAI 모델 목록
+
+- URL: https://developers.openai.com/api/docs/models
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 현행 GPT-6/이미지/음성 모델·Deprecated와Shut down
+- Hermes 대조: `r3b-01-openai`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y402"></a>
+### Y402. OpenAI 이미지 생성 비용·규격
+
+- URL: https://developers.openai.com/api/docs/guides/image-generation
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: GPT Image2 출력장당예·2.5 토큰단가/출력비 계산기·1모델종료
+- Hermes 대조: `r3b-01-openai`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y404"></a>
+### Y404. OpenAI 종료 일정
+
+- URL: https://developers.openai.com/api/docs/deprecations
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: OpenAI 모델별 종료일·Sora API·TTS2027-01-06
+- Hermes 대조: `r3b-01-openai`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y405"></a>
+### Y405. Claude 가격
+
+- URL: https://claude.com/pricing
+- 기관: Anthropic
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Claude 개인 플랜·Max API크레딧·현행/이전 모델 단가
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y406"></a>
+### Y406. Claude API 가격
+
+- URL: https://platform.claude.com/docs/en/about-claude/pricing
+- 기관: Anthropic
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Claude API 단가·캐시·부가기능
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y407"></a>
+### Y407. Claude 모델 목록
+
+- URL: https://platform.claude.com/docs/en/about-claude/models/overview
+- 기관: Anthropic
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Claude5.5/Fable5.1 ID·1M/128K·클라우드별매핑
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y408"></a>
+### Y408. Gemini API 가격
+
+- URL: https://ai.google.dev/gemini-api/docs/pricing
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Gemini 주력/이미지/TTS/음악 Standard·Batch 분리·원형Nano종료문구상충
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y409"></a>
+### Y409. Google AI 구독 한국
+
+- URL: https://one.google.com/intl/ko_kr/about/google-ai-plans/
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Google AI혜택·Flow/FlowMusic별도풀·Argon Pro포함;가격일부빈값
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y410"></a>
+### Y410. Vertex 생성 AI 가격
+
+- URL: https://cloud.google.com/vertex-ai/generative-ai/pricing
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Cloud LLM·Imagen잔존가격·Veo/count단위·Omni초당토큰환산
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y413"></a>
+### Y413. CLOVA Studio 가격
+
+- URL: https://www.ncloud.com/product/aiService/clovaStudio
+- 기관: NAVER Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: HCX모델별1000토큰·금액빈값·VAT별도
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y414"></a>
+### Y414. Midjourney 구독
+
+- URL: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans
+- 기관: Midjourney
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Midjourney 월/연정가·GPU시간·추가GPU·상업매출조건
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y415"></a>
+### Y415. Midjourney 모델 버전
+
+- URL: https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version
+- 기관: Midjourney
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Midjourney 모델 버전의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y416"></a>
+### Y416. Ideogram 가격
+
+- URL: https://ideogram.ai/pricing
+- 기관: Ideogram
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Ideogram Plus/Pro/Team금액·월크레딧;모델별직접 API상세는Hermes05
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y417"></a>
+### Y417. Ideogram API 가격
+
+- URL: https://developer.ideogram.ai/ideogram-api/api-overview
+- 기관: Ideogram
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Ideogram API 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y418"></a>
+### Y418. Firefly 한국 가격
+
+- URL: https://www.adobe.com/kr/products/firefly/plans.html
+- 기관: Adobe
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 한국Firefly 월별4플랜VAT포함·월2000/4000/10000/50000
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y419"></a>
+### Y419. Firefly 크레딧
+
+- URL: https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html
+- 기관: Adobe
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Firefly 크레딧의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y420"></a>
+### Y420. FLUX 가격
+
+- URL: https://bfl.ai/pricing
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: BFL종량/가중치계약·계산기기본 $0.048관찰;전체동적정가미추출
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y421"></a>
+### Y421. Stability API 가격
+
+- URL: https://platform.stability.ai/pricing
+- 기관: Stability AI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Stability1cr=$0.01·최초25cr·SD3.5/Core/Ultra단가
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y422"></a>
+### Y422. Stability 라이선스
+
+- URL: https://stability.ai/license
+- 기관: Stability AI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Stability 라이선스의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y424"></a>
+### Y424. 미리캔버스 가격
+
+- URL: https://www.miricanvas.com/ko/pricing
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: 미리캔버스 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y425"></a>
+### Y425. Flow 크레딧
+
+- URL: https://support.google.com/flow/answer/16526234?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Flow일50·플랜월추가·모델별회당차감·혼잡제한
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y426"></a>
+### Y426. Veo Gemini API 규격
+
+- URL: https://ai.google.dev/gemini-api/docs/video
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Veo Gemini API 규격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y428"></a>
+### Y428. Runway API 요금
+
+- URL: https://docs.dev.runwayml.com/guides/pricing/
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Runway Dev $0.01/cr·자체/제휴 모델초당·참조/전문출력추가료
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y429"></a>
+### Y429. Runway 모델
+
+- URL: https://docs.dev.runwayml.com/guides/models/
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Runway 모델의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y430"></a>
+### Y430. Kling 가격
+
+- URL: https://klingai.com/global/membership/membership
+- 기관: Kuaishou
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: 멤버십셸·Codex본문미확보
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y433"></a>
+### Y433. Pika 요금
+
+- URL: https://pika.art/pricing
+- 기관: Pika
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Pika현행플랜/금액·팩비호환·Starter상업허용본문
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y434"></a>
+### Y434. Luma 요금
+
+- URL: https://lumalabs.ai/pricing
+- 기관: Luma AI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Luma월/연·10K/40K/150K·Ray/제휴모델크레딧차감
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y436"></a>
+### Y436. BytePlus ModelArk 가격
+
+- URL: https://docs.byteplus.com/en/docs/ModelArk/1544106
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: 메뉴셸·가격 본문미확보
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y437"></a>
+### Y437. ElevenLabs 가격
+
+- URL: https://elevenlabs.io/pricing
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: ElevenCreative월정가/최초할인·크레딧·상업권
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y438"></a>
+### Y438. ElevenLabs 모델
+
+- URL: https://elevenlabs.io/docs/overview/models
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Eleven v4/v4Turbo/v3/Flash/Multilingual정확ID·언어/문자한도
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y439"></a>
+### Y439. Typecast 가격
+
+- URL: https://typecast.ai/kr/pricing
+- 기관: Neosapience
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: TypecastStudio월/연·5등급다운로드크레딧·기업조건
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y440"></a>
+### Y440. Typecast API 가격
+
+- URL: https://typecast.ai/pricing/api
+- 기관: Neosapience
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: TypecastAPI Lite/Plus가격·월자수/초과/자동묶음·SSFM3.0
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y441"></a>
+### Y441. CLOVA Dubbing 가격
+
+- URL: https://www.ncloud.com/product/aiService/clovaDubbing
+- 기관: NAVER Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: CLOVA Dubbing 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y442"></a>
+### Y442. CLOVA Voice 가격
+
+- URL: https://www.ncloud.com/product/aiService/clovaVoice
+- 기관: NAVER Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: CLOVA Voice 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y443"></a>
+### Y443. Google TTS 가격
+
+- URL: https://cloud.google.com/text-to-speech/pricing
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Google문자TTS무료량/천자환산·GeminiTTS토큰가격
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y444"></a>
+### Y444. Gemini TTS 규격
+
+- URL: https://ai.google.dev/gemini-api/docs/speech-generation
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Gemini TTS 규격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y445"></a>
+### Y445. Suno 가격
+
+- URL: https://suno.com/pricing
+- 기관: Suno
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Suno현행v6접근·연환산 $8/$24·생성/다운로드한도;월납표미확보
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y447"></a>
+### Y447. Lyria Vertex 가격
+
+- URL: https://cloud.google.com/vertex-ai/generative-ai/docs/music/generate-music
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Lyria Vertex 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y448"></a>
+### Y448. YouTube 오디오 보관함
+
+- URL: https://support.google.com/youtube/answer/3376882?hl=ko
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: YouTube 오디오 보관함의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y450"></a>
+### Y450. Vrew 가격
+
+- URL: https://vrew.ai/ko/pricing
+- 기관: VoyagerX
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Vrew상품/가격구조·동적숫자빈값
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y452"></a>
+### Y452. ChatGPT GPT-6 제공 모델
+
+- URL: https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: ChatGPT GPT-6 제공 모델의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-01-openai`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y453"></a>
+### Y453. ChatGPT Plus 가격
+
+- URL: https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Plus월 $20·API별도
+- Hermes 대조: `r3b-01-openai`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y454"></a>
+### Y454. ChatGPT Pro 가격
+
+- URL: https://help.openai.com/en/articles/9793128-what-is-chatgpt-pro
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Pro100/200/500월액·10/29기존한도유예
+- Hermes 대조: `r3b-01-openai`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y455"></a>
+### Y455. BFL 모델별 비용
+
+- URL: https://help.bfl.ai/articles/7986977817-what-are-the-costs-associated-with-using-your-models
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: BFL 모델별 비용의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y456"></a>
+### Y456. BFL API 가격 문서
+
+- URL: https://docs.bfl.ai/quick_start/pricing
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: BFL API 가격 문서의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y457"></a>
+### Y457. Seedance2.5 CapCut
+
+- URL: https://www.capcut.com/resource/seedance-2-5-is-now-on-capcut-pc
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Seedance2.5 CapCut의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y458"></a>
+### Y458. Seedance2.5 모델
+
+- URL: https://seed.bytedance.com/en/seedance2_5
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Seedance2.5 모델의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y459"></a>
+### Y459. Wise USDKRW 과거환율
+
+- URL: https://wise.com/us/currency-converter/usd-to-krw-rate/history/30-09-2026
+- 기관: Wise
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: B(사업자 자체 참고 시세; 공적 종가 아님).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 2026-09-30 과거환율화면약1351·오늘값과구별
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y460"></a>
+### Y460. Runway 앱 가격 현행
+
+- URL: https://runway.com/pricing
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Runway월/연·125최초·625/2250/9500·광고초수상충
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y461"></a>
+### Y461. Perplexity API 현행 가격
+
+- URL: https://docs.perplexity.ai/docs/getting-started/pricing
+- 기관: Perplexity
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Perplexity Agent/Orchestrator 모델과도구요금·레거시와분리
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y463"></a>
+### Y463. Gemini 앱 영상 모델
+
+- URL: https://support.google.com/gemini/answer/16126339?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Gemini 앱 영상 모델의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y465"></a>
+### Y465. Gemini 앱 사용한도
+
+- URL: https://support.google.com/gemini/answer/16275805?hl=en
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Gemini 앱 사용한도의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y469"></a>
+### Y469. DeepSeek 가격
+
+- URL: https://api-docs.deepseek.com/quick_start/pricing
+- 기관: DeepSeek
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: DeepSeek 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y470"></a>
+### Y470. xAI 모델 가격
+
+- URL: https://docs.x.ai/developers/models
+- 기관: xAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: xAI 모델 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y471"></a>
+### Y471. Alibaba Qwen 가격
+
+- URL: https://www.alibabacloud.com/help/en/model-studio/model-pricing
+- 기관: Alibaba Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Alibaba Qwen 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y474"></a>
+### Y474. Gemini Omni API
+
+- URL: https://ai.google.dev/gemini-api/docs/omni
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Gemini Omni API의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y475"></a>
+### Y475. Perplexity 모델 라우터 가격
+
+- URL: https://docs.perplexity.ai/docs/router/models
+- 기관: Perplexity
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Perplexity 모델 라우터 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y477"></a>
+### Y477. Suno v6 세 버전
+
+- URL: https://help.suno.com/en/articles/13924801
+- 기관: Suno
+- 게시·갱신일: 2026-09-09 편집 표시
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Suno v6 세 버전의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y478"></a>
+### Y478. Udio 다운로드 중단
+
+- URL: https://help.udio.com/en/articles/12683565-changes-associated-with-the-universal-music-group-umg-partnership
+- 기관: Udio
+- 게시·갱신일: 2026-02-17
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Udio 다운로드 중단의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y479"></a>
+### Y479. FLUX3 Image
+
+- URL: https://bfl.ai/models/flux-3-image
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: FLUX3 Image의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y480"></a>
+### Y480. FLUX3 Video
+
+- URL: https://bfl.ai/models/flux-3-video
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: FLUX3 Video의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y483"></a>
+### Y483. MiniMax H3 모델
+
+- URL: https://www.minimax.io/blog/minimax-h3
+- 기관: MiniMax
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: MiniMax H3 모델의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y486"></a>
+### Y486. Firefly 생성크레딧
+
+- URL: https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-overview.html
+- 기관: Adobe
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Firefly 생성크레딧의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y487"></a>
+### Y487. Lyria3.5 규격
+
+- URL: https://ai.google.dev/gemini-api/docs/music-generation
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Lyria3.5 규격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y488"></a>
+### Y488. Lyria Realtime
+
+- URL: https://ai.google.dev/gemini-api/docs/music-generation-realtime
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Lyria Realtime의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y489"></a>
+### Y489. Gemini3.8 Flash 규격
+
+- URL: https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash
+- 기관: Google
+- 게시·갱신일: 2026-10-22 UTC
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Gemini3.8 Flash 규격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y490"></a>
+### Y490. Veo Cloud 규격
+
+- URL: https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Veo Cloud 규격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y491"></a>
+### Y491. Imagen4 Cloud 규격
+
+- URL: https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-generate
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Imagen endpoint6/30종료·대체목록
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y493"></a>
+### Y493. Gemini 종료 일정
+
+- URL: https://ai.google.dev/gemini-api/docs/deprecations
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Gemini모델종료일·2.5기존사용자제한·Nano원형상태상충
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y495"></a>
+### Y495. Gemini 한국 구독가격
+
+- URL: https://gemini.google/kr/subscriptions?hl=ko
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 한국 Gemini구독Plus7500/Ultra119000·300000·Pro혜택;Pro금액빈판본존재
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y496"></a>
+### Y496. Sonar 종료·마이그레이션
+
+- URL: https://docs.perplexity.ai/docs/sonar/models/sonar
+- 기관: Perplexity
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Sonar지원9/27종료·동기/스트림Agent전환·비동기미지원
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y497"></a>
+### Y497. CLOVA Studio 모델사양
+
+- URL: https://guide.ncloud-docs.com/docs/clovastudio-model
+- 기관: NAVER Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: HCX007/005/DASH002/003/DASH001의 컨텍스트·최대입력·최대 출력 분리; 003은8192·DASH001은4096 컨텍스트
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y498"></a>
+### Y498. Perplexity 구독 가격
+
+- URL: https://www.perplexity.ai/hub/pricing
+- 기관: Perplexity
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Perplexity 구독 가격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y499"></a>
+### Y499. Perplexity 소비자 약관
+
+- URL: https://www.perplexity.ai/hub/legal/terms-of-service
+- 기관: Perplexity
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Perplexity 소비자 약관의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y500"></a>
+### Y500. Llama4 공식 라이선스
+
+- URL: https://raw.githubusercontent.com/meta-llama/llama-models/main/models/llama4/LICENSE
+- 기관: Meta
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Llama4 공식 라이선스의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y501"></a>
+### Y501. Qwen3.8 Max
+
+- URL: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max
+- 기관: Alibaba Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Qwen3.8 Max의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y502"></a>
+### Y502. Qwen3 공식 모델
+
+- URL: https://huggingface.co/Qwen/Qwen3-235B-A22B
+- 기관: Qwen
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Qwen3 공식 모델의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y503"></a>
+### Y503. Veo2 Cloud 종료
+
+- URL: https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Codex 주소가 일반 모델 목록으로 이동·해당 모델 카드 직접 본문 미확보; 사양은 Hermes04 및 종료표/Flow 자료로 대조
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y504"></a>
+### Y504. Veo3 Cloud 종료
+
+- URL: https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-0-generate
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Codex 주소가 일반 모델 목록으로 이동·해당 모델 카드 직접 본문 미확보; 사양은 Hermes04 및 종료표/Flow 자료로 대조
+- Hermes 대조: `r3b-04-google-image-video`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y505"></a>
+### Y505. Llama4 공식 모델
+
+- URL: https://www.llama.com/models/llama-4/
+- 기관: Meta
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Llama4 공식 모델의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-03-search-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y507"></a>
+### Y507. BFL Markdown 정확가격
+
+- URL: https://docs.bfl.ai/quick_start/pricing.md
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 가격Markdown구조확인·동적상세숫자빈값;FLUX3정가상세는Hermes06
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y508"></a>
+### Y508. BFL 세대별 가격
+
+- URL: https://docs.bfl.ai/pricing
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Codex HTTP308·독립 가격 본문 미확보; 세대별 수치는 다른 BFL 문서 및 Hermes06 대조
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y509"></a>
+### Y509. BFL C2PA
+
+- URL: https://help.bfl.ai/articles/3705384267-c2pa-in-flux-generated-images
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: BFL C2PA의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y510"></a>
+### Y510. MiniMax 종량제 정확경로
+
+- URL: https://platform.minimax.io/docs/guides/pricing-paygo
+- 기관: MiniMax
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 웹 직접 본문 확인; HTTP 실패/다른 필드 Hermes08
+- 확인 범위: MiniMaxAPI H3/Highspeed/Lite 직접웹가격·일부다른모델단가는Hermes08
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y511"></a>
+### Y511. Luma Agents API 가격
+
+- URL: https://docs.agents.lumalabs.ai/guides/pricing/
+- 기관: Luma AI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: UNI1/Max2K장당·Ray3.2해상도별5/10초 API가격·HDR제약
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y512"></a>
+### Y512. Pika2.5 API 가격
+
+- URL: https://dev.pika.art/models/pika/pika-2.5/text-to-video/pricing
+- 기관: Pika
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Pika2.5 T2V/I2V 초당·별도오디오요금
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y513"></a>
+### Y513. BytePlus Seedance 정확가격
+
+- URL: https://docs.byteplus.com/en/docs/modelark/1544106
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: BytePlus현재가격은메뉴만;정확토큰표는Hermes08
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y514"></a>
+### Y514. Volcano Seedance 가격
+
+- URL: https://docs.volcengine.com/docs/ark/model-pricing
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Volcano정확토큰표Hermes08·Codex본문범위한정
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y515"></a>
+### Y515. Pika 쿼리판 상충
+
+- URL: https://pika.art/pricing?tool=pika
+- 기관: Pika
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Pika 쿼리판 상충의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y516"></a>
+### Y516. FLUX3 Klein 사양·가격
+
+- URL: https://docs.bfl.ai/flux_3/flux3_image_klein
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: KleinDistilled/Base·라이선스·최대4K;동적장당값미추출
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y517"></a>
+### Y517. BFL API 상업약관
+
+- URL: https://bfl.ai/legal/developer-terms-of-service
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: API출력상업권·가중치별도조건
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y518"></a>
+### Y518. Dreamina 가격
+
+- URL: https://dreamina.capcut.com/pricing/dreamina-price
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: KRW현지화관찰·월갱신/첫달/선택크레딧매칭;한국실결제미검증
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y519"></a>
+### Y519. Dreamina Seedance2.5 C2PA
+
+- URL: https://www.byteplus.com/en/blog/dreamina-seedance2-5
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Dreamina Seedance2.5 C2PA의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-08-video-other`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y520"></a>
+### Y520. SDXL API 가격·규격
+
+- URL: https://docs.stability.ai/api-reference/sdxl-10/text-to-image.md
+- 기관: Stability AI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: SDXL API 가격·규격의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y521"></a>
+### Y521. BFL Klein Kommunity License
+
+- URL: https://huggingface.co/black-forest-labs/flux-3-image-klein-5.6b/raw/main/LICENSE.md
+- 기관: Black Forest Labs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: BFL Klein Kommunity License의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-06-flux-sd`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y522"></a>
+### Y522. Canva Craft 공개모델
+
+- URL: https://www.canva.com/newsroom/news/canva-craft/
+- 기관: Canva
+- 게시·갱신일: 2026-10-22 공개(Hermes05·공식 뉴스 목록 대조)
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: CanvaCraft현재앱/공개 API·2K·추가변형upcoming
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y523"></a>
+### Y523. Canva Phoenix 도입
+
+- URL: https://www.canva.com/newsroom/news/droptober-2024-launches/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Canva Phoenix 도입의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y524"></a>
+### Y524. Canva Research Lucid Origin
+
+- URL: https://www.canva.com/newsroom/news/introducing-canva-research/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Canva Research Lucid Origin의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y525"></a>
+### Y525. Canva AI 사용량
+
+- URL: https://www.canva.com/help/ai-access/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Canva월20/200또는20/400또는40·Standard공용풀면제
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y526"></a>
+### Y526. Canva 한국어 가격
+
+- URL: https://www.canva.com/ko_kr/pricing/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: 한국어URL셸/가격누락;USD연가격Hermes05
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y527"></a>
+### Y527. 미리클 가격·내장모델
+
+- URL: https://www.miricanvas.com/ko/miricle/pricing
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: 미리클셸·모델/팩금액Hermes05근거
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y528"></a>
+### Y528. 미리캔버스 AI 약관
+
+- URL: https://help.miricanvas.com/hc/en-us/articles/31288096586649-Miricanvas-AI-Tools-Terms-Effective-Date-May-26-2024
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: 미리캔버스 AI 약관의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y529"></a>
+### Y529. 미리캔버스 일일AI크레딧
+
+- URL: https://help.miricanvas.com/hc/ko/articles/33349963638553
+- 기관: 미리디
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Free일200/Pro1000는Hermes05 및R3·Codex이번403
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y530"></a>
+### Y530. Canva AI 약관
+
+- URL: https://www.canva.com/policies/ai-product-terms/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Canva AI 약관의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y533"></a>
+### Y533. Vrew 현행 한국요금
+
+- URL: https://vrew.ai/ko/payment/pricepolicy
+- 기관: VoyagerX
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Vrew제품본문·가격숫자빈값;한국연가격Hermes10/12
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y535"></a>
+### Y535. Kling API 영상가격
+
+- URL: https://kling.ai/document-api/pricing/base/video.md
+- 기관: Kuaishou
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 직접Markdown:Kling2.5/2.6/3/O1·4API미리보기·4.0Preview dollar/Unit차이
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y536"></a>
+### Y536. Kling API 패키지가격
+
+- URL: https://kling.ai/dev/pricing
+- 기관: Kuaishou
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: KlingAPI팩은셸·Hermes07
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y537"></a>
+### Y537. Kling 현행멤버십
+
+- URL: https://kling.ai/app/membership/membership-plan
+- 기관: Kuaishou
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Kling플랜셸·Hermes07신구상충
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y538"></a>
+### Y538. Kling1.6/2.1 API종료
+
+- URL: https://kling.ai/document-api/apiReference/accountInfoInquiry
+- 기관: Kuaishou
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Kling구형 API종료는셸·Hermes07
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y539"></a>
+### Y539. Runway Gen3 종료
+
+- URL: https://help.runwayml.com/hc/en-us/articles/30266515017875-Creating-with-Gen-3-Alpha-and-Gen-3-Alpha-Turbo
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Gen3Alpha7/8·Turbo7/30퇴역
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y540"></a>
+### Y540. Runway C2PA
+
+- URL: https://runwayml.com/safety
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Runway C2PA의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y541"></a>
+### Y541. Runway Gen4 가이드
+
+- URL: https://help.runwayml.com/hc/en-us/articles/37327109429011-Creating-with-Gen-4-Video
+- 기관: Runway
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Runway Gen4 가이드의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y542"></a>
+### Y542. Ideogram 직접API 가격본문
+
+- URL: https://ideogram.ai/platform/pricing
+- 기관: Ideogram
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Ideogram 직접 API 가격 본문의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y543"></a>
+### Y543. Firefly 파트너모델 요율
+
+- URL: https://helpx.adobe.com/creative-cloud/apps/generative-ai/non-adobe-models-in-adobe-products.html
+- 기관: Adobe
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: 파트너별요율/제거일Hermes05·Codex이번403
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y544"></a>
+### Y544. Midjourney GPU 요율 정확경로
+
+- URL: https://docs.midjourney.com/hc/en-us/articles/32016412137741-GPU-Speed-Fast-Relax-Turbo
+- 기관: Midjourney
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: MJGPU근사사용량Hermes05·Codex403
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y546"></a>
+### Y546. Kling API 상업 약관
+
+- URL: https://kling.ai/document-api/guides/protocols/paid-service.md
+- 기관: Kuaishou
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Kling유료 API약관·상업허락
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y548"></a>
+### Y548. Kling4 Flash 모델
+
+- URL: https://kling.ai/release-note
+- 기관: Kuaishou
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Kling4 Flash 모델의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-07-kling-runway`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y549"></a>
+### Y549. ElevenAPI 문자단가
+
+- URL: https://elevenlabs.io/pricing/api
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: ElevenAPI $0.08/$0.04천자·플랜포함문자·API는달러과금
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y550"></a>
+### Y550. ElevenLabs 문자크레딧
+
+- URL: https://elevenlabs.io/docs/help-center/account/general/have-characters-changed
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: ElevenLabs 문자크레딧의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y551"></a>
+### Y551. ElevenLabs 비가청표시
+
+- URL: https://elevenlabs.io/docs/help-center/legal/audio-detector/what-is-watermarking-and-why-is-eleven-labs-using-it
+- 기관: ElevenLabs
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 비가청워터마크설명·모델별범위별도
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y552"></a>
+### Y552. Google TTS 모델/API구별
+
+- URL: https://docs.cloud.google.com/text-to-speech/docs/gemini-tts
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 3.8은Enterprise API Preview만·2.5/3.1 Cloud TTS·8192/16384
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y553"></a>
+### Y553. Typecast 모델목록
+
+- URL: https://typecast.ai/docs/models
+- 기관: Neosapience
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: ssfm-v21/v30모델목록·언어·v31예시정식아님
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y554"></a>
+### Y554. Typecast 글자크레딧 개편
+
+- URL: https://typecast.ai/kr/learn/typecast-pricing-plan-update-service-2608/
+- 기관: Neosapience
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Typecast글자/다운로드크레딧변경
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y555"></a>
+### Y555. Typecast 한국API 가격
+
+- URL: https://typecast.ai/kr/pricing/api
+- 기관: Neosapience
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: TypecastAPI무료15K/30K경로차이·구독별요율
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y556"></a>
+### Y556. CLOVA Dubbing 정적요금·포함량
+
+- URL: https://www.ncloud.com/api-cms/service-product/static/clovaDubbing
+- 기관: NAVER Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Codex HTTP404/웹 시간초과·해당 본문 직접 확인 못함; Dubbing 포함량과 Standard/Premium 구분은 Hermes10·다른 NAVER 원문 대조
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y557"></a>
+### Y557. Vrew 음성공급사
+
+- URL: https://vrew.imweb.me/faq?bmode=view&idx=12343625&x=2
+- 기관: VoyagerX
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Vrew공급사목록은Hermes10·내장버전미공개
+- Hermes 대조: `r3b-10-voice-korea`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y558"></a>
+### Y558. Google Gemini3.8TTS
+
+- URL: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-tts
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Google Gemini3.8TTS의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y559"></a>
+### Y559. Google Gemini3.8LiteTTS
+
+- URL: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-lite-tts
+- 기관: Google Cloud
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Google Gemini3.8LiteTTS의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-09-voice-global`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y560"></a>
+### Y560. CapCut 공식 구독가격
+
+- URL: https://www.capcut.com/pricing
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: CapCut월 Pro19.99/Ultra79·1200/8645·연표시179.99/900·프로모션초당값
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y561"></a>
+### Y561. Canva AI Pass
+
+- URL: https://www.canva.com/help/ai-pass/
+- 기관: Canva
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Canva AI Pass의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-05-image-design`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y567"></a>
+### Y567. Suno v6 FAQ·이전모델퇴역
+
+- URL: https://help.suno.com/en/articles/13924481
+- 기관: Suno
+- 게시·갱신일: 2026-09-09 편집 표시
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: v6이전전모델퇴역·기본10cr/2곡·Max추가
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y568"></a>
+### Y568. Suno 다운로드변경
+
+- URL: https://suno.com/blog/suno-updates-tos
+- 기관: Suno
+- 게시·갱신일: 2026-08-10 게시·2026-09-03 시행
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 9/3다운로드20/60·이전무료체험7평생·상업경로조건
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y569"></a>
+### Y569. Suno 다운로드슬롯
+
+- URL: https://help.suno.com/en/articles/13926209
+- 기관: Suno
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 다운로드슬롯·같은곡재다운로드·Studio예외
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y570"></a>
+### Y570. Suno 현행상업약관
+
+- URL: https://www.suno.com/terms-september-2026
+- 기관: Suno
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Suno 현행상업 약관의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y571"></a>
+### Y571. Udio 현행수량가격
+
+- URL: https://www.udio.com/pricing?billing=annual
+- 기관: Udio
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Udio가격셸·현행 월/연정가Hermes11·구주소상충
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y572"></a>
+### Y572. Udio 외부배포약관
+
+- URL: https://www.udio.com/terms-of-service
+- 기관: Udio
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Udio약관셸·외부배포제한Hermes11
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y573"></a>
+### Y573. Lyria3.5 Pro Preview
+
+- URL: https://ai.google.dev/gemini-api/docs/models/lyria-3.5-pro-preview
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: 구preview주소가안정3.5카드로이동·개별preview제공확정불가
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y574"></a>
+### Y574. Google Flow Music 가격
+
+- URL: https://www.flowmusic.app/pricing
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: FlowMusic선택화면6/18/48·월3K/10K/30K;Save25%탭조건미해소
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y575"></a>
+### Y575. Lyria3 DreamTrack공개
+
+- URL: https://blog.google/innovation-and-ai/products/gemini-app/lyria-3
+- 기관: Google
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Lyria3 DreamTrack공개의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-11-music`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y576"></a>
+### Y576. Vrew AI이미지 차감
+
+- URL: https://vrew.imweb.me/notice?bmode=view&idx=132421264
+- 기관: VoyagerX
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Vrew이미지 Basic1/Pro10·Hermes12/R3통합공지
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y577"></a>
+### Y577. Vrew AI영상 차감
+
+- URL: https://vrew.imweb.me/faq?bmode=view&idx=168331840
+- 기관: VoyagerX
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: Vrew영상 Basic10/Pro50·5초·Hermes12·구형자격상충
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y578"></a>
+### Y578. CapCut 생성모델목록
+
+- URL: https://www.capcut.com/tools/models
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: CapCut 생성모델목록의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y579"></a>
+### Y579. CapCut 크레딧기준가
+
+- URL: https://www.capcut.com/help/credits-in-capcut
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: CapCut기준 $0.01/크레딧·한국팩실제정가아님
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y580"></a>
+### Y580. CapCut Veo 내장
+
+- URL: https://www.capcut.com/tools/veo-ai-video-generator
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: CapCut Veo 내장의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y581"></a>
+### Y581. CapCut Kling3 내장
+
+- URL: https://www.capcut.com/tools/kling-3-0
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: CapCut Kling3 내장의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y582"></a>
+### Y582. CapCut Vidu 내장
+
+- URL: https://www.capcut.com/tools/vidu-ai-video-generator
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: CapCut Vidu 내장의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y583"></a>
+### Y583. CapCut HappyHorse 내장
+
+- URL: https://www.capcut.com/tools/happy-horse
+- 기관: ByteDance
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Hermes 근거·Codex 독립 본문 확인 미완료/부분
+- 확인 범위: CapCut HappyHorse 내장의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-12-editors-fx`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y584"></a>
+### Y584. OpenAI API 지원국
+
+- URL: https://developers.openai.com/api/docs/supported-countries
+- 기관: OpenAI
+- 게시·갱신일: 게시·갱신일 미표기 또는 문서별 상이
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: OpenAI API 지원국의 행 인용 범위·모델/지역별 미확인은 모델 표에 명시
+- Hermes 대조: `r3b-01-openai`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y585"></a>
+### Y585. Claude 지원국
+
+- URL: https://www.anthropic.com/supported-countries
+- 기관: Anthropic
+- 게시·갱신일: 2026-11-12 시행 예정(기준일 이후)
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 직접 본문 확인(명시 범위만); 상세/미확인은 별도
+- 확인 범위: Supported Regions Policy로 이동·시행일이 기준일보다 뒤임. 현재 한국 지원의 근거로 사용하지 않음; 과거판 도움말 S586을 우선
+- Hermes 대조: `r3b-02-llm`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
+
+<a id="y586"></a>
+### Y586. Claude 접속 가능 국가 도움말(기준일 이전 판본)
+
+- URL: https://support.claude.com/en/articles/8461763-where-can-i-access-claude
+- 기관: Anthropic
+- 게시·갱신일: 2026-03-16
+- 접근일: 2026-10-26
+- 신뢰도: A(공식).
+- 확인 수준: Codex 웹 직접 본문 확인
+- 확인 범위: 한국(South Korea) 포함. 11/12 미래 시행 정책과 구별; 실제 신규 계정 결제/최신 모델 해금 미실증
+- Hermes 대조: `r3b-02-llm(한국 지원 항목의 Codex 후속 보완)`. 원응답 경로·해시는 [R3b 결과](../docs/results/phase-R3b.md#hermes-실행-기록).
