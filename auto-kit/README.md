@@ -108,6 +108,8 @@ python pipeline.py reject RUN_ID --state private/schedule-demo
 
 설정 파일 JSON은 이름과 값을 저장하는 텍스트예요. Windows는 `Copy-Item config.example.json config.json`, macOS는 `cp config.example.json config.json`을 실행해 복사해요. 같은 방법으로 `.env.example`을 `.env`로 복사해요. 이렇게 보이면 성공: 두 파일이 생겨요. `.env`에는 사용자 본인의 키만 넣어요. 값은 Git에 넣지 않아요.
 
+카드·영상에 표시할 이름은 `flows.insta.account_name`과 `flows.shorts.channel_name`에서 바꿔요. 각 흐름의 `creator_name`은 영상의 「이름의 연습」, `preview_speaker`는 미리보기 안내의 발화자예요. 미리보기 제목에도 해당 계정·채널명이 들어가요. mock과 실제 생성에 같은 설정을 써요. 이전 설정 파일에는 `config.example.json`의 `flows` 항목을 추가하세요. 수정한 설정은 새 실행부터 적용돼요. 실행 ID로 재개하면 그 실행에 저장한 설정을 유지해요.
+
 실제 생성·호스팅·게시가 필요한 실행에만 `--live`를 붙여요. `approval`로 시작하면 생성·검사 후 게시 직전 멈춰요. `--live` 실행 전에는 해당 플랫폼 인증 파일도 필요해요. 키를 하나씩 설정할 때 아래 명령으로 빠진 항목을 확인해요.
 
 ```bash

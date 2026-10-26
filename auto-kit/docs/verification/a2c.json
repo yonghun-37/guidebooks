@@ -1,0 +1,70 @@
+{
+  "python": "3.11.15",
+  "command": [
+    "pipeline.py",
+    "run",
+    "--flow",
+    "insta",
+    "--provider",
+    "mock",
+    "--mode",
+    "auto",
+    "--config",
+    "reel.json",
+    "--state",
+    "private/reel"
+  ],
+  "exit_code": 0,
+  "stdout": "cc2c7c771de6 · insta · dry_run\n미리보기: /tmp/a2c-mock-0p2i6wbu/auto-kit/private/reel/cc2c7c771de6/preview.html\n",
+  "temporary_kit": "/tmp/a2c-mock-0p2i6wbu/auto-kit",
+  "status": "dry_run",
+  "flow": "insta",
+  "display": {
+    "account_name": "출근길 3분 생활 뉴스",
+    "creator_name": "하린",
+    "preview_speaker": "정 선배"
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "duration": 15.1,
+    "lufs": -16.05,
+    "probe_method": "pip ffmpeg stderr parser (shorts-kit 재사용)"
+  },
+  "gates_passed": true,
+  "image": {
+    "path": "site/advanced/examples/reel-frame.webp",
+    "size": [
+      720,
+      1280
+    ],
+    "source_second": 4,
+    "bytes": 14334,
+    "sha256": "df9b1871c8ebf32d07624dcadac54d79d0c551cd93cf931828c831496e4763a5"
+  },
+  "provider_config": {
+    "check_llm": "openai",
+    "image": "mock",
+    "llm": "mock",
+    "llm_check": false,
+    "tts": "mock",
+    "video": "mock"
+  },
+  "generation_cost_usd": 0.0,
+  "source_video_sha256": "7a76ad153c0bd4e25c2e3d9c1a02883454b466b6f31aaf9dcdf95e1545648c49",
+  "pytest": {
+    "python": "3.11.15",
+    "passed": 80,
+    "seconds": 75.03,
+    "log": "pytest-a2c.txt"
+  },
+  "site_check": {
+    "html_pages": 51,
+    "internal_references": 3971,
+    "errors": [],
+    "log": "check-site-a2c.json"
+  }
+}

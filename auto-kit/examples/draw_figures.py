@@ -3,7 +3,7 @@ from html import escape
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from common import ROOT
+from common import ROOT, load_config
 
 def draw(name,title,subtitle,nodes,edges,notes):
     directory=ROOT/'docs/figures';directory.mkdir(parents=True,exist_ok=True)
@@ -23,8 +23,9 @@ def draw(name,title,subtitle,nodes,edges,notes):
 def box(x,y,title,lines,link='../../README.md',w=280,h=120):return (x,y,w,h,title,lines,link)
 
 def main():
+    flows = load_config()['flows']
     draw('system','주제에서 다음 주제까지','두 흐름은 상태·비용·관문을 공유하고 게시 API만 나눕니다.',[
-      box(40,140,'① 소스 + 지난 성과',['하린: 청년 지원금 체크','도윤: 월급날 네 칸 메모']),box(410,140,'② 생성 API',['대상·기간·서류 → 카드','월세·생활비 등 → 대본']),box(780,140,'③ 코드 렌더',['Pillow PNG/JPEG','ffmpeg MP4·자막·음량']),
+      box(40,140,'① 소스 + 지난 성과',[f"{flows['insta']['creator_name']}: 청년 지원금 체크",f"{flows['shorts']['creator_name']}: 월급날 네 칸 메모"]),box(410,140,'② 생성 API',['대상·기간·서류 → 카드','월세·생활비 등 → 대본']),box(780,140,'③ 코드 렌더',['Pillow PNG/JPEG','ffmpeg MP4·자막·음량']),
       box(780,370,'④ 관문 + 운영 모드',['사실·정책·유사도·규격·비용','auto / post_review / approval']),box(410,370,'⑤ 게시 + 지표',['Instagram 공개 URL·컨테이너','YouTube 동일 세션 재개']),box(40,370,'⑥ SQLite + 비용',['상태·파일 해시·발행 ID','지표 재조회 → 주제 점수'])],[(320,200,400,200,''),(690,200,770,200,''),(920,260,920,360,''),(780,430,700,430,''),(410,430,330,430,''),(180,370,180,270,'다음 날')],['mock: 외부 호출 0 · live: 사용자 키·인증 파일 필요','비밀·DB는 private/ · 공개 버킷에는 게시용 JPEG/MP4만'])
     draw('timeline','하루의 자동 실행 타임라인','시각은 키트 운영 예입니다. OS 현지 시각, 예약 간격 15분 기본값.',[
       box(40,150,'09:17 새 콘텐츠',['주제 → 생성 → 렌더','하루 새 실행은 1회']),box(410,150,'09:17 품질 관문',['통과 → 모드별 진행','실패 → 이유와 알림']),box(780,150,'공개 전 2시간',['사후 확인 기본값','거부 시 예약 취소']),

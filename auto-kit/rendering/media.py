@@ -49,6 +49,12 @@ def render(draft, config, output, flow, provider):
     output = Path(output).resolve()
     output.mkdir(parents=True, exist_ok=True)
     media = config['media']
+    flow_config = config['flows'][flow]
+    display = {
+        'name': flow_config['account_name' if flow == 'insta' else 'channel_name'],
+        'creator_name': flow_config['creator_name'],
+        'preview_speaker': flow_config['preview_speaker'],
+    }
     font = str(kit_path(media['font']))
     backgrounds = []
     folder = kit_path(media['scenes_dir']) if media.get('scenes_dir') else None
@@ -79,7 +85,7 @@ def render(draft, config, output, flow, provider):
             if backgrounds and backgrounds[i].suffix.lower() in short_base.PHOTO:
                 row['image'] = str(backgrounds[i])
             scenes.append(row)
-        copy = {'account_name': '출근길 3분 생활 뉴스' if provider.mock else '나의 자동화 작업실', 'scenes': scenes, 'synthetic': True, 'label': '직접 작성한 예시 문안 · AI 제작 보조' if provider.mock else 'AI 제작 보조 · 원문 확인', 'caption': draft['caption']}
+        copy = {'account_name': display['name'], 'scenes': scenes, 'synthetic': True, 'label': '직접 작성한 예시 문안 · AI 제작 보조' if provider.mock else 'AI 제작 보조 · 원문 확인', 'caption': draft['caption']}
         cards.render_cards(copy, {'font': font, 'colors': cards.THEMES['forest'], 'asset_root': '/'}, output / 'cards')
         files = sorted((output / 'cards').glob('*.jpg'))
     if flow == 'shorts' or media['motion_reel'] or config['instagram']['format'] == 'reel':
@@ -103,14 +109,16 @@ def render(draft, config, output, flow, provider):
                 shutil.copyfile(background, scene_dir / (f'{i:02d}' + background.suffix))
         settings = {'caption_size': 48, 'safe_left': 90, 'safe_right': 90, 'safe_top': 250, 'safe_bottom': 320, 'narration': str(recording), 'music': None, 'music_gain': .1, 'scenes_dir': str(scene_dir) if scene_dir else None}
         script = {'scenes': scenes, 'label': 'AI 제작 보조', 'description': draft['caption']}
-        video = short_base.render(script, {'font': font, 'video': settings}, output)
+        video = short_base.render(script, {'font': font, 'video': settings, 'display': display}, output)
         normalized = output / 'normalized.mp4'
         ffmpeg(['-i', video, '-c:v', 'copy', '-af', f"loudnorm=I={media['lufs_target']}:TP=-1.5:LRA=11", '-c:a', 'aac', '-ar', '48000', '-ac', '2', '-movflags', '+faststart', normalized])
         normalized.replace(video)
         if flow == 'shorts' or config['instagram']['format'] == 'reel':
             files = [video]
     title = escape(draft['title'])
+    preview_title = escape(display['name'] + ' · 미리보기')
+    speaker = escape(display['preview_speaker'])
     visuals = ''.join(f'<img alt="카드 {i+1}" src="{p.relative_to(output).as_posix()}">' if p.suffix == '.jpg' else f'<video controls src="{p.name}"></video>' for i, p in enumerate(files))
-    (output / 'preview.html').write_text(f'<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>{title}</title><style>:root{{color-scheme:light dark}}body{{font:18px/1.7 system-ui;max-width:1000px;margin:auto;padding:20px}}img,video{{max-width:min(100%,350px);vertical-align:top;margin:8px}}</style><h1>{title}</h1><p>{escape(draft["caption"])}</p>{visuals}<p>mock 음성은 설명용 신호음입니다. 대본 자막은 장면 시간에 배분하며 음성 정렬을 하지 않습니다.</p></html>', encoding='utf-8')
+    (output / 'preview.html').write_text(f'<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>{preview_title}</title><style>:root{{color-scheme:light dark}}body{{font:18px/1.7 system-ui;max-width:1000px;margin:auto;padding:20px}}img,video{{max-width:min(100%,350px);vertical-align:top;margin:8px}}</style><h1>{preview_title}</h1><h2>{title}</h2><p>{speaker}: 계정·채널명과 자막을 확인하세요.</p><p>{escape(draft["caption"])}</p>{visuals}<p>mock 음성은 설명용 신호음입니다. 대본 자막은 장면 시간에 배분하며 음성 정렬을 하지 않습니다.</p></html>', encoding='utf-8')
     save_json(output / 'render-info.json', {'files': [str(p) for p in files], 'flow': flow})
     return files

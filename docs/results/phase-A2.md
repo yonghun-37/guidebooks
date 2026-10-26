@@ -110,3 +110,27 @@ Minor 3개도 반영했다: 토큰 검사 문자열 오탐을 고유 sentinel로
 생성·호스팅·게시 API의 실제 호출, 실계정 로그인·게시, 유료 키 사용은 하지 않았다. Claude 최종 검수와 기존 A2의 사용자 실환경 확인은 남아 있다.
 
 요청한 `python3 scripts/notify.py "✅ [A2b 완료] auto-kit 예시·Python 버전 수정 ..."`를 실행해 **HTTP 200** 전송 성공을 확인했다.
+
+## A2c 수정
+
+2026-10-26 · Codex. 인스타 릴스에 공통 영상 템플릿의 쇼츠 채널명이 찍히던 문제를 수정했다. 범위는 `auto-kit/`, `site/advanced/04-render.html`의 결과 그림·설명과 해당 WebP, 이 결과 절이다. `site-shorts/`·`site-blog/`·공통 상태는 수정하지 않았으며 commit/push하지 않았다.
+
+### 바뀐 내용
+
+- `config.example.json`의 `flows.insta.account_name`은 **출근길 3분 생활 뉴스**, `flows.shorts.channel_name`은 **자취생 10분 생존법**이다. 흐름별 `creator_name`(하린/도윤)·`preview_speaker`(정 선배/서진)도 설정한다.
+- `rendering/media.py`가 선택한 흐름의 표시 설정만 카드·영상 렌더러에 전달한다. `short_base.py`의 채널명·제작자 표시·미리보기 제목·안내 발화자, 카드의 mock/live 고정 계정명과 도식 생성기의 인물명을 설정에서 읽도록 바꿨다. 렌더러와 예제 생성 Python에서 기존 인물·채널명 검색 결과 0건이다. 원문/RSS·설명용 문서의 가상 사례명은 유지했다.
+- 공통 영상 미리보기와 최종 흐름 미리보기 모두 해당 계정·채널명으로 제목을 만들고 설정 문자열을 HTML 이스케이프한다. 복사 원본 키트의 `config.yaml`·`REVIEW.md` 안내도 실제 auto-kit 실행·검사 파일명으로 고쳤다.
+- README에 표시 설정과 기존 `config.json`에 `flows`를 추가하는 방법을 적었다. `Pipeline`의 실행별 설정 저장을 그대로 사용하므로 변경은 새 실행부터 적용하고, 기존 실행의 재개는 저장된 설정을 유지한다.
+- 깨끗한 임시 복사본에서 mock 인스타 릴스 흐름을 다시 실행해 `dry_run`과 모든 관문 통과를 확인했다. 실제 MP4의 4초 프레임을 추출해 `site/advanced/examples/reel-frame.webp`를 교체했다. 「출근길 3분 생활 뉴스 / 하린의 연습」을 직접 확인하고, 해당 그림의 alt·캡션에서 쇼츠 채널명을 수동 교체하라는 임시 경고를 삭제했다.
+
+### 실행·검증
+
+- 추가 회귀 테스트 5개는 기본 인스타 릴스·캐러셀+모션 릴스·기본 쇼츠·두 흐름의 사용자 지정 이름을 실제로 렌더한다. Pillow에 그리는 문구와 두 미리보기를 수집해 선택한 이름·제작자·발화자 반영, 다른 흐름 이름의 부재, HTML 특수문자 이스케이프를 검사한다.
+- Python **3.11.15** 전체 pytest: **80 passed in 75.03s**. 기존 75개와 새 회귀 검사 5개이며, 실제 socket 연결 차단을 유지했다.
+- `python3 scripts/check_site.py --site site`: **51 HTML·내부 참조 3,971개, 오류 0건**.
+- 새 영상은 **1080×1920·H.264/AAC·30fps·15.1초·-16.05 LUFS**, WebP는 **720×1280·14,334바이트**다. mock 소리는 연습용 신호음이며 생성 API 비용은 $0이다. 실계정 로그인·게시·유료 API 호출은 하지 않았다.
+- 담당 경로 `git diff --check` 통과. 검증 기록: [mock 실행·미디어·이미지 해시](../../auto-kit/docs/verification/a2c.json), [pytest 출력](../../auto-kit/docs/verification/pytest-a2c.txt), [사이트 검사](../../auto-kit/docs/verification/check-site-a2c.json).
+
+기존 A5v-insta 결과의 「쇼츠 채널명 분리 필요」 후속 항목은 이번 수정으로 해결했다. Claude 최종 검수와 기존 A2의 실계정·OS 실환경 확인은 남아 있다.
+
+요청한 `python3 scripts/notify.py "✅ [A2c 완료] auto-kit 채널명 설정화 ..."`를 실행해 **HTTP 200** 전송 성공을 확인했다. 토큰은 출력하거나 저장하지 않았다.

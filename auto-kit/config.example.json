@@ -1,6 +1,18 @@
 {
   "mode": "approval",
   "research_date": "2026-10-26",
+  "flows": {
+    "insta": {
+      "account_name": "출근길 3분 생활 뉴스",
+      "creator_name": "하린",
+      "preview_speaker": "정 선배"
+    },
+    "shorts": {
+      "channel_name": "자취생 10분 생존법",
+      "creator_name": "도윤",
+      "preview_speaker": "서진"
+    }
+  },
   "budget": {
     "daily_usd": 1.0,
     "monthly_usd": 10.0,
