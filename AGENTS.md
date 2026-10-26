@@ -8,6 +8,13 @@
 - **Codex**: 실제 작업(조사 지휘, 원고, 사이트 구현, 스타터 키트, 검증)을 맡는다.
 - **Hermes**(`/home/yonghun/project/hermes-research`의 컨테이너, provider `openai-codex`): 웹 자료조사를 맡는다. 사용법은 docs/PLAN.md의 "Hermes 호출법"을 따른다.
 
+## Project Skills (작업 전에 해당 Skill을 읽는다)
+
+- `.agents/skills/guidebook-pipeline/SKILL.md`: 단계 순서, 병렬 작업 파일 소유 규칙, 사이트·배포 규약, **이 환경의 알려진 함정**(샌드박스·검색·REA·대기 스크립트 등).
+- `.agents/skills/guidebook-research/SKILL.md`: Hermes 호출 명령(`-s guidebook-research`), 원응답 품질 점검(exit 0 ≠ 성공, 403 세기), 출처·사실표 형식.
+- `.agents/skills/guidebook-writing/SKILL.md`: 집필·검수 원칙. 기준 문서는 **docs/STYLE-GUIDE.md**(확정, 최우선).
+- Hermes 쪽 지침: `/home/yonghun/project/hermes-research/.hermes/skills/guidebook-research/SKILL.md`(Hermes가 `-s guidebook-research`로 로드).
+
 ## 규칙
 
 - 현재 단계의 지시는 docs/PLAN.md의 해당 Phase만 따른다. 다른 Phase 작업을 미리 하지 않는다.
@@ -15,7 +22,7 @@
 - 상태는 docs/PROJECT_STATE.md를 덮어써서 최신으로 유지한다. 단계별 결과는 docs/results/phase-N.md에 추가한다.
 - hermes-research 저장소는 **읽기 전용**으로 취급한다. 예외: Hermes 질의 파일과 원응답을 `hermes-research/output/ai-insta-research-20261026/` 아래에만 쓴다. 그 저장소의 코드·config·runtime·Skill·Prefect·DB는 변경하지 않는다.
 - 유료 API 키를 새로 쓰거나 결제를 하지 않는다. 실제 인스타그램 계정에 로그인·포스팅하지 않는다.
-- 사실 주장(정책, 수치, 요건, 가격)은 research/의 출처 노트에 근거가 있어야 한다. 근거 없는 수치는 쓰지 않거나 "확인 필요"로 표시한다. 정책은 "2026년 10월 조사 기준"을 명시한다.
+- 사실 주장(정책, 수치, 요건, 가격)은 research/의 출처 노트에 근거가 있어야 한다. 근거 없는 수치는 만들지 않는다. 단, 교과서 문장은 docs/STYLE-GUIDE.md를 따른다: 결론 먼저, 쉬운 말, 불확실성은 "확인할 점" 상자 하나에 모으고 학습자가 확인할 방법을 준다. 사실 ID·Phase 이름 등 내부 용어는 교과서 본문에 쓰지 않는다. 정책은 "2026년 10월 조사 기준"을 장 머리에 한 번 명시한다.
 - 참고 사이트(art.euiyun.com/color)는 구조·학습 설계·UX 패턴만 참고한다. 그 사이트의 문장, 이미지, CSS/JS 코드를 복사하지 않고 새로 구현한다.
 - 등장인물·사례 계정은 가상이다. 실존 인물·브랜드를 사칭하지 않는다. 실제 사례를 인용할 때는 출처를 단다.
 - Codex 샌드박스는 .git 쓰기가 막혀 있으므로 commit은 Claude Code가 Phase 검수 후 한다. Codex는 commit을 시도하지 않는다. push는 하지 않는다.

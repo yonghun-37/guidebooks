@@ -12,7 +12,7 @@ RUN=/home/yonghun/project/hermes-research/output/ai-insta-research-20261026
 # 2) 실행(질의 하나당 1회, 원응답 보존):
 cd /home/yonghun/project/hermes-research && timeout 900 docker compose exec -T --user 1000:1000 -e HOME=/opt/data hermes \
   /opt/hermes/.venv/bin/hermes chat --query-file /output/ai-insta-research-20261026/queries/<topic>.txt \
-  -Q --provider openai-codex -t web --max-turns 30 > $RUN/raw/<topic>.md 2>&1
+  -Q --provider openai-codex -t web -s guidebook-research --max-turns 40 > $RUN/raw/<topic>.md 2>&1
 ```
 
 - 질의는 최대 4개까지 병렬로 실행한다. 전체 질의 수는 16회 이하로 한다(재시도 포함). 실패한 질의는 1회만 재시도한다.
