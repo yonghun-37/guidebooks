@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>자동화 흐름 그림 모음</title>
+<style>:root{color-scheme:light dark}body{font:17px/1.7 system-ui;max-width:1100px;margin:auto;padding:20px}img{display:block;width:100%;height:auto}figure{margin:30px 0}a{color:inherit}figcaption{padding:8px}nav{display:flex;gap:12px;flex-wrap:wrap}</style>
+<h1>자동화 흐름을 그림으로 보기</h1><p><a href="../README.md">설치·실행 안내로 돌아가기</a> · <a href="../samples/dashboard.html">실제 mock 대시보드 보기</a></p><nav><a href="#system">전체 구성</a><a href="#sequence">API 순서</a><a href="#gates">품질 관문</a><a href="#costs">비용</a></nav>
+<figure id="system"><picture><source media="(prefers-color-scheme: dark)" srcset="figures/system-dark.svg"><img src="figures/system.svg" alt="소스 선정부터 생성·렌더·관문·게시·성과 피드백까지의 구성"></picture><figcaption>두 흐름이 상태·비용·승인 규칙을 함께 사용해요. <a href="figures/system-dark.svg">다크 원본</a></figcaption></figure>
+<figure><picture><source media="(prefers-color-scheme: dark)" srcset="figures/timeline-dark.svg"><img src="figures/timeline.svg" alt="하루 새 콘텐츠와 15분 상태 확인, 다음 날 지표 재조회 타임라인"></picture><figcaption>예약 시각·간격은 키트 기본값이며 실제 OS 시각을 확인해요.</figcaption></figure>
+<figure id="sequence"><picture><source media="(prefers-color-scheme: dark)" srcset="figures/sequence-dark.svg"><img src="figures/sequence.svg" alt="Instagram 컨테이너 생성과 폴링·발행, YouTube Location 저장과 308 재개 호출 순서"></picture><figcaption>발행 결과가 불명이면 새 요청으로 해결하지 않아요.</figcaption></figure>
+<figure><picture><source media="(prefers-color-scheme: dark)" srcset="figures/states-dark.svg"><img src="figures/states.svg" alt="실행 상태·승인·실패·연기·불명·거부의 상태 흐름"></picture><figcaption>resume은 같은 실행 ID에서 이어가요.</figcaption></figure>
+<figure id="gates"><picture><source media="(prefers-color-scheme: dark)" srcset="figures/gates-dark.svg"><img src="figures/gates.svg" alt="품질 관문의 통과와 예외 대기열 분기"></picture><figcaption>관문 실패를 승인 명령으로 우회할 수 없어요.</figcaption></figure>
+<figure><picture><source media="(prefers-color-scheme: dark)" srcset="figures/folders-dark.svg"><img src="figures/folders.svg" alt="설정·비밀·가격표·실행 폴더·SQLite·공개 미디어 저장소의 관계"></picture><figcaption>공개 폴더에는 게시용 JPEG/MP4만 올려요.</figcaption></figure>
+<figure id="costs"><picture><source media="(prefers-color-scheme: dark)" srcset="figures/costs-dark.svg"><img src="figures/costs.svg" alt="실행 최대비·일 월 상한·실제 usage·플랫폼 한도의 연결"></picture><figcaption>사용 금액 막대와 quota 게이지는 실행 대시보드에서 실제 저장값으로 그려요.</figcaption></figure>
+<figure><picture><source media="(prefers-color-scheme: dark)" srcset="figures/alerts-dark.svg"><img src="figures/alerts.svg" alt="대시보드·미리보기 첨부 승인 알림·예외 사유·미준비 지표 예"></picture><figcaption>그림의 숫자·ID는 가상 예예요.</figcaption></figure>
+</html>

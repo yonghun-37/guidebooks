@@ -1,0 +1,103 @@
+{
+  "mode": "approval",
+  "research_date": "2026-10-26",
+  "budget": {
+    "daily_usd": 1.0,
+    "monthly_usd": 10.0,
+    "max_attempts": 2,
+    "max_output_tokens": 2000,
+    "max_source_chars": 12000,
+    "provider_hard_cap_confirmed": false
+  },
+  "providers": {
+    "llm": "mock",
+    "image": "mock",
+    "tts": "mock",
+    "video": "mock",
+    "llm_check": false,
+    "check_llm": "openai"
+  },
+  "models": {
+    "openai": "gpt-6-luna",
+    "gemini": "gemini-3.5-flash-lite",
+    "anthropic": "claude-haiku-5-5",
+    "image": "gemini-nano-banana-2.1",
+    "tts": "ko-KR-Wavenet-A",
+    "video": "gen4_turbo",
+    "check_llm": "gpt-6.1-sol"
+  },
+  "media": {
+    "image_api": false,
+    "video_api": false,
+    "motion_reel": false,
+    "scenes_dir": null,
+    "recording": null,
+    "font": "assets/fonts/NotoSansKR.ttf",
+    "seconds_per_scene": 2.0,
+    "lufs_target": -16.0
+  },
+  "sources": {
+    "files": [
+      "sources/sample.json"
+    ],
+    "rss": [],
+    "performance_weight": 0.25
+  },
+  "gates": {
+    "defaults_label": "유사도·LUFS·문안 길이·연기 간격은 키트 기본값(바꿀 수 있음)",
+    "ngram": 4,
+    "similarity": 0.82,
+    "recent_posts": 30,
+    "blocked_words": [
+      "수익 보장",
+      "무조건 완치"
+    ],
+    "sensitive_words": [
+      "투자 권유",
+      "의학적 진단"
+    ],
+    "max_caption_chars": 2000,
+    "lufs_min": -19.0,
+    "lufs_max": -13.0,
+    "max_video_bytes": 300000000,
+    "max_image_bytes": 8000000
+  },
+  "instagram": {
+    "api_version": "v26.0",
+    "account": "<IG_USER_ID>",
+    "format": "carousel",
+    "is_ai_generated": true,
+    "safety_daily_posts": 1
+  },
+  "youtube": {
+    "account": "MINE",
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "publishAt": null,
+    "quota_daily_insert": 1,
+    "quota_confirmed_at": null
+  },
+  "hosting": {
+    "adapter": "local",
+    "base_url": "https://example.invalid/media",
+    "pages_repository": "",
+    "pages_branch": "media",
+    "r2_bucket": "",
+    "r2_endpoint": "",
+    "max_bytes_per_run": 25000000
+  },
+  "review": {
+    "hours": 2,
+    "approval_expiry_hours": 24
+  },
+  "ops": {
+    "defer_minutes": 60,
+    "token_warning_days": 7,
+    "instagram_token_file": "private/instagram-token.json",
+    "google_client_file": "private/client_secret.json",
+    "google_token_file": "private/google-token.json",
+    "telegram_allowed_user": "",
+    "telegram_chat_id": ""
+  }
+}

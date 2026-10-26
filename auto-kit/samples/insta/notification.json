@@ -1,0 +1,9 @@
+{
+  "event": "실행 보고",
+  "id": "65cf4b3d6b16",
+  "status": "dry_run",
+  "message": "[실행 보고] 65cf4b3d6b16 · insta · dry_run\n\n생성비 $0.000000 · 미리보기 첨부/로컬 preview.html",
+  "preview": "preview.html",
+  "binding": "7d6e782f4cd0989bc2086ca5177353e1ab4331054574df4df07650f4fdabb715",
+  "cost_usd": 0.0
+}

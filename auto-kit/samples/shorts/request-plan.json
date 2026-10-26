@@ -1,0 +1,58 @@
+{
+  "mode": "dry-run",
+  "network_calls": 0,
+  "metadata": {
+    "snippet": {
+      "title": "가상도서관의 책 소식",
+      "description": "가상도서관은 책 12권을 소개해요. 관심 있는 책을 골라 원문에서 내용을 살펴봐요.\n원문: https://example.invalid/library",
+      "categoryId": "22",
+      "defaultLanguage": "ko"
+    },
+    "status": {
+      "privacyStatus": "private",
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": true
+    }
+  },
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet%2Cstatus",
+      "headers": {
+        "Authorization": "Bearer <REDACTED>",
+        "X-Upload-Content-Length": "149031",
+        "X-Upload-Content-Type": "video/mp4"
+      },
+      "json": {
+        "snippet": {
+          "title": "가상도서관의 책 소식",
+          "description": "가상도서관은 책 12권을 소개해요. 관심 있는 책을 골라 원문에서 내용을 살펴봐요.\n원문: https://example.invalid/library",
+          "categoryId": "22",
+          "defaultLanguage": "ko"
+        },
+        "status": {
+          "privacyStatus": "private",
+          "selfDeclaredMadeForKids": false,
+          "containsSyntheticMedia": true
+        }
+      }
+    },
+    {
+      "method": "PUT",
+      "url": "<saved Location>",
+      "headers": {
+        "Content-Range": "bytes 0-149030/149031"
+      },
+      "note": "마지막 외 256KiB 배수 청크. 308 Range 다음부터 재개"
+    },
+    {
+      "method": "PUT",
+      "url": "<same Location>",
+      "headers": {
+        "Content-Length": "0",
+        "Content-Range": "bytes */149031"
+      },
+      "note": "응답 유실·재시작 때 서버 상태 조회"
+    }
+  ]
+}

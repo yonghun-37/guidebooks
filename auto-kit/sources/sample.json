@@ -1,0 +1,4 @@
+[
+  {"title": "가상도서관의 책 소식", "text": "가상도서관은 책 12권을 소개해요. 관심 있는 책을 골라 원문에서 내용을 살펴봐요.", "url": "https://example.invalid/library", "entities": ["가상도서관"], "synthetic": true, "rights_reviewed": false, "category": "독서"},
+  {"title": "가상공원의 산책 안내", "text": "가상공원은 산책길 3곳을 소개해요. 길의 특징을 비교하고 내게 맞는 길을 골라봐요.", "url": "https://example.invalid/park", "entities": ["가상공원"], "synthetic": true, "rights_reviewed": false, "category": "생활"}
+]

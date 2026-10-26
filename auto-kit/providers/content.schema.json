@@ -1,0 +1,11 @@
+{
+  "type": "object", "additionalProperties": false,
+  "required": ["title", "caption", "narration", "entities", "scenes"],
+  "properties": {
+    "title": {"type": "string", "minLength": 1, "maxLength": 80},
+    "caption": {"type": "string", "minLength": 1, "maxLength": 2000},
+    "narration": {"type": "string", "maxLength": 4000},
+    "entities": {"type": "array", "items": {"type": "string"}, "maxItems": 30},
+    "scenes": {"type": "array", "minItems": 2, "maxItems": 5, "items": {"type": "object", "additionalProperties": false, "required": ["title", "text", "duration"], "properties": {"title": {"type": "string", "minLength": 1, "maxLength": 40}, "text": {"type": "string", "minLength": 1, "maxLength": 150}, "duration": {"type": "number", "minimum": 1, "maximum": 30}}}}
+  }
+}

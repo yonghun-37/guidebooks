@@ -1,0 +1,75 @@
+{
+  "mode": "dry-run",
+  "login": "Instagram Login",
+  "network_calls": 0,
+  "authorization": "Bearer <REDACTED>",
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/content_publishing_limit",
+      "params": {
+        "fields": "quota_usage,config"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+      "data": {
+        "image_url": "https://example.invalid/media/65cf4b3d6b16/00-card-01.jpg",
+        "is_carousel_item": "true"
+      },
+      "save_as": "CHILD_0"
+    },
+    {
+      "method": "GET",
+      "url": "https://graph.instagram.com/v26.0/{CHILD_0}",
+      "params": {
+        "fields": "status_code"
+      },
+      "until": "FINISHED"
+    },
+    {
+      "method": "POST",
+      "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+      "data": {
+        "image_url": "https://example.invalid/media/65cf4b3d6b16/01-card-02.jpg",
+        "is_carousel_item": "true"
+      },
+      "save_as": "CHILD_1"
+    },
+    {
+      "method": "GET",
+      "url": "https://graph.instagram.com/v26.0/{CHILD_1}",
+      "params": {
+        "fields": "status_code"
+      },
+      "until": "FINISHED"
+    },
+    {
+      "method": "POST",
+      "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media",
+      "data": {
+        "media_type": "CAROUSEL",
+        "children": "{CHILD_0},{CHILD_1}",
+        "caption": "가상도서관은 책 12권을 소개해요. 관심 있는 책을 골라 원문에서 내용을 살펴봐요.\n원문: https://example.invalid/library",
+        "is_ai_generated": "true"
+      },
+      "save_as": "PARENT"
+    },
+    {
+      "method": "GET",
+      "url": "https://graph.instagram.com/v26.0/{PARENT}",
+      "params": {
+        "fields": "status_code"
+      },
+      "until": "FINISHED"
+    },
+    {
+      "method": "POST",
+      "url": "https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish",
+      "data": {
+        "creation_id": "{PARENT}"
+      }
+    }
+  ]
+}

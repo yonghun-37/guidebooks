@@ -1,0 +1,13 @@
+{
+  "name": "auto-kit mock 두 흐름 · 셀프 호스팅 전용",
+  "active": false,
+  "nodes": [
+    {"id": "schedule", "name": "Schedule Trigger", "type": "n8n-nodes-base.scheduleTrigger", "typeVersion": 1.2, "position": [0, 0], "parameters": {"rule": {"interval": [{"field": "minutes", "minutesInterval": 15}]}}},
+    {"id": "insta", "name": "Execute Command insta mock", "type": "n8n-nodes-base.executeCommand", "typeVersion": 1, "position": [260, 0], "parameters": {"executeOnce": true, "command": "/opt/auto-kit/.venv/bin/python /opt/auto-kit/pipeline.py tick --flow insta --provider mock --mode auto --daily-at 09:17"}},
+    {"id": "shorts", "name": "Execute Command shorts mock", "type": "n8n-nodes-base.executeCommand", "typeVersion": 1, "position": [520, 0], "parameters": {"executeOnce": true, "command": "/opt/auto-kit/.venv/bin/python /opt/auto-kit/pipeline.py tick --flow shorts --provider mock --mode auto --daily-at 09:17"}}
+  ],
+  "connections": {"Schedule Trigger": {"main": [[{"node": "Execute Command insta mock", "type": "main", "index": 0}]]}, "Execute Command insta mock": {"main": [[{"node": "Execute Command shorts mock", "type": "main", "index": 0}]]}},
+  "settings": {"executionOrder": "v1", "timezone": "Asia/Seoul"},
+  "pinData": {},
+  "tags": []
+}

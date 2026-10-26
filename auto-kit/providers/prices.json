@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-10-26",
+  "currency": "USD",
+  "source": "../../research-advanced/generation-apis.md, costs.md, FACT-SHEET ADV-043..058",
+  "notes": "유료 종량 상한 견적. 무료량 차감 없음. 세금/환율/구독/호스팅 별도. 모델 접근/종료/가격을 live 전 재확인.",
+  "llm": {
+    "gpt-6-luna": {"input_million": 0.1, "output_million": 0.5, "source": "A025"},
+    "gpt-6.1-sol": {"input_million": 2.0, "output_million": 10.0, "source": "A025"},
+    "gemini-3.5-flash-lite": {"input_million": 0.3, "output_million": 2.5, "source": "A028"},
+    "claude-haiku-5-5": {"input_million": 0.1, "output_million": 0.5, "source": "A032; 입력 10만 tokens 이하"}
+  },
+  "image": {"gemini-nano-banana-2.1": {"unit_usd": 0.0336, "input_million": 1.5, "source": "A028; 1K 1장, thinking 추가 출력은 미포함"}},
+  "tts": {"ko-KR-Wavenet-A": {"character_million": 4.0, "source": "A038,A039; 무료량 소진 가정"}},
+  "video": {"gen4_turbo": {"second_usd": 0.05, "source": "A037; 5credits/s, 0.01USD/credit"}}
+}

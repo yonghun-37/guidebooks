@@ -1,0 +1,47 @@
+{
+  "facts": {
+    "passed": true,
+    "reasons": [],
+    "method": "숫자·이름 문자열 대조(문맥·한국어 인명 누락 가능)"
+  },
+  "policy": {
+    "passed": true,
+    "reasons": []
+  },
+  "similarity": {
+    "passed": true,
+    "reasons": [],
+    "maximum": 0,
+    "threshold": 0.82
+  },
+  "specification": {
+    "passed": true,
+    "reasons": [],
+    "media": [
+      {
+        "file": "card-01.jpg",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 120664
+      },
+      {
+        "file": "card-02.jpg",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 92521
+      }
+    ]
+  },
+  "ai": {
+    "passed": true,
+    "reasons": []
+  },
+  "cost": {
+    "passed": true,
+    "reasons": [],
+    "total": 0.0,
+    "day": 0.0,
+    "month": 0.0,
+    "pending": 0
+  }
+}

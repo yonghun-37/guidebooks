@@ -1,0 +1,68 @@
+{
+  "clean_copy_commands": 15,
+  "commands": [
+    {
+      "command": "python doctor.py",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py run --flow insta --provider mock --mode auto",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py run --flow shorts --provider mock --mode auto",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py run --flow insta --provider mock --state private/review-demo",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py approve 9c672a83f7dd --state private/review-demo",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py resume 9c672a83f7dd --state private/review-demo",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py status",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py report",
+      "exit": 0
+    },
+    {
+      "command": "python insights.py 9c672a83f7dd --state private/review-demo",
+      "exit": 0
+    },
+    {
+      "command": "python -m schedule.install --os windows --flow insta --time 09:17",
+      "exit": 0
+    },
+    {
+      "command": "python -m schedule.install --os macos --flow insta --time 09:17",
+      "exit": 0
+    },
+    {
+      "command": "python -m schedule.install --os cron --flow insta --time 09:17",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py tick --flow insta --provider mock --mode auto --state private/daily --daily-at 00:00",
+      "exit": 0
+    },
+    {
+      "command": "python pipeline.py tick --flow insta --provider mock --mode auto --state private/daily --daily-at 00:00",
+      "exit": 0
+    },
+    {
+      "command": "python doctor.py --live --flow insta",
+      "exit": 1
+    }
+  ],
+  "local_links": 69,
+  "link_errors": 0,
+  "external_calls": 0
+}
