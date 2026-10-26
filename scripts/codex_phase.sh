@@ -6,7 +6,7 @@ name=$1; prompt=$2
 log=logs/codex-$name-$(date +%Y%m%d-%H%M%S)
 python3 scripts/notify.py "▶️ [Codex 시작] $name"
 codex --search exec -s workspace-write -c sandbox_workspace_write.network_access=true \
-  -c 'mcp_servers.rea.default_tools_approval_mode="approve"' \
+  -c 'mcp_servers.rea.default_tools_approval_mode="approve"' -c 'service_tier="fast"' \
   --add-dir "${HERMES_RUN:-/home/yonghun/project/hermes-research/output/ai-insta-research-20261026}" -C "$PWD" \
   -o "$log.last.md" - < "$prompt" > "$log.log" 2>&1
 status=$?

@@ -48,6 +48,7 @@ ReelsBook에서는 "샘플 → 선택"을 늦게 해서 14장을 다시 썼다. 
 | 근거 규칙만 강조하면 원고가 단서투성이가 된다 | STYLE-GUIDE의 문체 규칙과 함께 지시 |
 | 구조·각주·렌더링 통과를 품질 통과로 착각 | 본문을 학습자 질문 기준으로 읽고 채점 |
 | 새 책의 Hermes 출력 폴더가 Codex 샌드박스 쓰기 범위 밖 | 실행 전 `mkdir -p <RUN>/{queries,raw}` 후 `HERMES_RUN=<RUN> scripts/codex_phase.sh ...` |
+| Codex 속도 | 사용자 지시(2026-10-26): 모든 Codex 실행에 `-c 'service_tier="fast"'` (codex_phase.sh에 포함, 전역 config에도 설정됨) |
 | 공개 저장소 | 토큰·.env·Hermes 원응답 전문 금지. 키트 .env는 gitignore |
 
 ## 사이트·배포 규약

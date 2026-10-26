@@ -3,4 +3,4 @@
 공통 파일(book.js, book.css, common.js, practice.js, glossary, credits, index)은 수정하지 말고 docs/results/phase-AId-requests.md에 diff로 남긴다. commit하지 마라. 검증: style_lint, check_site, 1280/375/360px·콘솔·키보드. 결과 docs/results/phase-AId.md(+스크린샷). 끝나면 `python3 scripts/notify.py "✅ [AId 완료] ..." <대표 스크린샷>`.
 
 ## 이번 작업: AId
-인스타 편 **AI 제작 모듈 통합**. AIa·AIb·AIc 결과와 requests를 병합한다(이번엔 공통 파일 수정 허용, 다른 작업자 없음). 새 장 'AI 도구 지도'를 2부 6장으로 넣고 이후 장 번호를 하나씩 미룬다(파일 slug는 유지, book.js의 번호·제목·이전/다음·표지 목차·장 상단·퀴즈/본문 속 '○장' 상호 참조를 모두 갱신). 부록 '프롬프트 모음'을 목차·표지에 추가. 실험실(build_appendices)·용어집·출처 재생성. 표지에 'AI로 무엇을 어떻게 만드나' 진입 버튼. 전체 게이트(check_site, style_lint, 브라우저 3폭, 키트 테스트). docs/PROJECT_STATE.md·shelf/progress 갱신.
+인스타 편 **AI 제작 모듈 통합**. AIa·AIb·AIc 결과와 requests를 병합한다(이번엔 공통 파일 수정 허용, 다른 작업자 없음). 새 장 'AI 도구 지도'를 2부 6장으로 넣고 이후 장 번호를 하나씩 미룬다(파일 slug는 유지, book.js의 번호·제목·이전/다음·표지 목차·장 상단·퀴즈/본문 속 '○장' 상호 참조를 모두 갱신). 부록 '프롬프트 모음'을 목차·표지에 추가. 실험실(build_appendices)·용어집·출처 재생성. 표지에 'AI로 무엇을 어떻게 만드나' 진입 버튼. 전체 게이트(check_site, style_lint, 브라우저 3폭, 키트 테스트). docs/PROJECT_STATE.md 갱신, shelf/progress/index.html은 두 책(인스타·쇼츠) 상태를 모두 최신으로 갱신(쇼츠 통합 작업자는 shelf를 건드리지 않는다).
