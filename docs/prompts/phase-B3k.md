@@ -9,3 +9,4 @@
 - daily.py/schedule_setup.py: 매일 정해진 시간에 brief→(사람 작성)→check→render까지, 발행은 사람 승인 후(starter-kit 방식 재사용).
 - samples/에 가상 주제 샘플 글 1편과 출력물, pytest(오프라인 전체·검사 규칙·렌더·드라이런·모킹 발행), 초보자용 README(Windows/macOS, 명령마다 "이렇게 보이면 성공").
 - 결과 docs/results/phase-B3k.md, `python3 scripts/notify.py "✅ [blog-kit 완료] ..."`.
+- **예시**: docs/STYLE-GUIDE.md 7절 — 실제로 사람들이 보고 읽을 만한 소재로 예시를 정해 장을 관통시킨다(설명용 인위적 소재 금지, 실존 브랜드·지어낸 성과 숫자 금지). 인스타·쇼츠 편의 새 예시(출근길 3분 생활 뉴스 / 자취생 10분 생존법)와 어울리게 한다.
