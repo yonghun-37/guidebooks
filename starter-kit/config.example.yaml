@@ -1,0 +1,16 @@
+account_name: 하린의 한 장 실험실
+colors:
+  background: '#F5F2EA'
+  foreground: '#142E35'
+  accent: '#007F73'
+# 상대 경로는 이 설정 파일이 있는 폴더 기준입니다.
+font: assets/fonts/NotoSansKR.ttf
+rss:
+  - fixtures/sample-feed.xml
+llm:
+  mode: offline  # 규칙 기반 후보 추출 + 사람이 직접 편집. 외부 LLM 호출 없음.
+reel:
+  duration: 20  # 이 실습의 허용 범위: 15~30초
+  tts: silent  # 상업용 한국어 음성 권리 미확인 → 무음 + 영상 내 자막
+publish:
+  is_ai_generated: false  # 실제 제작 방식 확인 후 true/false 선택

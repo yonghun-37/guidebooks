@@ -8,4 +8,4 @@
 5. tests/(pytest)에 오프라인 전체 실행, 카드 크기 1080x1350, 릴스 1080x1920·길이 범위, 드라이런 출력 검증을 넣고 통과시킨다. 의존성 설치는 starter-kit/.venv 등 저장소 안에서만 한다. 시스템 패키지(ffmpeg 등)가 없으면 설치를 시도하지 말고 확인 결과를 기록한 뒤 대안(imageio-ffmpeg 등 pip 바이너리)을 쓴다.
 6. starter-kit/samples/ 에 오프라인 모드로 실제 생성한 카드 PNG 세트와 릴스 MP4를 저장한다(용량 10MB 이하).
 7. README.md는 완전 초보 기준: 터미널 여는 법, Python 설치 확인, 설치 명령(Windows/macOS/Linux), 첫 실행, 결과 확인, 흔한 오류 표.
-8. docs/results/phase-4.md, git commit("Phase 4: starter kit") — 이때 starter-kit/와 docs/results/phase-4.md만 add 한다. docs/PROJECT_STATE.md는 건드리지 마라. notify로 보고하며 샘플 카드 PNG 1장을 첨부한다.
+8. docs/results/phase-4.md 를 쓴다(commit은 하지 않는다, Claude가 한다). docs/PROJECT_STATE.md와 research/는 다른 작업자가 수정 중이니 건드리지 마라. notify로 보고하며 샘플 카드 PNG 1장을 첨부한다.

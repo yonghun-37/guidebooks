@@ -3,3 +3,5 @@ starter-kit/.venv/
 starter-kit/output/
 __pycache__/
 node_modules/
+starter-kit/.cache/
+.pytest_cache/

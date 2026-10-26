@@ -1,0 +1,201 @@
+# 하린의 첫 카드와 릴스 만들기
+
+Python으로 **합성 RSS → 문안 초안 → 카드 4장 → 20초 릴스 → 사람 검수 → 게시 요청 미리보기**를 만듭니다. 코딩 경험·계정·API 키가 없어도 됩니다. 동봉 이야기는 모두 가상이며 실제 뉴스가 아닙니다. 결과물 예시는 [samples](samples/)에서 먼저 볼 수 있습니다.
+
+설치할 때만 인터넷이 필요합니다. 설치가 끝나면 기본 실습은 인터넷 없이 작동합니다. 기본 음성은 **무음 + 영상에 새긴 한국어 자막**입니다. 음성 합성·LLM·이미지 생성 서비스를 호출하지 않습니다.
+
+## 1. 터미널과 Python 준비
+
+터미널은 명령을 글자로 입력하는 창입니다. 코드 블록에서 명령만 복사하고 Enter를 누르세요. `$`, `>` 같은 기호는 붙이지 않습니다. 설치가 끝날 때까지 창을 닫지 마세요.
+
+| 운영체제 | 터미널 여는 법 | Python 확인 |
+|---|---|---|
+| Windows | 시작 메뉴 → **명령 프롬프트(cmd)** 검색 → 실행 | `py -3.11 --version` |
+| macOS | Spotlight(⌘+Space) → **터미널** 검색 → 실행 | `python3 --version` |
+| Linux | 앱 메뉴의 **터미널** 또는 Ctrl+Alt+T | `python3 --version` |
+
+**Python 3.11 이상**이 필요합니다. 없거나 낮은 버전이면 [Python 공식 다운로드](https://www.python.org/downloads/)에서 설치하세요. Windows 설치 화면에서는 PATH 추가를 선택하세요. Linux는 배포판의 Python/venv 설치 안내를 따르세요. 이 키트는 시스템 패키지를 자동 설치하지 않습니다. Windows에서 3.12 이상을 설치했다면 아래 `py -3.11`을 해당 버전(예: `py -3.12`)으로 바꾸세요.
+
+[저장소](https://github.com/yonghun-37/guidebooks)의 **Code → Download ZIP**으로 받아 압축을 푸세요. 탐색기/Finder에서 `starter-kit` 폴더 위치를 확인합니다. 터미널에서 `cd `를 입력한 뒤 그 폴더의 전체 경로를 따옴표로 감싸 붙여넣으세요. 예:
+
+```text
+cd "C:\Users\내이름\Downloads\guidebooks-main\starter-kit"
+```
+
+macOS/Linux의 경로는 보통 `"/Users/내이름/Downloads/guidebooks-main/starter-kit"` 또는 `"/home/내이름/Downloads/guidebooks-main/starter-kit"` 형태입니다. 실제 압축을 푼 위치로 바꾸세요. `dir`(Windows) 또는 `ls`(macOS/Linux)를 입력했을 때 `run_pipeline.py`가 보이면 맞게 이동했습니다.
+
+## 2. 설치: pip 권장
+
+가상환경(`.venv`)은 이 폴더에만 프로그램을 설치하는 상자입니다. 운영체제에 맞는 명령을 **한 줄씩** 실행하세요.
+
+Windows **명령 프롬프트(cmd)**:
+
+```bat
+py -3.11 -m venv .venv
+.venv\Scripts\activate.bat
+python -m pip install --cache-dir .cache/pip -r requirements.txt
+```
+
+macOS / Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --cache-dir .cache/pip -r requirements.txt
+```
+
+창 왼쪽에 `(.venv)`가 보이면 활성화됐습니다. `python --version`으로 다시 3.11 이상인지 확인하세요. 새 터미널을 열 때는 폴더 이동과 활성화 명령을 다시 실행합니다. PowerShell 사용자는 활성화 대신 `.venv\Scripts\python.exe`를 아래 모든 `python` 자리에 써도 됩니다.
+
+**uv를 쓰는 대체 경로:** 위에서 가상환경 생성·활성화까지만 실행하고, 마지막 설치 명령 대신 아래를 실행하세요. uv도 가상환경 안에 설치합니다. pip 경로와 둘 다 할 필요는 없습니다.
+
+```bash
+python -m pip install --cache-dir .cache/pip uv
+uv pip install --cache-dir .cache/uv --python .venv -r requirements.txt
+```
+
+FFmpeg를 따로 설치할 필요는 없습니다. 시스템 FFmpeg가 있으면 쓰고, 없으면 설치된 `imageio-ffmpeg`의 바이너리를 사용합니다. 지원하는 바이너리가 없는 운영체제/CPU에서는 설치·실행이 실패할 수 있습니다. 테스트한 환경은 아래 검증 절을 보세요.
+
+## 3. 첫 실행: 계정이나 키를 넣지 마세요
+
+```bash
+python run_pipeline.py --offline
+```
+
+성공하면 `검수 대기: .../output/날짜/REVIEW.md`가 나옵니다. 예를 들어 2026년 10월 26일 실행 결과는 `output/2026-10-26/`입니다. 명령을 실행한 컴퓨터의 날짜를 씁니다. **여기서 정상 종료합니다. 승인하기 전에는 게시 요청도 만들지 않습니다.**
+
+같은 날 다시 실행할 때는 기존 결과를 덮어쓰지 않습니다. 다른 이름을 지정하세요.
+
+```bash
+python run_pipeline.py --offline --output output/second-practice
+```
+
+| 생성 파일 | 확인하는 법 |
+|---|---|
+| `news.json` | 메모장/텍스트 편집기로 제목·링크·짧은 요약 확인 |
+| `copy.json` | 카드 제목·본문·릴스 자막·캡션·AI 표시 선택값 확인 |
+| `cards/card-01.png` ~ `card-04.png` | 더블 클릭해 카드 1080×1350과 한글 확인 |
+| `cards/*.jpg` | PNG와 같은 카드의 API 게시용 JPEG |
+| `reel.mp4` | 더블 클릭해 세로 1080×1920, 20초, 자막과 무음 확인 |
+| `subtitles.srt` | 영상 자막의 시간표. MP4에는 자막이 이미 새겨져 있음 |
+| `frames/`, `frames.txt` | 영상을 만드는 중간 이미지와 순서표 |
+| `REVIEW.md` | 게시 전 검수표. 텍스트 편집기로 열기 |
+| `config.json`, `reel-info.json`, `manifest.json` | 사용 설정·제작 정보·변경 감지 해시 |
+
+샘플 카드에는 **합성 데이터 · 실제 뉴스 아님** 표시가 있습니다. 실제 기사·사진·음원은 동봉하지 않았습니다. 합성 피드를 실제 소식처럼 게시하지 마세요. 실습 기본 크기와 15~30초 길이는 [DESIGN.md](../docs/DESIGN.md)의 학습 목표입니다.
+
+## 4. 사람이 확인하고 approve 실행
+
+`REVIEW.md`에 있는 다섯 항목을 확인합니다. 모든 PNG/JPEG와 릴스를 직접 열어 보고, 완료한 항목을 `- [ ]`에서 `- [x]`로 고쳐 저장하세요. 다음 명령의 폴더를 **본인의 출력 폴더**로 바꿉니다.
+
+```bash
+python run_pipeline.py approve output/2026-10-26
+```
+
+`APPROVED.json`에 승인 시점과 파일 해시를 저장하고, **캐러셀과 릴스의 드라이런**을 출력합니다. `dry-run.json`에도 같은 내용을 보관합니다. 각 미디어의 **컨테이너 생성 → FINISHED 상태 확인 → 게시** 순서와 엔드포인트·파라미터를 보여 줍니다. 캐러셀은 자식 JPEG들의 생성·확인을 먼저 보여 줍니다. `<API_VERSION>`, `<IG_USER_ID>`, `{CHILD_1}` 등은 예시 자리표시자입니다. 토큰은 출력하지 않습니다.
+
+승인 후 드라이런만 다시 보고 싶으면:
+
+```bash
+python publish.py output/2026-10-26
+```
+
+문안을 바꾸려면 `copy.json`의 `title`, `body`, `subtitle`, `caption`, `is_ai_generated`를 편집하세요. JSON은 큰따옴표·쉼표를 유지해야 합니다. `REVIEW.md`의 캡션만 편집해도 실제 문안은 바뀌지 않습니다. 아래로 이미지와 영상을 다시 만든 후 **새 검수표를 다시 확인·저장·승인**하세요.
+
+```bash
+python run_pipeline.py render output/2026-10-26
+python run_pipeline.py approve output/2026-10-26
+```
+
+재생성은 기존 승인을 지웁니다. 승인 뒤 문안·카드·영상·검수표가 달라져도 게시를 차단합니다. 이 기록은 로컬 실습의 변경 감지이며 사용자 인증 시스템은 아닙니다.
+
+## 5. 계정 이름·색과 소재 바꾸기
+
+`config.example.yaml`을 같은 폴더에 `config.yaml`로 복사해 계정 이름과 세 가지 색을 바꾸세요. 색은 `'#007F73'`처럼 따옴표를 유지합니다. 폰트와 피드의 상대 경로는 설정 파일 위치 기준입니다. 외부 LLM과 TTS 설정은 구현하지 않았으므로 `llm.mode: offline`, `reel.tts: silent`를 유지하세요.
+
+```bash
+python run_pipeline.py --offline --config config.yaml --output output/my-style
+```
+
+다른 **로컬 RSS 2.0 파일**을 넣어도 됩니다. Atom은 지원하지 않습니다. 최대 3개 항목의 제목·링크·요약만 가져오며 기사 본문은 다운로드하지 않습니다.
+
+```bash
+python run_pipeline.py --offline --feed fixtures/sample-feed.xml --output output/local-feed
+```
+
+실제 RSS는 해당 제공자의 이용 조건을 먼저 확인한 뒤 본인이 고른 URL로 수집하세요. `--online`은 RSS 수집만 허용하며 LLM·TTS·게시 호출을 켜지 않습니다. 오프라인 플래그와 동시에 쓸 수 없습니다.
+
+```text
+python run_pipeline.py --online --feed "이용 허락을 확인한 RSS URL" --output output/my-news
+```
+
+RSS 제공이 상업 재게시 허락을 보장하지는 않습니다([LAW-08](../research/FACT-SHEET.md), [문안 경로 AI-01·07](../research/ai-text-image-tools.md)). 규칙 기반 문안은 요약 AI가 아니며 사실 확인도 수행하지 않습니다. 실제 자료는 직접 대조·재작성하세요. 기사 전체를 복사하는 용도로 쓰지 마세요.
+
+단계별 실행도 가능합니다. 아래 `manual` 폴더 산출물은 단계별 연습용입니다. 검수·승인·게시 흐름까지 잇는 실습은 `run_pipeline.py`를 사용하세요.
+
+```bash
+python fetch_news.py --output output/manual/news.json
+python write_copy.py output/manual/news.json --output output/manual/copy.json
+python render_cards.py output/manual/copy.json --output output/manual/cards
+python make_reel.py output/manual/copy.json --cards output/manual/cards --output output/manual
+```
+
+## 6. 실제 게시 기능의 경계
+
+**2026년 10월 조사 기준.** 이 예제는 [Instagram Login 경로](../research/graph-api-publishing.md)(API-01·06·08·12)를 사용합니다. 프로페셔널 계정·권한·앱 설정은 별도 준비가 필요합니다. PNG는 직접 보내지 않고 JPEG를 사용합니다. 서버가 읽을 수 있는 공개 미디어 URL도 필요합니다. 토큰 발급·로그인·웹 호스팅·예약 실행은 이 키트가 대신하지 않습니다.
+
+실제 게시 코드는 `publish.py`의 `--live`와 환경변수 `IG_ACCESS_TOKEN`·`IG_USER_ID`·`IG_API_VERSION`, 실제 HTTPS `--public-base-url`이 모두 갖춰져야 작동합니다. 환경변수만 있어도 기본 실행은 계속 드라이런입니다. `approve` 명령은 항상 드라이런입니다. 이 Phase에서는 실제 계정 로그인·게시·유료 API를 실행하지 않았습니다. 합성 샘플은 live 경로에서 거부합니다.
+
+실사용 전에는 `python publish.py --help`와 공식 문서를 확인하고, 본인 호스팅 폴더에 `cards/*.jpg`와 `reel.mp4`를 올려야 합니다. `--public-base-url`은 **그 출력 폴더의 URL**입니다. 액세스 토큰을 코드·설정·명령 인자·Git·스크린샷에 넣지 마세요. `.env`를 자동으로 읽지 않습니다. 필요한 환경변수는 본인의 운영체제에서 별도로 설정해야 합니다.
+
+live는 캐러셀과 릴스를 각각 게시하므로 총 2개 게시물입니다. 실행 시작부터 `LIVE_ATTEMPT.json`을 남기며 같은 폴더의 재실행을 막습니다. 중간 실패나 응답 유실 시 일부가 이미 게시됐을 수 있습니다. 자동 복구는 없으므로 대시보드에서 확인해야 합니다. 파일을 무작정 지우고 재실행하면 중복될 수 있습니다. 실제 API 경로의 동작과 한국 계정 게시 성공은 검증하지 않았습니다.
+
+`is_ai_generated`는 기본 false이며 실제 사용한 제작 도구와 콘텐츠에 맞게 사람이 판단합니다. 필요하면 `copy.json`에서 true로 바꾸고 재생성·검수하세요. AI 표시와 광고 표시의 판단은 별도이며, 광고/파트너십 게시 전용 파라미터는 이 예제에서 지원하지 않습니다([API-12·13](../research/graph-api-publishing.md)).
+
+## 7. 도구 선택과 라이선스
+
+조사 근거는 [영상·음성·폰트 노트](../research/ai-video-voice-tools.md)의 VIDEO-01~10 및 [문안 노트](../research/ai-text-image-tools.md)입니다. 무료 웹 서비스의 제공량과 API 사용료를 혼동하지 않도록 외부 AI 서비스를 기본 경로에서 제외했습니다. 이 키트의 직접 작성한 코드·합성 데이터는 [MIT](LICENSE), 동봉 폰트는 별도의 OFL입니다.
+
+| 선택 | 이유와 라이선스·상업 이용 경계 |
+|---|---|
+| 규칙 기반 Python 문안 | 키·모델 다운로드·과금 없음. 로컬 LLM을 실행했다고 주장하지 않음. 원자료의 권리는 별도 확인 |
+| Pillow 13.0.0 | 한국어 글자 배치와 PNG/JPEG 생성. HTML→브라우저 캡처 대신 채택해 브라우저 설치 제거. MIT-CMU, 고지 유지(VIDEO-06) |
+| PyYAML 6.0.3 | 설정 읽기. 설치 패키지 LICENSE의 MIT 확인. `safe_load` 사용. [공식 저장소](https://github.com/yaml/pyyaml) |
+| FFmpeg / imageio-ffmpeg 0.6.0 | MP4 제작. wrapper는 BSD-2-Clause([공식 저장소](https://github.com/imageio/imageio-ffmpeg)). FFmpeg는 빌드별 LGPL/GPL 조건이 다름(VIDEO-07). 검증 환경 pip 바이너리는 FFmpeg 7.0.2, `--enable-gpl --enable-version3 --enable-libx264` 빌드. 바이너리는 Git에 동봉하지 않음. 재배포 시 별도 라이선스·소스 제공 의무 확인 |
+| Noto Sans KR | 오픈 라이선스 한국어 폰트, 인터넷 없이 렌더링. SIL OFL 1.1(VIDEO-08/S095). 원본 TTF와 저작권·라이선스 [전문](assets/fonts/OFL.txt)을 함께 배포. 제작 이미지·영상에 폰트 라이선스 적용 의무는 없음. 폰트만 단독 판매 금지. [출처·해시](assets/fonts/README.md) |
+| 무음 + 자막 | 별도 음원·모델·화자 권리 불필요. MMS는 비상업 모델, 다른 한국어 TTS의 상업 출력 권리는 조사에서 미확인이라 기본 채택하지 않음(VIDEO-01~04·10). 음성 합성을 수행한 결과물이 아님 |
+| pytest 9.1.1 (개발용) | MIT. 네트워크 차단 상태에서 실제 카드·영상·드라이런 검증. [공식 저장소](https://github.com/pytest-dev/pytest) |
+
+코드의 상업 이용 허용은 실제 뉴스·사진·음원·인물의 권리 확보나 영상 코덱 관련 조건을 대신하지 않습니다. 새 자산을 넣으면 출처와 이용 조건도 검수하세요. FFmpeg 라이선스 설명은 [S090](../research/SOURCES.md#s090)에 연결됩니다.
+
+## 8. 테스트와 샘플 재생성
+
+가상환경을 활성화한 상태에서:
+
+```bash
+python -m pip install --cache-dir .cache/pip -r requirements-dev.txt
+python -m pytest -q
+```
+
+테스트는 외부 네트워크 호출을 차단한 상태에서 생성→검수 대기→테스트용 검수표 확인 처리→승인→드라이런까지 수행합니다. MP4를 실제 디코딩해 크기·프레임 수·코덱·오디오·길이를 검사합니다. 테스트의 자동 체크 처리는 테스트용이며 실제 검수는 사람이 해야 합니다.
+
+[samples/README.md](samples/README.md)에 동봉 샘플의 생성 명령과 크기를 기록했습니다. 검증 환경: Ubuntu 22.04 x86_64, Python 3.11.15. Windows/macOS 명령은 안내했으며 해당 OS에서 실제 실행하지 않았습니다.
+
+## 9. 흔한 오류
+
+| 증상 | 해결 |
+|---|---|
+| `python`/`py`를 찾을 수 없음 | Python 설치 및 PATH 확인, 터미널 다시 열기. Windows는 `py -3.11`, macOS/Linux는 `python3`로 venv 생성 |
+| 3.10 이하로 나옴 | 3.11 이상 설치 후 그 실행 파일로 `.venv` 생성. 이 환경 기본 `python3`도 3.10이어서 별도 3.11을 사용했음 |
+| `No module named PIL/yaml/imageio_ffmpeg` | `.venv` 활성화 확인 후 `python -m pip install --cache-dir .cache/pip -r requirements.txt` |
+| PowerShell에서 활성화 차단 | 명령 프롬프트(cmd)로 실행하거나 `.venv\Scripts\python.exe`를 직접 사용 |
+| `No module named venv` / `ensurepip` 오류 | 배포판의 Python venv 구성 안내 확인. 시스템 설치를 키트가 자동 시도하지 않음 |
+| `[Errno 17] File exists` | 같은 출력 폴더가 존재함. `--output output/second-practice`처럼 새 이름 사용 |
+| `REVIEW.md` 다섯 칸 오류 | 결과물을 확인한 후 모든 `- [ ]`를 `- [x]`로 저장하고 approve |
+| `검수 대상이 바뀌었거나 없습니다` | copy.json 변경 뒤 render 실행, 새 검수표 확인 후 다시 approve |
+| 글이 영역을 넘침 | copy.json의 긴 제목·본문·출처를 줄인 후 render. 의미·조건·출처 링크는 보존 |
+| 폰트를 열 수 없음 | `assets/fonts/NotoSansKR.ttf`가 있는지 확인. ZIP 전체를 풀고 폰트 경로 확인 |
+| FFmpeg를 찾지 못함 / 영상 생성 실패 | imageio-ffmpeg 재설치와 지원 OS/CPU 확인. 시스템 ffmpeg 설치를 자동 시도하지 않음. 오류 내용을 검수자에게 전달 |
+| 영상은 나오는데 소리가 없음 | 정상: 기본 경로는 무음+자막. TTS 미실행 |
+| 오프라인에서 URL 거부 | 동봉 로컬 피드를 사용. 실제 RSS만 필요하면 이용 허락 확인 후 --online |
+| RSS 2.0 형식 오류 | Atom·일반 웹페이지가 아닌 channel/item 구조의 RSS XML인지 확인 |
+| MP4 플레이어가 안 열림 | H.264/AAC MP4를 지원하는 로컬 플레이어로 열기. 우선 동봉 samples/reel.mp4 확인 |

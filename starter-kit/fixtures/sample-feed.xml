@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>합성 데이터 — 하린의 오프라인 연습 피드</title>
+  <description>아래 사건·단체·링크는 모두 실습용 합성 데이터이며 실제 뉴스가 아닙니다.</description>
+  <synthetic>true</synthetic>
+  <item><title>가상 별빛도서관, 조용한 독서 모임을 열다</title>
+    <link>https://example.invalid/library</link>
+    <pubDate>Mon, 26 Oct 2026 09:00:00 +0900</pubDate>
+    <description>가상 별빛도서관이 함께 책을 읽는 모임을 준비했습니다. 참가자는 읽고 싶은 책을 직접 고르는 설정입니다.</description>
+  </item>
+  <item><title>가상 초록작업실, 종이 재사용 실험을 시작하다</title>
+    <link>https://example.invalid/paper</link>
+    <pubDate>Mon, 26 Oct 2026 10:00:00 +0900</pubDate>
+    <description>가상 초록작업실이 버려지는 종이로 메모장을 만드는 실험을 시작했습니다. 효과나 절감 수치는 측정하지 않은 교육용 이야기입니다.</description>
+  </item>
+  <item><title>가상 달빛마을, 산책 지도를 함께 그리다</title>
+    <link>https://example.invalid/walk</link>
+    <pubDate>Mon, 26 Oct 2026 11:00:00 +0900</pubDate>
+    <description>가상 달빛마을 주민들이 쉬어 갈 장소를 지도에 표시했습니다. 실제 지명이나 방문 추천을 뜻하지 않는 합성 사례입니다.</description>
+  </item>
+</channel></rss>
