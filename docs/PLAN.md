@@ -111,3 +111,9 @@ cd /home/yonghun/project/hermes-research && timeout 900 docker compose exec -T -
 - 설계: docs/DESIGN-blog.md (10절 단계표). B2 학습자 질문·조사 → B3 뼈대·샘플 + B3k blog-kit → B4a/b/c 이론편 → B5 실습편 → B6 통합 → B7 독립 검토 → B8 수정·게이트.
 - Hermes RUN: /home/yonghun/project/hermes-research/output/blog-research-20261026, 조사 산출물 research-blog/(SOURCES B###, FACT-SHEET BL-).
 - 문체 기준은 docs/STYLE-GUIDE.md(확정)를 그대로 적용한다. 샘플은 Claude가 기준 대비 검수하고 진행한다.
+
+## Phase A. 심화편: API 완전 자동화 (사용자 요청 2026-10-26)
+
+- 설계: docs/DESIGN-advanced.md. ReelsBook `site/advanced/`, ShortsBook `site-shorts/advanced/`, 공통 코드 `auto-kit/`.
+- A1 조사(research-advanced/, SOURCES A###, FACT-SHEET ADV-, Hermes RUN advanced-research-20261026) → A2 auto-kit → A3/A4 집필 → A5 독립 검토·게이트.
+- 블로그 편 B단계와 병렬로 진행한다. 파일 소유: A는 research-advanced/·auto-kit/·site*/advanced/, B는 research-blog/·blog-kit/·site-blog/.
