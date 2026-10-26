@@ -1,0 +1,14 @@
+.venv/
+.env
+.cache/
+output/
+input/
+private/
+config.yaml
+client_secret*.json
+*token*.json
+upload-session.json
+upload-result.json
+APPROVED.json
+__pycache__/
+.pytest_cache/

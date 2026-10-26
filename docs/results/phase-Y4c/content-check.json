@@ -1,0 +1,47 @@
+[
+  {
+    "chapter": "10-templates",
+    "learner_questions": 5,
+    "exact_FAQ_match": true,
+    "blocks": 9,
+    "axes_with_actions": 3,
+    "cited_sources": 5,
+    "review": "각 질문은 굵은 첫 답·숫자 또는 가상/공개 사례·할 일과 절 링크를 제공. 정책은 Y각주, 가상 값은 가상 표시·계산 공개. 신규 원고로 70% 비교 미적용."
+  },
+  {
+    "chapter": "11-upload",
+    "learner_questions": 5,
+    "exact_FAQ_match": true,
+    "blocks": 9,
+    "axes_with_actions": 4,
+    "cited_sources": 14,
+    "review": "각 질문은 굵은 첫 답·숫자 또는 가상/공개 사례·할 일과 절 링크를 제공. 정책은 Y각주, 가상 값은 가상 표시·계산 공개. 신규 원고로 70% 비교 미적용."
+  },
+  {
+    "chapter": "12-analytics",
+    "learner_questions": 5,
+    "exact_FAQ_match": true,
+    "blocks": 9,
+    "axes_with_actions": 3,
+    "cited_sources": 5,
+    "review": "각 질문은 굵은 첫 답·숫자 또는 가상/공개 사례·할 일과 절 링크를 제공. 정책은 Y각주, 가상 값은 가상 표시·계산 공개. 신규 원고로 70% 비교 미적용."
+  },
+  {
+    "chapter": "13-policy",
+    "learner_questions": 5,
+    "exact_FAQ_match": true,
+    "blocks": 9,
+    "axes_with_actions": 4,
+    "cited_sources": 14,
+    "review": "각 질문은 굵은 첫 답·숫자 또는 가상/공개 사례·할 일과 절 링크를 제공. 정책은 Y각주, 가상 값은 가상 표시·계산 공개. 신규 원고로 70% 비교 미적용."
+  },
+  {
+    "chapter": "14-plan",
+    "learner_questions": 5,
+    "exact_FAQ_match": true,
+    "blocks": 9,
+    "axes_with_actions": 3,
+    "cited_sources": 5,
+    "review": "각 질문은 굵은 첫 답·숫자 또는 가상/공개 사례·할 일과 절 링크를 제공. 정책은 Y각주, 가상 값은 가상 표시·계산 공개. 신규 원고로 70% 비교 미적용."
+  }
+]

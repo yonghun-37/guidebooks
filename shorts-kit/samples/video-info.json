@@ -1,0 +1,41 @@
+{
+  "duration": 36.0,
+  "video_codec": "h264",
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30.0,
+  "audio_codec": "aac",
+  "timeline": [
+    {
+      "title": "책상에서 하나만 바꿔요",
+      "start": 0.0,
+      "end": 12.0,
+      "subtitle": "자주 쓰는 물건 하나를 골라요",
+      "source": "자체 타이틀"
+    },
+    {
+      "title": "손이 닿는 곳으로",
+      "start": 12.0,
+      "end": 24.0,
+      "subtitle": "편하게 꺼낼 곳으로 옮겨요",
+      "source": "자체 타이틀"
+    },
+    {
+      "title": "바뀐 점을 보여 줘요",
+      "start": 24.0,
+      "end": 36.0,
+      "subtitle": "바꾸기 전과 후를 찍어 봐요",
+      "source": "자체 타이틀"
+    }
+  ],
+  "audio": {
+    "silent": true
+  },
+  "warnings": [],
+  "sources": [],
+  "caption_source": "script.json (대본 기반, 음성 인식 없음)",
+  "caption_size": 56,
+  "rights_files": []
+}

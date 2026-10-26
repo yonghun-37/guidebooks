@@ -1,0 +1,48 @@
+/* 이론 10~14장 전용. 공통 스타일과 승인 샘플은 수정하지 않는다. */
+.operations-chapter .sim-body { min-width: 0; }
+.operations-tool label { display: grid; gap: 7px; margin: 14px 0; font-weight: 650; }
+.operations-tool input:not([type='checkbox']), .operations-tool select, .operations-tool textarea { width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box; font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 7px; padding: 10px; }
+.operations-tool textarea { resize: vertical; }
+.operations-tool input[type='range'] { padding: 8px 0; accent-color: var(--accent); }
+.operations-tool .ops-check { display: flex; align-items: flex-start; gap: 10px; }
+.operations-tool input[type='checkbox'] { margin-top: 5px; accent-color: var(--accent); }
+.operations-tool button:focus-visible, .operations-tool input:focus-visible, .operations-tool select:focus-visible, .operations-tool textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.operations-tool button:disabled { opacity: .65; cursor: default; }
+.operations-chapter .table-scroll { margin: 20px 0; }
+.operations-chapter caption { text-align: left; font-weight: 700; padding: 10px 0; }
+.pipeline-steps { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.pipeline-steps li { border: 1px solid var(--line); border-radius: 9px; padding: 12px; background: var(--surface); }
+.pipeline-steps li span { display: block; font-size: 12px; color: var(--muted); }
+.pipeline-steps [aria-current='step'] { border: 2px solid var(--accent); }
+.pipeline-steps [data-state='failed'] { border: 2px dashed var(--accent); }
+.evidence-note { border-left: 4px solid var(--accent); padding: 12px 16px; margin: 18px 0; background: var(--surface); }
+.retention-chart { display: block; width: 100%; height: auto; margin: 20px 0; overflow: visible; }
+.retention-chart text { fill: var(--muted); font: 13px sans-serif; }
+.chart-grid { stroke: var(--line); fill: none; }
+.curve-line { fill: none; stroke: var(--accent); stroke-width: 4; stroke-linejoin: round; }
+.curve-head { stroke: var(--muted); stroke-width: 2; stroke-dasharray: 5 4; }
+.curve-dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.desk-frame { position: relative; display: grid; place-items: center; min-height: 170px; border: 2px solid var(--line); border-radius: 12px; padding: 24px 20px; margin: 18px auto; max-width: 300px; background: var(--surface); text-align: center; overflow: hidden; }
+.desk-frame::before { content: ''; width: 120px; height: 55px; border: 5px double var(--accent); border-radius: 30px 5px 30px 5px; display: block; margin: 8px; transform: rotate(-6deg); }
+.desk-frame span { display: block; font-weight: 700; }
+.desk-frame small { display: block; margin-top: 10px; color: var(--muted); }
+[data-policy-actions] { padding-left: 22px; }
+[data-policy-actions] li { margin: 12px 0; }
+.operations-chapter .chapter-pager a { overflow-wrap: anywhere; }
+@media (max-width: 680px) {
+ .pipeline-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ .operations-tool .field-grid { grid-template-columns: 1fr; }
+ .operations-chapter .table-scroll table { min-width: 0; width: 100%; table-layout: fixed; }
+ .operations-chapter th, .operations-chapter td { overflow-wrap: anywhere; }
+ .operations-chapter .sim-heading { flex-wrap: wrap; }
+}
+@media print { .operations-tool button { display: none; } .pipeline-steps { grid-template-columns: repeat(3, 1fr); } }
+.operations-tool [data-ops-result] strong { display: block; margin-bottom: 8px; color: var(--accent); font-size: 1.7rem; }
+#plan-tool th:nth-child(1) { width: 27%; }
+#plan-tool th:nth-child(2) { width: 58%; }
+#plan-tool th:nth-child(3) { width: 15%; }
+.operations-chapter .operations-tool .retention-chart { max-width: none; }
+@media (max-width: 680px) {
+ .operations-chapter .operations-tool .field-grid { grid-template-columns: 1fr; }
+ .operations-chapter .retention-chart text { font-size: 18px; }
+}

@@ -1,0 +1,55 @@
+/* Y4b 담당 장의 제작 도구에만 쓰는 스타일. */
+.production-tool { margin-top: 24px; }
+.production-tool .sim-body { min-width: 0; }
+.production-tool label { display: block; font-size: 14px; font-weight: 600; }
+.production-tool input:not([type=checkbox]), .production-tool select, .production-tool textarea { width: 100%; min-width: 0; max-width: 100%; box-sizing: border-box; }
+.production-tool input[type=number], .production-tool select, .production-tool textarea { padding: 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font: inherit; }
+.production-tool input[type=checkbox] { margin-right: 6px; accent-color: var(--accent); }
+.production-tool output { display: inline-block; min-width: 3em; color: var(--accent); font-variant-numeric: tabular-nums; }
+.production-tool input[type=range] { accent-color: var(--accent); }
+.production-tool button, .production-tool summary { min-height: 40px; }
+.production-tool button[aria-pressed=true] { color: var(--surface); background: var(--accent); }
+.production-tool :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.production-grid { display: grid; grid-template-columns: minmax(150px,216px) minmax(0,1fr); align-items: start; gap: 24px; margin: 22px 0; }
+.production-grid .field-grid { grid-template-columns: 1fr; gap: 15px; }
+.portrait-frame { width: 100%; max-width: 216px; aspect-ratio: 9/16; position: relative; margin: auto; overflow: hidden; border: 2px solid var(--ink); border-radius: 12px; background: #f7d4a5; }
+.desk-scene { display: block; width: 100%; height: 100%; }
+.safe-guide { position: absolute; inset: 14% 18% 23% 12%; border: 2px dashed #fff7e9; pointer-events: none; }
+.occlusion { position: absolute; background: #392235dc; color: #fff4e0; font: 10px/1.4 sans-serif; text-align: center; display: grid; place-items: center; padding: 2px; }
+.occlusion.side { right: 0; top: 30%; bottom: 20%; width: 16%; }
+.occlusion.bottom { bottom: 0; left: 0; right: 0; height: 17%; }
+.preview-caption, .caption-demo { position: absolute; margin: 0 !important; left: 8%; width: 70%; text-align: center; background: #352135f0; color: #fffaf0; padding: 4px 5px; border-radius: 4px; font-weight: 700; line-height: 1.3; box-sizing: border-box; overflow-wrap: anywhere; }
+.preview-caption { top: 62%; font-size: 14px; }
+.preview-tag { position: absolute; top: 6%; left: 8%; right: 8%; padding: 5px; background: #fff4e0; color: #392235; border-radius: 4px; text-align: center; font-size: 12px; }
+.caption-demo { left: 8%; width: 70%; transform: translateY(-50%); }
+.caption-demo.low-contrast { background: transparent; color: #fff7e9; }
+.clock { font-variant-numeric: tabular-nums; font-size: 1.5rem; font-weight: 700; color: var(--accent); margin-top: 0; }
+.timeline-shell { margin: 24px 0; border: 1px solid var(--line); border-radius: 8px; padding: 10px 6px; }
+.timeline-ruler { display: flex; justify-content: space-between; padding-left: 42px; font-size: 11px; }
+.track-area { position: relative; padding: 5px 0; }
+.timeline-row { display: grid; grid-template-columns: 38px minmax(0,1fr); gap: 4px; align-items: center; margin: 6px 0; font-size: 11px; }
+.track-lane { position: relative; height: 35px; background: var(--soft); border: 1px solid var(--line); }
+.track-clip { position: absolute; height: 100%; box-sizing: border-box; border: 1px solid var(--surface); display: grid; place-items: center; padding: 2px; overflow: hidden; color: #fff7e9; font-size: 10px; line-height: 1.2; text-align: center; white-space: pre-line; }
+[data-track=scene] .track-clip { background: #754263; }
+[data-track=caption] .track-clip { background: #85582b; }
+[data-track=voice] .track-clip { background: #286970; }
+[data-track=music] .track-clip { background: #5e5c8c; }
+.timeline-head { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--ink); z-index: 2; pointer-events: none; }
+.timeline-head::before { content: ''; position: absolute; top: -3px; left: -4px; border: 5px solid transparent; border-top-color: var(--ink); }
+.quality-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin: 22px 0; }
+.quality-pair figure { margin: 0; min-width: 0; }
+.quality-pair canvas { display: block; width: 100%; max-width: 216px; aspect-ratio: 9/16; border: 1px solid var(--line); border-radius: 8px; margin: auto; }
+.quality-pair figcaption { font-size: 12px; text-align: center; color: var(--muted); margin-top: 8px; }
+@media(max-width:680px) {
+ .production-grid { grid-template-columns: 1fr; gap: 20px; }
+ .portrait-frame { max-width: 180px; }
+ .production-tool .field-grid { grid-template-columns: 1fr; }
+ .quality-pair { gap: 10px; }
+ .production-tool .sim-heading { align-items: start; flex-wrap: wrap; }
+ .production-tool .button-row { gap: 8px; }
+ .production-tool .button-row button { font-size: 12px; padding: 9px; }
+}
+@media print { .production-tool canvas { max-width: 150px; } }
+.production-tool .desk-scene { margin: 0; max-width: none; }
+.chapter .production-tool .production-grid .field-grid { grid-template-columns: 1fr; }
+@media(max-width:680px) { .chapter .production-tool .field-grid { grid-template-columns: 1fr; } }

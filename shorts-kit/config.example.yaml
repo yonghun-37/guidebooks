@@ -1,0 +1,24 @@
+# 아래 수치는 이 키트의 연습 시작값입니다. 플랫폼 의무값이 아닙니다.
+font: assets/fonts/NotoSansKR.ttf
+llm:
+  mode: offline
+video:
+  duration: 36
+  narration: null  # config.yaml 위치 기준 input/voice.m4a 등
+  scenes_dir: null # 01.mp4, 02.jpg처럼 파일명 순서. 없으면 자체 타이틀
+  music: null      # 사용자 파일만 사용. 자동 다운로드하지 않음
+  music_gain: 0.12 # 곱하는 음량. 함께 듣고 조정
+  caption_size: 56
+  safe_left: 90
+  safe_right: 180
+  safe_top: 240
+  safe_bottom: 420
+rights:
+  scenes: ''      # 직접 촬영/원문URL/사용 조건/증빙 위치
+  narration: ''   # 직접 녹음/화자 동의
+  music:
+    confirmed: false
+    source: ''
+    license: ''
+    evidence: ''  # 로컬 증빙 파일. 음원 사용 시 필수
+    attribution: '' # 필요한 표시문구는 대본 description에도 기입

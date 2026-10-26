@@ -1,0 +1,57 @@
+[
+  {
+    "chapter": "01-map",
+    "source_ids": [
+      "001",
+      "016",
+      "021",
+      "022",
+      "033",
+      "052",
+      "061",
+      "065",
+      "079"
+    ],
+    "inline_js_syntax": "pass"
+  },
+  {
+    "chapter": "03-hook",
+    "source_ids": [
+      "002",
+      "028",
+      "047"
+    ],
+    "inline_js_syntax": "pass"
+  },
+  {
+    "chapter": "04-script",
+    "source_ids": [
+      "011",
+      "012",
+      "013",
+      "028",
+      "061"
+    ],
+    "inline_js_syntax": "pass"
+  },
+  {
+    "chapter": "05-audio",
+    "source_ids": [
+      "001",
+      "006",
+      "015",
+      "016",
+      "025",
+      "026",
+      "027",
+      "068",
+      "069",
+      "078",
+      "080",
+      "095",
+      "096",
+      "097"
+    ],
+    "inline_js_syntax": "pass"
+  }
+]

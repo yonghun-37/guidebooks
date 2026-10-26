@@ -1,0 +1,37 @@
+{
+  "label": "가상 사례 · 도윤의 책상 정리 연습",
+  "hooks": [
+    "무엇부터 정리할까요?",
+    "물건 하나만 옮겨 봤어요",
+    "자주 쓰는 물건을 골라 보세요"
+  ],
+  "title": "책상에서 물건 하나만 옮겨 보기",
+  "description": "직접 해 보는 책상 정리 연습이에요. 가상 사례예요.",
+  "hashtags": [
+    "#책상정리",
+    "#직접만들기"
+  ],
+  "privacyStatus": "private",
+  "selfDeclaredMadeForKids": null,
+  "containsSyntheticMedia": null,
+  "scenes": [
+    {
+      "title": "책상에서 하나만 바꿔요",
+      "narration": "어디부터 정리할지 막막한가요? 오늘은 책상 위에서 자주 쓰는 물건 하나만 골라 볼게요.",
+      "subtitle": "자주 쓰는 물건 하나를 골라요",
+      "duration": 12.0
+    },
+    {
+      "title": "손이 닿는 곳으로",
+      "narration": "그 물건을 편하게 꺼낼 수 있는 곳으로 옮겨 보세요. 나머지는 잠시 그대로 두고 손을 뻗어 봐요.",
+      "subtitle": "편하게 꺼낼 곳으로 옮겨요",
+      "duration": 12.0
+    },
+    {
+      "title": "바뀐 점을 보여 줘요",
+      "narration": "옮기기 전과 후를 같은 자리에서 찍어 비교해 보세요. 쓰기 편해졌다면 그 자리를 기억해 두세요.",
+      "subtitle": "바꾸기 전과 후를 찍어 봐요",
+      "duration": 12.0
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "args": [
+        "run_pipeline.py",
+        "run",
+        "--output",
+        "output/first"
+      ],
+      "returncode": 0,
+      "stdout": "영상 생성 완료: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/first/short.mp4\n검수 대기: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/first/REVIEW.md\n미리보기: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/first/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "run_pipeline.py",
+        "run",
+        "--mode",
+        "prompt",
+        "--output",
+        "output/my-script"
+      ],
+      "returncode": 0,
+      "stdout": "prompt.md를 웹 채팅에 붙여 넣고 답변을 /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/my-script/script.json에 저장하세요.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "run_pipeline.py",
+        "validate",
+        "output/my-script"
+      ],
+      "returncode": 0,
+      "stdout": "대본 형식 확인 완료. 사실·권리·자막 시점은 직접 검수하세요.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "run_pipeline.py",
+        "render",
+        "output/my-script"
+      ],
+      "returncode": 0,
+      "stdout": "영상 생성 완료: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/my-script/short.mp4\n검수 대기: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/my-script/REVIEW.md\n미리보기: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/my-script/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "run_pipeline.py",
+        "approve",
+        "output/my-script"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"mode\": \"dry-run\",\n  \"network_calls\": 0,\n  \"metadata\": {\n    \"snippet\": {\n      \"title\": \"책상에서 물건 하나만 옮겨 보기\",\n      \"description\": \"직접 해 보는 책상 정리 연습이에요. 가상 사례예요.\\n#책상정리 #직접만들기\",\n      \"categoryId\": \"22\",\n      \"defaultLanguage\": \"ko\"\n    },\n    \"status\": {\n      \"privacyStatus\": \"private\",\n      \"selfDeclaredMadeForKids\": false,\n      \"containsSyntheticMedia\": false\n    }\n  },\n  \"requests\": [\n    {\n      \"method\": \"POST\",\n      \"url\": \"https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet%2Cstatus\",\n      \"headers\": {\n        \"Authorization\": \"Bearer <사용자 OAuth 토큰>\",\n        \"Content-Type\": \"application/json; charset=UTF-8\",\n        \"X-Upload-Content-Type\": \"video/mp4\",\n        \"X-Upload-Content-Length\": \"205002\"\n      },\n      \"body\": {\n        \"snippet\": {\n          \"title\": \"책상에서 물건 하나만 옮겨 보기\",\n          \"description\": \"직접 해 보는 책상 정리 연습이에요. 가상 사례예요.\\n#책상정리 #직접만들기\",\n          \"categoryId\": \"22\",\n          \"defaultLanguage\": \"ko\"\n        },\n        \"status\": {\n          \"privacyStatus\": \"private\",\n          \"selfDeclaredMadeForKids\": false,\n          \"containsSyntheticMedia\": false\n        }\n      },\n      \"response\": \"Location: <개인 업로드 세션 주소>\"\n    },\n    {\n      \"method\": \"PUT\",\n      \"url\": \"<Location>\",\n      \"headers\": {\n        \"Content-Type\": \"video/mp4\",\n        \"Content-Length\": \"205002\",\n        \"Content-Range\": \"bytes 0-205001/205002\"\n      },\n      \"body\": \"승인된 short.mp4의 청크. 308의 Range 다음부터 반복, 마지막 200/201의 id/status 저장\"\n    },\n    {\n      \"when\": \"중단 후 재실행 또는 일시적 오류\",\n      \"method\": \"PUT\",\n      \"url\": \"<같은 Location>\",\n      \"headers\": {\n        \"Content-Length\": \"0\",\n        \"Content-Range\": \"bytes */205002\"\n      },\n      \"body\": \"없음. 서버 Range를 읽고 남은 청크만 전송\"\n    }\n  ],\n  \"fields\": {\n    \"privacyStatus\": \"명시한 공개 범위. 키트 기본 private [Y037]\",\n    \"selfDeclaredMadeForKids\": \"의도한 시청자·주제·표현을 직접 판단 [Y014] [Y037]\",\n    \"containsSyntheticMedia\": \"사실적 합성 등 공개 요건을 직접 판단. 대본·자막 보조만 사용한 경우와 구분 [Y013] [Y037]\",\n    \"shorts\": \"isShorts는 보내지 않음. 파일 비율·길이로 분류 [Y001]\"\n  },\n  \"quota\": \"2026년 10월 조사 기준: videos.insert 업로드 버킷 1 unit/호출, 기본 100호출/일. 다른 엔드포인트는 별도입니다. 내 Cloud 할당량을 확인하세요. [Y037] [Y038] [Y088]\",\n  \"private_lock\": \"공식 insert 문서는 미검증 프로젝트의 비공개 제한이 없다고 하나, 한국어 비공개 잠금 도움말은 제한을 설명해요. 먼저 private로 보내고 Studio의 실제 상태·제한을 확인하세요. 잠금은 public 변경만으로 해결되지 않아요. API 감사와 OAuth 앱 검증은 다른 절차예요. [Y037] [Y086] [Y040] [Y041]\",\n  \"after_upload\": \"API 완료와 공개·쇼츠 분류·권리 검토 완료는 다릅니다. Studio에서 처리·Shorts·제한사항·공개 상태를 직접 확인하세요. [Y032]\"\n}\n승인 기록·드라이런 완료. 실제 전송하지 않았습니다.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "upload.py",
+        "output/my-script"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"mode\": \"dry-run\",\n  \"network_calls\": 0,\n  \"metadata\": {\n    \"snippet\": {\n      \"title\": \"책상에서 물건 하나만 옮겨 보기\",\n      \"description\": \"직접 해 보는 책상 정리 연습이에요. 가상 사례예요.\\n#책상정리 #직접만들기\",\n      \"categoryId\": \"22\",\n      \"defaultLanguage\": \"ko\"\n    },\n    \"status\": {\n      \"privacyStatus\": \"private\",\n      \"selfDeclaredMadeForKids\": false,\n      \"containsSyntheticMedia\": false\n    }\n  },\n  \"requests\": [\n    {\n      \"method\": \"POST\",\n      \"url\": \"https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet%2Cstatus\",\n      \"headers\": {\n        \"Authorization\": \"Bearer <사용자 OAuth 토큰>\",\n        \"Content-Type\": \"application/json; charset=UTF-8\",\n        \"X-Upload-Content-Type\": \"video/mp4\",\n        \"X-Upload-Content-Length\": \"205002\"\n      },\n      \"body\": {\n        \"snippet\": {\n          \"title\": \"책상에서 물건 하나만 옮겨 보기\",\n          \"description\": \"직접 해 보는 책상 정리 연습이에요. 가상 사례예요.\\n#책상정리 #직접만들기\",\n          \"categoryId\": \"22\",\n          \"defaultLanguage\": \"ko\"\n        },\n        \"status\": {\n          \"privacyStatus\": \"private\",\n          \"selfDeclaredMadeForKids\": false,\n          \"containsSyntheticMedia\": false\n        }\n      },\n      \"response\": \"Location: <개인 업로드 세션 주소>\"\n    },\n    {\n      \"method\": \"PUT\",\n      \"url\": \"<Location>\",\n      \"headers\": {\n        \"Content-Type\": \"video/mp4\",\n        \"Content-Length\": \"205002\",\n        \"Content-Range\": \"bytes 0-205001/205002\"\n      },\n      \"body\": \"승인된 short.mp4의 청크. 308의 Range 다음부터 반복, 마지막 200/201의 id/status 저장\"\n    },\n    {\n      \"when\": \"중단 후 재실행 또는 일시적 오류\",\n      \"method\": \"PUT\",\n      \"url\": \"<같은 Location>\",\n      \"headers\": {\n        \"Content-Length\": \"0\",\n        \"Content-Range\": \"bytes */205002\"\n      },\n      \"body\": \"없음. 서버 Range를 읽고 남은 청크만 전송\"\n    }\n  ],\n  \"fields\": {\n    \"privacyStatus\": \"명시한 공개 범위. 키트 기본 private [Y037]\",\n    \"selfDeclaredMadeForKids\": \"의도한 시청자·주제·표현을 직접 판단 [Y014] [Y037]\",\n    \"containsSyntheticMedia\": \"사실적 합성 등 공개 요건을 직접 판단. 대본·자막 보조만 사용한 경우와 구분 [Y013] [Y037]\",\n    \"shorts\": \"isShorts는 보내지 않음. 파일 비율·길이로 분류 [Y001]\"\n  },\n  \"quota\": \"2026년 10월 조사 기준: videos.insert 업로드 버킷 1 unit/호출, 기본 100호출/일. 다른 엔드포인트는 별도입니다. 내 Cloud 할당량을 확인하세요. [Y037] [Y038] [Y088]\",\n  \"private_lock\": \"공식 insert 문서는 미검증 프로젝트의 비공개 제한이 없다고 하나, 한국어 비공개 잠금 도움말은 제한을 설명해요. 먼저 private로 보내고 Studio의 실제 상태·제한을 확인하세요. 잠금은 public 변경만으로 해결되지 않아요. API 감사와 OAuth 앱 검증은 다른 절차예요. [Y037] [Y086] [Y040] [Y041]\",\n  \"after_upload\": \"API 완료와 공개·쇼츠 분류·권리 검토 완료는 다릅니다. Studio에서 처리·Shorts·제한사항·공개 상태를 직접 확인하세요. [Y032]\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/daily.py",
+        "--date",
+        "2026-10-26",
+        "--output-root",
+        "output/daily"
+      ],
+      "returncode": 0,
+      "stdout": "영상 생성 완료: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily/2026-10-26/short.mp4\n검수 대기: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily/2026-10-26/REVIEW.md\n미리보기: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily/2026-10-26/preview.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "schedule_setup.py",
+        "--os",
+        "windows",
+        "--time",
+        "09:30"
+      ],
+      "returncode": 0,
+      "stdout": "안내만 생성했습니다. 아래 등록 명령은 직접 확인한 뒤 실행하세요.\n컴퓨터의 현지 시간 기준이며 컴퓨터가 켜져 있어야 합니다. 생성 후 검수 대기에서 멈춥니다.\n로그: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily/daily.log\n기존 날짜 폴더는 덮어쓰지 않습니다. 로그의 오류와 날짜별 REVIEW.md를 확인하세요.\nPowerShell에서 cmd.exe를 입력해 명령 프롬프트로 바꾼 뒤 아래 명령을 실행하세요.\n등록 (같은 이름의 기존 작업은 자동 교체하지 않습니다):\nschtasks /Create /SC DAILY /ST 09:30 /TN ShortsBookDaily /TR \"/tmp/shorts-y4k-venv/bin/python \\\"/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/daily.py\\\" --config config.example.yaml --log output/daily/daily.log\"\n확인:\nschtasks /Query /TN ShortsBookDaily /V /FO LIST\n수동 실행 (오늘 폴더가 이미 있으면 중복 오류가 정상입니다):\nschtasks /Run /TN ShortsBookDaily\n삭제:\nschtasks /Delete /TN ShortsBookDaily\n\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "schedule_setup.py",
+        "--os",
+        "macos",
+        "--time",
+        "09:30"
+      ],
+      "returncode": 0,
+      "stdout": "안내만 생성했습니다. 아래 등록 명령은 직접 확인한 뒤 실행하세요.\n컴퓨터의 현지 시간 기준이며 컴퓨터가 켜져 있어야 합니다. 생성 후 검수 대기에서 멈춥니다.\n로그: /tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily/daily.log\n기존 날짜 폴더는 덮어쓰지 않습니다. 로그의 오류와 날짜별 REVIEW.md를 확인하세요.\n등록: crontab -e 를 열고 아래 한 줄만 추가해 저장하세요.\n30 9 * * * /tmp/shorts-y4k-venv/bin/python '/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/daily.py' --config '/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/config.example.yaml' --output-root '/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily' --log '/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily/daily.log'\n확인:\ncrontab -l\n수동 실행 (터미널에 붙여넣기):\n/tmp/shorts-y4k-venv/bin/python '/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/daily.py' --config '/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/config.example.yaml' --output-root '/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily' --log '/tmp/shorts-y4k-clean-jnqjdnsa/초보자 쇼츠/output/daily/daily.log'\n삭제: crontab -e 를 열어 위 ShortsBook daily.py 실행 줄만 지우고 저장하세요.\n다른 예약은 유지하세요. macOS에서 권한 오류가 나면 시스템 설정의 개인정보 보호에서 터미널 권한을 확인하세요.\n\n",
+      "stderr": ""
+    }
+  ],
+  "environment": "Linux, Python 3.10.12",
+  "native_os_test": false
+}

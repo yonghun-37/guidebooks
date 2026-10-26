@@ -7,3 +7,10 @@ starter-kit/.cache/
 .pytest_cache/
 starter-kit/.env
 starter-kit/hosting/
+shorts-kit/.venv/
+shorts-kit/output/
+shorts-kit/.cache/
+shorts-kit/config.yaml
+shorts-kit/.env
+shorts-kit/client_secret*.json
+shorts-kit/token*.json
