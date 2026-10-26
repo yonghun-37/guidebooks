@@ -1,199 +1,199 @@
-// scripts/build_appendices.py가 원본 장/모듈에서 생성. 계산/HTML 복제 없음.
+// scripts/build_appendices.py가 현재 원본 HTML에서 생성. 계산/HTML 복제 없음.
 window.ReelsCatalog = Object.freeze([
   {
     "chapter": 1,
     "slug": "01-map",
-    "id": "pipeline-map",
-    "title": "작은 작업실의 파이프라인 지도",
-    "section": "map"
+    "id": "figure",
+    "title": "계획 · 역할 · 준비 · 시간",
+    "section": "figure"
   },
   {
     "chapter": 1,
     "slug": "01-map",
     "id": "time-budget",
-    "title": "30일 제작 시간 예산",
-    "section": "budget"
+    "title": "이번 주에 몇 편을 연습할까요?",
+    "section": "simulator"
   },
   {
     "chapter": 2,
     "slug": "02-formats",
-    "id": "concept-figure",
-    "title": "질문 → 형식 → 관찰",
+    "id": "figure",
+    "title": "형식 · 추천 · 크기 · 실험",
     "section": "figure"
   },
   {
     "chapter": 2,
     "slug": "02-formats",
     "id": "signal-sim",
-    "title": "가상 신호 가중치 체험",
+    "title": "내 설명은 카드 몇 장이 되나요?",
     "section": "simulator"
   },
   {
     "chapter": 3,
     "slug": "03-revenue",
-    "id": "concept-figure",
-    "title": "지급자 → 대가 → 장부",
+    "id": "figure",
+    "title": "조회 보너스 · 광고·협찬 · 제휴 링크 · 내 상품·서비스",
     "section": "figure"
   },
   {
     "chapter": 3,
     "slug": "03-revenue",
     "id": "ledger-sim",
-    "title": "수익 장부 시뮬레이터",
+    "title": "쿠팡 인정 구매 수를 바꿔 보세요",
     "section": "simulator"
   },
   {
     "chapter": 4,
     "slug": "04-niche",
-    "id": "concept-figure",
-    "title": "독자 → 문제 → 약속",
+    "id": "figure",
+    "title": "주제 · 차이 · 이름·소개 · 수요",
     "section": "figure"
   },
   {
     "chapter": 4,
     "slug": "04-niche",
     "id": "niche-sim",
-    "title": "니치 질문 점수표",
+    "title": "내 기획에 빠진 항목을 찾습니다",
     "section": "simulator"
   },
   {
     "chapter": 5,
     "slug": "05-sources",
-    "id": "concept-figure",
-    "title": "발견 → 대조 → 권리 검토",
+    "id": "figure",
+    "title": "소재 찾기 · 권리 확인 · 대조·출처",
     "section": "figure"
   },
   {
     "chapter": 5,
     "slug": "05-sources",
     "id": "rights-sim",
-    "title": "소재 이용 검토 흐름도",
+    "title": "빠진 기록을 찾으세요",
     "section": "simulator"
   },
   {
     "chapter": 6,
     "slug": "06-writing",
-    "id": "ch6-flow",
-    "title": "입력에서 결과까지",
+    "id": "figure",
+    "title": "지시문 · 글의 역할 · 고쳐 쓰기",
     "section": "figure"
   },
   {
     "chapter": 6,
     "slug": "06-writing",
     "id": "ch6-sim",
-    "title": "프롬프트 조립기",
+    "title": "빠진 기록을 찾으세요",
     "section": "simulator"
   },
   {
     "chapter": 7,
     "slug": "07-cards",
-    "id": "ch7-flow",
-    "title": "입력에서 결과까지",
+    "id": "figure",
+    "title": "역할 · 읽기 · 자산",
     "section": "figure"
   },
   {
     "chapter": 7,
     "slug": "07-cards",
     "id": "ch7-sim",
-    "title": "카드 레이아웃 편집기",
+    "title": "본문 글줄 계산",
     "section": "simulator"
   },
   {
     "chapter": 8,
     "slug": "08-reels",
-    "id": "ch8-flow",
-    "title": "입력에서 결과까지",
+    "id": "figure",
+    "title": "목소리 · 시간 · 권리·수익화",
     "section": "figure"
   },
   {
     "chapter": 8,
     "slug": "08-reels",
     "id": "ch8-sim",
-    "title": "릴스 타임라인",
+    "title": "장면당 자막 속도",
     "section": "simulator"
   },
   {
     "chapter": 9,
     "slug": "09-pipeline",
-    "id": "ch9-flow",
-    "title": "입력에서 결과까지",
+    "id": "figure",
+    "title": "자동 생성 · 사람 승인 · 실패·비용",
     "section": "figure"
   },
   {
     "chapter": 9,
     "slug": "09-pipeline",
     "id": "ch9-sim",
-    "title": "파이프라인 조립기와 실패 지점",
+    "title": "가상 한 달 외부 비용",
     "section": "simulator"
   },
   {
     "chapter": 10,
     "slug": "10-publishing",
-    "id": "chapter-figure",
-    "title": "파일·시계·게시 통로를 나누기",
+    "id": "figure",
+    "title": "앱 · API · 예약 · 실패",
     "section": "figure"
   },
   {
     "chapter": 10,
     "slug": "10-publishing",
-    "id": "publishing-sim",
-    "title": "24시간 발행 수와 예약 후보표",
+    "id": "simulator",
+    "title": "지금 내 예약은 어디서 실행되나요?",
     "section": "simulator"
   },
   {
     "chapter": 11,
     "slug": "11-analytics",
-    "id": "chapter-figure",
-    "title": "숫자보다 측정 범위가 먼저",
+    "id": "figure",
+    "title": "기록 · 비교 · 수정 · 빈칸",
     "section": "figure"
   },
   {
     "chapter": 11,
     "slug": "11-analytics",
     "id": "analytics-sim",
-    "title": "두 게시물의 숫자 읽기",
+    "title": "도달 대비 저장·공유는 얼마인가요?",
     "section": "simulator"
   },
   {
     "chapter": 12,
     "slug": "12-safety",
-    "id": "chapter-figure",
-    "title": "권리·표시·대응은 각각 통과시키기",
+    "id": "figure",
+    "title": "권리 · 광고 · AI · 대응 · 세금",
     "section": "figure"
   },
   {
     "chapter": 12,
     "slug": "12-safety",
-    "id": "safety-sim",
-    "title": "위험 신호 판정기: 점수 대신 확인할 일",
+    "id": "simulator",
+    "title": "내 게시물에서 무엇을 고칠까요?",
     "section": "simulator"
   },
   {
     "chapter": 13,
     "slug": "13-roadmap",
-    "id": "chapter-figure",
-    "title": "이정표마다 증거를 하나씩 쌓기",
+    "id": "figure",
+    "title": "첫 독자 · 첫 협찬 · 월 목표 · 확장",
     "section": "figure"
   },
   {
     "chapter": 13,
     "slug": "13-roadmap",
     "id": "roadmap-sim",
-    "title": "내 현금 장부: 두 시나리오 비교",
+    "title": "목표 금액에 필요한 제작 의뢰는 몇 건인가요?",
     "section": "simulator"
   },
   {
     "chapter": 14,
     "slug": "14-plan",
-    "id": "chapter-figure",
-    "title": "계획·기록·조정이 한 바퀴 돌기",
+    "id": "figure",
+    "title": "목표 · 시간 · 조정",
     "section": "figure"
   },
   {
     "chapter": 14,
     "slug": "14-plan",
     "id": "planner-sim",
-    "title": "30일 플래너: 내 시간 안에 배치하기",
+    "title": "30일 동안 제작에 쓸 시간은 얼마인가요?",
     "section": "simulator"
   },
   {

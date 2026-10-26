@@ -327,4 +327,7 @@ def build():
 
 
 if __name__=='__main__':
-    build()
+    raise SystemExit(
+        '현재 원고는 site/practice/*.html입니다. '
+        '이전 생성기는 개편 원고·조사 확인표를 덮어쓰므로 실행을 중지합니다.'
+    )

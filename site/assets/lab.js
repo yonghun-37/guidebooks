@@ -9,12 +9,9 @@
   const put = (selector, text) => { document.querySelector(selector).textContent = text; };
   const summary = (state, missing) => !state ? missing : `${state.valid ? '' : '빈칸·무효 입력이 있습니다. 원본 장에서 수정하세요.\n'}${state.result}`;
   const refresh = () => {
-    const niche = ReelsSim.readState('niche-sim');
-    const ledger = ReelsSim.readState('ledger-sim');
-    const plan = ReelsSim.readState('planner-sim');
-    put('[data-month-niche]', niche ? `${niche.values['niche-name'] || '독자·질문 미입력'}\n주 ${niche.values['niche-weekly-hours'] || '미입력'}시간\n${summary(niche, '')}` : '아직 변경한 니치·시간 입력이 없습니다. 4장의 도구에서 내 독자·질문과 시간을 적어 보세요.');
-    put('[data-month-ledger]', summary(ledger, '아직 변경한 장부 입력이 없습니다. 3장에서 같은 기간의 금액과 시간을 적어 보세요.'));
-    put('[data-month-plan]', plan ? `시작 ${plan.values['plan-start'] || '미입력'} · 하루 ${plan.values['plan-minutes'] || '미입력'}분 · 주 ${plan.values['plan-days']}일\n${summary(plan, '').split('\n').slice(0,2).join('\n')}` : '아직 변경한 계획 입력이 없습니다. 14장에서 확보 시간과 활동일을 적어 보세요.');
+    const savedPlan = ReelsSim.readState('planner-sim');
+    const plan = savedPlan?.version === 2 ? savedPlan : null;
+    put('[data-month-plan]', plan ? `시작 ${plan.values['plan-start'] || '미입력'} · 하루 ${plan.values['plan-minutes'] || '미입력'}분 · 주 ${plan.values['plan-days']}일\n${summary(plan, '').split('\n').slice(0,2).join('\n')}` : (savedPlan ? '이전 판의 시간 입력이 있습니다. 14장을 열어 새 계산으로 확인하세요.' : '아직 변경한 계획 입력이 없습니다. 14장에서 확보 시간과 활동일을 적어 보세요.'));
   };
   for (const sim of ReelsCatalog.filter(sim => sim.chapter !== 15)) {
     const option = document.createElement('option');
@@ -48,7 +45,7 @@
   document.querySelector('[data-refresh-month]').addEventListener('click', refresh);
   document.querySelector('[data-clear-month]').addEventListener('click', () => {
     const cleared = ReelsSim.clearState(); refresh();
-    storageStatus.textContent = cleared ? '3·4·14장 저장 입력을 삭제했습니다. 원본 장을 다시 열면 예시값으로 시작합니다.' : '현재 화면의 입력을 지웠습니다. 저장소 접근 제한으로 영구 저장값 삭제 여부는 확인할 수 없습니다.';
+    storageStatus.textContent = cleared ? '14장 입력과 이전 판의 저장 입력을 삭제했습니다. 원본 장을 다시 열면 예시값으로 시작합니다.' : '현재 화면의 입력을 지웠습니다. 저장소 접근 제한으로 영구 저장값 삭제 여부는 확인할 수 없습니다.';
   });
   window.addEventListener('storage', refresh);
   window.addEventListener('reelsbook:inputs', refresh);

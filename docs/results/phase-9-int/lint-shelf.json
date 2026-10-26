@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": null,
+  "summary": {
+    "files": 2,
+    "passed": 2,
+    "failed": 0,
+    "char_count": 904,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 1,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "shelf/index.html",
+      "track": "other",
+      "char_count": 89,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "77a66076f7500a1e87eb0a3710ec55f9dda628fd8293e145f2366b391724a10a"
+    },
+    {
+      "path": "shelf/progress/index.html",
+      "track": "other",
+      "char_count": 815,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 1,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 47,
+            "context": "파일 전송 근거 확보, 한국 앱 메뉴 일부 미확인 7w 실습편 집필·구조 작성·검증 완료 실"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "3df92bad64194d8d1fe1e240dccdb425e7884fb3b7f70103cd5b798f12d71a42"
+    }
+  ]
+}

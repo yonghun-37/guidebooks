@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": null,
+  "summary": {
+    "files": 10,
+    "passed": 10,
+    "failed": 0,
+    "char_count": 30677,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 2,
+      "caveats_inside": 1
+    }
+  },
+  "files": [
+    {
+      "path": "site/credits.html",
+      "track": "theory",
+      "char_count": 14379,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 2,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "0~10·E2E 진행 기록을 추가했습니다. 미확인 앱 메뉴는 공식 도움말과 확인 공백을 표시합니다. 공개 URL"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 16,
+            "context": "가했습니다. 1장 대기 문장을 조사 근거와 미확인 범위로 대체했습니다. 2026-10-26 · 앞선 제작·집필"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "549a32c91b96eb9d8eda71de1f2ca95fa2dfc441cd2a7ee8ba043a1d47c1a931"
+    },
+    {
+      "path": "site/glossary.html",
+      "track": "theory",
+      "char_count": 1183,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "a3aab11c3ea4bfc9ffbba20837e250a0cc4b94c17851cce0df33f12f30e6e51d"
+    },
+    {
+      "path": "site/index.html",
+      "track": "other",
+      "char_count": 1061,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "b3acd691ec9db96f65d387c3814a56bb100ca002877525b4250e795eac1900fb"
+    },
+    {
+      "path": "site/lab.html",
+      "track": "theory",
+      "char_count": 963,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "d6d84fe638be9a489ffa44b5345dd52bbb77c50276c957a72c02443dfdd1b19c"
+    },
+    {
+      "path": "site/chapters/coming-soon.html",
+      "track": "theory",
+      "char_count": 86,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "08c64ba528ef48867ecbd545bb85b049a0a3867e4142400b05e8b64542301761"
+    },
+    {
+      "path": "site/practice/e2e.html",
+      "track": "practice",
+      "char_count": 1609,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "301b5135296c9c7e9ca9e3eff1d7c8ee102cfed8775490edf7f381a1282ed505"
+    },
+    {
+      "path": "site/drafts/ch03-a-axes.html",
+      "track": "other",
+      "char_count": 3206,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "a29f0df954073c8ccefd5fa948c00efc8b81dd7603e4690af21fff2a7309a564"
+    },
+    {
+      "path": "site/drafts/ch03-b-faq.html",
+      "track": "other",
+      "char_count": 3747,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 1
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 1,
+            "context": "품이 있고, 2026년 실시간 전체 요율은 미확인입니다."
+          }
+        ]
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "de14d3ddec36b065943831c5e8d1913606b31925bc91f5da89d998dfc8949e23"
+    },
+    {
+      "path": "site/drafts/ch03-c-journey.html",
+      "track": "other",
+      "char_count": 3454,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "beb9bc9bb22d070d1bdf9d7ebc9dbda74cf8ed1392b2970a98a52b679398b72c"
+    },
+    {
+      "path": "site/drafts/index.html",
+      "track": "other",
+      "char_count": 989,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "77bbfec363104ec97cf07d9a94d08e2ed32bb0dca52dfb4125380f2f542e73b8"
+    }
+  ]
+}

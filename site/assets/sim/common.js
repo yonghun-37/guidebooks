@@ -47,7 +47,7 @@
   const readState = id => {
     try {
       const value = JSON.parse(localStorage.getItem(key(id)) || 'null');
-      return value?.version === 1 && value.values && typeof value.values === 'object' && !Array.isArray(value.values) && Object.values(value.values).every(item => typeof item === 'string') && typeof value.result === 'string' && typeof value.valid === 'boolean' ? value : null;
+      return [1, 2].includes(value?.version) && value.values && typeof value.values === 'object' && !Array.isArray(value.values) && Object.values(value.values).every(item => typeof item === 'string') && typeof value.result === 'string' && typeof value.valid === 'boolean' ? value : null;
     } catch { return memory.get(id) || null; }
   };
   const clearState = () => {
@@ -77,7 +77,7 @@
         element.append(notice);
         const save = () => {
           const values = Object.fromEntries(inputs.map(input => [input.id, input.value]));
-          const state = {version:1, values, result:result?.textContent || '', valid:inputs.every(input => input.value.trim() !== '' && input.validity.valid), updatedAt:new Date().toISOString()};
+          const state = {version:2, values, result:result?.textContent || '', valid:inputs.every(input => input.value.trim() !== '' && input.validity.valid), updatedAt:new Date().toISOString()};
           memory.set(id, state);
           let stored = true;
           try { localStorage.setItem(key(id), JSON.stringify(state)); } catch { stored = false; }
@@ -88,6 +88,8 @@
         element.addEventListener('input', save);
         element.addEventListener('change', save);
         element.addEventListener('click', event => { if (event.target.closest('[data-preset]')) save(); });
+        // 입력을 이어 쓰되 저장된 결과는 현재 계산으로 갱신한다.
+        if (saved) save();
       }
     },
     buttonGroup(group, select) {
