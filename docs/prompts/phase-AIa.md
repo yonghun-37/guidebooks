@@ -1,0 +1,8 @@
+너는 ai-insta 프로젝트의 작업자(Codex)다. 먼저 AGENTS.md, .agents/skills/guidebook-writing·guidebook-pipeline, **docs/STYLE-GUIDE.md(최우선)**, **docs/DESIGN.md 12절(AI 제작 핵심 모듈, 최우선 과제)**, **research/ai-production.md**, research/FACT-SHEET.md(AIP-* 포함)·SOURCES.md, 현재 ReelsBook(site/)의 book.js와 관련 장을 읽어라.
+사용자 지적(원문): "정확히 어떤 서비스·TOOL을 이용하고 어떤 과정으로 AI 콘텐츠를 만드는지 가장 중요한 내용이 빠져있다. 이론/실습 교과서 모두 포함하라." → 실제 서비스 이름, 어느 메뉴에 무엇을 넣는지, 단계별 입력과 출력, 복사용 프롬프트, 좋은/나쁜 결과 비교, 소요 시간·비용을 구체적으로 쓴다. 가격·무료 한도·한국 가용성은 research/ai-production.md 근거와 각주, "2026년 10월 기준". 서비스 화면 캡처·로고 금지(직접 그린 도식). AI 예시 이미지가 필요하면 너의 이미지 생성 기능으로 만들어 site/assets/img/ai-examples/에 저장하고 "AI 생성 예시"와 사용 프롬프트를 함께 표시(실존 인물·브랜드·로고 금지, 파일당 400KB 이하로 압축).
+공통 파일(book.js, book.css, common.js, practice.js, glossary, credits, index)은 수정하지 말고 docs/results/phase-AIa-requests.md에 diff로 남긴다. commit하지 마라. 검증: style_lint, check_site, 1280/375/360px·콘솔·키보드. 결과 docs/results/phase-AIa.md(+스크린샷). 끝나면 `python3 scripts/notify.py "✅ [AIa 완료] ..." <대표 스크린샷>`.
+
+## 이번 작업: AIa
+인스타 편 **새 이론 장 'AI 도구 지도'**(site/chapters/05b-ai-tools.html, 2부 첫머리 5장 뒤에 들어갈 장. 번호 표시는 통합 단계에서 정한다)와 **부록 '프롬프트 모음'**(site/prompts.html)을 쓴다. AI 도구 지도: 작업별(리서치·팩트체크 / 글 / 이미지 / 카드 디자인 템플릿 / 영상 편집·자동 자막 / AI 영상 생성 / 음성 / 음악) 실제 서비스 표, '처음엔 이것 하나', 무료로 끝까지 가는 조합, 월 1~3만 원 조합, 고르는 기준(한국어·상업 이용·AI 표시). 도구 선택 도우미 인터랙션 1개(만들 콘텐츠·예산·한국어 필요 여부를 고르면 추천 조합과 이유). 프롬프트 모음: 뉴스 요약·카드 문안·이미지·릴스 대본·영상 생성·캡션/해시태그 프롬프트를 복사 버튼과 좋은/나쁜 예와 함께, 각 프롬프트가 쓰이는 장·실습으로 링크.
+
+추가(사용자 요청): **부록 'AI 모델·사용처·비용 총정리'**(site/ai-models.html)를 research/ai-models-pricing.md로 만든다. 범주별 모델 표(어디서 쓸 수 있나 / 한국 가용 / 비용 체계 / 규격 / 상업 이용 / AI 표시), 비용 체계 해설(구독·크레딧·종량·번들), 실전 비용 시나리오 계산기 인터랙션(만들 콘텐츠와 조합을 고르면 대략 비용과 계산식). 표는 범주 필터와 검색, 모바일에서는 카드형으로. AI 도구 지도 장에서 이 부록으로 링크.
