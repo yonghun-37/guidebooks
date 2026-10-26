@@ -1,0 +1,35 @@
+{
+  "html_pages": 49,
+  "internal_references": 4245,
+  "catalog_entries": 31,
+  "practice_steps": 43,
+  "theory_chapters": 15,
+  "quiz_questions": 78,
+  "source_references": 787,
+  "term_references": 43,
+  "fact_pending": 0,
+  "deployment_bytes": {
+    "site": 3893812,
+    "shelf": 13795,
+    "samples": 1661759,
+    "site-shorts": 3235757,
+    "site-blog": 1206896,
+    "total": 10012019,
+    "files": 300,
+    "by_extension": {
+      ".css": 184677,
+      ".html": 3945840,
+      ".js": 336837,
+      ".json": 16451,
+      ".md": 27969,
+      ".mp4": 3047919,
+      ".png": 1356030,
+      ".srt": 1287,
+      ".svg": 23964,
+      ".txt": 20257,
+      ".webp": 995686,
+      ".zip": 55102
+    }
+  },
+  "errors": []
+}

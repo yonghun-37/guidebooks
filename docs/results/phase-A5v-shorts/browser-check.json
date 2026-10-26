@@ -1,0 +1,1036 @@
+{
+  "combinations": 66,
+  "layouts": [
+    {
+      "file": "00-overview.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "00-overview.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "00-overview.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "00-overview.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "00-overview.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "00-overview.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "03-generation.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "03-generation.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "03-generation.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "03-generation.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "03-generation.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "03-generation.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "04-render.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "04-render.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "04-render.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "04-render.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "04-render.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "04-render.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "06-gates.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "06-gates.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "06-gates.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "06-gates.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "06-gates.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "06-gates.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "07-operations.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "07-operations.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "07-operations.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "07-operations.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "07-operations.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "07-operations.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "09-safety.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "09-safety.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "09-safety.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "09-safety.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "09-safety.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "09-safety.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "main": true
+    },
+    {
+      "file": "e2e.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "main": true
+    },
+    {
+      "file": "e2e.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "main": true
+    },
+    {
+      "file": "e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "main": true
+    }
+  ],
+  "svgIssues": [],
+  "images": [
+    {
+      "file": "00-overview.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "00-overview.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "00-overview.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "00-overview.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "00-overview.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "00-overview.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "01-pipeline.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "02-credentials.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "03-generation.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "03-generation.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "03-generation.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "03-generation.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "03-generation.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "03-generation.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "04-render.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 3,
+      "broken": []
+    },
+    {
+      "file": "04-render.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 3,
+      "broken": []
+    },
+    {
+      "file": "04-render.html",
+      "width": 375,
+      "theme": "light",
+      "count": 3,
+      "broken": []
+    },
+    {
+      "file": "04-render.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 3,
+      "broken": []
+    },
+    {
+      "file": "04-render.html",
+      "width": 360,
+      "theme": "light",
+      "count": 3,
+      "broken": []
+    },
+    {
+      "file": "04-render.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 3,
+      "broken": []
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "05-youtube.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "06-gates.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "06-gates.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "06-gates.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "06-gates.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "06-gates.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "06-gates.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "07-operations.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "07-operations.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "07-operations.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "07-operations.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "07-operations.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "07-operations.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "08-analytics.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "09-safety.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "09-safety.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "09-safety.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "09-safety.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "09-safety.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "09-safety.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "e2e.html",
+      "width": 375,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "e2e.html",
+      "width": 360,
+      "theme": "light",
+      "count": 0,
+      "broken": []
+    },
+    {
+      "file": "e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "count": 0,
+      "broken": []
+    }
+  ],
+  "errors": [],
+  "internalLinks": 288,
+  "interactions": [
+    {
+      "name": "system link focus",
+      "href": "07-operations.html",
+      "pass": true
+    },
+    {
+      "name": "system link focus",
+      "href": "01-pipeline.html",
+      "pass": true
+    },
+    {
+      "name": "system link focus",
+      "href": "03-generation.html",
+      "pass": true
+    },
+    {
+      "name": "system link focus",
+      "href": "06-gates.html",
+      "pass": true
+    },
+    {
+      "name": "system link focus",
+      "href": "05-youtube.html",
+      "pass": true
+    },
+    {
+      "name": "system link focus",
+      "href": "08-analytics.html",
+      "pass": true
+    },
+    {
+      "name": "system link focus",
+      "href": "07-operations.html#alerts",
+      "pass": true
+    },
+    {
+      "name": "system link focus",
+      "href": "05-youtube.html",
+      "pass": true
+    },
+    {
+      "name": "system link Enter",
+      "pass": true
+    },
+    {
+      "name": "gate failure still exception",
+      "pass": true
+    },
+    {
+      "name": "calculator preserved",
+      "pass": true
+    },
+    {
+      "name": "original video metadata",
+      "pass": true
+    },
+    {
+      "name": "00-overview.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "01-pipeline.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "02-credentials.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "03-generation.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "04-render.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "05-youtube.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "06-gates.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "07-operations.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "08-analytics.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "09-safety.html no JS figure",
+      "pass": true
+    },
+    {
+      "name": "e2e.html no JS figure",
+      "pass": true
+    }
+  ]
+}

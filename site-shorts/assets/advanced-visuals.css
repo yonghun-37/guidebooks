@@ -1,0 +1,61 @@
+/* 쇼츠 심화편 시각자료. 책의 수동 테마 선택과 같은 색 변수를 따른다. */
+.v-figure {
+  margin: 26px 0 32px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  break-inside: avoid;
+  scroll-margin-top: 100px;
+}
+.v-heading {
+  margin: 0 0 22px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--line);
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.v-svg {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  font-family: var(--body);
+}
+.v-svg text { fill: var(--ink); font-size: 17px; }
+.v-svg .v-bold { font-size: 17px; font-weight: 750; }
+.v-svg .v-small { font-size: 16px; }
+.v-svg .v-mono { font-size: 16px; font-family: ui-monospace, monospace; }
+.v-svg rect { fill: var(--paper); stroke: var(--line); stroke-width: 1; }
+.v-svg circle { fill: var(--soft); stroke: var(--accent); stroke-width: 1.5; }
+.v-svg path { fill: none; stroke: var(--accent); stroke-width: 1.8; }
+.v-svg .v-secondary { fill: var(--soft); }
+.v-svg .v-stop { fill: var(--soft); stroke: var(--orange); stroke-dasharray: 5 3; }
+.v-svg .v-error { stroke: var(--orange); }
+.v-svg .v-dash { stroke-dasharray: 4 4; }
+.v-svg .v-track { fill: var(--soft); }
+.v-svg .v-fill { fill: var(--accent); stroke: none; }
+.v-svg .v-caution { fill: var(--orange); stroke: none; }
+.v-svg .v-chrome { fill: var(--soft); }
+.v-svg .v-timeline { stroke: var(--line); stroke-width: 3; }
+.v-svg .v-tick { stroke: var(--muted); }
+.v-svg a { cursor: pointer; }
+.v-svg a:hover rect, .v-svg a:focus rect { stroke: var(--accent); stroke-width: 3; }
+.v-svg a:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.v-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.v-source { margin: 10px 0 0; font-size: 13px; line-height: 1.8; color: var(--muted); }
+.v-frames { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.v-frames img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
+.v-frames p { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
+@media (max-width: 700px) {
+  .v-grid { grid-template-columns: 1fr; gap: 26px; }
+  .v-figure { padding: 10px 8px 16px; }
+  .v-heading { margin-bottom: 16px; padding: 5px 4px 12px; }
+  .v-source, .v-figure figcaption { padding: 0 4px; }
+  .v-frames { grid-template-columns: 1fr; gap: 22px; }
+  .v-frames > div { max-width: 290px; margin: auto; }
+}

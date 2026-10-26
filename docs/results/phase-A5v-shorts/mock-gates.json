@@ -1,0 +1,46 @@
+{
+  "facts": {
+    "passed": true,
+    "reasons": [],
+    "method": "숫자·이름 문자열 대조(문맥·한국어 인명 누락 가능)"
+  },
+  "policy": {
+    "passed": true,
+    "reasons": []
+  },
+  "similarity": {
+    "passed": true,
+    "reasons": [],
+    "maximum": 0,
+    "threshold": 0.82
+  },
+  "specification": {
+    "passed": true,
+    "reasons": [],
+    "media": [
+      {
+        "file": "short.mp4",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "duration": 36.1,
+        "lufs": -16.05,
+        "probe_method": "pip ffmpeg stderr parser (shorts-kit 재사용)"
+      }
+    ]
+  },
+  "ai": {
+    "passed": true,
+    "reasons": []
+  },
+  "cost": {
+    "passed": true,
+    "reasons": [],
+    "total": 0.0,
+    "day": 0.0,
+    "month": 0.0,
+    "pending": 0
+  }
+}

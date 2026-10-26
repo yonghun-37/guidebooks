@@ -1,0 +1,95 @@
+{
+  "pages": [
+    {
+      "file": "00-overview.html",
+      "figures": 1,
+      "svg": 1,
+      "images": 0
+    },
+    {
+      "file": "01-pipeline.html",
+      "figures": 2,
+      "svg": 3,
+      "images": 0
+    },
+    {
+      "file": "02-credentials.html",
+      "figures": 6,
+      "svg": 6,
+      "images": 0
+    },
+    {
+      "file": "03-generation.html",
+      "figures": 1,
+      "svg": 1,
+      "images": 0
+    },
+    {
+      "file": "04-render.html",
+      "figures": 3,
+      "svg": 1,
+      "images": 3
+    },
+    {
+      "file": "05-youtube.html",
+      "figures": 4,
+      "svg": 4,
+      "images": 0
+    },
+    {
+      "file": "06-gates.html",
+      "figures": 3,
+      "svg": 3,
+      "images": 0
+    },
+    {
+      "file": "07-operations.html",
+      "figures": 5,
+      "svg": 5,
+      "images": 0
+    },
+    {
+      "file": "08-analytics.html",
+      "figures": 1,
+      "svg": 1,
+      "images": 0
+    },
+    {
+      "file": "09-safety.html",
+      "figures": 1,
+      "svg": 1,
+      "images": 0
+    },
+    {
+      "file": "e2e.html",
+      "figures": 1,
+      "svg": 1,
+      "images": 0
+    }
+  ],
+  "total_figures": 28,
+  "frames": [
+    {
+      "file": "site-shorts/assets/img/advanced/frame-hook.webp",
+      "bytes": 16916
+    },
+    {
+      "file": "site-shorts/assets/img/advanced/frame-rent.webp",
+      "bytes": 10274
+    },
+    {
+      "file": "site-shorts/assets/img/advanced/frame-goal.webp",
+      "bytes": 13272
+    }
+  ],
+  "actual_gates": [
+    "facts",
+    "policy",
+    "similarity",
+    "specification",
+    "ai",
+    "cost"
+  ],
+  "cost_arithmetic": "passed",
+  "errors": []
+}

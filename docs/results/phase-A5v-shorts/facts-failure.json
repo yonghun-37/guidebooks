@@ -1,0 +1,19 @@
+{
+  "facts": {
+    "passed": false,
+    "reasons": [
+      "원문에 없는 숫자: 99"
+    ],
+    "method": "숫자·이름 문자열 대조(문맥·한국어 인명 누락 가능)"
+  },
+  "policy": {
+    "passed": true,
+    "reasons": []
+  },
+  "similarity": {
+    "passed": true,
+    "reasons": [],
+    "maximum": 0,
+    "threshold": 0.82
+  }
+}

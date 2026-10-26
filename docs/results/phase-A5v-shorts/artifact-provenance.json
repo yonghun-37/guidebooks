@@ -1,0 +1,39 @@
+{
+  "flow": "shorts",
+  "provider": "mock",
+  "live": false,
+  "run_id": "90133fba6728",
+  "observed_statuses": [
+    "waiting_approval",
+    "dry_run"
+  ],
+  "mp4_sha256": "d2cc79d54edd02cc1fc0b68f7a54ce5dbd791406c7b6c8941b066b789d4fc3d5",
+  "book_mp4_sha256": "d2cc79d54edd02cc1fc0b68f7a54ce5dbd791406c7b6c8941b066b789d4fc3d5",
+  "mp4_identical": true,
+  "frames": [
+    {
+      "file": "site-shorts/assets/img/advanced/frame-goal.webp",
+      "sha256": "5385a157a65a3085b18d3f1e8879a4855b7ff094ab89c8e7f15892f503b6d2d3",
+      "bytes": 13272
+    },
+    {
+      "file": "site-shorts/assets/img/advanced/frame-hook.webp",
+      "sha256": "70ebc51c15705e45a849a244824bdea255401ca53ee4bc64318812a809372342",
+      "bytes": 16916
+    },
+    {
+      "file": "site-shorts/assets/img/advanced/frame-rent.webp",
+      "sha256": "5c7de6550a65f692011cbd7ecf3788c6b7e6881514870607f4725e406eca9c5a",
+      "bytes": 10274
+    }
+  ],
+  "commands_executed": [
+    "python pipeline.py run --flow shorts --provider mock --mode approval",
+    "python pipeline.py approve 90133fba6728",
+    "python pipeline.py resume 90133fba6728",
+    "python insights.py 90133fba6728",
+    "python pipeline.py report"
+  ],
+  "extraction": "ffmpeg -ss 1/8/31 -i short.mp4 -frames:v 1; Pillow resize 540x960, WebP quality=88 method=6",
+  "exception_reproduction": "caption에 검사용 지원금 99만원 추가 → gates.inspect_text → ops.notifications.notify(live=False)"
+}

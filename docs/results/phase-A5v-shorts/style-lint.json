@@ -1,0 +1,323 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": null,
+  "summary": {
+    "files": 11,
+    "passed": 11,
+    "failed": 0,
+    "char_count": 46066,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 1,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site-shorts/advanced/00-overview.html",
+      "track": "other",
+      "char_count": 3644,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "cfeea793ccf87fb44097ac40aa025e9815b1d41cf147e201d51cb0c0e43627e5"
+    },
+    {
+      "path": "site-shorts/advanced/01-pipeline.html",
+      "track": "other",
+      "char_count": 3675,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "35faff038b52ca0a99edcbfc82fbb5273a68af62452d9670ad6120d9bb1ce227"
+    },
+    {
+      "path": "site-shorts/advanced/02-credentials.html",
+      "track": "other",
+      "char_count": 5176,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "c5eba2c499100661756bfa24917a25ce222778ee437e1ce1fb619b74e46cd986"
+    },
+    {
+      "path": "site-shorts/advanced/03-generation.html",
+      "track": "other",
+      "char_count": 4614,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "6389098fd33abfddb7b0d6370725c26513934b5d55e0dbd433fbff6ee806e10f"
+    },
+    {
+      "path": "site-shorts/advanced/04-render.html",
+      "track": "other",
+      "char_count": 3308,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "54c209670bfb41afc98b1bf6c8304274107957d2af2005491c71e7c195d1348a"
+    },
+    {
+      "path": "site-shorts/advanced/05-youtube.html",
+      "track": "other",
+      "char_count": 6387,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "ebae56957d768162b2ac6c0e848b0cc5351ad77c137b9f4ed65fba522691f392"
+    },
+    {
+      "path": "site-shorts/advanced/06-gates.html",
+      "track": "other",
+      "char_count": 4031,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "f85af4440ed26846d741617b58f15bdc7d7406e46015cae6b65b526c7374276d"
+    },
+    {
+      "path": "site-shorts/advanced/07-operations.html",
+      "track": "other",
+      "char_count": 5924,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 1,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 2,
+            "context": "0.000000관문: 6개 모두 통과한도: 미확인지표 준비 상태 · mock 가상 값views=12 회engage"
+          }
+        ],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "2fa17626ac4279d4054c1c02a2031f63f7f156038ed1c36e04c2bf9e7aa71908"
+    },
+    {
+      "path": "site-shorts/advanced/08-analytics.html",
+      "track": "other",
+      "char_count": 3843,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "d3ee69fde8effafbf46dab63aa11b0e8739a4d72cbd6524fa38e2f11491e07f7"
+    },
+    {
+      "path": "site-shorts/advanced/09-safety.html",
+      "track": "other",
+      "char_count": 3104,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "f91e05f408d6d0fa3ac571876f6491ac664fd12112aeaf0ee65d154d3cb121e2"
+    },
+    {
+      "path": "site-shorts/advanced/e2e.html",
+      "track": "other",
+      "char_count": 2360,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "76d5396e0c1999473e2d43455967412d8d4a8dbabf5ba9952b0fb1b60a460b98"
+    }
+  ]
+}
