@@ -19,3 +19,5 @@
 - 참고 사이트(art.euiyun.com/color)는 구조·학습 설계·UX 패턴만 참고한다. 그 사이트의 문장, 이미지, CSS/JS 코드를 복사하지 않고 새로 구현한다.
 - 등장인물·사례 계정은 가상이다. 실존 인물·브랜드를 사칭하지 않는다. 실제 사례를 인용할 때는 출처를 단다.
 - Codex 샌드박스는 .git 쓰기가 막혀 있으므로 commit은 Claude Code가 Phase 검수 후 한다. Codex는 commit을 시도하지 않는다. push는 하지 않는다.
+- 원격 저장소는 https://github.com/yonghun-37/guidebooks (공개, `main`)이다. Claude Code가 검수 후 push하면 GitHub Actions가 `shelf/`를 `/`, `site/`를 `/reels/`로 Pages에 배포한다(https://yonghun-37.github.io/guidebooks/reels/). 사이트 내부 링크는 상대 경로만 쓴다.
+- 이 저장소는 공개된다. 토큰·개인 환경 파일·Hermes 원응답 전문을 저장소에 넣지 않는다.
