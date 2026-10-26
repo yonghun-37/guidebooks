@@ -49,6 +49,7 @@ ReelsBook에서는 "샘플 → 선택"을 늦게 해서 14장을 다시 썼다. 
 | 구조·각주·렌더링 통과를 품질 통과로 착각 | 본문을 학습자 질문 기준으로 읽고 채점 |
 | 새 책의 Hermes 출력 폴더가 Codex 샌드박스 쓰기 범위 밖 | 실행 전 `mkdir -p <RUN>/{queries,raw}` 후 `HERMES_RUN=<RUN> scripts/codex_phase.sh ...` |
 | Codex 속도 | 사용자 지시(2026-10-26): 모든 Codex 실행에 `-c 'service_tier="fast"'` (codex_phase.sh에 포함, 전역 config에도 설정됨) |
+| Codex가 `Selected model is at capacity`로 exit 1 | 일시적 용량 부족. codex_phase.sh가 최대 3회 자동 재시도(120·240·360초 대기). 재시도 시 이미 만든 파일을 이어서 쓰도록 프롬프트가 기존 산출물을 읽게 한다 |
 | 공개 저장소 | 토큰·.env·Hermes 원응답 전문 금지. 키트 .env는 gitignore |
 
 ## 사이트·배포 규약
