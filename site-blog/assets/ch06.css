@@ -1,0 +1,13 @@
+/* 이 장의 예시·도구에만 적용한다. */
+.compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.compare-grid>div,.compare-grid>article{padding:16px;background:var(--soft);border:1px solid var(--line);border-radius:10px;min-width:0}
+.compare-grid h4,.compare-grid h3{margin-top:0}.draft-sheet{padding:20px;border-left:3px solid var(--accent);background:var(--soft)}
+.simulator label{display:block;margin-top:16px}.simulator input[type=text],.simulator textarea,.simulator select{display:block;width:100%;min-width:0;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
+.simulator fieldset{min-width:0;border:1px solid var(--line);border-radius:10px;padding:16px}.simulator legend{font-weight:700}.simulator button{margin-top:10px;max-width:100%;white-space:normal}
+.blog-figure img{display:block;width:100%;height:auto;border-radius:8px}.code-box code{white-space:pre-wrap;overflow-wrap:anywhere}.next-action{padding:16px;border-left:3px solid var(--accent);background:var(--soft)}
+@media(max-width:600px){.compare-grid{grid-template-columns:1fr}.compare-grid>div,.compare-grid>article{padding:12px}.simulator fieldset{padding:12px}}
+.highlight-options{display:flex;gap:14px;flex-wrap:wrap}.highlight-options label{margin-top:0}.highlight-options input{accent-color:var(--accent)}
+mark[data-kind]{padding:2px 4px;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+mark[data-kind=fact]{background:#fce8bc;color:#583800}mark[data-kind=experience]{background:#cfebdb;color:#13482e}mark[data-kind=fluff]{background:#e8dbf7;color:#432461}
+mark.highlight-off{background:transparent;color:inherit;padding:2px 4px;text-decoration:underline;text-decoration-color:var(--line)}
+[data-theme=dark] mark[data-kind=fact]:not(.highlight-off){background:#634719;color:#fff0c9}[data-theme=dark] mark[data-kind=experience]:not(.highlight-off){background:#1d5138;color:#d8f8e6}[data-theme=dark] mark[data-kind=fluff]:not(.highlight-off){background:#533569;color:#f4e3ff}

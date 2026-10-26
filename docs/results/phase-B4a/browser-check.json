@@ -1,0 +1,208 @@
+{
+  "screens": [
+    {
+      "slug": "01-map",
+      "width": 1280,
+      "theme": "light",
+      "file": "01-map-1280-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "01-map",
+      "width": 1280,
+      "theme": "dark",
+      "file": "01-map-1280-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "01-map",
+      "width": 375,
+      "theme": "light",
+      "file": "01-map-375-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "01-map",
+      "width": 375,
+      "theme": "dark",
+      "file": "01-map-375-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "01-map",
+      "width": 360,
+      "theme": "light",
+      "file": "01-map-360-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "01-map",
+      "width": 360,
+      "theme": "dark",
+      "file": "01-map-360-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "03-ai-tools",
+      "width": 1280,
+      "theme": "light",
+      "file": "03-ai-tools-1280-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "03-ai-tools",
+      "width": 1280,
+      "theme": "dark",
+      "file": "03-ai-tools-1280-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "03-ai-tools",
+      "width": 375,
+      "theme": "light",
+      "file": "03-ai-tools-375-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "03-ai-tools",
+      "width": 375,
+      "theme": "dark",
+      "file": "03-ai-tools-375-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "03-ai-tools",
+      "width": 360,
+      "theme": "light",
+      "file": "03-ai-tools-360-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "03-ai-tools",
+      "width": 360,
+      "theme": "dark",
+      "file": "03-ai-tools-360-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "04-platforms",
+      "width": 1280,
+      "theme": "light",
+      "file": "04-platforms-1280-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "04-platforms",
+      "width": 1280,
+      "theme": "dark",
+      "file": "04-platforms-1280-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "04-platforms",
+      "width": 375,
+      "theme": "light",
+      "file": "04-platforms-375-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "04-platforms",
+      "width": 375,
+      "theme": "dark",
+      "file": "04-platforms-375-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "04-platforms",
+      "width": 360,
+      "theme": "light",
+      "file": "04-platforms-360-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "04-platforms",
+      "width": 360,
+      "theme": "dark",
+      "file": "04-platforms-360-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "05-keywords",
+      "width": 1280,
+      "theme": "light",
+      "file": "05-keywords-1280-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "05-keywords",
+      "width": 1280,
+      "theme": "dark",
+      "file": "05-keywords-1280-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "05-keywords",
+      "width": 375,
+      "theme": "light",
+      "file": "05-keywords-375-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "05-keywords",
+      "width": 375,
+      "theme": "dark",
+      "file": "05-keywords-375-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "05-keywords",
+      "width": 360,
+      "theme": "light",
+      "file": "05-keywords-360-light.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    },
+    {
+      "slug": "05-keywords",
+      "width": 360,
+      "theme": "dark",
+      "file": "05-keywords-360-dark.png",
+      "overflow": 0,
+      "expandedFaqOverflow": 0
+    }
+  ],
+  "interactions": [
+    "1장: 전부/부분 완료·초기화·다음 행동",
+    "3장: 5개 작업 전환·키보드 선택",
+    "4장: 목표×API×도메인 18조합·충돌 안내",
+    "5장: 모든 선택지·이유·키보드",
+    "네 장 공통: 퀴즈 정답/초기화·FAQ·축 앵커 키보드, 복사 버튼 Enter",
+    "4장 JS 꺼짐: 본문·도구 대안",
+    "localStorage 차단 환경: 4장 본문·테마 초기화 오류 없음",
+    "4장 도구 embed 진입"
+  ],
+  "errors": [],
+  "status": "PASS"
+}

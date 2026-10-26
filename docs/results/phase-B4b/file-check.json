@@ -1,0 +1,87 @@
+{
+  "ownedFiles": [
+    {
+      "path": "site-blog/assets/ch06.css",
+      "bytes": 2084,
+      "sha256": "2e07059e77556bae9a6f32923b76b1db8384fa22cc1298838340d2d5bd5b3eaa"
+    },
+    {
+      "path": "site-blog/assets/ch06.js",
+      "bytes": 904,
+      "sha256": "f7c99010cb7232b4e7417873e945ec5d28ab3b6b5b4380f4ddc6cb828d49dab9"
+    },
+    {
+      "path": "site-blog/assets/ch07.css",
+      "bytes": 1601,
+      "sha256": "5f9e447a0c5fd7b027eb04beead1de359dd4ab8ac864bdce1e7b21a0b0f5d499"
+    },
+    {
+      "path": "site-blog/assets/ch07.js",
+      "bytes": 725,
+      "sha256": "99a1ffcd27fd6b3b7499bc43f5e1e3378e21921f500e199c4cbca51a7a345b4c"
+    },
+    {
+      "path": "site-blog/assets/ch08.css",
+      "bytes": 1963,
+      "sha256": "d3054f4f00b64b2ea44f11ca9f7b66369b67f4543dbf16cb4935ce3f042da6a3"
+    },
+    {
+      "path": "site-blog/assets/ch08.js",
+      "bytes": 1716,
+      "sha256": "a372d3db51f4af7a9cd13e3e68476d73513d2cbcf71a4660ead4d36a925d7ba9"
+    },
+    {
+      "path": "site-blog/assets/ch09.css",
+      "bytes": 1310,
+      "sha256": "d2a238c6f96d892f45aa88469574e72186974c908606e30121d271197882a75a"
+    },
+    {
+      "path": "site-blog/assets/ch09.js",
+      "bytes": 2899,
+      "sha256": "fe35f8be30924f7d56c6c666a7897ddd3f5e44094e838bdc69e23d1b22de189f"
+    },
+    {
+      "path": "site-blog/assets/img/ai-examples/support-desk.webp",
+      "bytes": 52816,
+      "sha256": "5a3981c2c4b1f4edb575b820c625d428493df6f9299456484f5940f0fdda2c8a"
+    },
+    {
+      "path": "site-blog/assets/img/ai-examples/weekend-river.webp",
+      "bytes": 140880,
+      "sha256": "04cbc1e602f21c5e5b6e69e0bfac4801dad212ad0fcf4535316f3521ec8760d4"
+    },
+    {
+      "path": "site-blog/chapters/06-writing.html",
+      "bytes": 32893,
+      "sha256": "5526b9d7e652a9289a8fb8fb616e4aec0d25f171fe0e88f67a1e9184e7d00798"
+    },
+    {
+      "path": "site-blog/chapters/07-images.html",
+      "bytes": 24858,
+      "sha256": "e6426f7367b2f47ee8f0db790f57d62feff6f66ab52849232378100d3f483856"
+    },
+    {
+      "path": "site-blog/chapters/08-seo.html",
+      "bytes": 26215,
+      "sha256": "f57bcbcbd34a81609fbd379952157bda9737266543f25d8732414d029f5cccdf"
+    },
+    {
+      "path": "site-blog/chapters/09-monetize.html",
+      "bytes": 33362,
+      "sha256": "55bc978655ed9d01e4ddc00ee88d9b7f06bc9f829316c1369184910e8cc416db"
+    }
+  ],
+  "protectedFilesEqualHEAD": {
+    "site-blog/assets/book.js": true,
+    "site-blog/assets/book.css": true,
+    "site-blog/assets/common.js": true,
+    "site-blog/assets/practice.js": true,
+    "site-blog/assets/catalog.js": true,
+    "site-blog/index.html": true,
+    "site-blog/glossary.html": true,
+    "site-blog/credits.html": true,
+    "site-blog/lab.html": true,
+    "site-blog/prompts.html": true,
+    "site-blog/ai-models.html": true
+  }
+}

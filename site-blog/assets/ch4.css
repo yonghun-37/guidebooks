@@ -1,0 +1,9 @@
+/* 이 장에만 적용하는 결과·선택 배치. */
+body[data-chapter="04-platforms"] .simulator {padding:24px}
+body[data-chapter="04-platforms"] .simulator fieldset {border:0;min-width:0;padding:0;margin:18px 0}
+body[data-chapter="04-platforms"] .simulator legend {font-weight:700;margin-bottom:10px}
+body[data-chapter="04-platforms"] .simulator select {max-width:100%;padding:10px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);font:inherit}
+body[data-chapter="04-platforms"] .blog-figure svg text {font-size:14px}
+@media(max-width:600px){body[data-chapter="04-platforms"] .simulator{padding:16px}}
+body[data-chapter="04-platforms"] .table-scroll table {min-width:660px}
+body[data-chapter="04-platforms"] .table-scroll {overflow-x:auto;max-width:100%;overscroll-behavior-inline:contain}

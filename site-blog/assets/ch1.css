@@ -1,0 +1,9 @@
+/* 이 장에만 적용하는 결과·선택 배치. */
+body[data-chapter="01-map"] .simulator {padding:24px}
+body[data-chapter="01-map"] .simulator fieldset {border:0;min-width:0;padding:0;margin:18px 0}
+body[data-chapter="01-map"] .simulator legend {font-weight:700;margin-bottom:10px}
+body[data-chapter="01-map"] .simulator select {max-width:100%;padding:10px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);font:inherit}
+body[data-chapter="01-map"] .blog-figure svg text {font-size:14px}
+@media(max-width:600px){body[data-chapter="01-map"] .simulator{padding:16px}}
+.step-choice,.keyword-choice {display:flex;align-items:flex-start;gap:12px;padding:12px 0;cursor:pointer}
+.step-choice input,.keyword-choice input {width:20px;height:20px;flex-shrink:0;margin-top:4px;accent-color:var(--accent)}

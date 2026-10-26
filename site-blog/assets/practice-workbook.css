@@ -1,0 +1,22 @@
+/* BlogBook 실습 전용 스타일. */
+.chapter .practice-compare {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.practice-compare>div {padding:16px;background:var(--soft);border:1px solid var(--line);border-radius:10px}
+.practice-compare h3 {margin-top:0;font-size:1rem}
+.practice-map .map-detail {font-size:12px;fill:var(--muted)}
+.practice-map svg {max-width:380px}
+.chapter textarea[data-worknote] {display:block;box-sizing:border-box;width:100%;min-height:150px;resize:vertical;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;line-height:1.7}
+.work-label {display:block;font-weight:700;margin:24px 0 8px}
+.chapter .code-box {position:relative}
+.chapter .code-box pre {white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;padding-top:16px}
+.chapter .code-box button {margin:10px 12px 0;font-size:.85rem}
+.chapter [data-work-status] {font-size:.9rem;color:var(--muted)}
+.thumbnail-demo {display:flex;gap:14px;align-items:center;justify-content:space-between;min-height:150px;padding:18px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px}
+.thumbnail-demo strong {font-size:1.3rem;line-height:1.5;color:var(--accent)}
+.thumbnail-demo span {font-size:.8rem}.thumbnail-demo.busy {display:block;font-size:.85rem;line-height:2.8}
+.practice-route {display:grid;gap:8px;list-style:none;padding:0!important}
+.practice-route a {display:flex;gap:10px;padding:12px;border:1px solid var(--line);border-radius:8px;text-decoration:none;background:var(--surface)}
+.practice-route strong {white-space:nowrap;color:var(--accent)}
+.practice-route span {min-width:0}
+.chapter a:focus-visible,.chapter button:focus-visible,.chapter textarea:focus-visible,.chapter pre:focus-visible {outline:3px solid var(--accent);outline-offset:4px}
+@media(max-width:600px){.chapter .practice-compare{grid-template-columns:1fr}.practice-compare>div{padding:12px}.practice-map .map-detail{font-size:13px}.thumbnail-demo{padding:12px}.chapter table{font-size:.88rem}}
+.chapter .blog-figure>img {display:block;max-width:100%;height:auto;margin-inline:auto;border-radius:8px}

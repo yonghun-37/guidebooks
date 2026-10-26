@@ -1,0 +1,13 @@
+/* 이 장에만 적용하는 결과·선택 배치. */
+body[data-chapter="03-ai-tools"] .simulator {padding:24px}
+body[data-chapter="03-ai-tools"] .simulator fieldset {border:0;min-width:0;padding:0;margin:18px 0}
+body[data-chapter="03-ai-tools"] .simulator legend {font-weight:700;margin-bottom:10px}
+body[data-chapter="03-ai-tools"] .simulator select {max-width:100%;padding:10px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);font:inherit}
+body[data-chapter="03-ai-tools"] .blog-figure svg text {font-size:14px}
+@media(max-width:600px){body[data-chapter="03-ai-tools"] .simulator{padding:16px}}
+.draft-pair,.metric-pair,.search-pair {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.draft-pair>div,.metric-pair>div,.search-pair>div {border:1px solid var(--line);border-radius:10px;padding:16px;overflow-wrap:anywhere;background:var(--soft)}
+.metric-example {font-weight:800;color:var(--accent)}
+@media(max-width:600px){.draft-pair,.metric-pair,.search-pair{grid-template-columns:1fr}}
+body[data-chapter="03-ai-tools"] .table-scroll table {min-width:660px}
+body[data-chapter="03-ai-tools"] .table-scroll {overflow-x:auto;max-width:100%;overscroll-behavior-inline:contain}

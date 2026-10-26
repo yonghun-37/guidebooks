@@ -1,0 +1,11 @@
+{
+  "owned_files": [
+    "site-blog/chapters/10-automation.html",
+    "site-blog/chapters/11-analytics.html",
+    "site-blog/chapters/12-policy.html",
+    "site-blog/chapters/13-plan.html"
+  ],
+  "owned_errors": [],
+  "whole_site_errors": [],
+  "note": "사이트 전체 35 HTML 정적 검사 최종 오류 0. 병렬 작성 중 누락되었던 실습 E2E 파일도 최종 재검사에서 정상 확인."
+}
