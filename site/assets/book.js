@@ -9,11 +9,11 @@
     [3, '03-revenue', '1부 · 이해하기', '돈은 어디서 들어오는가: 수익 구조 6가지', '내 계정에 맞는 수익 경로 2개', '35분 · 실습용 배분', '입문', '완성'],
     [4, '04-niche', '1부 · 이해하기', '니치와 계정 기획', '계정 기획 시트', '40분 · 실습용 배분', '입문', '완성'],
     [5, '05-sources', '2부 · 만들기', '소재 찾기: 뉴스 소싱과 저작권', 'RSS 소스 목록과 인용 규칙', '45분 · 실습용 배분', '입문', '완성'],
-    [6, '06-writing', '2부 · 만들기', 'AI로 글쓰기: 카드 문안과 릴스 대본', '프롬프트 템플릿 3종', '55분 · 설치 제외, 실습용 배분', '입문 · 파일 편집', '완성'],
-    [7, '07-cards', '2부 · 만들기', '뉴스카드 디자인 자동화', '첫 뉴스카드 캐러셀 PNG', '50분 · 설치 제외, 실습용 배분', '입문 · 문안과 색 편집', '완성'],
-    [8, '08-reels', '2부 · 만들기', '릴스 자동 생성: 대본에서 영상까지', '첫 릴스 MP4', '60분 · 설치 제외, 실습용 배분', '입문 · 영상 검수', '완성'],
-    [9, '09-pipeline', '3부 · 자동화', '파이프라인 잇기', '한 번 실행으로 카드와 릴스 생성', '60분 · 설치 제외, 실습용 배분', '입문 · 생성과 승인', '완성'],
-    [10, '10-publishing', '3부 · 자동화', '자동 포스팅: 공식 API와 예약', '업로드 설정(드라이런)과 예약 실행', '45분 · 연습용 예상', '따라 하기 · API 부분은 천천히', '완성'],
+    [6, '06-writing', '2부 · 만들기', 'AI로 글쓰기: 카드 문안과 릴스 대본', '프롬프트 3종의 요구조건 메모', '55분 · 설치 제외, 실습용 배분', '입문 · 파일 편집', '완성'],
+    [7, '07-cards', '2부 · 만들기', '뉴스카드 디자인 자동화', '카드 정보 역할과 검수 기준', '50분 · 설치 제외, 실습용 배분', '입문 · 문안과 색 편집', '완성'],
+    [8, '08-reels', '2부 · 만들기', '릴스 자동 생성: 대본에서 영상까지', '대본·음성·자막의 검수 계획', '60분 · 설치 제외, 실습용 배분', '입문 · 영상 검수', '완성'],
+    [9, '09-pipeline', '3부 · 자동화', '파이프라인 잇기', '파이프라인의 검수·실패 대응 기준', '60분 · 설치 제외, 실습용 배분', '입문 · 생성과 승인', '완성'],
+    [10, '10-publishing', '3부 · 자동화', '자동 포스팅: 공식 API와 예약', '게시 경로와 예약 조건 메모', '45분 · 연습용 예상', '따라 하기 · API 부분은 천천히', '완성'],
     [11, '11-analytics', '3부 · 자동화', '운영과 분석: 숫자 읽기', '주간 지표 대시보드 시트', '30분 · 연습용 예상', '입문 · 나눗셈 연습', '완성'],
     [12, '12-safety', '4부 · 지키기·벌기', '정책·법·세금: 계정을 잃지 않는 법', '게시 전 체크리스트', '40분 · 연습용 예상', '입문 · 법률 용어는 천천히', '완성'],
     [13, '13-roadmap', '4부 · 지키기·벌기', '수익화 로드맵: 0→1천→1만', '단계별 수익화 계획', '35분 · 연습용 예상', '입문 · 계획과 장부', '완성'],
@@ -23,27 +23,51 @@
     [null, 'credits', '부록', '출처·크레딧', '출처와 업데이트 기록', '자유롭게', '입문', '완성']
   ];
   const chapters = chapterRows.map(([number, slug, part, title, deliverable, duration = '추후 안내', difficulty = '추후 안내', status = '준비중']) =>
-    Object.freeze({ number, slug, part, title, deliverable, duration, difficulty, status }));
+    Object.freeze({ number, slug, part, title, deliverable, duration, difficulty, status, track: 'theory' }));
+  const practiceRows = [
+    ['00-start', '시작 전에', '준비물과 오늘의 경로'],
+    ['01-account', '테스트 계정과 보안 준비', '게시 계정과 복구 수단'],
+    ['02-setup', '키트 설치와 첫 실행', '검수 대기 결과 폴더'],
+    ['03-copy', '소재 고르기와 웹 채팅 문안', '검증한 copy.json'],
+    ['04-cards', '뉴스카드 캐러셀 만들기', 'PNG와 게시용 JPEG'],
+    ['05-reel', '본인 녹음과 릴스 만들기', '재생 확인한 reel.mp4'],
+    ['06-review', '게시 전 사람 검수', '승인 기록과 드라이런'],
+    ['07-publish', '앱으로 첫 게시하기', '본인이 확인한 게시물 주소'],
+    ['08-api', '선택 · API 자동 게시', '공개 URL과 API 설정'],
+    ['09-schedule', '선택 · 예약과 자동 실행', '예약 확인 기록'],
+    ['10-insights', '첫 24시간·7일 지표', '동일 게시물 관찰표']
+  ];
+  const practice = practiceRows.map(([slug, title, deliverable], number) => Object.freeze({
+    number, slug, title, deliverable, track: 'practice', part: '실습편', status: '완성'
+  }));
+  const tracks = Object.freeze([
+    { id: 'theory', title: '(이론) 이론편', chapters },
+    { id: 'practice', title: '(실습) 실습편', chapters: practice }
+  ]);
+  const allChapters = [...chapters, ...practice];
   const prefix = new URL('.', location.href).href === root.href ? '' : '../';
   const url = path => prefix + path;
   const chapterUrl = chapter => {
+    if (chapter.track === 'practice') return url(`practice/${chapter.slug}.html`);
     if (['lab', 'glossary', 'credits'].includes(chapter.slug)) return url(`${chapter.slug}.html`);
     return chapter.status === '완성' ? url(`chapters/${chapter.slug}.html`) : url(`chapters/coming-soon.html?chapter=${chapter.slug}`);
   };
   const byNumber = number => chapters.find(chapter => chapter.number === number);
   const esc = text => String(text).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
   const status = chapter => `<span class="status ${chapter.status === '완성' ? 'ready' : ''}">${chapter.status === '완성' ? '읽기 가능' : '준비 중'}</span>`;
-  const label = chapter => `${chapter.number ? chapter.number + '장 · ' : ''}${chapter.title}`;
+  const label = chapter => `(${chapter.track === 'practice' ? '실습' : '이론'}) ${chapter.number != null ? chapter.number + (chapter.track === 'practice' ? '. ' : '장 · ') : ''}${chapter.title}`;
   const link = chapter => `<a href="${chapterUrl(chapter)}">${esc(label(chapter))} ${status(chapter)}</a>`;
   const selected = document.body.dataset.chapter === 'pending' ? new URLSearchParams(location.search).get('chapter') : document.body.dataset.chapter;
-  const current = chapters.find(chapter => chapter.slug === selected);
+  const current = allChapters.find(chapter => chapter.slug === (document.body.dataset.practice || selected));
+  const trackLinks = () => tracks.map(track => `<section><h3>${track.title}</h3><ol>${track.chapters.map(chapter => `<li>${link(chapter)}</li>`).join('')}</ol></section>`).join('') + `<p><a href="${url('practice/e2e.html')}">(실습) E2E 한눈에 보기</a></p>`;
   document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.filter(c => c.number && c.status === '완성').length; });
+  document.querySelectorAll('[data-practice-count]').forEach(node => { node.textContent = practice.length; });
   document.querySelectorAll('[data-sim-count]').forEach(node => { node.textContent = (window.ReelsCatalog || []).length; });
-  window.ReelsBook = Object.freeze({ chapters: Object.freeze(chapters), url, chapterUrl, byNumber });
+  window.ReelsBook = Object.freeze({ chapters: Object.freeze(chapters), practice: Object.freeze(practice), tracks, url, chapterUrl, byNumber });
 
   document.querySelectorAll('[data-site-header]').forEach(header => {
     header.className = 'site-header';
-    header.innerHTML = `<div class="header-inner"><a class="brand" href="${url('index.html')}"><span class="brand-mark" aria-hidden="true">r</span>ReelsBook</a><div class="header-actions"><a href="${url('index.html#contents')}">전체 목차</a><button type="button" data-menu-toggle aria-expanded="false" aria-controls="book-menu">목차</button><label><span class="sr-only">화면 테마</span><select class="theme-select" data-theme-select><option value="system">시스템</option><option value="light">라이트</option><option value="dark">다크</option></select></label><button type="button" data-theme-toggle aria-label="다크 모드 전환" aria-pressed="false">◐</button></div></div><nav id="book-menu" class="menu-panel" aria-label="전체 장" hidden><ol>${chapters.map(chapter => `<li>${link(chapter)}</li>`).join('')}</ol></nav>`;
+    header.innerHTML = `<div class="header-inner"><a class="brand" href="${url('index.html')}"><span class="brand-mark" aria-hidden="true">r</span>ReelsBook</a><div class="header-actions"><a href="${url('index.html#contents')}">전체 목차</a><button type="button" data-menu-toggle aria-expanded="false" aria-controls="book-menu">목차</button><label><span class="sr-only">화면 테마</span><select class="theme-select" data-theme-select><option value="system">시스템</option><option value="light">라이트</option><option value="dark">다크</option></select></label><button type="button" data-theme-toggle aria-label="다크 모드 전환" aria-pressed="false">◐</button></div></div><nav id="book-menu" class="menu-panel" aria-label="전체 장" hidden>${trackLinks()}</nav>`;
     const toggle = header.querySelector('[data-menu-toggle]');
     const panel = header.querySelector('#book-menu');
     const close = () => { panel.hidden = true; toggle.setAttribute('aria-expanded', 'false'); };
@@ -53,18 +77,18 @@
   });
 
   document.querySelectorAll('[data-chapter-toc]').forEach(toc => {
-    const parts = [...new Set(chapters.map(chapter => chapter.part))];
-    toc.innerHTML = parts.map(part => `<section class="toc-part"><h3>${esc(part)}</h3><ol class="chapter-list">${chapters.filter(chapter => chapter.part === part).map(chapter => `<li><a href="${chapterUrl(chapter)}"><span class="chapter-num">${chapter.number ? String(chapter.number).padStart(2, '0') : '＋'}</span><span class="chapter-title">${esc(chapter.title)}<span class="chapter-deliverable">${esc(chapter.deliverable)}</span></span>${status(chapter)}</a></li>`).join('')}</ol></section>`).join('');
+    toc.innerHTML = tracks.map(track => `<section class="toc-track" id="track-${track.id}"><h2>${track.title}</h2>${[...new Set(track.chapters.map(chapter => chapter.part))].map(part => `<section class="toc-part"><h3>${esc(part)}</h3><ol class="chapter-list">${track.chapters.filter(chapter => chapter.part === part).map(chapter => `<li><a href="${chapterUrl(chapter)}"><span class="chapter-num">${chapter.number != null ? String(chapter.number).padStart(2, '0') : '＋'}</span><span class="chapter-title">${esc(label(chapter))}<span class="chapter-deliverable">${esc(chapter.deliverable)}</span></span>${status(chapter)}</a></li>`).join('')}</ol></section>`).join('')}</section>`).join('') + `<p><a href="${url('practice/e2e.html')}">(실습) E2E 한눈에 보기 →</a></p>`;
   });
   document.querySelectorAll('[data-chapter-link]').forEach(anchor => {
     const chapter = byNumber(Number(anchor.dataset.chapterLink));
     if (chapter) { anchor.href = chapterUrl(chapter); if (chapter.status !== '완성') anchor.append(' · 준비 중'); }
   });
   if (current) {
-    document.querySelectorAll('[data-chapter-title]').forEach(node => { node.textContent = current.title; });
-    document.querySelectorAll('[data-chapter-kicker]').forEach(node => { node.textContent = `${current.part}${current.number ? ' / ' + String(current.number).padStart(2, '0') + '장' : ''}`; });
+    document.querySelectorAll('[data-chapter-title]').forEach(node => { node.textContent = label(current); });
+    document.querySelectorAll('[data-chapter-kicker]').forEach(node => { node.textContent = `(${current.track === 'practice' ? '실습' : '이론'}) ${current.part}${current.number != null ? ' / ' + current.number : ''}`; });
     document.querySelectorAll('[data-chapter-meta]').forEach(meta => {
-      const previous = chapters[chapters.indexOf(current) - 1];
+      const sequence = current.track === 'practice' ? practice : chapters;
+      const previous = sequence[sequence.indexOf(current) - 1];
       meta.className = 'chapter-meta';
       meta.innerHTML = `<div class="deliverable"><dt>이 장을 마치면 만들어지는 것</dt><dd>${esc(current.deliverable)}</dd></div><div><dt>예상 소요 시간</dt><dd>${esc(current.duration)}</dd></div><div><dt>난이도</dt><dd>${esc(current.difficulty)}</dd></div><div><dt>선행 장</dt><dd>${previous ? link(previous) : '없음 · 여기서 시작'}</dd></div>`;
     });
@@ -72,19 +96,28 @@
     const outline = blocks.map(block => `<li><a href="#${block.id}">${esc(block.querySelector('.block-label')?.lastChild.textContent.trim() || block.querySelector('h2').textContent)}</a></li>`).join('');
     document.querySelectorAll('[data-book-sidebar]').forEach(sidebar => {
       sidebar.className = 'book-sidebar';
-      sidebar.innerHTML = `<p class="sidebar-label">${esc(current.part)} · ${current.number || '부록'}</p><nav aria-label="이 장의 흐름"><ol>${outline}</ol></nav><nav class="sidebar-chapters" aria-label="장 이동"><p class="sidebar-label">책의 지도</p><ol>${chapters.map(chapter => `<li><a href="${chapterUrl(chapter)}" ${chapter === current ? 'aria-current="page"' : ''}>${esc(label(chapter))}${chapter.status === '완성' ? '' : ' <span class="status">준비 중</span>'}</a></li>`).join('')}</ol></nav>`;
+      sidebar.innerHTML = `<p class="sidebar-label">(${current.track === 'practice' ? '실습' : '이론'}) ${esc(current.part)} · ${current.number ?? '부록'}</p><nav aria-label="이 장의 흐름"><ol>${outline}</ol></nav><nav class="sidebar-chapters" aria-label="장 이동"><p class="sidebar-label">책의 지도</p>${trackLinks()}</nav>`;
     });
     document.querySelectorAll('[data-mobile-outline]').forEach(details => {
       details.className = 'mobile-outline';
       details.innerHTML = `<summary>이 장의 흐름 · ${blocks.length}단계</summary><nav aria-label="이 장의 흐름 (모바일)"><ol>${outline}</ol></nav>`;
     });
     document.querySelectorAll('[data-chapter-pager]').forEach(pager => {
-      const index = chapters.indexOf(current);
-      const previous = chapters[index - 1], next = chapters[index + 1];
+      const sequence = current.track === 'practice' ? practice : chapters;
+      const index = sequence.indexOf(current);
+      const previous = sequence[index - 1], next = sequence[index + 1];
       pager.className = 'chapter-pager';
       pager.innerHTML = `${previous ? `<a href="${chapterUrl(previous)}"><small>← 이전 장</small>${esc(label(previous))} ${status(previous)}</a>` : `<a href="${url('index.html')}"><small>← 표지로</small>책의 전체 지도</a>`}${next ? `<a href="${chapterUrl(next)}"><small>다음 장 →</small>${esc(label(next))} ${status(next)}</a>` : `<a href="${url('index.html#contents')}"><small>목차로 →</small>다른 장 살펴보기</a>`}`;
     });
+    document.title = `${label(current)} | ReelsBook`;
+    document.querySelectorAll('.sidebar-chapters a').forEach(anchor => { if (new URL(anchor.href).pathname === location.pathname) anchor.setAttribute('aria-current', 'page'); });
     if (current.status !== '완성') document.title = `${current.title} · 준비 중 | ReelsBook`;
+  }
+  if (document.body.dataset.practice === 'e2e') {
+    document.querySelectorAll('[data-book-sidebar]').forEach(sidebar => {
+      sidebar.className = 'book-sidebar';
+      sidebar.innerHTML = `<p class="sidebar-label">(실습) E2E 한눈에 보기</p><nav class="sidebar-chapters" aria-label="책의 두 트랙">${trackLinks()}</nav>`;
+    });
   }
   document.querySelectorAll('[data-site-footer]').forEach(footer => {
     footer.className = 'site-footer';

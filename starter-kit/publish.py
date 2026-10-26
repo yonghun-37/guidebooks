@@ -9,11 +9,11 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
 
-from common import cli, read_json, save_json
+from common import ROOT, cli, read_json, save_json
 from review import require_approval
 
 
-def request_plan(output, *, version="<API_VERSION>", user_id="<IG_USER_ID>", public_base_url="https://example.invalid/output"):
+def request_plan(output, *, version="v26.0", user_id="<IG_USER_ID>", public_base_url="https://example.invalid/output"):
     copy = read_json(Path(output) / "copy.json")
     base = f"https://graph.instagram.com/{version}"
     urls = public_base_url.rstrip("/")
@@ -73,15 +73,15 @@ def execute_live(output, plan, token):
     for step in plan["requests"]:
         endpoint = substitute(step["endpoint"])
         params = {key: substitute(value) for key, value in step["params"].items()}
-        for attempt in range(20 if step["method"] == "GET" else 1):
+        for attempt in range(5 if step["method"] == "GET" else 1):
             result = api_request(step["method"], endpoint, params, token)
             if step["method"] != "GET" or result.get("status_code") == "FINISHED":
                 break
             if result.get("status_code") in ("ERROR", "EXPIRED"):
                 raise ValueError("컨테이너 처리 실패 또는 만료. LIVE_ATTEMPT.json과 대시보드를 확인하세요.")
-            if attempt == 19:
+            if attempt == 4:
                 raise ValueError("컨테이너 처리 시간 초과. 상태를 확인한 뒤 수동으로 재개해야 합니다.")
-            time.sleep(3)
+            time.sleep(60)
         if "save_as" in step:
             identifier = str(result.get("id", ""))
             if not identifier.isdigit():
@@ -93,22 +93,45 @@ def execute_live(output, plan, token):
     return {"mode": "live", "completed": completed}
 
 
+def settings():
+    """고정된 키트 .env만 읽는다. 셸 확장·실행 없이 환경변수가 우선한다."""
+    values = {}
+    path = ROOT / ".env"
+    if path.is_file():
+        for line in path.read_text(encoding="utf-8-sig").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            key, separator, value = line.partition("=")
+            if not separator or key.strip() not in ("IG_ACCESS_TOKEN", "IG_USER_ID", "IG_API_VERSION"):
+                raise ValueError(".env는 IG_ACCESS_TOKEN/IG_USER_ID/IG_API_VERSION=값 형식만 사용하세요. 값은 출력하지 않습니다.")
+            values[key.strip()] = value.strip().strip("\"'")
+    for key in ("IG_ACCESS_TOKEN", "IG_USER_ID", "IG_API_VERSION"):
+        if key in os.environ:
+            values[key] = os.environ[key].strip()
+    values.setdefault("IG_API_VERSION", "v26.0")
+    return values
+
+
 def publish(output, *, live=False, public_base_url=None):
     output = Path(output)
     require_approval(output)
+    config = settings()
+    version = config["IG_API_VERSION"]
+    if not re.fullmatch(r"v\d+\.\d+", version):
+        raise ValueError("IG_API_VERSION은 v숫자.숫자 형식이어야 합니다.")
     if not live:
-        plan = request_plan(output, **({"public_base_url": public_base_url} if public_base_url else {}))
+        plan = request_plan(output, version=version, **({"public_base_url": public_base_url} if public_base_url else {}))
         save_json(output / "dry-run.json", plan)
         print(json.dumps(plan, ensure_ascii=False, indent=2))
         return plan
-    token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
-    user_id = os.environ.get("IG_USER_ID", "")
-    version = os.environ.get("IG_API_VERSION", "")
+    token = config.get("IG_ACCESS_TOKEN", "")
+    user_id = config.get("IG_USER_ID", "")
     if not token or not user_id.isdigit() or not re.fullmatch(r"v\d+\.\d+", version):
         raise ValueError("--live에는 IG_ACCESS_TOKEN, 숫자 IG_USER_ID, IG_API_VERSION(v숫자.숫자)이 모두 필요합니다.")
     url = urlparse(public_base_url or "")
     if url.scheme != "https" or not url.hostname or url.hostname.endswith(".invalid") or url.username or url.password or url.query or url.fragment:
-        raise ValueError("--live에는 자격증명·쿼리 없는 공개 HTTPS --public-base-url이 필요합니다.")
+        raise ValueError("--live에는 자격증명·쿼리 없는 공개 HTTPS --base-url이 필요합니다.")
     if read_json(output / "copy.json")["synthetic"]:
         raise ValueError("동봉 합성 데이터는 live 게시할 수 없습니다. 드라이런으로 연습하세요.")
     return execute_live(output, request_plan(output, version=version, user_id=user_id, public_base_url=public_base_url), token)
@@ -118,7 +141,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
     parser.add_argument("--live", action="store_true")
-    parser.add_argument("--public-base-url")
+    parser.add_argument("--base-url", "--public-base-url", dest="public_base_url", help="cards/와 reel.mp4가 있는 공개 HTTPS 폴더 URL")
     args = parser.parse_args()
     result = publish(args.output, live=args.live, public_base_url=args.public_base_url)
     if args.live:

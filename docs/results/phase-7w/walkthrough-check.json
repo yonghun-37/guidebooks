@@ -1,0 +1,84 @@
+{
+  "environment": "Linux / clean venv / Python 3.11; Windows/macOS 미실행",
+  "checks": [
+    {
+      "command": "/home/yonghun/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/bin/python3.11 -m venv .venv",
+      "returncode": 0,
+      "output": "",
+      "expected": null
+    },
+    {
+      "command": "<KIT>/.venv/bin/python -m pip install --cache-dir .cache/pip -r requirements.txt",
+      "returncode": 0,
+      "output": "Collecting Pillow==13.0.0 (from -r requirements.txt (line 1))\n  Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)\nCollecting PyYAML==6.0.3 (from -r requirements.txt (line 2))\n  Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)\nCollecting imageio-ffmpeg==0.6.0 (from -r requirements.txt (line 3))\n  Downloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)\nDownloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 47.8 MB/s eta 0:00:00\nDownloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 47.3 MB/s eta 0:00:00\nDownloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl (29.5 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.5/29.5 MB 44.9 MB/s eta 0:00:00\nInstalling collected packages: PyYAML, Pillow, imageio-ffmpeg\nSuccessfully installed Pillow-13.0.0 PyYAML-6.0.3 imageio-ffmpeg-0.6.0\n\n[notice] A new release of pip is available: 24.0 -> 26.2.2\n[notice] To update, run: <KIT>/.venv/bin/python -m pip install --upgrade pip\n",
+      "expected": null
+    },
+    {
+      "command": "<KIT>/.venv/bin/python --version",
+      "returncode": 0,
+      "output": "Python 3.11.15\n",
+      "expected": "Python 3.11"
+    },
+    {
+      "command": "<KIT>/.venv/bin/python run_pipeline.py --offline --output output/first-post",
+      "returncode": 0,
+      "output": "검수 대기: <KIT>/output/first-post/REVIEW.md\n",
+      "expected": "검수 대기:"
+    },
+    {
+      "command": "<KIT>/.venv/bin/python write_copy.py output/first-post/news.json --mode prompt --template cards --output output/first-post/copy.json",
+      "returncode": 0,
+      "output": "웹 채팅에 붙여 넣을 프롬프트: output/first-post/prompt.md. 답변 JSON을 output/first-post/copy.json에 저장하고 --validate로 확인하세요.\n",
+      "expected": "웹 채팅에 붙여 넣을 프롬프트:"
+    },
+    {
+      "command": "<KIT>/.venv/bin/python write_copy.py output/first-post/news.json --validate --output output/first-post/copy.json",
+      "returncode": 0,
+      "output": "구조 검증 OK: output/first-post/copy.json (사실 확인은 사람이 해야 합니다)\n",
+      "expected": "구조 검증 OK: output/first-post/copy.json (사실 확인은 사람이 해야 합니다)"
+    },
+    {
+      "command": "<KIT>/.venv/bin/python run_pipeline.py render output/first-post",
+      "returncode": 0,
+      "output": "검수 대기: <KIT>/output/first-post/REVIEW.md\n",
+      "expected": "검수 대기:"
+    },
+    {
+      "command": "<KIT>/.venv/bin/python run_pipeline.py render output/first-post",
+      "returncode": 0,
+      "output": "검수 대기: <KIT>/output/first-post/REVIEW.md\n",
+      "expected": "검수 대기:"
+    },
+    {
+      "command": "<KIT>/.venv/bin/python run_pipeline.py approve output/first-post",
+      "returncode": 0,
+      "output": "{\n  \"mode\": \"dry-run\",\n  \"login\": \"Instagram Login\",\n  \"authorization\": \"Bearer <REDACTED>\",\n  \"requests\": [\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-01.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_1\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_1}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-02.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_2\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_2}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-03.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_3\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_3}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-04.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_4\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_4}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-05.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_5\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_5}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"media_type\": \"CAROUSEL\",\n        \"children\": \"{CHILD_1},{CHILD_2},{CHILD_3},{CHILD_4},{CHILD_5}\",\n        \"caption\": \"합성 데이터 · 실제 뉴스 아님\\n가상 별빛도서관, 조용한 독서 모임을 열다\\nhttps://example.invalid/library\\n가상 초록작업실, 종이 재사용 실험을 시작하다\\nhttps://example.invalid/paper\\n가상 달빛마을, 산책 지도를 함께 그리다\\nhttps://example.invalid/walk\",\n        \"is_ai_generated\": \"false\"\n      },\n      \"save_as\": \"CAROUSEL\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CAROUSEL}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"게시\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish\",\n      \"params\": {\n        \"creation_id\": \"{CAROUSEL}\"\n      },\n      \"save_as\": \"CAROUSEL_MEDIA\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"media_type\": \"REELS\",\n        \"video_url\": \"https://example.invalid/output/reel.mp4\",\n        \"caption\": \"합성 데이터 · 실제 뉴스 아님\\n가상 별빛도서관, 조용한 독서 모임을 열다\\nhttps://example.invalid/library\\n가상 초록작업실, 종이 재사용 실험을 시작하다\\nhttps://example.invalid/paper\\n가상 달빛마을, 산책 지도를 함께 그리다\\nhttps://example.invalid/walk\",\n        \"is_ai_generated\": \"false\"\n      },\n      \"save_as\": \"REEL\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{REEL}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"게시\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish\",\n      \"params\": {\n        \"creation_id\": \"{REEL}\"\n      },\n      \"save_as\": \"REEL_MEDIA\"\n    }\n  ]\n}\n",
+      "expected": "\"mode\": \"dry-run\""
+    },
+    {
+      "command": "<KIT>/.venv/bin/python publish.py output/first-post",
+      "returncode": 0,
+      "output": "{\n  \"mode\": \"dry-run\",\n  \"login\": \"Instagram Login\",\n  \"authorization\": \"Bearer <REDACTED>\",\n  \"requests\": [\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-01.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_1\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_1}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-02.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_2\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_2}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-03.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_3\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_3}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-04.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_4\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_4}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"image_url\": \"https://example.invalid/output/cards/card-05.jpg\",\n        \"is_carousel_item\": \"true\"\n      },\n      \"save_as\": \"CHILD_5\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CHILD_5}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"media_type\": \"CAROUSEL\",\n        \"children\": \"{CHILD_1},{CHILD_2},{CHILD_3},{CHILD_4},{CHILD_5}\",\n        \"caption\": \"합성 데이터 · 실제 뉴스 아님\\n가상 별빛도서관, 조용한 독서 모임을 열다\\nhttps://example.invalid/library\\n가상 초록작업실, 종이 재사용 실험을 시작하다\\nhttps://example.invalid/paper\\n가상 달빛마을, 산책 지도를 함께 그리다\\nhttps://example.invalid/walk\",\n        \"is_ai_generated\": \"false\"\n      },\n      \"save_as\": \"CAROUSEL\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{CAROUSEL}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"게시\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish\",\n      \"params\": {\n        \"creation_id\": \"{CAROUSEL}\"\n      },\n      \"save_as\": \"CAROUSEL_MEDIA\"\n    },\n    {\n      \"step\": \"컨테이너 생성\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media\",\n      \"params\": {\n        \"media_type\": \"REELS\",\n        \"video_url\": \"https://example.invalid/output/reel.mp4\",\n        \"caption\": \"합성 데이터 · 실제 뉴스 아님\\n가상 별빛도서관, 조용한 독서 모임을 열다\\nhttps://example.invalid/library\\n가상 초록작업실, 종이 재사용 실험을 시작하다\\nhttps://example.invalid/paper\\n가상 달빛마을, 산책 지도를 함께 그리다\\nhttps://example.invalid/walk\",\n        \"is_ai_generated\": \"false\"\n      },\n      \"save_as\": \"REEL\"\n    },\n    {\n      \"step\": \"상태 확인\",\n      \"method\": \"GET\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/{REEL}\",\n      \"params\": {\n        \"fields\": \"status_code\"\n      },\n      \"until\": \"FINISHED\"\n    },\n    {\n      \"step\": \"게시\",\n      \"method\": \"POST\",\n      \"endpoint\": \"https://graph.instagram.com/v26.0/<IG_USER_ID>/media_publish\",\n      \"params\": {\n        \"creation_id\": \"{REEL}\"\n      },\n      \"save_as\": \"REEL_MEDIA\"\n    }\n  ]\n}\n",
+      "expected": "\"mode\": \"dry-run\""
+    },
+    {
+      "command": "<KIT>/.venv/bin/python prepare_hosting.py output/first-post --dest hosting/first-post",
+      "returncode": 0,
+      "output": "공개 준비 완료: 6개 JPEG/MP4 → <KIT>/hosting/first-post\n작은 비민감 교육 실습용입니다. 합성 자료를 실제 뉴스로 게시하지 마세요.\n1. 본인 GitHub의 별도 공개 저장소에서 Add file > Upload files를 엽니다.\n2. 이 폴더 안 cards 폴더와 reel.mp4를 함께 드래그 앤 드롭하고 Commit changes로 저장합니다.\n3. Settings > Pages > Build and deployment > Source: Deploy from a branch에서 branch와 /(root)를 선택합니다.\n4. 배포 완료 후 로그인하지 않은 창에서 파일 자체가 열리는지 확인합니다.\n기본 URL 규칙: https://사용자.github.io/저장소 (하위 폴더에 올렸다면 그 경로까지)\n파일 URL: <기본 URL>/cards/card-01.jpg 및 <기본 URL>/reel.mp4\n미리보기: python publish.py \"<KIT>/output/first-post\" --base-url \"<기본 URL>\"\n실제 2개 게시 시도: python publish.py \"<KIT>/output/first-post\" --live --base-url \"<기본 URL>\"\n.env·토큰·검수/설정 파일은 복사하지 않습니다. Pages 이용정책·Meta 파일 수신은 별도 확인하세요.\n",
+      "expected": "공개 준비 완료: 6개 JPEG/MP4"
+    },
+    {
+      "command": "<KIT>/.venv/bin/python run_pipeline.py --offline --feed my-feed.xml --output output/my-news",
+      "returncode": 0,
+      "output": "검수 대기: <KIT>/output/my-news/REVIEW.md\n",
+      "expected": "검수 대기:"
+    },
+    {
+      "check": "출력·해시",
+      "copy_sha256": "6d7178a407e89222cfbd2112e7dcd5c18ad5b5260460e81a9364d2b3e92335e8",
+      "cards": 5,
+      "mp4_bytes": 1233809,
+      "network_after_install": "blocked"
+    }
+  ]
+}

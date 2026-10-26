@@ -288,3 +288,47 @@ input[type='checkbox'] { width: 19px; height: 19px; flex-shrink: 0; margin-top: 
 .sim-embed .book-layout{display:block;max-width:760px;padding:0 10px}.sim-embed .chapter{padding-top:0}.sim-embed .chapter-block{padding-top:20px}.sim-embed body{min-height:0}.sim-embed .term-tip{display:none}.sim-embed{scroll-behavior:auto;scroll-padding-top:0}
 @media(max-width:680px){.appendix-main{padding:32px 22px 0}.glossary-grid,.month-grid,.sample-grid{grid-template-columns:1fr}.source-meta{grid-template-columns:1fr}.lab-stage{padding:8px}.filter-row{flex-direction:column}}
 @media print{.filter-row,.lab-stage{display:none}.glossary-grid{display:block}.glossary-entry{break-inside:avoid;margin:12px 0}}
+
+/* Phase 7w: 두 트랙과 실습 공통 단계. 앱 화면의 실제 배치를 모방하지 않는다. */
+.toc-track { margin-top: 42px; }
+.menu-panel section h3 { font-size: 15px; margin: 16px 0 8px; }
+.menu-panel section ol { margin: 0; }
+.sidebar-chapters section h3 { font-size: 13px; margin: 20px 0 8px; }
+.practice-meta { margin: 24px 0; background: var(--soft); border-radius: 12px; padding: 20px; }
+.practice-meta div + div { margin-top: 12px; }
+.practice-meta dt { font-size: 13px; color: var(--muted); }
+.practice-meta dd { margin-left: 0; }
+.practice-figure { padding: 20px 0; margin-bottom: 28px; }
+.practice-figure img { width: 100%; max-width: 400px; margin-inline: auto; height: auto; display: block; border-radius: 14px; }
+.practice-figure figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); }
+.practice-step { counter-reset: none; }
+.practice-step h2 { font-size: 1.65rem; }
+.practice-step h3 { margin-bottom: 8px; font-size: 1rem; }
+.practice-step h4 { margin: 0 0 10px; font-size: 15px; }
+.practice-now, .practice-why, .practice-follow, .practice-errors { margin: 24px 0; }
+.practice-follow li, .practice-errors li { margin-bottom: 12px; }
+.practice-success { margin: 24px 0; background: var(--soft); border-left: 4px solid var(--accent); border-radius: 8px; padding: 20px; }
+.practice-success p, .menu-unverified p:last-child { margin-bottom: 0; }
+.menu-unverified { padding: 18px; background: var(--warm); border: 1px dashed var(--orange); border-radius: 10px; margin: 20px 0; }
+.practice-box { padding: 22px; margin: 24px 0; border: 1px solid var(--line); border-radius: 12px; }
+.practice-box h2 { font-size: 1.35rem; }
+.os-tabs { margin: 24px 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.os-tabs [data-tab-list] { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px; border-bottom: 1px solid var(--line); }
+.os-tabs [aria-selected='true'] { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+.os-tabs [data-os-panel] { padding: 20px; }
+.os-tabs .code-box { margin: 14px 0 0; }
+.practice-check, .e2e-item label { display: flex; align-items: baseline; gap: 12px; cursor: pointer; }
+.practice-check { padding: 14px; background: var(--soft); border-radius: 10px; }
+.practice-check input, .e2e-item input { flex-shrink: 0; width: 20px; height: 20px; accent-color: var(--accent); }
+.practice-storage { font-size: 14px; color: var(--muted); }
+.e2e-item { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.e2e-item a { display: inline-block; margin-left: 32px; font-size: 14px; }
+.practice-main progress { width: 100%; accent-color: var(--accent); }
+.practice-celebrate { padding: 26px; border: 2px solid var(--accent); background: var(--soft); border-radius: 16px; margin: 40px 0; }
+.practice-celebrate input { display: block; width: 100%; min-width: 0; padding: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; margin: 12px 0; }
+@media (max-width: 600px) {
+  .practice-step h2 { font-size: 1.4rem; }
+  .practice-success, .menu-unverified, .practice-box, .practice-celebrate { padding: 16px; }
+  .os-tabs [data-os-panel] { padding: 14px; }
+}
+@media print { .os-tabs [data-os-panel][hidden] { display: block !important; } }

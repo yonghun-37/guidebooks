@@ -10,11 +10,11 @@ Python으로 **합성 RSS → 문안 초안 → 카드 5장 → 20초 릴스 →
 
 | 운영체제 | 터미널 여는 법 | Python 확인 |
 |---|---|---|
-| Windows | 시작 메뉴 → **명령 프롬프트(cmd)** 검색 → 실행 | `py -3.11 --version` |
+| Windows | 시작 메뉴 → **PowerShell** 검색 → 실행 | `py -3.11 --version` |
 | macOS | Spotlight(⌘+Space) → **터미널** 검색 → 실행 | `python3 --version` |
 | Linux | 앱 메뉴의 **터미널** 또는 Ctrl+Alt+T | `python3 --version` |
 
-**Python 3.11 이상**이 필요합니다. 없거나 낮은 버전이면 [Python 공식 다운로드](https://www.python.org/downloads/)에서 설치하세요. Windows 설치 화면에서는 PATH 추가를 선택하세요. Linux는 배포판의 Python/venv 설치 안내를 따르세요. 이 키트는 시스템 패키지를 자동 설치하지 않습니다. Windows에서 3.12 이상을 설치했다면 아래 `py -3.11`을 해당 버전(예: `py -3.12`)으로 바꾸세요.
+**Python 3.11 이상**이 필요합니다. 없거나 낮은 버전이면 [Python 공식 다운로드](https://www.python.org/downloads/)에서 설치하세요. Windows 설치 화면에서는 **Add python.exe to PATH** 항목이 있으면 선택하세요. 설치 확인 명령에서 Microsoft Store만 열린다면 실행 별칭/설치 경로를 확인하고 `py -3.11 --version`으로 다시 확인하세요. Linux는 배포판의 Python/venv 설치 안내를 따르세요. 이 키트는 시스템 패키지를 자동 설치하지 않습니다. Windows에서 3.12 이상을 설치했다면 아래 `py -3.11`을 해당 버전(예: `py -3.12`)으로 바꾸세요.
 
 [저장소](https://github.com/yonghun-37/guidebooks)의 **Code → Download ZIP**으로 받아 압축을 푸세요. 탐색기/Finder에서 `starter-kit` 폴더 위치를 확인합니다. 터미널에서 `cd `를 입력한 뒤 그 폴더의 전체 경로를 따옴표로 감싸 붙여넣으세요. 예:
 
@@ -28,13 +28,14 @@ macOS/Linux의 경로는 보통 `"/Users/내이름/Downloads/guidebooks-main/sta
 
 가상환경(`.venv`)은 이 폴더에만 프로그램을 설치하는 상자입니다. 운영체제에 맞는 명령을 **한 줄씩** 실행하세요.
 
-Windows **명령 프롬프트(cmd)**:
+Windows **PowerShell**(활성화 정책을 바꾸지 않는 경로):
 
-```bat
+```powershell
 py -3.11 -m venv .venv
-.venv\Scripts\activate.bat
-python -m pip install --cache-dir .cache/pip -r requirements.txt
+.venv\Scripts\python.exe -m pip install --cache-dir .cache/pip -r requirements.txt
 ```
+
+Windows에서는 아래 모든 `python`을 `.venv\Scripts\python.exe`로 바꿔 실행하세요. 명령 프롬프트(cmd)를 사용한다면 `.venv\Scripts\activate.bat`로 활성화한 뒤 `python`을 쓸 수도 있습니다.
 
 macOS / Linux:
 
@@ -44,7 +45,7 @@ source .venv/bin/activate
 python -m pip install --cache-dir .cache/pip -r requirements.txt
 ```
 
-창 왼쪽에 `(.venv)`가 보이면 활성화됐습니다. `python --version`으로 다시 3.11 이상인지 확인하세요. 새 터미널을 열 때는 폴더 이동과 활성화 명령을 다시 실행합니다. PowerShell 사용자는 활성화 대신 `.venv\Scripts\python.exe`를 아래 모든 `python` 자리에 써도 됩니다.
+macOS/Linux에서 창 왼쪽에 `(.venv)`가 보이면 활성화됐습니다. `python --version`으로 다시 3.11 이상인지 확인하세요. 새 터미널을 열 때는 폴더 이동과 활성화 명령을 다시 실행합니다. PowerShell 사용자는 활성화 대신 `.venv\Scripts\python.exe`를 아래 모든 `python` 자리에 써도 됩니다.
 
 **uv를 쓰는 대체 경로:** 위에서 가상환경 생성·활성화까지만 실행하고, 마지막 설치 명령 대신 아래를 실행하세요. uv도 가상환경 안에 설치합니다. pip 경로와 둘 다 할 필요는 없습니다.
 
@@ -83,6 +84,33 @@ python run_pipeline.py --offline --output output/second-practice
 
 샘플 카드에는 **합성 데이터 · 실제 뉴스 아님** 표시가 있습니다. 실제 기사·사진·음원은 동봉하지 않았습니다. 합성 피드를 실제 소식처럼 게시하지 마세요. 실습 기본 크기와 15~30초 길이는 [DESIGN.md](../docs/DESIGN.md)의 학습 목표입니다.
 
+## 실습편 2~6에서 같은 폴더 이어 쓰기
+
+사이트 실습편은 날짜 대신 고정 이름 `output/first-post`를 사용합니다. 첫 실행은 다음 한 번이며, 이미 있다면 새 이름을 정하고 뒤 명령의 경로도 함께 바꾸세요. Windows PowerShell은 아래 모든 `python`을 `.venv\Scripts\python.exe`로 바꿉니다.
+
+```bash
+python run_pipeline.py --offline --output output/first-post
+python write_copy.py output/first-post/news.json --mode prompt --template cards --output output/first-post/copy.json
+```
+
+`prompt.md`를 웹 채팅에 직접 붙여 넣거나 기존 `copy.json`을 직접 편집합니다. 채팅은 현재 JSON도 함께 제공하고 답변 전체 JSON만 저장합니다. 이후 구조 검증 → 카드·릴스 재생성 순서입니다.
+
+```bash
+python write_copy.py output/first-post/news.json --validate --output output/first-post/copy.json
+python run_pipeline.py render output/first-post
+```
+
+성공 출력은 각각 `구조 검증 OK: output/first-post/copy.json (사실 확인은 사람이 해야 합니다)`와 `검수 대기: …/output/first-post/REVIEW.md`입니다. 카드는 5장 PNG/JPEG, 기본 릴스는 20초·무음·자막입니다. 선택 녹음은 현재 출력 폴더 `config.json`의 reel.narration에 본인 mp3/wav 경로를 입력하고 다시 render합니다.
+
+모든 파일과 REVIEW.md의 여섯 항목을 **사람이 확인·저장한 다음에만** 아래를 실행합니다.
+
+```bash
+python run_pipeline.py approve output/first-post
+python publish.py output/first-post
+```
+
+두 명령은 `"mode": "dry-run"`을 출력하며 실제 게시하지 않습니다. `APPROVED.json`과 `dry-run.json`이 생깁니다. 합성 연습 다음에 본인 자료로 바꿀 때는 이용 조건을 확인한 로컬 RSS를 `my-feed.xml`로 준비하고 `python run_pipeline.py --offline --feed my-feed.xml --output output/my-news`로 새 실행을 만듭니다. 사이트 실습 3의 XML 입력 예시를 따르고 이후 모든 경로를 `output/my-news`로 바꿉니다. 합성 파일의 synthetic 값만 바꿔 실제 자료라고 표시하지 마세요.
+
 ## 4. 사람이 확인하고 approve 실행
 
 `REVIEW.md`에 있는 여섯 항목을 확인합니다. 모든 PNG/JPEG와 릴스를 직접 열어 보고, 완료한 항목을 `- [ ]`에서 `- [x]`로 고쳐 저장하세요. 다음 명령의 폴더를 **본인의 출력 폴더**로 바꿉니다.
@@ -91,7 +119,7 @@ python run_pipeline.py --offline --output output/second-practice
 python run_pipeline.py approve output/2026-10-26
 ```
 
-`APPROVED.json`에 승인 시점과 파일 해시를 저장하고, **캐러셀과 릴스의 드라이런**을 출력합니다. `dry-run.json`에도 같은 내용을 보관합니다. 각 미디어의 **컨테이너 생성 → FINISHED 상태 확인 → 게시** 순서와 엔드포인트·파라미터를 보여 줍니다. 캐러셀은 자식 JPEG들의 생성·확인을 먼저 보여 줍니다. `<API_VERSION>`, `<IG_USER_ID>`, `{CHILD_1}` 등은 예시 자리표시자입니다. 토큰은 출력하지 않습니다.
+`APPROVED.json`에 승인 시점과 파일 해시를 저장하고, **캐러셀과 릴스의 드라이런**을 출력합니다. `dry-run.json`에도 같은 내용을 보관합니다. 각 미디어의 **컨테이너 생성 → FINISHED 상태 확인 → 게시** 순서와 엔드포인트·파라미터를 보여 줍니다. 캐러셀은 자식 JPEG들의 생성·확인을 먼저 보여 줍니다. `v26.0`(기본 설정값), `<IG_USER_ID>`, `{CHILD_1}` 등은 예시 자리표시자입니다. 토큰은 출력하지 않습니다.
 
 승인 후 드라이런만 다시 보고 싶으면:
 
@@ -178,7 +206,7 @@ python run_pipeline.py render output/web-chat
 
 **api: 선택한 OpenAI 호환 엔드포인트.** 기본 비활성이며 `--mode api --allow-api`를 모두 지정해야 요청합니다. SDK 추가 설치 없이 `POST /chat/completions`의 model/messages와 choices/message/content JSON 형식을 사용합니다. 모델명은 하드코딩하지 않습니다. 키만 설정해도 호출되지는 않습니다. 이 연결 형식은 [공식 OpenAI 문서](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create)를 확인했으며, 호환 서비스별 지원·가격·품질을 검증한 것은 아닙니다. 이 작업의 테스트는 **모킹만** 사용했습니다.
 
-본인 운영체제에서 `LLM_BASE_URL`(예: 선택한 서버의 HTTPS `/v1` 주소), `LLM_API_KEY`, `LLM_MODEL` 환경변수를 설정하세요. 실제 키는 코드·설정·명령 예시·Git에 적지 않습니다. `.env`는 자동으로 읽지 않습니다. 유료 서비스일 수 있으므로 공급자의 이용 조건과 비용을 확인한 경우에만 실행하세요. 이번 작업에서는 키를 사용하거나 결제하지 않았습니다.
+본인 운영체제에서 `LLM_BASE_URL`(예: 선택한 서버의 HTTPS `/v1` 주소), `LLM_API_KEY`, `LLM_MODEL` 환경변수를 설정하세요. 실제 키는 코드·설정·명령 예시·Git에 적지 않습니다. 이 LLM 연결은 `.env`를 자동으로 읽지 않습니다(Instagram 게시 연결의 `.env` 지원은 6절). 유료 서비스일 수 있으므로 공급자의 이용 조건과 비용을 확인한 경우에만 실행하세요. 이번 작업에서는 키를 사용하거나 결제하지 않았습니다.
 
 ```bash
 python write_copy.py output/manual/news.json --mode api --allow-api --output output/manual/copy.json
@@ -215,9 +243,36 @@ reel:
 
 **2026년 10월 조사 기준.** 이 예제는 [Instagram Login 경로](../research/graph-api-publishing.md)(API-01·06·08·12)를 사용합니다. 프로페셔널 계정·권한·앱 설정은 별도 준비가 필요합니다. PNG는 직접 보내지 않고 JPEG를 사용합니다. 서버가 읽을 수 있는 공개 미디어 URL도 필요합니다. 토큰 발급·로그인·웹 호스팅·예약 실행은 이 키트가 대신하지 않습니다.
 
-실제 게시 코드는 `publish.py`의 `--live`와 환경변수 `IG_ACCESS_TOKEN`·`IG_USER_ID`·`IG_API_VERSION`, 실제 HTTPS `--public-base-url`이 모두 갖춰져야 작동합니다. 환경변수만 있어도 기본 실행은 계속 드라이런입니다. `approve` 명령은 항상 드라이런입니다. 이 Phase에서는 실제 계정 로그인·게시·유료 API를 실행하지 않았습니다. 합성 샘플은 live 경로에서 거부합니다.
+`publish.py`는 **이미지와 동영상 모두 공개 URL**을 쓰는 Instagram Login 경로입니다(PRAC-08·09). Facebook Login의 resumable 경로를 이 키트에 적용하지 않습니다. 다음은 선택 심화 경로이며 앱 첫 게시에는 필요 없습니다.
 
-실사용 전에는 `python publish.py --help`와 공식 문서를 확인하고, 본인 호스팅 폴더에 `cards/*.jpg`와 `reel.mp4`를 올려야 합니다. `--public-base-url`은 **그 출력 폴더의 URL**입니다. 액세스 토큰을 코드·설정·명령 인자·Git·스크린샷에 넣지 마세요. `.env`를 자동으로 읽지 않습니다. 필요한 환경변수는 본인의 운영체제에서 별도로 설정해야 합니다.
+1. 실제 자료를 직접 검수·승인하세요. 합성 샘플은 live에서 거부됩니다.
+2. `.env.example`을 `starter-kit/.env`로 복사합니다. `IG_ACCESS_TOKEN`, 숫자 `IG_USER_ID`를 로컬 편집기로 입력합니다. 토큰은 API에 접근할 권한을 담은 비밀 문자열입니다. 이 파일은 Git에서 제외되며 **publish만** 읽습니다. 환경변수가 같은 이름의 값보다 우선합니다. LLM 연결의 .env 지원을 뜻하지 않습니다.
+3. `IG_API_VERSION` 기본은 **v26.0**(2026-07-29 출시, PRAC-01)입니다. `.env` 또는 환경변수로 바꿀 수 있습니다. 기본 드라이런에도 이 버전을 표시합니다. `--live`를 명시하지 않으면 네트워크를 호출하지 않습니다. `approve`는 언제나 드라이런입니다.
+4. 아래 명령으로 승인된 JPEG/MP4만 별도 새 폴더에 준비합니다. 명령은 복사와 안내 출력만 하며 업로드하지 않습니다.
+
+```bash
+python prepare_hosting.py output/2026-10-26 --dest hosting/first-post
+```
+
+성공 출력은 `공개 준비 완료: 6개 JPEG/MP4 → ...`입니다(기본 카드 5장일 때). `.env`·설정·검수표는 복사하지 않으며, 변경된 승인 파일·기존 대상 폴더·웹 업로드 제한 초과는 거부합니다.
+
+5. **본인의 별도 공개 GitHub 저장소**에서 **Add file → Upload files**를 엽니다. `hosting/first-post` 안의 **cards 폴더와 reel.mp4**를 함께 드래그 앤 드롭하고 **Commit changes**로 저장합니다. 상위 `first-post` 폴더 전체를 올렸다면 URL에도 `/first-post`가 들어갑니다. **Settings → Pages → Build and deployment → Source: Deploy from a branch**에서 branch와 `/(root)`를 선택합니다(PRAC-14·15).
+6. 배포가 끝나면 `https://사용자.github.io/저장소/cards/card-01.jpg`와 `/reel.mp4`가 로그인 없는 창에서 파일 자체로 열리는지 확인합니다. HTML 미리보기·Drive 공유 링크는 사용할 수 없습니다. HTTP 응답/MIME와 실제 파일을 확인해도 Meta 수신 성공을 보장하지는 않습니다. GitHub 웹 업로드는 파일당 **25MiB**이며 Pages는 작은 비민감 교육 실습용 후보입니다. 사업 운영용 무료 호스팅 이용 제한이 있으므로 운영 CDN의 포괄 권장으로 읽지 마세요(PRAC-14·15).
+7. 먼저 드라이런으로 파일 경로를 확인합니다. `<URL>`은 `cards/`와 `reel.mp4`가 바로 아래에 있는 **HTTPS 폴더 주소**입니다. 따옴표 안 값을 본인 주소로 바꿉니다.
+
+```text
+python publish.py output/2026-10-26 --base-url "<URL>"
+```
+
+본인 실제 자료·계정·권한·라벨·공개 파일을 모두 확인한 경우에만 아래 명령을 선택합니다. 이 프로젝트 작업자는 이 명령을 실행하지 않았습니다. 기존 `--public-base-url`도 같은 인자로 유지합니다.
+
+```text
+python publish.py output/2026-10-26 --live --base-url "<URL>"
+```
+
+**토큰 만료와 갱신:** 대시보드 **Generate token**은 60일 장기 토큰이고 OAuth 토큰은 1시간 단기입니다(PRAC-06). 장기 토큰은 발급 후 24시간 이상 지났고 만료 전일 때 `GET https://graph.instagram.com/refresh_access_token`에 `grant_type=ig_refresh_token`, `access_token`을 전달해 다시 60일 갱신할 수 있습니다(PRAC-07). 비공개 실행 환경에서 공식 [Instagram Login 문서](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/business-login/)에 따라 갱신하고 반환된 토큰·expires_in을 확인하세요. 만료했다면 다시 인증해야 합니다. 키트는 자동 갱신·예약·로그인·호스팅을 대신하지 않습니다. 토큰·시크릿을 셸 기록·공개 Git·스크린샷·AI 채팅에 남기지 마세요.
+
+자기 소유 계정 Standard Access 검수 면제와 개발 모드의 일반 독자 공개는 별개입니다. 공통 App Modes와 앱 생성 문서에 범위 차이가 있어, 개발 모드 게시 성공이나 일반 공개를 보장하지 않습니다(PRAC-02·03). 권한은 `instagram_business_basic`, `instagram_business_content_publish`이며 Facebook 페이지 연결이 필수인 다른 로그인 경로와 구분하세요.
 
 live는 캐러셀과 릴스를 각각 게시하므로 총 2개 게시물입니다. 실행 시작부터 `LIVE_ATTEMPT.json`을 남기며 같은 폴더의 재실행을 막습니다. 중간 실패나 응답 유실 시 일부가 이미 게시됐을 수 있습니다. 자동 복구는 없으므로 대시보드에서 확인해야 합니다. 파일을 무작정 지우고 재실행하면 중복될 수 있습니다. 실제 API 경로의 동작과 한국 계정 게시 성공은 검증하지 않았습니다.
 
