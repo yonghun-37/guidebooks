@@ -123,3 +123,10 @@ cd /home/yonghun/project/hermes-research && timeout 900 docker compose exec -T -
 - 설계: docs/DESIGN-baby.md (10절 단계표). `site-baby/` → Pages `/baby/`, 조사 `research-baby/`(SOURCES N###, FACT-SHEET NB-), Hermes RUN baby-research-20261027.
 - N2 조사 → N3 뼈대·샘플 → N4a/b/c 이론편 → N5 실습편·인쇄 부록 → N6 통합 → N7 독립 검토(초보 부모 + 건강 정보 안전) → N8 수정·게이트.
 - DESIGN-baby.md 8절(건강 정보 안전 규칙)이 STYLE-GUIDE보다 우선한다.
+
+## Phase BX. 블로그 심화편: 육아·교육 블로그 코드 운영 (사용자 요청 2026-10-27)
+
+- 설계: docs/DESIGN-blog-advanced.md (7절 단계표). `site-blog/advanced/`, 키트 `blog-auto-kit/`, 조사 `research-blog-advanced/`(SOURCES BX###, FACT-SHEET BXF-), Hermes RUN blog-advanced-research-20261027.
+- BX2 조사 → BX3k 키트 → BX3 뼈대·샘플(A1·A9) → BX4a/b 집필 → BX5 통합·클린룸 재현 → BX6 독립 검토(재현 + 정책) → BX7 수정·게이트.
+- 사용자 핵심 요구: **재현 가능**(고정 버전·mock 완주·장별 체크포인트·예상 출력·클린룸 재현 스크립트)과 **가독성**(장 하나 = 결과물 하나, 코드 발췌 25줄 이하, 파일당 200줄 이하).
+- 건강 정보는 DESIGN-baby.md 8절, 협찬·제휴·아이 사생활은 DESIGN-blog-advanced.md 6절이 STYLE-GUIDE보다 우선한다.
