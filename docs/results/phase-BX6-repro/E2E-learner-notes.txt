@@ -1,0 +1,7 @@
+기본 mock 8칸 확인, 선택 경로 미실행. A4 비용 직접 확인만 차단으로 별도 기록.
+mock_normal: 2026-10-28 · mock 통과 · mock 초안·사람 승인·예약 후 고정 시계 10월 29일 공개 확인 · 증거: sequential.txt / expected-output-audit.json
+regulated_refusal: 2026-10-28 · mock 통과 · 조제유류 판매촉진 차단·사람 승인 거부·서버 글 0개 · 증거: sequential.txt / expected-output-audit.json
+missing_data: 2026-10-28 · mock 통과 · 모델·인증 자료 누락: 제품 관문 검토 대기, 서버 글 0개 · 증거: sequential.txt / expected-output-audit.json
+reapproval: 2026-10-28 · mock 통과 · HTML 수정 후 예약 거부·같은 post_id 재승인 후 예약 · 증거: sequential.txt / expected-output-audit.json
+timeout_no_duplicate: 2026-10-28 · mock 통과 · 생성 응답 유실 후 슬러그 조회 복구, 재실행해도 서버 글 1개 · 증거: sequential.txt / expected-output-audit.json
+backup_restore: 2026-10-28 · mock 통과 · SQLite 논리 데이터와 mock 미디어 바이트 복구 확인 · 증거: sequential.txt / expected-output-audit.json

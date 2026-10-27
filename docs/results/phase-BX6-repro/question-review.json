@@ -1,0 +1,704 @@
+[
+  {
+    "id": "A0-Q1",
+    "question": "아기 낮잠 시간에만 작업할 수 있는데 어디까지 코드가 하고 무엇을 제가 확인하나요?",
+    "verdict": "통과",
+    "file": "00-start.html",
+    "anchor": "answer",
+    "quote": "코드는 자료 정리·초안·검사·발행 요청을 맡고, 사람은 경험·사진·건강·계약과 최종 승인을 맡아요.",
+    "reason": "역할과 낮잠 시간의 작은 끝점을 바로 제시한다."
+  },
+  {
+    "id": "A0-Q2",
+    "question": "건강 글과 그림책 목록을 같은 방식으로 자동 발행해도 되나요?",
+    "verdict": "통과",
+    "file": "00-start.html",
+    "anchor": "automation",
+    "quote": "건강 글과 그림책 목록은 같은 방식으로 자동 발행하지 않아요.",
+    "reason": "유형별 표에서 승인 수준을 고를 수 있다."
+  },
+  {
+    "id": "A0-Q3",
+    "question": "로컬 실습만 끝내도 광고·제휴·협찬 흐름을 배울 수 있나요?",
+    "verdict": "통과",
+    "file": "00-start.html",
+    "anchor": "answer",
+    "quote": "로컬 실습으로 광고·제휴·협찬 흐름을 배우고 실제 연결은 준비 뒤에 해요.",
+    "reason": "서버 구매 질문에 곧바로 아니요라고 답한다."
+  },
+  {
+    "id": "A0-Q4",
+    "question": "한 달 호스팅·도메인·AI 비용은 각각 얼마이고 무료로 어디까지 되나요?",
+    "verdict": "통과",
+    "file": "00-start.html",
+    "anchor": "cost",
+    "quote": "mock는 외부 서비스 추가요금 0으로 완주할 수 있어요.",
+    "reason": "가격 예·갱신비·월 계산식과 견적 확인 행동을 잇는다."
+  },
+  {
+    "id": "A0-Q5",
+    "question": "글이 몇 편 있어야 광고를 신청하고 제휴·협찬은 언제 붙이나요?",
+    "verdict": "통과",
+    "file": "00-start.html",
+    "anchor": "income",
+    "quote": "광고 신청에 공통으로 정해진 최소 글 수·방문자 기준은 없어요.",
+    "reason": "학습 순서와 프로그램별 독립 준비를 바로 구별한다."
+  },
+  {
+    "id": "A0-Q6",
+    "question": "조회수가 아직 적어도 수익 계산기를 써 볼 수 있고 무엇을 직접 입력하나요?",
+    "verdict": "통과",
+    "file": "00-start.html",
+    "anchor": "income",
+    "quote": "조회수가 적어도 계산할 수 있고, 모르는 값은 빈칸으로 남겨도 돼요.",
+    "reason": "직접 채울 여섯 입력과 빈칸/0의 차이를 바로 보여 준다."
+  },
+  {
+    "id": "A1-Q1",
+    "question": "파이썬 기초만 아는데 가상환경은 왜 만들고 어느 폴더에서 명령을 치나요?",
+    "verdict": "통과",
+    "file": "01-environment.html",
+    "anchor": "start",
+    "quote": "명령은 blog.py와 course.py가 보이는 키트 폴더에서 입력해요.",
+    "reason": "가상환경의 뜻·OS별 준비·전체 폴더 이동을 제시한다."
+  },
+  {
+    "id": "A1-Q2",
+    "question": "책과 내 컴퓨터 결과가 다를 때 파이썬 버전·실행 폴더·설정 중 무엇부터 보나요?",
+    "verdict": "통과",
+    "file": "01-environment.html",
+    "anchor": "steps",
+    "quote": "먼저 Python 버전 → 현재 폴더 → 기본 설정 순서로 보세요.",
+    "reason": "진단 순서가 첫 문장이고 doctor를 실행할 수 있다."
+  },
+  {
+    "id": "A1-Q3",
+    "question": "Windows PowerShell에서 책 명령이 안 되면 macOS 명령과 무엇이 다른가요?",
+    "verdict": "통과",
+    "file": "01-environment.html",
+    "anchor": "start",
+    "quote": "PowerShell에서 활성화가 차단되면 이후 명령의 python을",
+    "reason": "OS 탭과 Python 직접 실행 대안이 있다."
+  },
+  {
+    "id": "A1-Q4",
+    "question": "Docker가 설치되지 않아도 mock 서버로 모든 장을 끝낼 수 있나요?",
+    "verdict": "통과",
+    "file": "01-environment.html",
+    "anchor": "change",
+    "quote": "Docker 없이도 mock으로 모든 장을 마칠 수 있어요.",
+    "reason": "선택 상자 첫 문장이 답이고 현재 경로를 유지할 수 있다."
+  },
+  {
+    "id": "A1-Q5",
+    "question": "포트가 이미 사용 중이거나 서버에 연결되지 않는다고 나오면 어떻게 하나요?",
+    "verdict": "부분",
+    "file": "01-environment.html",
+    "anchor": "errors",
+    "quote": "서버 연결 오류가 나면 먼저 python course.py doctor를 실행해요.",
+    "reason": "연결/권한 진단은 있으나 사용 중인 고정 포트와 임시 포트의 차이·포트 충돌의 다음 행동은 없다."
+  },
+  {
+    "id": "A1-Q6",
+    "question": "실습을 꼬이게 했는데 제 실제 글을 지우지 않고 그 장부터 다시 시작하나요?",
+    "verdict": "통과",
+    "file": "01-environment.html",
+    "anchor": "answer",
+    "quote": "별도 연습 폴더를 쓰세요.",
+    "reason": "이 문구는 대화에 있음. 복원 대상·보관·실운영 금지와 start 예가 본문에 있다."
+  },
+  {
+    "id": "A2-Q1",
+    "question": "이미 네이버 블로그가 있는데 왜 코드 실습은 설치형 WordPress로 하나요?",
+    "verdict": "통과",
+    "file": "02-wordpress.html",
+    "anchor": "server",
+    "quote": "설치형 WordPress는 글·사진·분류를 REST API로 다룰 수 있어",
+    "reason": "기존 블로그는 유지하고 별도 실습하는 이유를 바로 답한다."
+  },
+  {
+    "id": "A2-Q2",
+    "question": "WordPress.com 유료 요금제와 설치형 호스팅은 API·플러그인·광고에서 어떻게 다른가요?",
+    "verdict": "부분",
+    "file": "02-wordpress.html",
+    "anchor": "server",
+    "quote": "WordPress.com은 요금제별 플러그인·광고 허용과 서비스 전용 인증을 확인하고,",
+    "reason": "인증 경로는 대비되지만 플러그인·광고의 실제 차이는 지원팀 질문으로 남는다. 첫머리에 기능 비교 결론이 부족하다."
+  },
+  {
+    "id": "A2-Q3",
+    "question": "월 요금이 싼 호스팅을 고를 때 HTTPS·백업·복구·도메인 갱신비는 어디서 보나요?",
+    "verdict": "통과",
+    "file": "02-wordpress.html",
+    "anchor": "server",
+    "quote": "싼 호스팅은 가격보다 필요한 기능부터 진단하세요.",
+    "reason": "바로 아래 표의 업체 질문으로 HTTPS·복구·갱신 총액을 확인한다."
+  },
+  {
+    "id": "A2-Q4",
+    "question": "애플리케이션 비밀번호 메뉴가 없거나 401·403이면 누구에게 무엇을 물어보나요?",
+    "verdict": "통과",
+    "file": "02-wordpress.html",
+    "anchor": "password",
+    "quote": "앱 비밀번호는 사용자 프로필에서 만들고 본래 로그인 비밀번호와 구별해요.",
+    "reason": "메뉴 없을 때 진단 순서와 401/403별 호스팅 문의 정보가 있다."
+  },
+  {
+    "id": "A2-Q5",
+    "question": "로컬 Docker WordPress는 어떤 버전과 이미지 태그로 맞추고 실제 서버로 어떻게 옮기나요?",
+    "verdict": "부분",
+    "file": "02-wordpress.html",
+    "anchor": "password",
+    "quote": "Docker는 키트의 로컬 설치 안내로 준비해요.",
+    "reason": "태그·DB/uploads 원칙은 있지만 실제 이전 조작은 본문 밖 설치 안내와 A11 선택 과제에 나뉘어 있다."
+  },
+  {
+    "id": "A2-Q6",
+    "question": "소개·문의·광고 정책·개인정보처리방침에는 무엇을 쓰고 문의자의 정보는 얼마나 받나요?",
+    "verdict": "통과",
+    "file": "02-wordpress.html",
+    "anchor": "pages",
+    "quote": "페이지 묶음은 내 컴퓨터의 HTML 파일로 만들어져요.",
+    "reason": "네 파일별 의무/권장·연락처·이메일과 문의 내용만 수집하는 범위를 표로 제시한다."
+  },
+  {
+    "id": "A3-Q1",
+    "question": "제가 키워 본 월령 밖의 글은 쓰면 안 되고 경험과 자료 정리는 어떻게 나누나요?",
+    "verdict": "통과",
+    "file": "03-topics.html",
+    "anchor": "answer",
+    "quote": "내 경험 밖의 월령도 공식 자료를 정리할 수 있어요.",
+    "reason": "자료와 경험 칸 분리라는 행동을 다음 문장에 준다."
+  },
+  {
+    "id": "A3-Q2",
+    "question": "부모급여·아동수당 글의 금액이 바뀌면 어느 공식 자료로 고치나요?",
+    "verdict": "통과",
+    "file": "03-topics.html",
+    "anchor": "schema",
+    "quote": "부모급여·아동수당 금액이 바뀌면 관할 기관의 원문으로 갱신해요.",
+    "reason": "기관·시행일·지역·메모 갱신이 이어진다."
+  },
+  {
+    "id": "A3-Q3",
+    "question": "어린이집·육아지원센터·예방접종 일정은 무료 API나 파일로 받을 수 있나요?",
+    "verdict": "통과",
+    "file": "03-topics.html",
+    "anchor": "data",
+    "quote": "어린이집 기관 정보와 복지서비스는 무료 공개 API로 찾을 수 있어요.",
+    "reason": "CSV·주소록·API와 공개 접종 일정 파일의 역할을 구별한다."
+  },
+  {
+    "id": "A3-Q4",
+    "question": "공공누리 자료는 출처만 쓰면 상업 블로그에 사진까지 옮겨도 되나요?",
+    "verdict": "통과",
+    "file": "03-topics.html",
+    "anchor": "data",
+    "quote": "공공누리는 유형마다 상업 이용과 변경 허용이 달라요.",
+    "reason": "사진까지 복사하면 안 되는 이유와 유형별 표·기록 행동이 있다."
+  },
+  {
+    "id": "A3-Q5",
+    "question": "터미타임 같은 놀이 글도 건강·안전 글로 보고 매번 승인해야 하나요?",
+    "verdict": "통과",
+    "file": "03-topics.html",
+    "anchor": "topics",
+    "quote": "터미타임 글은 놀이로 분류해도 건강·안전 글로 검토해요.",
+    "reason": "바로 다음에 play는 항상 사람 승인이라고 답한다."
+  },
+  {
+    "id": "A3-Q6",
+    "question": "같은 주제를 월령만 바꿔 여러 편 만들면 중복이나 검색 스팸이 되나요?",
+    "verdict": "통과",
+    "file": "03-topics.html",
+    "anchor": "change",
+    "quote": "월령만 바꾼 비슷한 글을 늘리는 방법은 피하세요.",
+    "reason": "추가 가치가 없으면 기존 글 수정이라는 행동까지 제시한다."
+  },
+  {
+    "id": "A4-Q1",
+    "question": "ChatGPT 구독이 있는데 API 비용도 포함되고 무료 키가 꼭 필요한가요?",
+    "verdict": "통과",
+    "file": "04-drafts.html",
+    "anchor": "answer",
+    "quote": "유료 API 키 없이 mock 초안을 만들 수 있어요.",
+    "reason": "구독과 API 비용은 별도라고 바로 답한다."
+  },
+  {
+    "id": "A4-Q2",
+    "question": "JSON 초안은 일반 답변과 무엇이 다르고 구조화 출력의 정확한 기능 이름은 뭔가요?",
+    "verdict": "통과",
+    "file": "04-drafts.html",
+    "anchor": "draft",
+    "quote": "일반 답변과 JSON 초안의 차이는 검사할 칸이 정해져 있다는 점이에요.",
+    "reason": "Structured Outputs와 text.format 예를 이어 준다."
+  },
+  {
+    "id": "A4-Q3",
+    "question": "AI가 제가 써 봤다거나 아기가 좋아했다는 경험을 지어내지 않게 하려면요?",
+    "verdict": "통과",
+    "file": "04-drafts.html",
+    "anchor": "experience",
+    "quote": "“직접 써 봤다”는 문장은 사람이 겪은 내용을 직접 넣어야 해요.",
+    "reason": "날짜·조건·좋고 나쁜 점, human 표시와 빈칸 행동이 있다."
+  },
+  {
+    "id": "A4-Q4",
+    "question": "입력·출력 토큰으로 한 편과 한 달 비용은 어떻게 계산하나요?",
+    "verdict": "통과",
+    "file": "04-drafts.html",
+    "anchor": "experience",
+    "quote": "한 편의 토큰 비용은 입력 비용과 출력 비용을 더해요.",
+    "reason": "토큰 정의·편당 식·30회 계산 예가 있다."
+  },
+  {
+    "id": "A4-Q5",
+    "question": "모델 이름이 책과 다르거나 종료됐다고 하면 어디서 현재 모델을 확인하나요?",
+    "verdict": "통과",
+    "file": "04-drafts.html",
+    "anchor": "experience",
+    "quote": "모델 이름이 없거나 종료 오류가 나면 공급자의 모델 목록·지원 종료 안내에서 현재 ID와 종료일을 확인하세요.",
+    "reason": "확인 위치와 가격/구조화 출력 대조를 준다."
+  },
+  {
+    "id": "A4-Q6",
+    "question": "지출 한도와 알림을 어디서 설정하고 재시도까지 합쳐 과금을 막을 수 있나요?",
+    "verdict": "부분",
+    "file": "04-drafts.html",
+    "anchor": "experience",
+    "quote": "지출 알림과 강제 한도를 함께 확인하세요.",
+    "reason": "어디서 설정하는지인 메뉴 위치는 뒤 확인할 점에 떨어져 있고 비용 예약 기록을 읽는 절차도 없다."
+  },
+  {
+    "id": "A5-Q1",
+    "question": "관문 통과라고 뜨면 발열·수면 글도 바로 공개해도 되나요?",
+    "verdict": "통과",
+    "file": "05-gates.html",
+    "anchor": "answer",
+    "quote": "관문 통과는 자동 검사 결과예요.",
+    "reason": "건강 글 등은 최종 사람 승인 후 발행한다고 바로 답한다."
+  },
+  {
+    "id": "A5-Q2",
+    "question": "아기 얼굴을 가렸는데 이름·생일·어린이집·사진 위치정보도 검사하나요?",
+    "verdict": "통과",
+    "file": "05-gates.html",
+    "anchor": "review",
+    "quote": "얼굴을 가렸어도 실명·정확한 생일·어린이집·병원·생활 위치와 사진 메타데이터를 확인해요.",
+    "reason": "EXIF 뜻과 제거 뒤 재확인, 배경은 사람 확인이라고 구별한다."
+  },
+  {
+    "id": "A5-Q3",
+    "question": "약 이름·용량·집에서 지켜보라는 문장을 발견하면 코드는 어떤 상태로 멈추나요?",
+    "verdict": "통과",
+    "file": "05-gates.html",
+    "anchor": "review",
+    "quote": "약 이름·용량이나 “집에서 지켜봐도 된다”는 판정이 있으면 차단해요.",
+    "reason": "문장 제거와 근거/월령 재검사를 바로 지시한다."
+  },
+  {
+    "id": "A5-Q4",
+    "question": "협찬 표시가 글 맨 끝이나 더보기 안에 있으면 왜 막나요?",
+    "verdict": "통과",
+    "file": "05-gates.html",
+    "anchor": "review",
+    "quote": "협찬 표시를 글 끝이나 더보기 안에만 두면 첫부분에서 관계를 알아볼 수 없어 막혀요.",
+    "reason": "첫 문장에 이유, 이어서 올바른 위치를 준다."
+  },
+  {
+    "id": "A5-Q5",
+    "question": "KC 번호나 광고 심의 자료가 없는 제품 글은 보류인가요 거절인가요?",
+    "verdict": "통과",
+    "file": "05-gates.html",
+    "anchor": "decision",
+    "quote": "법적 금지, 프로젝트 거절, 자료 보류는 해결 방법이 달라요.",
+    "reason": "품목별 예와 자료 요청/재검사로 단일 KC 판정을 피하게 한다."
+  },
+  {
+    "id": "A5-Q6",
+    "question": "중복 글이나 근거 없는 효능 표현을 걸러도 제가 추가로 확인할 것은 뭔가요?",
+    "verdict": "통과",
+    "file": "05-gates.html",
+    "anchor": "review",
+    "quote": "중복·효능 표현 검사를 통과해도 원문 사실과 사진 맥락은 사람이 확인해요.",
+    "reason": "유사문서·숫자·허가 밖 효능·경험을 다시 읽게 한다."
+  },
+  {
+    "id": "A6-Q1",
+    "question": "파이썬에서 WordPress 초안·글·이미지·카테고리·태그를 어떤 순서로 올리나요?",
+    "verdict": "통과",
+    "file": "06-publish.html",
+    "anchor": "answer",
+    "quote": "분류·이미지 ID 준비 → 서버 초안 → 최종본 승인 → 예약 → 서버 상태 재조회 순서예요.",
+    "reason": "순서와 요청 ID 그림이 일치한다."
+  },
+  {
+    "id": "A6-Q2",
+    "question": "초안은 성공했는데 이미지 업로드는 실패하면 글을 다시 만들어야 하나요?",
+    "verdict": "통과",
+    "file": "06-publish.html",
+    "anchor": "prepare",
+    "quote": "이미지 업로드에 실패해도 이미 만든 글을 새로 생성하지 마세요.",
+    "reason": "기존 글 번호를 보존하고 목록/기록부터 조회하게 한다."
+  },
+  {
+    "id": "A6-Q3",
+    "question": "예약 status=future와 한국 시간은 어떻게 맞추고 정각에 꼭 올라가나요?",
+    "verdict": "통과",
+    "file": "06-publish.html",
+    "anchor": "schedule",
+    "quote": "실제 예약은 정각 공개를 보장하지 않아요.",
+    "reason": "한국 시간대·date/date_gmt·WP-Cron·publish 재조회를 제시한다."
+  },
+  {
+    "id": "A6-Q4",
+    "question": "요청이 시간 초과돼 다시 누르면 글이 두 번 올라가지 않게 어떻게 하나요?",
+    "verdict": "통과",
+    "file": "06-publish.html",
+    "anchor": "answer",
+    "quote": "시간 초과 때는 새 글을 만들기 전에 기존 결과부터 조회해요.",
+    "reason": "오류 표가 post_id/slug로 조회하고 POST 반복 금지를 잇는다."
+  },
+  {
+    "id": "A6-Q5",
+    "question": "승인 뒤 문구나 사진을 고쳤으면 이전 승인으로 예약 발행해도 되나요?",
+    "verdict": "통과",
+    "file": "06-publish.html",
+    "anchor": "approve",
+    "quote": "사람 승인은 지금 준비한 최종본에만 유효해요.",
+    "reason": "변경 실습에서 거부를 확인하고 prepare→재승인을 실행한다."
+  },
+  {
+    "id": "A6-Q6",
+    "question": "Blogger는 API 키만 있으면 쓰나요 OAuth·쿼터·애드센스 연결은 어떻게 다른가요?",
+    "verdict": "부분",
+    "file": "06-publish.html",
+    "anchor": "errors",
+    "quote": "Blogger 글쓰기는 API 키만으로 되지 않아요.",
+    "reason": "OAuth·초안/예약·광고 연결은 구별하나 쿼터 확인은 끝 확인할 점으로 넘기며 구체 확인 항목/단위가 없다."
+  },
+  {
+    "id": "A7-Q1",
+    "question": "애드센스는 글 수·방문자·블로그 나이·도메인에 공식 최소 조건이 있나요?",
+    "verdict": "통과",
+    "file": "07-ads.html",
+    "anchor": "answer",
+    "quote": "애드센스는 글 개수를 채워 받는 광고가 아니에요.",
+    "reason": "글 수/방문자/운영일 공통 숫자가 없고 HTML 관리권을 확인하게 한다."
+  },
+  {
+    "id": "A7-Q2",
+    "question": "광고 승인 거절 사유가 가치가 낮은 콘텐츠라면 무엇부터 고치고 어디서 이유를 보나요?",
+    "verdict": "통과",
+    "file": "07-ads.html",
+    "anchor": "steps",
+    "quote": "가치가 낮다는 거절을 받으면 기존 사이트의 거절 사유부터 읽어요.",
+    "reason": "메일·사이트/정책센터와 그림책 글을 고치는 예가 있다."
+  },
+  {
+    "id": "A7-Q3",
+    "question": "개인정보처리방침 말고 소개·문의 페이지도 공식 필수 조건인가요?",
+    "verdict": "통과",
+    "file": "07-ads.html",
+    "anchor": "summary",
+    "quote": "개인정보 고지 의무와 운영 권장 페이지를 구별해요.",
+    "reason": "FAQ 바로 다음에 소개/문의는 권장이라고 답하고 A2 재검토를 지시한다."
+  },
+  {
+    "id": "A7-Q4",
+    "question": "광고는 몇 개까지 어디에 붙이고 버튼 옆·화면을 덮는 위치는 왜 위험한가요?",
+    "verdict": "통과",
+    "file": "07-ads.html",
+    "anchor": "steps",
+    "quote": "안전한 광고 개수 하나가 정해져 있지는 않아요.",
+    "reason": "오클릭·가림 금지와 위치 그림·설정 실습이 있다."
+  },
+  {
+    "id": "A7-Q5",
+    "question": "부모가 읽는 육아 글과 아동 대상 글은 다르고 맞춤 광고·동의 배너는 어떻게 정하나요?",
+    "verdict": "통과",
+    "file": "07-ads.html",
+    "anchor": "steps",
+    "quote": "부모가 읽는 육아 글이라는 이유만으로 아동 대상 사이트가 되지는 않아요.",
+    "reason": "이용자/정보 수집 판단·아동 처리·지역별 CMP를 따로 보게 한다."
+  },
+  {
+    "id": "A7-Q6",
+    "question": "ads.txt·민감한 광고 차단·수익 보고 API를 붙이고 애드핏 등 다른 광고도 쓸 수 있나요?",
+    "verdict": "통과",
+    "file": "07-ads.html",
+    "anchor": "summary",
+    "quote": "각각 준비와 확인 경로가 있어요.",
+    "reason": "FAQ와 본문에서 계정 행·차단 메뉴·OAuth·AdFit 문의를 각각 제시한다."
+  },
+  {
+    "id": "A8-Q1",
+    "question": "쿠팡 파트너스 가입·최종 승인과 Open API 키 발급은 같은 조건인가요?",
+    "verdict": "통과",
+    "file": "08-affiliate.html",
+    "anchor": "answer",
+    "quote": "가입, 최종 채널 심사, API 이용 자격을 따로 확인하세요.",
+    "reason": "이어지는 단계표에 15만 원은 최종 검토 시작 기준이라고 구별한다."
+  },
+  {
+    "id": "A8-Q2",
+    "question": "API 실적 요건·호출 한도를 못 채우면 검색·딥링크 대신 수동 링크로 연습하나요?",
+    "verdict": "통과",
+    "file": "08-affiliate.html",
+    "anchor": "answer",
+    "quote": "API 키가 없어도 등록부·관계 표시·링크 검사를 끝낼 수 있어요.",
+    "reason": "수동 링크·가격 미표시·mock 명령을 그대로 실행할 수 있다."
+  },
+  {
+    "id": "A8-Q3",
+    "question": "쿠팡 의무 대가성 문구는 정확히 무엇이고 제목·첫머리·사진 중 어디에 넣나요?",
+    "verdict": "통과",
+    "file": "08-affiliate.html",
+    "anchor": "steps",
+    "quote": "블로그의 관계 표시는 제목 또는 첫 부분에서 쉽게 보여야 해요.",
+    "reason": "정확한 쿠팡 문구·사진 재사용·모바일 위치 실습을 준다."
+  },
+  {
+    "id": "A8-Q4",
+    "question": "가격을 API에서 가져와 계속 표시하거나 AI로 상품 후기를 자동 생성해도 되나요?",
+    "verdict": "통과",
+    "file": "08-affiliate.html",
+    "anchor": "steps",
+    "quote": "실제 가격은 기본 글에 표시하지 않아요.",
+    "reason": "가격 이용 조건 확인과 직접 사용하지 않은 AI 후기 금지를 바로 잇는다."
+  },
+  {
+    "id": "A8-Q5",
+    "question": "분유·젖병·아기 화장품·체온계·영양제 링크는 일반 완구 링크와 뭐가 다른가요?",
+    "verdict": "통과",
+    "file": "08-affiliate.html",
+    "anchor": "steps",
+    "quote": "KC 번호 하나로 모든 아기 제품을 검사하지 않아요.",
+    "reason": "품목별 법적 금지/프로젝트 거절/자료 보류와 다음 행동을 표로 준다."
+  },
+  {
+    "id": "A8-Q6",
+    "question": "쇼핑커넥트·브랜드커넥트 링크를 제 설치형 블로그에도 쓸 수 있고 제한은 어디서 보나요?",
+    "verdict": "통과",
+    "file": "08-affiliate.html",
+    "anchor": "summary",
+    "quote": "내 등록 매체와 캠페인의 외부 게시 허용부터 확인해요.",
+    "reason": "WordPress 전체 허용으로 읽지 말고 약관과 지정 채널을 확인하게 한다."
+  },
+  {
+    "id": "A9-Q1",
+    "question": "육아 블로그 협찬 제안이 왔을 때 제공품·원고료·작성 기한·반납 중 무엇을 먼저 묻나요?",
+    "verdict": "통과",
+    "file": "09-sponsorship.html",
+    "anchor": "review",
+    "quote": "제공품·원고료·작성 기한·반납 조건을 한 번에 받아 적어요.",
+    "reason": "계약 질문 일곱 개와 서면 보관 행동이 있다."
+  },
+  {
+    "id": "A9-Q2",
+    "question": "방문자가 많지 않은데 미디어킷에는 어떤 실제 지표와 글 예시를 넣나요?",
+    "verdict": "부분",
+    "file": "09-sponsorship.html",
+    "anchor": "media-kit",
+    "quote": "모의 미디어킷을 만든 뒤 실제 지표로 바꿀 칸을 확인해요.",
+    "reason": "지표/기간/대표글은 언급하지만 어떤 대표글을 고를지의 구체 예가 없고 첫 답도 모의 파일 안내다."
+  },
+  {
+    "id": "A9-Q3",
+    "question": "지원→선정→배송→작성→수정 요청→발행→정산을 대장에 어떻게 기록하나요?",
+    "verdict": "부분",
+    "file": "09-sponsorship.html",
+    "anchor": "overview",
+    "quote": "각 상태는 증빙을 남겨야 넘어가요.",
+    "reason": "상태 그림과 demo 자동 기록은 있지만 내 문의의 중간 상태·수정 요청을 직접 대장에 기록하는 사용 절차는 없다."
+  },
+  {
+    "id": "A9-Q4",
+    "question": "좋은 말만 쓰라거나 광고 표시를 빼 달라거나 아이 얼굴 사진을 달라면 거절하나요?",
+    "verdict": "통과",
+    "file": "09-sponsorship.html",
+    "anchor": "write",
+    "quote": "광고주가 표시 삭제·거짓 후기·의학 효능 추가를 요구하면 진행하지 않아요.",
+    "reason": "아이 얼굴 강제·긍정 평가만 허용도 거절한다고 바로 잇는다."
+  },
+  {
+    "id": "A9-Q5",
+    "question": "아기 낮잠 이불·베개 협찬은 안전 수면 원칙에 안 맞으면 왜 거절하고 대안은 뭔가요?",
+    "verdict": "통과",
+    "file": "09-sponsorship.html",
+    "anchor": "review",
+    "quote": "영아가 자는 자리에 느슨한 이불을 두도록 홍보하는 제안은 거절해요.",
+    "reason": "안전 원칙·거절 회신·그림책 정리 대안이 이어진다."
+  },
+  {
+    "id": "A9-Q6",
+    "question": "제품만 받고 돈을 안 받았어도 세금 기록이 필요하고 계약의 2차 사용권은 어떻게 정하나요?",
+    "verdict": "부분",
+    "file": "09-sponsorship.html",
+    "anchor": "report",
+    "quote": "물건만 받아도 세금 검토용 기록을 남겨요.",
+    "reason": "현물 기록은 직답하지만 2차 사용권의 매체·기간·편집·비용 질문은 앞 계약 목록에 떨어져 있다."
+  },
+  {
+    "id": "A10-Q1",
+    "question": "GA4 방문자·조회수와 Search Console 클릭·노출은 왜 서로 다른가요?",
+    "verdict": "통과",
+    "file": "10-analytics.html",
+    "anchor": "answer",
+    "quote": "방문·검색·수익은 다른 숫자예요.",
+    "reason": "도구별 표와 가상 120/20 예로 같은 수로 맞추지 않게 한다."
+  },
+  {
+    "id": "A10-Q2",
+    "question": "GA4 Data API에서 무료 할당량과 정확한 지표 이름은 무엇인가요?",
+    "verdict": "통과",
+    "file": "10-analytics.html",
+    "anchor": "errors",
+    "quote": "표준 GA4 Core의 속성당 하루 한도는 200,000토큰이에요.",
+    "reason": "FAQ가 정확한 네 지표와 잔여량 확인까지 바로 준다."
+  },
+  {
+    "id": "A10-Q3",
+    "question": "Search Console 데이터가 어제 날짜에 비어 있으면 실패인가요 지연인가요?",
+    "verdict": "통과",
+    "file": "10-analytics.html",
+    "anchor": "steps",
+    "quote": "어제 데이터가 비었다면 지연부터 확인하세요.",
+    "reason": "보통 2~3일·시간대·필터/날짜 조회 순서가 있다."
+  },
+  {
+    "id": "A10-Q4",
+    "question": "서비스 계정과 OAuth 중 어느 것을 써야 하고 사이트 권한도 따로 줘야 하나요?",
+    "verdict": "통과",
+    "file": "10-analytics.html",
+    "anchor": "steps",
+    "quote": "먼저 화면에서 같은 기간의 보고서를 읽은 뒤 API 수집을 붙이세요.",
+    "reason": "선택 표가 소유 자료/타인 자료와 별도 사이트 권한, AdSense 사용자 OAuth를 구별한다."
+  },
+  {
+    "id": "A10-Q5",
+    "question": "애드센스·제휴 예상 수입과 확정·입금액을 한 보고서에서 어떻게 구분하나요?",
+    "verdict": "통과",
+    "file": "10-analytics.html",
+    "anchor": "steps",
+    "quote": "예상액·확정액·입금액을 따로 적고 더하지 마세요.",
+    "reason": "같은 거래의 세 칸 예와 증빙 기록 행동을 준다."
+  },
+  {
+    "id": "A10-Q6",
+    "question": "WordPress 통계 플러그인만 써도 되고 어떤 글부터 고칠지 기준은 뭔가요?",
+    "verdict": "통과",
+    "file": "10-analytics.html",
+    "anchor": "errors",
+    "quote": "네. 이번 주 고칠 글을 고를 수 있으면 시작할 수 있어요.",
+    "reason": "FAQ에서 오래된 제도 글의 출처·기준일 확인을 바로 지시한다."
+  },
+  {
+    "id": "A11-Q1",
+    "question": "제 노트북이 꺼져 있어도 cron·작업 스케줄러·GitHub Actions가 돌아가나요?",
+    "verdict": "통과",
+    "file": "11-operations.html",
+    "anchor": "answer",
+    "quote": "노트북이 꺼지면 그 안의 예약 작업도 멈춰요.",
+    "reason": "늘 켜진 실행 장소와 Actions 외부 상태 준비를 준다."
+  },
+  {
+    "id": "A11-Q2",
+    "question": "매일 실행이 늦거나 실패하면 어디서 로그를 보고 알림을 받나요?",
+    "verdict": "통과",
+    "file": "11-operations.html",
+    "anchor": "steps",
+    "quote": "실행 로그와 알림 기록을 함께 보세요.",
+    "reason": "로그 위치 표와 아직 연결하지 않은 실패/실전송의 경계를 명시한다."
+  },
+  {
+    "id": "A11-Q3",
+    "question": "승인 알림을 못 보고 지나가도 건강·협찬 글이 자동 공개되나요?",
+    "verdict": "통과",
+    "file": "11-operations.html",
+    "anchor": "steps",
+    "quote": "미응답이면 그대로 대기해요.",
+    "reason": "고위험 글 최종 사람 승인과 수정 뒤 재승인을 바로 잇는다."
+  },
+  {
+    "id": "A11-Q4",
+    "question": "코드·사진·데이터베이스·비밀키는 무엇을 백업하고 복구 성공을 어떻게 확인하나요?",
+    "verdict": "통과",
+    "file": "11-operations.html",
+    "anchor": "steps",
+    "quote": "ZIP이 있다는 것보다 되살릴 수 있다는 것이 중요해요.",
+    "reason": "자료별 백업 표·밖으로 이동·복원·check 행동이 있다."
+  },
+  {
+    "id": "A11-Q5",
+    "question": "API 비밀번호가 노출되면 어떤 순서로 폐기·재발급하고 로그에서 지우나요?",
+    "verdict": "통과",
+    "file": "11-operations.html",
+    "anchor": "steps",
+    "quote": "실행 중단 → 노출 키 폐기 → 새 키 발급 → 로컬 설정 교체 → 읽기 검증 순서예요.",
+    "reason": "로그·백업·공개 기록 점검과 값 비공개까지 구체 순서로 준다."
+  },
+  {
+    "id": "A11-Q6",
+    "question": "같은 작업이 겹치거나 한도에 걸리면 무한 재시도와 중복 과금을 어떻게 막나요?",
+    "verdict": "통과",
+    "file": "11-operations.html",
+    "anchor": "steps",
+    "quote": "새로 만들기 요청을 반복하기 전에 기존 글 ID를 조회하세요.",
+    "reason": "공유 상태 잠금·상한·최대 3회 예·CLI 미제공 경계를 준다."
+  },
+  {
+    "id": "A12-Q1",
+    "question": "AI로 초안을 쓰는 것과 구글이 금지한 대량 생성·사이트 평판 악용은 어떻게 다른가요?",
+    "verdict": "통과",
+    "file": "12-policy.html",
+    "anchor": "search",
+    "quote": "AI로 초안을 쓸 수 있어요.",
+    "reason": "다음 문장과 사례표가 가치 없는 대량 생성/평판 악용을 구별한다."
+  },
+  {
+    "id": "A12-Q2",
+    "question": "육아 정보는 모두 YMYL인가요 건강·지원금 글에는 어떤 근거와 작성자 정보를 두나요?",
+    "verdict": "통과",
+    "file": "12-policy.html",
+    "anchor": "search",
+    "quote": "모든 육아 글을 같은 의학 조언으로 보지는 않아요.",
+    "reason": "YMYL/E-E-A-T 정의·근거/기준일/작성자 예가 바로 있다."
+  },
+  {
+    "id": "A12-Q3",
+    "question": "아이 사진을 부모가 올릴 때 동의·초상권·EXIF·삭제 요청은 어떻게 다루나요?",
+    "verdict": "통과",
+    "file": "12-policy.html",
+    "anchor": "privacy",
+    "quote": "부모 동의를 모든 공개에 대한 허락으로 쓰지 마세요.",
+    "reason": "촬영/인터넷 허락 구별·기본 비공개·EXIF·삭제 처리까지 이어진다."
+  },
+  {
+    "id": "A12-Q4",
+    "question": "공정위 최신 지침에서 제품 제공·원고료·제휴 수수료 표시는 어떻게 다르나요?",
+    "verdict": "통과",
+    "file": "12-policy.html",
+    "anchor": "disclosure",
+    "quote": "물품·원고료·제휴 수수료는 실제 받은 관계대로 밝혀요.",
+    "reason": "관계별 표시 문장과 위치·모바일 확인 행동이 있다."
+  },
+  {
+    "id": "A12-Q5",
+    "question": "협찬 물품·원고료·광고료는 사업소득인가요 기타소득인가요 언제 사업자등록·종합소득세를 확인하나요?",
+    "verdict": "통과",
+    "file": "12-policy.html",
+    "anchor": "tax",
+    "quote": "협찬이라는 이름만으로 사업소득·기타소득을 결정하지 않아요.",
+    "reason": "반복성/고용·등록 20일·다음 해 5월·현물/비용 기록과 문의 행동이 있다."
+  },
+  {
+    "id": "A12-Q6",
+    "question": "출시 전에 저작권·영유아 제품 규제·세금에서 미확인인 항목은 어떻게 보류하고 확인하나요?",
+    "verdict": "통과",
+    "file": "12-policy.html",
+    "anchor": "answer",
+    "quote": "답이 없는 글이나 광고 연결을 보류하고, 해결된 항목만 다음 단계로 옮겨요.",
+    "reason": "단계 ⑤와 확인할 점이 자료·담당자·기한·문의처를 제시한다."
+  }
+]

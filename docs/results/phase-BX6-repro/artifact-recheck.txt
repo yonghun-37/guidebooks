@@ -1,0 +1,274 @@
+
+[2026-10-28T00:57:05+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python3.11 -m venv .venv
+[exit 0; 2.07s]
+
+[수동 확인/편집] 최초 순차 실습의 파일 직접 확인을 보완하기 위해 본문 명령으로 다시 생성한 직후 브라우저 촬영. 구현은 읽지 않음.
+
+[2026-10-28T00:57:06+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+[exit 0; 0.065s]
+
+[2026-10-28T00:57:06+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+[exit 0; 0.039s]
+
+[2026-10-28T00:57:06+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py status --mock
+✔ 통과: mock REST 연결
+output/status.json
+[exit 0; 0.082s]
+
+[2026-10-28T00:57:06+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py run --sample
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+[exit 0; 0.152s]
+
+[수동 확인/편집] 브라우저로 열어 확인: output/drafts/info.html / 2026년 10월 조사 기준. 부모급여와 아동수당은 신청 대상과 절차를 각각 확인해야 합니다.
+
+부모급여와 아동수당
+
+부모급여는 0~11개월 월 100만원, 12~23개월 월 50만원입니다. [N037]
+
+아동수당은 9세 미만, 기본 월 10만원입니다. [N038] 지역별 추가 지급과 개인별 신청 조건은 확인하세요.
+
+신청 전에 확인할 것
+
+어린이집을 이용하면 부모급여의 지급 방식과 차액이 달라질 수 있습니다. 복지로와 거주지 담당 기관에서 현재 대상과 신청 방법을 확인하세요.
+
+출처: [N037] 보건복지부 부모급여 안내, [N038] 보건복지부 아동수당 안내.
+
+[수동 확인/편집] 브라우저로 열어 확인: output/analytics/weekly.html / 주간 보고서 (모의)
+
+기준일 2026-10-27. 방문 120, 검색 클릭 20: 모두 가상 지표.
+
+GA4는 속성 시간대, GSC는 태평양 시간 기준이며 반영 지연과 빈 행을 확인하세요.
+
+광고·제휴 예상액: 미집계 / 확정액: 미집계 / 실제 입금: 미확인
+
+기준일이 지난 금액·날짜 글
+없음
+다음 글감 점수 (모의)
+
+독자 질문 3 + 공식 근거 2 + 기존 경험 1 = 6점
+
+[2026-10-28T00:57:06+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python course.py start A2
+✔ 통과: A2 시작 상태 복원
+[exit 0; 0.057s]
+
+[2026-10-28T00:57:06+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html
+[exit 0; 0.063s]
+
+[수동 확인/편집] 브라우저로 열어 확인: output/pages/about.html / 소개 (권장)
+
+가상 육아·교육 블로그입니다.
+
+기준일 2026-10-27
+
+[수동 확인/편집] 브라우저로 열어 확인: output/pages/privacy.html / 개인정보처리방침 (실제 처리 시 의무)
+
+이 정적 양식은 정보를 수집하지 않습니다. 연결할 경우의 수집 항목은 이메일과 문의 내용입니다. 목적은 문의 답변이며 답변 완료 후 30일 보유하고 파일과 메일을 파기하는 예시입니다. 동의를 거부할 권리가 있으며 거부하면 답변을 받을 수 없습니다. 열람·정정·삭제 등 권리 행사와 처리 담당자 연락은 editor@example.invalid로 요청하는 예시입니다. 실제 운영 전 연락처·파기 주기·처리근거를 확정하세요. 현재는 쿠키·분석·광고·위탁·제3자 제공·국외 이전을 연결하지 않았습니다. 연결하면 실제 업체·항목·보유기간·이전 근거와 자동 수집 거부 방법을 추가하세요.
+
+기준일 2026-10-27
+
+[수동 확인/편집] 브라우저로 열어 확인: output/pages/contact.html / 문의 (권장)
+
+연락처: editor@example.invalid. 이메일과 문의 내용만 받는 미연결 양식입니다. 답변 목적, 답변 완료 후 30일 보유·파기하는 예시이며 동의를 거부하면 답변을 받을 수 없습니다. 실제 처리방침 확정 전 전송을 연결하지 마세요.
+
+이메일문의 내용문의 답변을 위한 수집·이용 동의전송 미연결
+
+기준일 2026-10-27
+
+[수동 확인/편집] 브라우저로 열어 확인: output/pages/advertising.html / 광고·협찬 정책 (권장)
+
+경제적 이해관계를 첫 부분에 밝히고 실제 경험만 기록합니다.
+
+기준일 2026-10-27
+
+[2026-10-28T00:57:06+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python course.py start A7
+✔ 통과: A7 시작 상태 복원
+[exit 0; 0.057s]
+
+[2026-10-28T00:57:06+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json
+[exit 0; 0.061s]
+
+[수동 확인/편집] 브라우저로 열어 확인: output/ads/layout.html / 첫째
+
+본문
+
+둘째
+광고 위치 예시 (실제 광고 없음)
+
+본문
+
+[수동 확인/편집] 브라우저로 열어 확인: output/ads/report.html / 모의 광고 보고서
+
+기준일 2026-10-27 · Asia/Seoul · 아래 숫자는 고정 가상 데이터입니다.
+
+페이지뷰	예상 USD	확정 USD	실입금 USD
+100	0.12	0.00	0.00
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python course.py start A8
+✔ 통과: A8 시작 상태 복원
+[exit 0; 0.06s]
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+[exit 0; 0.065s]
+
+[수동 확인/편집] 브라우저로 열어 확인: output/drafts/affiliate.html / 이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+
+가상 제품의 손톱 도구 두 종류를 비교합니다.
+
+고르는 기준
+
+손톱깎이는 날과 손잡이의 형태를, 전동 손톱갈이는 소리와 연마부 교체 방법을 살펴보세요. 어느 쪽이든 제품 설명과 사용 연령을 확인하세요.
+
+이 글은 사용 후기가 아닌 제품 범주의 객관적 비교입니다.
+
+가상 손톱 도구 제휴 링크
+
+출처: [BX037] 공정거래위원회 추천·보증 표시 안내. 제품과 브랜드는 가상 시연입니다.
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python course.py start A9
+✔ 통과: A9 시작 상태 복원
+[exit 0; 0.058s]
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.098s]
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+[exit 0; 0.062s]
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+[exit 0; 0.099s]
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py gate --sample sponsor --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · f62525058efb
+output/gates/sponsor.txt
+[exit 0; 0.076s]
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py publish --sample sponsor
+✔ 통과: WordPress post_id=2 · future
+private/state.sqlite3
+[exit 0; 0.109s]
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py status --sample sponsor --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.089s]
+
+[2026-10-28T00:57:07+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py sponsor settle
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.072s]
+
+[수동 확인/편집] ledger.csv: id,content_id,state
+blanket,blanket,declined
+shelf,sponsor,settled
+
+
+[수동 확인/편집] tax.csv: date,cash,goods,valuation_basis,return_terms,costs,withholding,paid_amount,evidence,tax_guide
+2026-10-27,0원(가상),그림책꽂이 1개(가상),제공 명세 확인; 실제 가액 미확정,반납 없음,확인 필요,세무 상담 확인,0(현금 없음),가상 제공 명세 v1,https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7890&mi=6610
+
+
+[수동 확인/편집] 브라우저로 열어 확인: output/drafts/sponsor.html / 상품 협찬: 가상 브랜드 도담에서 그림책꽂이를 무료 제공받았습니다.
+
+책을 정리할 자리
+
+그림책 표지가 보이도록 정리할 수 있는 가상의 원목 꽂이입니다. 설치 전 넘어짐 방지와 제품의 안전 자료를 확인하세요.
+
+이 글과 브랜드는 가상 시연입니다. 사용 경험은 사람이 직접 적어야 합니다.
+
+출처: [BX037] 공정거래위원회 추천·보증 표시 안내. 제품과 브랜드는 가상 시연입니다.
+
+가상 시연: 사람이 실제 사용한 경험을 여기에 직접 작성합니다. 이 문장은 실제 사용 후기가 아닙니다.
+
+[수동 확인/편집] 브라우저로 열어 확인: output/sponsor/media-kit.html / 가상 미디어킷
+
+주제: 육아·교육과 집 놀이 / 독자: 영유아 보호자 / 기간: 2026-10-01~2026-10-27
+
+아래 숫자는 실제 측정치가 아닌 고정 모의 지표입니다.
+
+방문(모의)	검색 클릭(모의)
+120	20
+
+대표글: 2026 부모급여·아동수당 정리 / 제공 형식: 블로그 글과 직접 제작 그림
+
+연락처: 운영자가 실제 주소 입력 / 아이 개인정보는 포함하지 않습니다.
+
+[수동 확인/편집] 브라우저로 열어 확인: output/sponsor/advertiser-report.html / 광고주 보고서 (가상)
+
+외부 회신 없음; 개인정보 제외. 지표는 고정 모의값: 방문 120, 검색 클릭 20.
+
+공개 주소: http://mock.local/?p=2
+
+기간: 2026-10-01~2026-10-27
+
+[2026-10-28T00:57:08+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python course.py start A10
+✔ 통과: A10 시작 상태 복원
+[exit 0; 0.058s]
+
+[2026-10-28T00:57:08+0900] /tmp/bx6-artifact-recheck-9u2jdiy9/blog-auto-kit
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html
+[exit 0; 0.061s]
+
+[수동 확인/편집] 브라우저로 열어 확인: output/analytics/weekly.html / 주간 보고서 (모의)
+
+기준일 2026-10-27. 방문 120, 검색 클릭 20: 모두 가상 지표.
+
+GA4는 속성 시간대, GSC는 태평양 시간 기준이며 반영 지연과 빈 행을 확인하세요.
+
+광고·제휴 예상액: 미집계 / 확정액: 미집계 / 실제 입금: 미확인
+
+기준일이 지난 금액·날짜 글
+없음
+다음 글감 점수 (모의)
+
+독자 질문 3 + 공식 근거 2 + 기존 경험 1 = 6점

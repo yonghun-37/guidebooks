@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-28T00:58:01.919847+09:00",
+  "command": "python3 scripts/notify.py <BX6 재현 검토 메시지>",
+  "exit": 0,
+  "message": "🔎 [BX6 재현 검토] 독립 검토 완료 · 판정: 조건부\nmock 체크포인트 13개·E2E 6개 통과, 질문 70 통과/8 부분\n산출물: docs/results/phase-BX6-repro.md 및 phase-BX6-repro/\n남은 문제: A4 비용 직접 확인 차단, A6 상태·A11 예약 안내 혼란\n사이트·원본 키트·스크립트 수정 및 commit 없음",
+  "stdout_stderr": "공개 기록에 비밀 URL이 섞이지 않도록 저장 생략"
+}

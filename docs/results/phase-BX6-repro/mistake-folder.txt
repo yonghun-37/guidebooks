@@ -1,0 +1,48 @@
+
+[2026-10-28T00:46:57+0900] /tmp/bx6-mistake-folder-tbzjq46z/blog-auto-kit
+$ python3.11 -m venv .venv
+[exit 0; 2.141s]
+
+[2026-10-28T00:46:57+0900] /tmp/bx6-mistake-folder-tbzjq46z
+$ python course.py doctor
+python: can't open file '/tmp/bx6-mistake-folder-tbzjq46z/course.py': [Errno 2] No such file or directory
+[exit 2; 0.01s]
+
+[수동 확인/편집] A1 시작 상태 확인: blog.py·course.py 보이는 폴더에서 실행. A1 오류 표에는 이 문구가 없지만 A12 오류 표에 있음. A1의 cd 안내로 키트 폴더로 이동해 복구.
+
+[2026-10-28T00:46:57+0900] /tmp/bx6-mistake-folder-tbzjq46z/blog-auto-kit
+$ pwd
+/tmp/bx6-mistake-folder-tbzjq46z/blog-auto-kit
+[exit 0; 0.002s]
+
+[2026-10-28T00:46:57+0900] /tmp/bx6-mistake-folder-tbzjq46z/blog-auto-kit
+$ ls
+README.md
+analytics
+blog.py
+config.example.toml
+content
+core
+course
+course.py
+gates
+monetize
+ops
+providers
+pytest.ini
+requirements-dev.lock
+samples
+tests
+wordpress
+[exit 0; 0.003s]
+
+[2026-10-28T00:46:57+0900] /tmp/bx6-mistake-folder-tbzjq46z/blog-auto-kit
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+[exit 0; 0.058s]
+
+[2026-10-28T00:46:57+0900] /tmp/bx6-mistake-folder-tbzjq46z/blog-auto-kit
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+[exit 0; 0.032s]

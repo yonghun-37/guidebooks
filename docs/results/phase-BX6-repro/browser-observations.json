@@ -1,0 +1,872 @@
+[
+  {
+    "file": "00-start.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 1,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "수입 계산",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "수입 0 가정 넣기",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "월 비용 계산",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "mock 비용 0 가정 넣기",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "입력값 포함 운영계획.txt 받기",
+        "id": "",
+        "aria": null
+      }
+    ]
+  },
+  {
+    "file": "01-environment.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 3,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "Windows PowerShell",
+        "id": "os-tab-0-0",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "macOS·Linux",
+        "id": "os-tab-0-1",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Windows PowerShell",
+        "id": "os-tab-1-0",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "macOS·Linux",
+        "id": "os-tab-1-1",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "02-wordpress.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 2,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "03-topics.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 1,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "04-drafts.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 1,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "05-gates.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 1,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "SELECT",
+        "text": "부모급여·아동수당\n터미타임 놀이\n손톱 도구 제휴 비교\n도담 협찬 · 경험 입력 전",
+        "id": "gate-sample",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "다음 검사 보기",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "이 샘플 처음부터",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "06-publish.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 1,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "07-ads.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 2,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "08-affiliate.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 2,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "첫머리로 되돌리기",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "09-sponsorship.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 3,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Windows PowerShell",
+        "id": "os-tab-0-0",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "macOS·Linux",
+        "id": "os-tab-0-1",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "SELECT",
+        "text": "도담 · 그림책 꽂이\n포근담요 · 낮잠 이불\n자료 부족 · 모델 미기재",
+        "id": "sponsor-case",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "다음 상태: 검토",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "다음 상태: 거절",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "다음 상태: 자료 보류",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "이 문의 처음부터",
+        "id": "",
+        "aria": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "10-analytics.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 2,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "11-operations.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 2,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "12-policy.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 1,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      }
+    ]
+  },
+  {
+    "file": "e2e.html",
+    "overflow": false,
+    "errors": [],
+    "figures": 1,
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "복사",
+        "id": "",
+        "aria": "코드와 메모 복사"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "이 진행표의 체크·메모 지우기",
+        "id": "",
+        "aria": null
+      }
+    ]
+  },
+  {
+    "file": "05-gates.html",
+    "width": 360,
+    "overflow": false
+  },
+  {
+    "file": "08-affiliate.html",
+    "width": 360,
+    "overflow": false
+  },
+  {
+    "file": "09-sponsorship.html",
+    "width": 360,
+    "overflow": false
+  },
+  {
+    "file": "e2e.html",
+    "width": 360,
+    "overflow": false
+  }
+]

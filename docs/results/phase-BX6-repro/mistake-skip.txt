@@ -1,0 +1,71 @@
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python3.11 -m venv .venv
+[exit 0; 2.08s]
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python course.py start A9
+✔ 통과: A9 시작 상태 복원
+[exit 0; 0.055s]
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.094s]
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+[exit 0; 0.059s]
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+[exit 0; 0.103s]
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python blog.py gate --sample sponsor --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · f62525058efb
+output/gates/sponsor.txt
+[exit 0; 0.074s]
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python blog.py publish --sample sponsor
+✔ 통과: WordPress post_id=2 · future
+private/state.sqlite3
+[exit 0; 0.103s]
+
+[수동 확인/편집] 의도적으로 공개 재조회 단계를 건너뛰고 정산 시도.
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python blog.py sponsor settle
+✖ 막힘: 공개 상태 확인 전 → status --sample sponsor --advance-days 2를 실행하세요
+[exit 1; 0.057s]
+
+[수동 확인/편집] A9 흔한 오류의 공개 상태 확인 전 행을 그대로 적용.
+
+[2026-10-28T00:46:59+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python blog.py status --sample sponsor --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.09s]
+
+[2026-10-28T00:47:00+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python blog.py sponsor settle
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.078s]
+
+[2026-10-28T00:47:00+0900] /tmp/bx6-mistake-skip-jvh3taoe/blog-auto-kit
+$ python course.py check A9
+✔ 통과: A9 산출물·상태·터미널 출력 일치
+[exit 0; 0.035s]

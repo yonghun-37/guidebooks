@@ -1,0 +1,1234 @@
+
+[2026-10-28T00:44:02+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python3.11 -m venv .venv
+[exit 0; 2.284s]
+
+[수동 확인/편집] A0: mock・수입 0 가정. 운영계획을 직접 작성. ZIP 대신 사용자 지시대로 저장소의 blog-auto-kit만 빈 임시 폴더로 복사. 키트 소스 열람 안 함.
+
+[2026-10-28T00:44:02+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python3.11 --version
+Python 3.11.15
+[exit 0; 0.003s]
+
+[2026-10-28T00:44:02+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ pwd
+/tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+[exit 0; 0.001s]
+
+[2026-10-28T00:44:02+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ ls
+README.md
+analytics
+blog.py
+config.example.toml
+content
+core
+course
+course.py
+gates
+monetize
+ops
+providers
+pytest.ini
+requirements-dev.lock
+samples
+tests
+wordpress
+[exit 0; 0.003s]
+
+[2026-10-28T00:44:02+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ source .venv/bin/activate && python --version
+Python 3.11.15
+[exit 0; 0.003s]
+
+[2026-10-28T00:44:02+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+[exit 0; 0.059s]
+
+[2026-10-28T00:44:02+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+[exit 0; 0.033s]
+
+[2026-10-28T00:44:02+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --mock
+✔ 통과: mock REST 연결
+output/status.json
+[exit 0; 0.095s]
+
+[수동 확인/편집] output/status.json 확인: {
+  "post_count": 0,
+  "posts": []
+}
+
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --sample
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+[exit 0; 0.158s]
+
+[수동 확인/편집] output/drafts/info.html 생성: True
+
+[수동 확인/편집] output/analytics/weekly.html 생성: True
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+[exit 0; 0.058s]
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.003s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'today = "2026-10-27"' → 'today = "2026-10-28"'
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --sample
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+[exit 0; 0.158s]
+
+[수동 확인/편집] date 확인: ['2026-10-29T09:00:00']
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+[exit 0; 0.062s]
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+[exit 0; 0.035s]
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --mock
+✔ 통과: mock REST 연결
+output/status.json
+[exit 0; 0.088s]
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --sample
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+[exit 0; 0.157s]
+
+[2026-10-28T00:44:03+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A1
+✔ 통과: A1 산출물·상태·터미널 출력 일치
+[exit 0; 0.035s]
+
+[2026-10-28T00:44:13+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A2
+✔ 통과: A2 시작 상태 복원
+[exit 0; 0.086s]
+
+[2026-10-28T00:44:13+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html
+[exit 0; 0.063s]
+
+[수동 확인/편집] about.html:     소개 (권장)  소개 (권장)  가상 육아·교육 블로그입니다.  기준일 2026-10-27  
+
+[수동 확인/편집] privacy.html:     개인정보처리방침 (실제 처리 시 의무)  개인정보처리방침 (실제 처리 시 의무)  이 정적 양식은 정보를 수집하지 않습니다. 연결할 경우의 수집 항목은 이메일과 문의 내용입니다. 목적은 문의 답변이며 답변 완료 후 30일 보유하고 파일과 메일을 파기하는 예시입니다. 동의를 거부할 권리가 있으며 거부하면 답변을 받을 수 없습니다. 열람·정정·삭제 등 권리 행사와 처리 담당자 연락은 editor@example.invalid로 요청하는 예시입니다. 실제 운영 전 연락처·파기 주기·처리근거를 확정하세요. 현재는 쿠키·분석·광고·위탁·제3자 제공·국외 이전을 연결하지 않았습니다. 연결하면 실제 업체·항목·보유기간·이전 근거와 자동 수집 거부 방법을 추가하세요.  기준일 2026-10-27  
+
+[수동 확인/편집] contact.html:     문의 (권장)  문의 (권장)  연락처: editor@example.invalid. 이메일과 문의 내용만 받는 미연결 양식입니다. 답변 목적, 답변 완료 후 30일 보유·파기하는 예시이며 동의를 거부하면 답변을 받을 수 없습니다. 실제 처리방침 확정 전 전송을 연결하지 마세요.    이메일   문의 내용     문의 답변을 위한 수집·이용 동의  전송 미연결    기준일 2026-10-27  
+
+[수동 확인/편집] advertising.html:     광고·협찬 정책 (권장)  광고·협찬 정책 (권장)  경제적 이해관계를 첫 부분에 밝히고 실제 경험만 기록합니다.  기준일 2026-10-27  
+
+[2026-10-28T00:44:13+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.004s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'email = "editor@example.invalid" # A2 문의 연락처: 공개 전 본인 주소로 교체' → 'email = "hello@example.invalid"'
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html
+[exit 0; 0.061s]
+
+[수동 확인/편집] contact 변경 이메일 확인: True
+
+[수동 확인/편집] privacy 변경 이메일 확인: True
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A2
+✔ 통과: A2 시작 상태 복원
+[exit 0; 0.057s]
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html
+[exit 0; 0.06s]
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A2
+✔ 통과: A2 산출물·상태·터미널 출력 일치
+[exit 0; 0.033s]
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A3
+✔ 통과: A3 시작 상태 복원
+[exit 0; 0.056s]
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py topics
+✔ 통과: 주제 지도 생성
+output/topics.json
+[exit 0; 0.06s]
+
+[수동 확인/편집] output/topics.json: {
+  "as_of": "2026-10-27",
+  "topics": [
+    {
+      "age_range": "0~3세",
+      "category": "월령",
+      "title": "월령으로 찾는 집 놀이"
+    },
+    {
+      "age_range": "0~3세",
+      "category": "발달",
+      "title": "개인차를 이해하고 공식 발달 안내 찾기"
+    },
+    {
+      "age_range": "0~3세",
+      "category": "제도",
+      "title": "부모급여와 아동수당"
+    },
+    {
+      "age_range": "3~4개월",
+      "category": "놀이",
+      "title": "생후 3~4개월 터미타임"
+    },
+    {
+      "age_range": "0~3세",
+      "category": "제품",
+      "title": "손톱 관리 도구 비교"
+    },
+    {
+      "age_range": "0~3세",
+      "category": "그림책",
+      "title": "아이와 책 정리하기"
+    }
+  ]
+}
+
+
+[수동 확인/편집] 본문이 열어 보라고 한 samples/info.json source_notes: [{"id": "N037", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148957936", "official": true, "country": "KR", "checked_on": "2026-10-27", "age_range": "0~3세", "license": "원문 링크 및 이용 조건 확인", "claims": ["부모급여는 0~11개월 월 100만원, 12~23개월 월 50만원입니다."]}, {"id": "N038", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963373", "official": true, "country": "KR", "checked_on": "2026-10-27", "age_range": "0~3세", "license": "원문 링크 및 이용 조건 확인", "claims": ["아동수당은 9세 미만, 기본 월 10만원입니다."]}]
+
+[수동 확인/편집] 본문의 편집 지시: content/topics.py '아이와 책 정리하기' → '도서관 그림책 빌린 기록 정리하기'
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py topics
+✔ 통과: 주제 지도 생성
+output/topics.json
+[exit 0; 0.058s]
+
+[수동 확인/편집] 제목 변경 확인: True
+
+[수동 확인/편집] 본문의 편집 지시: content/topics.py '도서관 그림책 빌린 기록 정리하기' → '아이와 책 정리하기'
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A3
+✔ 통과: A3 시작 상태 복원
+[exit 0; 0.063s]
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py topics
+✔ 통과: 주제 지도 생성
+output/topics.json
+[exit 0; 0.061s]
+
+[2026-10-28T00:44:22+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A3
+✔ 통과: A3 산출물·상태·터미널 출력 일치
+[exit 0; 0.036s]
+
+[2026-10-28T00:44:34+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A4
+✔ 통과: A4 시작 상태 복원
+[exit 0; 0.087s]
+
+[2026-10-28T00:44:34+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+[exit 0; 0.058s]
+
+[2026-10-28T00:44:34+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample play
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/play.json
+[exit 0; 0.067s]
+
+[2026-10-28T00:44:34+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample affiliate
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/affiliate.json
+[exit 0; 0.067s]
+
+[수동 확인/편집] info: experience='', experience_by='', photos=[], title='2026 부모급여·아동수당 한 번에 정리'
+
+[수동 확인/편집] play: experience='', experience_by='', photos=[], title='생후 3~4개월 집에서 하는 터미타임 놀이 5가지'
+
+[수동 확인/편집] affiliate: experience='', experience_by='', photos=[], title='신생아 손톱깎이 vs 전동 손톱갈이 비교'
+
+[수동 확인/편집] A4 costs 확인 지시: SQLite를 어떤 프로그램으로 열고 costs 표를 찾는지 본문에 없음. 추가 명령을 추측하지 않고 이 수동 체크는 차단으로 기록.
+
+[2026-10-28T00:44:34+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.003s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'monthly_cap_usd = "1.00" # 호출 전 예약할 월 예산(달러 문자열)' → 'monthly_cap_usd = "0.00"'
+
+[2026-10-28T00:44:34+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+[exit 0; 0.062s]
+
+[2026-10-28T00:44:34+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A4
+✔ 통과: A4 시작 상태 복원
+[exit 0; 0.06s]
+
+[2026-10-28T00:44:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+[exit 0; 0.058s]
+
+[2026-10-28T00:44:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample play
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/play.json
+[exit 0; 0.066s]
+
+[2026-10-28T00:44:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample affiliate
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/affiliate.json
+[exit 0; 0.067s]
+
+[2026-10-28T00:44:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A4
+✔ 통과: A4 산출물·상태·터미널 출력 일치
+[exit 0; 0.032s]
+
+[2026-10-28T00:44:48+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A5
+✔ 통과: A5 시작 상태 복원
+[exit 0; 0.083s]
+
+[2026-10-28T00:44:48+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample info
+✔ 통과: 자동 검사 완료
+output/gates/info.txt
+[exit 0; 0.065s]
+
+[2026-10-28T00:44:48+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample play
+✔ 통과: 자동 검사 완료 · 사람 검토 대기
+output/gates/play.txt
+[exit 0; 0.065s]
+
+[수동 확인/편집] output/gates/info.txt: pass general: 자동 검사에서 차단이나 검토 항목이 없습니다. 발행 설정을 확인하세요.
+
+
+[수동 확인/편집] output/gates/play.txt: review health_safety.H1: 건강·안전 주제는 사람 검토가 필요합니다. 의료 근거와 문맥을 확인하세요.
+
+
+[수동 확인/편집] output/queue.json: [
+  {
+    "content_id": "play",
+    "rule_id": "health_safety.H1",
+    "decision": "review",
+    "evidence_ids": [
+      "BXF-091"
+    ],
+    "matched_field": "risk_flags",
+    "reason_ko": "건강·안전 주제는 사람 검토가 필요합니다.",
+    "next_action_ko": "의료 근거와 문맥을 확인하세요.",
+    "human_resolvable": true
+  }
+]
+
+
+[수동 확인/편집] 본문의 편집 지시: output/drafts/play.json '"risk_flags": [\n    "health"\n  ]' → '"risk_flags": []'
+
+[2026-10-28T00:44:48+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample play
+✔ 통과: 자동 검사 완료 · 사람 검토 대기
+output/gates/play.txt
+[exit 0; 0.065s]
+
+[수동 확인/편집] 수정 뒤 play: review health_safety.H1: 건강·안전 주제는 사람 검토가 필요합니다. 의료 근거와 문맥을 확인하세요.
+
+
+[2026-10-28T00:44:49+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A5
+✔ 통과: A5 시작 상태 복원
+[exit 0; 0.094s]
+
+[2026-10-28T00:44:49+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample info
+✔ 통과: 자동 검사 완료
+output/gates/info.txt
+[exit 0; 0.075s]
+
+[2026-10-28T00:44:49+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample play
+✔ 통과: 자동 검사 완료 · 사람 검토 대기
+output/gates/play.txt
+[exit 0; 0.06s]
+
+[2026-10-28T00:44:49+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A5
+✔ 통과: A5 산출물·상태·터미널 출력 일치
+[exit 0; 0.039s]
+
+[2026-10-28T00:44:59+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A6
+✔ 통과: A6 시작 상태 복원
+[exit 0; 0.059s]
+
+[2026-10-28T00:44:59+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+[exit 0; 0.096s]
+
+[2026-10-28T00:44:59+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb
+output/gates/info.txt
+[exit 0; 0.068s]
+
+[2026-10-28T00:44:59+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+[exit 0; 0.094s]
+
+[2026-10-28T00:44:59+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --sample info
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.086s]
+
+[수동 확인/편집] 첫 조회 {
+  "post_count": 1,
+  "posts": [
+    {
+      "date": "2026-10-28T09:00:00",
+      "date_gmt": "",
+      "id": 1,
+      "link": "http://mock.local/?p=1",
+      "status": "future"
+    }
+  ]
+}
+
+
+[2026-10-28T00:44:59+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --sample info --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.099s]
+
+[수동 확인/편집] 시간 이동 뒤 {
+  "post_count": 1,
+  "posts": [
+    {
+      "date": "2026-10-28T09:00:00",
+      "date_gmt": "",
+      "id": 1,
+      "link": "http://mock.local/?p=1",
+      "status": "publish"
+    }
+  ]
+}
+
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · publish
+private/state.sqlite3
+[exit 0; 0.124s]
+
+[수동 확인/편집] 본문의 편집 지시: output/drafts/info.json '"정부 지원을 확인하는 순서"' → '"지원 제도 확인 순서와 문의처"'
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample info
+✖ 막힘: 승인 후 내용이 바뀜 → gate --approve로 재승인하세요
+[exit 1; 0.11s]
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · draft
+private/state.sqlite3
+[exit 0; 0.124s]
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 0bfc6893c3b5
+output/gates/info.txt
+[exit 0; 0.081s]
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+[exit 0; 0.109s]
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --sample info
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.092s]
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A6
+✔ 통과: A6 시작 상태 복원
+[exit 0; 0.065s]
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+[exit 0; 0.099s]
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb
+output/gates/info.txt
+[exit 0; 0.073s]
+
+[2026-10-28T00:45:00+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+[exit 0; 0.099s]
+
+[2026-10-28T00:45:01+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --sample info
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.098s]
+
+[2026-10-28T00:45:01+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --sample info --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.109s]
+
+[2026-10-28T00:45:01+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A6
+✔ 통과: A6 산출물·상태·터미널 출력 일치
+[exit 0; 0.042s]
+
+[2026-10-28T00:45:06+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A7
+✔ 통과: A7 시작 상태 복원
+[exit 0; 0.064s]
+
+[2026-10-28T00:45:06+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json
+[exit 0; 0.065s]
+
+[수동 확인/편집] ads/checklist.txt: 자체 콘텐츠·HTML 관리권·탐색·정책·개인정보처리방침 확인
+최소 글 수·방문자: 공식 기준 없음; 개별 심사 확인
+ads.txt 권장, 실제 판매자 정보 확인
+아동 광고 설정과 코드 유형 확인
+가입 연령 18/19세 안내 상충: 한국 기본 19세 이상, 18세 적용약관 확인
+
+
+[수동 확인/편집] ads/ads.txt: # BX025 공식 형식 예시; 실제 계정 행으로 교체 후 루트에 게시
+google.com, pub-REPLACE_ME, DIRECT, f08c47fec0942fa0
+
+
+[수동 확인/편집] ads/metrics.json: {
+  "date": "2026-10-27",
+  "estimated_usd": "0.12",
+  "final_usd": "0.00",
+  "mock": true,
+  "page_views": 100,
+  "paid_usd": "0.00",
+  "timezone": "Asia/Seoul"
+}
+
+
+[2026-10-28T00:45:06+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A7
+✔ 통과: A7 산출물·상태·터미널 출력 일치
+[exit 0; 0.038s]
+
+[2026-10-28T00:45:06+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.004s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'ad_after_h2 = 2' → 'ad_after_h2 = 1'
+
+[2026-10-28T00:45:06+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json
+[exit 0; 0.064s]
+
+[수동 확인/편집] 광고 위치 변경: <h2>첫째</h2><aside>광고 위치 예시 (실제 광고 없음)</aside><p>본문</p><h2>둘째</h2><p>본문</p>
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'ad_after_h2 = 1' → 'ad_after_h2 = 0'
+
+[2026-10-28T00:45:06+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py ads
+✖ 막힘: 설정 24줄 ad_after_h2: 양의 정수가 필요함 → ad_after_h2=2로 고치세요
+[exit 1; 0.058s]
+
+[2026-10-28T00:45:06+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A7
+✔ 통과: A7 시작 상태 복원
+[exit 0; 0.067s]
+
+[2026-10-28T00:45:07+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json
+[exit 0; 0.069s]
+
+[2026-10-28T00:45:07+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A7
+✔ 통과: A7 산출물·상태·터미널 출력 일치
+[exit 0; 0.036s]
+
+[2026-10-28T00:45:14+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A8
+✔ 통과: A8 시작 상태 복원
+[exit 0; 0.068s]
+
+[2026-10-28T00:45:14+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+[exit 0; 0.073s]
+
+[수동 확인/편집] links.csv: check,checked_on,id,price,program,url
+mock 정상,2026-10-27,nail,표시하지 않음,쿠팡(모의),https://example.invalid/nail
+
+
+[수동 확인/편집] affiliate.html: <p>이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p><p>가상 제품의 손톱 도구 두 종류를 비교합니다.</p>
+<h2>고르는 기준</h2>
+<p>손톱깎이는 날과 손잡이의 형태를, 전동 손톱갈이는 소리와 연마부 교체 방법을 살펴보세요. 어느 쪽이든 제품 설명과 사용 연령을 확인하세요.</p>
+<p>이 글은 사용 후기가 아닌 제품 범주의 객관적 비교입니다.</p>
+<p><a href="https://example.invalid/nail" rel="sponsored">가상 손톱 도구 제휴 링크</a></p>
+<p>출처: [BX037] 공정거래위원회 추천·보증 표시 안내. 제품과 브랜드는 가상 시연입니다.</p>
+
+[2026-10-28T00:45:14+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample affiliate
+✔ 통과: 자동 검사 완료
+output/gates/affiliate.txt
+[exit 0; 0.065s]
+
+[수동 확인/편집] affiliate.txt: pass general: 자동 검사에서 차단이나 검토 항목이 없습니다. 발행 설정을 확인하세요.
+
+
+[2026-10-28T00:45:14+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A8
+✔ 통과: A8 산출물·상태·터미널 출력 일치
+[exit 0; 0.043s]
+
+[2026-10-28T00:45:14+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A8
+✔ 통과: A8 시작 상태 복원
+[exit 0; 0.057s]
+
+[2026-10-28T00:45:14+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.003s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'today = "2026-10-27"' → 'today = "2026-10-28"'
+
+[2026-10-28T00:45:15+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+[exit 0; 0.073s]
+
+[수동 확인/편집] 날짜 변경 links.csv: check,checked_on,id,price,program,url
+mock 정상,2026-10-28,nail,표시하지 않음,쿠팡(모의),https://example.invalid/nail
+
+
+[2026-10-28T00:45:15+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A8
+✔ 통과: A8 시작 상태 복원
+[exit 0; 0.061s]
+
+[2026-10-28T00:45:15+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+[exit 0; 0.08s]
+
+[2026-10-28T00:45:15+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample affiliate
+✔ 통과: 자동 검사 완료
+output/gates/affiliate.txt
+[exit 0; 0.062s]
+
+[2026-10-28T00:45:15+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A8
+✔ 통과: A8 산출물·상태·터미널 출력 일치
+[exit 0; 0.037s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A9
+✔ 통과: A9 시작 상태 복원
+[exit 0; 0.06s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.098s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+[exit 0; 0.059s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+[exit 0; 0.106s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample sponsor --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · f62525058efb
+output/gates/sponsor.txt
+[exit 0; 0.075s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample sponsor
+✔ 통과: WordPress post_id=2 · future
+private/state.sqlite3
+[exit 0; 0.106s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --sample sponsor --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.086s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py sponsor settle
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.071s]
+
+[수동 확인/편집] ledger.csv: id,content_id,state
+blanket,blanket,declined
+shelf,sponsor,settled
+
+
+[수동 확인/편집] tax.csv: date,cash,goods,valuation_basis,return_terms,costs,withholding,paid_amount,evidence,tax_guide
+2026-10-27,0원(가상),그림책꽂이 1개(가상),제공 명세 확인; 실제 가액 미확정,반납 없음,확인 필요,세무 상담 확인,0(현금 없음),가상 제공 명세 v1,https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7890&mi=6610
+
+
+[수동 확인/편집] sponsor.html: <p>상품 협찬: 가상 브랜드 도담에서 그림책꽂이를 무료 제공받았습니다.</p>
+<h2>책을 정리할 자리</h2>
+<p>그림책 표지가 보이도록 정리할 수 있는 가상의 원목 꽂이입니다. 설치 전 넘어짐 방지와 제품의 안전 자료를 확인하세요.</p>
+<p>이 글과 브랜드는 가상 시연입니다. 사용 경험은 사람이 직접 적어야 합니다.</p>
+<p>출처: [BX037] 공정거래위원회 추천·보증 표시 안내. 제품과 브랜드는 가상 시연입니다.</p>
+<p>가상 시연: 사람이 실제 사용한 경험을 여기에 직접 작성합니다. 이 문장은 실제 사용 후기가 아닙니다.</p>
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A9
+✔ 통과: A9 시작 상태 복원
+[exit 0; 0.057s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.003s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.099s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+[exit 0; 0.069s]
+
+[2026-10-28T00:45:29+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+[exit 0; 0.1s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'mode = "approval"' → 'mode = "auto"'
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample sponsor
+✖ 막힘: 사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요
+[exit 1; 0.079s]
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A9
+✔ 통과: A9 시작 상태 복원
+[exit 0; 0.057s]
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.094s]
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+[exit 0; 0.057s]
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+[exit 0; 0.1s]
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py gate --sample sponsor --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · f62525058efb
+output/gates/sponsor.txt
+[exit 0; 0.075s]
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py publish --sample sponsor
+✔ 통과: WordPress post_id=2 · future
+private/state.sqlite3
+[exit 0; 0.108s]
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py status --sample sponsor --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+[exit 0; 0.088s]
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py sponsor settle
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+[exit 0; 0.076s]
+
+[수동 확인/편집] ledger.csv: id,content_id,state
+blanket,blanket,declined
+shelf,sponsor,settled
+
+
+[수동 확인/편집] tax.csv: date,cash,goods,valuation_basis,return_terms,costs,withholding,paid_amount,evidence,tax_guide
+2026-10-27,0원(가상),그림책꽂이 1개(가상),제공 명세 확인; 실제 가액 미확정,반납 없음,확인 필요,세무 상담 확인,0(현금 없음),가상 제공 명세 v1,https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7890&mi=6610
+
+
+[2026-10-28T00:45:30+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A9
+✔ 통과: A9 산출물·상태·터미널 출력 일치
+[exit 0; 0.035s]
+
+[2026-10-28T00:45:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A10
+✔ 통과: A10 시작 상태 복원
+[exit 0; 0.061s]
+
+[2026-10-28T00:45:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html
+[exit 0; 0.063s]
+
+[수동 확인/편집] weekly.html:     주간 보고서 (모의)  기준일 2026-10-27. 방문 120, 검색 클릭 20: 모두 가상 지표.  GA4는 속성 시간대, GSC는 태평양 시간 기준이며 반영 지연과 빈 행을 확인하세요.  광고·제휴 예상액: 미집계 / 확정액: 미집계 / 실제 입금: 미확인  기준일이 지난 금액·날짜 글   없음   다음 글감 점수 (모의)  독자 질문 3 + 공식 근거 2 + 기존 경험 1 = 6점  
+
+[2026-10-28T00:45:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A10
+✔ 통과: A10 시작 상태 복원
+[exit 0; 0.061s]
+
+[2026-10-28T00:45:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.003s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'today = "2026-10-27"' → 'today = "2026-10-28"'
+
+[2026-10-28T00:45:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html
+[exit 0; 0.078s]
+
+[수동 확인/편집] 보고서 변경 날짜: True
+
+[2026-10-28T00:45:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A10
+✔ 통과: A10 시작 상태 복원
+[exit 0; 0.062s]
+
+[2026-10-28T00:45:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html
+[exit 0; 0.065s]
+
+[2026-10-28T00:45:35+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A10
+✔ 통과: A10 산출물·상태·터미널 출력 일치
+[exit 0; 0.037s]
+
+[2026-10-28T00:45:46+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A11
+✔ 통과: A11 시작 상태 복원
+[exit 0; 0.079s]
+
+[2026-10-28T00:45:46+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --ops
+✔ 통과: 알림 드라이런·예약 예시·백업
+output/schedules/cron.txt
+output/schedules/launchd.plist
+output/schedules/windows.txt
+output/backups/blog.zip
+[exit 0; 0.064s]
+
+[수동 확인/편집] output/notifications.json: [
+  {
+    "event": "approval_waiting",
+    "today": "2026-10-27",
+    "live": false
+  }
+]
+
+
+[수동 확인/편집] output/schedules/cron.txt: # <KIT>을 실제 키트 경로로 바꾼 뒤 직접 등록하세요.
+0 9 * * * cd "<KIT>" && "<KIT>/.venv/bin/python" blog.py report
+
+
+[수동 확인/편집] output/schedules/launchd.plist: <?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0"><dict><key>Label</key><string>example.blog</string><key>WorkingDirectory</key><string>&lt;KIT&gt;</string><key>ProgramArguments</key><array><string>&lt;KIT&gt;/.venv/bin/python</string><string>blog.py</string><string>report</string></array><key>StartCalendarInterval</key><dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer></dict></dict></plist>
+<!-- <KIT>을 실제 경로로 변경 후 직접 등록 -->
+
+
+[수동 확인/편집] output/schedules/windows.txt: PowerShell에서 <KIT>을 실제 경로로 바꾼 뒤 직접 등록하세요.
+schtasks /Create /SC DAILY /ST 09:00 /TN "BlogAutoKit" /TR '"<KIT>\.venv\Scripts\python.exe" "<KIT>\blog.py" report'
+schtasks /Query /TN "BlogAutoKit"
+schtasks /Delete /TN "BlogAutoKit"
+
+
+[수동 확인/편집] ZIP 파일 목록: ['config.example.toml', 'private/mock-wp/media/1.bin', 'private/mock-wp/media/2.bin', 'private/mock-wp/state.json', 'state.sql']
+
+[수동 확인/편집] 본문 지시대로 private/state.sqlite3와 private/mock-wp를 키트 밖 복구전-보관으로 이동. ZIP은 그대로 둠.
+
+[2026-10-28T00:45:46+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --restore
+✔ 통과: SQLite·mock WordPress·설정 복구
+[exit 0; 0.091s]
+
+[수동 확인/편집] 복원 파일 재생성: True
+
+[2026-10-28T00:45:47+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A11
+✔ 통과: A11 시작 상태 복원
+[exit 0; 0.06s]
+
+[2026-10-28T00:45:47+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.003s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'today = "2026-10-27"' → 'today = "2026-10-28"'
+
+[2026-10-28T00:45:47+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --ops
+✔ 통과: 알림 드라이런·예약 예시·백업
+output/schedules/cron.txt
+output/schedules/launchd.plist
+output/schedules/windows.txt
+output/backups/blog.zip
+[exit 0; 0.064s]
+
+[수동 확인/편집] 알림 변경 날짜: [
+  {
+    "event": "approval_waiting",
+    "today": "2026-10-28",
+    "live": false
+  }
+]
+
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'today = "2026-10-28"' → 'today = "2026-10-29"'
+
+[2026-10-28T00:45:47+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --restore
+✔ 통과: SQLite·mock WordPress·설정 복구
+[exit 0; 0.068s]
+
+[수동 확인/편집] 설정 28일 복원: True
+
+[2026-10-28T00:45:47+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A11
+✔ 통과: A11 시작 상태 복원
+[exit 0; 0.056s]
+
+[2026-10-28T00:45:47+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --ops
+✔ 통과: 알림 드라이런·예약 예시·백업
+output/schedules/cron.txt
+output/schedules/launchd.plist
+output/schedules/windows.txt
+output/backups/blog.zip
+[exit 0; 0.065s]
+
+[2026-10-28T00:45:47+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --restore
+✔ 통과: SQLite·mock WordPress·설정 복구
+[exit 0; 0.066s]
+
+[2026-10-28T00:45:47+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A11
+✔ 통과: A11 산출물·상태·터미널 출력 일치
+[exit 0; 0.035s]
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A12
+✔ 통과: A12 시작 상태 복원
+[exit 0; 0.064s]
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+[exit 0; 0.063s]
+
+[수동 확인/편집] 점검표: 2026년 10월 조사 기준
+[ ] 출처·저작권·제품 자료
+  확인자: 
+  근거 파일·주소: 
+  보류 이유·다음 확인일: 
+[ ] 경제관계 첫부분 표시·실제 경험
+  확인자: 
+  근거 파일·주소: 
+  보류 이유·다음 확인일: 
+[ ] 아동 정보·사진 사람 확인
+  확인자: 
+  근거 파일·주소: 
+  보류 이유·다음 확인일: 
+[ ] 개인정보 실제 흐름·광고코드 확인
+  확인자: 
+  근거 파일·주소: 
+  보류 이유·다음 확인일: 
+[ ] 현물·부가세·사업자등록 국세청126 확인
+  확인자: 
+  근거 파일·주소: 
+  보류 이유·다음 확인일: 
+[ ] 육아휴직급여 소득활동 고용센터1350 확인
+  확인자: 
+  근거 파일·주소: 
+  보류 이유·다음 확인일: 
+
+
+[수동 확인/편집] 실제 자료 없음: 모든 항목 보류. 가상 info 글의 원문 링크·서윤 검토·실자료 확인일을 복사본에 기록할 과제로 남김.
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.004s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'mode = "approval"' → 'mode = "auto"'
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+[exit 0; 0.062s]
+
+[수동 확인/편집] 자동 모드에서도 미체크 수: 6
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A12
+✔ 통과: A12 시작 상태 복원
+[exit 0; 0.063s]
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+[exit 0; 0.073s]
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start A12
+✔ 통과: A12 시작 상태 복원
+[exit 0; 0.063s]
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+[exit 0; 0.071s]
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check A12
+✔ 통과: A12 산출물·상태·터미널 출력 일치
+[exit 0; 0.038s]
+
+[2026-10-28T00:45:57+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start E2E
+✔ 통과: E2E 시작 상태 복원
+[exit 0; 0.06s]
+
+[2026-10-28T00:45:58+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --scenarios
+✔ 통과: mock_normal
+✔ 통과: regulated_refusal
+✔ 통과: missing_data
+✔ 통과: reapproval
+✔ 통과: timeout_no_duplicate
+✔ 통과: backup_restore
+[exit 0; 0.526s]
+
+[수동 확인/편집] scenarios.json: {
+  "mock_normal": {
+    "passed": true,
+    "evidence": "mock 초안·사람 승인·예약 후 고정 시계 10월 29일 공개 확인"
+  },
+  "regulated_refusal": {
+    "passed": true,
+    "evidence": "조제유류 판매촉진 차단·사람 승인 거부·서버 글 0개"
+  },
+  "missing_data": {
+    "passed": true,
+    "evidence": "모델·인증 자료 누락: 제품 관문 검토 대기, 서버 글 0개"
+  },
+  "reapproval": {
+    "passed": true,
+    "evidence": "HTML 수정 후 예약 거부·같은 post_id 재승인 후 예약"
+  },
+  "timeout_no_duplicate": {
+    "passed": true,
+    "evidence": "생성 응답 유실 후 슬러그 조회 복구, 재실행해도 서버 글 1개"
+  },
+  "backup_restore": {
+    "passed": true,
+    "evidence": "SQLite 논리 데이터와 mock 미디어 바이트 복구 확인"
+  }
+}
+
+
+[2026-10-28T00:45:58+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ cp config.example.toml config.toml
+[exit 0; 0.003s]
+
+[수동 확인/편집] 본문의 편집 지시: config.toml 'today = "2026-10-27"' → 'today = "2026-10-28"'
+
+[2026-10-28T00:45:58+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --scenarios
+✔ 통과: mock_normal
+✔ 통과: regulated_refusal
+✔ 통과: missing_data
+✔ 통과: reapproval
+✔ 통과: timeout_no_duplicate
+✔ 통과: backup_restore
+[exit 0; 0.531s]
+
+[수동 확인/편집] 변경 후 고정 증거: {
+  "mock_normal": {
+    "passed": true,
+    "evidence": "mock 초안·사람 승인·예약 후 고정 시계 10월 29일 공개 확인"
+  },
+  "regulated_refusal": {
+    "passed": true,
+    "evidence": "조제유류 판매촉진 차단·사람 승인 거부·서버 글 0개"
+  },
+  "missing_data": {
+    "passed": true,
+    "evidence": "모델·인증 자료 누락: 제품 관문 검토 대기, 서버 글 0개"
+  },
+  "reapproval": {
+    "passed": true,
+    "evidence": "HTML 수정 후 예약 거부·같은 post_id 재승인 후 예약"
+  },
+  "timeout_no_duplicate": {
+    "passed": true,
+    "evidence": "생성 응답 유실 후 슬러그 조회 복구, 재실행해도 서버 글 1개"
+  },
+  "backup_restore": {
+    "passed": true,
+    "evidence": "SQLite 논리 데이터와 mock 미디어 바이트 복구 확인"
+  }
+}
+
+
+[2026-10-28T00:45:58+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py start E2E
+✔ 통과: E2E 시작 상태 복원
+[exit 0; 0.061s]
+
+[2026-10-28T00:45:59+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python blog.py run --scenarios
+✔ 통과: mock_normal
+✔ 통과: regulated_refusal
+✔ 통과: missing_data
+✔ 통과: reapproval
+✔ 통과: timeout_no_duplicate
+✔ 통과: backup_restore
+[exit 0; 0.557s]
+
+[2026-10-28T00:45:59+0900] /tmp/bx6-sequential-m0bu4hzz/blog-auto-kit
+$ python course.py check E2E
+✔ 통과: E2E 산출물·상태·터미널 출력 일치
+[exit 0; 0.035s]
+
+[수동 확인/편집] A12 개인 점검표 복사본에 확인자·가상 근거·실자료 미확보 보류를 기록. 실제 법/세금 확인으로 표시하지 않음. E2E 브라우저 mock 8칸과 여섯 메모 기록, 별도 증거 파일에 보관.

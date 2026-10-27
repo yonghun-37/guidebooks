@@ -1,0 +1,212 @@
+[
+  {
+    "page": "01-environment.html",
+    "command": "python course.py doctor",
+    "expected": "✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트\n✔ 통과: 고정 시계 2026-10-27 · 시드 37",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "01-environment.html",
+    "command": "python blog.py status --mock",
+    "expected": "✔ 통과: mock REST 연결\noutput/status.json",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "01-environment.html",
+    "command": "python blog.py run --sample",
+    "expected": "✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1\noutput/drafts/info.html\noutput/analytics/weekly.html",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "02-wordpress.html",
+    "command": "python blog.py pages",
+    "expected": "✔ 통과: pages 생성\noutput/pages/about.html\noutput/pages/privacy.html\noutput/pages/contact.html\noutput/pages/advertising.html",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "03-topics.html",
+    "command": "python blog.py topics",
+    "expected": "✔ 통과: 주제 지도 생성\noutput/topics.json",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "04-drafts.html",
+    "command": "python blog.py draft --sample info",
+    "expected": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/info.json",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "04-drafts.html",
+    "command": "python blog.py draft --sample play",
+    "expected": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/play.json",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "04-drafts.html",
+    "command": "python blog.py draft --sample affiliate",
+    "expected": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/affiliate.json",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "05-gates.html",
+    "command": "python blog.py gate --sample info",
+    "expected": "✔ 통과: 자동 검사 완료\noutput/gates/info.txt",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "05-gates.html",
+    "command": "python blog.py gate --sample play",
+    "expected": "✔ 통과: 자동 검사 완료 · 사람 검토 대기\noutput/gates/play.txt",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "06-publish.html",
+    "command": "python blog.py publish --sample info --prepare",
+    "expected": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "06-publish.html",
+    "command": "python blog.py gate --sample info --approve 서윤",
+    "expected": "✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb\noutput/gates/info.txt",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "06-publish.html",
+    "command": "python blog.py publish --sample info",
+    "expected": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "06-publish.html",
+    "command": "python blog.py status --sample info",
+    "expected": "✔ 통과: 서버 상태 재조회\noutput/status.json",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "06-publish.html",
+    "command": "python blog.py status --sample info --advance-days 2",
+    "expected": "✔ 통과: 서버 상태 재조회\noutput/status.json",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "07-ads.html",
+    "command": "python blog.py ads",
+    "expected": "✔ 통과: ads 생성\noutput/ads/checklist.txt\noutput/ads/ads.txt\noutput/ads/layout.html\noutput/ads/report.html\noutput/ads/metrics.json",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "08-affiliate.html",
+    "command": "python blog.py affiliate --sample affiliate",
+    "expected": "✔ 통과: affiliate 생성\noutput/affiliate/links.csv",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "08-affiliate.html",
+    "command": "python blog.py gate --sample affiliate",
+    "expected": "✔ 통과: 자동 검사 완료\noutput/gates/affiliate.txt",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "09-sponsorship.html",
+    "command": "python blog.py sponsor demo",
+    "expected": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "09-sponsorship.html",
+    "command": "python blog.py draft --sample sponsor --human-notes",
+    "expected": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/sponsor.json",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "09-sponsorship.html",
+    "command": "python blog.py publish --sample sponsor --prepare",
+    "expected": "✔ 통과: WordPress post_id=2 · draft\nprivate/state.sqlite3",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "09-sponsorship.html",
+    "command": "python blog.py gate --sample sponsor --approve 서윤",
+    "expected": "✔ 통과: 현재 최종본 사람 승인 · f62525058efb\noutput/gates/sponsor.txt",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "09-sponsorship.html",
+    "command": "python blog.py publish --sample sponsor",
+    "expected": "✔ 통과: WordPress post_id=2 · future\nprivate/state.sqlite3",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "09-sponsorship.html",
+    "command": "python blog.py status --sample sponsor --advance-days 2",
+    "expected": "✔ 통과: 서버 상태 재조회\noutput/status.json",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "09-sponsorship.html",
+    "command": "python blog.py sponsor settle",
+    "expected": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv",
+    "match": true,
+    "matches": 2
+  },
+  {
+    "page": "10-analytics.html",
+    "command": "python blog.py report",
+    "expected": "✔ 통과: report 생성\noutput/analytics/weekly.html",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "11-operations.html",
+    "command": "python blog.py run --ops",
+    "expected": "✔ 통과: 알림 드라이런·예약 예시·백업\noutput/schedules/cron.txt\noutput/schedules/launchd.plist\noutput/schedules/windows.txt\noutput/backups/blog.zip",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "11-operations.html",
+    "command": "python blog.py run --restore",
+    "expected": "✔ 통과: SQLite·mock WordPress·설정 복구",
+    "match": true,
+    "matches": 3
+  },
+  {
+    "page": "12-policy.html",
+    "command": "python blog.py run --audit",
+    "expected": "✔ 통과: 출시 전 사람이 확인할 점검표\noutput/launch-checklist.txt",
+    "match": true,
+    "matches": 4
+  },
+  {
+    "page": "e2e.html",
+    "command": "python blog.py run --scenarios",
+    "expected": "✔ 통과: mock_normal\n✔ 통과: regulated_refusal\n✔ 통과: missing_data\n✔ 통과: reapproval\n✔ 통과: timeout_no_duplicate\n✔ 통과: backup_restore",
+    "match": true,
+    "matches": 3
+  }
+]

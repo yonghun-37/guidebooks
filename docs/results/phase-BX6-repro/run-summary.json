@@ -1,0 +1,189 @@
+[
+  {
+    "session": "artifact-recheck",
+    "commands": 21,
+    "command_seconds": 3.553,
+    "first": "2026-10-28T00:57:05+0900",
+    "last": "2026-10-28T00:57:08+0900",
+    "checks": [],
+    "nonzero": []
+  },
+  {
+    "session": "mid-A11",
+    "commands": 28,
+    "command_seconds": 5.903,
+    "first": "2026-10-28T00:46:19+0900",
+    "last": "2026-10-28T00:46:22+0900",
+    "checks": [
+      "✔ 통과: A11 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A12 산출물·상태·터미널 출력 일치",
+      "✔ 통과: E2E 산출물·상태·터미널 출력 일치"
+    ],
+    "nonzero": []
+  },
+  {
+    "session": "mid-A5",
+    "commands": 106,
+    "command_seconds": 11.526,
+    "first": "2026-10-28T00:46:19+0900",
+    "last": "2026-10-28T00:46:28+0900",
+    "checks": [
+      "✔ 통과: A5 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A6 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A7 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A7 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A8 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A8 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A9 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A10 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A11 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A12 산출물·상태·터미널 출력 일치",
+      "✔ 통과: E2E 산출물·상태·터미널 출력 일치"
+    ],
+    "nonzero": [
+      {
+        "command": "python blog.py publish --sample info",
+        "exit": 1,
+        "output": "✖ 막힘: 승인 후 내용이 바뀜 → gate --approve로 재승인하세요\n"
+      },
+      {
+        "command": "python blog.py ads",
+        "exit": 1,
+        "output": "✖ 막힘: 설정 24줄 ad_after_h2: 양의 정수가 필요함 → ad_after_h2=2로 고치세요\n"
+      },
+      {
+        "command": "python blog.py publish --sample sponsor",
+        "exit": 1,
+        "output": "✖ 막힘: 사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요\n"
+      }
+    ]
+  },
+  {
+    "session": "mid-A9",
+    "commands": 59,
+    "command_seconds": 8.514,
+    "first": "2026-10-28T00:46:19+0900",
+    "last": "2026-10-28T00:46:25+0900",
+    "checks": [
+      "✔ 통과: A9 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A10 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A11 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A12 산출물·상태·터미널 출력 일치",
+      "✔ 통과: E2E 산출물·상태·터미널 출력 일치"
+    ],
+    "nonzero": [
+      {
+        "command": "python blog.py publish --sample sponsor",
+        "exit": 1,
+        "output": "✖ 막힘: 사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요\n"
+      }
+    ]
+  },
+  {
+    "session": "mistake-config",
+    "commands": 6,
+    "command_seconds": 2.453,
+    "first": "2026-10-28T00:47:02+0900",
+    "last": "2026-10-28T00:47:02+0900",
+    "checks": [
+      "✔ 통과: A10 산출물·상태·터미널 출력 일치"
+    ],
+    "nonzero": [
+      {
+        "command": "python blog.py report",
+        "exit": 1,
+        "output": "✖ 막힘: 설정 3줄 today: 날짜 형식 오류 → today=\"2026-10-27\"로 고치세요\n"
+      }
+    ]
+  },
+  {
+    "session": "mistake-folder",
+    "commands": 6,
+    "command_seconds": 2.246,
+    "first": "2026-10-28T00:46:57+0900",
+    "last": "2026-10-28T00:46:57+0900",
+    "checks": [],
+    "nonzero": [
+      {
+        "command": "python course.py doctor",
+        "exit": 2,
+        "output": "python: can't open file '/tmp/bx6-mistake-folder-tbzjq46z/course.py': [Errno 2] No such file or directory\n"
+      }
+    ]
+  },
+  {
+    "session": "mistake-skip-chapter",
+    "commands": 9,
+    "command_seconds": 2.8,
+    "first": "2026-10-28T00:47:22+0900",
+    "last": "2026-10-28T00:47:22+0900",
+    "checks": [
+      "✔ 통과: A8 산출물·상태·터미널 출력 일치"
+    ],
+    "nonzero": [
+      {
+        "command": "python blog.py affiliate --sample affiliate",
+        "exit": 1,
+        "output": "✖ 막힘: 초안 없음 → python blog.py draft --sample affiliate\n"
+      }
+    ]
+  },
+  {
+    "session": "mistake-skip",
+    "commands": 11,
+    "command_seconds": 2.828,
+    "first": "2026-10-28T00:46:59+0900",
+    "last": "2026-10-28T00:47:00+0900",
+    "checks": [
+      "✔ 통과: A9 산출물·상태·터미널 출력 일치"
+    ],
+    "nonzero": [
+      {
+        "command": "python blog.py sponsor settle",
+        "exit": 1,
+        "output": "✖ 막힘: 공개 상태 확인 전 → status --sample sponsor --advance-days 2를 실행하세요\n"
+      }
+    ]
+  },
+  {
+    "session": "sequential",
+    "commands": 146,
+    "command_seconds": 13.033,
+    "first": "2026-10-28T00:44:02+0900",
+    "last": "2026-10-28T00:45:59+0900",
+    "checks": [
+      "✔ 통과: A1 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A2 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A3 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A4 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A5 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A6 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A7 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A7 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A8 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A8 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A9 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A10 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A11 산출물·상태·터미널 출력 일치",
+      "✔ 통과: A12 산출물·상태·터미널 출력 일치",
+      "✔ 통과: E2E 산출물·상태·터미널 출력 일치"
+    ],
+    "nonzero": [
+      {
+        "command": "python blog.py publish --sample info",
+        "exit": 1,
+        "output": "✖ 막힘: 승인 후 내용이 바뀜 → gate --approve로 재승인하세요\n"
+      },
+      {
+        "command": "python blog.py ads",
+        "exit": 1,
+        "output": "✖ 막힘: 설정 24줄 ad_after_h2: 양의 정수가 필요함 → ad_after_h2=2로 고치세요\n"
+      },
+      {
+        "command": "python blog.py publish --sample sponsor",
+        "exit": 1,
+        "output": "✖ 막힘: 사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요\n"
+      }
+    ]
+  }
+]

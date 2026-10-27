@@ -1,0 +1,52 @@
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python3.11 -m venv .venv
+[exit 0; 2.256s]
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+[exit 0; 0.067s]
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+[exit 0; 0.037s]
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python blog.py status --mock
+✔ 통과: mock REST 연결
+output/status.json
+[exit 0; 0.092s]
+
+[수동 확인/편집] A2~A7을 건너뛰고 A8 생성 명령 실행(A8 start도 생략)
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python blog.py affiliate --sample affiliate
+✖ 막힘: 초안 없음 → python blog.py draft --sample affiliate
+[exit 1; 0.1s]
+
+[수동 확인/편집] A8 흔한 오류: 초안 없음 행에 있는 start A8부터 다시 실행 안내로 복구.
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python course.py start A8
+✔ 통과: A8 시작 상태 복원
+[exit 0; 0.064s]
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+[exit 0; 0.072s]
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python blog.py gate --sample affiliate
+✔ 통과: 자동 검사 완료
+output/gates/affiliate.txt
+[exit 0; 0.074s]
+
+[2026-10-28T00:47:22+0900] /tmp/bx6-mistake-skip-chapter-5ml2dzjd/blog-auto-kit
+$ python course.py check A8
+✔ 통과: A8 산출물·상태·터미널 출력 일치
+[exit 0; 0.038s]

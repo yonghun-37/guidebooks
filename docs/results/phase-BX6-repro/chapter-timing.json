@@ -1,0 +1,93 @@
+{
+  "A1": {
+    "first": "2026-10-28T00:44:02+0900",
+    "last": "2026-10-28T00:44:03+0900",
+    "command_seconds": 0.94,
+    "commands": 12,
+    "elapsed_seconds": 1.0
+  },
+  "A2": {
+    "first": "2026-10-28T00:44:13+0900",
+    "last": "2026-10-28T00:44:22+0900",
+    "command_seconds": 0.36,
+    "commands": 7,
+    "elapsed_seconds": 9.0
+  },
+  "A3": {
+    "first": "2026-10-28T00:44:22+0900",
+    "last": "2026-10-28T00:44:22+0900",
+    "command_seconds": 0.33,
+    "commands": 6,
+    "elapsed_seconds": 0.0
+  },
+  "A4": {
+    "first": "2026-10-28T00:44:34+0900",
+    "last": "2026-10-28T00:44:35+0900",
+    "command_seconds": 0.63,
+    "commands": 11,
+    "elapsed_seconds": 1.0
+  },
+  "A5": {
+    "first": "2026-10-28T00:44:48+0900",
+    "last": "2026-10-28T00:44:49+0900",
+    "command_seconds": 0.55,
+    "commands": 8,
+    "elapsed_seconds": 1.0
+  },
+  "A6": {
+    "first": "2026-10-28T00:44:59+0900",
+    "last": "2026-10-28T00:45:01+0900",
+    "command_seconds": 1.73,
+    "commands": 19,
+    "elapsed_seconds": 2.0
+  },
+  "A7": {
+    "first": "2026-10-28T00:45:06+0900",
+    "last": "2026-10-28T00:45:07+0900",
+    "command_seconds": 0.47,
+    "commands": 9,
+    "elapsed_seconds": 1.0
+  },
+  "A8": {
+    "first": "2026-10-28T00:45:14+0900",
+    "last": "2026-10-28T00:45:15+0900",
+    "command_seconds": 0.62,
+    "commands": 11,
+    "elapsed_seconds": 1.0
+  },
+  "A9": {
+    "first": "2026-10-28T00:45:29+0900",
+    "last": "2026-10-28T00:45:30+0900",
+    "command_seconds": 1.76,
+    "commands": 23,
+    "elapsed_seconds": 1.0
+  },
+  "A10": {
+    "first": "2026-10-28T00:45:35+0900",
+    "last": "2026-10-28T00:45:35+0900",
+    "command_seconds": 0.43,
+    "commands": 8,
+    "elapsed_seconds": 0.0
+  },
+  "A11": {
+    "first": "2026-10-28T00:45:46+0900",
+    "last": "2026-10-28T00:45:47+0900",
+    "command_seconds": 0.65,
+    "commands": 11,
+    "elapsed_seconds": 1.0
+  },
+  "A12": {
+    "first": "2026-10-28T00:45:57+0900",
+    "last": "2026-10-28T00:45:57+0900",
+    "command_seconds": 0.5,
+    "commands": 9,
+    "elapsed_seconds": 0.0
+  },
+  "E2E": {
+    "first": "2026-10-28T00:45:57+0900",
+    "last": "2026-10-28T00:45:59+0900",
+    "command_seconds": 1.77,
+    "commands": 7,
+    "elapsed_seconds": 2.0
+  }
+}

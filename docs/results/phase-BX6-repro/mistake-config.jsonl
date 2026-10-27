@@ -1,0 +1,6 @@
+{"time": "2026-10-28T00:47:02+0900", "cwd": "/tmp/bx6-mistake-config-cmkqmqiv/blog-auto-kit", "command": "python3.11 -m venv .venv", "exit": 0, "seconds": 2.236, "stdout": "", "stderr": ""}
+{"time": "2026-10-28T00:47:02+0900", "cwd": "/tmp/bx6-mistake-config-cmkqmqiv/blog-auto-kit", "command": "python course.py start A10", "exit": 0, "seconds": 0.062, "stdout": "✔ 통과: A10 시작 상태 복원\n", "stderr": ""}
+{"time": "2026-10-28T00:47:02+0900", "cwd": "/tmp/bx6-mistake-config-cmkqmqiv/blog-auto-kit", "command": "cp config.example.toml config.toml", "exit": 0, "seconds": 0.003, "stdout": "", "stderr": ""}
+{"time": "2026-10-28T00:47:02+0900", "cwd": "/tmp/bx6-mistake-config-cmkqmqiv/blog-auto-kit", "command": "python blog.py report", "exit": 1, "seconds": 0.058, "stdout": "✖ 막힘: 설정 3줄 today: 날짜 형식 오류 → today=\"2026-10-27\"로 고치세요\n", "stderr": ""}
+{"time": "2026-10-28T00:47:02+0900", "cwd": "/tmp/bx6-mistake-config-cmkqmqiv/blog-auto-kit", "command": "python blog.py report", "exit": 0, "seconds": 0.06, "stdout": "✔ 통과: report 생성\noutput/analytics/weekly.html\n", "stderr": ""}
+{"time": "2026-10-28T00:47:02+0900", "cwd": "/tmp/bx6-mistake-config-cmkqmqiv/blog-auto-kit", "command": "python course.py check A10", "exit": 0, "seconds": 0.034, "stdout": "✔ 통과: A10 산출물·상태·터미널 출력 일치\n", "stderr": ""}
