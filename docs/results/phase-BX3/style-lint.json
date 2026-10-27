@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": null,
+  "summary": {
+    "files": 14,
+    "passed": 14,
+    "failed": 0,
+    "char_count": 16528,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 0,
+      "caveats_inside": 0
+    }
+  },
+  "files": [
+    {
+      "path": "site-blog/advanced/00-start.html",
+      "track": "other",
+      "char_count": 395,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "134717ff2208b59573048df8bc55884e1843194f15b4ff24ae41ed77997452d5"
+    },
+    {
+      "path": "site-blog/advanced/01-environment.html",
+      "track": "other",
+      "char_count": 5877,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "9458675974b62cc13ec7875e1705f16f6979c414565af885bf86ec02df00bbea"
+    },
+    {
+      "path": "site-blog/advanced/02-wordpress.html",
+      "track": "other",
+      "char_count": 170,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "2035686a7d631617e64adfc12fa77400b7acf5becf21b8abe72959ab7ecebdb4"
+    },
+    {
+      "path": "site-blog/advanced/03-topics.html",
+      "track": "other",
+      "char_count": 166,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "0415efe3a55f59e207c976e7cd6a4c0ecf34b0b4c36b9a83034104136b229de8"
+    },
+    {
+      "path": "site-blog/advanced/04-drafts.html",
+      "track": "other",
+      "char_count": 167,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "82df05d5fceb451f60990426e4bb1819a60f076af3862c8aefdf85dc1f7ebd6d"
+    },
+    {
+      "path": "site-blog/advanced/05-gates.html",
+      "track": "other",
+      "char_count": 165,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "6de8ddc4b554b40417195a3317447bcb22725c13f897af54ff4ce805a2b4f85c"
+    },
+    {
+      "path": "site-blog/advanced/06-publish.html",
+      "track": "other",
+      "char_count": 166,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "f82a7abe578e7c609044ecee97cb0155ca8f475930f93d91205725aad3af2e8b"
+    },
+    {
+      "path": "site-blog/advanced/07-ads.html",
+      "track": "other",
+      "char_count": 161,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "029215b5eeb27a0a285254d12ab6a31d775748f1dabcb79c543f36989fdc32ea"
+    },
+    {
+      "path": "site-blog/advanced/08-affiliate.html",
+      "track": "other",
+      "char_count": 165,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "3f10c59ecb6546f5f083414a8f214efde061db68cd8cccfcc2fc35410e29be66"
+    },
+    {
+      "path": "site-blog/advanced/09-sponsorship.html",
+      "track": "other",
+      "char_count": 8427,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "fc34e2426dd1e2230bf435ba77748483888c9430af499def7f7b4ecac884257f"
+    },
+    {
+      "path": "site-blog/advanced/10-analytics.html",
+      "track": "other",
+      "char_count": 164,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "89ba28a71697fb857a22fae5113ba6ab5c1dcf0271a615a2f01be7609fefcbb5"
+    },
+    {
+      "path": "site-blog/advanced/11-operations.html",
+      "track": "other",
+      "char_count": 168,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "ae3e204815f0278daa6d9bccce66631bd84e9f17af786763a83e793626fc1674"
+    },
+    {
+      "path": "site-blog/advanced/12-policy.html",
+      "track": "other",
+      "char_count": 166,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "d137ad78012c9942df6067d66efbee0d1cb4ce7c0193cabe72512a35656147d5"
+    },
+    {
+      "path": "site-blog/advanced/e2e.html",
+      "track": "other",
+      "char_count": 171,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "af753873878c91b89d1d98279e336729bda180fdc635f000c9e358f9476c43f1"
+    }
+  ]
+}

@@ -1,0 +1,2061 @@
+{
+  "pages": 42,
+  "checks": 260,
+  "errors": [],
+  "screenshots": [
+    "a1-1280-light.png",
+    "a9-1280-light.png",
+    "tool-1280-light.png",
+    "a1-1280-dark.png",
+    "a9-1280-dark.png",
+    "tool-1280-dark.png",
+    "a1-375-light.png",
+    "a9-375-light.png",
+    "tool-375-light.png",
+    "a1-375-dark.png",
+    "a9-375-dark.png",
+    "tool-375-dark.png",
+    "a1-360-light.png",
+    "a9-360-light.png",
+    "tool-360-light.png",
+    "a1-360-dark.png",
+    "a9-360-dark.png",
+    "tool-360-dark.png"
+  ],
+  "results": [
+    {
+      "file": "index.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "블로그 수익화 입문서"
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지",
+      "current": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지 완성"
+    },
+    {
+      "file": "chapters/02-revenue.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 2장 · 블로그는 무엇으로 돈을 버나",
+      "current": "(이론) 2장 · 블로그는 무엇으로 돈을 버나 완성"
+    },
+    {
+      "file": "chapters/03-ai-tools.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 3장 · AI 도구 지도",
+      "current": "(이론) 3장 · AI 도구 지도 완성"
+    },
+    {
+      "file": "chapters/04-platforms.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 4장 · 플랫폼 고르기",
+      "current": "(이론) 4장 · 플랫폼 고르기 완성"
+    },
+    {
+      "file": "chapters/05-keywords.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 5장 · 주제와 키워드",
+      "current": "(이론) 5장 · 주제와 키워드 완성"
+    },
+    {
+      "file": "chapters/06-writing.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 6장 · AI로 글 쓰기 레시피",
+      "current": "(이론) 6장 · AI로 글 쓰기 레시피 완성"
+    },
+    {
+      "file": "chapters/07-images.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 7장 · 이미지·썸네일",
+      "current": "(이론) 7장 · 이미지·썸네일 완성"
+    },
+    {
+      "file": "chapters/08-seo.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 8장 · 검색에 잘 보이는 글",
+      "current": "(이론) 8장 · 검색에 잘 보이는 글 완성"
+    },
+    {
+      "file": "chapters/09-monetize.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 9장 · 수익 장치 붙이기",
+      "current": "(이론) 9장 · 수익 장치 붙이기 완성"
+    },
+    {
+      "file": "chapters/10-automation.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 10장 · 반복과 자동화",
+      "current": "(이론) 10장 · 반복과 자동화 완성"
+    },
+    {
+      "file": "chapters/11-analytics.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 11장 · 숫자 읽기",
+      "current": "(이론) 11장 · 숫자 읽기 완성"
+    },
+    {
+      "file": "chapters/12-policy.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 12장 · 정책·저작권·광고 표시·세금",
+      "current": "(이론) 12장 · 정책·저작권·광고 표시·세금 완성"
+    },
+    {
+      "file": "chapters/13-plan.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "(이론) 13장 · 30일 운영 계획",
+      "current": "(이론) 13장 · 30일 운영 계획 완성"
+    },
+    {
+      "file": "chapters/pending.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "장 찾기"
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 0 · 시작 전에: 오늘 쓸 글 고르기",
+      "current": "실습 0 · 시작 전에: 오늘 쓸 글 고르기 완성"
+    },
+    {
+      "file": "practice/01-account.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 1 · 계정과 블로그 만들기",
+      "current": "실습 1 · 계정과 블로그 만들기 완성"
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 2 · 도구 준비",
+      "current": "실습 2 · 도구 준비 완성"
+    },
+    {
+      "file": "practice/03-keywords.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 3 · 키워드 고르기",
+      "current": "실습 3 · 키워드 고르기 완성"
+    },
+    {
+      "file": "practice/04-draft.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 4 · AI 초안과 사실 확인",
+      "current": "실습 4 · AI 초안과 사실 확인 완성"
+    },
+    {
+      "file": "practice/05-images.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 5 · 이미지·썸네일 만들기",
+      "current": "실습 5 · 이미지·썸네일 만들기 완성"
+    },
+    {
+      "file": "practice/06-editor.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 6 · 편집기에서 글 다듬기",
+      "current": "실습 6 · 편집기에서 글 다듬기 완성"
+    },
+    {
+      "file": "practice/07-publish.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 7 · 첫 글 실제로 발행하기",
+      "current": "실습 7 · 첫 글 실제로 발행하기 완성"
+    },
+    {
+      "file": "practice/08-search.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 8 · 검색 등록",
+      "current": "실습 8 · 검색 등록 완성"
+    },
+    {
+      "file": "practice/09-monetize.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 9 · 수익 장치 신청",
+      "current": "실습 9 · 수익 장치 신청 완성"
+    },
+    {
+      "file": "practice/10-automation.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 10 · 선택: 자동화와 첫 숫자 확인",
+      "current": "실습 10 · 선택: 자동화와 첫 숫자 확인 완성"
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "실습 한 편 완성 체크리스트",
+      "current": "실습 한 편 완성 체크리스트 완성"
+    },
+    {
+      "file": "practice/pending.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "장 찾기"
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림",
+      "current": "심화 A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림 준비 중"
+    },
+    {
+      "file": "advanced/01-environment.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A1 · 같은 결과가 나오는 작업 환경",
+      "current": "심화 A1 · 같은 결과가 나오는 작업 환경 완성"
+    },
+    {
+      "file": "advanced/02-wordpress.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A2 · 블로그 서버와 필수 페이지",
+      "current": "심화 A2 · 블로그 서버와 필수 페이지 준비 중"
+    },
+    {
+      "file": "advanced/03-topics.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A3 · 글감과 콘텐츠 설계",
+      "current": "심화 A3 · 글감과 콘텐츠 설계 준비 중"
+    },
+    {
+      "file": "advanced/04-drafts.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A4 · AI 초안 생성",
+      "current": "심화 A4 · AI 초안 생성 준비 중"
+    },
+    {
+      "file": "advanced/05-gates.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A5 · 자동 품질 관문",
+      "current": "심화 A5 · 자동 품질 관문 준비 중"
+    },
+    {
+      "file": "advanced/06-publish.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A6 · 발행 자동화",
+      "current": "심화 A6 · 발행 자동화 준비 중"
+    },
+    {
+      "file": "advanced/07-ads.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A7 · 광고 붙이기",
+      "current": "심화 A7 · 광고 붙이기 준비 중"
+    },
+    {
+      "file": "advanced/08-affiliate.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A8 · 제휴 링크 운영",
+      "current": "심화 A8 · 제휴 링크 운영 준비 중"
+    },
+    {
+      "file": "advanced/09-sponsorship.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A9 · 육아용품 협찬 받기",
+      "current": "심화 A9 · 육아용품 협찬 받기 완성"
+    },
+    {
+      "file": "advanced/10-analytics.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A10 · 숫자 모으기와 개선",
+      "current": "심화 A10 · 숫자 모으기와 개선 준비 중"
+    },
+    {
+      "file": "advanced/11-operations.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A11 · 예약 실행과 운영",
+      "current": "심화 A11 · 예약 실행과 운영 준비 중"
+    },
+    {
+      "file": "advanced/12-policy.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "A12 · 정책·법·세금 점검",
+      "current": "심화 A12 · 정책·법·세금 점검 준비 중"
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "title": "E2E · 심화 진행표",
+      "current": "심화 E2E · 심화 진행표 준비 중"
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "interaction": "keyboard full route, save/reload, refusal, hold/resume passed"
+    },
+    {
+      "file": "index.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "블로그 수익화 입문서"
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지",
+      "current": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지 완성"
+    },
+    {
+      "file": "chapters/02-revenue.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 2장 · 블로그는 무엇으로 돈을 버나",
+      "current": "(이론) 2장 · 블로그는 무엇으로 돈을 버나 완성"
+    },
+    {
+      "file": "chapters/03-ai-tools.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 3장 · AI 도구 지도",
+      "current": "(이론) 3장 · AI 도구 지도 완성"
+    },
+    {
+      "file": "chapters/04-platforms.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 4장 · 플랫폼 고르기",
+      "current": "(이론) 4장 · 플랫폼 고르기 완성"
+    },
+    {
+      "file": "chapters/05-keywords.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 5장 · 주제와 키워드",
+      "current": "(이론) 5장 · 주제와 키워드 완성"
+    },
+    {
+      "file": "chapters/06-writing.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 6장 · AI로 글 쓰기 레시피",
+      "current": "(이론) 6장 · AI로 글 쓰기 레시피 완성"
+    },
+    {
+      "file": "chapters/07-images.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 7장 · 이미지·썸네일",
+      "current": "(이론) 7장 · 이미지·썸네일 완성"
+    },
+    {
+      "file": "chapters/08-seo.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 8장 · 검색에 잘 보이는 글",
+      "current": "(이론) 8장 · 검색에 잘 보이는 글 완성"
+    },
+    {
+      "file": "chapters/09-monetize.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 9장 · 수익 장치 붙이기",
+      "current": "(이론) 9장 · 수익 장치 붙이기 완성"
+    },
+    {
+      "file": "chapters/10-automation.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 10장 · 반복과 자동화",
+      "current": "(이론) 10장 · 반복과 자동화 완성"
+    },
+    {
+      "file": "chapters/11-analytics.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 11장 · 숫자 읽기",
+      "current": "(이론) 11장 · 숫자 읽기 완성"
+    },
+    {
+      "file": "chapters/12-policy.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 12장 · 정책·저작권·광고 표시·세금",
+      "current": "(이론) 12장 · 정책·저작권·광고 표시·세금 완성"
+    },
+    {
+      "file": "chapters/13-plan.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "(이론) 13장 · 30일 운영 계획",
+      "current": "(이론) 13장 · 30일 운영 계획 완성"
+    },
+    {
+      "file": "chapters/pending.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "장 찾기"
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 0 · 시작 전에: 오늘 쓸 글 고르기",
+      "current": "실습 0 · 시작 전에: 오늘 쓸 글 고르기 완성"
+    },
+    {
+      "file": "practice/01-account.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 1 · 계정과 블로그 만들기",
+      "current": "실습 1 · 계정과 블로그 만들기 완성"
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 2 · 도구 준비",
+      "current": "실습 2 · 도구 준비 완성"
+    },
+    {
+      "file": "practice/03-keywords.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 3 · 키워드 고르기",
+      "current": "실습 3 · 키워드 고르기 완성"
+    },
+    {
+      "file": "practice/04-draft.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 4 · AI 초안과 사실 확인",
+      "current": "실습 4 · AI 초안과 사실 확인 완성"
+    },
+    {
+      "file": "practice/05-images.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 5 · 이미지·썸네일 만들기",
+      "current": "실습 5 · 이미지·썸네일 만들기 완성"
+    },
+    {
+      "file": "practice/06-editor.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 6 · 편집기에서 글 다듬기",
+      "current": "실습 6 · 편집기에서 글 다듬기 완성"
+    },
+    {
+      "file": "practice/07-publish.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 7 · 첫 글 실제로 발행하기",
+      "current": "실습 7 · 첫 글 실제로 발행하기 완성"
+    },
+    {
+      "file": "practice/08-search.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 8 · 검색 등록",
+      "current": "실습 8 · 검색 등록 완성"
+    },
+    {
+      "file": "practice/09-monetize.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 9 · 수익 장치 신청",
+      "current": "실습 9 · 수익 장치 신청 완성"
+    },
+    {
+      "file": "practice/10-automation.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 10 · 선택: 자동화와 첫 숫자 확인",
+      "current": "실습 10 · 선택: 자동화와 첫 숫자 확인 완성"
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "실습 한 편 완성 체크리스트",
+      "current": "실습 한 편 완성 체크리스트 완성"
+    },
+    {
+      "file": "practice/pending.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "장 찾기"
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림",
+      "current": "심화 A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림 준비 중"
+    },
+    {
+      "file": "advanced/01-environment.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A1 · 같은 결과가 나오는 작업 환경",
+      "current": "심화 A1 · 같은 결과가 나오는 작업 환경 완성"
+    },
+    {
+      "file": "advanced/02-wordpress.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A2 · 블로그 서버와 필수 페이지",
+      "current": "심화 A2 · 블로그 서버와 필수 페이지 준비 중"
+    },
+    {
+      "file": "advanced/03-topics.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A3 · 글감과 콘텐츠 설계",
+      "current": "심화 A3 · 글감과 콘텐츠 설계 준비 중"
+    },
+    {
+      "file": "advanced/04-drafts.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A4 · AI 초안 생성",
+      "current": "심화 A4 · AI 초안 생성 준비 중"
+    },
+    {
+      "file": "advanced/05-gates.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A5 · 자동 품질 관문",
+      "current": "심화 A5 · 자동 품질 관문 준비 중"
+    },
+    {
+      "file": "advanced/06-publish.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A6 · 발행 자동화",
+      "current": "심화 A6 · 발행 자동화 준비 중"
+    },
+    {
+      "file": "advanced/07-ads.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A7 · 광고 붙이기",
+      "current": "심화 A7 · 광고 붙이기 준비 중"
+    },
+    {
+      "file": "advanced/08-affiliate.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A8 · 제휴 링크 운영",
+      "current": "심화 A8 · 제휴 링크 운영 준비 중"
+    },
+    {
+      "file": "advanced/09-sponsorship.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A9 · 육아용품 협찬 받기",
+      "current": "심화 A9 · 육아용품 협찬 받기 완성"
+    },
+    {
+      "file": "advanced/10-analytics.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A10 · 숫자 모으기와 개선",
+      "current": "심화 A10 · 숫자 모으기와 개선 준비 중"
+    },
+    {
+      "file": "advanced/11-operations.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A11 · 예약 실행과 운영",
+      "current": "심화 A11 · 예약 실행과 운영 준비 중"
+    },
+    {
+      "file": "advanced/12-policy.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "A12 · 정책·법·세금 점검",
+      "current": "심화 A12 · 정책·법·세금 점검 준비 중"
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "title": "E2E · 심화 진행표",
+      "current": "심화 E2E · 심화 진행표 준비 중"
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "interaction": "keyboard full route, save/reload, refusal, hold/resume passed"
+    },
+    {
+      "file": "index.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "블로그 수익화 입문서"
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지",
+      "current": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지 완성"
+    },
+    {
+      "file": "chapters/02-revenue.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 2장 · 블로그는 무엇으로 돈을 버나",
+      "current": "(이론) 2장 · 블로그는 무엇으로 돈을 버나 완성"
+    },
+    {
+      "file": "chapters/03-ai-tools.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 3장 · AI 도구 지도",
+      "current": "(이론) 3장 · AI 도구 지도 완성"
+    },
+    {
+      "file": "chapters/04-platforms.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 4장 · 플랫폼 고르기",
+      "current": "(이론) 4장 · 플랫폼 고르기 완성"
+    },
+    {
+      "file": "chapters/05-keywords.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 5장 · 주제와 키워드",
+      "current": "(이론) 5장 · 주제와 키워드 완성"
+    },
+    {
+      "file": "chapters/06-writing.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 6장 · AI로 글 쓰기 레시피",
+      "current": "(이론) 6장 · AI로 글 쓰기 레시피 완성"
+    },
+    {
+      "file": "chapters/07-images.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 7장 · 이미지·썸네일",
+      "current": "(이론) 7장 · 이미지·썸네일 완성"
+    },
+    {
+      "file": "chapters/08-seo.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 8장 · 검색에 잘 보이는 글",
+      "current": "(이론) 8장 · 검색에 잘 보이는 글 완성"
+    },
+    {
+      "file": "chapters/09-monetize.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 9장 · 수익 장치 붙이기",
+      "current": "(이론) 9장 · 수익 장치 붙이기 완성"
+    },
+    {
+      "file": "chapters/10-automation.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 10장 · 반복과 자동화",
+      "current": "(이론) 10장 · 반복과 자동화 완성"
+    },
+    {
+      "file": "chapters/11-analytics.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 11장 · 숫자 읽기",
+      "current": "(이론) 11장 · 숫자 읽기 완성"
+    },
+    {
+      "file": "chapters/12-policy.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 12장 · 정책·저작권·광고 표시·세금",
+      "current": "(이론) 12장 · 정책·저작권·광고 표시·세금 완성"
+    },
+    {
+      "file": "chapters/13-plan.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "(이론) 13장 · 30일 운영 계획",
+      "current": "(이론) 13장 · 30일 운영 계획 완성"
+    },
+    {
+      "file": "chapters/pending.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "장 찾기"
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 0 · 시작 전에: 오늘 쓸 글 고르기",
+      "current": "실습 0 · 시작 전에: 오늘 쓸 글 고르기 완성"
+    },
+    {
+      "file": "practice/01-account.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 1 · 계정과 블로그 만들기",
+      "current": "실습 1 · 계정과 블로그 만들기 완성"
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 2 · 도구 준비",
+      "current": "실습 2 · 도구 준비 완성"
+    },
+    {
+      "file": "practice/03-keywords.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 3 · 키워드 고르기",
+      "current": "실습 3 · 키워드 고르기 완성"
+    },
+    {
+      "file": "practice/04-draft.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 4 · AI 초안과 사실 확인",
+      "current": "실습 4 · AI 초안과 사실 확인 완성"
+    },
+    {
+      "file": "practice/05-images.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 5 · 이미지·썸네일 만들기",
+      "current": "실습 5 · 이미지·썸네일 만들기 완성"
+    },
+    {
+      "file": "practice/06-editor.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 6 · 편집기에서 글 다듬기",
+      "current": "실습 6 · 편집기에서 글 다듬기 완성"
+    },
+    {
+      "file": "practice/07-publish.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 7 · 첫 글 실제로 발행하기",
+      "current": "실습 7 · 첫 글 실제로 발행하기 완성"
+    },
+    {
+      "file": "practice/08-search.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 8 · 검색 등록",
+      "current": "실습 8 · 검색 등록 완성"
+    },
+    {
+      "file": "practice/09-monetize.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 9 · 수익 장치 신청",
+      "current": "실습 9 · 수익 장치 신청 완성"
+    },
+    {
+      "file": "practice/10-automation.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 10 · 선택: 자동화와 첫 숫자 확인",
+      "current": "실습 10 · 선택: 자동화와 첫 숫자 확인 완성"
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "실습 한 편 완성 체크리스트",
+      "current": "실습 한 편 완성 체크리스트 완성"
+    },
+    {
+      "file": "practice/pending.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "장 찾기"
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림",
+      "current": "심화 A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림 준비 중"
+    },
+    {
+      "file": "advanced/01-environment.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A1 · 같은 결과가 나오는 작업 환경",
+      "current": "심화 A1 · 같은 결과가 나오는 작업 환경 완성"
+    },
+    {
+      "file": "advanced/02-wordpress.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A2 · 블로그 서버와 필수 페이지",
+      "current": "심화 A2 · 블로그 서버와 필수 페이지 준비 중"
+    },
+    {
+      "file": "advanced/03-topics.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A3 · 글감과 콘텐츠 설계",
+      "current": "심화 A3 · 글감과 콘텐츠 설계 준비 중"
+    },
+    {
+      "file": "advanced/04-drafts.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A4 · AI 초안 생성",
+      "current": "심화 A4 · AI 초안 생성 준비 중"
+    },
+    {
+      "file": "advanced/05-gates.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A5 · 자동 품질 관문",
+      "current": "심화 A5 · 자동 품질 관문 준비 중"
+    },
+    {
+      "file": "advanced/06-publish.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A6 · 발행 자동화",
+      "current": "심화 A6 · 발행 자동화 준비 중"
+    },
+    {
+      "file": "advanced/07-ads.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A7 · 광고 붙이기",
+      "current": "심화 A7 · 광고 붙이기 준비 중"
+    },
+    {
+      "file": "advanced/08-affiliate.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A8 · 제휴 링크 운영",
+      "current": "심화 A8 · 제휴 링크 운영 준비 중"
+    },
+    {
+      "file": "advanced/09-sponsorship.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A9 · 육아용품 협찬 받기",
+      "current": "심화 A9 · 육아용품 협찬 받기 완성"
+    },
+    {
+      "file": "advanced/10-analytics.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A10 · 숫자 모으기와 개선",
+      "current": "심화 A10 · 숫자 모으기와 개선 준비 중"
+    },
+    {
+      "file": "advanced/11-operations.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A11 · 예약 실행과 운영",
+      "current": "심화 A11 · 예약 실행과 운영 준비 중"
+    },
+    {
+      "file": "advanced/12-policy.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "A12 · 정책·법·세금 점검",
+      "current": "심화 A12 · 정책·법·세금 점검 준비 중"
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 375,
+      "theme": "light",
+      "scroll": 375,
+      "title": "E2E · 심화 진행표",
+      "current": "심화 E2E · 심화 진행표 준비 중"
+    },
+    {
+      "width": 375,
+      "theme": "light",
+      "interaction": "keyboard full route, save/reload, refusal, hold/resume passed"
+    },
+    {
+      "file": "index.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "블로그 수익화 입문서"
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지",
+      "current": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지 완성"
+    },
+    {
+      "file": "chapters/02-revenue.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 2장 · 블로그는 무엇으로 돈을 버나",
+      "current": "(이론) 2장 · 블로그는 무엇으로 돈을 버나 완성"
+    },
+    {
+      "file": "chapters/03-ai-tools.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 3장 · AI 도구 지도",
+      "current": "(이론) 3장 · AI 도구 지도 완성"
+    },
+    {
+      "file": "chapters/04-platforms.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 4장 · 플랫폼 고르기",
+      "current": "(이론) 4장 · 플랫폼 고르기 완성"
+    },
+    {
+      "file": "chapters/05-keywords.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 5장 · 주제와 키워드",
+      "current": "(이론) 5장 · 주제와 키워드 완성"
+    },
+    {
+      "file": "chapters/06-writing.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 6장 · AI로 글 쓰기 레시피",
+      "current": "(이론) 6장 · AI로 글 쓰기 레시피 완성"
+    },
+    {
+      "file": "chapters/07-images.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 7장 · 이미지·썸네일",
+      "current": "(이론) 7장 · 이미지·썸네일 완성"
+    },
+    {
+      "file": "chapters/08-seo.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 8장 · 검색에 잘 보이는 글",
+      "current": "(이론) 8장 · 검색에 잘 보이는 글 완성"
+    },
+    {
+      "file": "chapters/09-monetize.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 9장 · 수익 장치 붙이기",
+      "current": "(이론) 9장 · 수익 장치 붙이기 완성"
+    },
+    {
+      "file": "chapters/10-automation.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 10장 · 반복과 자동화",
+      "current": "(이론) 10장 · 반복과 자동화 완성"
+    },
+    {
+      "file": "chapters/11-analytics.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 11장 · 숫자 읽기",
+      "current": "(이론) 11장 · 숫자 읽기 완성"
+    },
+    {
+      "file": "chapters/12-policy.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 12장 · 정책·저작권·광고 표시·세금",
+      "current": "(이론) 12장 · 정책·저작권·광고 표시·세금 완성"
+    },
+    {
+      "file": "chapters/13-plan.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "(이론) 13장 · 30일 운영 계획",
+      "current": "(이론) 13장 · 30일 운영 계획 완성"
+    },
+    {
+      "file": "chapters/pending.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "장 찾기"
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 0 · 시작 전에: 오늘 쓸 글 고르기",
+      "current": "실습 0 · 시작 전에: 오늘 쓸 글 고르기 완성"
+    },
+    {
+      "file": "practice/01-account.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 1 · 계정과 블로그 만들기",
+      "current": "실습 1 · 계정과 블로그 만들기 완성"
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 2 · 도구 준비",
+      "current": "실습 2 · 도구 준비 완성"
+    },
+    {
+      "file": "practice/03-keywords.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 3 · 키워드 고르기",
+      "current": "실습 3 · 키워드 고르기 완성"
+    },
+    {
+      "file": "practice/04-draft.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 4 · AI 초안과 사실 확인",
+      "current": "실습 4 · AI 초안과 사실 확인 완성"
+    },
+    {
+      "file": "practice/05-images.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 5 · 이미지·썸네일 만들기",
+      "current": "실습 5 · 이미지·썸네일 만들기 완성"
+    },
+    {
+      "file": "practice/06-editor.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 6 · 편집기에서 글 다듬기",
+      "current": "실습 6 · 편집기에서 글 다듬기 완성"
+    },
+    {
+      "file": "practice/07-publish.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 7 · 첫 글 실제로 발행하기",
+      "current": "실습 7 · 첫 글 실제로 발행하기 완성"
+    },
+    {
+      "file": "practice/08-search.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 8 · 검색 등록",
+      "current": "실습 8 · 검색 등록 완성"
+    },
+    {
+      "file": "practice/09-monetize.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 9 · 수익 장치 신청",
+      "current": "실습 9 · 수익 장치 신청 완성"
+    },
+    {
+      "file": "practice/10-automation.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 10 · 선택: 자동화와 첫 숫자 확인",
+      "current": "실습 10 · 선택: 자동화와 첫 숫자 확인 완성"
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "실습 한 편 완성 체크리스트",
+      "current": "실습 한 편 완성 체크리스트 완성"
+    },
+    {
+      "file": "practice/pending.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "장 찾기"
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림",
+      "current": "심화 A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림 준비 중"
+    },
+    {
+      "file": "advanced/01-environment.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A1 · 같은 결과가 나오는 작업 환경",
+      "current": "심화 A1 · 같은 결과가 나오는 작업 환경 완성"
+    },
+    {
+      "file": "advanced/02-wordpress.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A2 · 블로그 서버와 필수 페이지",
+      "current": "심화 A2 · 블로그 서버와 필수 페이지 준비 중"
+    },
+    {
+      "file": "advanced/03-topics.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A3 · 글감과 콘텐츠 설계",
+      "current": "심화 A3 · 글감과 콘텐츠 설계 준비 중"
+    },
+    {
+      "file": "advanced/04-drafts.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A4 · AI 초안 생성",
+      "current": "심화 A4 · AI 초안 생성 준비 중"
+    },
+    {
+      "file": "advanced/05-gates.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A5 · 자동 품질 관문",
+      "current": "심화 A5 · 자동 품질 관문 준비 중"
+    },
+    {
+      "file": "advanced/06-publish.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A6 · 발행 자동화",
+      "current": "심화 A6 · 발행 자동화 준비 중"
+    },
+    {
+      "file": "advanced/07-ads.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A7 · 광고 붙이기",
+      "current": "심화 A7 · 광고 붙이기 준비 중"
+    },
+    {
+      "file": "advanced/08-affiliate.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A8 · 제휴 링크 운영",
+      "current": "심화 A8 · 제휴 링크 운영 준비 중"
+    },
+    {
+      "file": "advanced/09-sponsorship.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A9 · 육아용품 협찬 받기",
+      "current": "심화 A9 · 육아용품 협찬 받기 완성"
+    },
+    {
+      "file": "advanced/10-analytics.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A10 · 숫자 모으기와 개선",
+      "current": "심화 A10 · 숫자 모으기와 개선 준비 중"
+    },
+    {
+      "file": "advanced/11-operations.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A11 · 예약 실행과 운영",
+      "current": "심화 A11 · 예약 실행과 운영 준비 중"
+    },
+    {
+      "file": "advanced/12-policy.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "A12 · 정책·법·세금 점검",
+      "current": "심화 A12 · 정책·법·세금 점검 준비 중"
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "scroll": 375,
+      "title": "E2E · 심화 진행표",
+      "current": "심화 E2E · 심화 진행표 준비 중"
+    },
+    {
+      "width": 375,
+      "theme": "dark",
+      "interaction": "keyboard full route, save/reload, refusal, hold/resume passed"
+    },
+    {
+      "file": "index.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "블로그 수익화 입문서"
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지",
+      "current": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지 완성"
+    },
+    {
+      "file": "chapters/02-revenue.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 2장 · 블로그는 무엇으로 돈을 버나",
+      "current": "(이론) 2장 · 블로그는 무엇으로 돈을 버나 완성"
+    },
+    {
+      "file": "chapters/03-ai-tools.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 3장 · AI 도구 지도",
+      "current": "(이론) 3장 · AI 도구 지도 완성"
+    },
+    {
+      "file": "chapters/04-platforms.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 4장 · 플랫폼 고르기",
+      "current": "(이론) 4장 · 플랫폼 고르기 완성"
+    },
+    {
+      "file": "chapters/05-keywords.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 5장 · 주제와 키워드",
+      "current": "(이론) 5장 · 주제와 키워드 완성"
+    },
+    {
+      "file": "chapters/06-writing.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 6장 · AI로 글 쓰기 레시피",
+      "current": "(이론) 6장 · AI로 글 쓰기 레시피 완성"
+    },
+    {
+      "file": "chapters/07-images.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 7장 · 이미지·썸네일",
+      "current": "(이론) 7장 · 이미지·썸네일 완성"
+    },
+    {
+      "file": "chapters/08-seo.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 8장 · 검색에 잘 보이는 글",
+      "current": "(이론) 8장 · 검색에 잘 보이는 글 완성"
+    },
+    {
+      "file": "chapters/09-monetize.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 9장 · 수익 장치 붙이기",
+      "current": "(이론) 9장 · 수익 장치 붙이기 완성"
+    },
+    {
+      "file": "chapters/10-automation.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 10장 · 반복과 자동화",
+      "current": "(이론) 10장 · 반복과 자동화 완성"
+    },
+    {
+      "file": "chapters/11-analytics.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 11장 · 숫자 읽기",
+      "current": "(이론) 11장 · 숫자 읽기 완성"
+    },
+    {
+      "file": "chapters/12-policy.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 12장 · 정책·저작권·광고 표시·세금",
+      "current": "(이론) 12장 · 정책·저작권·광고 표시·세금 완성"
+    },
+    {
+      "file": "chapters/13-plan.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "(이론) 13장 · 30일 운영 계획",
+      "current": "(이론) 13장 · 30일 운영 계획 완성"
+    },
+    {
+      "file": "chapters/pending.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "장 찾기"
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 0 · 시작 전에: 오늘 쓸 글 고르기",
+      "current": "실습 0 · 시작 전에: 오늘 쓸 글 고르기 완성"
+    },
+    {
+      "file": "practice/01-account.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 1 · 계정과 블로그 만들기",
+      "current": "실습 1 · 계정과 블로그 만들기 완성"
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 2 · 도구 준비",
+      "current": "실습 2 · 도구 준비 완성"
+    },
+    {
+      "file": "practice/03-keywords.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 3 · 키워드 고르기",
+      "current": "실습 3 · 키워드 고르기 완성"
+    },
+    {
+      "file": "practice/04-draft.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 4 · AI 초안과 사실 확인",
+      "current": "실습 4 · AI 초안과 사실 확인 완성"
+    },
+    {
+      "file": "practice/05-images.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 5 · 이미지·썸네일 만들기",
+      "current": "실습 5 · 이미지·썸네일 만들기 완성"
+    },
+    {
+      "file": "practice/06-editor.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 6 · 편집기에서 글 다듬기",
+      "current": "실습 6 · 편집기에서 글 다듬기 완성"
+    },
+    {
+      "file": "practice/07-publish.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 7 · 첫 글 실제로 발행하기",
+      "current": "실습 7 · 첫 글 실제로 발행하기 완성"
+    },
+    {
+      "file": "practice/08-search.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 8 · 검색 등록",
+      "current": "실습 8 · 검색 등록 완성"
+    },
+    {
+      "file": "practice/09-monetize.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 9 · 수익 장치 신청",
+      "current": "실습 9 · 수익 장치 신청 완성"
+    },
+    {
+      "file": "practice/10-automation.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 10 · 선택: 자동화와 첫 숫자 확인",
+      "current": "실습 10 · 선택: 자동화와 첫 숫자 확인 완성"
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "실습 한 편 완성 체크리스트",
+      "current": "실습 한 편 완성 체크리스트 완성"
+    },
+    {
+      "file": "practice/pending.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "장 찾기"
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림",
+      "current": "심화 A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림 준비 중"
+    },
+    {
+      "file": "advanced/01-environment.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A1 · 같은 결과가 나오는 작업 환경",
+      "current": "심화 A1 · 같은 결과가 나오는 작업 환경 완성"
+    },
+    {
+      "file": "advanced/02-wordpress.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A2 · 블로그 서버와 필수 페이지",
+      "current": "심화 A2 · 블로그 서버와 필수 페이지 준비 중"
+    },
+    {
+      "file": "advanced/03-topics.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A3 · 글감과 콘텐츠 설계",
+      "current": "심화 A3 · 글감과 콘텐츠 설계 준비 중"
+    },
+    {
+      "file": "advanced/04-drafts.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A4 · AI 초안 생성",
+      "current": "심화 A4 · AI 초안 생성 준비 중"
+    },
+    {
+      "file": "advanced/05-gates.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A5 · 자동 품질 관문",
+      "current": "심화 A5 · 자동 품질 관문 준비 중"
+    },
+    {
+      "file": "advanced/06-publish.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A6 · 발행 자동화",
+      "current": "심화 A6 · 발행 자동화 준비 중"
+    },
+    {
+      "file": "advanced/07-ads.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A7 · 광고 붙이기",
+      "current": "심화 A7 · 광고 붙이기 준비 중"
+    },
+    {
+      "file": "advanced/08-affiliate.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A8 · 제휴 링크 운영",
+      "current": "심화 A8 · 제휴 링크 운영 준비 중"
+    },
+    {
+      "file": "advanced/09-sponsorship.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A9 · 육아용품 협찬 받기",
+      "current": "심화 A9 · 육아용품 협찬 받기 완성"
+    },
+    {
+      "file": "advanced/10-analytics.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A10 · 숫자 모으기와 개선",
+      "current": "심화 A10 · 숫자 모으기와 개선 준비 중"
+    },
+    {
+      "file": "advanced/11-operations.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A11 · 예약 실행과 운영",
+      "current": "심화 A11 · 예약 실행과 운영 준비 중"
+    },
+    {
+      "file": "advanced/12-policy.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "A12 · 정책·법·세금 점검",
+      "current": "심화 A12 · 정책·법·세금 점검 준비 중"
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "title": "E2E · 심화 진행표",
+      "current": "심화 E2E · 심화 진행표 준비 중"
+    },
+    {
+      "width": 360,
+      "theme": "light",
+      "interaction": "keyboard full route, save/reload, refusal, hold/resume passed"
+    },
+    {
+      "file": "index.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "블로그 수익화 입문서"
+    },
+    {
+      "file": "chapters/01-map.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지",
+      "current": "(이론) 1장 · 블로그 글 한 편이 돈이 되기까지 완성"
+    },
+    {
+      "file": "chapters/02-revenue.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 2장 · 블로그는 무엇으로 돈을 버나",
+      "current": "(이론) 2장 · 블로그는 무엇으로 돈을 버나 완성"
+    },
+    {
+      "file": "chapters/03-ai-tools.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 3장 · AI 도구 지도",
+      "current": "(이론) 3장 · AI 도구 지도 완성"
+    },
+    {
+      "file": "chapters/04-platforms.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 4장 · 플랫폼 고르기",
+      "current": "(이론) 4장 · 플랫폼 고르기 완성"
+    },
+    {
+      "file": "chapters/05-keywords.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 5장 · 주제와 키워드",
+      "current": "(이론) 5장 · 주제와 키워드 완성"
+    },
+    {
+      "file": "chapters/06-writing.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 6장 · AI로 글 쓰기 레시피",
+      "current": "(이론) 6장 · AI로 글 쓰기 레시피 완성"
+    },
+    {
+      "file": "chapters/07-images.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 7장 · 이미지·썸네일",
+      "current": "(이론) 7장 · 이미지·썸네일 완성"
+    },
+    {
+      "file": "chapters/08-seo.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 8장 · 검색에 잘 보이는 글",
+      "current": "(이론) 8장 · 검색에 잘 보이는 글 완성"
+    },
+    {
+      "file": "chapters/09-monetize.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 9장 · 수익 장치 붙이기",
+      "current": "(이론) 9장 · 수익 장치 붙이기 완성"
+    },
+    {
+      "file": "chapters/10-automation.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 10장 · 반복과 자동화",
+      "current": "(이론) 10장 · 반복과 자동화 완성"
+    },
+    {
+      "file": "chapters/11-analytics.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 11장 · 숫자 읽기",
+      "current": "(이론) 11장 · 숫자 읽기 완성"
+    },
+    {
+      "file": "chapters/12-policy.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 12장 · 정책·저작권·광고 표시·세금",
+      "current": "(이론) 12장 · 정책·저작권·광고 표시·세금 완성"
+    },
+    {
+      "file": "chapters/13-plan.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "(이론) 13장 · 30일 운영 계획",
+      "current": "(이론) 13장 · 30일 운영 계획 완성"
+    },
+    {
+      "file": "chapters/pending.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "장 찾기"
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 0 · 시작 전에: 오늘 쓸 글 고르기",
+      "current": "실습 0 · 시작 전에: 오늘 쓸 글 고르기 완성"
+    },
+    {
+      "file": "practice/01-account.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 1 · 계정과 블로그 만들기",
+      "current": "실습 1 · 계정과 블로그 만들기 완성"
+    },
+    {
+      "file": "practice/02-setup.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 2 · 도구 준비",
+      "current": "실습 2 · 도구 준비 완성"
+    },
+    {
+      "file": "practice/03-keywords.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 3 · 키워드 고르기",
+      "current": "실습 3 · 키워드 고르기 완성"
+    },
+    {
+      "file": "practice/04-draft.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 4 · AI 초안과 사실 확인",
+      "current": "실습 4 · AI 초안과 사실 확인 완성"
+    },
+    {
+      "file": "practice/05-images.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 5 · 이미지·썸네일 만들기",
+      "current": "실습 5 · 이미지·썸네일 만들기 완성"
+    },
+    {
+      "file": "practice/06-editor.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 6 · 편집기에서 글 다듬기",
+      "current": "실습 6 · 편집기에서 글 다듬기 완성"
+    },
+    {
+      "file": "practice/07-publish.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 7 · 첫 글 실제로 발행하기",
+      "current": "실습 7 · 첫 글 실제로 발행하기 완성"
+    },
+    {
+      "file": "practice/08-search.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 8 · 검색 등록",
+      "current": "실습 8 · 검색 등록 완성"
+    },
+    {
+      "file": "practice/09-monetize.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 9 · 수익 장치 신청",
+      "current": "실습 9 · 수익 장치 신청 완성"
+    },
+    {
+      "file": "practice/10-automation.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 10 · 선택: 자동화와 첫 숫자 확인",
+      "current": "실습 10 · 선택: 자동화와 첫 숫자 확인 완성"
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "실습 한 편 완성 체크리스트",
+      "current": "실습 한 편 완성 체크리스트 완성"
+    },
+    {
+      "file": "practice/pending.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "장 찾기"
+    },
+    {
+      "file": "advanced/00-start.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림",
+      "current": "심화 A0 · 심화편 안내: 코드로 운영하는 육아 블로그 전체 그림 준비 중"
+    },
+    {
+      "file": "advanced/01-environment.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A1 · 같은 결과가 나오는 작업 환경",
+      "current": "심화 A1 · 같은 결과가 나오는 작업 환경 완성"
+    },
+    {
+      "file": "advanced/02-wordpress.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A2 · 블로그 서버와 필수 페이지",
+      "current": "심화 A2 · 블로그 서버와 필수 페이지 준비 중"
+    },
+    {
+      "file": "advanced/03-topics.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A3 · 글감과 콘텐츠 설계",
+      "current": "심화 A3 · 글감과 콘텐츠 설계 준비 중"
+    },
+    {
+      "file": "advanced/04-drafts.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A4 · AI 초안 생성",
+      "current": "심화 A4 · AI 초안 생성 준비 중"
+    },
+    {
+      "file": "advanced/05-gates.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A5 · 자동 품질 관문",
+      "current": "심화 A5 · 자동 품질 관문 준비 중"
+    },
+    {
+      "file": "advanced/06-publish.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A6 · 발행 자동화",
+      "current": "심화 A6 · 발행 자동화 준비 중"
+    },
+    {
+      "file": "advanced/07-ads.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A7 · 광고 붙이기",
+      "current": "심화 A7 · 광고 붙이기 준비 중"
+    },
+    {
+      "file": "advanced/08-affiliate.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A8 · 제휴 링크 운영",
+      "current": "심화 A8 · 제휴 링크 운영 준비 중"
+    },
+    {
+      "file": "advanced/09-sponsorship.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A9 · 육아용품 협찬 받기",
+      "current": "심화 A9 · 육아용품 협찬 받기 완성"
+    },
+    {
+      "file": "advanced/10-analytics.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A10 · 숫자 모으기와 개선",
+      "current": "심화 A10 · 숫자 모으기와 개선 준비 중"
+    },
+    {
+      "file": "advanced/11-operations.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A11 · 예약 실행과 운영",
+      "current": "심화 A11 · 예약 실행과 운영 준비 중"
+    },
+    {
+      "file": "advanced/12-policy.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "A12 · 정책·법·세금 점검",
+      "current": "심화 A12 · 정책·법·세금 점검 준비 중"
+    },
+    {
+      "file": "advanced/e2e.html",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "title": "E2E · 심화 진행표",
+      "current": "심화 E2E · 심화 진행표 준비 중"
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "interaction": "keyboard full route, save/reload, refusal, hold/resume passed"
+    },
+    {
+      "storageDenied": "interaction continues"
+    },
+    {
+      "noJS": "all advanced pages + cover body and static links readable"
+    }
+  ]
+}

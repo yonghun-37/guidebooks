@@ -1,0 +1,53 @@
+[
+  {
+    "command": "python course.py start A9",
+    "returncode": 0,
+    "stdout": "✔ 통과: A9 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py sponsor demo",
+    "returncode": 0,
+    "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n"
+  },
+  {
+    "command": "python blog.py draft --sample sponsor --human-notes",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/sponsor.json\n"
+  },
+  {
+    "command": "python blog.py publish --sample sponsor --prepare",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=2 · draft\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py gate --sample sponsor --approve 서윤",
+    "returncode": 0,
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · f62525058efb\noutput/gates/sponsor.txt\n"
+  },
+  {
+    "command": "python blog.py publish --sample sponsor --prepare",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=2 · draft\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py sponsor review",
+    "returncode": 0,
+    "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n"
+  },
+  {
+    "command": "python blog.py gate --sample sponsor --approve 서윤",
+    "returncode": 0,
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · fc29bae7ffff\noutput/gates/sponsor.txt\n"
+  },
+  {
+    "actual_exception": "허용되지 않은 전이입니다"
+  },
+  {
+    "actual_exception": "협찬 대장 승인 불일치 → 광고주 확인과 사람 승인을 다시 받으세요"
+  },
+  {
+    "command": "python course.py doctor",
+    "returncode": 0,
+    "stdout": "✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 포트 8767\n✔ 통과: 고정 시계 2026-10-27 · 시드 37\n"
+  }
+]

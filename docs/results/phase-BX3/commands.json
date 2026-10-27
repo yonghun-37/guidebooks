@@ -1,0 +1,230 @@
+{
+  "python": "3.11.15",
+  "records": [
+    {
+      "command": "python course.py start A1",
+      "code": 0,
+      "stdout": "✔ 통과: A1 시작 상태 복원\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py doctor",
+      "code": 0,
+      "stdout": "✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 포트 8767\n✔ 통과: 고정 시계 2026-10-27 · 시드 37\n",
+      "expected_match": true
+    },
+    {
+      "command": "python blog.py status --mock",
+      "code": 0,
+      "stdout": "✔ 통과: mock REST 연결\noutput/status.json\n",
+      "expected_match": true
+    },
+    {
+      "command": "python course.py check A1",
+      "code": 0,
+      "stdout": "✔ 통과: A1 산출물·상태·터미널 출력 일치\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py start A9",
+      "code": 0,
+      "stdout": "✔ 통과: A9 시작 상태 복원\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py sponsor demo",
+      "code": 0,
+      "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n",
+      "expected_match": true
+    },
+    {
+      "command": "python blog.py draft --sample sponsor --human-notes",
+      "code": 0,
+      "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/sponsor.json\n",
+      "expected_match": true
+    },
+    {
+      "command": "python blog.py publish --sample sponsor --prepare",
+      "code": 0,
+      "stdout": "✔ 통과: WordPress post_id=2 · draft\nprivate/state.sqlite3\n",
+      "expected_match": true
+    },
+    {
+      "command": "python blog.py gate --sample sponsor --approve 서윤",
+      "code": 0,
+      "stdout": "✔ 통과: 현재 최종본 사람 승인 · f62525058efb\noutput/gates/sponsor.txt\n",
+      "expected_match": true
+    },
+    {
+      "command": "python blog.py publish --sample sponsor",
+      "code": 0,
+      "stdout": "✔ 통과: WordPress post_id=2 · future\nprivate/state.sqlite3\n",
+      "expected_match": true
+    },
+    {
+      "command": "python blog.py status --sample sponsor --advance-days 2",
+      "code": 0,
+      "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n",
+      "expected_match": true
+    },
+    {
+      "command": "python blog.py sponsor settle",
+      "code": 0,
+      "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n",
+      "expected_match": true
+    },
+    {
+      "command": "python course.py check A9",
+      "code": 0,
+      "stdout": "✔ 통과: A9 산출물·상태·터미널 출력 일치\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py reset",
+      "code": 0,
+      "stdout": "✔ 통과: 실습 상태 초기화 · .env 보존\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py start A1",
+      "code": 0,
+      "stdout": "✔ 통과: A1 시작 상태 복원\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py doctor",
+      "code": 0,
+      "stdout": "✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 포트 8767\n✔ 통과: 고정 시계 2026-10-27 · 시드 37\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py status --mock",
+      "code": 0,
+      "stdout": "✔ 통과: mock REST 연결\noutput/status.json\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py run --sample",
+      "code": 0,
+      "stdout": "✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1\noutput/drafts/info.html\noutput/analytics/weekly.html\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py check A1",
+      "code": 1,
+      "stdout": "✖ 막힘: A1 output/analytics/weekly.html: 추가 (10개 차이)\n→ python course.py start A1 후 그 장 명령을 다시 실행하세요\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py start A1",
+      "code": 0,
+      "stdout": "✔ 통과: A1 시작 상태 복원\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py run --sample",
+      "code": 0,
+      "stdout": "✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1\noutput/drafts/info.html\noutput/analytics/weekly.html\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py reset",
+      "code": 0,
+      "stdout": "✔ 통과: 실습 상태 초기화 · .env 보존\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py start A1",
+      "code": 0,
+      "stdout": "✔ 통과: A1 시작 상태 복원\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py doctor",
+      "code": 0,
+      "stdout": "✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 포트 8767\n✔ 통과: 고정 시계 2026-10-27 · 시드 37\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py status --mock",
+      "code": 0,
+      "stdout": "✔ 통과: mock REST 연결\noutput/status.json\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py check A1",
+      "code": 0,
+      "stdout": "✔ 통과: A1 산출물·상태·터미널 출력 일치\n",
+      "expected_match": null
+    },
+    {
+      "command": "python course.py start A9",
+      "code": 0,
+      "stdout": "✔ 통과: A9 시작 상태 복원\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py sponsor demo",
+      "code": 0,
+      "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py draft --sample sponsor --human-notes",
+      "code": 0,
+      "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/sponsor.json\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py publish --sample sponsor --prepare",
+      "code": 0,
+      "stdout": "✔ 통과: WordPress post_id=2 · draft\nprivate/state.sqlite3\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py publish --sample sponsor",
+      "code": 1,
+      "stdout": "✖ 막힘: 사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py sponsor settle",
+      "code": 1,
+      "stdout": "✖ 막힘: 공개 상태 확인 전 → status --sample sponsor --advance-days 2를 실행하세요\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py gate --sample sponsor --approve 서윤",
+      "code": 0,
+      "stdout": "✔ 통과: 현재 최종본 사람 승인 · f62525058efb\noutput/gates/sponsor.txt\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py publish --sample sponsor",
+      "code": 0,
+      "stdout": "✔ 통과: WordPress post_id=2 · future\nprivate/state.sqlite3\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py status --sample sponsor --advance-days 2",
+      "code": 0,
+      "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n",
+      "expected_match": null
+    },
+    {
+      "command": "python blog.py sponsor settle",
+      "code": 0,
+      "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n",
+      "expected_match": null
+    }
+  ],
+  "date_change": [
+    "2026-10-28T09:00:00",
+    "2026-10-29T09:00:00"
+  ],
+  "exact_expected": [
+    "A1",
+    "A9"
+  ],
+  "source_excerpts": "all match; at most 25 lines"
+}

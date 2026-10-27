@@ -1,0 +1,11 @@
+{
+  "checkedDynamicLinks": 900,
+  "errors": [],
+  "themes": 2,
+  "widths": [
+    1280,
+    375,
+    360
+  ],
+  "trackCollisionRegression": "passed"
+}

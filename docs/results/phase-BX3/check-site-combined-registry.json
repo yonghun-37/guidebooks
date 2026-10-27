@@ -1,0 +1,40 @@
+{
+  "html_pages": 50,
+  "internal_references": 2427,
+  "catalog_entries": 13,
+  "practice_steps": 15,
+  "theory_chapters": 13,
+  "quiz_questions": 39,
+  "source_references": 583,
+  "term_references": 38,
+  "fact_pending": 0,
+  "deployment_bytes": {
+    "site": 5317313,
+    "shelf": 15704,
+    "samples": 1661759,
+    "site-shorts": 4654522,
+    "site-blog": 1364823,
+    "site-baby": 929843,
+    "total": 13943964,
+    "files": 413,
+    "by_extension": {
+      ".cjs": 7945,
+      ".css": 250300,
+      ".html": 4910520,
+      ".jpg": 269182,
+      ".js": 433053,
+      ".json": 15289,
+      ".md": 32942,
+      ".mp4": 5163537,
+      ".png": 1356030,
+      ".srt": 2787,
+      ".svg": 25002,
+      ".txt": 23227,
+      ".vtt": 1516,
+      ".webp": 1390456,
+      ".zip": 62178
+    }
+  },
+  "errors": [],
+  "note": "임시 합산 출처 목록 검사. 저장소의 check_site.py/research는 변경하지 않음. BS074는 출처 URL query이며 합산 목록에도 포함됨."
+}
