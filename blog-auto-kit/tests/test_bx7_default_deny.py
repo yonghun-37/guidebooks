@@ -86,7 +86,8 @@ def test_allowlist_requires_every_pass_and_verified_new_server_record():
     row = {'server_new_confirmed': True, 'is_update': False, 'auto_allowed_types': ['info'],
            'server_checked': True}
     passed = [{'decision': 'pass'}]
-    assert may_auto_publish(doc, passed, row)
+    # 자유 문장은 예전의 모든 허용 조건이 맞아도 자동 대상이 아니다.
+    assert not may_auto_publish(doc, passed, row)
     for change in ({'is_update': True}, {'server_new_confirmed': False},
                    {'server_checked': False}, {'auto_allowed_types': []}):
         assert not may_auto_publish(doc, passed, dict(row, **change))
@@ -100,14 +101,16 @@ def test_allowlist_requires_every_pass_and_verified_new_server_record():
         assert not may_auto_publish(dict(doc, **{key: value}), passed, row)
 
 
-def test_verified_new_allowlisted_pass_can_auto_schedule(kit):
+def test_verified_new_free_prose_still_waits_for_human(kit):
     root, store = kit
     doc = general_doc()
     with running_server(root, port=0, today=TODAY) as url:
         client = Client(url)
         row = prepare_draft(root, store, client, doc, TODAY, ['info'])
         assert row['server_new_confirmed'] is True
-        assert publish_draft(root, store, client, doc, TODAY, 'auto')['status'] == 'future'
+        with pytest.raises(ValueError, match='사람 승인'):
+            publish_draft(root, store, client, doc, TODAY, 'auto')
+        assert client.request('GET', 'posts')[0]['status'] == 'draft'
         assert store.get('posts', doc['content_id']).get('approval') is None
 
 
@@ -181,4 +184,4 @@ def test_publish_reads_server_status_before_auto_reschedule(kit):
             publish_draft(root, store, client, doc, TODAY, 'auto')
         saved = store.get('posts', doc['content_id'])
         assert saved['is_update'] is True and saved['server_new_confirmed'] is False
-        assert client.request('GET', f"posts/{row['post_id']}")['status'] == 'publish'
+        assert client.request('GET', f"posts/{row['post_id']}")['status'] == 'draft'

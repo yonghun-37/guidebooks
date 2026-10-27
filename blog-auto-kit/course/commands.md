@@ -14,9 +14,13 @@ Python 3.11 이상을 설치하고 키트 폴더에서 시작하세요. 기본 �
 |---|---|---|
 | A1 | `python course.py doctor` | `python course.py doctor` |
 | A1 | `python blog.py status --mock` | `python blog.py status --mock` |
+| A1 | `python blog.py draft --sample info` | `python blog.py draft --sample info` |
+| A1 | `python blog.py publish --sample info --prepare` | `python blog.py publish --sample info --prepare` |
+| A1 | `python blog.py gate --sample info --approve 서윤` | `python blog.py gate --sample info --approve 서윤` |
 | A1 | `python blog.py run --sample` | `python blog.py run --sample` |
 | A2 | `python blog.py pages` | `python blog.py pages` |
 | A3 | `python blog.py topics` | `python blog.py topics` |
+| A3 | `python blog.py template approve library --by 서윤` | `python blog.py template approve library --by 서윤` |
 | A4 | `python blog.py draft --sample info` | `python blog.py draft --sample info` |
 | A4 | `python blog.py draft --sample play` | `python blog.py draft --sample play` |
 | A4 | `python blog.py draft --sample affiliate` | `python blog.py draft --sample affiliate` |

@@ -1,0 +1,42 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+______________ test_integer_enum_cannot_accept_boolean_as_integer ______________
+
+    def test_integer_enum_cannot_accept_boolean_as_integer():
+        from content.template_schema import validate_data
+        schema = {'type': 'object', 'additionalProperties': False, 'required': ['month'],
+                  'properties': {'month': {'type': 'integer', 'minimum': 1, 'maximum': 12,
+                                           'enum': [True]}}}
+>       with pytest.raises(ValueError): validate_data(schema, {'month': 1}, [])
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+blog-auto-kit/tests/test_bx7b_templates.py:158: Failed
+______ test_reference_and_formaction_urls_are_reported[[ref]: /relative] _______
+
+markup = '[ref]: /relative'
+
+    @pytest.mark.parametrize('markup', ['[ref]: /relative', '<button formaction="/submit">전송</button>'])
+    def test_reference_and_formaction_urls_are_reported(markup):
+        from gates.links import link_checks
+>       assert any(r['rule_id'] == 'links.L2' for r in link_checks({'markdown': markup}, None))
+E       assert False
+E        +  where False = any(<generator object test_reference_and_formaction_urls_are_reported.<locals>.<genexpr> at 0x70728d0428e0>)
+
+blog-auto-kit/tests/test_bx7b_links.py:55: AssertionError
+_ test_reference_and_formaction_urls_are_reported[<button formaction="/submit">\uc804\uc1a1</button>] _
+
+markup = '<button formaction="/submit">전송</button>'
+
+    @pytest.mark.parametrize('markup', ['[ref]: /relative', '<button formaction="/submit">전송</button>'])
+    def test_reference_and_formaction_urls_are_reported(markup):
+        from gates.links import link_checks
+>       assert any(r['rule_id'] == 'links.L2' for r in link_checks({'markdown': markup}, None))
+E       assert False
+E        +  where False = any(<generator object test_reference_and_formaction_urls_are_reported.<locals>.<genexpr> at 0x70728ce1b2a0>)
+
+blog-auto-kit/tests/test_bx7b_links.py:55: AssertionError
+=========================== short test summary info ============================
+FAILED blog-auto-kit/tests/test_bx7b_templates.py::test_integer_enum_cannot_accept_boolean_as_integer
+FAILED blog-auto-kit/tests/test_bx7b_links.py::test_reference_and_formaction_urls_are_reported[[ref]: /relative]
+FAILED blog-auto-kit/tests/test_bx7b_links.py::test_reference_and_formaction_urls_are_reported[<button formaction="/submit">\uc804\uc1a1</button>]
+3 failed in 0.05s

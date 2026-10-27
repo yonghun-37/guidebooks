@@ -8,7 +8,7 @@ from gates.products import product_checks
 from gates.body import consistent
 from gates.sources import numeric_claims
 
-def evaluate(doc: dict, recent: list = (), today='2026-10-27', daily_count=0, limit=2, root=None) -> list:
+def evaluate(doc: dict, recent: list = (), today='2026-10-27', daily_count=0, limit=2, root=None, config_path=None) -> list:
     """자료 부족, 고위험, 중복 및 상한을 점검한다."""
     out = []
     errors = validate(doc)
@@ -16,6 +16,8 @@ def evaluate(doc: dict, recent: list = (), today='2026-10-27', daily_count=0, li
         out.append(result('schema', 'block', 'document', '; '.join(errors), '필수 필드를 수정하세요.', []))
     out.extend(health_checks(doc)); out.extend(privacy_checks(doc, root))
     out.extend(disclosure_checks(doc)); out.extend(product_checks(doc))
+    from gates.links import link_checks
+    out.extend(link_checks(doc, root, config_path))
     out.extend(numeric_claims(doc))
     if not consistent(doc):
         out.append(result('content.consistency', 'block', 'html', '최종 HTML과 원문이 다릅니다.', '최종 HTML을 다시 생성하고 검토하세요.', []))

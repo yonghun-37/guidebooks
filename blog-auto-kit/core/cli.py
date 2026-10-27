@@ -2,6 +2,7 @@
 import argparse
 
 DESCRIPTIONS = {
+    'template': 'A3 글 틀과 데이터 규칙을 사람이 한 번 승인',
     'topics': 'A3 월령·발달·제도·놀이·그림책 주제 지도',
     'draft': 'A4 JSON 초안과 비어 있는 사람 경험 칸',
     'gate': 'A5 자동 관문 검사와 별도의 사람 승인',
@@ -33,7 +34,11 @@ def make_parser():
 def add_options(sub, name):
     if name in ('draft', 'gate', 'publish', 'affiliate', 'status', 'run'):
         sub.add_argument('--sample', nargs='?', const='info', default='info',
-                         choices=('info', 'play', 'affiliate', 'sponsor'), help='가상 글 선택')
+                         choices=('info', 'play', 'affiliate', 'sponsor', 'library'), help='가상 글 선택')
+    if name == 'template':
+        sub.add_argument('action', choices=('approve',))
+        sub.add_argument('template_id', help='content/templates의 글 틀 ID')
+        sub.add_argument('--by', required=True, help='틀과 데이터 규칙을 읽은 검토자')
     if name == 'draft':
         sub.add_argument('--human-notes', action='store_true', help='가상 사람 메모를 명시적으로 적용')
     if name == 'gate':

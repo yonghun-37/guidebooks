@@ -4,7 +4,16 @@ $ python course.py doctor
 $ python blog.py status --mock
 ✔ 통과: mock REST 연결
 output/status.json
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · draft
+private/state.sqlite3
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 51f274513fb8
+output/gates/info.txt
 $ python blog.py run --sample
-✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+✔ 통과: mock 초안 → 명시적 사람 승인 확인 → 예약 1
 output/drafts/info.html
 output/analytics/weekly.html

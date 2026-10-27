@@ -1,7 +1,19 @@
 {
+  "python blog.py draft --sample info": {
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/info.json\n"
+  },
+  "python blog.py gate --sample info --approve 서윤": {
+    "returncode": 0,
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · 51f274513fb8\noutput/gates/info.txt\n"
+  },
+  "python blog.py publish --sample info --prepare": {
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=1 · draft\nprivate/state.sqlite3\n"
+  },
   "python blog.py run --sample": {
     "returncode": 0,
-    "stdout": "✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1\noutput/drafts/info.html\noutput/analytics/weekly.html\n"
+    "stdout": "✔ 통과: mock 초안 → 명시적 사람 승인 확인 → 예약 1\noutput/drafts/info.html\noutput/analytics/weekly.html\n"
   },
   "python blog.py status --mock": {
     "returncode": 0,

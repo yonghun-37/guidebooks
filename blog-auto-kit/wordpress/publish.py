@@ -27,21 +27,24 @@ def recall_post(store, client, row):
         raise ValueError('예약 회수 상태 확인 실패 → 서버에서 직접 공개 여부를 확인하세요') from exc
 
 
-def require_approval(root, store, client, doc, row, mode, results):
+def require_approval(root, store, client, doc, row, mode, results, config_path=None):
     """승인 해시와 사람 승인 필요 여부를 확인한다."""
     approval = row.get('approval')
     current = binding(root, doc, row)
     if approval and approval['hash'] != current:
         recall_post(store, client, row)
         raise ValueError('승인 후 내용이 바뀜 → gate --approve로 재승인하세요')
-    if (mode not in ('auto', 'after') or not may_auto_publish(doc, results, row)) and not approval:
+    if (mode not in ('auto', 'after') or not may_auto_publish(doc, results, row, root, store, config_path)) and not approval:
+        if row['status'] in ('future', 'publish'):
+            recall_post(store, client, row)
         raise ValueError('사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요')
 
 
-def publish_draft(root, store, client, doc, today, mode='approval'):
+def publish_draft(root, store, client, doc, today, mode='approval', config_path=None):
     row = store.get('posts', doc['content_id'])
     if not row or not row.get('post_id'):
         raise ValueError('서버 초안 없음 → blog.py publish --prepare를 실행하세요')
+    config_path = config_path or row.get('config_path')
     if row['destination'] != client.destination:
         raise ValueError('목적지가 다름 → 승인한 WordPress 주소로 돌아가세요')
     try:
@@ -64,9 +67,9 @@ def publish_draft(root, store, client, doc, today, mode='approval'):
         raise ValueError('동일 내용의 글이 이미 있음 → 기존 post_id를 확인하세요')
     count = sum(p.get('date') == today for p in existing)
     results = inspect_document(root, doc, today=today, daily_count=count,
-                               limit=row.get('daily_limit', 2), recent=recent_documents(store, doc), store=store)
+                               limit=row.get('daily_limit', 2), recent=recent_documents(store, doc), store=store, config_path=config_path)
     require_ready(results)
-    require_approval(root, store, client, doc, row, mode, results)
+    require_approval(root, store, client, doc, row, mode, results, config_path)
     if row['status'] in ('future', 'publish'):
         return check_remote_status(store, client, row)
     if row['doc'] != doc:

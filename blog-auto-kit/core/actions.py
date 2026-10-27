@@ -16,7 +16,7 @@ def content_action(root, store, config, args):
         print('✔ 통과: 주제 지도 생성\noutput/topics.json')
     else:
         make_draft(root, store, args.sample, args.today, args.human_notes,
-                   config.get('provider', {}))
+                   config.get('provider', {}), config_path=args.config)
         print('✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/' + args.sample + '.json')
 
 

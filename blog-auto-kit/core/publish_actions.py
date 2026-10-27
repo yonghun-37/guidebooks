@@ -9,9 +9,9 @@ from wordpress.publish import publish_draft, check_remote_status
 
 def gate_action(root, store, args):
     doc = read_document(root, args.sample)
-    results = inspect_document(root, doc, today=args.today, store=store)
+    results = inspect_document(root, doc, today=args.today, store=store, config_path=args.config)
     if args.approve:
-        approval = approve_document(root, store, doc, args.approve, args.today)
+        approval = approve_document(root, store, doc, args.approve, args.today, config_path=args.config)
         if doc['content_type'] == 'sponsor':
             record_sponsor_approval(root, store, approval, args.today)
         print('✔ 통과: 현재 최종본 사람 승인 · ' + approval['hash'][:12])
@@ -44,12 +44,12 @@ def wordpress_action(root, store, config, args):
         doc = read_document(root, args.sample)
         if args.prepare:
             row = prepare_draft(root, store, client, doc, args.today,
-                                config.get('publishing', {}).get('auto_allowed_types', []))
+                                config.get('publishing', {}).get('auto_allowed_types', []), config_path=args.config)
             row['daily_limit'] = config.get('publishing', {}).get('daily_limit', 2)
             store.put('posts', doc['content_id'], row)
         else:
             row = publish_draft(root, store, client, doc, args.today,
-                                config.get('publishing', {}).get('mode', 'approval'))
+                                config.get('publishing', {}).get('mode', 'approval'), config_path=args.config)
             if doc['content_type'] == 'sponsor':
                 record_sponsor_remote(root, store, row, args.today)
         print(f"✔ 통과: WordPress post_id={row['post_id']} · {row['status']}")

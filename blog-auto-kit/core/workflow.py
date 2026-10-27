@@ -22,8 +22,13 @@ def read_document(root, name):
     return read_json(path)
 
 
-def make_draft(root, store, name, today, human_notes=False, config=None):
+def make_draft(root, store, name, today, human_notes=False, config=None, config_path=None):
     config = config or {}
+    if name == 'library':
+        from content.templates import template_document
+        doc = template_document(root, 'library', read_json(root / 'content/data/library.json'), today, config_path)
+        save_document(root, doc)
+        return doc
     allowed = None
     if name == 'sponsor':
         sponsor = store.get('sponsors', 'shelf', {})

@@ -1,0 +1,28 @@
+...F                                                                     [100%]
+=================================== FAILURES ===================================
+_________ test_default_free_prose_demo_cannot_create_a_human_approval __________
+
+kit = (PosixPath('/tmp/pytest-of-yonghun/pytest-671/test_default_free_prose_demo_c0'), <core.state.Store object at 0x774a85e68f10>)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x774a85ea8690>
+
+    def test_default_free_prose_demo_cannot_create_a_human_approval(kit, monkeypatch):
+        import blog
+        from core.cli import make_parser
+        root, store = kit
+        monkeypatch.setattr(blog, 'ROOT', root)
+        parser = make_parser()
+>       assert blog.execute(parser.parse_args(['run', '--sample'])) == 1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <function execute at 0x774a8602c680>(Namespace(command='run', today='2026-10-27', config=None, live=False, sample='info', ops=False, restore=False, audit=False, scenarios=False))
+E        +    where <function execute at 0x774a8602c680> = <module 'blog' from '/home/yonghun/project/ai-insta/blog-auto-kit/blog.py'>.execute
+E        +    and   Namespace(command='run', today='2026-10-27', config=None, live=False, sample='info', ops=False, restore=False, audit=False, scenarios=False) = parse_args(['run', '--sample'])
+E        +      where parse_args = ArgumentParser(prog='__main__.py', usage=None, description='봄이랑 크는 집 · 코드 운영 실습', formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True).parse_args
+
+blog-auto-kit/tests/test_bx7b_lifecycle.py:79: AssertionError
+----------------------------- Captured stdout call -----------------------------
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+=========================== short test summary info ============================
+FAILED blog-auto-kit/tests/test_bx7b_lifecycle.py::test_default_free_prose_demo_cannot_create_a_human_approval
+1 failed, 3 passed in 0.49s

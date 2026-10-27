@@ -1,0 +1,139 @@
+F.F...F.FF                                                               [100%]
+=================================== FAILURES ===================================
+_ test_no_auto[[\uc5ec\uae30\uc11c \uad6c\ub9e4](https://link.coupang.com/a/abc123)] _
+
+tmp_path = PosixPath('/tmp/pytest-of-yonghun/pytest-659/test_no_auto___uc5ec_uae30_uc10')
+text = '[여기서 구매](https://link.coupang.com/a/abc123)'
+
+    @pytest.mark.parametrize('text', CASES)
+    def test_no_auto(tmp_path, text):
+        shutil.copytree(ROOT/'samples', tmp_path/'samples')
+        store = Store(tmp_path)
+        doc = load_sample('info')
+        doc.update(title='그림책 정리', description='책을 함께 읽는 순서', media=[])
+        doc['markdown'] = '그림책을 정리해요.\n\n## 함께 읽기\n\n그림을 보며 이야기를 나눠요.\n\n' + text
+        doc['html'] = render(doc['markdown'])
+        with running_server(tmp_path, port=0, today=TODAY) as url:
+            c = Client(url)
+            try:
+                prepare_draft(tmp_path, store, c, doc, TODAY, ['info'])
+                publish_draft(tmp_path, store, c, doc, TODAY, 'auto')
+            except ValueError:
+                pass
+>           assert all(p['status']=='draft' for p in c.request('GET','posts')), text
+E           AssertionError: [여기서 구매](https://link.coupang.com/a/abc123)
+E           assert False
+E            +  where False = all(<generator object test_no_auto.<locals>.<genexpr> at 0x75a9573e5850>)
+
+blog-auto-kit/tests/test_bx7b_claude_bypass.py:42: AssertionError
+________________ test_no_auto[If baby has a fever, read this.] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-yonghun/pytest-659/test_no_auto_If_baby_has_a_fev0')
+text = 'If baby has a fever, read this.'
+
+    @pytest.mark.parametrize('text', CASES)
+    def test_no_auto(tmp_path, text):
+        shutil.copytree(ROOT/'samples', tmp_path/'samples')
+        store = Store(tmp_path)
+        doc = load_sample('info')
+        doc.update(title='그림책 정리', description='책을 함께 읽는 순서', media=[])
+        doc['markdown'] = '그림책을 정리해요.\n\n## 함께 읽기\n\n그림을 보며 이야기를 나눠요.\n\n' + text
+        doc['html'] = render(doc['markdown'])
+        with running_server(tmp_path, port=0, today=TODAY) as url:
+            c = Client(url)
+            try:
+                prepare_draft(tmp_path, store, c, doc, TODAY, ['info'])
+                publish_draft(tmp_path, store, c, doc, TODAY, 'auto')
+            except ValueError:
+                pass
+>           assert all(p['status']=='draft' for p in c.request('GET','posts')), text
+E           AssertionError: If baby has a fever, read this.
+E           assert False
+E            +  where False = all(<generator object test_no_auto.<locals>.<genexpr> at 0x75a9573e59a0>)
+
+blog-auto-kit/tests/test_bx7b_claude_bypass.py:42: AssertionError
+_______________ test_no_auto[\ud574 \uc5f4 \uc81c \uc124\uba85] ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-yonghun/pytest-659/test_no_auto__ud574__uc5f4__uc0')
+text = '해 열 제 설명'
+
+    @pytest.mark.parametrize('text', CASES)
+    def test_no_auto(tmp_path, text):
+        shutil.copytree(ROOT/'samples', tmp_path/'samples')
+        store = Store(tmp_path)
+        doc = load_sample('info')
+        doc.update(title='그림책 정리', description='책을 함께 읽는 순서', media=[])
+        doc['markdown'] = '그림책을 정리해요.\n\n## 함께 읽기\n\n그림을 보며 이야기를 나눠요.\n\n' + text
+        doc['html'] = render(doc['markdown'])
+        with running_server(tmp_path, port=0, today=TODAY) as url:
+            c = Client(url)
+            try:
+                prepare_draft(tmp_path, store, c, doc, TODAY, ['info'])
+                publish_draft(tmp_path, store, c, doc, TODAY, 'auto')
+            except ValueError:
+                pass
+>           assert all(p['status']=='draft' for p in c.request('GET','posts')), text
+E           AssertionError: 해 열 제 설명
+E           assert False
+E            +  where False = all(<generator object test_no_auto.<locals>.<genexpr> at 0x75a9573e7ed0>)
+
+blog-auto-kit/tests/test_bx7b_claude_bypass.py:42: AssertionError
+_ test_no_auto[\uc11c\uc6b8 \ub9c8\ud3ec\uad6c \u25cb\u25cb\uc5b4\ub9b0\uc774\uc9d1\uc5d0 \ub2e4\ub140\uc694.] _
+
+tmp_path = PosixPath('/tmp/pytest-of-yonghun/pytest-659/test_no_auto__uc11c_uc6b8__ub90')
+text = '서울 마포구 ○○어린이집에 다녀요.'
+
+    @pytest.mark.parametrize('text', CASES)
+    def test_no_auto(tmp_path, text):
+        shutil.copytree(ROOT/'samples', tmp_path/'samples')
+        store = Store(tmp_path)
+        doc = load_sample('info')
+        doc.update(title='그림책 정리', description='책을 함께 읽는 순서', media=[])
+        doc['markdown'] = '그림책을 정리해요.\n\n## 함께 읽기\n\n그림을 보며 이야기를 나눠요.\n\n' + text
+        doc['html'] = render(doc['markdown'])
+        with running_server(tmp_path, port=0, today=TODAY) as url:
+            c = Client(url)
+            try:
+                prepare_draft(tmp_path, store, c, doc, TODAY, ['info'])
+                publish_draft(tmp_path, store, c, doc, TODAY, 'auto')
+            except ValueError:
+                pass
+>           assert all(p['status']=='draft' for p in c.request('GET','posts')), text
+E           AssertionError: 서울 마포구 ○○어린이집에 다녀요.
+E           assert False
+E            +  where False = all(<generator object test_no_auto.<locals>.<genexpr> at 0x75a957c1f370>)
+
+blog-auto-kit/tests/test_bx7b_claude_bypass.py:42: AssertionError
+_ test_no_auto[\uc774 \ub9e4\ud2b8\uc5d0\uc11c \uc7ac\uc6b0\uba74 \uc9c8\uc2dd \uac71\uc815\uc774 \uc5c6\uc5b4\uc694.] _
+
+tmp_path = PosixPath('/tmp/pytest-of-yonghun/pytest-659/test_no_auto__uc774__ub9e4_ud20')
+text = '이 매트에서 재우면 질식 걱정이 없어요.'
+
+    @pytest.mark.parametrize('text', CASES)
+    def test_no_auto(tmp_path, text):
+        shutil.copytree(ROOT/'samples', tmp_path/'samples')
+        store = Store(tmp_path)
+        doc = load_sample('info')
+        doc.update(title='그림책 정리', description='책을 함께 읽는 순서', media=[])
+        doc['markdown'] = '그림책을 정리해요.\n\n## 함께 읽기\n\n그림을 보며 이야기를 나눠요.\n\n' + text
+        doc['html'] = render(doc['markdown'])
+        with running_server(tmp_path, port=0, today=TODAY) as url:
+            c = Client(url)
+            try:
+                prepare_draft(tmp_path, store, c, doc, TODAY, ['info'])
+                publish_draft(tmp_path, store, c, doc, TODAY, 'auto')
+            except ValueError:
+                pass
+>           assert all(p['status']=='draft' for p in c.request('GET','posts')), text
+E           AssertionError: 이 매트에서 재우면 질식 걱정이 없어요.
+E           assert False
+E            +  where False = all(<generator object test_no_auto.<locals>.<genexpr> at 0x75a9573e4580>)
+
+blog-auto-kit/tests/test_bx7b_claude_bypass.py:42: AssertionError
+=========================== short test summary info ============================
+FAILED blog-auto-kit/tests/test_bx7b_claude_bypass.py::test_no_auto[[\uc5ec\uae30\uc11c \uad6c\ub9e4](https://link.coupang.com/a/abc123)]
+FAILED blog-auto-kit/tests/test_bx7b_claude_bypass.py::test_no_auto[If baby has a fever, read this.]
+FAILED blog-auto-kit/tests/test_bx7b_claude_bypass.py::test_no_auto[\ud574 \uc5f4 \uc81c \uc124\uba85]
+FAILED blog-auto-kit/tests/test_bx7b_claude_bypass.py::test_no_auto[\uc11c\uc6b8 \ub9c8\ud3ec\uad6c \u25cb\u25cb\uc5b4\ub9b0\uc774\uc9d1\uc5d0 \ub2e4\ub140\uc694.]
+FAILED blog-auto-kit/tests/test_bx7b_claude_bypass.py::test_no_auto[\uc774 \ub9e4\ud2b8\uc5d0\uc11c \uc7ac\uc6b0\uba74 \uc9c8\uc2dd \uac71\uc815\uc774 \uc5c6\uc5b4\uc694.]
+5 failed, 5 passed in 0.68s

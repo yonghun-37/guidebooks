@@ -67,6 +67,9 @@ def economic_relations(doc):
     for link in doc.get('links', []) + doc.get('paid_links', []):
         if link.get('kind') or link.get('details'):
             relations.append(link)
+    from gates.links import urls, shopping_url
+    if any(shopping_url(url) for url in urls(doc)):
+        relations.append({'kind': 'affiliate', 'details': '본문 제휴·쇼핑 링크 수수료 확인'})
     return relations
 
 

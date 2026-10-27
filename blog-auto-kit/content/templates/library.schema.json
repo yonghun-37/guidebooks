@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["topic", "age_band", "catalog", "source_url"],
+  "properties": {
+    "topic": {"type": "string", "enum": ["자연", "가족", "색깔"], "minLength": 1, "maxLength": 8},
+    "age_band": {"type": "string", "enum": ["영아", "유아"], "minLength": 1, "maxLength": 4},
+    "catalog": {"type": "string", "enum": ["그림책", "동화"], "minLength": 1, "maxLength": 4},
+    "source_url": {"type": "string", "enum": ["https://www.nl.go.kr/"], "format": "uri", "minLength": 1, "maxLength": 100}
+  }
+}

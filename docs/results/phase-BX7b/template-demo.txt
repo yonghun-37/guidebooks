@@ -1,0 +1,11 @@
+$ python blog.py template approve library --by 서윤
+✔ 통과: 글 틀 library · 검토자 서윤
+틀 해시: f856f009fccdacfe9cd2f751242e0735ca93e61d6df553e6e59bbb3f63d2b98e
+데이터 규칙 해시: 7dc96e4a6d7ca447861933c061f51373d279afe2c06f42fa0835d58ea28ab8ab
+
+$ python blog.py run --sample library
+✔ 통과: mock 승인된 틀 + 검증 데이터 → 자동 예약 1
+output/drafts/library.html
+
+$ 틀 끝 공백 추가 뒤 run --sample library
+✖ 막힘: 사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요

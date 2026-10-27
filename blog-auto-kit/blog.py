@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent
 
 def sample_run(root, store, config, args):
     from core.demo import run_demo
-    run_demo(root, store, config, args.today, args.sample)
+    run_demo(root, store, config, args.today, args.sample, config_path=args.config)
 
 
 def execute(args):
@@ -28,7 +28,13 @@ def execute(args):
                                      else 'config.example.toml'))
         config, store = load_config(path), Store(ROOT)
         args.today = checked_today(args.today or config.get('clock', {}).get('today', '2026-10-27'))
-        if args.command in ('topics', 'draft'):
+        if args.command == 'template':
+            from content.templates import approve_template
+            record = approve_template(ROOT, store, args.template_id, args.by, args.today)
+            print('✔ 통과: 글 틀 ' + args.template_id + ' · 검토자 ' + record['reviewer'])
+            print('틀 해시: ' + record['template_hash'])
+            print('데이터 규칙 해시: ' + record['schema_hash'])
+        elif args.command in ('topics', 'draft'):
             content_action(ROOT, store, config, args)
         elif args.command == 'gate':
             gate_action(ROOT, store, args)

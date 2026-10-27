@@ -9,7 +9,7 @@ def binding(root, doc, record):
     return approval_hash(root, final)
 
 
-def inspect_document(root, doc, store=None, **kwargs):
+def inspect_document(root, doc, store=None, config_path=None, **kwargs):
     from copy import deepcopy
     checked = deepcopy(doc)
     registered = []
@@ -33,7 +33,14 @@ def inspect_document(root, doc, store=None, **kwargs):
                     registered.append({'kind': 'loan' if loan else 'gift',
                                        'details': '대여' if loan else '제품 제공'})
     checked['registered_relations'] = registered
-    results = evaluate(checked, root=root, **kwargs)
+    results = evaluate(checked, root=root, config_path=config_path, **kwargs)
+    from content.templates import template_errors
+    from gates.checks import result
+    errors = template_errors(root, store, doc, config_path)
+    if errors:
+        results = [r for r in results if r['rule_id'] != 'general']
+        results.append(result('automation.T1', 'review', 'template', '; '.join(errors),
+                              '자유 문장·경험·사진은 최종본을 읽고 사람이 승인하세요.', [], True))
     write_report(root, doc, results)
     return results
 
@@ -46,10 +53,10 @@ def require_ready(results):
         raise ValueError(item['reason_ko'] + ' → ' + item['next_action_ko'])
 
 
-def approve_document(root, store, doc, reviewer, today):
+def approve_document(root, store, doc, reviewer, today, config_path=None):
     if not reviewer.strip():
         raise ValueError('검토자 이름 없음 → --approve 검토자 이름을 넣으세요')
-    results = inspect_document(root, doc, today=today, recent=recent_documents(store, doc), store=store)
+    results = inspect_document(root, doc, today=today, recent=recent_documents(store, doc), store=store, config_path=config_path)
     require_ready(results)
     row = store.get('posts', doc['content_id'])
     if not row or not row.get('post_id'):

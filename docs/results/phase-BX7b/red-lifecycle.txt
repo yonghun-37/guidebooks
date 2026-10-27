@@ -1,0 +1,29 @@
+..F                                                                      [100%]
+=================================== FAILURES ===================================
+__________ test_changed_template_recalls_already_auto_scheduled_post ___________
+
+kit = (PosixPath('/tmp/pytest-of-yonghun/pytest-667/test_changed_template_recalls_0'), <core.state.Store object at 0x71ca73d72290>)
+
+    def test_changed_template_recalls_already_auto_scheduled_post(kit):
+        root, store = kit
+        approve_template(root, store, 'library', '서윤', TODAY)
+        data = json.loads((root / 'content/data/library.json').read_text())
+        doc = template_document(root, 'library', data, TODAY)
+        with running_server(root, port=0, today=TODAY) as url:
+            client = Client(url)
+            prepare_draft(root, store, client, doc, TODAY, ['info'])
+            assert publish_draft(root, store, client, doc, TODAY, 'auto')['status'] == 'future'
+            path = root / 'content/templates/library.md'
+            path.write_bytes(path.read_bytes() + b' ')
+            with pytest.raises(ValueError):
+                publish_draft(root, store, client, doc, TODAY, 'auto')
+>           assert client.request('GET', 'posts')[0]['status'] == 'draft'
+E           AssertionError: assert 'future' == 'draft'
+E             
+E             - draft
+E             + future
+
+blog-auto-kit/tests/test_bx7b_lifecycle.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED blog-auto-kit/tests/test_bx7b_lifecycle.py::test_changed_template_recalls_already_auto_scheduled_post
+1 failed, 2 passed in 0.35s

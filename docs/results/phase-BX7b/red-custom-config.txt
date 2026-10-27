@@ -1,0 +1,34 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________ test_cli_selected_config_controls_template_url_allowlist ___________
+
+kit = (PosixPath('/tmp/pytest-of-yonghun/pytest-672/test_cli_selected_config_contr0'), <core.state.Store object at 0x7311c74c62d0>)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7311c73fb990>
+
+    def test_cli_selected_config_controls_template_url_allowlist(kit, monkeypatch):
+        import blog
+        from core.cli import make_parser
+        root, store = kit
+        monkeypatch.setattr(blog, 'ROOT', root)
+        settings = (root / 'config.example.toml').read_text().replace('mode = "approval"', 'mode = "auto"')
+        settings = settings.replace('auto_allowed_domains = ["www.nl.go.kr"]', 'auto_allowed_domains = []')
+        (root / 'strict.toml').write_text(settings)
+        parser = make_parser()
+        assert blog.execute(parser.parse_args(['template', 'approve', 'library', '--by', '서윤'])) == 0
+>       assert blog.execute(parser.parse_args(['run', '--sample', 'library', '--config', 'strict.toml'])) == 1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <function execute at 0x7311c7208900>(Namespace(command='run', today='2026-10-27', config='strict.toml', live=False, sample='library', ops=False, restore=False, audit=False, scenarios=False))
+E        +    where <function execute at 0x7311c7208900> = <module 'blog' from '/home/yonghun/project/ai-insta/blog-auto-kit/blog.py'>.execute
+E        +    and   Namespace(command='run', today='2026-10-27', config='strict.toml', live=False, sample='library', ops=False, restore=False, audit=False, scenarios=False) = parse_args(['run', '--sample', 'library', '--config', 'strict.toml'])
+E        +      where parse_args = ArgumentParser(prog='__main__.py', usage=None, description='봄이랑 크는 집 · 코드 운영 실습', formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True).parse_args
+
+blog-auto-kit/tests/test_bx7b_lifecycle.py:98: AssertionError
+----------------------------- Captured stdout call -----------------------------
+✔ 통과: 글 틀 library · 검토자 서윤
+틀 SHA256: f856f009fccdacfe9cd2f751242e0735ca93e61d6df553e6e59bbb3f63d2b98e
+데이터 규칙 SHA256: 7dc96e4a6d7ca447861933c061f51373d279afe2c06f42fa0835d58ea28ab8ab
+✔ 통과: mock 승인된 틀 + 검증 데이터 → 자동 예약 1
+output/drafts/library.html
+=========================== short test summary info ============================
+FAILED blog-auto-kit/tests/test_bx7b_lifecycle.py::test_cli_selected_config_controls_template_url_allowlist
+1 failed in 0.14s

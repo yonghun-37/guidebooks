@@ -1,7 +1,7 @@
 {
   "python blog.py gate --sample info": {
     "returncode": 0,
-    "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/info.txt\n"
+    "stdout": "✔ 통과: 자동 검사 완료 · 사람 검토 대기\noutput/gates/info.txt\n"
   },
   "python blog.py gate --sample play": {
     "returncode": 0,

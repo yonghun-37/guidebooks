@@ -51,10 +51,12 @@ def post_payload(doc, row):
             'tags': assets['tags'], 'featured_media': next(iter(assets['media']), 0)}
 
 
-def prepare_draft(root, store, client, doc, today, auto_allowed_types=()):
-    require_ready(inspect_document(root, doc, today=today, recent=recent_documents(store, doc), store=store))
+def prepare_draft(root, store, client, doc, today, auto_allowed_types=(), config_path=None):
+    require_ready(inspect_document(root, doc, today=today, recent=recent_documents(store, doc), store=store, config_path=config_path))
     ident = doc['content_id']
     row = store.get('posts', ident)
+    if row is not None:
+        row['config_path'] = config_path
     if row and row['destination'] != client.destination:
         raise ValueError('목적지 변경 → 별도 키트 폴더에서 새 연결을 시작하세요')
     key = 'create:' + client.destination + ':' + ident
@@ -62,7 +64,7 @@ def prepare_draft(root, store, client, doc, today, auto_allowed_types=()):
         return reconcile(store, client, row, key)
     if row and row.get('post_id'):
         return update_draft(root, store, client, doc, row, today)
-    row = discover_record(client, doc, today, auto_allowed_types)
+    row = discover_record(client, doc, today, auto_allowed_types, config_path)
     if row['is_update']:
         store.put('posts', ident, row)
         return update_draft(root, store, client, doc, row, today)
@@ -86,7 +88,7 @@ def prepare_draft(root, store, client, doc, today, auto_allowed_types=()):
     return row
 
 
-def discover_record(client, doc, today, auto_allowed_types):
+def discover_record(client, doc, today, auto_allowed_types, config_path):
     """서버의 post_id 또는 안정적인 slug로 기존 글을 먼저 찾는다."""
     slug = doc.get('slug') or 'bx-' + doc['content_id']
     found = client.find_slug(slug)
@@ -98,7 +100,7 @@ def discover_record(client, doc, today, auto_allowed_types):
         raise ValueError('같은 slug의 서버 글이 여러 개입니다 → 서버에서 확인하세요')
     row = {'id': doc['content_id'], 'content_hash': content_hash(doc), 'slug': slug,
            'destination': client.destination, 'status': 'sending', 'doc': doc, 'date': today,
-           'is_update': bool(found), 'server_new_confirmed': not found,
+           'config_path': config_path, 'is_update': bool(found), 'server_new_confirmed': not found,
            'server_checked': True, 'auto_allowed_types': list(auto_allowed_types)}
     if found:
         row.update(post_id=found[0]['id'], status=found[0]['status'])

@@ -24,8 +24,8 @@ def is_health(doc: dict) -> bool:
     return any(word in text for word in HEALTH) or bool(MEDICINE.search(text))
 
 
-def may_auto_publish(doc: dict, results: list, record: dict) -> bool:
-    """허용 유형·전부 pass·위험 신호 없음·서버 신규 확인을 모두 요구한다."""
+def may_auto_publish(doc: dict, results: list, record: dict, root=None, store=None, config_path=None) -> bool:
+    """승인 틀·검증 데이터·최종본 일치·전부 pass·서버 신규를 요구한다."""
     allowed = record.get('auto_allowed_types', [])
     if doc.get('content_type') not in ('info', 'play') or doc.get('content_type') not in allowed:
         return False
@@ -33,18 +33,8 @@ def may_auto_publish(doc: dict, results: list, record: dict) -> bool:
         return False
     if record.get('server_checked') is not True or record.get('server_new_confirmed') is not True or record.get('is_update'):
         return False
-    text = content_text(doc)
-    if is_health(doc) or IDENTIFICATION.search(text) or any(word in text for word in SIGNALS):
-        return False
-    if any(doc.get(key) for key in ('experience', 'photos', 'commercial_relations', 'registered_relations', 'product_records', 'paid_links', 'links', 'is_update', 'risk_flags')):
-        return False
-    if doc.get('contract', {}).get('commercial_relations'):
-        return False
-    # 이미지 내용의 안전은 코드가 판별하지 않는다. 직접 제작한 삽화만 허용한다.
-    for media in doc.get('media', []):
-        if media.get('child_photo') is not False or media.get('kind') != 'illustration' or media.get('permissions') != '직접 제작':
-            return False
-    return True
+    from content.templates import template_errors
+    return not template_errors(root, store, doc, config_path)
 
 
 def requires_human(doc: dict) -> bool:

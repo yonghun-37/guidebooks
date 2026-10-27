@@ -5,6 +5,6 @@
   },
   "python blog.py gate --sample affiliate": {
     "returncode": 0,
-    "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/affiliate.txt\n"
+    "stdout": "✔ 통과: 자동 검사 완료 · 사람 검토 대기\noutput/gates/affiliate.txt\n"
   }
 }

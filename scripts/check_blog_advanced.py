@@ -42,6 +42,8 @@ def check(root=ROOT):
     errors, chapters = [], []
     if 'python blog.py status --costs' not in canonical.get('A4', []):
         errors.append('A4: 비용 기록 읽기 명령 누락')
+    if 'python blog.py template approve library --by 서윤' not in canonical.get('A3', []):
+        errors.append('A3: 글 틀 승인 명령 누락')
     scenario_output = json.loads((kit / 'course/expected/E2E/outputs.json').read_text())
     scenario_text = scenario_output.get('python blog.py run --scenarios', {}).get('stdout', '')
     if '✔ 통과: bypass_attempts' not in scenario_text:
@@ -83,6 +85,7 @@ def check(root=ROOT):
         expected_commands = canonical.get(chapter, [])
         allowed = {line for rows in canonical.values() for line in rows}
         allowed.update(f'python course.py {action} {name}' for name in canonical for action in ('start', 'check'))
+        allowed.add('python blog.py run --sample library')
         allowed.update(('python course.py reset', 'python --version', 'python3.11 --version',
                         'python3.11 -m venv .venv', 'source .venv/bin/activate', 'pwd', 'ls',
                         'py -3.11 --version', 'py -3.11 -m venv .venv', 'Get-Location', 'Get-ChildItem',

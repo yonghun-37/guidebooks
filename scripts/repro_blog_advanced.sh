@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 빈 폴더의 새 가상환경에서 교과서 명령과 7종 시나리오(우회 시도 묶음 포함)를 재현한다.
+# 빈 폴더의 새 가상환경에서 틀 승인 명령·7종 시나리오·자유 문장 우회 회귀를 재현한다.
 set -Eeuo pipefail
 REPRO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
 python3 "$REPRO_ROOT/scripts/check_blog_advanced.py" --check
@@ -44,6 +44,7 @@ PY
     export PYTHONIOENCODING=utf-8 PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1
     "$REPRO_PY" course/execute.py --all
     "$REPRO_PY" course/build_expected.py --check
+    # 전체 pytest에 Claude 우회 10개와 승인 틀·데이터·렌더 경계 회귀가 포함된다.
     "$REPRO_PY" -m pytest -q
   )
   REPRO_PASSED=$((REPRO_PASSED + 1))
