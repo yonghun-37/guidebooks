@@ -1,0 +1,112 @@
+{
+  "checks": [
+    "M07: birth/route changes clear stale dates, identify actual calculation inputs; C04: missing confirmed date/clinic warns before and after reload",
+    "M07: laboratory iframe invalidates the same original result",
+    "M09: unknown payment withholds total; voucher base amount excluded; explicit cash selection totals separately",
+    "C11: negative amount is rejected with a fresh error and no extra row",
+    "C02/C03: visit dates separate from submission and restore, per-benefit paper example present",
+    "C01/S02: prenatal/postnatal branches and preparation estimates present at all three entries",
+    "B01: JS disabled: hospital chapter/practice6/emergency print expose all canonical messages; four monochrome PDFs one A4 page each"
+  ],
+  "errors": [],
+  "noJS": [
+    {
+      "file": "chapters/07-hospital.html",
+      "visibleMessages": 10
+    },
+    {
+      "file": "practice/06-emergency.html",
+      "visibleMessages": 10
+    },
+    {
+      "file": "print/emergency.html",
+      "visibleMessages": 10
+    }
+  ],
+  "figures": [
+    {
+      "file": "practice/03-feeding.html",
+      "key": "latch",
+      "width": 360,
+      "theme": "light"
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "key": "burp",
+      "width": 360,
+      "theme": "light"
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "key": "bottle",
+      "width": 360,
+      "theme": "light"
+    },
+    {
+      "file": "practice/02-diaper.html",
+      "key": "diaper",
+      "width": 360,
+      "theme": "light"
+    },
+    {
+      "file": "practice/05-bath.html",
+      "key": "wash",
+      "width": 360,
+      "theme": "light"
+    },
+    {
+      "file": "practice/06-emergency.html",
+      "key": "temperature",
+      "width": 360,
+      "theme": "light"
+    },
+    {
+      "file": "practice/10-play.html",
+      "key": "tummy",
+      "width": 360,
+      "theme": "light"
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "key": "latch",
+      "width": 360,
+      "theme": "dark"
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "key": "burp",
+      "width": 360,
+      "theme": "dark"
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "key": "bottle",
+      "width": 360,
+      "theme": "dark"
+    },
+    {
+      "file": "practice/02-diaper.html",
+      "key": "diaper",
+      "width": 360,
+      "theme": "dark"
+    },
+    {
+      "file": "practice/05-bath.html",
+      "key": "wash",
+      "width": 360,
+      "theme": "dark"
+    },
+    {
+      "file": "practice/06-emergency.html",
+      "key": "temperature",
+      "width": 360,
+      "theme": "dark"
+    },
+    {
+      "file": "practice/10-play.html",
+      "key": "tummy",
+      "width": 360,
+      "theme": "dark"
+    }
+  ]
+}

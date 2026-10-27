@@ -27,7 +27,7 @@
       else rows.push(['B형간염 경로 확인',route==='individual'?'산모 검사·미숙아·기접종 기록을 알려 담당 기관의 개별 계획을 받아요.':'아직 경로를 정하지 않았어요. 1개월 접종을 자동으로 예약하지 말고 담당 기관에 물어보세요.',['N027']]);
       rows.push(['2개월 접종 참고일',stamp(months(birth,2))+' 무렵 · 성분·종류·간격은 기관 확인',['N027']],['로타 첫 접종 상한 · 14주 6일',stamp(days(birth,104))+' · 상한까지 기다리지 말고 2개월부터 예약',['N027']],['다음 4개월 접종 참고일',stamp(months(birth,4))+' 무렵',['N027']],['2차 검진 · 4~6개월',stamp(months(birth,4))+' 무렵부터 · 정확한 종료일은 공단 대상조회',['N032']]);
       if(route==='six')rows.push(['6가 혼합 · 6개월 참고일',stamp(months(birth,6))+' 무렵',['N027']]);
-      const intro=document.createElement('p');intro.textContent='표준 시기 참고표예요. 예약 확정·개인 접종 계획이 아니에요. 달력 월의 같은 날짜가 없으면 말일을 참고일로 표시해요. 실제 시작·종료일과 선행 접종 간격은 기관에서 확인하세요.';target.append(intro);
+      const intro=document.createElement('p');intro.textContent=`계산에 사용한 출생일 ${stamp(birth)} · 경로 ${form.elements.route.selectedOptions[0].textContent}. `+'표준 시기 참고표예요. 예약 확정·개인 접종 계획이 아니에요. 달력 월의 같은 날짜가 없으면 말일을 참고일로 표시해요. 실제 시작·종료일과 선행 접종 간격은 기관에서 확인하세요.';target.append(intro);
       const ul=document.createElement('ul');
       for(const [label,value,refs] of rows){
         const li=document.createElement('li'), strong=document.createElement('strong');strong.textContent=label+': ';li.append(strong,document.createTextNode(value));
@@ -36,17 +36,25 @@
     }catch(error){target.textContent=error.message;}
   }
   form.addEventListener('submit',render);
+  const invalidate=()=>{target.textContent='입력이 바뀌었어요. 날짜 확인하기를 다시 눌러 주세요.';};
+  form.addEventListener('input',invalidate);form.addEventListener('change',invalidate);
   const host=document.querySelector('#booking-record'), fields=[...host.querySelectorAll('input,select')], status=document.querySelector('#booking-status'),key='babybook:booking:v1';
   try{
     const saved=JSON.parse(localStorage.getItem(key)||'{}');
     if(saved&&typeof saved==='object'&&!Array.isArray(saved))fields.forEach(field=>{if(typeof saved[field.name]==='string')field.value=saved[field.name].slice(0,180);});
   }catch{status.textContent='저장값을 읽을 수 없어요. 예약 내용은 종이나 개인 메모에 남겨 주세요.';}
+  const bookingWarning=()=>{
+    const confirmed=host.querySelector('[name=state]').value==='통화함 · 예약 확정';
+    document.querySelector('#booking-warning').textContent=confirmed&&(!host.querySelector('[name=clinic]').value.trim()||!host.querySelector('[name=appointment]').value)?'예약 확정에는 기관 이름과 날짜·시각이 필요해요. 병원과 확인한 내용을 채워 주세요.':'';
+  };
+  bookingWarning();
   fields.forEach(field=>field.addEventListener('input',()=>{
+    bookingWarning();
     try{localStorage.setItem(key,JSON.stringify(Object.fromEntries(fields.map(f=>[f.name,f.value]))));status.textContent='예약 기록을 이 브라우저에 저장했어요. 실제 예약은 병원 통화로 확인하세요.';}
     catch{status.textContent='저장할 수 없어요. 현재 예약 기록을 인쇄하거나 종이에 옮겨 주세요.';}
   }));
   document.querySelector('#booking-clear').addEventListener('click',()=>{
-    try{localStorage.removeItem(key);fields.forEach(field=>{field.value=field.tagName==='SELECT'?field.options[0].value:'';});status.textContent='예약 기록을 지웠어요.';}
+    try{localStorage.removeItem(key);fields.forEach(field=>{field.value=field.tagName==='SELECT'?field.options[0].value:'';});status.textContent='예약 기록을 지웠어요.';bookingWarning();}
     catch{status.textContent='저장값을 지울 수 없어요. 브라우저 설정의 사이트 데이터에서 지워 주세요.';}
   });
 })();

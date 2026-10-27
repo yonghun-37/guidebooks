@@ -1,7 +1,7 @@
 /* node --test site-baby/assets/ch10.test.cjs */
 const {test}=require('node:test'),assert=require('node:assert/strict');
 const {calculate}=require('./ch10.js');
-const base={birth:'2026-10-06',order:'first',transition:null,region:'capital'};
+const base={birth:'2026-10-06',order:'first',transition:null,region:'capital',payment:'cash'};
 test('출생~23개월 24개 행과 11/12개월 경계',()=>{const r=calculate(base);assert.equal(r.rows.length,24);assert.deepEqual(r.rows.map(r=>r.month),Array.from({length:24},(_,i)=>i));assert.equal(r.rows[0].date,base.birth);assert.equal(r.rows[11].parent,1000000);assert.equal(r.rows[12].parent,500000);assert.equal(r.rows[23].date,'2028-09-06');});
 test('전환 전후 현금과 보육료 분리',()=>{const r=calculate({...base,transition:6});assert.equal(r.rows[5].monthly,1100000);assert.equal(r.rows[6].monthly,516000);assert.equal(r.rows[6].childcare,584000);assert.equal(r.rows[12].parent,0);assert.equal(r.rows[12].monthly,100000);assert.equal(r.rows[12].childcare,515000);});
 test('출생부터 이용과 23개월 전환',()=>{assert.equal(calculate({...base,transition:0}).rows[0].parent,416000);const r=calculate({...base,transition:23});assert.equal(r.rows[22].parent,500000);assert.equal(r.rows[23].parent,0);});
@@ -13,3 +13,6 @@ test('31일 출생은 각 달 말일로 조정하고 다음 달 원래 일자 �
 test('2028 윤년 월령 시작일과 연도 넘김',()=>{const r=calculate({...base,birth:'2026-03-31'});assert.equal(r.rows[23].date,'2028-02-29');assert.equal(calculate({...base,birth:'2025-12-31'}).rows[1].date,'2026-01-31');});
 for(const changes of [{birth:''},{birth:null},{birth:'2026-02-30'},{birth:'2025-02-29'},{birth:'2026-10-28'},{birth:'2024-10-27'},{transition:-1},{transition:24},{transition:1.5},{transition:'12'},{transition:NaN},{region:'all'},{order:'third'}])test('잘못된 날짜·선택 차단 '+JSON.stringify(changes),()=>assert.throws(()=>calculate({...base,...changes})));
 test('조사일 출생과 23개월 경계 허용',()=>{assert.equal(calculate({...base,birth:'2026-10-27'}).age,0);assert.equal(calculate({...base,birth:'2024-10-28'}).age,23);});
+
+test('지급 수단 모름은 현금 합계 미확정',()=>{for(const region of ['capital','special']){const r=calculate({...base,region,payment:'unknown'});assert.equal(r.rows[0].monthly,null);}});
+test('지역상품권 기본액도 현금 합계에서 제외',()=>{const r=calculate({...base,region:'special',payment:'voucher'});assert.equal(r.rows[0].child,120000);assert.equal(r.rows[0].monthly,1000000);assert.equal(r.rows[0].payment,'voucher');});

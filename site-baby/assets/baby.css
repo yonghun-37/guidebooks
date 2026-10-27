@@ -60,3 +60,26 @@
 .credits-list .check-points{margin:10px 0;padding:14px}
 .credits-list .check-points p{margin:5px 0;font-size:14px;overflow-wrap:anywhere}
 @media(max-width:680px){.tool-list{grid-template-columns:1fr}}
+/* 손 동작 도해: 한 칸을 모바일 전체 폭으로, 접촉 위치는 별도 확대. */
+.care-figure .care-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.care-figure .care-panels svg{width:100%;height:auto;max-height:none;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.care-drawing{fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.care-drawing text{fill:currentColor;stroke:none;font:16px system-ui,sans-serif}
+.care-drawing .panel-title{font-size:18px;font-weight:700}
+.care-drawing .baby-fill{fill:var(--surface);stroke:currentColor}
+.care-drawing .breast{fill:var(--surface);stroke:currentColor}
+.care-drawing .support{fill:#d9edff;stroke:#075f9b;stroke-width:2.8}
+.care-drawing .support-stroke{stroke:#075f9b;stroke-width:9;fill:none}
+.care-drawing .action{fill:#ffe4cc;stroke:#974600;stroke-width:2.8;stroke-dasharray:5 3}
+.care-drawing .action-stroke{stroke:#974600;stroke-width:9;stroke-dasharray:8 5;fill:none}
+.care-drawing .direction{stroke:var(--ink);stroke-width:3}
+.care-drawing .cloth{fill:#ffe4cc;stroke:#974600;stroke-dasharray:4 3}
+.care-drawing .probe{stroke:#075f9b;stroke-width:9}
+.care-drawing .tip{fill:#075f9b;stroke:var(--surface);stroke-width:1}
+.hand-legend{font-size:.9rem;line-height:1.7}.support-key{border-bottom:3px solid #075f9b}.action-key{border-bottom:3px dashed #974600}
+[data-theme="dark"] .care-drawing .support-stroke,[data-theme="dark"] .care-drawing .probe{stroke:#88caff}
+[data-theme="dark"] .care-drawing .action-stroke{stroke:#ffb56f}
+@media(max-width:680px){.care-figure .care-panels{grid-template-columns:1fr}.care-figure{padding:10px}.care-figure .care-panels svg{min-width:0}}
+@media print{.care-drawing .support-stroke{stroke:#222}.care-drawing .action-stroke{stroke:#555}.care-figure .care-panels{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+@media print{noscript{display:none!important}}

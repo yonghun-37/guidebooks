@@ -67,7 +67,7 @@
       meta.innerHTML = `<div class="deliverable"><dt>이 장을 마치면 만들어지는 것</dt><dd>${esc(current.deliverable)}</dd></div><div><dt>예상 소요 시간</dt><dd>${esc(current.duration)}${current.track === 'theory' ? ' · 읽기·메모, 연결 실습 별도' : ''}</dd></div><div><dt>난이도</dt><dd>${esc(current.difficulty)}</dd></div><div><dt>선행 장</dt><dd>${previous ? link(previous) : '없음 · 여기서 시작'}</dd></div>`;
     });
     const blocks = [...document.querySelectorAll('.chapter-block[id]')];
-    const outline = blocks.map(block => `<li><a href="#${block.id}">${esc(block.querySelector('.block-label')?.lastChild.textContent.trim() || block.querySelector('h2').textContent)}</a></li>`).join('');
+    const outline = blocks.map(block => `<li><a href="#${block.id}">${esc(block.querySelector('h2').textContent)}</a></li>`).join('');
     document.querySelectorAll('[data-book-sidebar]').forEach(sidebar => {
       sidebar.className = 'book-sidebar';
       sidebar.innerHTML = `<p class="sidebar-label">(${current.track === 'practice' ? '실습' : current.track === 'appendix' ? '부록' : '이론'}) ${esc(current.part)} · ${current.number ?? '부록'}</p><nav aria-label="이 장의 흐름"><ol>${outline}</ol></nav><nav class="sidebar-chapters" aria-label="장 이동"><p class="sidebar-label">책의 지도</p>${trackLinks()}</nav>`;

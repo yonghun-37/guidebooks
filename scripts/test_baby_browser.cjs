@@ -2,11 +2,12 @@
    node scripts/test_baby_browser.cjs ; PW_MODULE / CHROME can override existing local tools. */
 const {chromium}=require(process.env.PW_MODULE||'/tmp/ai-insta-phase3-browser/node_modules/playwright-core');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const root=process.cwd(),dest=path.join(root,'docs/results/phase-N6');
-const base=process.env.BASE_URL||'http://127.0.0.1:8796';
+const phase=process.env.BABY_PHASE||'N8';
+const root=process.cwd(),dest=path.join(root,'docs/results/phase-'+phase);
+const base=process.env.BASE_URL||'http://127.0.0.1:8798';
 const pages=fs.readdirSync('site-baby',{recursive:true}).filter(name=>name.endsWith('.html')).sort();
 fs.mkdirSync(dest,{recursive:true});
-fs.mkdirSync('/tmp/baby-n6-views',{recursive:true});
+fs.mkdirSync('/tmp/baby-'+phase.toLowerCase()+'-views',{recursive:true});
 const report={views:[],errors:[],checks:[],internalLinks:0,network:[]};
 const data=require('../site-baby/assets/emergency-data.js');
 const briefing=fs.readFileSync('research-baby/BRIEFING.md','utf8').split('## ④')[1].split('## ⑤')[0];
@@ -16,7 +17,7 @@ for(const row of data){
  const files=fs.readdirSync('site-baby/assets').filter(name=>name.endsWith('.js')&&name!=='emergency-data.js');
  for(const file of files)assert.equal(fs.readFileSync('site-baby/assets/'+file,'utf8').includes(row.text),false,'canonical text duplicated: '+file);
 }
-report.checks.push('seven shared messages exactly match the adopted briefing; no duplicate literals in other scripts');
+report.checks.push('shared messages exactly match the adopted briefing; no duplicate literals in other scripts');
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROME||'/home/yonghun/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome',args:['--no-sandbox']});
  try{
@@ -35,7 +36,7 @@ report.checks.push('seven shared messages exactly match the adopted briefing; no
    const overflow=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,culprits:[...document.querySelectorAll('body *')].filter(e=>e.getBoundingClientRect().right>innerWidth+1).slice(0,8).map(e=>e.tagName+'.'+e.className)}));
    assert.ok(overflow.scroll<=width,JSON.stringify({file,width,theme,overflow}));
    report.views.push({file,width,theme,overflow:overflow.scroll-width});
-   await page.screenshot({path:path.join('/tmp/baby-n6-views',`${file.replaceAll('/','-').replace('.html','')}-${width}-${theme}.png`)});
+   await page.screenshot({path:path.join('/tmp/baby-'+phase.toLowerCase()+'-views',`${file.replaceAll('/','-').replace('.html','')}-${width}-${theme}.png`)});
    if(['index.html','glossary.html','lab.html','chapters/07-hospital.html','chapters/10-benefits.html','practice/08-checkups.html','practice/09-records.html'].includes(file)&&((width===1280&&theme==='light')||(width===375&&theme==='dark')||(width===360&&theme==='light')))await page.screenshot({path:path.join(dest,`${file.replaceAll('/','-').replace('.html','')}-${width}-${theme}.png`)});
    const canonicalText=await page.locator('[data-emergency-id]').evaluateAll(nodes=>nodes.map(n=>({id:n.dataset.emergencyId,text:n.childNodes[0].textContent})));
    for(const row of canonicalText)assert.equal(row.text,data.find(x=>x.id===row.id).text,file);
@@ -85,6 +86,7 @@ report.checks.push('seven shared messages exactly match the adopted briefing; no
  await page.locator('[name=birth]').fill('2026-10-01');
  await page.locator('[name=transition]').selectOption('0');
  await page.locator('[name=region]').selectOption('capital');
+ await page.locator('[name=payment]').selectOption('cash');
  assert.match(await page.locator('#ch10-months tbody tr').first().textContent(),/41.6만 원.*10만 원.*51.6만 원/);
  await page.locator('[name=region]').selectOption('special');
  assert.match(await page.locator('#ch10-months tbody tr').first().textContent(),/53.6만 원/);
@@ -100,7 +102,7 @@ report.checks.push('seven shared messages exactly match the adopted briefing; no
  // Block storage read/write and confirm that all essential interactions still work.
  const denied=await browser.newContext();await denied.addInitScript(()=>{Object.defineProperty(window,'localStorage',{get(){throw new DOMException('blocked','SecurityError');}});});
  const blocked=await denied.newPage();blocked.on('pageerror',e=>report.errors.push('storage blocked: '+e.message));
- await blocked.goto(base+'/baby/chapters/07-hospital.html');assert.equal(await blocked.locator('[data-emergency-full] [data-emergency-id]').count(),7);await blocked.locator('[data-contact=pediatric]').fill('가상 기관');assert.match(await blocked.locator('[data-contact-status]').textContent(),/저장할 수 없습니다/);
+ await blocked.goto(base+'/baby/chapters/07-hospital.html');assert.equal(await blocked.locator('[data-emergency-full] [data-emergency-id]').count(),data.length);await blocked.locator('[data-contact=pediatric]').fill('가상 기관');assert.match(await blocked.locator('[data-contact-status]').textContent(),/저장할 수 없습니다/);
  await blocked.goto(base+'/baby/practice/07-apply.html');await blocked.locator('[data-record=birth-item]').fill('출생신고');assert.match(await blocked.locator('[data-record-status]').textContent(),/저장할 수 없어요/);
  await blocked.goto(base+'/baby/chapters/10-benefits.html');assert.match(await blocked.locator('#benefits-result').textContent(),/합계 확인 필요/);await denied.close();
  report.checks.push('localStorage unavailable: emergency text, contact editor, application record and calculator remain usable');
@@ -121,7 +123,7 @@ report.checks.push('seven shared messages exactly match the adopted briefing; no
  await page.goto(base+'/baby/print/emergency.html');await page.locator('[data-contact=pediatric]').fill('가상 소아과 / 전화 확인');
  await page.setViewportSize({width:794,height:1123});await page.emulateMedia({media:'print'});await page.screenshot({path:path.join(dest,'emergency-print-preview.png'),fullPage:true});await page.pdf({path:path.join(dest,'emergency-a4.pdf'),preferCSSPageSize:true,printBackground:false});
  const pdf=fs.readFileSync(path.join(dest,'emergency-a4.pdf'),'latin1');const pageCount=(pdf.match(/\/Type\s*\/Page\b/g)||[]).length;assert.equal(pageCount,1);report.print={pages:pageCount,mediaBox:pdf.match(/\/MediaBox\s*\[([^\]]+)\]/)[1],background:false};
- const printText=await page.locator('main').innerText();assert.match(printText,/가상 소아과/);assert.equal(await page.locator('[data-emergency-full] [data-emergency-id]').count(),7);
+ const printText=await page.locator('main').innerText();assert.match(printText,/가상 소아과/);assert.equal(await page.locator('[data-emergency-full] [data-emergency-id]').count(),data.length);
  await page.emulateMedia({media:'screen'});await page.locator('[data-contact-clear]').click();
  // Keep the shareable artifact blank; the populated contact rendering was checked above.
  await page.emulateMedia({media:'print'});await page.screenshot({path:path.join(dest,'emergency-print-preview.png'),fullPage:true});await page.pdf({path:path.join(dest,'emergency-a4.pdf'),preferCSSPageSize:true,printBackground:false});
@@ -174,7 +176,7 @@ report.checks.push('seven shared messages exactly match the adopted briefing; no
  }
  report.checks.push('all pages: keyboard skip/menu/Escape, disclosures, practice tabs, 39 quiz answers/reset, 11 practice markers; glossary search/hash; 15 original embeds × 3 widths × 2 themes with theme/focus/overflow');
  assert.deepEqual(report.network,[],'Unexpected external network requests');assert.deepEqual(report.errors,[]);
- report.checks.push('print: current contacts, seven canonical messages, monochrome numbered headings and borders; PDF generated');
+ report.checks.push('print: current contacts, canonical messages, monochrome numbered headings and borders; PDF generated');
  await page.setViewportSize({width:1280,height:960});
  for(const [file,selector,name] of [['chapters/07-hospital.html','#emergency','sample-a-emergency'],['chapters/07-hospital.html','.baby-figure','sample-a-thermometer'],['practice/07-apply.html','#apply','sample-b-steps'],['practice/07-apply.html','#finish','sample-b-record'],['chapters/10-benefits.html','#benefits-tool','calculator-result']]){
   await page.goto(base+'/baby/'+file);await page.locator('[data-theme-select]').selectOption('light');

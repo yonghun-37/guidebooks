@@ -1,0 +1,58 @@
+[
+  {
+    "name": "emergency",
+    "javascript": true,
+    "pages": 1,
+    "widthPt": 594.95996,
+    "heightPt": 841.91998
+  },
+  {
+    "name": "emergency",
+    "javascript": false,
+    "pages": 1,
+    "widthPt": 594.95996,
+    "heightPt": 841.91998
+  },
+  {
+    "name": "weekly-checklist",
+    "javascript": true,
+    "pages": 1,
+    "widthPt": 594.95996,
+    "heightPt": 841.91998
+  },
+  {
+    "name": "weekly-checklist",
+    "javascript": false,
+    "pages": 1,
+    "widthPt": 594.95996,
+    "heightPt": 841.91998
+  },
+  {
+    "name": "log-sheet",
+    "javascript": true,
+    "pages": 1,
+    "widthPt": 594.95996,
+    "heightPt": 841.91998
+  },
+  {
+    "name": "log-sheet",
+    "javascript": false,
+    "pages": 1,
+    "widthPt": 594.95996,
+    "heightPt": 841.91998
+  },
+  {
+    "name": "parent-crisis",
+    "javascript": true,
+    "pages": 1,
+    "widthPt": 594.95996,
+    "heightPt": 841.91998
+  },
+  {
+    "name": "parent-crisis",
+    "javascript": false,
+    "pages": 1,
+    "widthPt": 594.95996,
+    "heightPt": 841.91998
+  }
+]

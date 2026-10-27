@@ -1,0 +1,442 @@
+TAP version 13
+# Subtest: 0세 가정양육: 월 현금과 1회 바우처를 분리한다
+ok 1 - 0세 가정양육: 월 현금과 1회 바우처를 분리한다
+  ---
+  duration_ms: 2.092336
+  type: 'test'
+  ...
+# Subtest: 둘째 이상은 첫만남만 달라진다
+ok 2 - 둘째 이상은 첫만남만 달라진다
+  ---
+  duration_ms: 5.95181
+  type: 'test'
+  ...
+# Subtest: 0세 어린이집은 58.4만원 바우처를 현금에 더하지 않는다
+ok 3 - 0세 어린이집은 58.4만원 바우처를 현금에 더하지 않는다
+  ---
+  duration_ms: 0.194425
+  type: 'test'
+  ...
+# Subtest: 첫 생일 전날과 당일의 11/12개월 경계
+ok 4 - 첫 생일 전날과 당일의 11/12개월 경계
+  ---
+  duration_ms: 0.243929
+  type: 'test'
+  ...
+# Subtest: 1세 어린이집: 부모 현금 차액은 음수가 아닌 0원
+ok 5 - 1세 어린이집: 부모 현금 차액은 음수가 아닌 0원
+  ---
+  duration_ms: 0.125807
+  type: 'test'
+  ...
+# Subtest: 지역 capital: 중복 가산과 상품권의 현금 합산을 하지 않는다
+ok 6 - 지역 capital: 중복 가산과 상품권의 현금 합산을 하지 않는다
+  ---
+  duration_ms: 0.173027
+  type: 'test'
+  ...
+# Subtest: 지역 other: 중복 가산과 상품권의 현금 합산을 하지 않는다
+ok 7 - 지역 other: 중복 가산과 상품권의 현금 합산을 하지 않는다
+  ---
+  duration_ms: 0.08015
+  type: 'test'
+  ...
+# Subtest: 지역 preferred: 중복 가산과 상품권의 현금 합산을 하지 않는다
+ok 8 - 지역 preferred: 중복 가산과 상품권의 현금 합산을 하지 않는다
+  ---
+  duration_ms: 0.063368
+  type: 'test'
+  ...
+# Subtest: 지역 special: 중복 가산과 상품권의 현금 합산을 하지 않는다
+ok 9 - 지역 special: 중복 가산과 상품권의 현금 합산을 하지 않는다
+  ---
+  duration_ms: 0.181352
+  type: 'test'
+  ...
+# Subtest: 지역 모름: 정확한 아동수당과 합계를 만들지 않는다
+ok 10 - 지역 모름: 정확한 아동수당과 합계를 만들지 않는다
+  ---
+  duration_ms: 0.269743
+  type: 'test'
+  ...
+# Subtest: 달력 날짜를 검증하고 실제 윤일은 월령 범위로 판정한다
+ok 11 - 달력 날짜를 검증하고 실제 윤일은 월령 범위로 판정한다
+  ---
+  duration_ms: 0.379404
+  type: 'test'
+  ...
+# Subtest: 조사일 당일 출생과 23개월 경계
+ok 12 - 조사일 당일 출생과 23개월 경계
+  ---
+  duration_ms: 0.111914
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 
+ok 13 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 
+  ---
+  duration_ms: 0.062927
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: null
+ok 14 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: null
+  ---
+  duration_ms: 0.037205
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-2-03
+ok 15 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-2-03
+  ---
+  duration_ms: 0.040652
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-02-30
+ok 16 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-02-30
+  ---
+  duration_ms: 0.038213
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-13-01
+ok 17 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-13-01
+  ---
+  duration_ms: 0.035219
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-10-28
+ok 18 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-10-28
+  ---
+  duration_ms: 0.04101
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2027-01-01
+ok 19 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2027-01-01
+  ---
+  duration_ms: 0.054319
+  type: 'test'
+  ...
+# Subtest: 2026 숫자를 2027 정책으로 연장하지 않는다
+ok 20 - 2026 숫자를 2027 정책으로 연장하지 않는다
+  ---
+  duration_ms: 0.096652
+  type: 'test'
+  ...
+# Subtest: 선택값 검증: {"order":"third"}
+ok 21 - 선택값 검증: {"order":"third"}
+  ---
+  duration_ms: 0.077854
+  type: 'test'
+  ...
+# Subtest: 선택값 검증: {"daycare":"yes"}
+ok 22 - 선택값 검증: {"daycare":"yes"}
+  ---
+  duration_ms: 0.043382
+  type: 'test'
+  ...
+# Subtest: 선택값 검증: {"region":"all"}
+ok 23 - 선택값 검증: {"region":"all"}
+  ---
+  duration_ms: 1.672437
+  type: 'test'
+  ...
+# Subtest: ordinary dates distinguish birth-inclusive 60 days and 14w6
+ok 24 - ordinary dates distinguish birth-inclusive 60 days and 14w6
+  ---
+  duration_ms: 2.007803
+  type: 'test'
+  ...
+# Subtest: month-end keeps reference separate from legal deadline
+ok 25 - month-end keeps reference separate from legal deadline
+  ---
+  duration_ms: 0.299116
+  type: 'test'
+  ...
+# Subtest: leap years and year rollovers
+ok 26 - leap years and year rollovers
+  ---
+  duration_ms: 0.261137
+  type: 'test'
+  ...
+# Subtest: invalid or absent dates rejected
+ok 27 - invalid or absent dates rejected
+  ---
+  duration_ms: 0.320663
+  type: 'test'
+  ...
+# Subtest: local timezone does not change calendar dates
+ok 28 - local timezone does not change calendar dates
+  ---
+  duration_ms: 0.204111
+  type: 'test'
+  ...
+# Subtest: 월말은 다음 달 말일로 맞추고 윤년을 구분한다
+ok 29 - 월말은 다음 달 말일로 맞추고 윤년을 구분한다
+  ---
+  duration_ms: 1.579392
+  type: 'test'
+  ...
+# Subtest: 경로 모름·단독·6가에서 1개월 접종을 구분한다
+ok 30 - 경로 모름·단독·6가에서 1개월 접종을 구분한다
+  ---
+  duration_ms: 0.592827
+  type: 'test'
+  ...
+# Subtest: 일령과 달력 월령을 섞지 않고 검진·로타 날짜를 계산한다
+ok 31 - 일령과 달력 월령을 섞지 않고 검진·로타 날짜를 계산한다
+  ---
+  duration_ms: 0.195018
+  type: 'test'
+  ...
+# Subtest: 없는 날짜·예정일·잘못된 경로는 거절한다
+ok 32 - 없는 날짜·예정일·잘못된 경로는 거절한다
+  ---
+  duration_ms: 0.368475
+  type: 'test'
+  ...
+# Subtest: 출생~23개월 24개 행과 11/12개월 경계
+ok 33 - 출생~23개월 24개 행과 11/12개월 경계
+  ---
+  duration_ms: 2.762827
+  type: 'test'
+  ...
+# Subtest: 전환 전후 현금과 보육료 분리
+ok 34 - 전환 전후 현금과 보육료 분리
+  ---
+  duration_ms: 0.407887
+  type: 'test'
+  ...
+# Subtest: 출생부터 이용과 23개월 전환
+ok 35 - 출생부터 이용과 23개월 전환
+  ---
+  duration_ms: 0.32839
+  type: 'test'
+  ...
+# Subtest: 1세 어린이집 예시는 이전 월령 현금도 남긴다
+ok 36 - 1세 어린이집 예시는 이전 월령 현금도 남긴다
+  ---
+  duration_ms: 0.314883
+  type: 'test'
+  ...
+# Subtest: 지역 모름의 24개 행에서 확정 합계를 만들지 않음
+ok 37 - 지역 모름의 24개 행에서 확정 합계를 만들지 않음
+  ---
+  duration_ms: 0.286562
+  type: 'test'
+  ...
+# Subtest: 지역 배타 선택: capital
+ok 38 - 지역 배타 선택: capital
+  ---
+  duration_ms: 0.25421
+  type: 'test'
+  ...
+# Subtest: 지역 배타 선택: other
+ok 39 - 지역 배타 선택: other
+  ---
+  duration_ms: 0.29888
+  type: 'test'
+  ...
+# Subtest: 지역 배타 선택: preferred
+ok 40 - 지역 배타 선택: preferred
+  ---
+  duration_ms: 0.195958
+  type: 'test'
+  ...
+# Subtest: 지역 배타 선택: special
+ok 41 - 지역 배타 선택: special
+  ---
+  duration_ms: 0.362057
+  type: 'test'
+  ...
+# Subtest: 출생순위는 일회 바우처만 변경
+ok 42 - 출생순위는 일회 바우처만 변경
+  ---
+  duration_ms: 0.6519
+  type: 'test'
+  ...
+# Subtest: 31일 출생은 각 달 말일로 조정하고 다음 달 원래 일자 회복
+ok 43 - 31일 출생은 각 달 말일로 조정하고 다음 달 원래 일자 회복
+  ---
+  duration_ms: 0.674285
+  type: 'test'
+  ...
+# Subtest: 2028 윤년 월령 시작일과 연도 넘김
+ok 44 - 2028 윤년 월령 시작일과 연도 넘김
+  ---
+  duration_ms: 0.175085
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"birth":""}
+ok 45 - 잘못된 날짜·선택 차단 {"birth":""}
+  ---
+  duration_ms: 0.210988
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"birth":null}
+ok 46 - 잘못된 날짜·선택 차단 {"birth":null}
+  ---
+  duration_ms: 0.045381
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"birth":"2026-02-30"}
+ok 47 - 잘못된 날짜·선택 차단 {"birth":"2026-02-30"}
+  ---
+  duration_ms: 0.042348
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"birth":"2025-02-29"}
+ok 48 - 잘못된 날짜·선택 차단 {"birth":"2025-02-29"}
+  ---
+  duration_ms: 0.033128
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"birth":"2026-10-28"}
+ok 49 - 잘못된 날짜·선택 차단 {"birth":"2026-10-28"}
+  ---
+  duration_ms: 0.035651
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"birth":"2024-10-27"}
+ok 50 - 잘못된 날짜·선택 차단 {"birth":"2024-10-27"}
+  ---
+  duration_ms: 0.033788
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"transition":-1}
+ok 51 - 잘못된 날짜·선택 차단 {"transition":-1}
+  ---
+  duration_ms: 0.036751
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"transition":24}
+ok 52 - 잘못된 날짜·선택 차단 {"transition":24}
+  ---
+  duration_ms: 0.033817
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"transition":1.5}
+ok 53 - 잘못된 날짜·선택 차단 {"transition":1.5}
+  ---
+  duration_ms: 0.039299
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"transition":"12"}
+ok 54 - 잘못된 날짜·선택 차단 {"transition":"12"}
+  ---
+  duration_ms: 0.036137
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"transition":null}
+ok 55 - 잘못된 날짜·선택 차단 {"transition":null}
+  ---
+  duration_ms: 0.033376
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"region":"all"}
+ok 56 - 잘못된 날짜·선택 차단 {"region":"all"}
+  ---
+  duration_ms: 0.033199
+  type: 'test'
+  ...
+# Subtest: 잘못된 날짜·선택 차단 {"order":"third"}
+ok 57 - 잘못된 날짜·선택 차단 {"order":"third"}
+  ---
+  duration_ms: 0.03196
+  type: 'test'
+  ...
+# Subtest: 조사일 출생과 23개월 경계 허용
+ok 58 - 조사일 출생과 23개월 경계 허용
+  ---
+  duration_ms: 0.117502
+  type: 'test'
+  ...
+# Subtest: 지급 수단 모름은 현금 합계 미확정
+ok 59 - 지급 수단 모름은 현금 합계 미확정
+  ---
+  duration_ms: 0.120013
+  type: 'test'
+  ...
+# Subtest: 지역상품권 기본액도 현금 합계에서 제외
+ok 60 - 지역상품권 기본액도 현금 합계에서 제외
+  ---
+  duration_ms: 0.071217
+  type: 'test'
+  ...
+# Subtest: 동일한 가능 시간은 가운데 교대, 각자 4시간 휴식 예정
+ok 61 - 동일한 가능 시간은 가운데 교대, 각자 4시간 휴식 예정
+  ---
+  duration_ms: 2.301448
+  type: 'test'
+  ...
+# Subtest: 겹침 없이 이어지는 교대
+ok 62 - 겹침 없이 이어지는 교대
+  ---
+  duration_ms: 0.256477
+  type: 'test'
+  ...
+# Subtest: 중간에 아무도 못 맡는 시간은 도움 필요, 휴식으로 세지 않음
+ok 63 - 중간에 아무도 못 맡는 시간은 도움 필요, 휴식으로 세지 않음
+  ---
+  duration_ms: 0.319809
+  type: 'test'
+  ...
+# Subtest: 연속 휴식은 분리된 구간을 합하지 않는다
+ok 64 - 연속 휴식은 분리된 구간을 합하지 않는다
+  ---
+  duration_ms: 0.169285
+  type: 'test'
+  ...
+# Subtest: 분 단위 가능 시간도 손실 없이 배정
+ok 65 - 분 단위 가능 시간도 손실 없이 배정
+  ---
+  duration_ms: 0.991391
+  type: 'test'
+  ...
+# Subtest: 시간 누락·범위·역순 차단 {"aStart":""}
+ok 66 - 시간 누락·범위·역순 차단 {"aStart":""}
+  ---
+  duration_ms: 0.274484
+  type: 'test'
+  ...
+# Subtest: 시간 누락·범위·역순 차단 {"aStart":"24:00"}
+ok 67 - 시간 누락·범위·역순 차단 {"aStart":"24:00"}
+  ---
+  duration_ms: 0.179309
+  type: 'test'
+  ...
+# Subtest: 시간 누락·범위·역순 차단 {"aStart":"22:60"}
+ok 68 - 시간 누락·범위·역순 차단 {"aStart":"22:60"}
+  ---
+  duration_ms: 0.086382
+  type: 'test'
+  ...
+# Subtest: 시간 누락·범위·역순 차단 {"aStart":"15:00"}
+ok 69 - 시간 누락·범위·역순 차단 {"aStart":"15:00"}
+  ---
+  duration_ms: 0.279063
+  type: 'test'
+  ...
+# Subtest: 시간 누락·범위·역순 차단 {"aEnd":"22:00"}
+ok 70 - 시간 누락·범위·역순 차단 {"aEnd":"22:00"}
+  ---
+  duration_ms: 0.377704
+  type: 'test'
+  ...
+# Subtest: 시간 누락·범위·역순 차단 {"aEnd":"21:00"}
+ok 71 - 시간 누락·범위·역순 차단 {"aEnd":"21:00"}
+  ---
+  duration_ms: 0.224276
+  type: 'test'
+  ...
+# Subtest: 시간 누락·범위·역순 차단 {"bStart":null}
+ok 72 - 시간 누락·범위·역순 차단 {"bStart":null}
+  ---
+  duration_ms: 0.106389
+  type: 'test'
+  ...
+1..72
+# tests 72
+# suites 0
+# pass 72
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 97.909435

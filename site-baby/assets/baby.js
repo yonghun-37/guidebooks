@@ -10,7 +10,7 @@
   const fields=[...document.querySelectorAll('[data-contact-fields]')];
   const saved=storage.read('contacts:v1');
   fields.forEach((host,index)=>{
-    host.className='contact-fields';
+    host.className='contact-fields';host.replaceChildren();
     contacts.forEach(([key,label,initial])=>{
       const wrapper=document.createElement('label');wrapper.textContent=label;
       const input=document.createElement('input');input.type='text';input.maxLength=140;input.dataset.contact=key;input.id=`contact-${index}-${key}`;

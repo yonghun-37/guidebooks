@@ -1128,3 +1128,75 @@
 - 확인 위치: How to make sure baby doesn’t get too hot or cold·TICKS·응급 신호
 - 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
 - 적용·한계: 방16~20℃(국내22~24와차이),아기띠얼굴/턱/등확인·아기띠수유피함. 같은침대위험완화설명을안전보장으로쓰지않음.
+
+## N126
+
+- 기관·등급: 영국 NHS / **국외 공식**
+- 문서: [Burping your baby](https://www.nhs.uk/best-start-in-life/baby/feeding-your-baby/breastfeeding/how-to-breastfeed/burping-your-baby/)
+- 문서 날짜: 게시·갱신일 미표기
+- 확인 위치: 본문 동작/발달/측정 안내
+- 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
+- 적용·한계: 머리·목 지지, 어깨/무릎 앉힘의 손 위치·등 문지르기/부드럽게 두드리기. 목 앞 압박 금지. N060에는 이 손동작 없음.
+
+## N127
+
+- 기관·등급: 영국 Sirona care & health NHS 지역 아동 돌봄 서비스 / **국외 공식**
+- 문서: [Baby positioning guide](https://sirona-cic.org.uk/children-services/resources/baby-positioning-guide/)
+- 문서 날짜: 게시·갱신일 미표기
+- 확인 위치: 본문 동작/발달/측정 안내
+- 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
+- 적용·한계: 깨어 있을 때 감독. Side lying은 가슴 위쪽과 골반/등에 손을 대어 옆으로 돌림. Tummy time floor는 팔 앞으로·골반 지지. 수면용 자세·영아 공통 치료 처방으로 쓰지 않음.
+
+## N128
+
+- 기관·등급: 미국 CDC / **국외 공식**
+- 문서: [Milestones by 2 Months](https://www.cdc.gov/act-early/milestones/2-months.html)
+- 문서 날짜: 본문 갱신·검토 2026-05-16
+- 확인 위치: 본문 동작/발달/측정 안내
+- 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
+- 적용·한계: 반응 미소·울음 외 소리·엎드려 머리 들기 관찰. 시작일 표가 아님, 걱정·기능 소실은 의료진 상담.
+
+## N129
+
+- 기관·등급: 미국 CDC / **국외 공식**
+- 문서: [Milestones by 4 Months](https://www.cdc.gov/act-early/milestones/4-months.html)
+- 문서 날짜: 본문 갱신·검토 2026-05-16
+- 확인 위치: 본문 동작/발달/측정 안내
+- 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
+- 적용·한계: 옹알이·안을 때 머리 안정 유지 관찰. 백일 완료 검사 아님.
+
+## N130
+
+- 기관·등급: 영국 NHS / **국외 공식**
+- 문서: [How to take your baby’s temperature](https://www.nhs.uk/baby/health/how-to-take-your-babys-temperature/)
+- 문서 날짜: 본문 검토 2023-07-18
+- 확인 위치: 본문 동작/발달/측정 안내
+- 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
+- 적용·한계: 5세 미만 전자체온계 겨드랑이 측정. 낮은 체온 응급 N090과 함께 사용, 부위별 임의 환산 금지.
+
+## N131
+
+- 기관·등급: 영국 Cambridgeshire and Peterborough NHS 아동 물리치료 / **국외 공식**
+- 문서: [Activities to support your baby’s movement](https://cambspborochildrenshealth.nhs.uk/services/cambridgeshire-childrens-physiotherapy-service/activities-to-support-your-babys-movement/)
+- 문서 날짜: 게시·갱신일 미표기
+- 확인 위치: 본문 동작/발달/측정 안내
+- 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
+- 적용·한계: Side lying and helping to roll: 골반 지지해 엎드리기로 유도. 깨어 있을 때 놀이에 한정. 신생아에게 독립 뒤집기 훈련을 강요하지 않음.
+
+## N132
+
+- 기관·등급: 질병관리청 / **국내 공식**
+- 문서: [우리 가족 정보등록 · 현재 공개 메뉴](https://nip.kdca.go.kr/irhp/mngm/goVcntMngm.do?menuCd=311&menuLv=3)
+- 문서 날짜: 게시·갱신일 미표기
+- 확인 위치: 현재 공개 메뉴 및 공식 PDF 1쪽
+- 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
+- 적용·한계: 예방접종 관리 > 우리 가족 예방접종 관리 > 우리 가족 정보등록 / 내역조회. 과거 도움말 본문에 자녀·아이 명칭이 남아 있으므로 현재 메뉴를 우선. 공개 로그인 안내까지만 직접 확인, 인증·자녀 등록 실행 안 함.
+
+## N133
+
+- 기관·등급: 보건복지부·한국사회보장정보원 복지로 / **국내 공식**
+- 문서: [2025 보육료·유아학비·양육수당 사전신청 FAQ](https://www.bokjiro.go.kr/ssis-tbu/cms/pc/customer/notice/__icsFiles/afieldfile/2025/01/21/2025%EB%85%84%20%EB%B3%B4%EC%9C%A1%EB%A3%8C%20%EC%96%91%EC%9C%A1%EC%88%98%EB%8B%B9%20%EC%9C%A0%EC%95%84%ED%95%99%EB%B9%84%20%EC%82%AC%EC%A0%84%EC%8B%A0%EC%B2%AD%20FAQ_%EC%B5%9C%EC%A2%85.pdf)
+- 문서 날짜: 2025년 2월 기준
+- 확인 위치: 현재 공개 메뉴 및 공식 PDF 1쪽
+- 확인 상태: 직접 본문 확인 / 확인일 2026-10-27
+- 적용·한계: PDF 1쪽 질문1·2: 서비스 신청→복지서비스 신청→복지급여 신청, 복지지갑→서비스 신청 현황. 메뉴 시작 경로의 예로만 사용; 당시 사전신청 대상·기한을 현재 산모 지원 요건으로 옮기지 않음. 인증 이후 제출은 미실행.

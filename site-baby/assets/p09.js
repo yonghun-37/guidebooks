@@ -30,6 +30,8 @@
     if(!records.length){const li=document.createElement('li');li.textContent='아직 남긴 기록이 없어요.';list.append(li);}
   }
   form.elements.at.value=localStamp(new Date());
+  form.addEventListener('invalid',event=>{status.textContent=event.target.name==='amount'?'분유량은 0 이상의 정수로 적어요. 이번 입력은 저장하지 않았어요. 모르면 빈칸으로 남겨요.':'입력한 시각과 내용을 확인해 주세요. 이번 입력은 저장하지 않았어요.';},true);
+  form.addEventListener('input',()=>{status.textContent='입력 중이에요. 기록할 종류 버튼을 눌러야 저장돼요.';});
   form.addEventListener('submit',event=>{
     event.preventDefault();const kind=event.submitter?.value;
     if(!Object.hasOwn(labels,kind)){status.textContent='기록할 종류 버튼을 눌러 주세요.';return;}
