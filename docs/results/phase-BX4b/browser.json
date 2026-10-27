@@ -1,0 +1,335 @@
+{
+  "screens": 36,
+  "js_disabled_pages": 6,
+  "console_errors": [],
+  "records": [
+    {
+      "slug": "07-ads",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 45
+    },
+    {
+      "slug": "07-ads",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 45
+    },
+    {
+      "slug": "07-ads",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 45
+    },
+    {
+      "slug": "07-ads",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 45
+    },
+    {
+      "slug": "07-ads",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 45
+    },
+    {
+      "slug": "07-ads",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 45
+    },
+    {
+      "slug": "08-affiliate",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 50
+    },
+    {
+      "slug": "08-affiliate",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 50
+    },
+    {
+      "slug": "08-affiliate",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 50
+    },
+    {
+      "slug": "08-affiliate",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 50
+    },
+    {
+      "slug": "08-affiliate",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 50
+    },
+    {
+      "slug": "08-affiliate",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 50
+    },
+    {
+      "slug": "10-analytics",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 42
+    },
+    {
+      "slug": "10-analytics",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 42
+    },
+    {
+      "slug": "10-analytics",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 42
+    },
+    {
+      "slug": "10-analytics",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 42
+    },
+    {
+      "slug": "10-analytics",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 42
+    },
+    {
+      "slug": "10-analytics",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 42
+    },
+    {
+      "slug": "11-operations",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 33
+    },
+    {
+      "slug": "11-operations",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 33
+    },
+    {
+      "slug": "11-operations",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 33
+    },
+    {
+      "slug": "11-operations",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 33
+    },
+    {
+      "slug": "11-operations",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 33
+    },
+    {
+      "slug": "11-operations",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 33
+    },
+    {
+      "slug": "12-policy",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 84
+    },
+    {
+      "slug": "12-policy",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 84
+    },
+    {
+      "slug": "12-policy",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 84
+    },
+    {
+      "slug": "12-policy",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 84
+    },
+    {
+      "slug": "12-policy",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 84
+    },
+    {
+      "slug": "12-policy",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 84
+    },
+    {
+      "slug": "e2e",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 26
+    },
+    {
+      "slug": "e2e",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 26
+    },
+    {
+      "slug": "e2e",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 26
+    },
+    {
+      "slug": "e2e",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 26
+    },
+    {
+      "slug": "e2e",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 26
+    },
+    {
+      "slug": "e2e",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0,
+      "keyboard_skip": true,
+      "internal_links": 26
+    },
+    {
+      "slug": "07-ads",
+      "js_disabled_reading": true
+    },
+    {
+      "slug": "08-affiliate",
+      "js_disabled_reading": true
+    },
+    {
+      "slug": "10-analytics",
+      "js_disabled_reading": true
+    },
+    {
+      "slug": "11-operations",
+      "js_disabled_reading": true
+    },
+    {
+      "slug": "12-policy",
+      "js_disabled_reading": true
+    },
+    {
+      "slug": "e2e",
+      "js_disabled_reading": true
+    },
+    {
+      "e2e_storage_failure": "blocked",
+      "passed": true
+    },
+    {
+      "e2e_storage_failure": "corrupt",
+      "passed": true
+    },
+    {
+      "affiliate_storage_failure": "blocked",
+      "passed": true
+    },
+    {
+      "affiliate_storage_failure": "corrupt",
+      "passed": true
+    }
+  ]
+}

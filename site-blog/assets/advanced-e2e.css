@@ -1,0 +1,12 @@
+[data-advanced="e2e"] .e2e-check { display: flex; align-items: flex-start; gap: .6rem; min-width: 10rem; }
+[data-advanced="e2e"] :is(#steps, #scenarios) table { min-width: 48rem; }
+[data-advanced="e2e"] .e2e-check span { min-width: 0; }
+[data-advanced="e2e"] .e2e-check input { width: 1.15rem; height: 1.15rem; flex-shrink: 0; margin-top: .25rem; accent-color: var(--accent); }
+[data-advanced="e2e"] textarea { display: block; width: 100%; min-width: 10rem; box-sizing: border-box; margin-top: .5rem; padding: .65rem; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); background: var(--paper); font: inherit; }
+[data-advanced="e2e"] :is(textarea,input,button):focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+[data-advanced="e2e"] .command-os { margin-bottom: 0; font-size: .85rem; color: var(--muted); }
+[data-advanced="e2e"] td code { overflow-wrap: anywhere; }
+@media print {
+  [data-advanced="e2e"] .table-scroll { overflow: visible; }
+  [data-advanced="e2e"] .e2e-check, [data-advanced="e2e"] textarea { min-width: 0; }
+}

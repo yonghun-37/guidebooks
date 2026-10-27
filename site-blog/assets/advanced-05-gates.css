@@ -1,0 +1,11 @@
+[data-advanced="05-gates"] .gate-tool { padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+[data-advanced="05-gates"] .gate-tool label { display: block; font-weight: 700; margin: 18px 0 8px; }
+[data-advanced="05-gates"] .gate-tool select { box-sizing: border-box; width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--paper); font: inherit; }
+[data-advanced="05-gates"] .gate-tool ol { padding-left: 24px; }
+[data-advanced="05-gates"] .gate-tool li { padding: 12px 6px; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+[data-advanced="05-gates"] [data-gate-result] { padding: 16px; background: var(--soft); border-left: 3px solid var(--accent); }
+[data-advanced="05-gates"] .gate-tool button:disabled { opacity: .6; cursor: default; }
+@media (max-width: 600px) {
+ [data-advanced="05-gates"] .gate-tool { padding: 16px; }
+ [data-advanced="05-gates"] .gate-tool .button-row { display: grid; }
+}

@@ -1,0 +1,5 @@
+/* 수집 이름과 수입 상태를 좁은 화면에서도 읽게 한다. */
+[data-advanced="10-analytics"] td code { overflow-wrap: anywhere; }
+[data-advanced="10-analytics"] .command-platform { color: var(--muted); font-size: .82rem; margin: 18px 0 0; }
+[data-advanced="10-analytics"] .optional summary { line-height: 1.7; }
+[data-advanced="10-analytics"] .source-code { min-width: 0; max-width: 100%; }

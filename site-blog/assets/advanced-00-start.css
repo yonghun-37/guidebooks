@@ -1,0 +1,11 @@
+/* 안내 장의 계산기는 책의 색 변수를 그대로 사용해요. */
+[data-advanced="00-start"] .plan-calc { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 22px; margin: 24px 0; }
+[data-advanced="00-start"] .calc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0; }
+[data-advanced="00-start"] .calc-grid label { display: block; font-size: .86rem; }
+[data-advanced="00-start"] .calc-grid input { display: block; box-sizing: border-box; width: 100%; min-width: 0; padding: 11px; margin-top: 7px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--ink); font: inherit; }
+[data-advanced="00-start"] [role="status"] { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+ [data-advanced="00-start"] .calc-grid { grid-template-columns: 1fr; }
+ [data-advanced="00-start"] .plan-calc { padding: 16px; }
+ [data-advanced="00-start"] .plan-calc .button-row { display: grid; }
+}

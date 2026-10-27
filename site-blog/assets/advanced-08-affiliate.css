@@ -1,0 +1,17 @@
+/* A8의 작은 본문은 두 테마에서 같은 글자 크기와 표시 대비를 유지한다. */
+.disclosure-tool { min-width: 0; }
+.disclosure-tool fieldset { border: 1px solid var(--line); padding: 14px; min-width: 0; }
+.disclosure-tool label { display: inline-flex; align-items: center; gap: 8px; margin: 8px 12px 8px 0; }
+.disclosure-tool input { accent-color: var(--accent); width: 20px; height: 20px; }
+.disclosure-tool button { margin: 16px 0; }
+.mobile-post { box-sizing: border-box; width: 100%; max-width: 360px; margin: 20px auto; padding: 18px; border: 2px solid var(--line); border-radius: 16px; background: var(--paper); overflow-wrap: anywhere; }
+.mobile-post h3 { font-size: 1.12rem; line-height: 1.55; }
+.mobile-post p { font-size: .9rem; line-height: 1.8; }
+.mobile-post .preview-site { font-size: .76rem; color: var(--muted); }
+.mobile-post .preview-disclosure { padding: 12px; border: 2px solid var(--accent); background: var(--soft); }
+.mobile-post .preview-link { color: var(--accent); text-decoration: underline; }
+.mobile-post [data-preview-linknote] { display: block; text-decoration: none; color: var(--ink); }
+.disclosure-result { padding: 14px; border-left: 3px solid var(--accent); background: var(--soft); }
+[data-disclosure-save] { color: var(--muted); font-size: .8rem; }
+@media (max-width: 600px) { .mobile-post { padding: 14px; } .disclosure-tool label { display: flex; } }
+@media print { [data-disclosure-controls] { display: none; } }

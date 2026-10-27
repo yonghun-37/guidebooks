@@ -1,0 +1,10 @@
+/* 하루와 한 주의 순서를 나란히 비교하고 모바일에서는 세로로 읽는다. */
+[data-advanced="11-operations"] .command-platform { color: var(--muted); font-size: .82rem; margin: 18px 0 0; }
+.ops-timeline h3 { margin: 1.4rem 0 .8rem; }
+.ops-timeline h3:first-child { margin-top: 0; }
+.ops-timeline ol { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }
+.ops-timeline li { display: grid; grid-template-columns: 6.5rem minmax(0,1fr); gap: .75rem; border-left: 3px solid var(--accent); background: var(--soft); padding: 1rem; }
+.ops-timeline strong { color: var(--accent); }
+[data-advanced="11-operations"] td code { overflow-wrap: anywhere; }
+[data-advanced="11-operations"] .source-code { min-width: 0; max-width: 100%; }
+@media (max-width:600px) { .ops-timeline li { grid-template-columns: minmax(0,1fr); gap: .3rem; padding: .8rem; } }

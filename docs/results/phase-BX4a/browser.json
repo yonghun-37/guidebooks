@@ -1,0 +1,538 @@
+{
+  "pages": [
+    {
+      "slug": "00-start",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "00-start",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "00-start",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "00-start",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "00-start",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "00-start",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "01-environment",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "01-environment",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "01-environment",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "01-environment",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "01-environment",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "01-environment",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "02-wordpress",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "02-wordpress",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "02-wordpress",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "02-wordpress",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "02-wordpress",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "02-wordpress",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "03-topics",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "03-topics",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "03-topics",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "03-topics",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "03-topics",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "03-topics",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "04-drafts",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "04-drafts",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "04-drafts",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "04-drafts",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "04-drafts",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "04-drafts",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "05-gates",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "05-gates",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "05-gates",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "05-gates",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "05-gates",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "05-gates",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "06-publish",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "06-publish",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "06-publish",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "06-publish",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "06-publish",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "06-publish",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    }
+  ],
+  "noJS": [
+    {
+      "slug": "00-start",
+      "theme": "light",
+      "bodyReadable": true
+    },
+    {
+      "slug": "01-environment",
+      "theme": "light",
+      "bodyReadable": true
+    },
+    {
+      "slug": "02-wordpress",
+      "theme": "light",
+      "bodyReadable": true
+    },
+    {
+      "slug": "03-topics",
+      "theme": "light",
+      "bodyReadable": true
+    },
+    {
+      "slug": "04-drafts",
+      "theme": "light",
+      "bodyReadable": true
+    },
+    {
+      "slug": "05-gates",
+      "theme": "light",
+      "bodyReadable": true
+    },
+    {
+      "slug": "06-publish",
+      "theme": "light",
+      "bodyReadable": true
+    },
+    {
+      "slug": "00-start",
+      "theme": "dark",
+      "bodyReadable": true
+    },
+    {
+      "slug": "01-environment",
+      "theme": "dark",
+      "bodyReadable": true
+    },
+    {
+      "slug": "02-wordpress",
+      "theme": "dark",
+      "bodyReadable": true
+    },
+    {
+      "slug": "03-topics",
+      "theme": "dark",
+      "bodyReadable": true
+    },
+    {
+      "slug": "04-drafts",
+      "theme": "dark",
+      "bodyReadable": true
+    },
+    {
+      "slug": "05-gates",
+      "theme": "dark",
+      "bodyReadable": true
+    },
+    {
+      "slug": "06-publish",
+      "theme": "dark",
+      "bodyReadable": true
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "badResponses": [],
+  "links": [
+    "/site-blog/advanced/00-start.html#main",
+    "/site-blog/index.html",
+    "/site-blog/index.html#contents",
+    "/site-blog/chapters/01-map.html",
+    "/site-blog/chapters/02-revenue.html",
+    "/site-blog/chapters/03-ai-tools.html",
+    "/site-blog/chapters/04-platforms.html",
+    "/site-blog/chapters/05-keywords.html",
+    "/site-blog/chapters/06-writing.html",
+    "/site-blog/chapters/07-images.html",
+    "/site-blog/chapters/08-seo.html",
+    "/site-blog/chapters/09-monetize.html",
+    "/site-blog/chapters/10-automation.html",
+    "/site-blog/chapters/11-analytics.html",
+    "/site-blog/chapters/12-policy.html",
+    "/site-blog/chapters/13-plan.html",
+    "/site-blog/lab.html",
+    "/site-blog/glossary.html",
+    "/site-blog/practice/00-start.html",
+    "/site-blog/practice/01-account.html",
+    "/site-blog/practice/02-setup.html",
+    "/site-blog/practice/03-keywords.html",
+    "/site-blog/practice/04-draft.html",
+    "/site-blog/practice/05-images.html",
+    "/site-blog/practice/06-editor.html",
+    "/site-blog/practice/07-publish.html",
+    "/site-blog/practice/08-search.html",
+    "/site-blog/practice/09-monetize.html",
+    "/site-blog/practice/10-automation.html",
+    "/site-blog/practice/e2e.html",
+    "/site-blog/advanced/00-start.html",
+    "/site-blog/advanced/01-environment.html",
+    "/site-blog/advanced/02-wordpress.html",
+    "/site-blog/advanced/03-topics.html",
+    "/site-blog/advanced/04-drafts.html",
+    "/site-blog/advanced/05-gates.html",
+    "/site-blog/advanced/06-publish.html",
+    "/site-blog/advanced/07-ads.html",
+    "/site-blog/advanced/08-affiliate.html",
+    "/site-blog/advanced/09-sponsorship.html",
+    "/site-blog/advanced/10-analytics.html",
+    "/site-blog/advanced/11-operations.html",
+    "/site-blog/advanced/12-policy.html",
+    "/site-blog/advanced/e2e.html",
+    "/site-blog/prompts.html",
+    "/site-blog/ai-models.html",
+    "/site-blog/credits.html",
+    "/site-blog/advanced/00-start.html#answer",
+    "/site-blog/advanced/00-start.html#overview",
+    "/site-blog/advanced/00-start.html#start",
+    "/site-blog/advanced/00-start.html#automation",
+    "/site-blog/advanced/00-start.html#income",
+    "/site-blog/advanced/00-start.html#cost",
+    "/site-blog/advanced/00-start.html#read",
+    "/site-blog/advanced/00-start.html#change",
+    "/site-blog/advanced/00-start.html#errors",
+    "/site-blog/advanced/00-start.html#checkpoint",
+    "/site-blog/advanced/00-start.html#summary",
+    "/site-blog/advanced/00-start.html#source-bx050",
+    "/site-blog/advanced/00-start.html#source-bx020",
+    "/site-blog/advanced/00-start.html#source-bx022",
+    "/site-blog/advanced/00-start.html#source-bx015",
+    "/site-blog/advanced/00-start.html#source-bx016",
+    "/site-blog/advanced/00-start.html#source-bx019",
+    "/site-blog/advanced/00-start.html#source-bx071",
+    "/site-blog/advanced/02-wordpress.html#server",
+    "/site-blog/advanced/04-drafts.html#experience",
+    "/site-blog/advanced/00-start.html#source-bx108",
+    "/site-blog/advanced/01-environment.html#main",
+    "/site-blog/advanced/01-environment.html#answer",
+    "/site-blog/advanced/01-environment.html#overview",
+    "/site-blog/advanced/01-environment.html#start",
+    "/site-blog/advanced/01-environment.html#steps",
+    "/site-blog/advanced/01-environment.html#read",
+    "/site-blog/advanced/01-environment.html#change",
+    "/site-blog/advanced/01-environment.html#errors",
+    "/site-blog/advanced/01-environment.html#checkpoint",
+    "/site-blog/advanced/01-environment.html#summary",
+    "/site-blog/advanced/01-environment.html#source-bx001",
+    "/site-blog/advanced/01-environment.html#source-bx002",
+    "/site-blog/advanced/01-environment.html#source-bx003",
+    "/site-blog/advanced/02-wordpress.html#main",
+    "/site-blog/advanced/02-wordpress.html#answer",
+    "/site-blog/advanced/02-wordpress.html#overview",
+    "/site-blog/advanced/02-wordpress.html#start",
+    "/site-blog/advanced/02-wordpress.html#password",
+    "/site-blog/advanced/02-wordpress.html#pages",
+    "/site-blog/advanced/02-wordpress.html#read",
+    "/site-blog/advanced/02-wordpress.html#change",
+    "/site-blog/advanced/02-wordpress.html#errors",
+    "/site-blog/advanced/02-wordpress.html#checkpoint",
+    "/site-blog/advanced/02-wordpress.html#summary",
+    "/site-blog/advanced/02-wordpress.html#source-bx004",
+    "/site-blog/advanced/02-wordpress.html#source-bx013",
+    "/site-blog/advanced/02-wordpress.html#source-bx014",
+    "/site-blog/advanced/02-wordpress.html#source-bx003",
+    "/site-blog/advanced/02-wordpress.html#source-bx008",
+    "/site-blog/advanced/02-wordpress.html#source-bx009",
+    "/site-blog/advanced/02-wordpress.html#source-bx096",
+    "/site-blog/advanced/02-wordpress.html#source-bx097",
+    "/site-blog/advanced/02-wordpress.html#source-bx015",
+    "/site-blog/advanced/02-wordpress.html#source-bx001",
+    "/site-blog/advanced/02-wordpress.html#source-bx002",
+    "/site-blog/advanced/02-wordpress.html#source-bx048",
+    "/site-blog/advanced/02-wordpress.html#source-bx037",
+    "/site-blog/advanced/02-wordpress.html#source-bx010",
+    "/site-blog/advanced/03-topics.html#main",
+    "/site-blog/advanced/03-topics.html#answer",
+    "/site-blog/advanced/03-topics.html#overview",
+    "/site-blog/advanced/03-topics.html#start",
+    "/site-blog/advanced/03-topics.html#topics",
+    "/site-blog/advanced/03-topics.html#schema",
+    "/site-blog/advanced/03-topics.html#data",
+    "/site-blog/advanced/03-topics.html#read",
+    "/site-blog/advanced/03-topics.html#change",
+    "/site-blog/advanced/03-topics.html#errors",
+    "/site-blog/advanced/03-topics.html#checkpoint",
+    "/site-blog/advanced/03-topics.html#summary",
+    "/site-blog/advanced/03-topics.html#source-bx089",
+    "/site-blog/advanced/03-topics.html#source-bx068",
+    "/site-blog/advanced/03-topics.html#source-bx090",
+    "/site-blog/advanced/03-topics.html#source-bx070",
+    "/site-blog/advanced/03-topics.html#source-bx069",
+    "/site-blog/advanced/03-topics.html#source-bx091",
+    "/site-blog/advanced/03-topics.html#source-bx122",
+    "/site-blog/advanced/03-topics.html#source-bx064",
+    "/site-blog/advanced/03-topics.html#source-bx065",
+    "/site-blog/advanced/04-drafts.html#main",
+    "/site-blog/advanced/04-drafts.html#answer",
+    "/site-blog/advanced/04-drafts.html#overview",
+    "/site-blog/advanced/04-drafts.html#start",
+    "/site-blog/advanced/04-drafts.html#allow",
+    "/site-blog/advanced/04-drafts.html#draft",
+    "/site-blog/advanced/04-drafts.html#read",
+    "/site-blog/advanced/04-drafts.html#change",
+    "/site-blog/advanced/04-drafts.html#errors",
+    "/site-blog/advanced/04-drafts.html#checkpoint",
+    "/site-blog/advanced/04-drafts.html#summary",
+    "/site-blog/advanced/04-drafts.html#source-bx071",
+    "/site-blog/advanced/04-drafts.html#source-bx111",
+    "/site-blog/advanced/04-drafts.html#source-bx113",
+    "/site-blog/advanced/09-sponsorship.html#write",
+    "/site-blog/advanced/04-drafts.html#source-bx037",
+    "/site-blog/advanced/04-drafts.html#source-bx072",
+    "/site-blog/advanced/04-drafts.html#source-bx074",
+    "/site-blog/advanced/04-drafts.html#source-bx073",
+    "/site-blog/advanced/05-gates.html#main",
+    "/site-blog/advanced/05-gates.html#answer",
+    "/site-blog/advanced/05-gates.html#overview",
+    "/site-blog/advanced/05-gates.html#start",
+    "/site-blog/advanced/05-gates.html#gate",
+    "/site-blog/advanced/05-gates.html#decision",
+    "/site-blog/advanced/05-gates.html#review",
+    "/site-blog/advanced/05-gates.html#tool",
+    "/site-blog/advanced/05-gates.html#read",
+    "/site-blog/advanced/05-gates.html#change",
+    "/site-blog/advanced/05-gates.html#errors",
+    "/site-blog/advanced/05-gates.html#checkpoint",
+    "/site-blog/advanced/05-gates.html#summary",
+    "/site-blog/advanced/05-gates.html#source-bx082",
+    "/site-blog/advanced/05-gates.html#source-bx131",
+    "/site-blog/advanced/05-gates.html#source-bx078",
+    "/site-blog/advanced/05-gates.html#source-bx086",
+    "/site-blog/advanced/05-gates.html#source-bx041",
+    "/site-blog/advanced/05-gates.html#source-bx126",
+    "/site-blog/advanced/05-gates.html#source-bx049",
+    "/site-blog/advanced/05-gates.html#source-bx085",
+    "/site-blog/advanced/05-gates.html#source-bx037",
+    "/site-blog/advanced/05-gates.html#source-bx064",
+    "/site-blog/advanced/05-gates.html#source-bx065",
+    "/site-blog/advanced/06-publish.html#main",
+    "/site-blog/advanced/06-publish.html#answer",
+    "/site-blog/advanced/06-publish.html#overview",
+    "/site-blog/advanced/06-publish.html#start",
+    "/site-blog/advanced/06-publish.html#prepare",
+    "/site-blog/advanced/06-publish.html#approve",
+    "/site-blog/advanced/06-publish.html#schedule",
+    "/site-blog/advanced/06-publish.html#read",
+    "/site-blog/advanced/06-publish.html#change",
+    "/site-blog/advanced/06-publish.html#errors",
+    "/site-blog/advanced/06-publish.html#checkpoint",
+    "/site-blog/advanced/06-publish.html#summary",
+    "/site-blog/advanced/06-publish.html#source-bx004",
+    "/site-blog/advanced/06-publish.html#source-bx005",
+    "/site-blog/advanced/06-publish.html#source-bx006",
+    "/site-blog/advanced/06-publish.html#source-bx007",
+    "/site-blog/advanced/06-publish.html#source-bx127",
+    "/site-blog/advanced/09-sponsorship.html#approve",
+    "/site-blog/advanced/06-publish.html#source-bx011",
+    "/site-blog/advanced/06-publish.html#source-bx012",
+    "/site-blog/advanced/06-publish.html#source-bx095",
+    "/site-blog/advanced/06-publish.html#source-bx003"
+  ],
+  "interactions": [
+    "A0: blank defaults, keyboard calculation, 12600 KRW revenue, 3024 KRW cost, negative/rate/FX validation, zero presets, plan download",
+    {
+      "gateSamples": {
+        "info": "자동 항목 없음 · 기본 승인제이므로 서버 초안 준비와 최종 사람 승인이 남아 있어요.",
+        "play": "사람 검토 대기 · 공식 근거와 문맥을 사람이 확인하고 최종본을 승인하세요.",
+        "affiliate": "차단 · 해당 내용이나 자료를 고친 뒤 재검사하세요. 차단을 승인으로 덮지 않아요.",
+        "sponsor": "차단 · 해당 내용이나 자료를 고친 뒤 재검사하세요. 차단을 승인으로 덮지 않아요."
+      },
+      "keyboard": "native select, Enter progression/reset; next disabled at final"
+    },
+    "A1: remaining different OS tabs ArrowRight/Home"
+  ]
+}

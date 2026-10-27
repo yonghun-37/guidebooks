@@ -1,0 +1,96 @@
+[
+  {
+    "chapter": "A7",
+    "start": "✔ 통과: A7 시작 상태 복원\n",
+    "commands": [
+      {
+        "command": "python blog.py ads",
+        "stdout": "✔ 통과: ads 생성\noutput/ads/checklist.txt\noutput/ads/ads.txt\noutput/ads/layout.html\noutput/ads/report.html\noutput/ads/metrics.json\n",
+        "expected_match": true
+      }
+    ],
+    "check": "✔ 통과: A7 산출물·상태·터미널 출력 일치\n",
+    "source_excerpts": 1
+  },
+  {
+    "chapter": "A8",
+    "start": "✔ 통과: A8 시작 상태 복원\n",
+    "commands": [
+      {
+        "command": "python blog.py affiliate --sample affiliate",
+        "stdout": "✔ 통과: affiliate 생성\noutput/affiliate/links.csv\n",
+        "expected_match": true
+      },
+      {
+        "command": "python blog.py gate --sample affiliate",
+        "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/affiliate.txt\n",
+        "expected_match": true
+      }
+    ],
+    "check": "✔ 통과: A8 산출물·상태·터미널 출력 일치\n",
+    "source_excerpts": 1
+  },
+  {
+    "A8_change": "clock.today 변경 후 checked_on 2026-10-28, 복원 후 check 통과"
+  },
+  {
+    "chapter": "A10",
+    "start": "✔ 통과: A10 시작 상태 복원\n",
+    "commands": [
+      {
+        "command": "python blog.py report",
+        "stdout": "✔ 통과: report 생성\noutput/analytics/weekly.html\n",
+        "expected_match": true
+      }
+    ],
+    "check": "✔ 통과: A10 산출물·상태·터미널 출력 일치\n",
+    "source_excerpts": 1
+  },
+  {
+    "chapter": "A11",
+    "start": "✔ 통과: A11 시작 상태 복원\n",
+    "commands": [
+      {
+        "command": "python blog.py run --ops",
+        "stdout": "✔ 통과: 알림 드라이런·예약 예시·백업\noutput/schedules/cron.txt\noutput/schedules/launchd.plist\noutput/schedules/windows.txt\noutput/backups/blog.zip\n",
+        "expected_match": true
+      },
+      {
+        "command": "python blog.py run --restore",
+        "stdout": "✔ 통과: SQLite·mock WordPress·설정 복구\n",
+        "expected_match": true
+      }
+    ],
+    "check": "✔ 통과: A11 산출물·상태·터미널 출력 일치\n",
+    "source_excerpts": 1
+  },
+  {
+    "chapter": "A12",
+    "start": "✔ 통과: A12 시작 상태 복원\n",
+    "commands": [
+      {
+        "command": "python blog.py run --audit",
+        "stdout": "✔ 통과: 출시 전 사람이 확인할 점검표\noutput/launch-checklist.txt\n",
+        "expected_match": true
+      }
+    ],
+    "check": "✔ 통과: A12 산출물·상태·터미널 출력 일치\n",
+    "source_excerpts": 1
+  },
+  {
+    "chapter": "E2E",
+    "start": "✔ 통과: E2E 시작 상태 복원\n",
+    "commands": [
+      {
+        "command": "python blog.py run --scenarios",
+        "stdout": "✔ 통과: mock_normal\n✔ 통과: regulated_refusal\n✔ 통과: missing_data\n✔ 통과: reapproval\n✔ 통과: timeout_no_duplicate\n✔ 통과: backup_restore\n",
+        "expected_match": true
+      }
+    ],
+    "check": "✔ 통과: E2E 산출물·상태·터미널 출력 일치\n",
+    "source_excerpts": 1
+  },
+  {
+    "E2E_change": "clock.today 변경 후 시나리오 JSON 바이트 동일, 복원 후 check 통과"
+  }
+]

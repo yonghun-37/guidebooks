@@ -1,0 +1,114 @@
+{
+  "python": "Python 3.11.15",
+  "workspace": "/tmp/bx4a-clean-_8zc_0pf",
+  "commands": [
+    {
+      "chapter": "A1",
+      "command": "python course.py doctor",
+      "stdout": "✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 포트 8767\n✔ 통과: 고정 시계 2026-10-27 · 시드 37\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A1",
+      "command": "python blog.py status --mock",
+      "stdout": "✔ 통과: mock REST 연결\noutput/status.json\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A1",
+      "command": "python course.py check A1",
+      "stdout": "✔ 통과: A1 산출물·상태·터미널 출력 일치\n"
+    },
+    {
+      "chapter": "A2",
+      "command": "python blog.py pages",
+      "stdout": "✔ 통과: pages 생성\noutput/pages/about.html\noutput/pages/privacy.html\noutput/pages/contact.html\noutput/pages/advertising.html\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A2",
+      "command": "python course.py check A2",
+      "stdout": "✔ 통과: A2 산출물·상태·터미널 출력 일치\n"
+    },
+    {
+      "chapter": "A3",
+      "command": "python blog.py topics",
+      "stdout": "✔ 통과: 주제 지도 생성\noutput/topics.json\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A3",
+      "command": "python course.py check A3",
+      "stdout": "✔ 통과: A3 산출물·상태·터미널 출력 일치\n"
+    },
+    {
+      "chapter": "A4",
+      "command": "python blog.py draft --sample info",
+      "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/info.json\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A4",
+      "command": "python blog.py draft --sample play",
+      "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/play.json\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A4",
+      "command": "python blog.py draft --sample affiliate",
+      "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/affiliate.json\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A4",
+      "command": "python course.py check A4",
+      "stdout": "✔ 통과: A4 산출물·상태·터미널 출력 일치\n"
+    },
+    {
+      "chapter": "A5",
+      "command": "python blog.py gate --sample info",
+      "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/info.txt\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A5",
+      "command": "python blog.py gate --sample play",
+      "stdout": "✔ 통과: 자동 검사 완료 · 사람 검토 대기\noutput/gates/play.txt\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A5",
+      "command": "python course.py check A5",
+      "stdout": "✔ 통과: A5 산출물·상태·터미널 출력 일치\n"
+    },
+    {
+      "chapter": "A6",
+      "command": "python blog.py publish --sample info --prepare",
+      "stdout": "✔ 통과: WordPress post_id=1 · draft\nprivate/state.sqlite3\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A6",
+      "command": "python blog.py gate --sample info --approve 서윤",
+      "stdout": "✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb\noutput/gates/info.txt\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A6",
+      "command": "python blog.py publish --sample info",
+      "stdout": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A6",
+      "command": "python blog.py status --sample info",
+      "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n",
+      "expected_match": true
+    },
+    {
+      "chapter": "A6",
+      "command": "python course.py check A6",
+      "stdout": "✔ 통과: A6 산출물·상태·터미널 출력 일치\n"
+    }
+  ]
+}
