@@ -1,0 +1,35 @@
+{
+  "views": [
+    {
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    }
+  ],
+  "errors": []
+}

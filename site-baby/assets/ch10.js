@@ -35,7 +35,7 @@
  const form=document.querySelector('#ch10-form');if(!form)return;
  const result=document.querySelector('#benefits-result'),table=document.querySelector('#ch10-months'),vouchers=document.querySelector('#ch10-vouchers');
  const won=n=>n===0?'0원':(n/10000).toLocaleString('ko-KR',{maximumFractionDigits:1})+'만 원';
- const ref=id=>`<sup class="footnote-ref"><a href="#${id.toLowerCase()}">[${id}]</a></sup>`;
+ const ref=id=>`<sup class="footnote-ref"><a href="${window.BabyBook.url('credits.html')}#${id.toLowerCase()}">[${id}]</a></sup>`;
  function render(){
   try{
    const transition=form.elements.transition.value==='none'?null:Number(form.elements.transition.value);

@@ -25,9 +25,10 @@
   });
   const select = () => {
     const tool = tools.find(item => `${item.slug}:${item.id}` === picker.value) || tools[0];
-    const path = `chapters/${tool.slug}.html`;
+    const path = tool.path;
     original.href = `${path}#${tool.id}`;
-    frame.title = `${tool.chapter}장 · ${tool.title}`;
+    frame.title = `${tool.track === 'practice' ? '실습 ' + tool.chapter : tool.chapter + '장'} · ${tool.title}`;
+    document.querySelector('#sim-description').textContent = tool.description;
     frame.src = `${path}?embed=${encodeURIComponent(tool.id)}`;
     frame.hidden = false;
     const locationUrl = new URL(location.href);

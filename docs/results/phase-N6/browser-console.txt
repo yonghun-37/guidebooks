@@ -1,0 +1,14 @@
+{
+  "views": 198,
+  "internalLinks": 1745,
+  "errors": [],
+  "checks": [
+    "seven shared messages exactly match the adopted briefing; no duplicate literals in other scripts",
+    "33 pages × 3 widths × 2 themes: no horizontal overflow; canonical emergency rendering on every page",
+    "keyboard menu/Escape, tabs/arrows/Home/End, FAQ, quiz/reset, calculator; theme persistence; contact/record restore/delete; text-safe input; lab source reuse/theme",
+    "localStorage unavailable: emergency text, contact editor, application record and calculator remain usable",
+    "all original tools: observation checklists, crying flow/reset, 6-in-1 calendar, shift gap preset, care-log roundtrip/CSV/delete confirmation",
+    "all pages: keyboard skip/menu/Escape, disclosures, practice tabs, 39 quiz answers/reset, 11 practice markers; glossary search/hash; 15 original embeds × 3 widths × 2 themes with theme/focus/overflow",
+    "print: current contacts, seven canonical messages, monochrome numbered headings and borders; PDF generated"
+  ]
+}

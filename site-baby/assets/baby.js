@@ -49,21 +49,4 @@
     });
   }
   document.querySelectorAll('[data-print]').forEach(button=>button.addEventListener('click',()=>window.print()));
-  const form=document.querySelector('#benefits-form');
-  if(form){
-    const target=document.querySelector('#benefits-result'), won=value=>(value/10000).toLocaleString('ko-KR',{maximumFractionDigits:1})+'만 원';
-    const ref=id=>`<sup class="footnote-ref"><a href="../credits.html#${id.toLowerCase()}">[${id}]</a></sup>`;
-    const render=()=>{
-      try {
-        const result=window.BabyBenefits.calculate({birth:form.elements.birth.value,order:form.elements.order.value,daycare:form.elements.daycare.value==='yes',region:form.elements.region.value});
-        target.innerHTML=`<p>조사일 기준 ${result.months}개월 · 신청 조건 충족을 가정한 예상액</p><dl class="benefit-output"><div><dt>월 현금 · 부모급여</dt><dd>${won(result.parent)}${ref('N037')}</dd></div><div><dt>월 현금 · 아동수당</dt><dd>${result.child===null?'10만 원 이상, 지역 확인 필요':won(result.child)}${ref('N095')}</dd></div><div><dt>월 현금 합계</dt><dd>${result.monthly===null?won(result.parent+100000)+' 이상 · 지역 확인 필요':won(result.monthly)}</dd></div><div class="voucher"><dt>1회 바우처 · 첫만남이용권</dt><dd>${won(result.firstMeeting)}${ref('N036')}</dd></div></dl><p>어린이집 보육료 바우처: ${won(result.childcare)}. 월 현금 합계에 더하지 않았습니다.${ref('N037')}</p>${result.localVoucherPossible?`<p>지역 상품권 지급을 시행하는 곳은 별도 1만 원 추가가 있을 수 있습니다. 위 현금 합계에 넣지 않았습니다. 주민센터에 지급 방식과 시행 여부를 확인하세요.${ref('N095')}${ref('N105')}</p>`:''}`;
-      } catch(error){target.textContent=error.message;}
-    };
-    form.addEventListener('submit',event=>{event.preventDefault();render();});
-    form.addEventListener('input',render);form.addEventListener('change',render);
-    document.querySelector('[data-benefit-preset]')?.addEventListener('click',()=>{
-      form.elements.birth.value='2025-10-27';form.elements.order.value='first';form.elements.daycare.value='yes';form.elements.region.value='unknown';render();
-    });
-    render();
-  }
 })();

@@ -120,6 +120,13 @@ class CheckSiteTests(unittest.TestCase):
         self.write('site/assets/catalog.js', 'Object.freeze([{"chapter":15,"slug":"14-plan","id":"planner-sim"},{"chapter":16,"slug":"lab","id":"month-scenario"}]);')
         self.assertEqual(self.check()['errors'], [])
 
+    def test_catalog_checks_practice_tools_in_the_practice_folder(self):
+        self.write('site/practice/09-records.html', '<section id="care-log"></section>')
+        self.write('site/assets/catalog.js', 'Object.freeze([{"chapter":9,"slug":"09-records","id":"care-log","track":"practice"}]);')
+        self.assertEqual(self.check()['errors'], [])
+        (self.root / 'site/practice/09-records.html').unlink()
+        self.assert_error('없는 도구 09-records#care-log')
+
     def test_bad_quiz_options_explanation_and_question_count(self):
         for question in (QUESTION.replace('true', 'false'), QUESTION.replace('data-explanation="이용 근거를 확인합니다."', 'data-explanation=""'), QUESTION.replace('<button data-correct="false">사진 크기만</button>', ''), QUESTION.replace('이용 근거</button>', ' </button>')):
             with self.subTest(question=question):

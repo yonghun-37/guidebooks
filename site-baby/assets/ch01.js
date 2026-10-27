@@ -16,7 +16,7 @@
   if (typeof document === 'undefined') return;
   const form = document.querySelector('#deadline-form'), result = document.querySelector('#deadline-result');
   if (!form || !result) return;
-  const ref = n => `<sup class="footnote-ref"><a href="${['N037', 'N044'].includes(n) ? '../credits.html#' : '#'}${n.toLowerCase()}">[${n}]</a></sup>`;
+  const ref = n => `<sup class="footnote-ref"><a href="${window.BabyBook.url('credits.html')}#${n.toLowerCase()}">[${n}]</a></sup>`;
   const date = value => `<time datetime="${value}">${value.replaceAll('-', '.')}</time>`;
   form.addEventListener('input', () => { result.textContent = '출생일을 바꿨습니다. 기한 달력 보기를 다시 누르세요.'; });
   form.addEventListener('submit', event => {

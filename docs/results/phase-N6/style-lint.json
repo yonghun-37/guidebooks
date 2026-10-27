@@ -1,0 +1,935 @@
+{
+  "version": 1,
+  "metric": "learner-main-non-whitespace-v1",
+  "baseline": null,
+  "summary": {
+    "files": 33,
+    "passed": 33,
+    "failed": 0,
+    "char_count": 86338,
+    "counts": {
+      "forbidden": 0,
+      "internal": 0,
+      "caveats_outside": 0,
+      "caveats_inside": 4
+    }
+  },
+  "files": [
+    {
+      "path": "site-baby/chapters/01-map.html",
+      "track": "theory",
+      "char_count": 2808,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "80df6c0cfba562e2943dc0c21c61b43757a0af830f7945be215279194c31e238"
+    },
+    {
+      "path": "site-baby/chapters/02-feeding.html",
+      "track": "theory",
+      "char_count": 3711,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "dbdfc99d0d6478aa944e7c04e9a0856898d10b3826f9ef7185b56ed459ec9423"
+    },
+    {
+      "path": "site-baby/chapters/03-sleep.html",
+      "track": "theory",
+      "char_count": 2849,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "46de79e220e07e21eec8dd5b08c41670e0743deacd2a3ca10a18da3322847b98"
+    },
+    {
+      "path": "site-baby/chapters/04-crying.html",
+      "track": "theory",
+      "char_count": 2971,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "35040a984ff43467d9f20005c43572e2a3b4a8ab0b8accdc6cabbf6541da8de4"
+    },
+    {
+      "path": "site-baby/chapters/05-diapers.html",
+      "track": "theory",
+      "char_count": 2845,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "46b6b577f57876b5cf3297ddbfac3569dc1b14536295398bdfaf8615f9e8a92d"
+    },
+    {
+      "path": "site-baby/chapters/06-body.html",
+      "track": "theory",
+      "char_count": 2880,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "1e1551e9d8c5e62f3079707ab67a53fba4aa1313390f4f3bf507095582bbceba"
+    },
+    {
+      "path": "site-baby/chapters/07-hospital.html",
+      "track": "theory",
+      "char_count": 3224,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "a10a9872c134ebe359b13a26a8711162994ca2e1f9c6294d1906676c549a58bc"
+    },
+    {
+      "path": "site-baby/chapters/08-growth.html",
+      "track": "theory",
+      "char_count": 3353,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "a637b343ae821cce6bdcf05b1713949560eb27fa771cfca6a4b93b9e5bf168d8"
+    },
+    {
+      "path": "site-baby/chapters/09-checkups.html",
+      "track": "theory",
+      "char_count": 3315,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "b70f274dd2cc607c2771ae35a87d7ee169da63f7e6cf0e52d4b02d17c262c33e"
+    },
+    {
+      "path": "site-baby/chapters/10-benefits.html",
+      "track": "theory",
+      "char_count": 4773,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "e8f480c80c2c389dd9ba1f1831ac076db4291609ef8b2cf59febaa799554beff"
+    },
+    {
+      "path": "site-baby/chapters/11-parents.html",
+      "track": "theory",
+      "char_count": 3333,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "a1c77773106809feb0bbcb71aa674e39d5b1c05f1dd4a05bffe3deb22c06051a"
+    },
+    {
+      "path": "site-baby/chapters/12-safety.html",
+      "track": "theory",
+      "char_count": 3480,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "ca7e66f15319bf4857ce5b0fb8a2ec85f65e256727e494c15d70f1cc6e6f79ce"
+    },
+    {
+      "path": "site-baby/chapters/13-hundred-days.html",
+      "track": "theory",
+      "char_count": 3069,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "7ef44ad911a0a302d0272cc222210df7bef1d5d5480d48c5dff9d0e0c14cbbf3"
+    },
+    {
+      "path": "site-baby/credits.html",
+      "track": "other",
+      "char_count": 17527,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 4
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": [
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 2,
+            "context": "서 날짜: 2017판 개발 설명 / 게시일 미확인 확인 위치: 0~35개월 WHO도표 도입 확인 상태: 검색"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 2,
+            "context": "/ 국외 공식 문서 날짜: 본문 검토일 미확인 확인 위치: 신생아여드름·위험발진 확인 상태: 직접 본문 확"
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 2,
+            "context": "8물37~38과 상충. 과거콘텐츠이고대체관계미확인."
+          },
+          {
+            "rule": "미확인",
+            "text": "미확인",
+            "line": 2,
+            "context": "국내 공식 문서 날짜: 직접추출본문갱신일미확인(보조 조사는2026-02-05표시보고) 확인 위치: 지원내용·"
+          }
+        ]
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "c468b246884df30e4ed42275dbaeae8d6bade47d56bbf125c4645dea82b4be60"
+    },
+    {
+      "path": "site-baby/glossary.html",
+      "track": "theory",
+      "char_count": 1800,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "98ffd31d34727f14d6d3764304707b9b246ecd151b637349448b33ee92b76436"
+    },
+    {
+      "path": "site-baby/index.html",
+      "track": "other",
+      "char_count": 358,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "5d43ae94d04eae165754695b52dd228e08270e1a71c0dac806d90fd1abe06769"
+    },
+    {
+      "path": "site-baby/lab.html",
+      "track": "theory",
+      "char_count": 860,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "38a2bf038e45102a6e59157c305f06674c210cc1f30d65d6aa10f9a5a6a70d45"
+    },
+    {
+      "path": "site-baby/practice/00-start.html",
+      "track": "practice",
+      "char_count": 1544,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "26bd3a2a30b1181cb9a8d5400be3c542b2bf922a4ed9e94794736416ee1b411c"
+    },
+    {
+      "path": "site-baby/practice/01-home.html",
+      "track": "practice",
+      "char_count": 1309,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "7efe60c3e6724ccd03826e46039b7898605a0b0f001ca0256bd5605293d651f1"
+    },
+    {
+      "path": "site-baby/practice/02-diaper.html",
+      "track": "practice",
+      "char_count": 1443,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "153c4b63e30601061e7042ab4a1521b0598c08be5f04d746988d35e95d3b963e"
+    },
+    {
+      "path": "site-baby/practice/03-feeding.html",
+      "track": "practice",
+      "char_count": 2180,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "782190c00d57101b54014bec7f739f53ccb809941221f134f0b0445898affe5b"
+    },
+    {
+      "path": "site-baby/practice/04-sleep.html",
+      "track": "practice",
+      "char_count": 1457,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "982874dca4d212e41462f7afa12bf83a537b25a9fc11b55c6fe0a6e40c3fbc31"
+    },
+    {
+      "path": "site-baby/practice/05-bath.html",
+      "track": "practice",
+      "char_count": 1516,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "bbbcffd85e09b03a12860f4fef57ac483718e1f90960b20e40e9ebf4400a7fb1"
+    },
+    {
+      "path": "site-baby/practice/06-emergency.html",
+      "track": "practice",
+      "char_count": 2068,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "158c375a12204775de0a862b098dcb36d3e2dd7f513f91965a414f67ac624b8a"
+    },
+    {
+      "path": "site-baby/practice/07-apply.html",
+      "track": "practice",
+      "char_count": 3071,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "6c8ace959bba6363fa2e58ac9b10e9bcac3c1d4c5d2adb67fe3d278ceacdf462"
+    },
+    {
+      "path": "site-baby/practice/08-checkups.html",
+      "track": "practice",
+      "char_count": 2326,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "59a4525d1398affcd75930c6fa3887402dbbda4450386d9557f9011ed79f28bf"
+    },
+    {
+      "path": "site-baby/practice/09-records.html",
+      "track": "practice",
+      "char_count": 1793,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "a398ea57cab50033707973d4e010301c6907401315988500c62b39da0927bb4f"
+    },
+    {
+      "path": "site-baby/practice/10-play.html",
+      "track": "practice",
+      "char_count": 1387,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "82059a1689c84a4873bafb84e20c7287bfa578292d79d60bb8bfd46b9aadcb40"
+    },
+    {
+      "path": "site-baby/practice/e2e.html",
+      "track": "practice",
+      "char_count": 1075,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "748c54944cb92d655e0b465bcf8166eb78ecce3e07f9e8bcd5ac5dc7cc652a26"
+    },
+    {
+      "path": "site-baby/print/emergency.html",
+      "track": "other",
+      "char_count": 251,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "92e6c5a1557894a2013775d12917b3ef9eaf157a673b94294a7751379680d8c3"
+    },
+    {
+      "path": "site-baby/print/log-sheet.html",
+      "track": "other",
+      "char_count": 416,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "cf4a5b97b88a739ef8bdbf144ecde49dd015b6bd4574da23225a49a6bede10ca"
+    },
+    {
+      "path": "site-baby/print/parent-crisis.html",
+      "track": "other",
+      "char_count": 398,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "31e58745f8fea16f6bf587ebba496fa484aec7e154e8370203a49069a500044b"
+    },
+    {
+      "path": "site-baby/print/weekly-checklist.html",
+      "track": "other",
+      "char_count": 948,
+      "baseline_char_count": null,
+      "ratio": null,
+      "counts": {
+        "forbidden": 0,
+        "internal": 0,
+        "caveats_outside": 0,
+        "caveats_inside": 0
+      },
+      "matches": {
+        "forbidden": [],
+        "internal": [],
+        "caveats_outside": [],
+        "caveats_inside": []
+      },
+      "checks": {
+        "forbidden_zero": true,
+        "internal_zero": true,
+        "caveats_at_most_two": true,
+        "theory_length_at_most_70_percent": null
+      },
+      "passed": true,
+      "sha256": "2f9c6e28de746d23fa177ef0f7c430a53149caca8c46c1fb6347c180b5f922cb"
+    }
+  ]
+}

@@ -243,7 +243,8 @@ def check(root=None, site='site'):
         if not isinstance(catalog, list):
             raise ValueError('도구 목록은 배열이어야 합니다')
         for tool in catalog:
-            path = root / site / (f'chapters/{tool["slug"]}.html' if tool['slug'] != 'lab' else 'lab.html')
+            folder = 'practice' if tool.get('track') == 'practice' else 'chapters'
+            path = root / site / (f'{folder}/{tool["slug"]}.html' if tool['slug'] != 'lab' else 'lab.html')
             if tool['id'] not in ids.get(path, set()):
                 errors.append(f'도구 목록: 없는 도구 {tool["slug"]}#{tool["id"]}')
     except (OSError, ValueError, IndexError, KeyError, TypeError) as exc:

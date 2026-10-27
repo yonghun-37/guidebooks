@@ -3,12 +3,13 @@
 (() => {
   'use strict';
   const root = new URL('../', document.currentScript.src);
-  const chapterRows = [[1, "01-map", "알아두기", "첫 100일 지도", "주차별 할 일과 놓치면 안 되는 기한", "내 속도로", "입문", "준비중"], [2, "02-feeding", "알아두기", "먹이기: 모유·분유·혼합", "내 수유 계획과 상담할 질문", "내 속도로", "입문", "준비중"], [3, "03-sleep", "알아두기", "잠: 안전한 잠자리와 수면", "잠자리 비우기 점검", "내 속도로", "입문", "준비중"], [4, "04-crying", "알아두기", "울음과 달래기", "달래기 순서와 도움 요청", "내 속도로", "입문", "준비중"], [5, "05-diapers", "알아두기", "기저귀로 보는 건강", "수첩의 공식 변 색 안내 확인", "내 속도로", "입문", "준비중"], [6, "06-care", "알아두기", "몸 돌보기", "씻기와 배꼽 관리 메모", "내 속도로", "입문", "준비중"], [7, "07-hospital", "알아두기", "아플 때: 병원 가는 기준", "응급 신호와 내 연락처 카드", "내 속도로", "입문", "준비중"], [8, "08-growth", "알아두기", "성장과 발달", "검진에서 물어볼 변화", "내 속도로", "입문", "준비중"], [9, "09-vaccines", "알아두기", "예방접종과 영유아검진", "접종 경로와 실제 예약", "내 속도로", "입문", "준비중"], [10, "10-benefits", "알아두기", "서류와 돈", "신청 상태와 지원금 예상액", "내 속도로", "입문", "준비중"], [11, "11-parents", "알아두기", "부모 돌보기", "교대 돌봄과 부모 위기 연락처", "내 속도로", "입문", "준비중"], [12, "12-safety", "알아두기", "집·외출·안전", "카시트와 집 안 안전 점검", "내 속도로", "입문", "준비중"], [13, "13-next", "알아두기", "백일 무렵과 그다음", "다음 검진·접종과 뒤집기 환경 점검", "내 속도로", "입문", "준비중"], [14, "lab", "알아두기", "육아 실험실", "연락처 카드와 지원금 계산기", "내 속도로", "입문", "준비중"], [15, "glossary", "알아두기", "용어집", "낯선 말 찾아보기", "내 속도로", "입문", "준비중"]];
-  const chapters = chapterRows.map(([number,slug,part,title,deliverable,duration,difficulty,status]) => Object.freeze({number,slug,part,title,deliverable,duration,difficulty,status,track:'theory',sample:['07-hospital','10-benefits','lab'].includes(slug)}));
-  const practiceRows = [["00-start", "시작 전에: 출산 전·퇴원 날 준비", "준비물 체크와 연락처 카드"], ["01-home", "집에 오는 날", "카시트·빈 잠자리 확인"], ["02-diapers", "기저귀 갈기와 대변 색 확인", "공식 카드 확인과 이상 변 연락 연습"], ["03-feeding", "먹이기와 트림", "수유·세척·소독 한 번 해 보기"], ["04-sleep", "안전하게 재우기", "잠자리 비우기·등 대고 재우기·뒤집기 시도 확인"], ["05-bath", "목욕과 배꼽 관리", "부분 씻기와 배꼽 확인"], ["06-temperature", "체온 재기와 연락 연습", "응급 신호 다섯 사례와 판단표 출력"], ["07-apply", "출생신고와 출산 지원, 오늘 신청하기", "오늘 제출·처리 상태·다음 확인일"], ["08-booking", "접종·검진 일정과 첫 예약", "검진 대상조회와 실제 병원 전화 예약"], ["09-records", "1주 기록하기", "진료 때 전할 수유·수면·기저귀 기록"], ["10-play", "선택: 깨어 있을 때 놀기", "눈 맞춤·터미타임과 백일 다음 준비"]];
-  const practice = practiceRows.map(([slug,title,deliverable],number) => Object.freeze({number,slug,title,deliverable,duration:'내 속도로',difficulty:'입문',status:'준비중',track:'practice',part:'오늘 해 보기',sample:number===7}));
-  practice.push(Object.freeze({number:null,slug:'e2e',title:'전체 체크리스트와 할 일 달력',deliverable:'실습 0~10 확인',track:'practice',part:'오늘 해 보기',status:'준비중'}));
-  const appendices = [{number:null,slug:'credits',title:'출처·제작 안내',deliverable:'공식 안내 원문',track:'appendix',part:'부록',status:'준비중'}];
+  const chapterRows = [[1, "01-map", "알아두기", "첫 100일 지도", "주차별 할 일과 놓치면 안 되는 기한", "내 속도로", "입문", "완성"], [2, "02-feeding", "알아두기", "먹이기: 모유·분유·혼합", "내 수유 계획과 상담할 질문", "내 속도로", "입문", "완성"], [3, "03-sleep", "알아두기", "잠: 안전한 잠자리와 수면", "잠자리 비우기 점검", "내 속도로", "입문", "완성"], [4, "04-crying", "알아두기", "울음과 달래기", "달래기 순서와 도움 요청", "내 속도로", "입문", "완성"], [5, "05-diapers", "알아두기", "기저귀로 보는 건강", "수첩의 공식 변 색 안내 확인", "내 속도로", "입문", "완성"], [6, "06-body", "알아두기", "몸 돌보기", "씻기와 배꼽 관리 메모", "내 속도로", "입문", "완성"], [7, "07-hospital", "알아두기", "아플 때: 병원 가는 기준", "응급 신호와 내 연락처 카드", "내 속도로", "입문", "완성"], [8, "08-growth", "알아두기", "성장과 발달", "검진에서 물어볼 변화", "내 속도로", "입문", "완성"], [9, "09-checkups", "알아두기", "예방접종과 영유아검진", "접종 경로와 실제 예약", "내 속도로", "입문", "완성"], [10, "10-benefits", "알아두기", "서류와 돈", "신청 상태와 지원금 예상액", "내 속도로", "입문", "완성"], [11, "11-parents", "알아두기", "부모 돌보기", "교대 돌봄과 부모 위기 연락처", "내 속도로", "입문", "완성"], [12, "12-safety", "알아두기", "집·외출·안전", "카시트와 집 안 안전 점검", "내 속도로", "입문", "완성"], [13, "13-hundred-days", "알아두기", "백일 무렵과 그다음", "다음 검진·접종과 뒤집기 환경 점검", "내 속도로", "입문", "완성"], [14, "lab", "알아두기", "육아 실험실", "돌봄·일정·기록 도구 모음", "내 속도로", "입문", "완성"], [15, "glossary", "알아두기", "용어집", "낯선 말 찾아보기", "내 속도로", "입문", "완성"]];
+  const chapters = chapterRows.map(([number,slug,part,title,deliverable,duration,difficulty,status]) => Object.freeze({number,slug,part,title,deliverable,duration,difficulty,status,track:'theory',sample:false}));
+  const practiceRows = [["00-start", "시작 전에: 출산 전·퇴원 날 준비", "준비물 체크와 연락처 카드"], ["01-home", "집에 오는 날", "카시트·빈 잠자리 확인"], ["02-diaper", "기저귀 갈기와 대변 색 확인", "공식 카드 확인과 이상 변 연락 연습"], ["03-feeding", "먹이기와 트림", "수유·세척·소독 한 번 해 보기"], ["04-sleep", "안전하게 재우기", "잠자리 비우기·등 대고 재우기·뒤집기 시도 확인"], ["05-bath", "목욕과 배꼽 관리", "부분 씻기와 배꼽 확인"], ["06-emergency", "체온 재기와 연락 연습", "응급 신호 다섯 사례와 판단표 출력"], ["07-apply", "출생신고와 출산 지원, 오늘 신청하기", "오늘 제출·처리 상태·다음 확인일"], ["08-checkups", "접종·검진 일정과 첫 예약", "검진 대상조회와 실제 병원 전화 예약"], ["09-records", "1주 기록하기", "진료 때 전할 수유·수면·기저귀 기록"], ["10-play", "선택: 깨어 있을 때 놀기", "눈 맞춤·터미타임과 백일 다음 준비"]];
+  const practice = practiceRows.map(([slug,title,deliverable],number) => Object.freeze({number,slug,title,deliverable,duration:'내 속도로',difficulty:'입문',status:'완성',track:'practice',part:'오늘 해 보기',sample:false}));
+  practice.push(Object.freeze({number:null,slug:'e2e',title:'전체 체크리스트와 할 일 달력',deliverable:'실습 0~10 확인',duration:'내 속도로',difficulty:'입문',track:'practice',part:'오늘 해 보기',status:'완성'}));
+  const appendices = [{number:null,slug:'credits',title:'출처·제작 안내',deliverable:'공식 안내 원문',track:'appendix',part:'부록',status:'완성'}];
+  appendices.push(...[['emergency','병원 가는 기준·연락처 판단표'],['weekly-checklist','주차별 체크리스트'],['log-sheet','수유·수면·기저귀 기록지'],['parent-crisis','부모 위기 연락 카드']].map(([name,title]) => Object.freeze({number:null,slug:'print/'+name,title,deliverable:'A4 한 쪽 인쇄',track:'appendix',part:'인쇄 서식',status:'완성'})));
   const tracks = Object.freeze([
     { id: 'theory', title: '(이론) 이론편', chapters },
     { id: 'practice', title: '(실습) 실습편', chapters: practice },
@@ -20,7 +21,7 @@
   const chapterUrl = chapter => {
     if (chapter.track === 'appendix' || ['lab', 'glossary'].includes(chapter.slug)) return url(`${chapter.slug}.html`);
     const folder = chapter.track === 'practice' ? 'practice' : 'chapters';
-    return url(chapter.status === '준비중' && !chapter.sample ? `${folder}/pending.html?chapter=${encodeURIComponent(chapter.slug)}` : `${folder}/${chapter.slug}.html`);
+    return url(`${folder}/${chapter.slug}.html`);
   };
   const byNumber = number => chapters.find(chapter => chapter.number === number);
   const esc = text => String(text).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -30,15 +31,8 @@
     : chapter.track === 'appendix' ? `부록 · ${chapter.title}`
     : `(이론) ${chapter.number}장 · ${chapter.title}`;
   const link = chapter => `<a href="${chapterUrl(chapter)}">${esc(label(chapter))} ${status(chapter)}</a>`;
-  const selected = (document.body.dataset.chapter === 'pending' || document.body.dataset.practice === 'pending') ? new URLSearchParams(location.search).get('chapter') : document.body.dataset.chapter || document.body.dataset.appendix;
-  const current = allChapters.find(chapter => chapter.slug === (document.body.dataset.practice && document.body.dataset.practice !== 'pending' ? document.body.dataset.practice : selected));
-  if (current && (document.body.dataset.chapter === 'pending' || document.body.dataset.practice === 'pending')) {
-    document.querySelector('[data-pending-result]').textContent = current.deliverable;
-    const message = document.querySelector('[data-legacy-message]');
-    if (message && current.status === '완성') {
-      message.innerHTML = `<a class="button primary" href="${chapterUrl(current)}">완성된 ${esc(label(current))} 읽기 →</a>`;
-    }
-  }
+  const selected = document.body.dataset.practice || document.body.dataset.chapter || document.body.dataset.appendix;
+  const current = allChapters.find(chapter => chapter.slug === selected);
   const trackLinks = () => tracks.map(track => `<section><h3>${track.title}</h3><ol>${track.chapters.map(chapter => `<li>${link(chapter)}</li>`).join('')}</ol></section>`).join('');
   document.querySelectorAll('[data-chapter-count]').forEach(node => { node.textContent = chapters.filter(chapter => chapter.number !== null).length; });
   document.querySelectorAll('[data-practice-count]').forEach(node => { node.textContent = practice.filter(chapter => chapter.number !== null).length; });
