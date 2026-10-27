@@ -117,3 +117,9 @@ cd /home/yonghun/project/hermes-research && timeout 900 docker compose exec -T -
 - 설계: docs/DESIGN-advanced.md. ReelsBook `site/advanced/`, ShortsBook `site-shorts/advanced/`, 공통 코드 `auto-kit/`.
 - A1 조사(research-advanced/, SOURCES A###, FACT-SHEET ADV-, Hermes RUN advanced-research-20261026) → A2 auto-kit → A3/A4 집필 → A5 독립 검토·게이트.
 - 블로그 편 B단계와 병렬로 진행한다. 파일 소유: A는 research-advanced/·auto-kit/·site*/advanced/, B는 research-blog/·blog-kit/·site-blog/.
+
+## Phase N. 신생아~100일 육아 편 (사용자 요청 2026-10-27)
+
+- 설계: docs/DESIGN-baby.md (10절 단계표). `site-baby/` → Pages `/baby/`, 조사 `research-baby/`(SOURCES N###, FACT-SHEET NB-), Hermes RUN baby-research-20261027.
+- N2 조사 → N3 뼈대·샘플 → N4a/b/c 이론편 → N5 실습편·인쇄 부록 → N6 통합 → N7 독립 검토(초보 부모 + 건강 정보 안전) → N8 수정·게이트.
+- DESIGN-baby.md 8절(건강 정보 안전 규칙)이 STYLE-GUIDE보다 우선한다.
