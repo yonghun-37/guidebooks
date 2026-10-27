@@ -1,0 +1,51 @@
+/* BabyBook additions. Shared layout and behavior come from BlogBook. */
+.cover-number {font-size:clamp(52px,7vw,90px);font-weight:800;line-height:1.3;letter-spacing:-.06em;margin:30px 0;color:var(--accent)}
+.cover-number span{font-size:.45em;vertical-align:middle;margin:0 12px;font-weight:400}
+.cover-links{list-style:none;padding:14px 0 0;border-top:1px solid var(--line);font-size:14px}.cover-links li{margin:10px 0}
+.intro-safety{border:1px solid var(--line);border-left:5px solid var(--accent);background:var(--soft);border-radius:5px;padding:20px 24px;margin:24px 0}.intro-safety p:last-child{margin-bottom:0}
+.chapter-hero .small{color:var(--muted)}
+.emergency-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:22px 0}
+.emergency-tier{padding:20px 22px;border:2px solid var(--line);border-radius:12px;background:var(--surface)}
+.emergency-tier h3{display:flex;align-items:center;gap:12px;font-size:1.12rem;margin-bottom:16px}
+.emergency-tier h3 b{font-size:1.4rem}.emergency-tier.call{border:3px solid var(--accent)}.emergency-tier.urgent{border:2px solid var(--orange)}.emergency-tier.ask{border:2px dashed var(--muted)}
+.emergency-message{font-size:1rem;margin:12px 0;line-height:1.8}.emergency-message:last-child{margin-bottom:0}
+.emergency-inline{border-left:4px solid var(--accent);background:var(--soft);padding:15px 18px;margin:16px 0}
+.emergency-inline .emergency-label{font-size:12px;font-weight:750;letter-spacing:.1em;color:var(--accent);margin:0 0 5px}
+.answer-box .emergency-inline{border:0;margin:0;padding:0}.answer-box .emergency-message{font-weight:750;font-size:1.13rem}
+.axis-block h4{margin-bottom:8px;font-size:1rem}.axis-rows{margin:12px 0}.axis-rows dt{line-height:1.6;font-size:14px}.axis-rows>div{grid-template-columns:130px minmax(0,1fr)}
+.baby-figure{margin:25px 0;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.baby-figure svg{display:block;width:100%;max-width:360px;margin:0 auto 18px;color:var(--accent)}
+.baby-figure svg text{font:15px var(--body);fill:var(--ink);stroke:none}.baby-figure svg>rect{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}.baby-figure svg>path{fill:none;stroke:var(--accent);stroke-width:1.5}
+.baby-figure figcaption{font-size:14px;color:var(--muted);line-height:1.7}
+.contact-fields,.completion-record{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.contact-fields label,.completion-record label{font-size:14px;display:block;min-width:0}
+.contact-fields input,.completion-record input,.completion-record select{display:block;width:100%;min-width:0;max-width:100%;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:9px;border-radius:6px;margin-top:5px}
+.completion-record fieldset{min-width:0;border:1px solid var(--line);border-radius:9px;padding:18px}.completion-record label{margin:12px 0}.completion-record legend{font-weight:750}
+.print-field{display:none}.practice-step{padding:20px 0}.practice-step ol{padding-left:22px}.os-tabs [data-tab-list]{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.os-tabs [aria-selected=true]{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.benefits-result{background:var(--surface);border:2px solid var(--accent);border-radius:10px;margin:25px 0;padding:22px}
+.benefit-output{margin:0}.benefit-output>div{padding:12px 0;border-bottom:1px solid var(--line)}.benefit-output dt{font-size:14px;color:var(--muted)}.benefit-output dd{margin-left:0;font-size:1.6rem;line-height:1.5;font-weight:750}.benefit-output .voucher{margin-top:25px;border:2px dashed var(--muted);border-radius:5px;padding:15px}.formula{margin:20px 0}.formula summary{cursor:pointer;font-weight:750}.formula ul{margin-top:18px}
+.credits-list{padding-left:25px}.credits-list li{margin-bottom:24px;scroll-margin-top:100px}.credits-list p{font-size:13px;color:var(--muted)}
+.practice-emergency{margin:32px 0}.practice-emergency>summary{font-weight:700;cursor:pointer}.pending-note{padding:24px;background:var(--soft);border-radius:8px;margin:22px 0}.lab-frame{display:block;width:100%;border:1px solid var(--line);min-height:500px;background:var(--paper);margin-top:20px}
+.print-page{padding:32px 20px}.emergency-sheet{max-width:760px;margin:auto;background:var(--surface);padding:32px;border:1px solid var(--line)}
+.emergency-sheet h1{font-size:2rem;margin:8px 0}.emergency-sheet .eyebrow{margin-bottom:0}.sheet-date{font-size:13px;color:var(--muted)}.sheet-contacts h2{font-size:1.2rem;margin-bottom:10px}.sheet-memo,.print-sources{font-size:13px;margin:12px 0}.print-controls{max-width:760px;margin:22px auto;font-size:14px}
+@media(max-width:680px){.home-hero{gap:28px;padding:40px 0}.cover-art{padding:22px;transform:none}.header-inner{gap:8px}.intro-safety{padding:16px}.axis-rows>div{grid-template-columns:1fr;gap:4px}.contact-fields,.completion-record{grid-template-columns:1fr}.emergency-tier{padding:16px}.emergency-message{font-size:15px}.print-page{padding:16px 12px}.emergency-sheet{padding:16px}.print-page h1{font-size:1.7rem}.baby-figure{padding:12px}.benefits-result{padding:16px}.benefit-output dd{font-size:1.3rem}.baby-figure svg text{font-size:15px}}
+@page{size:A4;margin:10mm}
+@media print{
+ .print-controls,.print-page .skip-link{display:none!important}
+ .print-page{padding:0;background:white;font-size:10pt;line-height:1.45}
+ .emergency-sheet{max-width:none;margin:0;padding:0;border:0}
+ .emergency-sheet h1{font-size:23pt;margin:3mm 0 1mm}.emergency-sheet .eyebrow{font-size:8pt}.sheet-date{font-size:8pt;margin:0 0 3mm}
+ .emergency-sheet .emergency-grid{gap:2.5mm;margin:3mm 0}
+ .emergency-sheet .emergency-tier{padding:2.5mm 3mm;border-radius:0;break-inside:avoid;border-color:black}
+ .emergency-sheet .emergency-tier h3{font-size:13pt;gap:2mm;margin:0 0 1mm}.emergency-sheet .emergency-tier h3 b{font-size:12pt}
+ .emergency-sheet .emergency-message{font-size:11pt;line-height:1.5;margin:1.5mm 0}
+ .emergency-sheet .emergency-tier p{margin:1mm 0}.emergency-sheet .emergency-tier.ask p{font-size:10pt}.emergency-sheet .small{font-size:8pt}
+ .emergency-sheet .footnote-ref{font-size:6pt}.emergency-sheet .sheet-contacts h2{font-size:11pt;margin:3mm 0 1mm}
+ .emergency-sheet .contact-fields{grid-template-columns:1fr 1fr;gap:3mm 5mm;margin:2mm 0}.emergency-sheet .contact-fields label{font-size:10pt}
+ .contact-fields input,.completion-record input,.completion-record select{display:none}
+ .print-field{display:block;min-height:6mm;font-size:9pt;margin-top:2mm;overflow-wrap:anywhere}
+ .emergency-sheet .sheet-memo,.emergency-sheet .print-sources{font-size:9pt;line-height:1.5;margin:2mm 0}
+ .emergency-sheet .sheet-contacts p{margin:2mm 0}.emergency-sheet .print-sources{border-top:1px solid black;padding-top:2mm}
+ .contact-card.simulator{display:block!important;border:0}.contact-card .button-row,.contact-card [data-contact-status]{display:none!important}
+ .completion-record{break-inside:avoid}.completion-record fieldset{border-color:black}.intro-safety{background:white}.completion-record{grid-template-columns:1fr 1fr}
+}

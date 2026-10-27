@@ -68,7 +68,7 @@ class Page(HTMLParser):
 def deployment_files(root):
     """책·서가 원본을 배포 URL에 대응시킨다."""
     files, groups = {}, {}
-    for folder, prefix in (('shelf', ''), ('site', 'reels'), ('site-shorts', 'shorts'), ('site-blog', 'blog')):
+    for folder, prefix in (('shelf', ''), ('site', 'reels'), ('site-shorts', 'shorts'), ('site-blog', 'blog'), ('site-baby', 'baby')):
         for path in sorted((root / folder).rglob('*')):
             if path.is_file():
                 files[str(PurePosixPath(prefix) / path.relative_to(root / folder).as_posix())] = path
@@ -143,7 +143,7 @@ def figure_check(page):
 
 
 def check(root=None, site='site'):
-    if site not in {'site', 'site-shorts', 'site-blog'}:
+    if site not in {'site', 'site-shorts', 'site-blog', 'site-baby'}:
         raise ValueError('지원하지 않는 사이트')
     shorts = site == 'site-shorts'
     other_book = site != 'site'
@@ -152,7 +152,7 @@ def check(root=None, site='site'):
     ids = {p: {a['id'] for _, a in page.nodes if 'id' in a} | {a['name'] for tag, a in page.nodes if tag == 'a' and 'name' in a} for p, page in pages.items()}
     deployed, groups = deployment_files(root)
     logical_paths = {path: url for url, path in deployed.items()}
-    sources_path = root / {'site': 'research', 'site-shorts': 'research-shorts', 'site-blog': 'research-blog'}[site] / 'SOURCES.md'
+    sources_path = root / {'site': 'research', 'site-shorts': 'research-shorts', 'site-blog': 'research-blog', 'site-baby': 'research-baby'}[site] / 'SOURCES.md'
     source_pattern = r'\b[A-Z]{1,4}\d{3}\b' if other_book else r'^###\s+(S\d{3})\.'
     sources = set(re.findall(source_pattern, sources_path.read_text(encoding='utf-8'), re.MULTILINE)) if sources_path.is_file() else set()
     citation_pattern = (r'\bY\d{3}\b' if shorts else
@@ -171,6 +171,9 @@ def check(root=None, site='site'):
         if path.is_relative_to(root / site):
             errors.extend(f'{label}: {issue}' for issue in figure_check(page))
         theory = path.parent == root / site / 'chapters' and ((other_book and re.match(r'\d{2}[a-z]?-', path.name) is not None) or (not other_book and (re.match(r'(0[2-9]|1[0-4])-', path.name) is not None or path.name == '05b-ai-tools.html')))
+        # BabyBook N3: a tool sample is not a finished theory manuscript.
+        if site == 'site-baby' and any(a.get('data-manuscript') == 'pending' for tag, a in page.nodes if tag == 'body'):
+            theory = False
         if theory:
             chapters += 1
             blocks = tuple(a['data-block'] for _, a in page.nodes if 'data-block' in a)
@@ -254,7 +257,7 @@ def check(root=None, site='site'):
             errors.append(f'중복 실습 진행 키 {key}')
     if (not other_book or e2e_page is not None) and (not steps or None in steps or '' in steps or steps != set(e2e_keys)):
         errors.append('실습 단계와 E2E 진행 키 불일치')
-    sizes = dict(site=0, shelf=0, samples=0, **{name: 0 for name in ('site-shorts', 'site-blog') if (root / name).exists()})
+    sizes = dict(site=0, shelf=0, samples=0, **{name: 0 for name in ('site-shorts', 'site-blog', 'site-baby') if (root / name).exists()})
     extensions = Counter()
     for path, group in groups.items():
         size = path.stat().st_size
@@ -268,8 +271,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument('--output', type=Path)
-    parser.add_argument('--site', choices=('site', 'site-shorts', 'site-blog'), default='site',
-                        help='검사할 책 (기본: site). BlogBook 샘플도 B 출처·blog 배포 경로로 검사')
+    parser.add_argument('--site', choices=('site', 'site-shorts', 'site-blog', 'site-baby'), default='site',
+                        help='검사할 책 (기본: site). 책별 출처 목록과 배포 경로로 검사 (BabyBook: research-baby, /baby/)')
     args = parser.parse_args()
     result = check(root=args.root, site=args.site)
     rendered = json.dumps(result, ensure_ascii=False, indent=2) + '\n'

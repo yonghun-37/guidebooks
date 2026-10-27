@@ -29,6 +29,7 @@ jobs:
           cp -r site _site/reels
           cp -r site-shorts _site/shorts
           cp -r site-blog _site/blog
+          cp -r site-baby _site/baby
           mkdir -p _site/progress/samples
           cp starter-kit/samples/*.png starter-kit/samples/*.mp4 _site/progress/samples/
           touch _site/.nojekyll

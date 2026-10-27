@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: 0세 가정양육: 월 현금과 1회 바우처를 분리한다
+ok 1 - 0세 가정양육: 월 현금과 1회 바우처를 분리한다
+  ---
+  duration_ms: 1.262826
+  type: 'test'
+  ...
+# Subtest: 둘째 이상은 첫만남만 달라진다
+ok 2 - 둘째 이상은 첫만남만 달라진다
+  ---
+  duration_ms: 0.759573
+  type: 'test'
+  ...
+# Subtest: 0세 어린이집은 58.4만원 바우처를 현금에 더하지 않는다
+ok 3 - 0세 어린이집은 58.4만원 바우처를 현금에 더하지 않는다
+  ---
+  duration_ms: 0.129404
+  type: 'test'
+  ...
+# Subtest: 첫 생일 전날과 당일의 11/12개월 경계
+ok 4 - 첫 생일 전날과 당일의 11/12개월 경계
+  ---
+  duration_ms: 0.16387
+  type: 'test'
+  ...
+# Subtest: 1세 어린이집: 부모 현금 차액은 음수가 아닌 0원
+ok 5 - 1세 어린이집: 부모 현금 차액은 음수가 아닌 0원
+  ---
+  duration_ms: 0.095334
+  type: 'test'
+  ...
+# Subtest: 지역 capital: 중복 가산과 상품권의 현금 합산을 하지 않는다
+ok 6 - 지역 capital: 중복 가산과 상품권의 현금 합산을 하지 않는다
+  ---
+  duration_ms: 0.186415
+  type: 'test'
+  ...
+# Subtest: 지역 other: 중복 가산과 상품권의 현금 합산을 하지 않는다
+ok 7 - 지역 other: 중복 가산과 상품권의 현금 합산을 하지 않는다
+  ---
+  duration_ms: 0.088362
+  type: 'test'
+  ...
+# Subtest: 지역 preferred: 중복 가산과 상품권의 현금 합산을 하지 않는다
+ok 8 - 지역 preferred: 중복 가산과 상품권의 현금 합산을 하지 않는다
+  ---
+  duration_ms: 0.059906
+  type: 'test'
+  ...
+# Subtest: 지역 special: 중복 가산과 상품권의 현금 합산을 하지 않는다
+ok 9 - 지역 special: 중복 가산과 상품권의 현금 합산을 하지 않는다
+  ---
+  duration_ms: 0.182544
+  type: 'test'
+  ...
+# Subtest: 지역 모름: 정확한 아동수당과 합계를 만들지 않는다
+ok 10 - 지역 모름: 정확한 아동수당과 합계를 만들지 않는다
+  ---
+  duration_ms: 0.250568
+  type: 'test'
+  ...
+# Subtest: 달력 날짜를 검증하고 실제 윤일은 월령 범위로 판정한다
+ok 11 - 달력 날짜를 검증하고 실제 윤일은 월령 범위로 판정한다
+  ---
+  duration_ms: 0.430393
+  type: 'test'
+  ...
+# Subtest: 조사일 당일 출생과 23개월 경계
+ok 12 - 조사일 당일 출생과 23개월 경계
+  ---
+  duration_ms: 0.141272
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 
+ok 13 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 
+  ---
+  duration_ms: 0.066043
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: null
+ok 14 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: null
+  ---
+  duration_ms: 0.036699
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-2-03
+ok 15 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-2-03
+  ---
+  duration_ms: 0.035576
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-02-30
+ok 16 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-02-30
+  ---
+  duration_ms: 0.036673
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-13-01
+ok 17 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-13-01
+  ---
+  duration_ms: 0.033813
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-10-28
+ok 18 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2026-10-28
+  ---
+  duration_ms: 0.038161
+  type: 'test'
+  ...
+# Subtest: 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2027-01-01
+ok 19 - 빈 값·잘못된 달력·조사일 뒤 출생 차단: 2027-01-01
+  ---
+  duration_ms: 0.036219
+  type: 'test'
+  ...
+# Subtest: 2026 숫자를 2027 정책으로 연장하지 않는다
+ok 20 - 2026 숫자를 2027 정책으로 연장하지 않는다
+  ---
+  duration_ms: 0.063998
+  type: 'test'
+  ...
+# Subtest: 선택값 검증: {"order":"third"}
+ok 21 - 선택값 검증: {"order":"third"}
+  ---
+  duration_ms: 0.10305
+  type: 'test'
+  ...
+# Subtest: 선택값 검증: {"daycare":"yes"}
+ok 22 - 선택값 검증: {"daycare":"yes"}
+  ---
+  duration_ms: 0.051198
+  type: 'test'
+  ...
+# Subtest: 선택값 검증: {"region":"all"}
+ok 23 - 선택값 검증: {"region":"all"}
+  ---
+  duration_ms: 0.754921
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 51.877791
