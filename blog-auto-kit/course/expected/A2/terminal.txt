@@ -1,0 +1,6 @@
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html

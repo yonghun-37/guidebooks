@@ -1,0 +1,6 @@
+{
+  "python blog.py run --scenarios": {
+    "returncode": 0,
+    "stdout": "✔ 통과: mock_normal\n✔ 통과: regulated_refusal\n✔ 통과: missing_data\n✔ 통과: reapproval\n✔ 통과: timeout_no_duplicate\n✔ 통과: backup_restore\n"
+  }
+}

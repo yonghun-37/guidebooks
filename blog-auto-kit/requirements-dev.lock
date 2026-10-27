@@ -1,0 +1,6 @@
+# A1 테스트 도구와 전이 의존성을 정확히 고정합니다.
+pytest==8.3.5
+iniconfig==2.1.0
+packaging==25.0
+pluggy==1.5.0
+colorama==0.4.6; sys_platform == "win32"

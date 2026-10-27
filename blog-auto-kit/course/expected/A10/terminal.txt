@@ -1,0 +1,3 @@
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html

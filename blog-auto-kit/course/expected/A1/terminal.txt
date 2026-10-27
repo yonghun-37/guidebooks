@@ -1,0 +1,6 @@
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 포트 8767
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+$ python blog.py status --mock
+✔ 통과: mock REST 연결
+output/status.json

@@ -1,0 +1,6 @@
+{
+  "python blog.py ads": {
+    "returncode": 0,
+    "stdout": "✔ 통과: ads 생성\noutput/ads/checklist.txt\noutput/ads/ads.txt\noutput/ads/layout.html\noutput/ads/report.html\noutput/ads/metrics.json\n"
+  }
+}

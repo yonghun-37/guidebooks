@@ -1,0 +1,6 @@
+$ python blog.py gate --sample info
+✔ 통과: 자동 검사 완료
+output/gates/info.txt
+$ python blog.py gate --sample play
+✔ 통과: 자동 검사 완료 · 사람 검토 대기
+output/gates/play.txt

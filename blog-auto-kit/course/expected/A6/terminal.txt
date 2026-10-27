@@ -1,0 +1,12 @@
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · draft
+private/state.sqlite3
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb
+output/gates/info.txt
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+$ python blog.py status --sample info
+✔ 통과: 서버 상태 재조회
+output/status.json

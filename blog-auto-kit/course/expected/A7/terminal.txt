@@ -1,0 +1,7 @@
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json

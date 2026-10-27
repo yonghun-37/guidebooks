@@ -1,0 +1,25 @@
+# A1 고정 시계: 실습 날짜를 바꾸면 예상 출력도 달라집니다.
+[clock]
+today = "2026-10-27" # 기준일
+seed = 37 # 샘플의 고정 시드
+
+[wordpress]
+mode = "mock" # mock / local / live; local과 live는 명시적 --live 필요
+url = "http://127.0.0.1:8767" # A2 REST 서버 주소
+
+[publishing]
+mode = "approval" # A5 approval / auto; 높은 위험은 항상 승인
+daily_limit = 2 # A6 키트 운영 상한이며 검색엔진의 안전선이 아닙니다.
+
+[provider]
+name = "mock" # A4 기본은 키 없는 고정 응답
+model = "gpt-6-luna" # 조사 기준 모델, 실제 호출 전 공급자 문서 확인
+monthly_cap_usd = "1.00" # 호출 전 예약할 월 예산(달러 문자열)
+
+[pages]
+email = "editor@example.invalid" # A2 문의 연락처: 공개 전 본인 주소로 교체
+retention_days = 30 # 답변 완료 후 보유 일수: 실제 처리 흐름에 맞게 변경
+
+[ads]
+ad_after_h2 = 2 # A7 본문 두 번째 소제목 뒤에 광고 자리표시
+publisher_id = "pub-REPLACE_ME" # 승인 후 본인 판매자 행으로 교체

@@ -1,0 +1,55 @@
+{
+  "content_id": "info",
+  "content_type": "info",
+  "title": "2026 부모급여·아동수당 한 번에 정리",
+  "description": "정부 지원을 확인하는 순서",
+  "markdown": "",
+  "html": "",
+  "author": "서윤(가상)",
+  "as_of": "2026-10-27",
+  "risk_flags": [],
+  "source_notes": [
+    {
+      "id": "N037",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148957936",
+      "official": true,
+      "country": "KR",
+      "checked_on": "2026-10-27",
+      "age_range": "0~3세",
+      "license": "원문 링크 및 이용 조건 확인",
+      "claims": [
+        "부모급여는 0~11개월 월 100만원, 12~23개월 월 50만원입니다."
+      ]
+    },
+    {
+      "id": "N038",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963373",
+      "official": true,
+      "country": "KR",
+      "checked_on": "2026-10-27",
+      "age_range": "0~3세",
+      "license": "원문 링크 및 이용 조건 확인",
+      "claims": [
+        "아동수당은 9세 미만, 기본 월 10만원입니다."
+      ]
+    }
+  ],
+  "experience": "",
+  "experience_by": "",
+  "photos": [],
+  "media": [
+    {
+      "path": "samples/books.png",
+      "alt": "가상 그림책꽂이 그림",
+      "child_photo": false,
+      "permissions": "직접 제작"
+    }
+  ],
+  "commercial_relations": [],
+  "product_records": [],
+  "contract": {
+    "ai_allowed": true
+  },
+  "emergency_topics": [],
+  "comparison_only": false
+}

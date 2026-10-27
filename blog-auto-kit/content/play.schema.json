@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "play",
+  "type": "object",
+  "required": ["content_id", "content_type", "title", "description", "markdown", "html", "author", "as_of", "risk_flags", "source_notes", "experience", "experience_by", "photos", "media", "commercial_relations", "product_records", "contract", "emergency_topics"],
+  "properties": {
+    "content_id": {"type": "string", "minLength": 1},
+    "content_type": {"type": "string", "const": "play"},
+    "title": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 1},
+    "markdown": {"type": "string"},
+    "html": {"type": "string"},
+    "author": {"type": "string", "minLength": 1},
+    "as_of": {"type": "string", "minLength": 1},
+    "risk_flags": {"type": "array", "items": {"type": "string"}},
+    "source_notes": {"type": "array", "items": {"type": "object", "required": ["id", "url", "official", "country", "checked_on", "age_range", "license", "claims"], "properties": {"id": {"type": "string"}, "url": {"type": "string"}, "official": {"type": "boolean"}, "country": {"type": "string"}, "checked_on": {"type": "string"}, "age_range": {"type": "string"}, "license": {"type": "string"}, "claims": {"type": "array"}}}},
+    "experience": {"type": "string"},
+    "experience_by": {"type": "string"},
+    "photos": {"type": "array"},
+    "media": {"type": "array", "items": {"type": "object", "required": ["path", "alt", "child_photo", "permissions"], "properties": {"path": {"type": "string"}, "alt": {"type": "string"}, "child_photo": {"type": "boolean"}, "permissions": {"type": "string"}}}},
+    "commercial_relations": {"type": "array", "items": {"type": "object", "required": ["kind", "program", "brand", "details"], "properties": {"kind": {"type": "string"}, "program": {"type": "string"}, "brand": {"type": "string"}, "details": {"type": "string"}}}},
+    "product_records": {"type": "array", "items": {"type": "object", "required": ["product_type", "intended_use", "model", "maker", "certification_scheme", "recall_check", "ad_review_scope"], "properties": {"product_type": {"type": "string"}, "intended_use": {"type": "string"}, "model": {"type": "string"}, "maker": {"type": "string"}, "certification_scheme": {"type": "string"}, "recall_check": {"type": "string"}, "ad_review_scope": {"type": "string"}}}},
+    "contract": {"type": "object", "required": ["ai_allowed"], "properties": {"ai_allowed": {"enum": [true, false, "unknown"]}}},
+    "emergency_topics": {"type": "array", "items": {"type": "string"}}
+  }
+}

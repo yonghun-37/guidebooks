@@ -1,0 +1,6 @@
+{
+  "python blog.py run --audit": {
+    "returncode": 0,
+    "stdout": "✔ 통과: 출시 전 사람이 확인할 점검표\noutput/launch-checklist.txt\n"
+  }
+}

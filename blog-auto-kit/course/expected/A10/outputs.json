@@ -1,0 +1,6 @@
+{
+  "python blog.py report": {
+    "returncode": 0,
+    "stdout": "✔ 통과: report 생성\noutput/analytics/weekly.html\n"
+  }
+}

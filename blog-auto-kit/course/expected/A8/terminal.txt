@@ -1,0 +1,6 @@
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+$ python blog.py gate --sample affiliate
+✔ 통과: 자동 검사 완료
+output/gates/affiliate.txt

@@ -1,0 +1,19 @@
+# 예시: 저장소에 설치하지 않으며 실제 발행을 실행하지 않습니다.
+# 실행 전 private 상태를 접근 통제된 외부 저장소에서 복원하고,
+# 종료 후 상태와 백업을 같은 외부 저장소에 보관해야 합니다.
+name: blog-dry-run-example
+on: workflow_dispatch
+concurrency:
+  group: blog-dry-run
+  cancel-in-progress: false
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 로컬 예시 실행 (외부 상태 복원·보관은 직접 구성)
+        working-directory: blog-auto-kit
+        run: python blog.py run --sample

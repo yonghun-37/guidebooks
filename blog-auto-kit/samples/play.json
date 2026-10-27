@@ -1,0 +1,45 @@
+{
+  "content_id": "play",
+  "content_type": "play",
+  "title": "생후 3~4개월 집에서 하는 터미타임 놀이 5가지",
+  "description": "깨어 있는 아기와 함께하는 놀이",
+  "markdown": "",
+  "html": "",
+  "author": "서윤(가상)",
+  "as_of": "2026-10-27",
+  "risk_flags": [
+    "health"
+  ],
+  "source_notes": [
+    {
+      "id": "N092",
+      "url": "https://www.who.int/news-room/detail/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more",
+      "official": true,
+      "country": "국외 WHO",
+      "checked_on": "2026-10-27",
+      "age_range": "3~4개월",
+      "license": "원문 링크 및 이용 조건 확인",
+      "claims": [
+        "깨어 있을 때 보호자와 함께 터미타임을 합니다."
+      ]
+    }
+  ],
+  "experience": "",
+  "experience_by": "",
+  "photos": [],
+  "media": [
+    {
+      "path": "samples/books.png",
+      "alt": "가상 그림책꽂이 그림",
+      "child_photo": false,
+      "permissions": "직접 제작"
+    }
+  ],
+  "commercial_relations": [],
+  "product_records": [],
+  "contract": {
+    "ai_allowed": true
+  },
+  "emergency_topics": [],
+  "comparison_only": false
+}

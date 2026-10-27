@@ -1,0 +1,27 @@
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+$ python blog.py gate --sample sponsor --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · f62525058efb
+output/gates/sponsor.txt
+$ python blog.py publish --sample sponsor
+✔ 통과: WordPress post_id=2 · future
+private/state.sqlite3
+$ python blog.py status --sample sponsor --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python blog.py sponsor settle
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv

@@ -1,0 +1,9 @@
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+$ python blog.py draft --sample play
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/play.json
+$ python blog.py draft --sample affiliate
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/affiliate.json

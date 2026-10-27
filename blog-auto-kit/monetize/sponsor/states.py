@@ -1,0 +1,20 @@
+"""협찬 상태별 전이와 필수 기록의 기준표다."""
+STATES = {
+    'inquiry': (['advertiser', 'contact', 'offer', 'channel'], ['reviewing', 'declined', 'on_hold']),
+    'reviewing': (['product_safety', 'ai_allowed', 'child_privacy', 'disclosure', 'deadline', 'settlement', 'rights'], ['accepted', 'contracted', 'declined', 'on_hold']),
+    'accepted': (['agreement'], ['contracted', 'on_hold', 'cancelled']),
+    'contracted': (['contract_version', 'cash', 'goods', 'return_terms', 'deadlines', 'revision_scope', 'rights', 'cancellation', 'payment'], ['received', 'on_hold', 'cancelled']),
+    'received': (['model', 'condition', 'received_date', 'experience', 'goods_valuation'], ['writing', 'on_hold', 'cancelled', 'declined']),
+    'writing': (['authoring_path', 'experience', 'photos', 'sources', 'disclosure'], ['brand_review', 'on_hold']),
+    'brand_review': (['feedback', 'version', 'count'], ['human_approval', 'writing', 'on_hold']),
+    'human_approval': (['content_hash', 'reviewer', 'reviewed_at'], ['approved', 'writing', 'on_hold']),
+    'approved': (['approval_hash', 'allowed_at', 'destination'], ['scheduled', 'published', 'writing', 'on_hold']),
+    'scheduled': (['post_id', 'scheduled_at', 'timezone', 'server_status'], ['published', 'writing', 'on_hold']),
+    'published': (['url', 'published_at', 'contract_hash', 'disclosure'], ['reported', 'on_hold']),
+    'reported': (['period', 'metrics_definition', 'allowed_data', 'privacy_checked'], ['settlement_pending', 'on_hold']),
+    'settlement_pending': (['cash', 'goods', 'return_terms', 'withholding', 'invoice', 'payment_due'], ['settled', 'on_hold']),
+    'settled': (['paid_at', 'paid_amount', 'goods', 'expenses', 'evidence', 'tax_check'], []),
+    'on_hold': (['reason', 'request', 'owner', 'return_state', 'deadline'], []),
+    'declined': (['reason', 'notice', 'return_terms', 'cost_agreement'], []),
+    'cancelled': (['reason', 'notice', 'return_terms', 'cost_agreement'], []),
+}

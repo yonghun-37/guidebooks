@@ -1,0 +1,8 @@
+$ python blog.py run --ops
+✔ 통과: 알림 드라이런·예약 예시·백업
+output/schedules/cron.txt
+output/schedules/launchd.plist
+output/schedules/windows.txt
+output/backups/blog.zip
+$ python blog.py run --restore
+✔ 통과: SQLite·mock WordPress·설정 복구

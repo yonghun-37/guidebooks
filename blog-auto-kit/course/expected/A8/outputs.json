@@ -1,0 +1,10 @@
+{
+  "python blog.py affiliate --sample affiliate": {
+    "returncode": 0,
+    "stdout": "✔ 통과: affiliate 생성\noutput/affiliate/links.csv\n"
+  },
+  "python blog.py gate --sample affiliate": {
+    "returncode": 0,
+    "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/affiliate.txt\n"
+  }
+}

@@ -1,0 +1,7 @@
+$ python blog.py run --scenarios
+✔ 통과: mock_normal
+✔ 통과: regulated_refusal
+✔ 통과: missing_data
+✔ 통과: reapproval
+✔ 통과: timeout_no_duplicate
+✔ 통과: backup_restore

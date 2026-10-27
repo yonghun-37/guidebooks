@@ -1,0 +1,6 @@
+{
+  "python blog.py pages": {
+    "returncode": 0,
+    "stdout": "✔ 통과: pages 생성\noutput/pages/about.html\noutput/pages/privacy.html\noutput/pages/contact.html\noutput/pages/advertising.html\n"
+  }
+}

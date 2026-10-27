@@ -1,0 +1,6 @@
+{
+  "python blog.py topics": {
+    "returncode": 0,
+    "stdout": "✔ 통과: 주제 지도 생성\noutput/topics.json\n"
+  }
+}

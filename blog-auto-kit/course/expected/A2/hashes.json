@@ -1,0 +1,9 @@
+{
+  "output/pages/about.html": "79e8f8e62d563915f58417f9a3803f5b2ebc816f568a2b8446fed57b5c7470f8",
+  "output/pages/advertising.html": "80be0091b2e8d0209cbd48f74ae5aa090eff2e6398c269af8d732faaef439e43",
+  "output/pages/contact.html": "2fb09dc7661f45399946567c808373d0022857252424b09407458782be060600",
+  "output/pages/privacy.html": "3c69398f41f13a5106f8fad99b14131ffeb05502bcfb62eafaca0c771ada5ca0",
+  "output/state.json": "9398c62c82f14f57e2bf245a03d5c57769ec95268b0ece8a4086f33fa086427b",
+  "output/status.json": "dfa26809c103e658aaefde45a017cc5cef767bd830a9252646265e0141109e3e",
+  "private/mock-wp/state.json": "1c76266a21ffe3335a8f05fcbba0aca5a9c9912c478ff7ca6f4853f6a3b2745e"
+}

@@ -35,3 +35,6 @@
 ## 3. 결과
 docs/results/phase-BX3k.md: 파일 트리(줄 수 표시, 200줄 초과 0), 장별 명령과 예상 출력 요약, repro 스크립트 결과 원문 끝 30줄, pytest 결과, Docker 실행 여부, 근거가 부족해 구현하지 않은 것, 집필 작업자에게 주는 "장별로 본문에 넣을 명령·발췌 후보(파일:줄)" 표.
 `python3 scripts/notify.py "✅ [blog-auto-kit 완료] ..."`로 한국어 보고(5줄 이내).
+
+## 4. Docker 참고
+이 컴퓨터는 Docker가 있지만 가용 메모리가 작다(약 1.5GB). 샌드박스에서 Docker 소켓 접근이 막히면 실행하지 말고 "Claude가 실행할 명령"을 결과에 적어라. 실행했다면 반드시 `docker compose down -v`로 정리한다. DB는 가벼운 공식 MariaDB 이미지(태그 고정)를 우선한다.

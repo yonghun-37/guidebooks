@@ -1,0 +1,10 @@
+{
+  "python blog.py run --ops": {
+    "returncode": 0,
+    "stdout": "✔ 통과: 알림 드라이런·예약 예시·백업\noutput/schedules/cron.txt\noutput/schedules/launchd.plist\noutput/schedules/windows.txt\noutput/backups/blog.zip\n"
+  },
+  "python blog.py run --restore": {
+    "returncode": 0,
+    "stdout": "✔ 통과: SQLite·mock WordPress·설정 복구\n"
+  }
+}
