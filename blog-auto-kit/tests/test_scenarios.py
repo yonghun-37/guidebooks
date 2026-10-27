@@ -21,7 +21,7 @@ def outcomes(tmp_path_factory):
     return result
 
 
-@pytest.mark.parametrize('name', ['mock_normal', 'regulated_refusal', 'missing_data', 'reapproval', 'timeout_no_duplicate', 'backup_restore'])
+@pytest.mark.parametrize('name', ['mock_normal', 'regulated_refusal', 'missing_data', 'reapproval', 'timeout_no_duplicate', 'backup_restore', 'bypass_attempts'])
 def test_each_scenario_has_success_and_evidence(outcomes, name):
     assert outcomes[name]['passed'] is True
     assert outcomes[name]['evidence']

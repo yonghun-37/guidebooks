@@ -9,6 +9,7 @@ url = "http://127.0.0.1:8767" # A2 REST 서버 주소
 
 [publishing]
 mode = "approval" # A5 approval / auto; 높은 위험은 항상 승인
+auto_allowed_types = ["info", "play"] # 자동 모드에서도 신규·모든 관문 pass·위험 신호 없음만 허용
 daily_limit = 2 # A6 키트 운영 상한이며 검색엔진의 안전선이 아닙니다.
 
 [provider]

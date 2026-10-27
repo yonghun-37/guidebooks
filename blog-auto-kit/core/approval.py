@@ -9,14 +9,37 @@ def binding(root, doc, record):
     return approval_hash(root, final)
 
 
-def inspect_document(root, doc, **kwargs):
-    results = evaluate(doc, root=root, **kwargs)
+def inspect_document(root, doc, store=None, **kwargs):
+    from copy import deepcopy
+    checked = deepcopy(doc)
+    registered = []
+    if store is not None:
+        urls = {link.get('url') for link in doc.get('links', []) + doc.get('paid_links', [])}
+        for link in store.all('links'):
+            if link.get('url') in urls or link.get('content_id') == doc['content_id']:
+                registered.append(dict(link, kind=link.get('kind', 'affiliate'),
+                                       details=link.get('details', '판매 수수료')))
+        for sponsor in store.all('sponsors'):
+            if sponsor.get('content_id') != doc['content_id']:
+                continue
+            for event in sponsor.get('history', []):
+                if event['state'] != 'contracted':
+                    continue
+                records = event['records']
+                if records.get('cash') and records['cash'] not in ('0', '0원', '현금 없음'):
+                    registered.append({'kind': 'cash', 'details': '광고비 ' + str(records['cash'])})
+                if records.get('goods'):
+                    loan = records.get('return_terms') not in (None, '', '반납 없음', '해당 없음')
+                    registered.append({'kind': 'loan' if loan else 'gift',
+                                       'details': '대여' if loan else '제품 제공'})
+    checked['registered_relations'] = registered
+    results = evaluate(checked, root=root, **kwargs)
     write_report(root, doc, results)
     return results
 
 
 def require_ready(results):
-    blocked = [item for item in results if item['decision'] == 'block' or (
+    blocked = [item for item in results if item['decision'] in ('block', 'hold') or (
         item['decision'] == 'review' and not item.get('human_resolvable'))]
     if blocked:
         item = blocked[0]
@@ -26,7 +49,7 @@ def require_ready(results):
 def approve_document(root, store, doc, reviewer, today):
     if not reviewer.strip():
         raise ValueError('검토자 이름 없음 → --approve 검토자 이름을 넣으세요')
-    results = inspect_document(root, doc, today=today, recent=recent_documents(store, doc))
+    results = inspect_document(root, doc, today=today, recent=recent_documents(store, doc), store=store)
     require_ready(results)
     row = store.get('posts', doc['content_id'])
     if not row or not row.get('post_id'):

@@ -64,11 +64,13 @@ class GateTests(unittest.TestCase):
 
     def test_product_classification_and_advertising_rules(self):
         doc = load_sample('affiliate'); product = doc['product_records'][0]
-        product['product_type'] = '조제분유'; doc['commercial_relations'] = []
+        product['product_type'] = '조제분유'; doc['commercial_relations'] = []; doc['content_type'] = 'info'
         self.assertFalse(any(r['rule_id'] == 'product_rules.P2' for r in evaluate(doc)))
         doc['commercial_relations'] = [{'kind':'affiliate','program':'','brand':'','details':''}]
+        doc['content_type'] = 'affiliate'
+        product.update(regulated_category='infant_formula', classification_basis='가상 품목 자료: 조제유류')
         self.assertTrue(any(r['rule_id'] == 'product_rules.P2' for r in evaluate(doc)))
-        product['product_type'] = '화장품'; doc['markdown'] += '\n피부 질병을 치료합니다.'
+        product.update(product_type='화장품', regulated_category='other'); doc['markdown'] += '\n피부 질병을 치료합니다.'
         self.assertTrue(any(r['rule_id'] == 'product_rules.P4' and r['decision'] == 'block' for r in evaluate(doc)))
         product['product_type'] = '건강기능식품'; product['ad_review_scope'] = 'unknown'
         self.assertTrue(any(r['rule_id'] == 'product_rules.P6' for r in evaluate(doc)))
@@ -128,6 +130,7 @@ class GateTests(unittest.TestCase):
         doc = load_sample('sponsor'); doc['product_records'][0]['model'] = ''
         self.assertTrue(any(r['rule_id'] == 'product_rules.P1' for r in evaluate(doc)))
         doc['product_records'][0]['recall_check'] = '리콜 확인'
+        doc['product_records'][0]['recall_status'] = 'recalled'
         self.assertTrue(any(r['rule_id'] == 'product_rules.P3' and r['decision'] == 'block' for r in evaluate(doc)))
         doc = load_sample('info'); old = dict(doc, markdown=doc['markdown'] + ' ' + '추가')
         self.assertTrue(any(r['rule_id'] == 'duplicate.U3' for r in evaluate(doc, recent=[old])))

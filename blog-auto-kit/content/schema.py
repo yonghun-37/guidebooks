@@ -6,7 +6,7 @@ FIELDS = {'content_id': str, 'content_type': str, 'title': str, 'description': s
           'commercial_relations': list, 'product_records': list,
           'contract': dict, 'emergency_topics': list}
 SOURCE = ('id', 'url', 'official', 'country', 'checked_on', 'age_range', 'license', 'claims')
-PRODUCT = ('product_type', 'intended_use', 'model', 'maker', 'certification_scheme', 'recall_check', 'ad_review_scope')
+PRODUCT = ('product_type', 'intended_use', 'model', 'maker', 'certification_scheme', 'recall_check', 'ad_review_scope', 'recall_status', 'classification_basis', 'regulated_category')
 
 def validate(doc) -> list:
     """필수 필드 오류를 한국어 목록으로 반환한다."""
@@ -24,6 +24,9 @@ def validate(doc) -> list:
         for item in doc.get(key, []) if isinstance(doc.get(key), list) else []:
             if not isinstance(item, dict) or any(k not in item for k in fields):
                 errors.append(f'{key}: 필수 항목 누락')
+    for product in doc.get('product_records', []):
+        if isinstance(product, dict) and product.get('recall_status') not in ('none_found', 'recalled', 'unchecked'):
+            errors.append('product_records.recall_status: 확인 필요')
     for source in doc.get('source_notes', []):
         if isinstance(source, dict) and not isinstance(source.get('official'), bool):
             errors.append('source_notes.official: 참 또는 거짓이어야 합니다')

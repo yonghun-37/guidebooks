@@ -1,0 +1,26 @@
+AssertionError [ERR_ASSERTION]: sources changed while browser checks were running
++ actual - expected
+... Skipped lines
+
+  {
+    'site-blog/advanced/00-start.html': '579c2b8c7dca83c7d523fc8874ec8056c98bef02241b6bbf65fa89ae1079d216',
+    'site-blog/advanced/01-environment.html': '0c69dd3c246e6daa67dd0dd562b2c415fa5b561f0fbc18259339fb2e72ffccbc',
+    'site-blog/advanced/02-wordpress.html': 'bbf1355ef06b280a2e2beaa8641a2f11bcdcb28e54fadf3d9afbffabb1d38feb',
+    'site-blog/advanced/03-topics.html': '9b01da93d257ca730dea741a9c9b9880aaf34d34379d71c9d0fe8397e11ba138',
+...
+    'site-blog/assets/advanced-05-gates.css': '9a8d895d39b2cda4799cc72e96606c0beea77b6287b1a76ff04bc0a237f362b0',
++   'site-blog/assets/advanced-05-gates.js': '87edbd3185e74ca64544585dce257a521f6ba53f210f84ccf1dcd2af9a41a2e4',
+-   'site-blog/assets/advanced-05-gates.js': '8306474fc4fdcd01767b922e722601cefe5265536dcc85f9d85fa83c6941197b',
+    'site-blog/assets/advanced-07-ads.css': '065a0093793efb7b3c913f3959200831feb2f7817c1c58dff077e307cfc50738',
+    'site-blog/assets/advanced-08-affiliate.css': '74d3658fb33ea2c24cb7136c9bac9a25829e227122f73c07652c4df492976267',
+    'site-blog/assets/advanced-08-affiliate.js': 'cf16312faacc88bdce3b8375e6d2bb6f44860ecb7cf165ea47a0b1209f86b76a',
+    'site-blog/assets/advanced-10-analytics.css': 'e0fc05ebcfcad6a152da837e642c344a2857cceb5129860e3bb291cb21484593',
+    'site-blog/assets/advanced-11-operations.css': 'f390b7d57da77b558996f45fe265d02990e95288d61aa55ba9ef9825fa8e5cea',
+...
+    'site-blog/assets/revenue.js': '4c8779da7db0dd80c9510eda022352089a70158b54ef4e23d2ca3d1a6fb1b608',
++   'site-blog/credits.html': '1db2f3c5d7382cf016a81f2d5d071644b969de8ee145281cc4f32c4316faa4f4',
+-   'site-blog/credits.html': '96d76cd68801d2c313dd247f4ea3ffcfc4fcd84aab63c4ee84010df034d64fba',
+    'site-blog/index.html': 'b3e54c0e1816810d6bc086d6fe9e50f83c2bf915ea3b5df947939f4b6c2ac367'
+  }
+
+    at /home/yonghun/project/ai-insta/docs/results/phase-BX7/verify-browser.cjs:71:37

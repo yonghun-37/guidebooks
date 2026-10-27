@@ -2,6 +2,7 @@
 import csv
 import html
 from pathlib import Path
+from content.markdown import render
 
 COUPANG = '이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.'
 NAVER = '이 포스팅은 네이버 쇼핑 커넥트 활동의 일환으로, 판매 발생 시 수수료를 제공받습니다.'
@@ -47,15 +48,21 @@ def prepare_affiliate(root, store, doc):
     relations = doc.get('commercial_relations', [])
     disclosures = []
     for relation in relations:
+        from gates.body import relation_kinds
         program = relation.get('program', '').lower()
-        if '쿠팡' in program or 'coupang' in program: disclosures.append(COUPANG)
-        elif '네이버' in program or 'naver' in program: disclosures.append(NAVER)
-        else:
-            disclosures.append('광고 관계: ' + ' / '.join(str(relation.get(k, '')) for k in ('kind', 'brand', 'details') if relation.get(k)))
+        for kind in sorted(relation_kinds(relation)):
+            brand = relation.get('brand') or '해당 업체'
+            if kind == 'commission':
+                if '쿠팡' in program or 'coupang' in program: disclosures.append(COUPANG)
+                elif '네이버' in program or 'naver' in program: disclosures.append(NAVER)
+                else: disclosures.append(f'제휴 링크에서 구매하면 {brand}로부터 수수료를 제공받습니다.')
+            elif kind == 'goods': disclosures.append(f'상품 협찬: {brand}에서 제품을 무료 제공받았습니다.')
+            elif kind == 'fee': disclosures.append(f'유료 광고: {brand}에서 광고비를 지급받았습니다.')
+            elif kind == 'loan': disclosures.append(f'제품 대여: {brand}에서 제품을 대여받았으며 약정에 따라 반납합니다.')
     result = dict(doc)
     prefix = ' '.join(dict.fromkeys(disclosures))
     result['markdown'] = prefix + '\n\n' + doc.get('markdown', '') if prefix else doc.get('markdown', '')
-    result['html'] = ('<p>' + html.escape(prefix) + '</p>' if prefix else '') + doc.get('html', '')
+    result['html'] = render(result['markdown'])
     result['html'] = _mark_links(result['html'], {row['url'] for row in links})
     result['links'] = [{'id': row['id'], 'url': row['url'], 'rel': 'sponsored', 'check': '수동 확인 필요'} for row in links]
     result['paid_links'] = result['links']

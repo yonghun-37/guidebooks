@@ -9,7 +9,7 @@ from wordpress.publish import publish_draft, check_remote_status
 
 def gate_action(root, store, args):
     doc = read_document(root, args.sample)
-    results = inspect_document(root, doc, today=args.today)
+    results = inspect_document(root, doc, today=args.today, store=store)
     if args.approve:
         approval = approve_document(root, store, doc, args.approve, args.today)
         if doc['content_type'] == 'sponsor':
@@ -23,6 +23,15 @@ def gate_action(root, store, args):
 
 
 def wordpress_action(root, store, config, args):
+    if args.command == 'status' and getattr(args, 'costs', False):
+        from decimal import Decimal
+        print('✔ 통과: 비용 기록 읽기 · 예약과 확정은 같은 실행의 상태입니다')
+        for row in store.all('costs'):
+            amount = Decimal(row['micro_usd']) / Decimal(1000000)
+            print(f"{row['run_id']} | {row['date']} | {row['status']} | {amount:.6f} USD")
+        if not store.all('costs'):
+            print('비용 기록 없음')
+        return
     with wordpress_connection(root, config, args.live, args.today,
                               getattr(args, 'advance_days', 0)) as client:
         if client is None:
@@ -34,7 +43,8 @@ def wordpress_action(root, store, config, args):
             return status_action(root, store, client, args)
         doc = read_document(root, args.sample)
         if args.prepare:
-            row = prepare_draft(root, store, client, doc, args.today)
+            row = prepare_draft(root, store, client, doc, args.today,
+                                config.get('publishing', {}).get('auto_allowed_types', []))
             row['daily_limit'] = config.get('publishing', {}).get('daily_limit', 2)
             store.put('posts', doc['content_id'], row)
         else:

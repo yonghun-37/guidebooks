@@ -16,7 +16,7 @@
 
 | 예시 | 확인한 가격 | HTTPS·백업·제약 |
 |---|---|---|
-| 카페24 워드프레스 블로그 스타트업 | 월500원+설치5000원, VAT포함 | SSL; 800MB/일1GB; 추가 플러그인·SSH·FTP 불가; REST/Application Passwords·백업/복원은 서면 확인 |
+| 카페24 워드프레스 블로그 스타트업 | 월500원+설치5000원, VAT포함 | SSL; 800MB/일1GB; 플러그인·SSH·FTP 제한은 현재 재확인 보류; 코드 삽입·REST/Application Passwords·백업/복원은 구매 전 서면 확인 |
 | Hostinger Premium 공개 USD 상품 | 48개월 $119.52 선납=$2.49/월; 같은 기간 갱신 표시 $10.99/월 | 관리형 WordPress·SSL·주간백업; 한국 결제통화·세금·갱신총액 확인 |
 | Google Cloud e2-micro Free Tier | 해당 미국 리전 월1대 상당; standard PD30GB-month·북미발 전송1GB | 설치/HTTPS/보안/백업을 직접 관리; 일반VM 외부IPv4 시간$0.005 별도 |
 | Oracle Always Free | 상세 문서 A1 총2OCPU/12GB 예시; 별도 30일 trial과 구별 | 홈리전·가용성·유휴회수; 보안/HTTPS/복구 직접; 결제계정 현재 entitlement 확인 |
@@ -29,7 +29,7 @@
 
 ## 불확실·상충과 권장 결론
 
-- [BXF-012](FACT-SHEET.md#bxf-012) · **확인**: 이 카페24 상품은 테마·플러그인 추가 설치와 SSH·FTP를 지원하지 않는다. 백업 보관·복구료·DB/media 내보내기와 애플리케이션 비밀번호 허용은 구매 전에 문의한다.
+- [BXF-012](FACT-SHEET.md#bxf-012) · **일부 미확인**: 과거 미지원 문구를 이번에 재확인하지 못했다. 현재 제한/지원을 단정하지 않고 코드 삽입·플러그인·REST·복구를 구매 전에 문의한다.
 
 ## 교과서·키트 반영
 
@@ -38,3 +38,7 @@ A0·A2: 업체 추천 순위 대신 1년/갱신 총액과 구현 가능성 표�
 ## 연결 사실
 
 [BXF-011](FACT-SHEET.md#bxf-011) · [BXF-012](FACT-SHEET.md#bxf-012) · [BXF-013](FACT-SHEET.md#bxf-013) · [BXF-014](FACT-SHEET.md#bxf-014) · [BXF-015](FACT-SHEET.md#bxf-015) · [BXF-016](FACT-SHEET.md#bxf-016) · [BXF-094](FACT-SHEET.md#bxf-094) · [BXF-095](FACT-SHEET.md#bxf-095) · [BXF-096](FACT-SHEET.md#bxf-096)
+
+## 2026-10-28 재대조 반영
+
+현재 플러그인 문서는 모든 WordPress.com 유료 플랜 설치를 안내한다. 과거 가격 FAQ 상충과 카페24 플러그인·SSH·FTP 미지원은 이번 재대조에서 확인되지 않아 현행 사실로 쓰지 않는다. 선택 플랜의 코드 삽입·광고·플러그인·REST·복구 지원을 구매 전에 확인한다. BXF-006·012의 최신 판정을 따른다.

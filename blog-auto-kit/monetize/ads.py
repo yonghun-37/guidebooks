@@ -23,7 +23,7 @@ def build_ads(root, config, today):
     files = {'checklist.txt': '자체 콘텐츠·HTML 관리권·탐색·정책·개인정보처리방침 확인\n'
              '최소 글 수·방문자: 공식 기준 없음; 개별 심사 확인\n'
              'ads.txt 권장, 실제 판매자 정보 확인\n아동 광고 설정과 코드 유형 확인\n'
-             '가입 연령 18/19세 안내 상충: 한국 기본 19세 이상, 18세 적용약관 확인\n',
+             '한국 가입 연령: 만 19세 이상. 한국어 AdSense 이용약관을 확인하세요.\n',
              'ads.txt': '# BX025 공식 형식 예시; 실제 계정 행으로 교체 후 루트에 게시\n'
                         f'google.com, {publisher}, DIRECT, f08c47fec0942fa0\n',
              'layout.html': article,

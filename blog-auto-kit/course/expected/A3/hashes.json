@@ -1,18 +1,18 @@
 {
-  "output/analytics/weekly.html": "c096b7c99ce07b0dbcd58c1be9df3c373a0898d51b5c1c762cca2eaa3bd9183b",
+  "output/analytics/weekly.html": "651c90e5dfe0c2d7f3228f288320546afe718a6c4918030dc3cdd8fc65f3d13b",
   "output/drafts/info.html": "a1828c20283a64d61f14b054c5e8850f96345450d5fb746eecac03a7cb4d2530",
-  "output/drafts/info.json": "689e585a0163f7a6ac358e4f1dfd7b83c1c1dad3fb40f3f506170fdaadc64ab9",
+  "output/drafts/info.json": "cd8bdd4eed67ba4c403330a2aca4e7d437b19567af72a643736c0ddab07ca84c",
   "output/gates/info.json": "45f603ec145b80f66b76584d8b3c862e284f23bf06d7f9950365a0f56c19299e",
   "output/gates/info.txt": "9d98c30cc33a2f14977f8fca28741befa17a6074cbb94a1f43624e83de96d155",
   "output/pages/about.html": "79e8f8e62d563915f58417f9a3803f5b2ebc816f568a2b8446fed57b5c7470f8",
   "output/pages/advertising.html": "80be0091b2e8d0209cbd48f74ae5aa090eff2e6398c269af8d732faaef439e43",
   "output/pages/contact.html": "2fb09dc7661f45399946567c808373d0022857252424b09407458782be060600",
-  "output/pages/privacy.html": "3c69398f41f13a5106f8fad99b14131ffeb05502bcfb62eafaca0c771ada5ca0",
+  "output/pages/privacy.html": "e258965d3481367b78ca88cc042640994b41cf6674f7eb16fc9158d20aade764",
   "output/queue.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-  "output/state.json": "674ad317a966f5d70a1e0b2eb34f47c99d51ed9652851bdba6e501ce0cfaa205",
+  "output/state.json": "316d446902f32b632b26213e70fdd79e8910c07947adda9790841f1b8aa62a64",
   "output/status.json": "dfa26809c103e658aaefde45a017cc5cef767bd830a9252646265e0141109e3e",
   "output/topics.json": "c5690e4366181903592c6c0982c8b4ed6b529129fd5b8a9708bdda54f9a14c23",
   "private/events.json": "6c7167f8213f2bedbbd223c1fcc5af997ac873518526d770ab69346b6a6af777",
   "private/mock-wp/media/1.bin": "746a27c05dab0e1bb948af77314adabc546ab1a3b5171169a1eae0ecd44dcf35",
-  "private/mock-wp/state.json": "82ceab6b4ce3b4b7fb75450c2380ad28cd10c80f6eba0249c39f4ec2c4a4455a"
+  "private/mock-wp/state.json": "ca83c86dcd255b25d3cf3217a935d6aacf2861e18037f32111c7fedf350117f7"
 }

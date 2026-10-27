@@ -32,7 +32,8 @@
       "path": "samples/books.png",
       "alt": "가상 그림책꽂이 그림",
       "child_photo": false,
-      "permissions": "직접 제작"
+      "permissions": "직접 제작",
+      "kind": "illustration"
     }
   ],
   "commercial_relations": [],

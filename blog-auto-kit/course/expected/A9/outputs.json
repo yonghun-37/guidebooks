@@ -5,7 +5,7 @@
   },
   "python blog.py gate --sample sponsor --approve 서윤": {
     "returncode": 0,
-    "stdout": "✔ 통과: 현재 최종본 사람 승인 · f62525058efb\noutput/gates/sponsor.txt\n"
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · 5213304976ae\noutput/gates/sponsor.txt\n"
   },
   "python blog.py publish --sample sponsor": {
     "returncode": 0,

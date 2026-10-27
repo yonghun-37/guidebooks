@@ -45,7 +45,7 @@ def _product_doc(root, product):
 
 def regulated_refusal(root, store):
     """조제유류 판매촉진의 승인 시도를 차단한다."""
-    product = {'product_type': '조제유류', 'intended_use': '수유', 'model': '가상 A', 'maker': '가상', 'certification_scheme': '확인', 'recall_check': '확인', 'ad_review_scope': '확인'}
+    product = {'product_type': '조제유류', 'intended_use': '수유', 'model': '가상 A', 'maker': '가상', 'certification_scheme': '확인', 'recall_check': '확인', 'ad_review_scope': '확인', 'recall_status': 'none_found', 'classification_basis': '가상 품목 자료: 조제유류', 'regulated_category': 'infant_formula'}
     doc = _product_doc(root, product)
     results = evaluate(doc, today=TODAY)
     assert any(r['rule_id'] == 'product_rules.P2' and r['decision'] == 'block' for r in results)
@@ -130,3 +130,9 @@ def backup_restore(root, store):
         assert media.read_bytes() == original
         assert len(client.request('GET', 'media')) == 1
     return 'SQLite 논리 데이터와 mock 미디어 바이트 복구 확인'
+
+
+def bypass_attempts(root, store):
+    """두 독립 검토의 우회 반례를 실제 HTTP 경로로 묶어 확인한다."""
+    from course.bypass_cases import run_bypass_attempts
+    return run_bypass_attempts(root, store)

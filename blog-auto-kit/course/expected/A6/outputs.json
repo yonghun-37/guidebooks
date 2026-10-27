@@ -1,7 +1,7 @@
 {
   "python blog.py gate --sample info --approve 서윤": {
     "returncode": 0,
-    "stdout": "✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb\noutput/gates/info.txt\n"
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · 51f274513fb8\noutput/gates/info.txt\n"
   },
   "python blog.py publish --sample info": {
     "returncode": 0,

@@ -26,13 +26,13 @@ REST 스키마는 중복 방지 키를 자동 제공하지 않는다. SQLite의 
 
 애플리케이션 비밀번호는 WordPress 5.6부터다. 실제 운영은 HTTPS·작성 권한·Authorization 전달이 전제다. 메뉴가 없으면 사이트 HTTPS 인식/보안 플러그인/WAF/호스팅 지원을 차례로 확인한다. 비밀번호 값을 로그나 문의글에 붙이지 않는다. localhost 예외는 로컬 실습에서만 다루고 공인 HTTP 서버에 확대하지 않는다. [BX003](SOURCES.md#bx003)
 
-WordPress.com은 OAuth와 public-api.wordpress.com 경로를 구별한다. 현행 플러그인 도움말은 모든 유료 플랜을 안내하지만 가격 FAQ와 어긋나는 문구가 남아 있다. 선택한 플랜의 플러그인·외부 광고 코드·WordAds 조건을 각각 확인한다. Free의 플랫폼 광고를 내 수입으로 계산하지 않는다.
+WordPress.com은 OAuth와 public-api.wordpress.com 경로를 구별한다. 10-28 현행 플러그인 도움말과 가격 페이지는 유료 Personal의 설치를 안내하며 과거 상충을 재현하지 못했다. 선택한 플랜의 플러그인·외부 광고 코드·WordAds 조건을 각각 확인한다. Free의 플랫폼 광고를 내 수입으로 계산하지 않는다.
 
 Blogger는 API key의 공개 읽기와 OAuth 쓰기를 구별한다. OAuth scope는 https://www.googleapis.com/auth/blogger, posts.insert의 isDraft=true와 posts.publish의 publishDate를 쓴다. 현재 요청 쿼터는 본인 프로젝트 콘솔에서 확인한다. Blogger 관리의 수익 메뉴에서 AdSense를 연결하며 글쓰기 권한이 광고 승인까지 주지는 않는다. [BX011](SOURCES.md#bx011) [BX012](SOURCES.md#bx012) [BX095](SOURCES.md#bx095)
 
 ## 불확실·상충과 권장 결론
 
-- [BXF-006](FACT-SHEET.md#bxf-006) · **상충**: WordPress.com 한국어 가격 FAQ의 플러그인 요건과 2026-08-11 지원문서가 상충한다. 실제 선택 플랜에서 코드 삽입·플러그인·광고 허용을 다시 확인한다.
+- [BXF-006](FACT-SHEET.md#bxf-006) · **확인**: 현재 유료 플랜의 플러그인 안내를 확인했다. 과거 가격 FAQ 상충은 현재 결론에서 철회하고 선택 플랜의 코드 삽입·광고·REST·복구를 구매 전에 확인한다.
 - [BXF-008](FACT-SHEET.md#bxf-008) · **미확인**: Blogger 현행 프로젝트 요청 할당량은 인증된 콘솔 확인 대상이다. 검색에 남은 하루 10000회를 보편적 현재값으로 채택하지 않는다. 글 생성/스팸 제한과 요청 쿼터도 다르다.
 
 ## 교과서·키트 반영

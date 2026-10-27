@@ -60,3 +60,18 @@ def test_checkpoint_command_order_is_checked(root):
                                     'python blog.py status --mock\npython course.py doctor')
     page.write_text(before + 'id="checkpoint">' + checkpoint)
     assert any('체크포인트 복원' in e for e in checker.check(root)['errors'])
+
+
+def test_expected_cannot_silently_drop_bypass_bundle(root):
+    import json
+    path = root / 'blog-auto-kit/course/expected/E2E/outputs.json'
+    outputs = json.loads(path.read_text())
+    outputs['python blog.py run --scenarios']['stdout'] = '✔ 통과: mock_normal\n'
+    path.write_text(json.dumps(outputs, ensure_ascii=False))
+    assert any('우회 시도' in error for error in checker.check(root)['errors'])
+
+
+def test_empty_inline_error_example_is_not_accepted(root):
+    page = root / 'site-blog/advanced/07-ads.html'
+    page.write_text(page.read_text().replace('id="change">', 'id="change"><code></code>', 1))
+    assert any('빈 코드' in error for error in checker.check(root)['errors'])

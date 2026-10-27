@@ -5,3 +5,4 @@ $ python blog.py run --scenarios
 ✔ 통과: reapproval
 ✔ 통과: timeout_no_duplicate
 ✔ 통과: backup_restore
+✔ 통과: bypass_attempts

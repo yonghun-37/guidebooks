@@ -3,7 +3,7 @@
   const tool = document.querySelector('[data-gate-tool]');
   if (!tool) return;
   // 키트 고정 샘플의 evaluate 검사 기록이며 새 판정을 만들지 않아요.
-  const snapshots = {"info": [{"rule_id": "general", "decision": "pass", "reason_ko": "자동 검사에서 차단이나 검토 항목이 없습니다.", "next_action_ko": "발행 설정을 확인하세요."}], "play": [{"rule_id": "health_safety.H1", "decision": "review", "reason_ko": "건강·안전 주제는 사람 검토가 필요합니다.", "next_action_ko": "의료 근거와 문맥을 확인하세요."}], "affiliate": [{"rule_id": "disclosure.D2", "decision": "block", "reason_ko": "경제적 관계가 첫부분에 표시되지 않았습니다.", "next_action_ko": "실제 관계를 첫부분에 밝히세요."}], "sponsor": [{"rule_id": "health_safety.H1", "decision": "review", "reason_ko": "건강·안전 주제는 사람 검토가 필요합니다.", "next_action_ko": "의료 근거와 문맥을 확인하세요."}, {"rule_id": "disclosure.D4", "decision": "block", "reason_ko": "실제 경험은 사람이 작성해야 합니다.", "next_action_ko": "사람의 경험을 직접 입력하세요."}]};
+  const snapshots = {"info": [{"rule_id": "general", "decision": "pass", "reason_ko": "자동 검사에서 차단이나 검토 항목이 없습니다.", "next_action_ko": "발행 설정을 확인하세요."}], "play": [{"rule_id": "health_safety.H1", "decision": "review", "reason_ko": "건강·안전 주제는 사람 검토가 필요합니다.", "next_action_ko": "의료 근거와 문맥을 확인하세요."}, {"rule_id": "health_safety.H4", "decision": "review", "reason_ko": "건강 글의 공통 응급 문구 적용 여부를 확인해야 합니다.", "next_action_ko": "해당 응급 신호가 있으면 공통 문구를 그대로 넣고 사람이 검토하세요."}], "affiliate": [{"rule_id": "disclosure.D1", "decision": "block", "reason_ko": "첫 문단에 수수료 관계가 공개되지 않았습니다.", "next_action_ko": "실제 받는 관계를 첫 문단에 각각 밝히세요."}], "sponsor": [{"rule_id": "health_safety.H1", "decision": "review", "reason_ko": "건강·안전 주제는 사람 검토가 필요합니다.", "next_action_ko": "의료 근거와 문맥을 확인하세요."}, {"rule_id": "health_safety.H4", "decision": "review", "reason_ko": "건강 글의 공통 응급 문구 적용 여부를 확인해야 합니다.", "next_action_ko": "해당 응급 신호가 있으면 공통 문구를 그대로 넣고 사람이 검토하세요."}, {"rule_id": "disclosure.D4", "decision": "block", "reason_ko": "실제 경험은 사람이 작성해야 합니다.", "next_action_ko": "사람의 경험을 직접 입력하세요."}]};
   const stages = [
     ['구조·원문 일치', ['schema', 'content']], ['출처·소제목', ['seo']],
     ['건강·안전', ['health_safety']], ['아이 사생활', ['child_privacy']],
@@ -37,7 +37,7 @@
     if (step === stages.length) {
       next.disabled = true;
       const decision = rows.some(row => row.decision === 'block') ? 'block' : rows.some(row => row.decision === 'review') ? 'review' : 'pass';
-      result.textContent = `${names[decision]} · ` + ({block: '해당 내용이나 자료를 고친 뒤 재검사하세요. 차단을 승인으로 덮지 않아요.', review: '공식 근거와 문맥을 사람이 확인하고 최종본을 승인하세요.', pass: '기본 승인제이므로 서버 초안 준비와 최종 사람 승인이 남아 있어요.'}[decision]);
+      result.textContent = `${names[decision]} · ` + ({block: '해당 내용이나 자료를 고친 뒤 재검사하세요. 차단을 승인으로 덮지 않아요.', review: '공식 근거와 문맥을 사람이 확인하고 최종본을 승인하세요.', pass: '기본은 서버 초안 준비 → 최종 사람 승인이에요. 선택 자동 예약은 auto 설정·허용 info/play·모든 관문 pass·전체 위험 신호 없음·직접 제작 삽화만·서버 신규 확인을 모두 충족해야 해요.'}[decision]);
     } else {
       result.textContent = '아직 남은 검사가 있어요. 최종 판정 전이에요.';
     }

@@ -3,7 +3,7 @@ from core.approval import binding, inspect_document, require_ready
 from core.clock import scheduled_date
 from core.hashes import content_hash
 from core.logs import record_event
-from gates.risk import requires_human
+from gates.risk import may_auto_publish
 from wordpress.quota import reserve_slot
 from wordpress.integrity import recent_documents, require_draft_match, verify_remote
 
@@ -27,14 +27,14 @@ def recall_post(store, client, row):
         raise ValueError('예약 회수 상태 확인 실패 → 서버에서 직접 공개 여부를 확인하세요') from exc
 
 
-def require_approval(root, store, client, doc, row, mode):
+def require_approval(root, store, client, doc, row, mode, results):
     """승인 해시와 사람 승인 필요 여부를 확인한다."""
     approval = row.get('approval')
     current = binding(root, doc, row)
     if approval and approval['hash'] != current:
         recall_post(store, client, row)
         raise ValueError('승인 후 내용이 바뀜 → gate --approve로 재승인하세요')
-    if (mode == 'approval' or requires_human(doc)) and not approval:
+    if (mode not in ('auto', 'after') or not may_auto_publish(doc, results, row)) and not approval:
         raise ValueError('사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요')
 
 
@@ -44,10 +44,14 @@ def publish_draft(root, store, client, doc, today, mode='approval'):
         raise ValueError('서버 초안 없음 → blog.py publish --prepare를 실행하세요')
     if row['destination'] != client.destination:
         raise ValueError('목적지가 다름 → 승인한 WordPress 주소로 돌아가세요')
-    require_approval(root, store, client, doc, row, mode)
     try:
         require_draft_match(root, doc, row)
-        verify_remote(client, row)
+        remote = verify_remote(client, row)
+        row['server_checked'] = True
+        if remote['status'] in ('future', 'publish'):
+            row.update(is_update=True, server_new_confirmed=False, status=remote['status'])
+            row['server_history'] = list(dict.fromkeys([*row.get('server_history', []), remote['status']]))
+        store.put('posts', row['id'], row)
         if doc.get('content_type') == 'sponsor':
             from core.sponsor_flow import require_sponsor_approval
             require_sponsor_approval(store, row)
@@ -60,8 +64,9 @@ def publish_draft(root, store, client, doc, today, mode='approval'):
         raise ValueError('동일 내용의 글이 이미 있음 → 기존 post_id를 확인하세요')
     count = sum(p.get('date') == today for p in existing)
     results = inspect_document(root, doc, today=today, daily_count=count,
-                               limit=row.get('daily_limit', 2), recent=recent_documents(store, doc))
+                               limit=row.get('daily_limit', 2), recent=recent_documents(store, doc), store=store)
     require_ready(results)
+    require_approval(root, store, client, doc, row, mode, results)
     if row['status'] in ('future', 'publish'):
         return check_remote_status(store, client, row)
     if row['doc'] != doc:
@@ -94,6 +99,8 @@ def check_remote_status(store, client, row):
     except Exception:
         recall_post(store, client, row)
         raise
+    if remote['status'] in ('future', 'publish'):
+        row['server_history'] = list(dict.fromkeys([*row.get('server_history', []), remote['status']]))
     row.update(status=remote['status'], server_date=remote['date'], url=remote['link'])
     store.put('posts', row['id'], row)
     return row

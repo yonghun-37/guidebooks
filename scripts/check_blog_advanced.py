@@ -40,6 +40,12 @@ def check(root=ROOT):
             raise ValueError(f'{chapter}: commands.md의 공통 명령 불일치')
         canonical.setdefault(chapter, []).append(unix)
     errors, chapters = [], []
+    if 'python blog.py status --costs' not in canonical.get('A4', []):
+        errors.append('A4: 비용 기록 읽기 명령 누락')
+    scenario_output = json.loads((kit / 'course/expected/E2E/outputs.json').read_text())
+    scenario_text = scenario_output.get('python blog.py run --scenarios', {}).get('stdout', '')
+    if '✔ 통과: bypass_attempts' not in scenario_text:
+        errors.append('E2E: 우회 시도 묶음 성공 출력 누락')
     files = sorted((root / 'site-blog/advanced').glob('*.html'))
     if len(files) != 14:
         errors.append(f'심화 장 수 {len(files)}: 14개 필요')
@@ -49,6 +55,8 @@ def check(root=ROOT):
         commands, primary, shown, sources = [], [], {}, 0
         for element in page.elements:
             attrs = element.attrs
+            if element.tag == 'code' and not element.text.strip():
+                errors.append(f'{chapter}: 빈 코드 예시')
             if element.tag == 'code' and 'data-run' in attrs:
                 commands.append({'os': attrs['data-run'], 'section': section_id(element),
                                  'text': element.text, 'course': attrs.get('data-course') == chapter})

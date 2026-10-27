@@ -32,7 +32,8 @@
       "path": "samples/books.png",
       "alt": "가상 그림책꽂이 그림",
       "child_photo": false,
-      "permissions": "직접 제작"
+      "permissions": "직접 제작",
+      "kind": "illustration"
     }
   ],
   "commercial_relations": [
@@ -51,7 +52,10 @@
       "maker": "가상 제작사",
       "certification_scheme": "제품 분류 확인 완료",
       "recall_check": "해당 모델 확인 완료",
-      "ad_review_scope": "해당 범위 확인 완료"
+      "ad_review_scope": "해당 범위 확인 완료",
+      "recall_status": "none_found",
+      "classification_basis": "가상 제품 분류 자료 확인",
+      "regulated_category": "other"
     }
   ],
   "contract": {

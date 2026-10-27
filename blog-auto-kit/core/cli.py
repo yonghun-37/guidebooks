@@ -41,6 +41,7 @@ def add_options(sub, name):
     if name == 'publish':
         sub.add_argument('--prepare', action='store_true', help='공개하지 않고 서버 초안 저장')
     if name == 'status':
+        sub.add_argument('--costs', action='store_true', help='A4 비용 예약·확정 기록 읽기(서버 연결 없음)')
         sub.add_argument('--mock', action='store_true', help='내장 mock 서버에 실제 HTTP 연결 검사')
         sub.add_argument('--advance-days', type=int, default=0, help='mock 시계만 앞으로 이동')
     if name == 'sponsor':
@@ -49,5 +50,5 @@ def add_options(sub, name):
         for flag, help_text in [('ops', 'A11 알림·백업·예약 예시'),
                                 ('restore', 'A11 저장된 백업 복원'),
                                 ('audit', 'A12 출시 전 점검표'),
-                                ('scenarios', '6종 안전·복구 시나리오')]:
+                                ('scenarios', '7종 안전·복구 시나리오')]:
             sub.add_argument('--' + flag, action='store_true', help=help_text)

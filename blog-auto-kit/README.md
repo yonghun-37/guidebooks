@@ -8,14 +8,14 @@ Python **3.11 이상**으로 네트워크·계정·유료 키 없이 실행합�
 2. 진단: `python course.py doctor`.
 3. 완주: `python blog.py run --sample`. `output/drafts/info.html`과 `output/analytics/weekly.html`을 엽니다. 기본 mock에서 초안·가상 승인 시연·예약까지 확인합니다.
 
-실제 사용자가 승인하는 실습은 `python blog.py gate --sample info --approve 서윤`입니다. 관문 통과, 광고주 확인, 사람 승인, 서버 공개 확인은 각각 기록합니다. 건강·안전·협찬·제휴·아이 사진/경험·기존 글 갱신은 자동 모드에서도 승인이 필요합니다.
+실제 사용자가 승인하는 실습은 `python blog.py gate --sample info --approve 서윤`입니다. 관문 통과, 광고주 확인, 사람 승인, 서버 공개 확인은 각각 기록합니다. 자동 발행은 설정으로 허용한 info/play 유형, 모든 관문 pass, 전체 내용의 위험 신호 없음, 서버 신규 확인을 모두 만족한 글만 가능합니다. 건강·안전·협찬·제휴·아이 사진/경험·기존 글 갱신은 자동 모드에서도 승인이 필요합니다. 지원하는 JPEG·PNG는 실제 형식으로 검사하고 메타데이터를 제거해 재검사한 공개용 사본만 업로드합니다. 약 이름·식별·표시 문구 검사는 보조 장치이며 원문과 사진 내용은 사람이 확인합니다.
 
 | 장 | 명령 색인 |
 |---|---|
 | A1 | `course.py doctor`, `blog.py status --mock`, `blog.py run --sample` |
 | A2 | `blog.py pages` |
 | A3 | `blog.py topics` |
-| A4 | `blog.py draft` |
+| A4 | `blog.py draft`, `blog.py status --costs` |
 | A5 | `blog.py gate` |
 | A6 | `blog.py publish --prepare` → `gate --approve` → `publish` → `status` |
 | A7 | `blog.py ads` |
@@ -28,7 +28,7 @@ Python **3.11 이상**으로 네트워크·계정·유료 키 없이 실행합�
 
 본문에 복사할 정확한 순서는 [course/commands.md](course/commands.md)입니다. `python course.py start A9`는 앞 장 산출물을 복원합니다. `python course.py check A9`는 파일·SQLite·명령 출력을 비교합니다. `python course.py reset`은 실습 상태를 지웁니다(`.env` 보존).
 
-예상 출력 재생성은 `python course/build_expected.py`, 검증은 `python course/build_expected.py --check`입니다. 테스트는 `python -m pip install -r requirements-dev.lock` 후 `python -m pytest -q`로 실행합니다. 저장소의 `bash scripts/repro_blog_advanced.sh`는 빈 폴더와 새 venv에서 전 장과 6종 시나리오를 검사합니다.
+예상 출력 재생성은 `python course/build_expected.py`, 검증은 `python course/build_expected.py --check`입니다. 테스트는 `python -m pip install -r requirements-dev.lock` 후 `python -m pytest -q`로 실행합니다. 저장소의 `bash scripts/repro_blog_advanced.sh`는 빈 폴더와 새 venv에서 전 장과 우회 시도 묶음을 포함한 7종 시나리오를 검사합니다.
 
 설정은 `config.example.toml`을 `config.toml`로 복사해 바꿉니다. 비밀은 `.env`에만 넣습니다. 로컬/실제 WordPress와 키 교체·백업 안내는 [ops/README.md](ops/README.md)를 보세요. mock 서버는 각 명령이 임시 로컬 포트에서 켜고 끕니다.
 

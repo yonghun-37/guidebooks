@@ -2,7 +2,7 @@
 import json
 import re
 from pathlib import Path
-from gates.risk import is_health
+from gates.risk import is_health, content_text, IDENTIFICATION, MEDICINE
 from gates.privacy_exif import inspect_exif
 from gates.body import body_text, html_text
 
@@ -15,19 +15,21 @@ def result(rule, decision, field, reason, action, evidence, human=False):
 
 def health_checks(doc):
     """건강 주장의 출처와 고정 응급 문구를 확인한다."""
-    out = []; text = body_text(doc)
-    if is_health(doc) or any(x in text for x in ('해열제', '아세트아미노펜', '이부프로펜')):
+    out = []; text = body_text(doc); all_text = content_text(doc)
+    if is_health(doc):
         out.append(result('health_safety.H1', 'review', 'risk_flags', '건강·안전 주제는 사람 검토가 필요합니다.', '의료 근거와 문맥을 확인하세요.', ['BXF-091'], True))
         sources = doc.get('source_notes', [])
         if not sources or any(not s.get('official') or not s.get('age_range') or not s.get('checked_on') or not s.get('country') or not s.get('claims') for s in sources):
             out.append(result('health_safety.H2', 'review', 'source_notes', '공식 출처·월령·기준일이 부족합니다.', '공식 자료를 보완하세요.', ['BX077'], False))
-        if any(x in text for x in ('집에서 지켜봐도', '해열제 용량', '아세트아미노펜', '이부프로펜', 'mg 복용')) or re.search(r'\d+(?:\.\d+)?\s*(?:mg|밀리그램|ml|밀리리터)\s*(?:을|를)?\s*(?:먹|복용|투여)', text, re.I):
+        if any(x in all_text for x in ('집에서 지켜봐도', '해열제 용량', '아스피린', '아세트아미노펜', '이부프로펜')) or MEDICINE.search(all_text):
             out.append(result('health_safety.H3', 'block', 'markdown', '약이나 자가 관찰 판정이 포함되어 있습니다.', '해당 문장을 제거하세요.', ['NB-SICK-06']))
     topics = set(doc.get('emergency_topics', []))
-    subject = doc.get('title', '') + ' ' + doc.get('description', '')
+    subject = all_text
     for word, topic in (('발열', 'fever'), ('황달', 'jaundice'), ('구토', 'vomit'), ('배꼽', 'navel'), ('저체온', 'cold'), ('발진', 'rash'), ('호흡', 'breathing'), ('수유', 'feeding'), ('부모 위기', 'parent'), ('울음', 'cry')):
         if word in subject:
             topics.add(topic)
+    if is_health(doc) and not topics:
+        out.append(result('health_safety.H4', 'review', 'markdown', '건강 글의 공통 응급 문구 적용 여부를 확인해야 합니다.', '해당 응급 신호가 있으면 공통 문구를 그대로 넣고 사람이 검토하세요.', ['BXF-091'], True))
     for topic in sorted(topics):
         row = next((r for r in EMERGENCY if r['id'] == topic), None)
         if row is None or row['text'] not in text:
@@ -43,10 +45,12 @@ def privacy_checks(doc, root=None):
     out = []; media = doc.get('media', [])
     if doc.get('photos') or doc.get('experience') or any(m.get('child_photo') for m in media):
         out.append(result('child_privacy.C1', 'review', 'media', '아이 사진 또는 경험은 사람 확인이 필요합니다.', '공개 범위를 직접 검토하세요.', ['BXF-052', 'BXF-091'], True))
-    text = body_text(doc)
+    text = content_text(doc)
     sensitive = r'(?:아이\s*생일|아이\s*실명|어린이집|병원명|집\s*주소|생활\s*위치)\s*[:：]\s*\S+'
     if re.search(sensitive, text):
         out.append(result('child_privacy.C2', 'block', 'markdown', '아이의 식별 정보가 포함되어 있습니다.', '식별 정보를 제거하세요.', ['BXF-054']))
+    elif IDENTIFICATION.search(text):
+        out.append(result('child_privacy.C2', 'review', 'document', '아이 이름·병원·어린이집 등 식별 의심 표현이 있습니다.', '사람이 문맥과 결합 식별 가능성을 확인하고 제거하세요.', ['BXF-054'], True))
     form = doc.get('contact_form')
     if form and (form.get('data_minimized') is not True or form.get('notice_matches') is not True):
         out.append(result('child_privacy.C4', 'review', 'contact_form', '문의 양식의 수집·고지 범위가 불명확합니다.', '수집을 중지하고 고지와 항목을 확인하세요.', ['BXF-056'], False))
@@ -59,11 +63,11 @@ def privacy_checks(doc, root=None):
         exif = False
         if not candidate.is_relative_to(base) or not candidate.is_file():
             out.append(result('child_privacy.C2', 'review', 'media.path', '미디어 경로를 확인할 수 없습니다.', '키트 안의 실제 파일을 확인하세요.', ['BXF-054'], False))
-        if candidate.is_relative_to(base) and candidate.is_file() and candidate.suffix.lower() in ('.jpg', '.jpeg'):
+        if candidate.is_relative_to(base) and candidate.is_file():
             try:
                 exif = bool(inspect_exif(candidate.read_bytes()))
             except ValueError:
-                out.append(result('child_privacy.C2', 'review', 'media.path', 'JPEG 파일을 검사할 수 없습니다.', '이미지를 다시 확인하세요.', ['BXF-054'], False))
+                out.append(result('child_privacy.C2', 'review', 'media.path', '실제 형식의 이미지 파일을 검사할 수 없습니다.', '이미지를 다시 확인하세요.', ['BXF-054'], False))
         if m.get('exif') or m.get('gps') or exif:
             out.append(result('child_privacy.C2', 'block', 'media', '위치 또는 EXIF 정보가 남아 있습니다.', '메타데이터를 제거하고 다시 검사하세요.', ['BXF-054']))
     return out
@@ -71,17 +75,8 @@ def privacy_checks(doc, root=None):
 def disclosure_checks(doc):
     """관계 표시와 실제 경험의 출처를 점검한다."""
     out = []; relations = doc.get('commercial_relations', []); text = doc.get('markdown', '')
-    opening = doc.get('title', '') + ' ' + text.split('\n\n', 1)[0]
-    final_opening = doc.get('title', '') + ' ' + html_text(doc.get('html', '').split('</p>', 1)[0])
-    for rel in relations:
-        kind = rel.get('kind', '')
-        words = ('수수료', '제휴') if kind == 'affiliate' else ('협찬', '무료 제공', '무료제공', '광고비', '유료광고')
-        if not any(w in opening for w in words) or not any(w in final_opening for w in words):
-            rule = 'disclosure.D2' if any(w in text for w in words) else 'disclosure.D1'
-            out.append(result(rule, 'block', 'commercial_relations', '경제적 관계가 첫부분에 표시되지 않았습니다.', '실제 관계를 첫부분에 밝히세요.', ['BXF-035', 'BXF-038']))
-    kinds = {r.get('kind') for r in relations}
-    if len(kinds) > 1 and any(r['rule_id'] in ('disclosure.D1', 'disclosure.D2') for r in out):
-        out.append(result('disclosure.D5', 'block', 'commercial_relations', '복수의 경제적 관계 중 일부가 표시되지 않았습니다.', '각 관계를 모두 공개하세요.', ['BXF-038']))
+    from gates.body import relation_disclosure_checks
+    out.extend(relation_disclosure_checks(doc))
     if relations and any(m.get('independent_reuse') or m.get('photo_recommendation') for m in doc.get('media', [])):
         out.append(result('disclosure.D3', 'review', 'media', '독립 사용되는 사진의 표시 여부를 확인해야 합니다.', '사진 표시 또는 예외를 확인하세요.', ['BXF-037'], False))
     needs = doc.get('content_type') == 'sponsor' or (relations and not doc.get('comparison_only'))

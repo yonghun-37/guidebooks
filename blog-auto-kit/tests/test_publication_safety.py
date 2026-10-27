@@ -107,7 +107,7 @@ def test_brand_review_does_not_approve(env):
     store.put('sponsors', 'shelf', {'state': 'brand_review'})
     setup_row(root, store, client, doc)
     with pytest.raises(ValueError): publish_draft(root, store, client, doc, TODAY, 'auto')
-    assert not client.calls
+    assert not any(call[0] == 'POST' for call in client.calls)
 
 
 def test_timeout_after_creation_reconciles_without_second_post(env):
@@ -132,7 +132,7 @@ def test_unknown_slug_ambiguous_never_reposts(env, found):
     client.found = found
     for _ in range(2):
         with pytest.raises(ValueError): prepare_draft(root, store, client, doc, TODAY)
-    assert not client.calls
+    assert not any(call[0] == 'POST' for call in client.calls)
 
 
 def test_existing_post_updated_without_new_post(env):
@@ -167,10 +167,12 @@ def test_concurrent_schedules_respect_shared_daily_limit(env, monkeypatch):
 
 def test_changed_media_bytes_cannot_keep_old_draft_approval(env):
     root, store, client, doc = env
-    (root / 'image.svg').write_text('first')
-    doc['media'] = [{'path': 'image.svg'}]
+    from samples.make_images import draw_books, fake_exif_jpeg
+    from gates.privacy_exif import strip_exif
+    (root / 'image.png').write_bytes(draw_books())
+    doc['media'] = [{'path': 'image.png'}]
     setup_row(root, store, client, doc, approval=True)
-    (root / 'image.svg').write_text('second')
+    (root / 'image.png').write_bytes(strip_exif(fake_exif_jpeg()))
     row = prepare_draft(root, store, client, doc, TODAY)
     assert not row.get('approval')
     assert any(call[0] == 'POST' for call in client.calls)

@@ -11,7 +11,7 @@ if str(KIT_ROOT) not in sys.path:
 from core.state import Store
 from course import scenario_cases as cases
 
-NAMES = ('mock_normal', 'regulated_refusal', 'missing_data', 'reapproval', 'timeout_no_duplicate', 'backup_restore')
+NAMES = ('mock_normal', 'regulated_refusal', 'missing_data', 'reapproval', 'timeout_no_duplicate', 'backup_restore', 'bypass_attempts')
 
 
 def run_scenarios(kit_root: Path) -> dict:
@@ -31,7 +31,7 @@ def run_scenarios(kit_root: Path) -> dict:
 
 
 def main():
-    """여섯 결과를 화면에 표시한다."""
+    """일곱 결과를 화면에 표시한다."""
     for name, row in run_scenarios(KIT_ROOT).items():
         print(f"✔ 통과: {name} — {row['evidence']}")
 

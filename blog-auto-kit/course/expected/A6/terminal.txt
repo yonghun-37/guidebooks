@@ -2,7 +2,7 @@ $ python blog.py publish --sample info --prepare
 ✔ 통과: WordPress post_id=1 · future
 private/state.sqlite3
 $ python blog.py gate --sample info --approve 서윤
-✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb
+✔ 통과: 현재 최종본 사람 승인 · 51f274513fb8
 output/gates/info.txt
 $ python blog.py publish --sample info
 ✔ 통과: WordPress post_id=1 · future

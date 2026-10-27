@@ -20,6 +20,7 @@ Python 3.11 이상을 설치하고 키트 폴더에서 시작하세요. 기본 �
 | A4 | `python blog.py draft --sample info` | `python blog.py draft --sample info` |
 | A4 | `python blog.py draft --sample play` | `python blog.py draft --sample play` |
 | A4 | `python blog.py draft --sample affiliate` | `python blog.py draft --sample affiliate` |
+| A4 | `python blog.py status --costs` | `python blog.py status --costs` |
 | A5 | `python blog.py gate --sample info` | `python blog.py gate --sample info` |
 | A5 | `python blog.py gate --sample play` | `python blog.py gate --sample play` |
 | A6 | `python blog.py publish --sample info --prepare` | `python blog.py publish --sample info --prepare` |

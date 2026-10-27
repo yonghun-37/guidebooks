@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 빈 폴더의 새 가상환경에서 교과서 명령과 6종 시나리오를 재현한다.
+# 빈 폴더의 새 가상환경에서 교과서 명령과 7종 시나리오(우회 시도 묶음 포함)를 재현한다.
 set -Eeuo pipefail
 REPRO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
 python3 "$REPRO_ROOT/scripts/check_blog_advanced.py" --check
@@ -41,7 +41,7 @@ PY
   "$REPRO_PY" -m pip install -q --disable-pip-version-check --no-cache-dir -r "$REPRO_COPY/requirements-dev.lock"
   (
     cd -- "$REPRO_COPY"
-    export PYTHONIOENCODING=utf-8 PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1
+    export PYTHONIOENCODING=utf-8 PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1
     "$REPRO_PY" course/execute.py --all
     "$REPRO_PY" course/build_expected.py --check
     "$REPRO_PY" -m pytest -q

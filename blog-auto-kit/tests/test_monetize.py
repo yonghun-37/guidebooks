@@ -34,7 +34,7 @@ class SponsorTests(unittest.TestCase):
         store = Store()
         register_link(store, {'id': 'a', 'url': 'https://example.test/a'})
         with tempfile.TemporaryDirectory() as root:
-            result = prepare_affiliate(root, store, {'html': '<a href="https://example.test/a">광고</a><a href="https://example.test/b">출처</a>', 'commercial_relations': []})
+            result = prepare_affiliate(root, store, {'markdown': '[광고](https://example.test/a)[출처](https://example.test/b)', 'commercial_relations': []})
         self.assertIn('href="https://example.test/a" rel="sponsored"', result['html'])
         self.assertIn('<a href="https://example.test/b">', result['html'])
 
@@ -89,7 +89,7 @@ class SponsorTests(unittest.TestCase):
 
     def test_offer_contract_and_product_classification(self):
         from monetize.sponsor.ledger import assess_offer
-        product = {'product_type': '그림책꽂이', 'intended_use': '정리', 'model': 'A', 'maker': '가상', 'certification_scheme': '확인', 'recall_check': '확인', 'ad_review_scope': '확인'}
+        product = {'product_type': '그림책꽂이', 'intended_use': '정리', 'model': 'A', 'maker': '가상', 'certification_scheme': '확인', 'recall_check': '확인', 'ad_review_scope': '확인', 'recall_status': 'none_found', 'classification_basis': '가상 품목 분류 자료', 'regulated_category': 'other'}
         doc = {'product_records': [product], 'contract': {'ai_allowed': False}, 'commercial_relations': [{'kind': 'sponsor'}]}
         self.assertEqual(assess_offer(doc)['decision'], 'accepted')
         doc['contract']['ai_allowed'] = None

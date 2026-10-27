@@ -1,5 +1,6 @@
 """초안을 저장하고 불명확한 생성 결과는 조회만으로 복구한다."""
-import mimetypes
+from pathlib import Path
+from gates.privacy_exif import image_format, inspect_exif, strip_exif
 from urllib.error import URLError
 from core.approval import inspect_document, require_ready
 from core.hashes import content_hash, approval_hash, digest
@@ -26,9 +27,17 @@ def remote_assets(root, client, doc):
     hashes = {}
     for item in doc.get('media', []):
         path = root / item['path']
-        mime = mimetypes.guess_type(path.name)[0] or 'application/octet-stream'
-        data = path.read_bytes()
-        response = client.upload_media(data, path.name, mime)
+        data = strip_exif(path.read_bytes())
+        if inspect_exif(data):
+            raise ValueError('공개용 사본에 메타데이터가 남아 있습니다')
+        kind = image_format(data)
+        extension, mime = ('.jpg', 'image/jpeg') if kind == 'JPEG' else ('.png', 'image/png')
+        public = Path(root) / 'private/public-media' / (digest(data) + extension)
+        public.parent.mkdir(parents=True, exist_ok=True)
+        public.write_bytes(data)
+        if inspect_exif(public.read_bytes()):
+            raise ValueError('공개용 사본 재검사 실패')
+        response = client.upload_media(public.read_bytes(), public.name, mime)
         media.append(response['id'])
         hashes[str(response['id'])] = digest(data)
     return {'categories': categories, 'tags': tags, 'media': media, 'media_hashes': hashes,
@@ -42,9 +51,9 @@ def post_payload(doc, row):
             'tags': assets['tags'], 'featured_media': next(iter(assets['media']), 0)}
 
 
-def prepare_draft(root, store, client, doc, today):
-    require_ready(inspect_document(root, doc, today=today, recent=recent_documents(store, doc)))
-    ident, digest = doc['content_id'], content_hash(doc)
+def prepare_draft(root, store, client, doc, today, auto_allowed_types=()):
+    require_ready(inspect_document(root, doc, today=today, recent=recent_documents(store, doc), store=store))
+    ident = doc['content_id']
     row = store.get('posts', ident)
     if row and row['destination'] != client.destination:
         raise ValueError('목적지 변경 → 별도 키트 폴더에서 새 연결을 시작하세요')
@@ -53,8 +62,10 @@ def prepare_draft(root, store, client, doc, today):
         return reconcile(store, client, row, key)
     if row and row.get('post_id'):
         return update_draft(root, store, client, doc, row, today)
-    row = {'id': ident, 'content_hash': digest, 'slug': 'bx-' + ident + '-' + digest[:12],
-           'destination': client.destination, 'status': 'sending', 'doc': doc, 'date': today}
+    row = discover_record(client, doc, today, auto_allowed_types)
+    if row['is_update']:
+        store.put('posts', ident, row)
+        return update_draft(root, store, client, doc, row, today)
     if not store.claim(key, {'id': key, 'state': 'sending'}):
         raise ValueError('중복 실행 잠금 → status로 이전 실행을 확인하세요')
     store.put('posts', ident, row)
@@ -75,7 +86,32 @@ def prepare_draft(root, store, client, doc, today):
     return row
 
 
+def discover_record(client, doc, today, auto_allowed_types):
+    """서버의 post_id 또는 안정적인 slug로 기존 글을 먼저 찾는다."""
+    slug = doc.get('slug') or 'bx-' + doc['content_id']
+    found = client.find_slug(slug)
+    if doc.get('post_id'):
+        remote = client.request('GET', f"posts/{int(doc['post_id'])}?context=edit")
+        found = [remote]
+        slug = remote['slug']
+    if len(found) > 1:
+        raise ValueError('같은 slug의 서버 글이 여러 개입니다 → 서버에서 확인하세요')
+    row = {'id': doc['content_id'], 'content_hash': content_hash(doc), 'slug': slug,
+           'destination': client.destination, 'status': 'sending', 'doc': doc, 'date': today,
+           'is_update': bool(found), 'server_new_confirmed': not found,
+           'server_checked': True, 'auto_allowed_types': list(auto_allowed_types)}
+    if found:
+        row.update(post_id=found[0]['id'], status=found[0]['status'])
+    return row
+
+
 def update_draft(root, store, client, doc, row, today):
+    remote = client.request('GET', f"posts/{row['post_id']}?context=edit")
+    row['is_update'] = True
+    row['server_new_confirmed'] = False
+    row['server_checked'] = True
+    row['server_history'] = list(dict.fromkeys([*row.get('server_history', []), remote['status']]))
+    store.put('posts', doc['content_id'], row)
     if row['doc'] == doc and row.get('draft_hash') == approval_hash(root, doc):
         from wordpress.integrity import verify_remote
         try:
@@ -83,7 +119,7 @@ def update_draft(root, store, client, doc, row, today):
             return row
         except ValueError:
             pass
-    if row['status'] == 'future':
+    if remote['status'] in ('future', 'publish'):
         client.request('POST', f"posts/{row['post_id']}", {'status': 'draft'})
     if doc.get('content_type') == 'sponsor':
         from core.sponsor_flow import invalidate_sponsor

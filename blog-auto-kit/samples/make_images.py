@@ -1,11 +1,12 @@
-"""표준 라이브러리로 그림책 PNG와 가짜 EXIF JPEG를 만든다."""
+"""표준 라이브러리로 그림책 PNG와 가짜 EXIF·XMP JPEG를 만든다."""
 import base64
 import binascii
 import struct
 import zlib
 from pathlib import Path
 
-JPEG_BASE = '/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////2wBDAf//////////////////////////////////////////////////////////////////////////////////////wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAF//8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAwEBPwF//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAgEBPwF//8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQAGPwJ//8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPyF//9oADAMBAAIAAwAAABD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAEDAQE/EAf/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/EAf/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/9oACAEBAAE/EAf/2Q=='
+# 고정 합성 픽셀을 Pillow로 정상 인코딩한 16×16 JPEG(실행 시 Pillow 불필요).
+JPEG_BASE = '/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAQABADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDFooorkPmj/9k='
 
 
 def chunk(kind, data):
@@ -34,7 +35,7 @@ def draw_books():
 
 
 def fake_exif_jpeg():
-    """제조사 FAKE와 좌표 0,0을 가진 TIFF EXIF를 삽입한다."""
+    """정상 16×16 합성 JPEG에 제조사 FAKE·좌표 0,0과 XMP를 삽입한다."""
     entry = lambda tag, kind, count, value: struct.pack('<HHI', tag, kind, count) + value
     offset = lambda n: struct.pack('<I', n)
     tiff = b'II' + struct.pack('<HI', 42, 8) + struct.pack('<H', 2)
@@ -44,8 +45,15 @@ def fake_exif_jpeg():
     tiff += entry(3, 2, 2, b'E\0\0\0') + entry(4, 5, 3, offset(122)) + offset(0)
     tiff += struct.pack('<II', 0, 1) * 6
     payload = b'Exif\0\0' + tiff
+    xmp = (b'http://ns.adobe.com/xap/1.0/\0'
+           b'<x:xmpmeta xmlns:x="adobe:ns:meta/">'
+           b'<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">'
+           b'<rdf:Description xmlns:exif="http://ns.adobe.com/exif/1.0/" '
+           b'exif:GPSLatitude="0,0N" exif:GPSLongitude="0,0E"/>'
+           b'</rdf:RDF></x:xmpmeta>')
     image = base64.b64decode(JPEG_BASE)
-    return image[:2] + b'\xff\xe1' + struct.pack('>H', len(payload) + 2) + payload + image[2:]
+    app1 = lambda value: b'\xff\xe1' + struct.pack('>H', len(value) + 2) + value
+    return image[:2] + app1(payload) + app1(xmp) + image[2:]
 
 
 def main():

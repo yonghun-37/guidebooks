@@ -1,0 +1,7 @@
+{
+  "python": "Python 3.11.15",
+  "exit_code": 1,
+  "stdout": "✖ 막힘: 설정 25줄 ad_after_h2: 양의 정수가 필요함 → ad_after_h2=2로 고치세요\n",
+  "stderr": "",
+  "inserted_error": "설정 25줄 ad_after_h2: 양의 정수가 필요함 → ad_after_h2=2로 고치세요"
+}
