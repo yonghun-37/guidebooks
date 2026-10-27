@@ -69,11 +69,12 @@ def operations_action(root, store, args):
         restore(root, root / 'output/backups/blog.zip')
         print('✔ 통과: SQLite·mock WordPress·설정 복구')
     elif args.audit:
+        fields = '\n  확인자: \n  근거 파일·주소: \n  보류 이유·다음 확인일: \n'
         write_text(root / 'output/launch-checklist.txt',
-                   '2026년 10월 조사 기준\n[ ] 출처·저작권·제품 자료\n'
-                   '[ ] 경제관계 첫부분 표시·실제 경험\n[ ] 아동 정보·사진 사람 확인\n'
-                   '[ ] 개인정보 실제 흐름·광고코드 확인\n[ ] 현물·부가세·사업자등록 국세청126 확인\n'
-                   '[ ] 육아휴직급여 소득활동 고용센터1350 확인\n')
+                   '2026년 10월 조사 기준\n' + ''.join('[ ] ' + label + fields for label in (
+                       '출처·저작권·제품 자료', '경제관계 첫부분 표시·실제 경험', '아동 정보·사진 사람 확인',
+                       '개인정보 실제 흐름·광고코드 확인', '현물·부가세·사업자등록 국세청126 확인',
+                       '육아휴직급여 소득활동 고용센터1350 확인')))
         print('✔ 통과: 출시 전 사람이 확인할 점검표\noutput/launch-checklist.txt')
     else:
         from course.scenarios import run_scenarios

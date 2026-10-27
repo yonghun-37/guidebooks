@@ -68,3 +68,8 @@
   [data-advanced] .book-layout { display: block; }
   [data-advanced] .chapter-block { break-inside: auto; }
 }
+
+/* 공통 구성: 결과물과 확인 사항을 절 이동에서도 바로 찾는다. */
+[data-advanced] #make .make-box { margin-top: 0; }
+[data-advanced] #caution h2 { margin-top: 0; font-size: 1.1rem; }
+[data-advanced] .term-link { text-underline-offset: .2em; }

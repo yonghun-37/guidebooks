@@ -64,10 +64,14 @@ class BlogAppendicesTests(unittest.TestCase):
     def test_glossary_has_distinct_tokens_and_merged_terms(self):
         doc=Document((self.site/'glossary.html').read_text()).root
         ids=[n.attrs['id'] for n in nodes(doc) if 'data-glossary-entry' in n.attrs]
-        self.assertEqual(len(ids),43)
+        self.assertEqual(len(ids),68)
         self.assertEqual(len(ids),len(set(ids)))
         self.assertIn('token',ids)
         self.assertIn('ai-token',ids)
+        self.assertIn('mock',ids)
+        self.assertIn('assert',ids)
+        self.assertIn('id="advanced-tools"', (self.site/'lab.html').read_text())
+        self.assertIn('id="advanced-sources"', (self.site/'credits.html').read_text())
         for path in self.site.rglob('*.html'):
             for node in nodes(Document(path.read_text()).root):
                 if 'data-term' in node.attrs:

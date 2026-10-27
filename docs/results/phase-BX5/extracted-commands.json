@@ -1,0 +1,647 @@
+{
+  "chapters": [
+    {
+      "chapter": "A0",
+      "file": "site-blog/advanced/00-start.html",
+      "primary": [],
+      "blocks": [],
+      "outputs": 0,
+      "sources": 1
+    },
+    {
+      "chapter": "A1",
+      "file": "site-blog/advanced/01-environment.html",
+      "primary": [
+        "python course.py doctor",
+        "python blog.py status --mock",
+        "python blog.py run --sample"
+      ],
+      "blocks": [
+        {
+          "os": "windows",
+          "section": "start",
+          "text": "py -3.11 --version\nGet-Location\nGet-ChildItem\npy -3.11 -m venv .venv\n.\\.venv\\Scripts\\Activate.ps1",
+          "course": false
+        },
+        {
+          "os": "unix",
+          "section": "start",
+          "text": "python3.11 --version\npwd\nls\npython3.11 -m venv .venv\nsource .venv/bin/activate",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python --version",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A1",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python course.py doctor",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py status --mock",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py run --sample",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python course.py start A1",
+          "course": false
+        },
+        {
+          "os": "windows",
+          "section": "change",
+          "text": "Copy-Item config.example.toml config.toml",
+          "course": false
+        },
+        {
+          "os": "unix",
+          "section": "change",
+          "text": "cp config.example.toml config.toml",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py run --sample",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A1\npython course.py doctor\npython blog.py status --mock\npython blog.py run --sample\npython course.py check A1",
+          "course": false
+        }
+      ],
+      "outputs": 3,
+      "sources": 1
+    },
+    {
+      "chapter": "A2",
+      "file": "site-blog/advanced/02-wordpress.html",
+      "primary": [
+        "python blog.py pages"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A2",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "pages",
+          "text": "python blog.py pages",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py pages",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A2\npython blog.py pages\npython course.py check A2",
+          "course": false
+        }
+      ],
+      "outputs": 1,
+      "sources": 1
+    },
+    {
+      "chapter": "A3",
+      "file": "site-blog/advanced/03-topics.html",
+      "primary": [
+        "python blog.py topics"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A3",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "topics",
+          "text": "python blog.py topics",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py topics",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A3\npython blog.py topics\npython course.py check A3",
+          "course": false
+        }
+      ],
+      "outputs": 1,
+      "sources": 1
+    },
+    {
+      "chapter": "A4",
+      "file": "site-blog/advanced/04-drafts.html",
+      "primary": [
+        "python blog.py draft --sample info",
+        "python blog.py draft --sample play",
+        "python blog.py draft --sample affiliate"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A4",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "draft",
+          "text": "python blog.py draft --sample info\npython blog.py draft --sample play\npython blog.py draft --sample affiliate",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py draft --sample info",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A4\npython blog.py draft --sample info\npython blog.py draft --sample play\npython blog.py draft --sample affiliate\npython course.py check A4",
+          "course": false
+        }
+      ],
+      "outputs": 3,
+      "sources": 1
+    },
+    {
+      "chapter": "A5",
+      "file": "site-blog/advanced/05-gates.html",
+      "primary": [
+        "python blog.py gate --sample info",
+        "python blog.py gate --sample play"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A5",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "gate",
+          "text": "python blog.py gate --sample info\npython blog.py gate --sample play",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py gate --sample play",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A5\npython blog.py gate --sample info\npython blog.py gate --sample play\npython course.py check A5",
+          "course": false
+        }
+      ],
+      "outputs": 2,
+      "sources": 1
+    },
+    {
+      "chapter": "A6",
+      "file": "site-blog/advanced/06-publish.html",
+      "primary": [
+        "python blog.py publish --sample info --prepare",
+        "python blog.py gate --sample info --approve 서윤",
+        "python blog.py publish --sample info",
+        "python blog.py status --sample info",
+        "python blog.py status --sample info --advance-days 2"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A6",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "prepare",
+          "text": "python blog.py publish --sample info --prepare",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "approve",
+          "text": "python blog.py gate --sample info --approve 서윤",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "schedule",
+          "text": "python blog.py publish --sample info\npython blog.py status --sample info\npython blog.py status --sample info --advance-days 2",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py publish --sample info",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py publish --sample info",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py publish --sample info --prepare\npython blog.py gate --sample info --approve 서윤\npython blog.py publish --sample info\npython blog.py status --sample info",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A6\npython blog.py publish --sample info --prepare\npython blog.py gate --sample info --approve 서윤\npython blog.py publish --sample info\npython blog.py status --sample info\npython blog.py status --sample info --advance-days 2\npython course.py check A6",
+          "course": false
+        }
+      ],
+      "outputs": 5,
+      "sources": 1
+    },
+    {
+      "chapter": "A7",
+      "file": "site-blog/advanced/07-ads.html",
+      "primary": [
+        "python blog.py ads"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A7",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py ads",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python course.py check A7",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py ads",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A7\npython blog.py ads\npython course.py check A7",
+          "course": false
+        }
+      ],
+      "outputs": 1,
+      "sources": 1
+    },
+    {
+      "chapter": "A8",
+      "file": "site-blog/advanced/08-affiliate.html",
+      "primary": [
+        "python blog.py affiliate --sample affiliate",
+        "python blog.py gate --sample affiliate"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A8",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py affiliate --sample affiliate",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py gate --sample affiliate",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python course.py check A8\npython course.py start A8",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py affiliate --sample affiliate",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A8\npython blog.py affiliate --sample affiliate\npython blog.py gate --sample affiliate\npython course.py check A8",
+          "course": false
+        }
+      ],
+      "outputs": 2,
+      "sources": 1
+    },
+    {
+      "chapter": "A9",
+      "file": "site-blog/advanced/09-sponsorship.html",
+      "primary": [
+        "python blog.py sponsor demo",
+        "python blog.py draft --sample sponsor --human-notes",
+        "python blog.py publish --sample sponsor --prepare",
+        "python blog.py gate --sample sponsor --approve 서윤",
+        "python blog.py publish --sample sponsor",
+        "python blog.py status --sample sponsor --advance-days 2",
+        "python blog.py sponsor settle"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A9",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "media-kit",
+          "text": "python blog.py sponsor demo",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "write",
+          "text": "python blog.py draft --sample sponsor --human-notes\npython blog.py publish --sample sponsor --prepare",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "approve",
+          "text": "python blog.py gate --sample sponsor --approve 서윤\npython blog.py publish --sample sponsor\npython blog.py status --sample sponsor --advance-days 2",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "report",
+          "text": "python blog.py sponsor settle",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python course.py start A9",
+          "course": false
+        },
+        {
+          "os": "windows",
+          "section": "change",
+          "text": "Copy-Item config.example.toml config.toml",
+          "course": false
+        },
+        {
+          "os": "unix",
+          "section": "change",
+          "text": "cp config.example.toml config.toml",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py sponsor demo\npython blog.py draft --sample sponsor --human-notes\npython blog.py publish --sample sponsor --prepare",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py publish --sample sponsor",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A9\npython blog.py sponsor demo\npython blog.py draft --sample sponsor --human-notes\npython blog.py publish --sample sponsor --prepare\npython blog.py gate --sample sponsor --approve 서윤\npython blog.py publish --sample sponsor\npython blog.py status --sample sponsor --advance-days 2\npython blog.py sponsor settle\npython course.py check A9",
+          "course": false
+        }
+      ],
+      "outputs": 7,
+      "sources": 1
+    },
+    {
+      "chapter": "A10",
+      "file": "site-blog/advanced/10-analytics.html",
+      "primary": [
+        "python blog.py report"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A10",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py report",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python course.py start A10",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py report",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A10\npython blog.py report\npython course.py check A10",
+          "course": false
+        }
+      ],
+      "outputs": 1,
+      "sources": 1
+    },
+    {
+      "chapter": "A11",
+      "file": "site-blog/advanced/11-operations.html",
+      "primary": [
+        "python blog.py run --ops",
+        "python blog.py run --restore"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A11",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py run --ops",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py run --restore",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python course.py start A11",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py run --ops",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py run --restore",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A11\npython blog.py run --ops\npython blog.py run --restore\npython course.py check A11",
+          "course": false
+        }
+      ],
+      "outputs": 2,
+      "sources": 1
+    },
+    {
+      "chapter": "A12",
+      "file": "site-blog/advanced/12-policy.html",
+      "primary": [
+        "python blog.py run --audit"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start A12",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "steps",
+          "text": "python blog.py run --audit",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py run --audit",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python course.py start A12\npython blog.py run --audit",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start A12\npython blog.py run --audit\npython course.py check A12",
+          "course": false
+        }
+      ],
+      "outputs": 1,
+      "sources": 1
+    },
+    {
+      "chapter": "E2E",
+      "file": "site-blog/advanced/e2e.html",
+      "primary": [
+        "python blog.py run --scenarios"
+      ],
+      "blocks": [
+        {
+          "os": "common",
+          "section": "start",
+          "text": "python course.py start E2E",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "scenarios",
+          "text": "python blog.py run --scenarios",
+          "course": true
+        },
+        {
+          "os": "common",
+          "section": "change",
+          "text": "python blog.py run --scenarios",
+          "course": false
+        },
+        {
+          "os": "common",
+          "section": "checkpoint",
+          "text": "python course.py start E2E\npython blog.py run --scenarios\npython course.py check E2E",
+          "course": false
+        }
+      ],
+      "outputs": 1,
+      "sources": 1
+    }
+  ],
+  "errors": []
+}

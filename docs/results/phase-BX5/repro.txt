@@ -1,0 +1,143 @@
+본문↔키트: 14장 / 명령 30 / 출력 30 / 발췌 14 / 불일치 0
+Python 3.11.15 클린룸 시작
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+$ python blog.py status --mock
+✔ 통과: mock REST 연결
+output/status.json
+$ python blog.py run --sample
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+✔ 통과: A1 산출물·상태·터미널 출력 일치
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html
+✔ 통과: A2 산출물·상태·터미널 출력 일치
+$ python blog.py topics
+✔ 통과: 주제 지도 생성
+output/topics.json
+✔ 통과: A3 산출물·상태·터미널 출력 일치
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+$ python blog.py draft --sample play
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/play.json
+$ python blog.py draft --sample affiliate
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/affiliate.json
+✔ 통과: A4 산출물·상태·터미널 출력 일치
+$ python blog.py gate --sample info
+✔ 통과: 자동 검사 완료
+output/gates/info.txt
+$ python blog.py gate --sample play
+✔ 통과: 자동 검사 완료 · 사람 검토 대기
+output/gates/play.txt
+✔ 통과: A5 산출물·상태·터미널 출력 일치
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb
+output/gates/info.txt
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+$ python blog.py status --sample info
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python blog.py status --sample info --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+✔ 통과: A6 산출물·상태·터미널 출력 일치
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json
+✔ 통과: A7 산출물·상태·터미널 출력 일치
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+$ python blog.py gate --sample affiliate
+✔ 통과: 자동 검사 완료
+output/gates/affiliate.txt
+✔ 통과: A8 산출물·상태·터미널 출력 일치
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+$ python blog.py gate --sample sponsor --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · f62525058efb
+output/gates/sponsor.txt
+$ python blog.py publish --sample sponsor
+✔ 통과: WordPress post_id=2 · future
+private/state.sqlite3
+$ python blog.py status --sample sponsor --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python blog.py sponsor settle
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+✔ 통과: A9 산출물·상태·터미널 출력 일치
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html
+✔ 통과: A10 산출물·상태·터미널 출력 일치
+$ python blog.py run --ops
+✔ 통과: 알림 드라이런·예약 예시·백업
+output/schedules/cron.txt
+output/schedules/launchd.plist
+output/schedules/windows.txt
+output/backups/blog.zip
+$ python blog.py run --restore
+✔ 통과: SQLite·mock WordPress·설정 복구
+✔ 통과: A11 산출물·상태·터미널 출력 일치
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+✔ 통과: A12 산출물·상태·터미널 출력 일치
+$ python blog.py run --scenarios
+✔ 통과: mock_normal
+✔ 통과: regulated_refusal
+✔ 통과: missing_data
+✔ 통과: reapproval
+✔ 통과: timeout_no_duplicate
+✔ 통과: backup_restore
+✔ 통과: E2E 산출물·상태·터미널 출력 일치
+✔ 통과: A1 예상 출력 생성
+✔ 통과: A2 예상 출력 생성
+✔ 통과: A3 예상 출력 생성
+✔ 통과: A4 예상 출력 생성
+✔ 통과: A5 예상 출력 생성
+✔ 통과: A6 예상 출력 생성
+✔ 통과: A7 예상 출력 생성
+✔ 통과: A8 예상 출력 생성
+✔ 통과: A9 예상 출력 생성
+✔ 통과: A10 예상 출력 생성
+✔ 통과: A11 예상 출력 생성
+✔ 통과: A12 예상 출력 생성
+✔ 통과: E2E 예상 출력 생성
+✔ 통과: 예상 출력과 장 시작 상태 일치
+........................................................................ [ 58%]
+....................................................                     [100%]
+124 passed in 6.98s
+재현 결과: 통과 1 / 실패 0

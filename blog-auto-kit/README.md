@@ -12,7 +12,7 @@ Python **3.11 이상**으로 네트워크·계정·유료 키 없이 실행합�
 
 | 장 | 명령 색인 |
 |---|---|
-| A1 | `course.py doctor`, `blog.py status --mock` |
+| A1 | `course.py doctor`, `blog.py status --mock`, `blog.py run --sample` |
 | A2 | `blog.py pages` |
 | A3 | `blog.py topics` |
 | A4 | `blog.py draft` |
@@ -33,3 +33,5 @@ Python **3.11 이상**으로 네트워크·계정·유료 키 없이 실행합�
 설정은 `config.example.toml`을 `config.toml`로 복사해 바꿉니다. 비밀은 `.env`에만 넣습니다. 로컬/실제 WordPress와 키 교체·백업 안내는 [ops/README.md](ops/README.md)를 보세요. mock 서버는 각 명령이 임시 로컬 포트에서 켜고 끕니다.
 
 실연결은 기본 드라이런입니다. 실제 WordPress는 `wordpress.mode=local/live`와 본인 `.env`, 명시적 `--live`가 필요합니다. 쿠팡 live API는 현행 서명·자격·약관 확인 전 비활성입니다. LLM·GA4·GSC 어댑터는 주입된 전송 함수를 모킹 테스트합니다. 자동 관문은 의료·법률 판단이나 사진의 시각 검토를 대신하지 않습니다.
+
+교과서와 키트의 일치 검사는 저장소 루트에서 `python3 scripts/check_blog_advanced.py --check`로 실행합니다. 빈 복사본 재현은 `bash scripts/repro_blog_advanced.sh`, HTML 기본 명령 추출·재현은 `python3.11 scripts/check_blog_advanced.py --check --replay`입니다. A1 맛보기에서 예약한 글은 A6에서 같은 번호로 재사용합니다. 예약 예시 파일은 `report`만 실행하며, 실제 등록·발행은 하지 않습니다.

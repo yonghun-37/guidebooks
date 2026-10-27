@@ -1,0 +1,292 @@
+[
+  {
+    "chapter": "A0",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "automation",
+      "income",
+      "cost",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 3,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A1",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "steps",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 17,
+    "read_table": true,
+    "os_tabs": 2
+  },
+  {
+    "chapter": "A2",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "server",
+      "password",
+      "pages",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 13,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A3",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "topics",
+      "schema",
+      "data",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 9,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A4",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "allow",
+      "draft",
+      "experience",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 5,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A5",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "gate",
+      "decision",
+      "review",
+      "tool",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 7,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A6",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "prepare",
+      "approve",
+      "schedule",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 14,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A7",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "steps",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 17,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A8",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "steps",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 17,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A9",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "review",
+      "media-kit",
+      "write",
+      "approve",
+      "report",
+      "read",
+      "change",
+      "interaction",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 22,
+    "read_table": true,
+    "os_tabs": 1
+  },
+  {
+    "chapter": "A10",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "steps",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 14,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A11",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "steps",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 10,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "A12",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "steps",
+      "search",
+      "disclosure",
+      "privacy",
+      "products",
+      "tax",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 8,
+    "read_table": true,
+    "os_tabs": 0
+  },
+  {
+    "chapter": "E2E",
+    "structure": [
+      "answer",
+      "make",
+      "overview",
+      "start",
+      "steps",
+      "scenarios",
+      "read",
+      "change",
+      "errors",
+      "checkpoint",
+      "caution",
+      "summary"
+    ],
+    "excerpt_lines": 11,
+    "read_table": true,
+    "os_tabs": 0
+  }
+]

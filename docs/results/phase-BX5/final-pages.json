@@ -1,0 +1,366 @@
+{
+  "screens": 60,
+  "console_errors": [],
+  "records": [
+    {
+      "route": "blog/advanced/01-environment.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/01-environment.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/01-environment.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/01-environment.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/01-environment.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/01-environment.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/06-publish.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/06-publish.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/06-publish.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/06-publish.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/06-publish.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/06-publish.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/08-affiliate.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/08-affiliate.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/08-affiliate.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/08-affiliate.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/08-affiliate.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/08-affiliate.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/09-sponsorship.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/09-sponsorship.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/09-sponsorship.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/09-sponsorship.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/09-sponsorship.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/09-sponsorship.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/12-policy.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/12-policy.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/12-policy.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/12-policy.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/12-policy.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/advanced/12-policy.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/glossary.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/glossary.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/glossary.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/glossary.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/glossary.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/glossary.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/credits.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/credits.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/credits.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/credits.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/credits.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/credits.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/lab.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/lab.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/lab.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/lab.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "blog/lab.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "blog/lab.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "index.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "index.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "index.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "index.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "index.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "index.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "progress/index.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "progress/index.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "progress/index.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "progress/index.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "route": "progress/index.html",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "route": "progress/index.html",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    }
+  ]
+}

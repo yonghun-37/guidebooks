@@ -155,6 +155,10 @@ def check(root=None, site='site'):
     sources_path = root / {'site': 'research', 'site-shorts': 'research-shorts', 'site-blog': 'research-blog', 'site-baby': 'research-baby'}[site] / 'SOURCES.md'
     source_pattern = r'\b[A-Z]{1,4}\d{3}\b' if other_book else r'^###\s+(S\d{3})\.'
     sources = set(re.findall(source_pattern, sources_path.read_text(encoding='utf-8'), re.MULTILINE)) if sources_path.is_file() else set()
+    if site == 'site-blog':
+        advanced_sources = root / 'research-blog-advanced/SOURCES.md'
+        if advanced_sources.is_file():
+            sources.update(re.findall(r'^##\s+(BX\d{3})\.', advanced_sources.read_text(encoding='utf-8'), re.MULTILINE))
     citation_pattern = (r'\bY\d{3}\b' if shorts else
                         r'\b[A-Z]{1,4}\d{3}\b' if other_book else r'\bS\d{3}\b')
     glossary = pages.get(root / site / 'glossary.html')
@@ -196,7 +200,11 @@ def check(root=None, site='site'):
                 term_refs += 1
                 if term not in terms:
                     errors.append(f'{label}: 미등록 용어 {term}')
-            for value in (attrs.get('id', ''), attrs.get('href', ''), attrs.get('aria-label', '')):
+            # 외부 URL의 쿼리·코드 줄(#L107)은 인용 번호가 아니다.
+            source_anchor = attrs.get('href', '')
+            if not source_anchor.startswith('#source-'):
+                source_anchor = ''
+            for value in (attrs.get('id', ''), source_anchor, attrs.get('aria-label', '')):
                 cited.update(match.upper() for match in re.findall(citation_pattern, value or '', re.IGNORECASE))
             if tag == 'img':
                 alt = attrs.get('alt')

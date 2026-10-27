@@ -12,6 +12,14 @@ SITE = ROOT / 'site-blog'
 E = html.escape
 
 
+def integrated_section(filename, id_):
+    """통합 단계가 관리하는 심화 구역을 입문 부록 재생성 때 보존한다."""
+    path = SITE / filename
+    source = path.read_text() if path.is_file() else ''
+    match = re.search(r'<section\b[^>]*\bid="' + re.escape(id_) + r'"[^>]*>.*?</section>', source, re.S)
+    return match[0] if match else ''
+
+
 def shell(slug, title, intro, content, scripts=''):
     attr = 'data-chapter' if slug in {'lab', 'glossary'} else 'data-appendix'
     return f'''<!doctype html>
@@ -48,6 +56,7 @@ def catalog():
 
 
 def lab(entries):
+    advanced = integrated_section('lab.html', 'advanced-tools')
     options = ''.join(f'<option value="{t["slug"]}:{t["id"]}">{t["chapter"]}장 · {E(t["title"])}</option>' for t in entries)
     links = ''.join(f'<li><a href="chapters/{t["slug"]}.html#{t["id"]}">{t["chapter"]}장 · {E(t["title"])}</a></li>' for t in entries)
     first = entries[0]
@@ -56,7 +65,7 @@ def lab(entries):
 <p><a id="sim-original" href="chapters/{first['slug']}.html#{first['id']}">원본 장에서 전체 설명 읽기 →</a></p>
 <iframe class="book-frame" id="sim-frame" title="{E(first['title'])}" src="chapters/{first['slug']}.html?embed={first['id']}"></iframe>
 <details class="home-section"><summary>원본 도구 전체 목록</summary><ol>{links}</ol></details><noscript><p>도구를 바꾸려면 위 목록에서 원본을 여세요.</p></noscript>'''
-    (SITE/'lab.html').write_text(shell('lab', '블로그 실험실', '13개 장의 도구를 한곳에서 골라 직접 바꿔 보세요.', content, '<script defer src="assets/lab.js"></script>'))
+    (SITE/'lab.html').write_text(shell('lab', '블로그 실험실', '13개 장의 도구를 한곳에서 골라 직접 바꿔 보세요.', content + advanced, '<script defer src="assets/lab.js"></script>'))
 
 
 def prompts():
@@ -99,6 +108,9 @@ B5_IDS = dict(zip(['프롬프트','대체 텍스트','소유확인','속성','�
 
 
 def glossary(pages):
+    previous = (SITE/'glossary.html').read_text() if (SITE/'glossary.html').is_file() else ''
+    advanced = [entry for entry in re.findall(r'<article\b[^>]*data-glossary-entry[^>]*>.*?</article>', previous, re.S)
+                if 'href="advanced/' in entry]
     terms = {}
     def add(id_, name, desc, page):
         terms.setdefault(id_, dict(id=id_, name=name, description=desc, page=page))
@@ -140,9 +152,10 @@ def glossary(pages):
     cards=''
     for t in sorted(terms.values(),key=lambda t:t['name'].lower()):
         cards+=f'<article class="glossary-entry" id="{t["id"]}" data-glossary-entry data-search="{E(t["name"]+" "+t["id"]+" "+t["description"],quote=True)}"><h2>{E(t["name"])}</h2><p>{E(t["description"])}</p><p><a href="{t["page"]}">본문에서 예와 함께 읽기 →</a></p></article>'
-    content='<label for="term-search">용어·뜻 검색</label><input class="url-field" id="term-search" type="search" placeholder="예: 색인, API, 토큰"><p id="term-count" role="status"></p><div class="glossary-grid">'+cards+'</div><noscript><p>브라우저의 찾기로 용어를 찾으세요.</p></noscript>'
+    advanced = [entry for entry in advanced if re.search(r'\bid="([^"]+)"', entry)[1] not in terms]
+    content='<label for="term-search">용어·뜻 검색</label><input class="url-field" id="term-search" type="search" placeholder="예: 색인, API, 토큰"><p id="term-count" role="status"></p><div class="glossary-grid">'+cards+''.join(advanced)+'</div><noscript><p>브라우저의 찾기로 용어를 찾으세요.</p></noscript>'
     (SITE/'glossary.html').write_text(shell('glossary','용어집','처음 만나는 말의 뜻과 예시를 함께 읽습니다.',content,'<script defer src="assets/glossary.js"></script>'))
-    return len(terms)
+    return len(terms) + len(advanced)
 
 
 def page_label(path):
@@ -155,6 +168,7 @@ def page_label(path):
 
 
 def credits(pages):
+    advanced = integrated_section('credits.html', 'advanced-sources')
     source_map=sources(); cited={}
     for p in pages:
         doc=Document(p.read_text()).root
@@ -172,6 +186,8 @@ def credits(pages):
     content=f'''<p>2026년 10월 조사 기준. 이론·실습·부록에서 실제 인용한 B번호 {len(cited)}개만 모았습니다. 번호가 빠진 곳은 현재 본문에서 인용하지 않은 자료입니다. A는 공식 기관·사업자, B는 독립 조사·튜토리얼, C는 개인 경험 자료입니다.</p><ul class="source-list">{entries}</ul>
 <section class="home-section" id="production"><h2>제작과 예시</h2><p>수아·태오와 블로그 ‘퇴근 후 생활 정보’는 가상입니다. 계산 도구는 공개한 가정에 따른 연습입니다. 가상 수익·경험을 실제 성과로 옮겨 쓰지 마세요.</p><p>HTML·CSS·JavaScript와 SVG 도식은 이 저장소에서 작성했습니다. 참고 사이트에서는 학습 구조와 이동 방식만 참고했습니다. 글꼴은 Pretendard, SIL Open Font License입니다. <a href="assets/licenses/Pretendard-OFL.txt">동봉 라이선스</a></p><p>AI 생성 예시: <a href="assets/img/ai-examples/support-desk.webp">준비물 책상</a>·<a href="assets/img/ai-examples/weekend-river.webp">주말 강변</a>은 <a href="chapters/07-images.html#generate">7장의 실제 프롬프트</a>, <a href="practice/images/support-background.webp">썸네일 배경</a>은 <a href="practice/05-images.html#image-prompt">실습 5의 요청문</a>과 함께 읽으세요. 내장 이미지 생성 기능으로 제작한 설명용 삽화이며 실제 체험의 증거 사진이 아닙니다.</p><p>키트 샘플은 <a href="samples/blog-kit/preview.html">동봉 미리보기</a>에서 읽습니다. 샘플을 그대로 실제 체험담으로 게시하지 마세요.</p></section>
 <section class="home-section"><h2>기록과 확인 범위</h2><p>테마·실습 체크·공개 주소·작업 메모는 이 브라우저에만 저장합니다. 실습의 <a href="practice/e2e.html">전체 체크리스트</a>에서 진행·주소·메모를 삭제할 수 있습니다. 서버로 전송하지 않습니다.</p><p>계정별 최신 화면·생성 한도·심사·정산은 공식 안내와 본인 계정에서 확인하세요. 이 책의 화면 도식은 실제 서비스 화면 캡처가 아닙니다.</p></section>'''
+    content = content.replace('<section class="home-section" id="production">', advanced + '<section class="home-section" id="production">')
+    content = content.replace('수아·태오와 블로그 ‘퇴근 후 생활 정보’는 가상입니다.', '수아·서윤·태오와 블로그 ‘퇴근 후 생활 정보’·‘봄이랑 크는 집’은 가상입니다.')
     (SITE/'credits.html').write_text(shell('credits','출처·크레딧','주장의 원문과 인용 위치, 예시 제작 방식을 확인합니다.',content))
     return len(cited)
 

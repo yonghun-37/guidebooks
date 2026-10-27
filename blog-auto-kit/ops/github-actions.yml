@@ -16,4 +16,4 @@ jobs:
           python-version: '3.11'
       - name: 로컬 예시 실행 (외부 상태 복원·보관은 직접 구성)
         working-directory: blog-auto-kit
-        run: python blog.py run --sample
+        run: python blog.py report

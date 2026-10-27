@@ -1,0 +1,37 @@
+[
+  {
+    "kit": "starter-kit",
+    "interpreter": "starter-kit/.venv/bin/python",
+    "passed": 116,
+    "exit": 0,
+    "stdout_tail": "116 passed in 30.53s"
+  },
+  {
+    "kit": "shorts-kit",
+    "interpreter": "/tmp/shorts-y4k-venv/bin/python",
+    "passed": 38,
+    "exit": 0,
+    "log": "shorts-kit-tests.txt"
+  },
+  {
+    "kit": "blog-kit",
+    "interpreter": "/tmp/blogbook-b6-py311/bin/python",
+    "passed": 97,
+    "exit": 0,
+    "evidence": "pytest -q 실제 exit 0, 기본 quiet 설정으로 개수 요약 생략. collect-only 97개는 blog-kit-collection.txt"
+  },
+  {
+    "kit": "auto-kit",
+    "interpreter": "/tmp/auto-kit-a2-venv/bin/python",
+    "passed": 93,
+    "exit": 0,
+    "stdout_tail": "93 passed in 92.33s (0:01:32)"
+  },
+  {
+    "kit": "blog-auto-kit",
+    "interpreter": "클린룸 Python 3.11.15 venv",
+    "passed": 124,
+    "exit": 0,
+    "log": "repro.txt"
+  }
+]

@@ -54,6 +54,7 @@ def status_action(root, store, client, args):
         if args.sample == 'sponsor':
             record_sponsor_remote(root, store, row, args.today)
     write_json(root / 'output/status.json', {'post_count': len(remote),
-               'posts': [{'id': r['id'], 'status': r['status']} for r in remote]})
+               'posts': [{key: r.get(key, '') for key in ('id', 'status', 'date', 'date_gmt', 'link')}
+                         for r in remote]})
     print('✔ 통과: mock REST 연결' if args.mock else '✔ 통과: 서버 상태 재조회')
     print('output/status.json')

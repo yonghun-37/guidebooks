@@ -16,9 +16,9 @@ def doctor(root, today='2026-10-27'):
         stream.write(b'check')
     try:
         with socket.socket() as sock:
-            sock.bind(('127.0.0.1', 8767))
+            sock.bind(('127.0.0.1', 0))
     except OSError as error:
-        raise ValueError('포트 8767 사용 중 → 해당 mock 서버를 종료하고 doctor를 실행하세요') from error
+        raise ValueError('로컬 임시 포트를 열 수 없음 → 방화벽·로컬 서버 권한을 확인하세요') from error
     checked_today(today)
-    print('✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 포트 8767')
+    print('✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트')
     print(f'✔ 통과: 고정 시계 {today} · 시드 {SEED}')

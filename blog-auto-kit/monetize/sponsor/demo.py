@@ -43,11 +43,13 @@ def _media_kit(base):
 def _tax_csv(base, today, entries):
     """현금·현물·실입금과 평가 근거를 구분해 내보낸다."""
     path = base / 'tax.csv'
-    fields = ['date', 'cash', 'goods', 'valuation_basis', 'withholding', 'paid_amount', 'evidence', 'tax_guide']
+    fields = ['date', 'cash', 'goods', 'valuation_basis', 'return_terms', 'costs', 'withholding', 'paid_amount', 'evidence', 'tax_guide']
     settled = next((e['records'] for e in reversed(entries) if e['state'] == 'settled'), {})
     pending = next((e['records'] for e in reversed(entries) if e['state'] == 'settlement_pending'), {})
     received = next((e['records'] for e in reversed(entries) if e['state'] == 'received'), {})
+    contracted = next((e['records'] for e in reversed(entries) if e['state'] == 'contracted'), {})
     row = {'date': settled.get('paid_at', received.get('received_date', today)), 'cash': '0원(가상)', 'goods': '그림책꽂이 1개(가상)', 'valuation_basis': '제공 명세 확인; 실제 가액 미확정', 'withholding': pending.get('withholding', '해당 여부 확인'), 'paid_amount': settled.get('paid_amount', '미입금'), 'evidence': settled.get('evidence', '가상 계약 v1'), 'tax_guide': TAX_GUIDE}
+    row.update(return_terms=contracted.get('return_terms', '확인 필요'), costs=pending.get('costs', '확인 필요'))
     with path.open('w', encoding='utf-8', newline='') as stream:
         writer = csv.DictWriter(stream, fieldnames=fields, lineterminator='\n'); writer.writeheader(); writer.writerow(row)
     return path

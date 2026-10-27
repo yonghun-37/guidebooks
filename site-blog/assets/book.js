@@ -228,8 +228,8 @@
   ],
   [
     "02-wordpress",
-    "블로그 서버와 필수 페이지",
-    "서버 설정과 필수 페이지"
+    "블로그 서버와 운영 안내 페이지",
+    "서버 설정과 운영 안내 페이지"
   ],
   [
     "03-topics",
@@ -287,7 +287,7 @@
     "mock·로컬·실제 블로그 기록"
   ]
 ];
-  const advanced = advancedRows.map(([slug,title,deliverable],index) => Object.freeze({number:index === 13 ? null : index,slug,title,deliverable,duration:"내 속도로",track:"advanced",part:"심화편(코드 운영)",difficulty:"심화",status:[1,9].includes(index) ? "완성" : "준비 중"}));
+  const advanced = advancedRows.map(([slug,title,deliverable],index) => Object.freeze({number:index === 13 ? null : index,slug,title,deliverable,duration:"내 속도로",track:"advanced",part:"심화편(코드 운영)",difficulty:"심화",status:"완성"}));
   const appendices = [['prompts','프롬프트 모음'],['ai-models','AI 모델·사용처·비용 총정리'],['credits','출처·크레딧']].map(([slug,title])=>Object.freeze({number:null,slug,title,deliverable:slug==='credits'?'실제 인용 원문과 제작 안내':slug==='prompts'?'작업별 복사용 요청문':'모델·사용처·과금 방식과 한 편 비용',track:'appendix',part:'부록',status:'완성'}));
   const tracks = Object.freeze([
     { id: 'theory', title: '(이론) 이론편', chapters },

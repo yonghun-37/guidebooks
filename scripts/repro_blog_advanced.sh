@@ -2,6 +2,7 @@
 # 빈 폴더의 새 가상환경에서 교과서 명령과 6종 시나리오를 재현한다.
 set -Eeuo pipefail
 REPRO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
+python3 "$REPRO_ROOT/scripts/check_blog_advanced.py" --check
 REPRO_TMP=$(mktemp -d)
 REPRO_PASSED=0
 REPRO_FAILED=0

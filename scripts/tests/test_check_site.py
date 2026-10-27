@@ -79,6 +79,15 @@ class CheckSiteTests(unittest.TestCase):
         self.write('site/drafts/sample.html', '<h1 id="목차">목차</h1><a href="?view=1#%EB%AA%A9%EC%B0%A8">앵커</a>')
         self.assertEqual(self.check()['errors'], [])
 
+    def test_blog_advanced_registry_and_external_url_are_distinct(self):
+        self.write('research-blog/SOURCES.md', '## B023. 자료')
+        self.write('research-blog-advanced/SOURCES.md', '## BX001. 심화 자료')
+        self.write('shelf/index.html', '<a href="blog/">블로그</a>')
+        page = self.write('site-blog/index.html', '<a href="https://example.invalid/?bbsId=BS074#L107">코드</a><p>[BX001]</p>')
+        self.assertEqual(checker.check(root=self.root, site='site-blog')['errors'], [])
+        page.write_text('<p>[BX999]</p>')
+        self.assertTrue(any('미등록 출처 BX999' in e for e in checker.check(root=self.root, site='site-blog')['errors']))
+
     def test_malformed_or_outside_reference_is_reported_without_crash(self):
         for href in ('http://[bad', '../../../escape.html', '/reels/'):
             with self.subTest(href=href):

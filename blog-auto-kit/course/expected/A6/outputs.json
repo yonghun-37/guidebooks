@@ -9,9 +9,13 @@
   },
   "python blog.py publish --sample info --prepare": {
     "returncode": 0,
-    "stdout": "✔ 통과: WordPress post_id=1 · draft\nprivate/state.sqlite3\n"
+    "stdout": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3\n"
   },
   "python blog.py status --sample info": {
+    "returncode": 0,
+    "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
+  },
+  "python blog.py status --sample info --advance-days 2": {
     "returncode": 0,
     "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
   }

@@ -1,0 +1,36 @@
+✖ A1: 발췌 course/doctor.py:8:24: 실제 파일 줄과 다름
+✖ A1: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A1: 기본 명령 표시 누락·중복
+✖ A1: 성공 출력 또는 expected 명령 누락·추가
+✖ A1: 성공 출력 불일치 python blog.py run --sample
+✖ A1: 성공 출력 불일치 python course.py doctor
+✖ A2: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A2: 기본 명령 표시 누락·중복
+✖ A3: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A3: 기본 명령 표시 누락·중복
+✖ A4: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A4: 기본 명령 표시 누락·중복
+✖ A5: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A5: 기본 명령 표시 누락·중복
+✖ A6: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A6: 기본 명령 표시 누락·중복
+✖ A6: 성공 출력 또는 expected 명령 누락·추가
+✖ A6: 성공 출력 불일치 python blog.py publish --sample info --prepare
+✖ A6: 성공 출력 불일치 python blog.py status --sample info --advance-days 2
+✖ A7: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A7: 기본 명령 표시 누락·중복
+✖ A8: 성공 출력 중복 A8|python blog.py affiliate --sample affiliate
+✖ A8: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A8: 기본 명령 표시 누락·중복
+✖ A9: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A9: 기본 명령 표시 누락·중복
+✖ A10: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A10: 기본 명령 표시 누락·중복
+✖ A11: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A11: 기본 명령 표시 누락·중복
+✖ A12: 성공 출력 중복 A12|python blog.py run --audit
+✖ A12: 성공 출력 중복 A12|python blog.py run --audit
+✖ A12: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ A12: 기본 명령 표시 누락·중복
+✖ E2E: 본문 기본 명령·순서가 commands.md와 다름: []
+✖ E2E: 기본 명령 표시 누락·중복

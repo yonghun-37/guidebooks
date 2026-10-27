@@ -1,5 +1,13 @@
 {
-  "output/state.json": "9398c62c82f14f57e2bf245a03d5c57769ec95268b0ece8a4086f33fa086427b",
+  "output/analytics/weekly.html": "c096b7c99ce07b0dbcd58c1be9df3c373a0898d51b5c1c762cca2eaa3bd9183b",
+  "output/drafts/info.html": "a1828c20283a64d61f14b054c5e8850f96345450d5fb746eecac03a7cb4d2530",
+  "output/drafts/info.json": "689e585a0163f7a6ac358e4f1dfd7b83c1c1dad3fb40f3f506170fdaadc64ab9",
+  "output/gates/info.json": "45f603ec145b80f66b76584d8b3c862e284f23bf06d7f9950365a0f56c19299e",
+  "output/gates/info.txt": "9d98c30cc33a2f14977f8fca28741befa17a6074cbb94a1f43624e83de96d155",
+  "output/queue.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "output/state.json": "674ad317a966f5d70a1e0b2eb34f47c99d51ed9652851bdba6e501ce0cfaa205",
   "output/status.json": "dfa26809c103e658aaefde45a017cc5cef767bd830a9252646265e0141109e3e",
-  "private/mock-wp/state.json": "1c76266a21ffe3335a8f05fcbba0aca5a9c9912c478ff7ca6f4853f6a3b2745e"
+  "private/events.json": "6c7167f8213f2bedbbd223c1fcc5af997ac873518526d770ab69346b6a6af777",
+  "private/mock-wp/media/1.bin": "746a27c05dab0e1bb948af77314adabc546ab1a3b5171169a1eae0ecd44dcf35",
+  "private/mock-wp/state.json": "82ceab6b4ce3b4b7fb75450c2380ad28cd10c80f6eba0249c39f4ec2c4a4455a"
 }

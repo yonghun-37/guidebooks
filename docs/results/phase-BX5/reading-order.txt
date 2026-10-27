@@ -1,0 +1,469 @@
+
+### A0
+A0 읽는 순서·변경 후 복원 통과
+
+### A1
+$ python3.11 --version
+Python 3.11.15
+$ pwd
+/tmp/bx5-full-reading-t8so0xuk/kit
+$ ls
+README.md
+analytics
+blog.py
+config.example.toml
+content
+core
+course
+course.py
+gates
+monetize
+ops
+providers
+pytest.ini
+requirements-dev.lock
+samples
+tests
+wordpress
+$ python3.11 -m venv .venv
+$ source .venv/bin/activate
+$ python --version
+Python 3.11.15
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+$ python blog.py status --mock
+✔ 통과: mock REST 연결
+output/status.json
+$ python blog.py run --sample
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+$ cp config.example.toml config.toml
+$ python blog.py run --sample
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+$ python course.py start A1
+✔ 통과: A1 시작 상태 복원
+$ python course.py doctor
+✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트
+✔ 통과: 고정 시계 2026-10-27 · 시드 37
+$ python blog.py status --mock
+✔ 통과: mock REST 연결
+output/status.json
+$ python blog.py run --sample
+✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1
+output/drafts/info.html
+output/analytics/weekly.html
+$ python course.py check A1
+✔ 통과: A1 산출물·상태·터미널 출력 일치
+A1 읽는 순서·변경 후 복원 통과
+
+### A2
+$ python course.py start A2
+✔ 통과: A2 시작 상태 복원
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html
+$ python course.py start A2
+✔ 통과: A2 시작 상태 복원
+$ python blog.py pages
+✔ 통과: pages 생성
+output/pages/about.html
+output/pages/privacy.html
+output/pages/contact.html
+output/pages/advertising.html
+$ python course.py check A2
+✔ 통과: A2 산출물·상태·터미널 출력 일치
+A2 읽는 순서·변경 후 복원 통과
+
+### A3
+$ python course.py start A3
+✔ 통과: A3 시작 상태 복원
+$ python blog.py topics
+✔ 통과: 주제 지도 생성
+output/topics.json
+$ python blog.py topics
+✔ 통과: 주제 지도 생성
+output/topics.json
+$ python course.py start A3
+✔ 통과: A3 시작 상태 복원
+$ python blog.py topics
+✔ 통과: 주제 지도 생성
+output/topics.json
+$ python course.py check A3
+✔ 통과: A3 산출물·상태·터미널 출력 일치
+A3 읽는 순서·변경 후 복원 통과
+
+### A4
+$ python course.py start A4
+✔ 통과: A4 시작 상태 복원
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+$ python blog.py draft --sample play
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/play.json
+$ python blog.py draft --sample affiliate
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/affiliate.json
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+$ python course.py start A4
+✔ 통과: A4 시작 상태 복원
+$ python blog.py draft --sample info
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/info.json
+$ python blog.py draft --sample play
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/play.json
+$ python blog.py draft --sample affiliate
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/affiliate.json
+$ python course.py check A4
+✔ 통과: A4 산출물·상태·터미널 출력 일치
+A4 읽는 순서·변경 후 복원 통과
+
+### A5
+$ python course.py start A5
+✔ 통과: A5 시작 상태 복원
+$ python blog.py gate --sample info
+✔ 통과: 자동 검사 완료
+output/gates/info.txt
+$ python blog.py gate --sample play
+✔ 통과: 자동 검사 완료 · 사람 검토 대기
+output/gates/play.txt
+$ python blog.py gate --sample play
+✔ 통과: 자동 검사 완료 · 사람 검토 대기
+output/gates/play.txt
+$ python course.py start A5
+✔ 통과: A5 시작 상태 복원
+$ python blog.py gate --sample info
+✔ 통과: 자동 검사 완료
+output/gates/info.txt
+$ python blog.py gate --sample play
+✔ 통과: 자동 검사 완료 · 사람 검토 대기
+output/gates/play.txt
+$ python course.py check A5
+✔ 통과: A5 산출물·상태·터미널 출력 일치
+A5 읽는 순서·변경 후 복원 통과
+
+### A6
+$ python course.py start A6
+✔ 통과: A6 시작 상태 복원
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb
+output/gates/info.txt
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+$ python blog.py status --sample info
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python blog.py status --sample info --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · publish
+private/state.sqlite3
+$ python blog.py publish --sample info
+✖ 막힘: 승인 후 내용이 바뀜 → gate --approve로 재승인하세요
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · draft
+private/state.sqlite3
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 0bfc6893c3b5
+output/gates/info.txt
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+$ python blog.py status --sample info
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python course.py start A6
+✔ 통과: A6 시작 상태 복원
+$ python blog.py publish --sample info --prepare
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+$ python blog.py gate --sample info --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb
+output/gates/info.txt
+$ python blog.py publish --sample info
+✔ 통과: WordPress post_id=1 · future
+private/state.sqlite3
+$ python blog.py status --sample info
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python blog.py status --sample info --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python course.py check A6
+✔ 통과: A6 산출물·상태·터미널 출력 일치
+A6 읽는 순서·변경 후 복원 통과
+
+### A7
+$ python course.py start A7
+✔ 통과: A7 시작 상태 복원
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json
+$ python course.py check A7
+✔ 통과: A7 산출물·상태·터미널 출력 일치
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json
+$ python course.py start A7
+✔ 통과: A7 시작 상태 복원
+$ python blog.py ads
+✔ 통과: ads 생성
+output/ads/checklist.txt
+output/ads/ads.txt
+output/ads/layout.html
+output/ads/report.html
+output/ads/metrics.json
+$ python course.py check A7
+✔ 통과: A7 산출물·상태·터미널 출력 일치
+A7 읽는 순서·변경 후 복원 통과
+
+### A8
+$ python course.py start A8
+✔ 통과: A8 시작 상태 복원
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+$ python blog.py gate --sample affiliate
+✔ 통과: 자동 검사 완료
+output/gates/affiliate.txt
+$ python course.py check A8
+✔ 통과: A8 산출물·상태·터미널 출력 일치
+$ python course.py start A8
+✔ 통과: A8 시작 상태 복원
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+$ python course.py start A8
+✔ 통과: A8 시작 상태 복원
+$ python blog.py affiliate --sample affiliate
+✔ 통과: affiliate 생성
+output/affiliate/links.csv
+$ python blog.py gate --sample affiliate
+✔ 통과: 자동 검사 완료
+output/gates/affiliate.txt
+$ python course.py check A8
+✔ 통과: A8 산출물·상태·터미널 출력 일치
+A8 읽는 순서·변경 후 복원 통과
+
+### A9
+$ python course.py start A9
+✔ 통과: A9 시작 상태 복원
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+$ python blog.py gate --sample sponsor --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · f62525058efb
+output/gates/sponsor.txt
+$ python blog.py publish --sample sponsor
+✔ 통과: WordPress post_id=2 · future
+private/state.sqlite3
+$ python blog.py status --sample sponsor --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python blog.py sponsor settle
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+$ python course.py start A9
+✔ 통과: A9 시작 상태 복원
+$ cp config.example.toml config.toml
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+$ python blog.py publish --sample sponsor
+✖ 막힘: 사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요
+$ python course.py start A9
+✔ 통과: A9 시작 상태 복원
+$ python blog.py sponsor demo
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+$ python blog.py draft --sample sponsor --human-notes
+✔ 통과: 초안 생성 · 경험은 사람 칸
+output/drafts/sponsor.json
+$ python blog.py publish --sample sponsor --prepare
+✔ 통과: WordPress post_id=2 · draft
+private/state.sqlite3
+$ python blog.py gate --sample sponsor --approve 서윤
+✔ 통과: 현재 최종본 사람 승인 · f62525058efb
+output/gates/sponsor.txt
+$ python blog.py publish --sample sponsor
+✔ 통과: WordPress post_id=2 · future
+private/state.sqlite3
+$ python blog.py status --sample sponsor --advance-days 2
+✔ 통과: 서버 상태 재조회
+output/status.json
+$ python blog.py sponsor settle
+✔ 통과: sponsor 생성
+output/sponsor/media-kit.html
+output/sponsor/advertiser-report.html
+output/sponsor/tax.csv
+output/sponsor/ledger.csv
+$ python course.py check A9
+✔ 통과: A9 산출물·상태·터미널 출력 일치
+A9 읽는 순서·변경 후 복원 통과
+
+### A10
+$ python course.py start A10
+✔ 통과: A10 시작 상태 복원
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html
+$ python course.py start A10
+✔ 통과: A10 시작 상태 복원
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html
+$ python course.py start A10
+✔ 통과: A10 시작 상태 복원
+$ python blog.py report
+✔ 통과: report 생성
+output/analytics/weekly.html
+$ python course.py check A10
+✔ 통과: A10 산출물·상태·터미널 출력 일치
+A10 읽는 순서·변경 후 복원 통과
+
+### A11
+$ python course.py start A11
+✔ 통과: A11 시작 상태 복원
+$ python blog.py run --ops
+✔ 통과: 알림 드라이런·예약 예시·백업
+output/schedules/cron.txt
+output/schedules/launchd.plist
+output/schedules/windows.txt
+output/backups/blog.zip
+$ python blog.py run --restore
+✔ 통과: SQLite·mock WordPress·설정 복구
+$ python course.py start A11
+✔ 통과: A11 시작 상태 복원
+$ python blog.py run --ops
+✔ 통과: 알림 드라이런·예약 예시·백업
+output/schedules/cron.txt
+output/schedules/launchd.plist
+output/schedules/windows.txt
+output/backups/blog.zip
+$ python blog.py run --restore
+✔ 통과: SQLite·mock WordPress·설정 복구
+$ python course.py start A11
+✔ 통과: A11 시작 상태 복원
+$ python blog.py run --ops
+✔ 통과: 알림 드라이런·예약 예시·백업
+output/schedules/cron.txt
+output/schedules/launchd.plist
+output/schedules/windows.txt
+output/backups/blog.zip
+$ python blog.py run --restore
+✔ 통과: SQLite·mock WordPress·설정 복구
+$ python course.py check A11
+✔ 통과: A11 산출물·상태·터미널 출력 일치
+A11 읽는 순서·변경 후 복원 통과
+
+### A12
+$ python course.py start A12
+✔ 통과: A12 시작 상태 복원
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+$ python course.py start A12
+✔ 통과: A12 시작 상태 복원
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+$ python course.py start A12
+✔ 통과: A12 시작 상태 복원
+$ python blog.py run --audit
+✔ 통과: 출시 전 사람이 확인할 점검표
+output/launch-checklist.txt
+$ python course.py check A12
+✔ 통과: A12 산출물·상태·터미널 출력 일치
+A12 읽는 순서·변경 후 복원 통과
+
+### E2E
+$ python course.py start E2E
+✔ 통과: E2E 시작 상태 복원
+$ python blog.py run --scenarios
+✔ 통과: mock_normal
+✔ 통과: regulated_refusal
+✔ 통과: missing_data
+✔ 통과: reapproval
+✔ 통과: timeout_no_duplicate
+✔ 통과: backup_restore
+$ python blog.py run --scenarios
+✔ 통과: mock_normal
+✔ 통과: regulated_refusal
+✔ 통과: missing_data
+✔ 통과: reapproval
+✔ 통과: timeout_no_duplicate
+✔ 통과: backup_restore
+$ python course.py start E2E
+✔ 통과: E2E 시작 상태 복원
+$ python blog.py run --scenarios
+✔ 통과: mock_normal
+✔ 통과: regulated_refusal
+✔ 통과: missing_data
+✔ 통과: reapproval
+✔ 통과: timeout_no_duplicate
+✔ 통과: backup_restore
+$ python course.py check E2E
+✔ 통과: E2E 산출물·상태·터미널 출력 일치
+E2E 읽는 순서·변경 후 복원 통과
+전체 읽는 순서: 138 명령 / 예상한 차단 2 / 체크포인트 13장 통과

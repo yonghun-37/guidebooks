@@ -1,0 +1,692 @@
+[
+  {
+    "command": "python3.11 --version",
+    "returncode": 0,
+    "stdout": "Python 3.11.15\n"
+  },
+  {
+    "command": "pwd",
+    "returncode": 0,
+    "stdout": "/tmp/bx5-full-reading-t8so0xuk/kit\n"
+  },
+  {
+    "command": "ls",
+    "returncode": 0,
+    "stdout": "README.md\nanalytics\nblog.py\nconfig.example.toml\ncontent\ncore\ncourse\ncourse.py\ngates\nmonetize\nops\nproviders\npytest.ini\nrequirements-dev.lock\nsamples\ntests\nwordpress\n"
+  },
+  {
+    "command": "python3.11 -m venv .venv",
+    "returncode": 0,
+    "stdout": ""
+  },
+  {
+    "command": "source .venv/bin/activate",
+    "returncode": 0,
+    "stdout": ""
+  },
+  {
+    "command": "python --version",
+    "returncode": 0,
+    "stdout": "Python 3.11.15\n"
+  },
+  {
+    "command": "python course.py start A1",
+    "returncode": 0,
+    "stdout": "✔ 통과: A1 시작 상태 복원\n"
+  },
+  {
+    "command": "python course.py doctor",
+    "returncode": 0,
+    "stdout": "✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트\n✔ 통과: 고정 시계 2026-10-27 · 시드 37\n"
+  },
+  {
+    "command": "python blog.py status --mock",
+    "returncode": 0,
+    "stdout": "✔ 통과: mock REST 연결\noutput/status.json\n"
+  },
+  {
+    "command": "python blog.py run --sample",
+    "returncode": 0,
+    "stdout": "✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1\noutput/drafts/info.html\noutput/analytics/weekly.html\n"
+  },
+  {
+    "command": "python course.py start A1",
+    "returncode": 0,
+    "stdout": "✔ 통과: A1 시작 상태 복원\n"
+  },
+  {
+    "command": "cp config.example.toml config.toml",
+    "returncode": 0,
+    "stdout": ""
+  },
+  {
+    "command": "python blog.py run --sample",
+    "returncode": 0,
+    "stdout": "✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1\noutput/drafts/info.html\noutput/analytics/weekly.html\n"
+  },
+  {
+    "command": "python course.py start A1",
+    "returncode": 0,
+    "stdout": "✔ 통과: A1 시작 상태 복원\n"
+  },
+  {
+    "command": "python course.py doctor",
+    "returncode": 0,
+    "stdout": "✔ 통과: Python 3.11 이상 · 폴더 · 쓰기 권한 · 임시 포트\n✔ 통과: 고정 시계 2026-10-27 · 시드 37\n"
+  },
+  {
+    "command": "python blog.py status --mock",
+    "returncode": 0,
+    "stdout": "✔ 통과: mock REST 연결\noutput/status.json\n"
+  },
+  {
+    "command": "python blog.py run --sample",
+    "returncode": 0,
+    "stdout": "✔ 통과: mock 초안 → 가상 사람 승인 시연 → 예약 1\noutput/drafts/info.html\noutput/analytics/weekly.html\n"
+  },
+  {
+    "command": "python course.py check A1",
+    "returncode": 0,
+    "stdout": "✔ 통과: A1 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A2",
+    "returncode": 0,
+    "stdout": "✔ 통과: A2 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py pages",
+    "returncode": 0,
+    "stdout": "✔ 통과: pages 생성\noutput/pages/about.html\noutput/pages/privacy.html\noutput/pages/contact.html\noutput/pages/advertising.html\n"
+  },
+  {
+    "command": "python blog.py pages",
+    "returncode": 0,
+    "stdout": "✔ 통과: pages 생성\noutput/pages/about.html\noutput/pages/privacy.html\noutput/pages/contact.html\noutput/pages/advertising.html\n"
+  },
+  {
+    "command": "python course.py start A2",
+    "returncode": 0,
+    "stdout": "✔ 통과: A2 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py pages",
+    "returncode": 0,
+    "stdout": "✔ 통과: pages 생성\noutput/pages/about.html\noutput/pages/privacy.html\noutput/pages/contact.html\noutput/pages/advertising.html\n"
+  },
+  {
+    "command": "python course.py check A2",
+    "returncode": 0,
+    "stdout": "✔ 통과: A2 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A3",
+    "returncode": 0,
+    "stdout": "✔ 통과: A3 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py topics",
+    "returncode": 0,
+    "stdout": "✔ 통과: 주제 지도 생성\noutput/topics.json\n"
+  },
+  {
+    "command": "python blog.py topics",
+    "returncode": 0,
+    "stdout": "✔ 통과: 주제 지도 생성\noutput/topics.json\n"
+  },
+  {
+    "command": "python course.py start A3",
+    "returncode": 0,
+    "stdout": "✔ 통과: A3 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py topics",
+    "returncode": 0,
+    "stdout": "✔ 통과: 주제 지도 생성\noutput/topics.json\n"
+  },
+  {
+    "command": "python course.py check A3",
+    "returncode": 0,
+    "stdout": "✔ 통과: A3 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A4",
+    "returncode": 0,
+    "stdout": "✔ 통과: A4 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py draft --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/info.json\n"
+  },
+  {
+    "command": "python blog.py draft --sample play",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/play.json\n"
+  },
+  {
+    "command": "python blog.py draft --sample affiliate",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/affiliate.json\n"
+  },
+  {
+    "command": "python blog.py draft --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/info.json\n"
+  },
+  {
+    "command": "python course.py start A4",
+    "returncode": 0,
+    "stdout": "✔ 통과: A4 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py draft --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/info.json\n"
+  },
+  {
+    "command": "python blog.py draft --sample play",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/play.json\n"
+  },
+  {
+    "command": "python blog.py draft --sample affiliate",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/affiliate.json\n"
+  },
+  {
+    "command": "python course.py check A4",
+    "returncode": 0,
+    "stdout": "✔ 통과: A4 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A5",
+    "returncode": 0,
+    "stdout": "✔ 통과: A5 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py gate --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/info.txt\n"
+  },
+  {
+    "command": "python blog.py gate --sample play",
+    "returncode": 0,
+    "stdout": "✔ 통과: 자동 검사 완료 · 사람 검토 대기\noutput/gates/play.txt\n"
+  },
+  {
+    "command": "python blog.py gate --sample play",
+    "returncode": 0,
+    "stdout": "✔ 통과: 자동 검사 완료 · 사람 검토 대기\noutput/gates/play.txt\n"
+  },
+  {
+    "command": "python course.py start A5",
+    "returncode": 0,
+    "stdout": "✔ 통과: A5 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py gate --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/info.txt\n"
+  },
+  {
+    "command": "python blog.py gate --sample play",
+    "returncode": 0,
+    "stdout": "✔ 통과: 자동 검사 완료 · 사람 검토 대기\noutput/gates/play.txt\n"
+  },
+  {
+    "command": "python course.py check A5",
+    "returncode": 0,
+    "stdout": "✔ 통과: A5 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A6",
+    "returncode": 0,
+    "stdout": "✔ 통과: A6 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py publish --sample info --prepare",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py gate --sample info --approve 서윤",
+    "returncode": 0,
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb\noutput/gates/info.txt\n"
+  },
+  {
+    "command": "python blog.py publish --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py status --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
+  },
+  {
+    "command": "python blog.py status --sample info --advance-days 2",
+    "returncode": 0,
+    "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
+  },
+  {
+    "command": "python blog.py publish --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=1 · publish\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py publish --sample info",
+    "returncode": 1,
+    "stdout": "✖ 막힘: 승인 후 내용이 바뀜 → gate --approve로 재승인하세요\n"
+  },
+  {
+    "command": "python blog.py publish --sample info --prepare",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=1 · draft\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py gate --sample info --approve 서윤",
+    "returncode": 0,
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · 0bfc6893c3b5\noutput/gates/info.txt\n"
+  },
+  {
+    "command": "python blog.py publish --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py status --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
+  },
+  {
+    "command": "python course.py start A6",
+    "returncode": 0,
+    "stdout": "✔ 통과: A6 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py publish --sample info --prepare",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py gate --sample info --approve 서윤",
+    "returncode": 0,
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · 3a9c0b7dbafb\noutput/gates/info.txt\n"
+  },
+  {
+    "command": "python blog.py publish --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=1 · future\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py status --sample info",
+    "returncode": 0,
+    "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
+  },
+  {
+    "command": "python blog.py status --sample info --advance-days 2",
+    "returncode": 0,
+    "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
+  },
+  {
+    "command": "python course.py check A6",
+    "returncode": 0,
+    "stdout": "✔ 통과: A6 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A7",
+    "returncode": 0,
+    "stdout": "✔ 통과: A7 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py ads",
+    "returncode": 0,
+    "stdout": "✔ 통과: ads 생성\noutput/ads/checklist.txt\noutput/ads/ads.txt\noutput/ads/layout.html\noutput/ads/report.html\noutput/ads/metrics.json\n"
+  },
+  {
+    "command": "python course.py check A7",
+    "returncode": 0,
+    "stdout": "✔ 통과: A7 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python blog.py ads",
+    "returncode": 0,
+    "stdout": "✔ 통과: ads 생성\noutput/ads/checklist.txt\noutput/ads/ads.txt\noutput/ads/layout.html\noutput/ads/report.html\noutput/ads/metrics.json\n"
+  },
+  {
+    "command": "python course.py start A7",
+    "returncode": 0,
+    "stdout": "✔ 통과: A7 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py ads",
+    "returncode": 0,
+    "stdout": "✔ 통과: ads 생성\noutput/ads/checklist.txt\noutput/ads/ads.txt\noutput/ads/layout.html\noutput/ads/report.html\noutput/ads/metrics.json\n"
+  },
+  {
+    "command": "python course.py check A7",
+    "returncode": 0,
+    "stdout": "✔ 통과: A7 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A8",
+    "returncode": 0,
+    "stdout": "✔ 통과: A8 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py affiliate --sample affiliate",
+    "returncode": 0,
+    "stdout": "✔ 통과: affiliate 생성\noutput/affiliate/links.csv\n"
+  },
+  {
+    "command": "python blog.py gate --sample affiliate",
+    "returncode": 0,
+    "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/affiliate.txt\n"
+  },
+  {
+    "command": "python course.py check A8",
+    "returncode": 0,
+    "stdout": "✔ 통과: A8 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A8",
+    "returncode": 0,
+    "stdout": "✔ 통과: A8 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py affiliate --sample affiliate",
+    "returncode": 0,
+    "stdout": "✔ 통과: affiliate 생성\noutput/affiliate/links.csv\n"
+  },
+  {
+    "command": "python course.py start A8",
+    "returncode": 0,
+    "stdout": "✔ 통과: A8 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py affiliate --sample affiliate",
+    "returncode": 0,
+    "stdout": "✔ 통과: affiliate 생성\noutput/affiliate/links.csv\n"
+  },
+  {
+    "command": "python blog.py gate --sample affiliate",
+    "returncode": 0,
+    "stdout": "✔ 통과: 자동 검사 완료\noutput/gates/affiliate.txt\n"
+  },
+  {
+    "command": "python course.py check A8",
+    "returncode": 0,
+    "stdout": "✔ 통과: A8 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A9",
+    "returncode": 0,
+    "stdout": "✔ 통과: A9 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py sponsor demo",
+    "returncode": 0,
+    "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n"
+  },
+  {
+    "command": "python blog.py draft --sample sponsor --human-notes",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/sponsor.json\n"
+  },
+  {
+    "command": "python blog.py publish --sample sponsor --prepare",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=2 · draft\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py gate --sample sponsor --approve 서윤",
+    "returncode": 0,
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · f62525058efb\noutput/gates/sponsor.txt\n"
+  },
+  {
+    "command": "python blog.py publish --sample sponsor",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=2 · future\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py status --sample sponsor --advance-days 2",
+    "returncode": 0,
+    "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
+  },
+  {
+    "command": "python blog.py sponsor settle",
+    "returncode": 0,
+    "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n"
+  },
+  {
+    "command": "python course.py start A9",
+    "returncode": 0,
+    "stdout": "✔ 통과: A9 시작 상태 복원\n"
+  },
+  {
+    "command": "cp config.example.toml config.toml",
+    "returncode": 0,
+    "stdout": ""
+  },
+  {
+    "command": "python blog.py sponsor demo",
+    "returncode": 0,
+    "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n"
+  },
+  {
+    "command": "python blog.py draft --sample sponsor --human-notes",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/sponsor.json\n"
+  },
+  {
+    "command": "python blog.py publish --sample sponsor --prepare",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=2 · draft\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py publish --sample sponsor",
+    "returncode": 1,
+    "stdout": "✖ 막힘: 사람 승인 대기 → blog.py gate --approve 검토자명을 실행하세요\n"
+  },
+  {
+    "command": "python course.py start A9",
+    "returncode": 0,
+    "stdout": "✔ 통과: A9 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py sponsor demo",
+    "returncode": 0,
+    "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n"
+  },
+  {
+    "command": "python blog.py draft --sample sponsor --human-notes",
+    "returncode": 0,
+    "stdout": "✔ 통과: 초안 생성 · 경험은 사람 칸\noutput/drafts/sponsor.json\n"
+  },
+  {
+    "command": "python blog.py publish --sample sponsor --prepare",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=2 · draft\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py gate --sample sponsor --approve 서윤",
+    "returncode": 0,
+    "stdout": "✔ 통과: 현재 최종본 사람 승인 · f62525058efb\noutput/gates/sponsor.txt\n"
+  },
+  {
+    "command": "python blog.py publish --sample sponsor",
+    "returncode": 0,
+    "stdout": "✔ 통과: WordPress post_id=2 · future\nprivate/state.sqlite3\n"
+  },
+  {
+    "command": "python blog.py status --sample sponsor --advance-days 2",
+    "returncode": 0,
+    "stdout": "✔ 통과: 서버 상태 재조회\noutput/status.json\n"
+  },
+  {
+    "command": "python blog.py sponsor settle",
+    "returncode": 0,
+    "stdout": "✔ 통과: sponsor 생성\noutput/sponsor/media-kit.html\noutput/sponsor/advertiser-report.html\noutput/sponsor/tax.csv\noutput/sponsor/ledger.csv\n"
+  },
+  {
+    "command": "python course.py check A9",
+    "returncode": 0,
+    "stdout": "✔ 통과: A9 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A10",
+    "returncode": 0,
+    "stdout": "✔ 통과: A10 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py report",
+    "returncode": 0,
+    "stdout": "✔ 통과: report 생성\noutput/analytics/weekly.html\n"
+  },
+  {
+    "command": "python course.py start A10",
+    "returncode": 0,
+    "stdout": "✔ 통과: A10 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py report",
+    "returncode": 0,
+    "stdout": "✔ 통과: report 생성\noutput/analytics/weekly.html\n"
+  },
+  {
+    "command": "python course.py start A10",
+    "returncode": 0,
+    "stdout": "✔ 통과: A10 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py report",
+    "returncode": 0,
+    "stdout": "✔ 통과: report 생성\noutput/analytics/weekly.html\n"
+  },
+  {
+    "command": "python course.py check A10",
+    "returncode": 0,
+    "stdout": "✔ 통과: A10 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A11",
+    "returncode": 0,
+    "stdout": "✔ 통과: A11 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py run --ops",
+    "returncode": 0,
+    "stdout": "✔ 통과: 알림 드라이런·예약 예시·백업\noutput/schedules/cron.txt\noutput/schedules/launchd.plist\noutput/schedules/windows.txt\noutput/backups/blog.zip\n"
+  },
+  {
+    "command": "python blog.py run --restore",
+    "returncode": 0,
+    "stdout": "✔ 통과: SQLite·mock WordPress·설정 복구\n"
+  },
+  {
+    "command": "python course.py start A11",
+    "returncode": 0,
+    "stdout": "✔ 통과: A11 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py run --ops",
+    "returncode": 0,
+    "stdout": "✔ 통과: 알림 드라이런·예약 예시·백업\noutput/schedules/cron.txt\noutput/schedules/launchd.plist\noutput/schedules/windows.txt\noutput/backups/blog.zip\n"
+  },
+  {
+    "command": "python blog.py run --restore",
+    "returncode": 0,
+    "stdout": "✔ 통과: SQLite·mock WordPress·설정 복구\n"
+  },
+  {
+    "command": "python course.py start A11",
+    "returncode": 0,
+    "stdout": "✔ 통과: A11 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py run --ops",
+    "returncode": 0,
+    "stdout": "✔ 통과: 알림 드라이런·예약 예시·백업\noutput/schedules/cron.txt\noutput/schedules/launchd.plist\noutput/schedules/windows.txt\noutput/backups/blog.zip\n"
+  },
+  {
+    "command": "python blog.py run --restore",
+    "returncode": 0,
+    "stdout": "✔ 통과: SQLite·mock WordPress·설정 복구\n"
+  },
+  {
+    "command": "python course.py check A11",
+    "returncode": 0,
+    "stdout": "✔ 통과: A11 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start A12",
+    "returncode": 0,
+    "stdout": "✔ 통과: A12 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py run --audit",
+    "returncode": 0,
+    "stdout": "✔ 통과: 출시 전 사람이 확인할 점검표\noutput/launch-checklist.txt\n"
+  },
+  {
+    "command": "python blog.py run --audit",
+    "returncode": 0,
+    "stdout": "✔ 통과: 출시 전 사람이 확인할 점검표\noutput/launch-checklist.txt\n"
+  },
+  {
+    "command": "python course.py start A12",
+    "returncode": 0,
+    "stdout": "✔ 통과: A12 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py run --audit",
+    "returncode": 0,
+    "stdout": "✔ 통과: 출시 전 사람이 확인할 점검표\noutput/launch-checklist.txt\n"
+  },
+  {
+    "command": "python course.py start A12",
+    "returncode": 0,
+    "stdout": "✔ 통과: A12 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py run --audit",
+    "returncode": 0,
+    "stdout": "✔ 통과: 출시 전 사람이 확인할 점검표\noutput/launch-checklist.txt\n"
+  },
+  {
+    "command": "python course.py check A12",
+    "returncode": 0,
+    "stdout": "✔ 통과: A12 산출물·상태·터미널 출력 일치\n"
+  },
+  {
+    "command": "python course.py start E2E",
+    "returncode": 0,
+    "stdout": "✔ 통과: E2E 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py run --scenarios",
+    "returncode": 0,
+    "stdout": "✔ 통과: mock_normal\n✔ 통과: regulated_refusal\n✔ 통과: missing_data\n✔ 통과: reapproval\n✔ 통과: timeout_no_duplicate\n✔ 통과: backup_restore\n"
+  },
+  {
+    "command": "python blog.py run --scenarios",
+    "returncode": 0,
+    "stdout": "✔ 통과: mock_normal\n✔ 통과: regulated_refusal\n✔ 통과: missing_data\n✔ 통과: reapproval\n✔ 통과: timeout_no_duplicate\n✔ 통과: backup_restore\n"
+  },
+  {
+    "command": "python course.py start E2E",
+    "returncode": 0,
+    "stdout": "✔ 통과: E2E 시작 상태 복원\n"
+  },
+  {
+    "command": "python blog.py run --scenarios",
+    "returncode": 0,
+    "stdout": "✔ 통과: mock_normal\n✔ 통과: regulated_refusal\n✔ 통과: missing_data\n✔ 통과: reapproval\n✔ 통과: timeout_no_duplicate\n✔ 통과: backup_restore\n"
+  },
+  {
+    "command": "python course.py check E2E",
+    "returncode": 0,
+    "stdout": "✔ 통과: E2E 산출물·상태·터미널 출력 일치\n"
+  }
+]
