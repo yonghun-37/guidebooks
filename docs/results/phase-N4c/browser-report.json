@@ -1,0 +1,157 @@
+{
+  "views": [
+    {
+      "slug": "10-benefits",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "11-parents",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "12-safety",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "13-hundred-days",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "10-benefits",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "11-parents",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "12-safety",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "13-hundred-days",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "10-benefits",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "11-parents",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "12-safety",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "13-hundred-days",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "10-benefits",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "11-parents",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "12-safety",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "13-hundred-days",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "10-benefits",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "11-parents",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "12-safety",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "13-hundred-days",
+      "width": 360,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "slug": "10-benefits",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "11-parents",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "12-safety",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "slug": "13-hundred-days",
+      "width": 360,
+      "theme": "dark",
+      "overflow": 0
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "4 chapters × 3 widths × 2 themes; 9 blocks, FAQ5, quiz3; SVG text bounds; screenshots at 375/1280",
+    "rendered internal links/anchors, keyboard FAQ/quiz/reset; emergency messages equal shared data",
+    "24 monthly rows; transition 5/6/12 months; 1-year daycare preset; month-end dates; invalid date clears stale output; keyboard table focus; sleep default/gaps/invalid input; crisis phone links",
+    "storage blocked tools remain usable; JS disabled axes/FAQ/sources remain readable"
+  ],
+  "links": 261,
+  "externalRequests": []
+}

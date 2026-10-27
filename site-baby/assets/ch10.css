@@ -1,0 +1,4 @@
+#ch10-months{margin-top:24px}#ch10-months .table-wrap{max-height:620px;overflow:auto;border:1px solid var(--line);border-radius:8px}#ch10-months table{min-width:650px;margin:0}#ch10-months th,#ch10-months td{font-size:14px}#ch10-months thead th{position:sticky;top:0;background:var(--surface)}#ch10-months .transition-row{outline:2px solid var(--accent);outline-offset:-2px}#ch10-months caption{text-align:left;padding:12px;font-weight:700}#ch10-vouchers{border:2px dashed var(--orange);padding:16px;border-radius:8px}.chapter-sources{margin:32px 0}.chapter-sources summary{cursor:pointer;font-weight:700}
+@media print{#ch10-months .table-wrap{max-height:none;overflow:visible}#ch10-months table{min-width:0}#ch10-months thead th{position:static}}
+
+#benefits-tool{padding:22px}@media(max-width:680px){#benefits-tool{padding:16px}}

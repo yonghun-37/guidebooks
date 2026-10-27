@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: ordinary dates distinguish birth-inclusive 60 days and 14w6
+ok 1 - ordinary dates distinguish birth-inclusive 60 days and 14w6
+  ---
+  duration_ms: 1.389888
+  type: 'test'
+  ...
+# Subtest: month-end keeps reference separate from legal deadline
+ok 2 - month-end keeps reference separate from legal deadline
+  ---
+  duration_ms: 0.187879
+  type: 'test'
+  ...
+# Subtest: leap years and year rollovers
+ok 3 - leap years and year rollovers
+  ---
+  duration_ms: 0.150653
+  type: 'test'
+  ...
+# Subtest: invalid or absent dates rejected
+ok 4 - invalid or absent dates rejected
+  ---
+  duration_ms: 0.203101
+  type: 'test'
+  ...
+# Subtest: local timezone does not change calendar dates
+ok 5 - local timezone does not change calendar dates
+  ---
+  duration_ms: 0.114999
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 42.064351

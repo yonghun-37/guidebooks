@@ -1,0 +1,753 @@
+{
+  "views": [
+    {
+      "file": "practice/00-start.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/00-start.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/01-home.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/01-home.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/01-home.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/01-home.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/02-diaper.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/02-diaper.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/02-diaper.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/02-diaper.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/03-feeding.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/04-sleep.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/04-sleep.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/04-sleep.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/04-sleep.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/05-bath.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/05-bath.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/05-bath.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/05-bath.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/06-emergency.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/06-emergency.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/06-emergency.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/06-emergency.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/08-checkups.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/08-checkups.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/08-checkups.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/08-checkups.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/09-records.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/09-records.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/09-records.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/09-records.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/10-play.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/10-play.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/10-play.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/10-play.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "practice/e2e.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "print/weekly-checklist.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "print/weekly-checklist.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "print/weekly-checklist.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "print/weekly-checklist.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "print/log-sheet.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "print/log-sheet.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "print/log-sheet.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "print/log-sheet.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "print/parent-crisis.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "print/parent-crisis.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "print/parent-crisis.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "print/parent-crisis.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "print/emergency.html",
+      "width": 375,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "print/emergency.html",
+      "width": 375,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "file": "print/emergency.html",
+      "width": 1280,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "file": "print/emergency.html",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "15 pages × 2 widths × 2 themes; no overflow; exact emergency strings; 60 screenshots",
+    "feeding tabs: ArrowRight and Home activate matching visible panel",
+    "contacts restored across practice 0, practice 6, and emergency print; clear works",
+    "calendar leap/month-end 2024-01-31 & 2024-02-29; 104-day cap; unknown/individual/future input; booking restore/clear",
+    "all record kinds; today-only counts; compound diaper counted once per category; HTML escaped; persistence; UTF-8 CSV formula neutralization; delete/cancel/clear",
+    "blocked localStorage: records still usable/exportable; booking failure message",
+    "malformed stored JSON value: explanation and working in-memory UI"
+  ],
+  "errors": [],
+  "links": [
+    {
+      "from": "practice/00-start.html",
+      "href": "../credits.html#n002",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/00-start.html",
+      "href": "../credits.html#n058",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/00-start.html",
+      "href": "../credits.html#n011",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/00-start.html",
+      "href": "../credits.html#n015",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/00-start.html",
+      "href": "../credits.html#n094",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/00-start.html",
+      "href": "../credits.html#n056",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/00-start.html",
+      "href": "../credits.html#n034",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/00-start.html",
+      "href": "../credits.html#n035",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/01-home.html",
+      "href": "../credits.html#n058",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/01-home.html",
+      "href": "../credits.html#n094",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/01-home.html",
+      "href": "../credits.html#n002",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/01-home.html",
+      "href": "../credits.html#n020",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/01-home.html",
+      "href": "../credits.html#n056",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/02-diaper.html",
+      "href": "../credits.html#n102",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/02-diaper.html",
+      "href": "../credits.html#n051",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/02-diaper.html",
+      "href": "../credits.html#n017",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/02-diaper.html",
+      "href": "../credits.html#n078",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/02-diaper.html",
+      "href": "../credits.html#n110",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/03-feeding.html",
+      "href": "../credits.html#n016",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/03-feeding.html",
+      "href": "../credits.html#n010",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/03-feeding.html",
+      "href": "../credits.html#n011",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/03-feeding.html",
+      "href": "../credits.html#n012",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/03-feeding.html",
+      "href": "../credits.html#n015",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/03-feeding.html",
+      "href": "../credits.html#n002",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/04-sleep.html",
+      "href": "../credits.html#n002",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/04-sleep.html",
+      "href": "../credits.html#n020",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/04-sleep.html",
+      "href": "../credits.html#n093",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/04-sleep.html",
+      "href": "../credits.html#n022",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/05-bath.html",
+      "href": "../credits.html#n008",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/05-bath.html",
+      "href": "../credits.html#n051",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/05-bath.html",
+      "href": "../credits.html#n059",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/05-bath.html",
+      "href": "../credits.html#n103",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/05-bath.html",
+      "href": "../credits.html#n111",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/05-bath.html",
+      "href": "../credits.html#n050",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/08-checkups.html",
+      "href": "../credits.html#n027",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/08-checkups.html",
+      "href": "../credits.html#n032",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/08-checkups.html",
+      "href": "../credits.html#n029",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/08-checkups.html",
+      "href": "../credits.html#n028",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/08-checkups.html",
+      "href": "../credits.html#n066",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/08-checkups.html",
+      "href": "../credits.html#n030",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/08-checkups.html",
+      "href": "../credits.html#n076",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/09-records.html",
+      "href": "../credits.html#n065",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/10-play.html",
+      "href": "../credits.html#n032",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/10-play.html",
+      "href": "../credits.html#n092",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/10-play.html",
+      "href": "../credits.html#n002",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/10-play.html",
+      "href": "../credits.html#n009",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/10-play.html",
+      "href": "../credits.html#n027",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/10-play.html",
+      "href": "../credits.html#n020",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/e2e.html",
+      "href": "../credits.html#n002",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/e2e.html",
+      "href": "../credits.html#n034",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/e2e.html",
+      "href": "../credits.html#n035",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/e2e.html",
+      "href": "../credits.html#n058",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/e2e.html",
+      "href": "../credits.html#n027",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/e2e.html",
+      "href": "../credits.html#n020",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "practice/e2e.html",
+      "href": "../credits.html#n032",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n002",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n034",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n035",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n058",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n066",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n027",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n053",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n087",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n028",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n020",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n032",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/weekly-checklist.html",
+      "href": "../credits.html#n092",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/parent-crisis.html",
+      "href": "../credits.html#n122",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/parent-crisis.html",
+      "href": "../credits.html#n123",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/parent-crisis.html",
+      "href": "../credits.html#n055",
+      "reason": "anchor missing; common credits integration pending"
+    },
+    {
+      "from": "print/emergency.html",
+      "href": "../credits.html#n055",
+      "reason": "anchor missing; common credits integration pending"
+    }
+  ],
+  "pdf": [
+    {
+      "file": "weekly-checklist-a4.pdf",
+      "pages": 1,
+      "mediaBox": "0 0 594.95996 841.91998"
+    },
+    {
+      "file": "log-sheet-a4.pdf",
+      "pages": 1,
+      "mediaBox": "0 0 594.95996 841.91998"
+    },
+    {
+      "file": "parent-crisis-a4.pdf",
+      "pages": 1,
+      "mediaBox": "0 0 594.95996 841.91998"
+    },
+    {
+      "file": "emergency-a4.pdf",
+      "pages": 1,
+      "mediaBox": "0 0 594.95996 841.91998"
+    }
+  ]
+}

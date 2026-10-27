@@ -1,0 +1,3 @@
+#ch11-form fieldset{min-width:0;border:1px solid var(--line);border-radius:8px;padding:16px}#ch11-form legend{font-weight:700}#ch11-form label{display:block;margin:10px 0}#ch11-form input{display:block;width:100%;min-width:0;padding:10px;border:1px solid var(--line);border-radius:6px;color:var(--ink);background:var(--surface)}#ch11-result{padding:16px;border:2px solid var(--accent);border-radius:8px}#ch11-plan ul{padding-left:20px}.chapter-sources{margin:32px 0}.chapter-sources summary{cursor:pointer;font-weight:700}@media print{#parent-crisis{display:block!important}#parent-crisis button{display:none}}
+
+#sleep-shifts, #parent-crisis{padding:22px}@media(max-width:680px){#sleep-shifts, #parent-crisis{padding:16px}}

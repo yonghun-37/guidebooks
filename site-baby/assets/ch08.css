@@ -1,0 +1,7 @@
+/* 이 장 전용 선화와 입력. 공통 자산은 수정하지 않는다. */
+.baby-figure svg a rect{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}.baby-figure svg a:focus rect{stroke-width:4}
+.baby-figure svg .line{fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}.baby-figure svg .skin{fill:var(--surface);stroke:currentColor;stroke-width:2.4}.baby-figure svg .soft{fill:var(--soft);stroke:currentColor;stroke-width:1.5}
+.n4-tool{display:block;padding:20px}.n4-tool fieldset{border:1px solid var(--line);border-radius:8px;padding:16px;min-width:0}.n4-tool label{display:block;margin:14px 0}.n4-tool input:not([type=checkbox]),.n4-tool select{display:block;width:100%;max-width:100%;padding:10px;border:1px solid var(--line);border-radius:6px;color:var(--ink);background:var(--surface);margin-top:6px}.n4-tool input[type=checkbox]{width:20px;height:20px;vertical-align:middle;accent-color:var(--accent)}
+.n4-table{width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed}.n4-table th,.n4-table td{padding:10px 7px;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.n4-table th{text-align:left}.n4-table caption{text-align:left;font-weight:700;margin-bottom:12px}.n4-tool [role=status]{padding:12px;background:var(--soft);border-radius:6px}.n4-list li{margin-bottom:12px}
+
+@media(max-width:680px){.n4-tool{padding:14px}}

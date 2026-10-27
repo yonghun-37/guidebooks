@@ -1,0 +1,108 @@
+{
+  "views": [
+    {
+      "file": "05-diapers",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "file": "05-diapers",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "file": "05-diapers",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "file": "05-diapers",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "file": "06-body",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "file": "06-body",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "file": "06-body",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "file": "06-body",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "file": "08-growth",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "file": "08-growth",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "file": "08-growth",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "file": "08-growth",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "file": "09-checkups",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "file": "09-checkups",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0
+    },
+    {
+      "file": "09-checkups",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0
+    },
+    {
+      "file": "09-checkups",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "4 chapters × 2 widths × 2 themes; meta and outline present; quiz, FAQ keyboard, preparation checkboxes, 3 calendar routes, reset, stale result clearing",
+    "all 7 shared emergency messages render on every chapter; no literal copies",
+    "calendar works with localStorage blocked; no external requests"
+  ],
+  "externalRequests": [],
+  "passed": true
+}

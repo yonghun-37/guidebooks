@@ -1,0 +1,46 @@
+[
+  {
+    "file": "emergency-a4.pdf",
+    "pages": 1,
+    "mediaBox": [
+      0.0,
+      0.0,
+      594.95996,
+      841.91998
+    ],
+    "textCharacters": 1198
+  },
+  {
+    "file": "log-sheet-a4.pdf",
+    "pages": 1,
+    "mediaBox": [
+      0.0,
+      0.0,
+      594.95996,
+      841.91998
+    ],
+    "textCharacters": 589
+  },
+  {
+    "file": "parent-crisis-a4.pdf",
+    "pages": 1,
+    "mediaBox": [
+      0.0,
+      0.0,
+      594.95996,
+      841.91998
+    ],
+    "textCharacters": 658
+  },
+  {
+    "file": "weekly-checklist-a4.pdf",
+    "pages": 1,
+    "mediaBox": [
+      0.0,
+      0.0,
+      594.95996,
+      841.91998
+    ],
+    "textCharacters": 1523
+  }
+]

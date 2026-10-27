@@ -1,0 +1,147 @@
+{
+  "views": [
+    {
+      "page": "01-map",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 2
+    },
+    {
+      "page": "02-feeding",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 3
+    },
+    {
+      "page": "03-sleep",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 2
+    },
+    {
+      "page": "04-crying",
+      "width": 375,
+      "theme": "light",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 8
+    },
+    {
+      "page": "01-map",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 2
+    },
+    {
+      "page": "02-feeding",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 3
+    },
+    {
+      "page": "03-sleep",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 2
+    },
+    {
+      "page": "04-crying",
+      "width": 375,
+      "theme": "dark",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 8
+    },
+    {
+      "page": "01-map",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 2
+    },
+    {
+      "page": "02-feeding",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 3
+    },
+    {
+      "page": "03-sleep",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 2
+    },
+    {
+      "page": "04-crying",
+      "width": 1280,
+      "theme": "light",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 8
+    },
+    {
+      "page": "01-map",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 2
+    },
+    {
+      "page": "02-feeding",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 3
+    },
+    {
+      "page": "03-sleep",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 2
+    },
+    {
+      "page": "04-crying",
+      "width": 1280,
+      "theme": "dark",
+      "overflow": 0,
+      "blocks": 9,
+      "emergencyMessages": 8
+    }
+  ],
+  "checks": [
+    "16 full-page screenshots: 4 chapters × 375/1280 × light/dark; horizontal overflow 0",
+    "9 common blocks, 5 FAQs, 3 quizzes each",
+    "all rendered emergency text equals shared data",
+    "main content local links and citation anchors resolve",
+    "FAQ and quiz keyboard operation; quiz reset",
+    "calendar month-end/birth-inclusive dates, future rejection and keyboard submit",
+    "feeding observation does not judge intake; sleep checklist generates fixes",
+    "crying stepper ends in contact; reset and keyboard",
+    "blocked storage: emergency renderer on all four pages; calendar still works",
+    "console/page/HTTP errors 0; external requests 0"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "links": 136
+}
